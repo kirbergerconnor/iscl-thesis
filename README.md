@@ -16,6 +16,20 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 **Esperanto**
 
+**Lojban**
+
 ### NatLangs:
 
+**English**
 
+**Chinese (Mandarin)**
+
+**Japanese**
+
+**Tagalog**
+
+**Italian**
+
+**Russian**
+
+**Arabic (Modern Standard)**
