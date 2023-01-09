@@ -8,7 +8,7 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 ### ConLangs:
 
-**Klingon** -> https://korpus.klingonia.fi/en/info
+**Klingon** -> https://korpus.klingonia.fi/en/info ; http://klingon.wiki/En/TheKlingonWayPhrases
 
 **Dothraki** -> https://docs.dothraki.org/Dothraki.pdf
 
