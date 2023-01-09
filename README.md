@@ -8,17 +8,17 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 ### ConLangs:
 
-**Klingon** -> https://korpus.klingonia.fi/en/info ; http://klingon.wiki/En/TheKlingonWayPhrases
+**Klingon** -> small list of Klingon phrases (156)
 
-**Dothraki** -> https://docs.dothraki.org/Dothraki.pdf
+**Dothraki** -> small dictionary of Dothraki words (1400)
 
-**Interlingua**
+**Interlingua** -> Large corpus of over 1 million sentences
 
-**Esperanto**
+**Esperanto** -> Large corpus of 300k sentences
 
-**Lojban**
+**Lojban** -> compiled list of 16k phrases
 
-**Lingwa de Planeta**
+**Lingwa de Planeta** -> translated texts (chapter of George Orwell's Animal Farm, a speech by S. P. Semenov) 
 
 ### NatLangs:
 
