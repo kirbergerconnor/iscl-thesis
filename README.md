@@ -18,6 +18,8 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 **Lojban**
 
+**Lingwa de Planeta**
+
 ### NatLangs:
 
 **English**
