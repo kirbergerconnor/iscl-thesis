@@ -14,7 +14,7 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 **Interlingua** -> Large corpus of over 1 million sentences
 
-**Esperanto** -> Large corpus of 300k sentences
+**Esperanto** -> Large corpus of 300k sentences, translation of parts of the Bible
 
 **Lojban** -> compiled list of 16k phrases
 
