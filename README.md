@@ -12,13 +12,15 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 **Dothraki** -> small dictionary of Dothraki words (1400)
 
-**Interlingua** -> Large corpus of over 1 million sentences
+**Interlingua** -> Large corpus of over 1 million sentences, scraped Wikipedia page
 
-**Esperanto** -> Large corpus of 300k sentences, translation of parts of the Bible
+**Esperanto** -> Large corpus of 300k sentences, translation of parts of the Bible, scraped Wikipedia page
 
-**Lojban** -> compiled list of 16k phrases
+**Lojban** -> compiled list of 16k phrases, scraped Wikipedia page
 
 **Lingwa de Planeta** -> translated texts (chapter of George Orwell's Animal Farm, a speech by S. P. Semenov) 
+
+**Lingua Franca Nova**
 
 ### NatLangs:
 
@@ -28,10 +30,12 @@ This thesis is on the topic of comparing Constructed languages with Natural lang
 
 **Japanese**
 
-**Tagalog**
+**Hindi**
 
-**Italian**
+**German**
 
 **Russian**
 
 **Arabic (Modern Standard)**
+
+**Bengali**
