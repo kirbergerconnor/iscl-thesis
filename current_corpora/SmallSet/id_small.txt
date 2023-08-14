@@ -1,0 +1,531 @@
+asam deoksiribonukleat lebih dikenal dengan singkatan dna adalah salah satu jenis asam nukleat yang memiliki kemampuan pewarisan sifat
+keberadaan asam deoksiribonukleat ditemukan di dalam nukleoprotein yang membentuk inti sel
+james dewey watson dan francis crick merupakan ilmuwan pertama yang mengajukan model struktur dna pada tahun dengan bentuk pilinan ganda
+setiap dna tersusun dari dua buah rantai polinukleotida
+dna merupakan sejenis biomolekul yang menyimpan dan menyandi instruksiinstruksi genetika setiap organisme dan banyak jenis virus
+instruksiinstruksi genetika ini berperan penting dalam pertumbuhan perkembangan dan fungsi organisme dan virus
+dna merupakan asam nukleat bersamaan dengan protein dan karbohidrat asam nukleat adalah makromolekul esensial bagi seluruh makhluk hidup yang diketahui
+kebanyakan molekul dna terdiri dari dua unting biopolimer yang berpilin satu sama lainnya membentuk heliks ganda
+dua unting dna ini dikenal sebagai polinukleotida karena keduanya terdiri dari satuansatuan molekul yang disebut nukleotida
+tiaptiap nukleotida terdiri atas salah satu jenis basa nitrogen adenina timina atau sitosina gula monosakarida yang disebut deoksiribosa dan gugus fosfat
+nukleotidanukelotida ini kemudian tersambung dalam satu rantai ikatan kovalen antara gula satu nukleotida dengan fosfat nukelotida lainnya
+hasilnya adalah rantai punggung gulafosfat yang berselangseling
+menurut kaidah pasangan basa ikatan hidrogen mengikat basabasa dari kedua unting polinukleotida membentuk dna unting ganda dua unting dna bersifat antiparalel yang berarti bahwa keduanya berpasangan secara berlawanan
+pada setiap gugus gula terikat salah satu dari empat jenis nukleobasa
+urutan asam nukleat empat nukleobasa di sepanjang rantai punggung dna inilah yang menyimpan kode informasi biologis
+melalui proses biokimia yang disebut transkripsi unting dna digunakan sebagai templat untuk membuat unting rna
+unting rna ini kemudian ditranslasikan untuk menentukan urutan asam amino protein yang dibangun
+struktur kimia dna yang ada membuatnya sangat cocok untuk menyimpan informasi biologis setiap makhluk hidup
+rantai punggung dna resisten terhadap pembelahan kimia dan keduadua unting dalam struktur unting ganda dna menyimpan informasi biologis yang sama
+karenanya informasi biologis ini akan direplikasi ketika dua unting dna dipisahkan
+sebagian besar dna bersifat nonkode yang berarti bagian ini tidak berfungsi menyandikan protein
+dalam sel dna tersusun dalam kromosom
+semasa pembelahan sel kromosomkromosom ini diduplikasi dalam proses yang disebut replikasi dna
+organisme eukariotik menyimpan kebanyakan dnanya dalam inti sel dan sebagian kecil sisanya dalam organel seperti mitokondria ataupun kloroplas
+sebaliknya organisme prokariotik menyimpan dnanya hanya dalam sitoplasma
+dalam kromosom protein kromatin seperti histon berperan dalam penyusunan dna menjadi struktur kompak
+struktur kompak inilah yang kemudian berinteraksi antara dna dengan protein lainnya sehingga membantu kontrol bagianbagian dna mana sajakah yang dapat ditranskripsikan
+para ilmuwan menggunakan dna sebagai alat molekuler untuk menyingkap teoriteori dan hukumhukum fisika seperti misalnya teorema ergodik dan teori elastisitas
+sifatsifat materi dna yang khas membuatnya sangat menarik untuk diteliti bagi ilmuwan dan insinyur yang bekerja di bidang mikrofabrikasi dan nanofabrikasi material
+beberapa kemajuan di bidang material ini misalnya origami dna dan material hibrida berbasis dna
+dna merupakan sebuah polimer yang terdiri dari satuansatuan berulang yang disebut nukleotida
+tiaptiap nukleotida terdiri dari tiga komponen utama yakni gugus fosfat gula deoksiribosa dan basa nitrogen
+pada dna nukleobasa yang ditemukan adalah adenina guanina sitosina dan timina
+nukleobasa yang terhubung dengan sebuah gugus gula disebut sebagai nukleosida dan nukleosida yang terhubung dengan satu atau lebih gugus fosfat disebut sebagai nukleotida
+polimer yang terdiri dari nukleotida yang saling terhubung menjadi satu rantai disebut sebagai polinukleotida
+sehingga dna termasuk pula ke dalam polinukleotida
+rantai punggung unting dna terdiri dari gugus fosfat dan gula yang berselangseling
+gula pada dna adalah gula pentosa yaitu deoksiribosa
+dua gugus gula terhubung dengan fosfat melalui ikatan fosfodiester antara atom karbon ketiga pada cincin satu gula dan atom karbon kelima pada gula lainnya
+ikatan yang tidak simetris ini membuat dna memiliki arah atau orientasi tertentu
+pada struktur heliks ganda orientasi rantai nukleotida pada satu unting berlawanan dengan orientasi nukleotida unting lainnya
+hal ini disebut sebagai antiparalel
+kedua ujung asimetris dna disebut sebagai dan
+ujung memiliki gugus fosfat terminus sedangkan ujung memiliki gugus hidroksi terminus
+salah satu perbedaan utama dna dan rna adalah gula penyusunnya yakni gula deoksiribosa pada dna digantikan gula ribosa pada rna
+dalam organisme hidup dna biasanya ditemukan dalam bentuk berpasangan dan terikat kuat
+dua unting dna saling berpilin membentuk heliks ganda
+heliks ganda ini distabilisasi oleh dua ikatan hidrogen antar nukleotida dan interaksi tumpukan antar nukleobasa aromatik
+dalam lingkungan sel yang berair ikatan konjugasi antar basa nukleotida tersusun tegak lurus terhadap sumbu pilinan dna
+hal ini meminimalisasi interaksi dengan cangkang solvasi dan sehingganya menurunkan energi bebas gibbs
+struktur dna semua jenis spesies terdiri dari dua rantai heliks yang berpilin dengan jarak antar putaran heliks dan jarijari
+menurut kajian lainnya ketika diukur menggunakan larutan tertentu rantai dna memiliki lebar sedangkan satu satuan nukleotida memiliki panjang
+walaupun satuan nukleotida ini sangatlah kecil polimer dna dapat memiliki jutaan nukleotida yang terangkai seperti rantai
+misalnya kromosom yang merupakan kromosom terbesar pada manusia mengandung sekitar juta pasangan basa
+nukleobasa diklasifikasikan ke dalam dua jenis purina yang berupa fusi senyawa heterolingkar beranggota lima dengan senyawa heterolingkar beranggota enam dan pirimidina yang berupa cincin beranggota enam
+pirimidina lainnya urasil biasanya menggantikan timina pada rna
+perbedaan urasil dengan timina terletak pada ketiadaan gugus metil pada cincin urasil
+selain kelima nukleobasa tersebut terdapat pula sejumlah besar analog asam nukleat buatan yang telah disintesis untuk mengkaji sifatsifat asam nukleat dan digunakan dalam bioteknologi
+urasil biasanya tidak ditemukan dalam dna
+namun pada sejumlah bakteriofag bakteriofag pbs dan pbs bacillus subtilis dan bakteriofag pir yersinia timina telah digantikan oleh urasil
+fag lainnya fag s staphylococcus juga telah diidentifikasi mempunyai urasil pada genomnya
+basa j yang merupakan bentuk modifikasi dari urasil juga dapat ditemukan pada sejumlah organisme flagellata diplonema dan euglena dan seluruh organisme marga kinetoplastid biosintesis basa j terjadi dalam dua tahap pada tahap pertama basa timina spesifik pada dna diubah menjadi hidroksimetildeoksiuridina pada tahap kedua homedu diglikosilasi menjadi basa j
+proteinprotein yang mengikat basa j ini juga telah berhasil diidentifikasi
+proteinprotein ini tampaknya merupakan kerabat jauh dari onkogen tet yang terlibat dalam patogenesis leukemia myeloid akut
+basa j tampaknya bekerja sebagai sinyal terminasi untuk rna polimerase ii
+pada struktur heliks ganda dna terdapat ruang antar unting dna yang juga berbentuk alur heliks
+ruang kosong ini bersebelahan dengan pasangan basa dan merupakan tapak ikatan yang potensial
+dikarenakan kedua unting dna tidak berposisi secara simetris satu sama lainnya alur yang dihasilkan jugalah tidak berukuran sama
+satu alur yang disebut alur mayor memiliki lebar sedangkan alur lainnya yang disebut alur minor memiliki lebar
+lebarnya alur mayor berarti bahwa tepitepi basa nukleotida dapat lebih mudah diakses melalui alur mayor daripada melalui alur minor
+akibatnya proteinprotein seperti faktorfaktor transkripsi yang mengikat pada urutan basa tertentu biasanya melakukan kontak dengan basa melalui alur mayor
+situasi ini dapat bervariasi pada konformasi dna yang tak lazim dalam sel walaupun alur mayor dan minor selalu dinamai demikian untuk menrefleksikan perbedaan ukuran yang terlihat apabila dna dipuntir balik menjadi bentuk lazim b
+pada heliks ganda dna tiap jenis nukleobasa pada satu unting dna berikatan hanya dengan satu jenis nukleobasa dari unting dna lainnya
+hal ini disebut sebagai pemasangan basa komplementer
+purina akan membentuk ikatan hidrogen dengan pirimidina adenina berikatan dengan timina dalam dua ikatan hidrogen dan sitosina berikatan dengan guanina dalam tiga ikatan hidrogen
+susunan dua nukleotida ini disebut sebagai satu pasangan basa
+karena ikatan hidrogen tidak bersifat kovalen ia dapat putuskan dan digabung kembali relatif mudah
+kedua unting dna dalam heliks ganda oleh karenanya dapat ditarik terbuka seperti zipper baik melalui gaya mekanika maupun temperatur tinggi
+karena pasangan basa ini bersifat komplementer semua informasi pada urutan unting ganda heliks dna terduplikasi pada tiap unting
+hal ini sangat penting dalam replikasi dna
+interaksi reversible dan spesifik antara pasangan basa komplementer sangat kritikal terhadap keseluruhan fungsi dna dalam makhluk hidup
+atas pasangan basa gc dengan tiga ikatan hidrogen
+bawah pasangan basa at dengan dua ikatan hidrogen
+ikatan hidrogen nonkovalen ditunjukkan oleh garis putusputus
+dua jenis pasangan basa mempunyai jumlah ikatan hidrogen yang berbeda
+pasangan at memiliki dua ikatan hidrogen sedangkan pasangan gc memiliki tiga ikatan hidrogen
+dna yang mengandung pasangan basa gc yang tinggi lebih stabil daripada dna berpasangan basa gc rendah
+sebagaimana telah disebutkan di atas kebanyakan molekul dna ditemukan dalam keadaan unting ganda yang berikatan secara nonkovalen dan berbentuk heliks
+struktur unting ganda ini utamanya distabilkan oleh interaksi tumpukan basa intraunting
+interaksi yang terkuat ada pada tumpukan g dengan c
+kedua unting tersebut dapat dipisahkan menjadi dua molekul dna unting tunggal melalui proses yang dinamakan peleburan dna
+peleburan terjadi pada temperatur tinggi kadar garam yang reandah dan nilai ph yang tinggi
+stabilitas dsdna tidak hanya bergantung pada kandungan gc dna namun juga tergantung pada urutan basa dan panjang molekul dna tersebut
+oleh sebab itu kekuatan ikatan antar dua unting dna ditentukan oleh persentase pasangan basa gc dan keseluruhan panjang heliks ganda dna
+heliks dna yang panjang dengan kandungan gc yang tinggi memiliki interaksi antarunting yang lebih kuat sebaliknya heliks dna yang pendek dengan kandungan at yang tinggi memiliki interaksi antarunting yang lebih lemah
+dalam proses biologis bagian heliks ganda dna yang perlu dipisahkan dengan mudah seperti kotak pribnow tataat pada beberapa promotor cenderung memiliki kandungan at yang tinggi
+stabilitas dna dapat diukur melalui berbagai cara umumnya stabilitas dna diukur berdasarkan temperatur lebur dna yakni temperatur di mana molekul dna unting ganda terurai menjadi molekul dna unting tunggal
+temperatur lebur ini bergantung pada kekuatan ionik dan konsentrasi dna
+ketika seluruh pasangan basa dalam heliks ganda dna terurai kedua unting dna akan terpisah sebagai dua molekul yang berdiri sendiri
+untingunting tunggal dna ini tidak memiliki bentuk tunggal yang sama walaupun beberapa konformasi lebih stabil daripada konformasi lainnya
+sebuah urutan sekuens dna disebut sebagai sense apabila urutan basa dnanya sama dengan urutan kopi rna duta yang ditranslasikan menjadi protein
+urutan pada unting komplementernya disebut sebagai urutan antisense
+baik urutan sense dan antisense dapat ditemukan pada berbagai bagian unting dna yang sama
+pada prokariota dan eukariota urutan rna antisense juga diproduksi namun fungsi rna antisense ini tidaklah diketahui dengan jelas
+rna antisense diajukan terlibat dalam regulasi ekspresi gen melalui pemasangan basa rnarna
+pada sebagian kecil urutan dna prokariota dan eukariota dan sebagian besar urutan dna plasmid dan virus perbedaan antara unting sense dan antisense menjadi kabur dikarenakan terdapatnya gen yang tumpang tindih
+dalam hal ini beberapa urutan dna memiliki tugas ganda yakni menyandikan protein pertama ketika dibaca melalui salah satu unting dan menyandikan protein kedua ketika dibaca dengan arah berlawanan melalui unting komplementernya
+pada bakteri ketumpangtindihan ini kemungkinan terlibat dalam regulasi transkripsi gen
+sedangkan pada virus gen yang tumpang tindih ini meningkatkan jumlah informasi yang dapat disandikan dalam genom virus yang berukuran kecil
+dna dapat dipuntir menjadi seperti tali melalui proses yang disebut pemilinan kumparan dna
+pada kondisi relaksasi unting dna biasanya akan mengitari sumbu heliks ganda setiap pasangan basa
+namun jika dna dipuntir untinguntingnya dapat tergulung menjadi lebih rapat ataupun tergulung menjadi lebih longgar
+jika dna dipuntir searah putaran heliks basabasa dalam unting dna akan terikat lebih rapat
+hal ini dinamakan pemilinan kumparan positif
+sebaliknya jika dna dipuntir berlawanan putaran heliks basabasa dalam unting dna akan terlepas lebih mudah
+hal ini dinamakan pemilinan kumparan negatif
+secara alamiah kebanyakan dna memiliki bentuk pemilinan kumparan negatif yang disebabkan oleh enzim topoisomerase
+enzim ini juga diperlukan untuk melepaskan tegangan puntiran yang dialami dna semasa proses transkripsi dan replikasi
+terdapat banyak kemungkinan konformasikonformasi dna yang dapat kita temukan di antaranya adna bdna dan zdna walaupun hanya bdna dan zdna saja yang telah diamati secara langsung pada organisme fungsional
+konformasikonformasi yang diadopsi oleh dna bergantung pada tingkat hidrasi dna urutan dna tingkat dan arah pilinan kumparan dna modifikasi kimiawi pada basa dna jenis dan konsentrasi ionion logam maupun keberadaan poliamina dalam larutan
+beberapa nukleobasa buatan telah berhasil disintesis dan berhasil dimasukkan ke dalam analog dna berbasa delapan bernama dna hachimoji
+replikasi merupakan proses pelipatgandaan dna
+proses replikasi ini diperlukan ketika sel akan membelah diri
+pada setiap sel kecuali sel gamet pembelahan diri harus disertai dengan replikasi dna supaya semua sel turunan memiliki informasi genetik yang sama
+pada dasarnya proses replikasi memanfaatkan fakta bahwa dna terdiri dari dua rantai dan rantai yang satu merupakan konjugat dari rantai pasangannya
+dengan kata lain dengan mengetahui susunan satu rantai maka susunan rantai pasangan dapat dengan mudah dibentuk
+ada beberapa teori yang mencoba menjelaskan bagaimana proses replikasi dna ini terjadi
+salah satu teori yang paling populer menyatakan bahwa pada masingmasing dna baru yang diperoleh pada akhir proses replikasi satu rantai tunggal merupakan rantai dna dari rantai dna sebelumnya sedangkan rantai pasangannya merupakan rantai yang baru disintesis
+rantai tunggal yang diperoleh dari dna sebelumnya tersebut bertindak sebagai cetakan untuk membuat rantai pasangannya
+proses replikasi memerlukan protein atau enzim pembantu salah satu yang terpenting dikenal dengan nama dna polimerase yang merupakan enzim pembantu pembentukan rantai dna baru yang merupakan suatu polimer
+proses replikasi diawali dengan pembukaan untaian ganda dna pada titiktitik tertentu di sepanjang rantai dna
+proses pembukaan rantai dna ini dibantu oleh enzim helikase yang dapat mengenali titiktitik tersebut dan enzim girase yang mampu membuka pilinan rantai dna
+setelah cukup ruang terbentuk akibat pembukaan untaian ganda ini dna polimerase masuk dan mengikat diri pada kedua rantai dna yang sudah terbuka secara lokal tersebut
+proses pembukaan rantai ganda tersebut berlangsung disertai dengan pergeseran dna polimerase mengikuti arah membukanya rantai ganda
+monomer dna ditambahkan di kedua sisi rantai yang membuka setiap kali dna polimerase bergeser
+hal ini berlanjut sampai seluruh rantai telah benarbenar terpisah
+proses replikasi dna ini merupakan proses yang rumit namun teliti
+proses sintesis rantai dna baru memiliki suatu mekanisme yang mencegah terjadinya kesalahan pemasukan monomer yang dapat berakibat fatal
+karena mekanisme inilah kemungkinan terjadinya kesalahan sintesis amatlah kecil
+ilmuwan forensik dapat menggunakan dna yang terdapat dalam darah sperma kulit liur atau rambut yang tersisa di tempat kejadian kejahatan untuk mengidentifikasi kemungkinan tersangka sebuah proses yang disebut fingerprinting genetika atau pemprofilan dna
+dalam pemprofilan dna panjang relatif dari bagian dna yang berulang seperti short tandem repeats dan minisatelit dibandingkan
+pemprofilan dna dikembangkan pada oleh genetikawan inggris alec jeffreys dari universitas leicester dan pertama kali digunakan untuk mendakwa colin pitchfork pada dalam kasus pembunuhan enderby di leicestershire inggris
+banyak yurisdiksi membutuhkan terdakwa dari kejahatan tertentu untuk menyediakan sebuah contoh dna untuk dimasukkan ke dalam basis data komputer
+hal ini telah membantu investigator menyelesaikan kasus lama di mana pelanggar tidak diketahui dan hanya contoh dna yang diperoleh dari tempat kejadian
+metode ini adalah salah satu teknik paling tepercaya untuk mengidentifikasi seorang pelaku kejahatan tetapi tidak selalu sempurna misalnya bila tidak ada dna yang dapat diperoleh atau bila tempat kejadian terkontaminasi oleh dna dari banyak orang
+dna memainkan peran penting dalam ilmu komputer baik sebagai masalah riset dan sebagai sebuah cara komputasi
+riset dalam algoritme pencarian string yang menemukan kejadian dari urutan huruf di dalam urutan huruf yang lebih besar dimotivasi sebagian oleh riset dna di mana algoritme ini digunakan untuk mencari urutan tertentu dari nukleotida dalam sebuah urutan yang besar
+dalam aplikasi lainnya seperti editor text bahkan algoritme sederhana untuk masalah ini biasanya mencukupi tetapi urutan dna menyebabkan algoritmealgoritme ini untuk menunjukkan sifat kasusmendekatiterburuk dikarenakan jumlah kecil dari karakter yang berbeda
+teori database juga telah dipengaruhi oleh riset dna yang memiliki masalah khusus untuk menaruh dan memanipulasi urutan dna
+database yang dikhususkan untuk riset dna disebut database genomik dam harus menangani sejumlah tantangan teknis yang unik yang dihubungkan dengan operasi pembandingan kirakira pembandingan urutan mencari pola yang berulang dan pencarian homologi
+dna memainkan peran penting dalam kajian islam seperti studi tafsir alquran terutama ketika mengkaji tematema yang terkait dengan nasab genealogi silsilah dan sejarah
+ilmuwan yang ahli di bidang dna dan memadukan kajiannya dengan kajian alquran adalah shohibul faroji alazhmatkhan dengan karyanya tafsir midadurrahman sebanyak jilid dan menjadi mufassir yang mendapatkan penghargaan muri sebagai penulis tafsir terpanjang dan tertebal di seluruh dunia
+dalam tafsir ini dikaji secara detail tentang dna dari nabi adam sampai dikaji juga dna dari fam keturunan nabi muhammad dari fam keturunan hasan bin ali dan fam keturunan husain bin ali di negara seluruh dunia
+dna pertama kali berhasil dimurnikan pada tahun oleh ilmuwan swiss friedrich miescher di tubingen jerman yang menamainya nuclein berdasarkan lokasinya di dalam inti sel
+namun penelitian terhadap peranan dna di dalam sel baru dimulai pada awal abad bersamaan dengan ditemukannya postulat genetika mendel
+dna dan protein dianggap dua molekul yang paling memungkinkan sebagai pembawa sifat genetis berdasarkan teori tersebut
+dua eksperimen pada dekade an membuktikan fungsi dna sebagai materi genetik
+dalam penelitian oleh avery dan rekanrekannya ekstrak dari sel bakteri yang satu gagal mentransform sel bakteri lainnya kecuali jika dna dalam ekstrak dibiarkan utuh
+eksperimen yang dilakukan hershey dan chase membuktikan hal yang sama dengan menggunakan pencari jejak radioaktif
+misteri yang belum terpecahkan ketika itu adalah bagaimanakah struktur dna sehingga ia mampu bertugas sebagai materi genetik
+persoalan ini dijawab oleh francis crick dan koleganya james watson berdasarkan hasil difraksi sinar x pada dna oleh maurice wilkins dan rosalind franklin
+pada tahun james watson dan francis crick mendefinisikan dna sebagai polimer yang terdiri dari basa dari asam nukleat dua dari kelompok purinaadenina dan guanina dan dua lainnya dari kelompok pirimidinasitosina dan timina
+keempat nukleobasa tersebut terhubung dengan glukosa fosfat
+maurice wilkins dan rosalind franklin menemukan bahwa molekul dna berbentuk heliks yang berputar setiap nm sedangkan jarak antar molekul nukleobasa adalah nm hingga dapat ditentukan bahwa terdapat molekul nukleobasa pada setiap putaran dna
+setelah diketahui bahwa diameter heliks dna sekitar nm baru diketahui bahwa dna terdiri bukan dari rantai melainkan rantai heliks
+crick watson dan wilkins mendapatkan hadiah nobel kedokteran pada atas penemuan ini
+franklin karena sudah wafat pada waktu itu tidak dapat dianugerahi hadiah ini
+konfirmasi akhir mekanisme replikasi dna dilakukan lewat percobaan meselsonstahl yang dilakukan tahun
+muhammad anwar elsadat adalah seorang politikus mesir yang menjabat sebagai presiden mesir ketiga dari oktober hingga pembunuhannya oleh perwira tentara fundamentalis pada oktober
+anwar adalah seorang senior anggota perwira bebas yang menggulingkan raja farouk dalam revolusi mesir dan orang kepercayaan dekat presiden gamal abdel nasser di mana dia menjabat sebagai wakil presiden dua kali dan dia menggantikannya sebagai presiden pada tahun
+pada tahun sadat dan menachem begin perdana menteri israel menandatangani perjanjian damai bekerja sama dengan presiden amerika serikat jimmy carter di mana mereka diakui dengan hadiah nobel perdamaian
+dalam sebelas tahun sebagai presiden ia mengubah lintasan mesir berangkat dari banyak prinsip politik dan ekonomi nasserisme melembagakan kembali sistem multipartai dan meluncurkan kebijakan ekonomi infitah
+sebagai presiden ia memimpin mesir dalam perang yom kippur tahun untuk merebut kembali semenanjung sinai mesir yang telah diduduki israel sejak perang enam hari tahun menjadikannya pahlawan di mesir dan untuk sementara waktu dunia arab yang lebih luas
+setelah itu ia terlibat dalam negosiasi dengan israel yang berpuncak pada perjanjian perdamaian mesirisrael ini memenangkan dia dan menachem begin hadiah nobel perdamaian membuat sadat pemenang nobel muslim pertama
+meskipun reaksi terhadap perjanjianyang mengakibatkan kembalinya sinai ke mesirumumnya menguntungkan di kalangan orang mesir perjanjian itu ditolak oleh ikhwanul muslimin dan kaum kiri yang merasa sadat telah mengabaikan upaya untuk memastikan negara palestina
+dengan pengecualian sudan dunia arab dan organisasi pembebasan palestina sangat menentang upaya sadat untuk membuat perdamaian terpisah dengan israel tanpa konsultasi terlebih dahulu dengan negaranegara arab
+penolakannya untuk berdamai dengan mereka atas masalah palestina mengakibatkan mesir diskors dari liga arab
+perjanjian damai juga merupakan salah satu faktor utama yang menyebabkan pembunuhannya pada oktober militan yang dipimpin oleh khalid islambouli menembaki sadat dengan senapan otomatis selama parade oktober di kairo membunuhnya
+sadat dilahirkan di mit abu alkum alminufiyah mesir dalam sebuah keluarga mesirsudan yang miskin dengan saudara lakilaki dan perempuan
+ayahnya adalah seorang mesir sementara ibunya orang sudan
+salah seorang saudara lakilakinya atef sadat kelak menjadi seorang pilot dan terbunuh dalam perang yom kippur pada oktober
+anwar lulus dari akademi militer kerajaan di kairo pada dan ditempatkan di korps isyarat
+ia bergabung dengan gerakan perwira bebas yang bertekad untuk membebaskan mesir dari kekuasaan britania raya
+pada perang dunia ii ia dipenjarakan oleh britania atas usahausahanya untuk mendapatkan bantuan dari kekuatan poros dalam mengusir pasukanpasukan pendudukan britania
+ia ikut serta dalam kudeta yang menggulingkan raja farouk ii
+ketika revolusi meletus ia diperintahkan mengambil alih jaringan radio dan mengumumkan pecahnya revolusi kepada rakyat mesir
+pada setelah memegang berbagai jabatan dalam pemerintahan mesir ia dipilih oleh presiden gamal abdel nasser untuk menjabat sebagai wakil presiden
+ia menduduki jabatan itu hingga dan sekali lagi dari hingga
+setelah nasser meninggal anwar sadat dilantik menjadi presiden
+pada tahun anwar sadat bersamasama dengan hafez al assad syria memimpin mesir dalam perang yom kippur melawan israel untuk merebut kembali semenanjung sinai yang dicaplok oleh israel ketika krisis terusan suez dan perang enam harimeskipun dalam pertempuran ini masih dipertentangkan pihak menang ataupun kalah serta hasil perjanjian camp david yang menetapkan sinai kembali ketangan mesir keberhasilan anwar sadat menaikan moral rakyat mesir dan dunia arab serta mengadakan untuk perjanjian damai beberapa tahun berikutnya
+perjanjian damai camp david yang diprakarsai jimmy carter dan henry kissinger memang mengembalikan wilayah mesir yang sebelumnya direbut oleh israel pada perang
+namun tidak mengembalikan dataran tinggi golan yang direbut israel kepada syria pada perang
+meski secara politik perang yom kippur atau perang ramadhan itu menguntungkan dunia arab masalah palestina dan jerusalem terutama jerusalem timur yang direbut israel pada perang masih mengganjal bahkan beberapa kalangan mengatakan dilupakan
+hal ini membuat kemarahan dari kalangan plo kaum fundamentalis dan pergerakan islam dan kalangan palestina serta dunia arab terutama setelah kunjungannya ke jerussalem atas undangan manachem begin
+pada tahun anwar sadat mengadakan kunjungan ke jerusalem atas undangan perdana menteri israel menachem begin yang merupakan awal dari perundingan perdamaian antara israel dan mesir
+pada tahun terciptalah perjanjian damai camp david yang mana anwar sadat dan menachem begin menerima hadiah nobel perdamaian
+bagaimanapun tindakan ini ditentang hebat oleh dunia arab
+banyak yang percaya bahwa hanya dengan ancaman militer dapat memaksa israel berunding mengenai palestina dan perjanjian damai camp david menepikan mesir yang dianggap kekuatan militer di dunia arab yang signifikan disamping syria dan irak pada saat itu
+pada september anwar sadat mengenakan tindakan represif kepada organisasi pergerakan islam yang diaggapnya fundamentalis termasuk kumpulan pelajar dan organisasi koptik yang dianggapnya dapat mengganggu stabilitas nasional mesir dengan mengadakan tindakan penangkapan dan penahanan menyebabkan dia dikecam diseluruh dunia di atas pelanggaran ham dalam tindakannya itu
+pada oktober presiden anwar sadat tewas ditembak dalam sebuah parade militer oleh anggota tentara anggota jihad islam
+ini merupakan organisasi muslim mesir berhaluan keras yang menentang perjanjian damai mesir dengan israel
+tindakan represif anggota jihad islam terlihat dalam peristiwa september
+anwar sadat kemudian digantikan oleh wakil presiden hosni mubarak
+datuk azhar mansor adalah orang malaysia pertama yang berhasil mengelilingi dunia dengan berlayar
+mulanya ia merencanakan untuk melakukan pelayaran tersebut dalam waktu kurang dari hari tetapi ia menghadapi masalah dengan tiang layar yang patah ketika berada di cape horn amerika selatan
+namun datuk azhar mansor akhirnya berhasil menempuh seluruh pelayarannya dalam waktu hari
+kegigihannya adalah contoh keunggulan semangat malaysia baru
+datuk azhar mansor yang berusia tahun ketika berangkat pada februari itu belayar dengan kapal layarnya bernama jalur gemilang yang berharga rm juta
+pelayaran datuk azhar meliputi mil laut
+pada agustus datuk azhar mansor tiba dengan selamat di awana porto malai resort langkawi dan disambut sebagai seorang pahlawan oleh rakyat malaysia dipimpin oleh perdana menteri malaysia
+kepahlawanan datuk azhar mansor adalah sesuatu yang dapat dibanggakan oleh setiap rakyat malaysia
+usaha dan kegigihannya dalam mengarungi badai dan ombak adalah sumbangannya sebagai anak merdeka yang tidak gentar menanggung penderitaan rakyat yang hidup pada masa sebelum kemerdekaan
+arkeologi adalah ilmu yang mempelajari kebudayaan umat masa lalu melalui kajian sistematis atas data bendawi yang ditinggalkan
+kajian sistematis meliputi penemuan dokumentasi analisis nilainilai budaya norma kebiasaan hukum adat dan interpretasi data berupa artefak dan ekofak maupun fitur
+teknik penelitian yang khas adalah penggalian arkeologis meskipun teknik survei masih dilakukan
+arkeolog adalah sebutan untuk para sarjana praktisi atau ahli di bidang arkeologi
+tujuan arkeologi beragam dan menjadi perdebatan yang panjang
+di antaranya adalah yang disebut dengan paradigma arkeologi yaitu menyusun sejarah kebudayaan memahami perilaku manusia serta mengerti proses perubahan budaya
+karena bertujuan untuk memahami budaya manusia maka ilmu ini termasuk ke dalam kelompok ilmu humaniora
+meskipun demikian terdapat berbagai ilmu bantu yang digunakan antara lain sejarah antropologi geologi geografi arsitektur paleoantropologi dan bioantropologi fisika ilmu metalurgi serta filologi
+arkeologi pada masa sekarang merangkumi berbagai bidang yang berkait
+sebagai contoh penemuan mayat yang dikubur akan menarik minat pakar dari berbagai bidang untuk mengkaji tentang pakaian dan jenis bahan digunakan bentuk keramik dan cara penyebaran kepercayaan melalui apa yang dikebumikan bersama mayat tersebut pakar kimia yang mampu menentukan usia galian melalui cara seperti metode pengukuran karbon
+sedangkan pakar genetik yang ingin mengetahui pergerakan perpindahan manusia purba meneliti dnanya
+secara khusus arkeologi mempelajari budaya masa silam yang sudah berusia tua baik pada masa prasejarah maupun pada masa sejarah
+pada perkembangannya arkeologi juga dapat mempelajari budaya masa kini sebagaimana dipopulerkan dalam kajian budaya bendawi modern
+karena bergantung pada bendabenda peninggalan masa lalu maka arkeologi sangat membutuhkan kelestarian bendabenda tersebut sebagai sumber data
+oleh karena itu kemudian dikembangkan disiplin lain yaitu pengelolaan sumberdaya arkeologi atau lebih luas lagi adalah pengelolaan sumberdaya budaya
+purbawanisme merupakan kombinasi kata dari purbawan dan imbuhan dari bahasa inggris isme
+menurut kamus dewan bahasa dan pustaka purbawan memiliki maksud sebagai orang yang mengkaji mengumpul dan menjual barangbarang antik manakala isme bermaksud sifat dan kelakuan
+dapat disimpulkan bahwa purbawanisme berarti sikap dan perilaku orang yang mempelajari mengoleksi dan menjual barang antik
+istilah yang lebih popular digunakan dalam bahasa inggris adalah antiquity atau antiquarianism
+istilah tersebut pertama kali muncul pada abad ke sebagai salah satu cabang sejarah renaissance humanism
+kegiatan purbawanisme yang pertama telah dilakukan oleh nabonidus raja terakhir babylon sebelum ditaklukan oleh cyrus agung
+dia sangat meminati sejarah peradaban babylon dan telah menemukan kuil naramsin yang dibangun tahun sebelum masa pemerintahannya
+pada zaman pemerintahan julius caesar barang artefak seperti tempayan senjata purba dan perunggu merupakan beberapa hasil penemuan tentara romawi semasa mengeledah kuburan kuno di tanahtanah jajahan mereka seperti di yunani dan italia
+suetonis mencatatkan bahwa kegiatan pengumpulan barangan purba oleh maharaja augustus caesar
+sementara itu strabo mengatakan bahawa julius caesar telah mendirikan daerah jajahan romawi untuk tentaratentaranya di corinth
+setelah itu kekayaan yang terdapat di dalam kuburan lama telah dijual kepada kolektor romawi yang menghargai barang bersejarah yunani
+pada abad ke hingga masehi cabinets of curiosity menjadi puncak minat publik terutama rajaraja monarki seperti rudolf ii kaisar romawi ferdinand ii archduke of austria sedangkan dua koleksi barang yang terkenal adalah milik ole worm dan athanasius kircher
+selama abad ke minat yang tumbuh untuk mengumpulkan kekayaan dimulai di italia dan berkembang di bawah pemerintahan para pendeta seperti sixtus iv
+alexander vi sebaliknya mulai melakukan eksplorasi untuk menambah jumlah koleksinya
+hal itu telah menjadikan aktivitas sebagai budaya di antara orang kaya pendeta dan orangorang gereja dan ini menandai zaman reformasi atau dilettanti
+arkeologi prasejarah berkembang di eropa dan amerika serikat
+bidang kepurbakalaan dewasa ini lebih menitikberatkan pada penggambaran dan rekonstruksi kehidupan lampau serta memandang budaya secara normatif
+hal tersebut juga diperkuat dengan adanya banyak teori yang dapat digunakan di lapangan
+singkatnya sejarah perkembangan arkeologi saat ini lebih pada konstruksi dan penguatan metode penelitian sebagai hasil dari teoriteori yang dikumpulkan dari berbagai cabang
+hal ini menunjukkan bahwa arkeologi merupakan bidang multidisiplin
+dari disiplin geologi gagasan lapisan tanah dipelopori oleh james hutton sedangkan theory of uniformity oleh charles lyell digunakan untuk mempelajari perkembangan arkeologi manusia
+hal ini juga membuktikan bahwa pendapat injil pada masa itu tidak akurat karena bagi mereka keberadaan manusia adalah sm tetapi menurut studi geologi umur bumi jauh lebih tua dari waktu yang dikemukakan oleh injil
+sistem tiga zaman yang diperkenalkan oleh christian jurgensen thompsen telah memfasilitasi pembagian waktu berdasarkan artefak yaitu zaman batu zaman perunggu dan zaman besi
+namun jacques boucher de perthes pada tahun sebelumnya menganjurkan gagasan bahwa arkeologi manusia jauh lebih awal dari tahun
+dia juga salah satu tokoh yang berpendapat bahwa arkeologi sejarah dapat dipetakan menurut periode geologi
+hasilnya studi stratigrafi dikembangkan lebih lanjut oleh william smith di kents cavern inggris
+teori evolusi charles darwin dicetuskan awalnya dari matlamat ingin mengkaji kepurbakalaan manusia
+teorinya perihal asas mengenai proses evolusi manusia daripada spesis primat primitf kepada manusia modern dan dibukukan pada tahun the descent of man yang sehingga kini terkesan dalam kajian asal usul manusia
+idea beliau juga menyebabkan kajian terhadap kepurbakalaan manusia dilakukan berdasarkan tinggalan kebudayaan
+selama ini pula arkeologi tua berkontribusi banyak pada perkembangan bidang tersebut
+di antaranya adalah teknik untuk memahami hieroglif dari studi batu rosetta oleh jeanfrancois champollion penemuan patung besar asiria dan perpustakaan tulisan paku di kuyunjik oleh paul emile botta austen henry layard dan henry rawlinson penemuan dan studi tentang sisasisa budaya maya di yucatan meksiko oleh john lloyd stephen penggalian situs awamoa di selandia baru oleh walter mantell pada tahun dan yang terpenting teknik penggalian sistematis oleh jenderal august lanefox pittrivers di wor barrow cranborne chase di selatan inggris
+perkembangan terkini juga telah menyaksikan munculnya banyak museum dan kelompok penelitian arkeologi seperti british archaeological association romischgermanisches zentralmuseum smithsonian institution washington dc peabody museum harvard egypt exploration society
+museum naturhistorisches wina dan museum fur volkerkunde berlin
+arkeologi kuno atau yang dikenal dengan arkeologi tradisional merupakan era dimana lebih banyak perbaikan dari sudut pandang teoritis dan metodologis
+penggalian juga dilakukan dan temuan penting juga ditemukan dan dicatat seperti penemuan makam tutankhamun penguburan ur di chalees dan gua prasejarah lascaux
+teknik survei seperti aplikasi fotografi dikembangkan oleh ogs crawford sedangkan dalam hal teknik penggalian mereka lebih teliti dan lebih baik dari sebelumnya dalam hal penggalian pencatatan ilustrasi dan interpretasi yang dipopulerkan oleh mortimer wheeler di situs penggalian di inggris selatan dan utara prancis antara hingga
+lebih banyak penelitian ilmiah mulai dilakukan dalam metodologi penelitian terutama dalam proyek penggalian di inggris dan prancis
+lennart von post telah mengembangkan teknik rekonstruksi tumbuhan purba berdasarkan studi serbuk sari pada tahun an
+teknik ini diperkenalkan lebih lanjut oleh grahame clark di inggris termasuk pendekatan aspek ekonomi yang digunakan dalam pemahaman masyarakat prasejarah pada tahun hingga di situs star carr yorkshire inggris bagian utara
+setelah perang dunia ii metode penanggalan radiokarbon pertama kali diperkenalkan oleh willard libby
+penanggalan menggunakan karbon ini mengubah banyak informasi tentang masa lalu dan ini dapat dilihat di situs perunggu aegaen di vinca beograd yang sebelumnya dianggap sebagai situs dari periode neolitik akhir dari tahun hingga
+metode ini divalidasi dan diterima pada tahun
+arkeologi baru diperkenalkan oleh lewis binford seorang arkeolog asal amerika serikat dan david clarke dari inggris pada pertengahan an
+di indonesia perkembangan arkeologi dimulai dari lembagalembaga yang bergerak di bidang kebudayaan seperti koninklijk bataviaasch genootschap van kunsten en wetenschappen yang kemudian di jakarta mendirikan museum tertua sekarang menjadi museum nasional indonesia
+lembaga pemerintah pada masa kolonial yang bergerak di bidang arkeologi adalah oudheidkundige dienst yang banyak membuat survei dan pemugaran atas bangunanbangunan purbakala terutama candi
+pada masa kemerdekaan lembaga tersebut menjadi dinas purbakala hingga berkembang sekarang menjadi berbagai lembaga seperti balai pelestarian peninggalan purbakala dan balai arkeologi yang tersebar di daerahdaerah dan direktorat purbakala serta pusat penelitian dan pengembangan arkeologi nasional di jakarta
+di samping itu terdapat perguruan tinggi yang membuka jurusan arkeologi untuk mendidik tenaga sarjana di bidang arkeologi
+perguruanperguruan tinggi tersebut adalah universitas indonesia universitas gadjah mada universitas hasanuddin universitas udayana universitas jambi dan universitas haluoleo
+ahli arkeologi indonesia terhimpun dalam ikatan ahli arkeologi indonesia atau iaai
+tokohtokoh arkeologi indonesia yang terkenal antara lain adalah r
+soekmono yang mengepalai pemugaran candi borobudur dan rp soejono yang merupakan pendiri dan ketua ikatan ahli arkeologi indonesia pertama dan mantan kepala pusat penelitian arkeologi nasional
+disiplin arkeologi indonesia masih secara kuat diwarnai dengan pembagian kronologis yaitu periode prasejarah periode klasik periode islam serta periode kolonial
+oleh karena itu dalam arkeologi indonesia dikenal spesialisasi menurut periode yaitu arkeologi prasejarah arkeologi klasik arkeologi islam serta arkeologi kolonial
+satu keistimewaan dari arkeologi indonesia adalah masuknya disiplin epigrafi yang menekuni pembacaan prasasti kuno
+pada perkembangan sekarang telah berkembang minatminat khusus seperti etnoarkeologi arkeologi bawah air dan arkeometri
+terdapat pula subdisiplin yang berkembang karena persinggungan dengan ilmu lain seperti arkeologi lingkungan atau arkeologi ekologi arkeologi ekonomi arkeologi seni arkeologi demografi dan arkeologi arsitektur
+antropologi adalah ilmu tentang manusia
+antropologi berasal dari kata yunani yang berarti manusia atau orang dan logos yang berarti wacana atau secara etimologis antropologi berarti ilmu yang mempelajari manusia
+dalam melakukan kajian terhadap manusia antropologi mengedepankan dua konsep penting yaitu holistik dan komparatif
+karena itu kajian antropologi sangat memperhatikan aspek sejarah dan penjelasan menyeluruh untuk menggambarkan manusia melalui pengetahuan ilmu sosial ilmu hayati dan juga humaniora
+antropologi bertujuan untuk lebih memahami dan mengapresiasi manusia sebagai entitas biologis homo sapiens dan makhluk sosial dalam kerangka kerja yang interdisipliner dan komprehensif
+oleh karena itu antropologi menggunakan teori evolusi biologi dalam memberikan arti dan fakta sejarah dalam menjelaskan perjalanan umat manusia di bumi sejak awal kemunculannya
+antropologi juga menggunakan kajian lintasbudaya dalam menekankan dan menjelaskan perbedaan antara kelompokkelompok manusia dalam perspektif material budaya perilaku sosial bahasa dan pandangan hidup
+dengan orientasinya yang holistik antropologi dibagi menjadi empat cabang ilmu yang saling berkaitan yaitu antropologi biologi antropologi sosial budaya arkeologi dan linguistik
+keempat cabang tersebut memiliki kajiankajian konsentrasi tersendiri dalam kekhususan akademik dan penelitian ilmiah dengan topik yang unik dan metode penelitian yang berbedabeda
+antropologi lahir atau berawal dari ketertarikan orangorang eropa pada ciriciri fisik adat istiadat dan budaya etnisetnis lain yang berbeda dari masyarakat yang dikenal di eropa
+pada saat itu kajian antropologi lebih memusatkan pada penduduk yang merupakan masyarakat tunggal tunggal dalam arti kesatuan masyarakat yang tinggal di suatu kawasan geografis yang sama memiliki ciri fisik dan bahasa yang digunakan serupa serta cara hidup yang sama
+namun demikian dalam perkembangannya ilmu antropologi kemudian tidak lagi hanya mempelajari kelompok manusia tunggal yang mendiami suatu wilayah geografis yang sama
+kajiankajian antropologi mengenai isuisu migrasi misalnya kemudian melahirkan penelitianpenelitian etnografis multisitus
+hal ini terjadi karena dalam perkembangannya pergerakan manusia baik dalam satu kawasan regional tertentu hingga dalam cakupan global adalah fenomena yang semakin umum terjadi
+antropologi merupakan disiplin ilmu yang luas di mana humaniora sosial dan ilmu pengetahuan alam digabung dalam menjelaskan apa itu manusia dan artinya menjadi manusia
+antropologi dibangun berdasarkan pengetahuan dari ilmu alam termasuk penemuan tentang asal usul dan evolusi homo sapiens ciriciri fisik manusia perilaku manusia variasi di antara berbagai kelompok manusia bagaimana masa lalu evolusi homo sapiens telah memengaruhi organisasi dan budaya sosial
+serta dari ilmuilmu sosial antropologi memelajari organisasi hubungan manusia sosial dan budaya sistem keturunan dan hubungan kekerabatan spiritualitas dan religi lembaga konflik sosial dan lainlain
+antropologi awal berasal dari yunani klasik dan persia yang memelajari dan mencoba untuk memahami keragaman budaya yang dapat diamati
+pada saat ini antropologi telah menjadi sentral dalam pengembangan beberapa bidang interdisipliner baru seperti ilmu kognitif studi globalisasi genetik dan berbagai penelitian etnis
+antropologi biologi atau juga disebut antropologi fisik merupakan cabang ilmu antropologi yang memelajari manusia dan primata bukan manusia dalam arti biologis evolusi dan demografi
+antropologi biologifisik memfokuskan pada faktor biologis dan sosial yang memengaruhi evolusi manusia dan primata lainnya yang menghasilkan mempertahankan atau mengubah variasi genetik dan fisiologisnya pada saat ini
+antropologi sosial merupakan studi yang mempelajari hubungan antara orangorang dan kelompok
+sementara antropologi budaya merupakan studi komparasi bagaimana orangorang memahami dunia di sekitar mereka dengan cara yang berbedabeda
+antropologi sosial berkaitan erat dengan sosiologi dan sejarah yang bertujuan mencari pemahaman struktur sosial dari suatu kelompok sosial yang berbeda seperti subkultur etnik dan kelompok minoritas
+antropologi budaya lebih berhubungan dengan filsafat literatur atau sastra dan seni tentang bagaimana suatu kebudayaan memengaruhi pengalaman seseorang dan kelompok memberikan kontribusi untuk pemahaman yang lebih lengkap terhadap pengetahuan adat istiadat dan pranata masyarakat
+dalam praktiknya tidak ada perbedaan yang sangat mencolok antara antropologi sosial dan antropologi budaya dan bahkan sering saling tumpang tindih di antara keduanya
+filsafat antropologi dahulu dikenal sebagai filsafat psikologis yang dapat diartikan sebagai sebuah disiplin filsafat yang berkembang pada sekitar abad ke dengan tujuan untuk membuktikan gagasan atau pemikiran tentang kapasitas konseptual pikiran kehendak bebas dan jiwa spiritual
+filsafat ini adalah perkembangan dari psikologi rasional yang dipelopori oleh christian von wolff
+psikologi rasional merupakan ilmu yang mempelajari tentang teoriteori metafisika atas pikiran dan jiwa serta dapat mampu menjelaskan terkait psikologi empris yang terbatas hanya pada jiwa yang dapat diamati atau observasi saja
+adapun beberapa ilmu alam yang memengaruhi kajian psikologis tentang jiwa tetapi menjauhkannya dari pertanyaan yang berkaitan dengan teoriteori metafisika
+banyak kritik yang muncul terhadap filsafat psikologi salah satunya datang dari kant yang berpendapat bahwa kesadaran dari individu yang berpikir bukanlah sebagai kondisi realitas yang terjadi
+individu tidak dapat mencapai identitas dirinya hanya dengan melakukan proses berpikir saja tetapi harus menggali dari diri sendiri lewat introspeksi sebagaimana dari teoriteori filsafat psikologi kita juga harus mengamati sisisisi kemanusiaan termasuk sejarah karyakarya literatur dan budaya bangsa lain
+kritik dan saran dari kant inilah yang mengawali perubahan pendekatan dari filsafat psikologi atas jiwa menjadi filsafat antropologi psikologis yang cakupannya menjadi lebih luas
+metode yang digunakan dalam studi antropologi psikologis adalah menggunakan konsepsi psikologi bahwa watak atau karakter individu dibentuk dari pola ash yang didapatkan dari orang tua keluarga dan lingkungannya sewaktu masih kecil
+studi antropologi psikologis terkait fenomena psikologis dengan menggunakan istilah karakter tidak terlalu diminati oleh para peneliti sementara yang paling sering muncul dalam penelitian adalah istilah kepribadian atau dalam konsep generik disebut dengan culture and personality
+kedua istilah tersebut masih mengarah kepada kondisi psikologis manusia dimana karakter dapat disamakan dengan istilah kepribadian dan dapat dikatakan bahwa karakter tergambar dari kepribadian individu
+dalam memahami fenomena karakter dalam suatu masyarakat individu harus melihat dari sudut pandang antropologi psikologis
+proses membentuk dan mengembangkan karakter suatu masyarakat berfokus pada perkembangan dan kondisi psikologis dari manusia yang hidup dalam masyarakat tersebut serta pengalaman individu dan lingkungan sosial menjadi sebuah rangkaian proses yang berkontribusi kepada pembentukan karakter itu sendiri
+kajian antropologi psikologis menjadi penghubung antara studi tentang kebudayaan dan kepribadian dalam menjelaskan suatu kelompok masyarakat atau suku bangsa
+kajian tentang karakter dalam masyarakat pada studistudi antropologi dimasukkan ke dalam kajian antropologi psikologi dengan memfokuskan kepada konsep utama yakni kepribadian
+terbentuknya karakter masyarakat berada dalam konteks kebudayaan suatu masyarakat dapat membetuk pula kepribadian tetapi sangat bergantung kepada proses pembelajaran dalam perilaku individu yang mendukung kebudayaan tersebut
+faktor yang memengaruhi pandangan antropologi dari sudut pandang antropologi psikologis adalah individu dapat memilih kebudayaan sendiri saat dimensi psikologisnya sesuai dengan kebudayaan tersebut
+mengenai pendekatan sistem dalam antropologi psikologis yaitu perilaku individu sebagai masalah sosial yang bersumber dari sistem sosial
+individu dapat menjadi atau berperilaku burukjelek apabila masuk ke dalam lingkungan masyarakat yang buruk pula
+pada umumnya masyarakat yang mengalami gejala disorganisasi sosial norma dan nilai sosial menjadi lemah sehingga dapat mengakibatkan terjadinya berbagai bentuk penyimpangan perilaku
+penyimpangan tingkah laku atau pelanggaran terhadap normanorma yang ada disebabkan oleh berbagai faktor baik faktor pribadi faktor keluarga yang merupakan lingkungan utama maupun faktor lingkungan sekitar yang secara potensial dapat membentuk perilaku individu
+dalam kasus krisis identitas yang dialami individu tidak hanya berdampak psikologis tetapi juga berpengaruh dalam perilaku sosial mereka
+akibatnya muncul hambatanhambatan dalam melakukan hubungan sosial sehingga umumnya dalam melakukan hubungan sosial secara lebih luas individu akan sulit membuat dirinya membaur ke dalam struktur sosial yang ada dalam masyarakat
+pada model pendekatan psikosomatik dalam aliran psikologi penyakit akan berkembang mengikuti hubungan antara fisik dan mental yang saling memperkuat satu sama lain melalui sistem timbal balik
+psikosomatis ditunjukkan oleh hubungan jiwa dan badan sehingga proses psikologis sangat berperan penting
+aspekaspek psikologis seperti kepercayaan dan pola pikir yang tidak sehat akan berpengaruh pada munculnya berbagai penyakit fisik
+pendekatan tersebut sering disebut sebagai pendekatan biopsikososial yaitu suatu konsep yang menjelaskan bahwa terdapat interaksi antara kondisi biologis psikologis dan sosial untuk memahami penyakit dan proses sakit yang dialami oleh individu
+kondisi sakit tidak disebabkan oleh faktor biologis saja melainkan juga faktor psikologis dan lingkungan sosial yang ada disekitar individu seperti keluarga dan kelompok masyarakat
+dalam ilmu antropologi terdapat salah satu fokus kajian tentang perilaku komunikasi khususnya etnografi komunikasi yang diartikan sebagai perilaku yang terbentuk dari tiga integrasi keterampilan yang dimiliki oleh setiap individu sebagai makhluk sosial yaitu keterampilan linguistik keterampilan interaksi dan keterampilan budaya
+perilaku komunikasi menuntut adanya suatu bentuk penguasaan dari beberapa keterampilan dan kompetensi baik dalam bentuk keterampilan linguistik atau bahasa keterampilan berinteraksi dan keterampilan budaya dalam berperilaku dari individu
+perilaku komunikasi dipahami sebagai bentuk integrasi dari dua kata yaitu perilaku dan komunikasi
+perilaku atau yang disebut dengan istilah aktivitas diartikan sebagai bagian dari konsep stimulus dan respons dalam teori psikologi
+kata perilaku juga dapat diartikan sebagai sebuah perbuatan yang dapat dibagi menjadi dua macam seperti perbuatan terbuka dan tertutup
+perilaku yang terbuka adalah perilaku yang dapat diamati secara langsung melalui pancaindera
+perilaku tertutup adalah perilaku yang tidak dapat diamati secara langsung
+berdasar pada pemahaman dalam ruang lingkup kajian psikologi perilaku komunikasi merupakan bagian dari perilaku sosial
+perilaku komunikasi pada individu dipahami sebagai fungsi interaksi atas masukan dari situasi sosial dan karakteristik individual
+situasi sosial yang dimaksud adalah segala sesuatu yang dapat memengaruhi perilaku individu yang bersifat eksternal dan lebih diartikan sebagai faktorfaktor yang berasal dari luar diri individu atau disebut dengan faktor lingkungan
+faktor lingkungan dalam klasifikasinya dapat dibagi menjadi dua bagian lingkugan fisik dan lingkungan sosial
+seperti halnya sosiologi antropologi sebagai sebuah ilmu juga mengalami tahapantahapan dalam perkembangannya
+sekitar abad ke bangsabangsa di eropa mulai berlombalomba untuk menjelajahi dunia
+mulai dari afrika amerika asia hingga ke australia
+dalam penjelajahannya mereka banyak menemukan halhal baru
+mereka juga banyak menjumpai sukusuku yang asing bagi mereka
+kisahkisah petualangan dan penemuan mereka kemudian mereka catat di buku harian ataupun jurnal perjalanan
+mereka mencatat segala sesuatu yang berhubungan dengan sukusuku asing tersebut
+mulai dari ciriciri fisik kebudayaan susunan masyarakat atau bahasa dari suku tersebut
+bahanbahan yang berisi tentang deskripsi suku asing tersebut kemudian dikenal dengan bahan etnografi atau deskripsi tentang bangsabangsa
+bahan etnografi itu menarik perhatian pelajarpelajar di eropa
+kemudian pada permulaan abad ke perhatian bangsa eropa terhadap bahanbahan etnografi suku luar eropa dari sudut pandang ilmiah menjadi sangat besar sehingga timbul usahausaha untuk mengintegrasikan seluruh himpunan bahan etnografi tersebut
+oleh sebab itu juga pada fase pertama ini ilmu antropologi sangat identik dengan ilmu etnografi
+pada fase ini bahanbahan etnografi tersebut telah disusun menjadi karangankarangan berdasarkan cara berpikir evolusi masyarakat pada saat itu
+masyarakat dan kebudayaan berevolusi secara perlahanlahan dan dalam jangka waktu yang lama
+mereka menganggap bangsabangsa selain eropa sebagai bangsabangsa primitif yang tertinggal dan menganggap eropa sebagai bangsa yang tinggi kebudayaannya pada fase ini antopologi bertujuan akademis dan mulai berkembang sebagai studi kontemporer mengenai ras manusia anatomi manusia sejarah pemukiman manusia klasifikasi bahasa serta perbandingan antara masyarakat primitif dan kuno
+mereka mempelajari masyarakat dan kebudayaan primitif dengan maksud untuk memperoleh pemahaman tentang tingkattingkat sejarah penyebaran kebudayaan manusia
+pada fase ini negaranegara di eropa berlombalomba membangun koloni di benua lain seperti asia amerika australia dan afrika
+dalam rangka membangun kolonikoloni tersebut muncul berbagai kendala seperti serangan dari bangsa asli pemberontakanpemberontakan cuaca yang kurang cocok bagi bangsa eropa serta hambatanhambatan lain
+dalam menghadapinya pemerintahan kolonial negara eropa berusaha mencaricari kelemahan suku asli untuk kemudian menaklukannya
+untuk itulah mereka mulai mempelajari bahanbahan etnografi tentang sukusuku bangsa di luar eropa mempelajari kebudayaan dan kebiasaannya untuk kepentingan pemerintah kolonial
+pada fase ini antropologi berkembang secara pesat
+kebudayaankebudayaan suku bangsa asli yang di jajah bangsa eropa mulai hilang akibat terpengaruh kebudayaan bangsa eropa
+pada masa ini pula terjadi sebuah perang besar di eropa perang dunia ii
+perang ini membawa banyak perubahan dalam kehidupan manusia dan membawa sebagian besar negaranegara di dunia kepada kehancuran total
+kehancuran itu menghasilkan kemiskinan kesenjangan sosial dan kesengsaraan yang tak berujung
+namun pada saat itu juga muncul semangat nasionalisme bangsabangsa yang dijajah eropa untuk keluar dari belenggu penjajahan
+sebagian dari bangsabangsa tersebut berhasil mereka
+namun banyak masyarakatnya yang masih memendam dendam terhadap bangsa eropa yang telah menjajah mereka selama bertahuntahun
+prosesproses perubahan tersebut menyebabkan perhatian ilmu antropologi tidak lagi ditujukan kepada penduduk pedesaan di luar eropa tetapi juga kepada suku bangsa di daerah pedalaman eropa seperti suku bangsa soami flam dan lapp
+sebelum perang dunia ii studi antropologi di indonesia banyak dilakukan oleh para cendekiawan belanda di universitasuniversitas atau institusi lain
+beberapa karya yang dihasilkan adalah penelitian hukum adat oleh c
+van vollenhoven dan j
+prins serta pengembangan materi antropologi indonesia oleh r
+kennedy gj held ag gerbrands pe de josselin de jong dan koentjaraningrat
+setelah kemerdekaan indonesia para antropolog belanda tidak lagi melanjutkan studinya di indonesia
+posisi mereka banyak digantikan oleh antropolog dari amerika serikat
+hal ini umum mengingat tingginya ketertarikan cendekiawan mereka pada asia tenggara pascaperang
+terdapat setidaknya tiga institusi penting di amerika serikat yang menjadi pusat penelitian antropologi indonesia yaitu universitas cornell institut teknologi massachusetts dan universitas yale
+universitas indonesia pertama kali membuka antropologi sebagai mata kuliah tambahan di fakultas hukum dan di fakultas sastra pada awal an
+semua pengajarnya berkebangsaan belanda
+pada saat itu terdapat dua pandangan di antara para akademisi
+yang pertama lebih menyukai sosiologi sementara yang lain lebih menyukai antropologi
+akademisi yang lebih menyukai sosiologi berpendapat bahwa antropologi tidak sesuai untuk negara berkembang dan didasarkan pada kepentingan kolonial
+yang menyukai antropologi menganggap antropologi penting dalam mengamati keragaman kelompok etnik di indonesia
+pada tahun dua orang indonesia yang menimba ilmu antropologi di belanda dan amerika serikat merencanakan pendirian program studi antropologi di fakultas sastra universitas indonesia
+mulai tahun ajaran prodi antropologi dipindahkan ke fakultas ilmu sosial
+pada tahun berdiri prodi antropologi di universitas gadjah mada dan di universitas cenderawasih
+menyusul pendirian prodi baru pada tahun di universitas sam ratulangie dan tahun di universitas udayana
+analisis leksikal adalah sebuah proses yang mendahului parsing
+ia menerima masukan serangkaian karakter dan menghasilkan deretan simbol yang masingmasing dinamakan token proses parsing akan lebih mudah dilakukan bila inputnya sudah berupa token
+analisis leksikal terdiri dari dua tahap
+tahap pertama adalah pemindaian scanner biasanya dibuat berdasarkan prinsip finite state machine
+pada tahap ini scanner akan membaca input karakterkekarakter mengubah keadaannya sendiri berdasarkan karakter yang tengah dibaca
+setiap kondisi final akan dicatat bersama dengan lokasi input
+pada akhirnya scanner akan menemui keadaan penolakan yang tidak akan berubah dengan input karakter apapun
+deteksi rekursi semacam ini akan mengakhiri proses pemindaian dan memindahkan keadaan scanner ke keadaan final terakhir dan karenanya menyimpan informasi jenis dan besar leksem valid yang terpanjang di dalam input
+namun lexeme tersebut belum punya nilai semantik apapun pemberian nilai semantik pada setiap unit leksikal adalah tugas dari evaluator yang memeriksa semua karakter setiap lexeme dan memberinya nilai tertentu
+saat sebuah lexeme telah memiliki informasi mengenai tipe dan nilainya ia dapat secara valid disebut sebagai token
+analisis leksikal membuat pekerjaan parser jadi lebih mudah daripada membangun nama setiap fungsi dan variabel dari karakterkarakter yang menyusunnya dengan analisis leksikal parser cukup hanya berurusan dengan sekumpulan token dan nilai sintaksis masingmasing
+terlepas dari efisiensi pemrograman yang dapat dicapai dengan penggunaannya proses kerja analisis leksikal yang membaca lebih dari sekali setiap karakter dari input yang diberikan menjadikan penganalisis leksikal sebagai subsistem yang paling intensif melakukan komputasi terutama bila digunakan dalam sebuah kompilator
+bahasa indonesia adalah bahasa nasional dan resmi di seluruh wilayah indonesia
+ini merupakan bahasa komunikasi resmi diajarkan di sekolahsekolah dan digunakan untuk penyiaran di media elektronik dan digital
+sebagai negara dengan tingkat multilingual teratas di dunia mayoritas orang indonesia juga mampu bertutur dalam bahasa daerah atau bahasa suku mereka sendiri dengan yang paling banyak dituturkan adalah bahasa jawa dan sunda yang juga memberikan pengaruh besar ke dalam elemen bahasa indonesia itu sendiri
+dengan penutur bahasa yang besar di seantero negeri beserta dengan diaspora yang tinggal di luar negeri bahasa indonesia masuk sebagai salah satu bahasa yang paling banyak digunakan atau dituturkan di seluruh dunia
+selain dalam skala nasional bahasa indonesia juga diakui sebagai salah satu bahasa resmi di negara lain seperti timor leste
+bahasa indonesia juga secara resmi diajarkan dan digunakan di sekolah universitas maupun institusi di seluruh dunia terutama di australia belanda jepang korea selatan timor leste vietnam taiwan amerika serikat inggris dll
+memiliki keterikatan sejarah yang panjang dengan bangsabangsa eropa khususnya sejak era kolonialisme beberapa kosakata indonesia telah diserap ke dalam beberapa bahasa eropa terutama bahasa belanda dan inggris
+bahasa indonesia sendiri juga memiliki banyak kata serapan yang berasal dari bahasabahasa eropa terutama dari bahasa belanda portugis spanyol dan inggris
+bahasa indonesia juga memiliki kata serapan yang berasal dari bahasa sanskerta tionghoa dan arab yang membaur menjadi elemen dalam bahasa indonesia yang terpengaruh karena adanya faktorfaktor seperti aktivitas perdagangan maupun religius yang telah berlangsung sejak zaman kuno di wilayah kepulauan indonesia
+akar bahasa indonesia baku adalah bahasa melayu riau sedangkan akar bahasa indonesia gaul jakarta adalah bahasa betawi
+dalam perkembangannya bahasa ini mengalami perubahan akibat penggunaannya sebagai bahasa kerja di lingkungan administrasi kolonial dan berbagai proses pembakuan sejak awal abad ke
+penamaan bahasa indonesia diawali sejak dicanangkannya sumpah pemuda pada oktober untuk menghindari kesan imperialisme bahasa apabila nama bahasa melayu tetap digunakan
+proses ini menyebabkan berbedanya bahasa indonesia saat ini dari varian bahasa melayu yang digunakan di riau dan kepulauan maupun semenanjung malaya
+hingga saat ini bahasa indonesia merupakan bahasa yang hidup yang terus menghasilkan katakata baru baik melalui penciptaan maupun penyerapan dari bahasa daerah dan bahasa asing
+pada tahun setidaknya terdapat ribu jumlah kosakata dalam kamus bahasa indonesia yang sebagian besar diadopsi dari bahasa melayu
+hingga sekarang jumlah kosakata dalam kamus bahasa indonesia terus bertambah
+meskipun dipahami dan dituturkan oleh lebih dari warga indonesia bahasa indonesia bukanlah bahasa ibu bagi kebanyakan penuturnya
+sebagian besar warga indonesia menggunakan salah satu dari bahasa yang ada di indonesia sebagai bahasa ibu
+istilah bahasa indonesia paling umum dikaitkan dengan bentuk baku yang digunakan dalam situasi resmi
+ragam bahasa baku tersebut berhubungan diglosik dengan bentukbentuk bahasa melayu vernakular yang digunakan sebagai peranti komunikasi seharihari
+artinya penutur bahasa indonesia kerap kali menggunakan ragam seharihari danatau mencampuradukkan dengan dialek melayu lainnya atau bahasa ibunya
+meskipun demikian bahasa indonesia digunakan sangat luas di perguruanperguruan di media massa sastra perangkat lunak suratmenyurat resmi dan berbagai forum publik lainnya sehingga dapatlah dikatakan bahwa bahasa indonesia digunakan oleh semua warga indonesia
+fonologi dan tata bahasa bahasa indonesia dianggap relatif mudah
+menurut sebagian peneliti dasardasar yang penting untuk komunikasi dasar dapat dipelajari hanya dalam kurun waktu beberapa minggu
+istilah bahasa indonesia juga terkadang digunakan dalam bahasa inggris dan bahasa lain untuk menyebut bahasa nasional indonesia
+bahasa indonesia terkadang disingkat menjadi bahasa oleh orang asing yang menganggap bahwa itu adalah nama bahasanya
+namun kata bahasa hanya berarti bahasa
+misalnya korean language diterjemahkan menjadi bahasa korea
+orang indonesia pada umumnya tidak menggunakan kata bahasa saja untuk menyebut bahasa nasionalnya
+sejumlah prasasti berbahasa melayu kuno dari sriwijaya ditemukan di pesisir tenggara pulau sumatra
+hal ini menunjukkan bahwa bahasa melayu menyebar ke berbagai tempat di nusantara dari wilayah yang strategis untuk pelayaran dan perdagangan
+bahasa melayu kuno yang digunakan pada saat itu menunjukkan penggunaan awalan ni dan mer bukan di dan ber
+contohnya merwuat berbuat melakukan dan nimakan dimakan
+ini menunjukkan kemiripan dan relasi dengan bahasa protomelayupolinesia dan protoaustronesia
+kedua awalan ini muncul di prasastiprasasti tersebut
+huruf h di awal kata masih dijaga mencerminkan asalnya utamanya dari bahasa protoaustronesia q
+contohnya pada kata hujung ujung dan mahu mau bermaksud
+di beberapa dialek dan bahasa melayu modern h di awal kata masih dijaga sementara pada yang lain hilang atau dianggap tidak baku
+misalnya item hitam dan hutang utang
+namun beberapa kata seperti hati tidak berubah menjadi ati dalam bahasa indonesia
+hilangnya huruf h ini dapat didorong oleh pengucapan r yang cenderung uvular lokasi yang hampir sama dengan h
+sementara itu istilah melayu adalah sebutan untuk kerajaan melayu sebuah kerajaan hindubuddha yang bertempat di hulu sungai batang hari
+pada awalnya istilah tersebut merujuk pada wilayah kerajaan melayu yang yang merupakan bagian wilayah pulau sumatra
+namun seiring berkembangnya zaman istilah melayu mencakup wilayah geografis tidak hanya merujuk pada kerajaan melayu melainkan negerinegeri di pulau sumatra
+bahasa melayu kuno yang berkembang di sumatra memiliki logat o yang digunakan pada melayu jambi minangkabau kerinci palembang dan bengkulu
+dalam perkembangannya bangsa melayu melakukan migrasi besarbesaran ke semenanjung malaysia dan kerajaankerajaan islam yang pusat mandalanya adalah kesultanan malaka pada masa perkembangannya
+istilah melayu kemudian bergeser kepada semenanjung malaka yang akhirnya disebut semenanjung melayu atau semenanjung tanah melayu
+akan tetapi kenyataannya adalah istilah melayu itu berasal dari indonesia
+bahasa melayu yang berkembang di sekitar daerah semenanjung malaka berlogat e
+pada tahun kesultanan malaka dimusnahkan oleh portugis sehingga penduduknya diaspora sampai ke kawasan timur kepulauan nusantara
+bahasa melayu purba sendiri diduga berasal dari pulau kalimantan yang membuat kemungkinan bahwa pemakai bahasa melayu pertama bukanlah penduduk sumatra melainkan kalimantan
+suku dayak diduga memiliki hubungan dengan suku melayu kuno di sumatra misalnya dayak salako dayak kanayatn dan dayak iban
+aksen melayu pada saat itu berlogat a seperti bahasa melayu baku
+penduduk sumatra menuturkan bahasa melayu setelah kedatangan leluhur suku nias dan suku mentawai
+dalam perkembangannya istilah melayu kemudian mengalami perluasan makna sehingga muncul istilah kepulauan melayu untuk menamakan kepulauan nusantara
+secara sudut pandang historis istilah melayu juga dipakai sebagai nama bangsa yang menjadi nenek moyang penduduk kepulauan nusantara terutama dalam konsep proto melayu dan deuteromelayu migrasi bangsa melayu yang dibagi dalam dua gelombang
+saat ini konsep dua gelombang migrasi tersebut sudah dianggap usang karena sekarang dipahami bahwa nenek moyang penduduk kepulauan nusantara dikenal sebagai rumpun melayupolinesia salah satu dari dua cabang utama suku bangsa austronesia
+selanjutnya setelah sampai pada kedatangan dan perkembangan agama islam suku melayu sebagai etnik mengalami penyempitan makna menjadi etnoreligius yang sebenarnya di dalamnya juga telah mengalami amalgamasi dari beberapa unsur etnik
+muhar omtatok seorang seniman budayawan dan sejarawan menjelaskan sebagai berikut melayu secara puak bukan dilihat dari faktor genekologi seperti kebanyakan puakpuak lain
+di malaysia tetap mengaku berpuak melayu walau moyang mereka berpuak jawa mandailing bugis keling dan lainnya
+beberapa tempat di sumatra utara ada beberapa komunitas berdarah batak yang mengaku sebagai orang kampongpuak melayu
+diketahui kerajaan sriwijaya menuturkan bahasa melayu sebagai bahasa kenegaraan sejak abad ke m
+lima prasasti kuno yang ditemukan di sumatra bagian selatan peninggalan kerajaan itu menggunakan bahasa melayu yang bertaburan katakata pinjaman dari bahasa sanskerta suatu bahasa indoeropa dari cabang indoiran
+jangkauan penggunaan bahasa ini diketahui cukup luas karena ditemukan juga dokumendokumen dari abad berikutnya di pulau jawa dan pulau luzon
+sejak itu katakata seperti istri raja putra kawin dan lainlain masuk pada periode tersebut hingga abad ke m
+pada abad ke berkembang bentuk yang dianggap sebagai bahasa melayu klasik
+bentuk ini dipakai oleh kesultanan melaka yang perkembangannya kelak disebut sebagai bahasa melayu tinggi
+penggunaannya terbatas di kalangan keluarga kerajaan di sekitar sumatra jawa dan semenanjung malaya
+laporan portugis misalnya oleh tome pires menyebutkan adanya bahasa yang dipahami oleh semua pedagang di wilayah sumatra dan jawa
+magellan dilaporkan memiliki budak dari nusantara yang menjadi juru bahasa di wilayah itu
+ciri paling menonjol dalam ragam sejarah ini adalah mulai masuknya katakata pinjaman dari bahasa arab dan bahasa parsi sebagai akibat dari penyebaran agama islam yang mulai masuk sejak abad ke
+katakata bahasa arab seperti masjid kalbu kitab kursi selamat dan kertas serta katakata parsi seperti anggur cambuk dewan saudagar tamasya dan tembakau masuk pada periode ini
+proses penyerapan dari bahasa arab terus berlangsung hingga sekarang
+kedatangan pedagang portugis diikuti oleh belanda spanyol dan inggris meningkatkan informasi dan mengubah kebiasaan masyarakat pengguna bahasa melayu
+bahasa portugis banyak memperkaya katakata untuk kebiasaan eropa dalam kehidupan seharihari seperti gereja sepatu sabun meja bola bolu dan jendela
+bahasa belanda terutama banyak memberi pengayaan di bidang administrasi kegiatan resmi dan teknologi hingga awal abad ke
+katakata seperti asbak polisi kulkas knalpot dan stempel adalah pinjaman dari bahasa ini
+bahasa yang dipakai pendatang dari tiongkok juga lambat laun dipakai oleh penutur bahasa melayu akibat kontak di antara mereka yang mulai intensif di bawah penjajahan belanda
+sudah dapat diduga katakata tionghoa yang masuk biasanya berkaitan dengan perniagaan dan keperluan seharihari seperti pisau tauge tahu loteng teko tauke dan cukong
+jan huyghen van linschoten pada abad ke dan alfred russel wallace pada abad ke menyatakan bahwa bahasa orang melayu atau melaka dianggap sebagai bahasa yang paling penting di dunia timur
+luasnya penggunaan bahasa melayu ini melahirkan berbagai varian tempatan dan temporal
+bahasa perdagangan menggunakan bahasa melayu di berbagai pelabuhan nusantara bercampur dengan bahasa portugis bahasa tionghoa maupun bahasa setempat
+terjadi proses pemijinan di beberapa kota pelabuhan di kawasan timur nusantara misalnya di manado ambon dan kupang
+orangorang tionghoa di semarang dan surabaya juga menggunakan varian bahasa melayu pijin
+terdapat pula bahasa melayu tionghoa di batavia
+varian yang terakhir ini malah dipakai sebagai bahasa pengantar bagi beberapa surat kabar pertama berbahasa melayu
+varianvarian lokal ini secara umum dinamakan bahasa melayu pasar oleh para peneliti bahasa
+terobosan penting terjadi ketika pada pertengahan abad ke raja ali haji dari istana riaujohor menulis kamus ekabahasa untuk bahasa melayu
+sejak saat itu dapat dikatakan bahwa bahasa ini adalah bahasa yang fullfledged sama tinggi dengan bahasabahasa internasional pada masa itu karena memiliki kaidah dan dokumentasi kata yang terdefinisi dengan jelas
+hingga akhir abad ke dapat dikatakan terdapat paling sedikit dua kelompok bahasa melayu yang dikenal masyarakat nusantara bahasa melayu pasar yang colloquial dan tidak baku serta bahasa melayu tinggi yang terbatas pemakaiannya tetapi memiliki standar
+bahasa ini dapat dikatakan sebagai lingua franca tetapi kebanyakan berstatus sebagai bahasa kedua atau ketiga
+pemerintah kolonial hindia belanda menyadari bahwa bahasa melayu dapat dipakai untuk membantu administrasi bagi kalangan pegawai pribumi karena penguasaan bahasa belanda para pegawai pribumi dinilai lemah
+dengan menyandarkan diri pada bahasa melayu tinggi sejumlah sarjana belanda mulai terlibat dalam pembakuan bahasa
+promosi bahasa melayu pun dilakukan di sekolahsekolah dan didukung dengan penerbitan karya sastra dalam bahasa melayu
+akibat pilihan ini terbentuklah embrio bahasa indonesia yang secara perlahan mulai terpisah dari bentuk semula bahasa melayu riaujohor
+pada awal abad ke perpecahan dalam bentuk baku tulisan bahasa melayu mulai terlihat
+pada tahun indonesia mengadopsi ejaan van ophuijsen dan pada tahun persekutuan tanah melayu di bawah inggris mengadopsi ejaan wilkinson
+ejaan van ophuijsen diawali dari penyusunan kitab logat melayu van ophuijsen dibantu oleh nawawi soetan makmoer dan moehammad taib soetan ibrahim
+intervensi pemerintah semakin kuat dengan dibentuknya commissie voor de volkslectuur pada tahun
+kelak lembaga ini menjadi balai pustaka
+pada tahun komisi ini di bawah pimpinan da rinkes melancarkan program taman poestaka dengan membentuk perpustakaan kecil di berbagai sekolah pribumi dan beberapa instansi milik pemerintah
+perkembangan program ini sangat pesat dalam dua tahun telah terbentuk sekitar perpustakaan
+badan penerbit ini menerbitkan novelnovel seperti siti nurbaya dan salah asuhan bukubuku penuntun bercocok tanam penuntun memelihara kesehatan yang tidak sedikit membantu penyebaran bahasa melayu di kalangan masyarakat luas
+bahasa melayu yang disebarkan oleh balai pustaka sesungguhnya merupakan bahasa melayu tinggi yang bersumber dari bahasa melayu riaulingga sedangkan bahasa melayu yang lebih populer dituturkan kala itu di hindia belanda adalah bahasa melayu rendah atau bahasa melayu pasar
+kwee tek hoay sastrawan melayu tionghoa mengkritik bahasa tinggi ini sebagai bahasa yang tidak alamiah seperti barang bikinan tidak mampu melukiskan tabiat dan tingkah laku sesungguhnya seperti pembicaraan dalam pertunjukan wayang yang tidak ditemukan dalam pembicaraan seharihari
+pada tanggal juni jahja datoek kajo menggunakan bahasa indonesia dalam pidatonya
+hal ini untuk pertama kalinya dalam sidang volksraad seseorang berpidato menggunakan bahasa indonesia
+bahasa indonesia mendapatkan pengakuan sebagai bahasa persatuan bangsa pada saat kongres pemuda ii tanggal oktober yang menghasilkan sumpah pemuda
+penggunaan bahasa melayu sebagai bahasa nasional berdasarkan usulan muhammad yamin
+dalam pidatonya pada kongres tersebut yamin mengatakan penggantian nama dari bahasa melayu menjadi bahasa indonesia mengikut usulan dari mohammad tabrani pada kongres pemuda i yang beranggapan bahwa jika tumpah darah dan bangsa tersebut dinamakan indonesia maka bahasanya pun harus disebut bahasa indonesia
+kata bahasa indonesia sendiri telah muncul dalam tulisantulisan tabrani sebelum sumpah pemuda diselenggarakan
+kata bahasa indonesia pertama kali muncul dalam harian hindia baroe pada tanggal januari
+pada februari di koran yang sama tulisan tabrani muncul dengan judul bahasa indonesia yang membahas tentang pentingnya nama bahasa indonesia dalam konteks perjuangan bangsa
+tabrani menutup tulisan tersebut dengan selanjutnya perkembangan bahasa dan kesusastraan indonesia banyak dipengaruhi oleh sastrawan minangkabau seperti marah rusli abdul muis nur sutan iskandar sutan takdir alisyahbana hamka roestam effendi idrus dan chairil anwar
+sastrawan tersebut banyak mengisi dan menambah perbendaharaan kata sintaksis maupun morfologi bahasa indonesia
+pada tahun berdiri sebuah angkatan sastrawan muda yang menamakan dirinya sebagai pujangga baru yang dipimpin oleh sutan takdir alisjahbana
+pada tahun sutan takdir alisjahbana menyusun tata bahasa baru bahasa indonesia
+meskipun pujangga baru membawa pembaruan bagi bahasa dan sastra indonesia tetapi bahasa yang dipakai masihlah bahasa melayu tinggi yang murni
+perbedaan bahasa melayu tinggi dan melayu rendah baru mulai pudar setelah munculnya chairil anwar
+pada tanggal juni dilangsungkan kongres bahasa indonesia i di solo
+dari hasil kongres itu dapat disimpulkan bahwa usaha pembinaan dan pengembangan bahasa indonesia telah dilakukan secara sadar oleh cendekiawan dan budayawan indonesia saat itu
+kongres bahasa indonesia kemudian rutin digelar lima tahunan untuk membahasa perkembangan bahasa indonesia
+meskipun menyandang nama bahasa persatuan bahasa indonesia digunakan sebagai bahasa ibu hanya oleh sebagian kecil saja dari penduduk indonesia sedangkan lebih dari juta orang lainnya menggunakan bahasa indonesia sebagai bahasa kedua dengan berbagai tingkat kemahiran
+sensus tahun menunjukkan hanya orang berusia di atas lima tahun yang menggunakan bahasa indonesia di rumah
