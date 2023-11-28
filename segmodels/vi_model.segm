@@ -1,4 +1,4 @@
-# Output from Morfessor Baseline 2.0.6, 2023-11-24 04:21:35
+# Output from Morfessor Baseline 2.0.6, 2023-11-28 03:01:20
 1 a
 1 aaa
 1 aa + chen
@@ -7,16 +7,16 @@
 1 aa + ron
 1 ab
 1 abb
-1 abb + a
-1 abbas
-1 abbas + id
+1 abba
+1 abba + s
+1 abba + s + i + d
 1 abb + ot + t
 1 ab + c
 1 abdelaziz
 1 abegweit
 1 abel
 1 a + bi
-1 abitur
+1 a + bi + tur
 1 abkhazia
 1 ablaut
 1 ab + out
@@ -30,14 +30,13 @@
 1 a + c + cor
 1 ace
 1 ace + r
-1 acetylsalicy + lic
+1 acetylsalicylic
 1 achaem + enid
 1 ache + son
 1 acid
-1 acid + base
 1 acid + cho
 1 acr
-1 a + cre
+1 acr + e
 1 act
 1 act + ion
 1 active
@@ -47,40 +46,41 @@
 1 ada
 1 ada + m
 1 ada + m + s
-1 ad + b + l + ock
+1 adblock
 1 ad + di + tion
 1 addons + mozilla + org
 1 adidas
-1 ad + obe
+1 ad + o + be
 1 ad + olf
 1 adolphe
-1 adolphe + basile
-1 adorno
+1 ador + no
 1 adr + ian
-1 adr + ien + paul
+1 adr + ien
 1 advanced
 1 advis + ory
 1 aegis
 1 ae + on
 1 afaka
 1 affir + mat + ive
-1 afghan + istan
+1 af + g + han + istan
 1 af + p
 1 afrika
 1 af + sha + rid
-1 ag
+1 a + g
 1 aga
+1 aga + in
 1 aga + tha
 1 age + n + c + y
 1 agilent
-1 ag + m
+1 a + g + m
 1 ah
+1 a + head
 1 ah + ern
 1 ahmed
 1 ai
 1 ai + dan
 1 aids
-1 ailen
+1 ai + le + n
 1 air
 1 airbnb
 1 air + line + s
@@ -90,19 +90,16 @@
 1 ajin
 1 ak
 1 ak + bar
-1 akhmatova
+1 a + kh + mat + ova
 1 akkadia
 1 aktiebolaget
 1 al
-1 ala + a
-1 ala + b + ama
-1 ala + hán
+1 al + aa
+1 a + lab + ama
 1 alameda
-1 ala + mo
-1 ala + n
-1 ala + ra + b
+1 al + a + mo
+1 a + lan
 1 alaska
-1 alathir
 1 al + ba
 1 alban
 1 alban + ia
@@ -116,33 +113,29 @@
 1 albion
 1 albion + es
 1 albion + um
-1 al + bre + ch + t
-1 albrn
+1 al + brecht
 1 album
 1 al + bus
 1 alcatraz
 1 alcuin
 1 ald + borough
-1 ald + in
-1 ald + ou + s
+1 ald + o + us
 1 ale
 1 aleksandr
 1 ale + ph
 1 ale + r + t
 1 aleut
 1 aleut + ian
-1 alevel
 1 ale + vi
 1 alexa
 1 alexa + nder
 1 alexa + nd + re
 1 alexa + ndria
-1 alexa + ndros
+1 alexa + nd + ro + s
 1 alexei
 1 alexey
 1 alexis
-1 al + fahd
-1 al + fa + laval
+1 al + fa
 1 alfonso
 1 al + fred
 1 al + fred + sson
@@ -154,62 +147,47 @@
 1 algonquian + s
 1 al + gon + quin
 1 algérie
-1 al + hay + tham
-1 al + hussein
 1 ali
 1 alia
 1 al + ice
 1 ali + sa
 1 alkaloids
-1 alkindi
-1 al + kuwait
+1 all
 1 all + a + hu
 1 al + lan
 1 all + a + wi
 1 all + egheny
 1 all + en
 1 al + ley
-1 all + ge + m + e + ine
-1 all + i + ance
+1 all + ge + me + ine
+1 al + li + ance
 1 all + ian + z
 1 all + ison
 1 all + is + ton
-1 all + union
-1 almahani
-1 almaliki
-1 almasudi
 1 al + m + qvist
 1 alouette
 1 al + pha
-1 alqaeda
-1 alrashid
-1 alraziel
-1 al + sistani
 1 alta
-1 alta + b + ri
 1 alta + i
 1 alta + ir
 1 al + t + hyper + text
 1 al + t + man
 1 al + to
 1 al + ton
-1 al + to + s + linux
-1 altusi
+1 al + tos + linux
 1 al + u
 1 alvarez
-1 alwatani
 1 always
-1 alyawer
 1 al + z + hei + mer
 1 am
 1 ama + de + o
-1 ama + deus
+1 ama + de + us
 1 ama + ral
 1 ama + rav + ati
 1 ama + ta
 1 amazon
 1 amazon + com
-1 ambassa + dor
+1 am + b + ass + ador
 1 am + d
 1 am + end + ment
 1 america
@@ -229,15 +207,15 @@
 1 am + u + ro
 1 am + é + lie
 1 an
-1 anairvineanaheim
-1 analog
-1 anamatico + latinum
+1 ana
+1 anaheim
+1 an + alog
+1 anamatico
 1 anamitico
-1 ana + quận
 1 anatoliy
 1 an + box
 1 and
-1 and + eren
+1 anderen
 1 anders
 1 anders + on
 1 and + i
@@ -253,13 +231,12 @@
 1 and + roid
 1 and + ré
 1 and + y
-1 angara
+1 a + ng + ara
 1 angel
 1 angel + es
-1 angel + es + long
 1 angel + ina
 1 angel + n
-1 an + ge + vin
+1 a + ng + e + vin
 1 angkor
 1 angkor + ian
 1 angle
@@ -267,22 +244,10 @@
 1 angli + a
 1 angli + c
 1 angli + i
-1 anglo + norman
-1 anglo + saxon
+1 an + glo
 1 anh
-1 anh + bỉ
-1 anh + cô
-1 anh + e + user + bus + ch
-1 anh + frisia
-1 anh + mỹ
-1 anh + norman
-1 anh + otto + man
-1 anh + pháp
-1 anh + scot + land
-1 anh + truyền
-1 anh + việt
+1 anh + e + user
 1 anh + đ + ể
-1 anh + ấn
 1 ani + lin
 1 ani + me
 1 an + ion
@@ -303,9 +268,9 @@
 1 ansel
 1 ansel + m
 1 an + si
-1 antares
-1 antec + esso + r
-1 anthony
+1 ant + are + s
+1 ant + ecessor
+1 ant + ho + n + y
 1 anti + kythera
 1 anti + lles
 1 anti + mon
@@ -313,16 +278,15 @@
 1 antoine + t + te
 1 an + ton
 1 an + ton + io
-1 antwer + pen
-1 antwq
-1 antónio
+1 ant + wer + pen
+1 ant + ónio
 1 any
 1 any + th + ing
 1 ao
 1 a + ol
 1 ap
 1 ap + ache
-1 ap + ec
+1 ap + e + c
 1 apfsds
 1 api
 1 apiospora
@@ -336,13 +300,15 @@
 1 apple + t
 1 april
 1 ap + t
-1 aquar + ium
+1 aquarium
 1 aquatic
 1 aquit + aine
 1 ar
+1 ara + b
 1 ara + fat
 1 aragón
 1 ara + m
+1 aramaic
 1 arauc + ana
 1 arauc + aria
 1 ar + bat
@@ -369,12 +335,13 @@
 1 argus
 1 ari
 1 aria
-1 ari + mat + hea
+1 ari + ma + thea
 1 aristote
-1 aristote + lic + um
+1 aristote + li + c + um
 1 aristotle
 1 arizona
-1 ark + ha + ng + els + k
+1 ark + han + gelsk
+1 ar + l + anda
 1 arm
 1 arm + a + ta
 1 arm + ed
@@ -389,17 +356,18 @@
 1 ar + n + old
 1 arpa
 1 arpa + net
-1 arr + hen + ius
-1 arr + iva
-1 arr + i + vé
+1 ar + r + hen + ius
+1 ar + ri + va
+1 ar + ri + vé
 1 arrows
 1 ar + s
 1 arsenal
-1 arsène + s + henry
+1 arsène
+1 arsène + s
 1 ar + t
 1 ar + tem
 1 arthur
-1 ar + t + ic + le
+1 article
 1 arts
 1 arts + im + ovich
 1 ar + u + tin + ian
@@ -411,42 +379,43 @@
 1 ascomycete
 1 as + ean
 1 ash
-1 ash + ari + tes
+1 ash + arites
 1 ash + bur + n
+1 ash + bury
 1 ash + es
 1 ash + ton
 1 asia
 1 asia + d
-1 asia + pacific
 1 as + l
 1 as + p
-1 aspire
+1 as + p + ire
 1 ass + elin
-1 assembly
-1 assisi
+1 ass + em + b + ly
+1 ass + is + i
 1 as + syria
 1 astana
 1 as + ton
 1 astra
-1 astra + khan
+1 astra + k + han
 1 astra + zen + eca
 1 asturias
 1 a + sus
 1 asís
 1 at
 1 at + b
-1 ateens
 1 ath
 1 ath + abasca
+1 ath + ir
 1 ath + lon
 1 ati
 1 atlanta
 1 atlantic
-1 at + l + arge
 1 at + las
-1 at + s
+1 atom
+1 ats
 1 att
-1 att + i + la
+1 att + ila
+1 at + v
 1 au
 1 aubrac
 1 aud + i
@@ -457,34 +426,34 @@
 1 august + ine
 1 august + us
 1 auriol
-1 aus + bild + u + ng
+1 aus + bil + du + ng
 1 aus + t + en
 1 aus + tin
 1 aus + tr + alia
 1 autodesk
-1 au + tom + ation
+1 au + to + m + ation
 1 aux
-1 avalokitesvara
+1 ava + lokitesvara
 1 ava + lon
 1 a + var
-1 avatar
-1 av + e + b + ury
-1 a + ven + ger
-1 avenue
-1 av + ex
-1 av + ignon
+1 ava + t + ar
+1 ave + bury
+1 ave + n + ger
+1 ave + nu + e
+1 ave + x
+1 a + v + ignon
 1 avinhon
 1 avogadro
 1 avril
-1 av + ì
+1 a + v + ì
 1 a + ward
 1 a + ward + s
 1 aw + b
 1 aw + k
-1 a + x + el
+1 ax + el
 1 a + xit
-1 a + xít
-1 ayn
+1 ax + ít
+1 a + y + n
 1 ayu
 1 ayu + b
 1 ayu + mi
@@ -498,14 +467,14 @@
 1 ba
 1 ba + ath
 1 b + abb + age
-1 babe
-1 babe + l + s + berg
+1 ba + be
+1 ba + be + l + s + berg
 1 babylon
 1 babylon + ia
 1 baccalauréat
 1 bach
 1 bach + chan
-1 back + box
+1 ba + ck + box
 1 ba + con
 1 ba + don
 1 ba + d + water
@@ -538,19 +507,19 @@
 1 ballet
 1 ba + lny
 1 balt
-1 balt + ha + s + ar
+1 balt + hasar
 1 balti
 1 balti + c
 1 balti + more
-1 balt + o + slav + ic
+1 balt + o
 1 ba + lê
 1 ban
-1 b + and
+1 ban + d
 1 ban + dy
 1 ban + ff
 1 bang
 1 bang + ers
-1 bang + kok
+1 bang + ko + k
 1 bang + ladesh
 1 bani
 1 bank
@@ -561,11 +530,12 @@
 1 bao
 1 bao + tixita
 1 baptist
+1 baptist + e
 1 baptist + s
 1 bar
 1 ba + rack
-1 bar + b + ara
-1 bar + b + ary
+1 bar + bar + a
+1 bar + bar + y
 1 bar + be
 1 bar + bos + a
 1 bar + bro
@@ -581,22 +551,24 @@
 1 bar + t
 1 bar + y + sh + nikov
 1 base
+1 base + d
 1 base + line
 1 b + ash
 1 b + ash + kir
 1 basic
+1 basile
 1 basov
 1 basque
 1 basque + s
 1 basra
 1 b + ass
-1 ba + ta
+1 bastogne
 1 ba + th
 1 bat + hurst
 1 bat + i + sta
 1 bat + tam + bang
 1 bat + ter + y
-1 bat + t + le + ford
+1 ba + ttle + ford
 1 baudouin
 1 ba + uh + aus
 1 ba + v + aria
@@ -604,12 +576,11 @@
 1 bay + er
 1 bay + es
 1 bay + on
-1 bayview
-1 bayview + hunters
+1 bay + view
 1 bazan
 1 bazoka
 1 bazooka
-1 ba + zơ
+1 ba + z + ơ
 1 b + b + c
 1 bbg
 1 b + c
@@ -617,7 +588,7 @@
 1 bea + ch
 1 bea + ker
 1 b + ean
-1 bearcat
+1 be + ar + cat
 1 bears
 1 bears + kin
 1 beat
@@ -625,11 +596,11 @@
 1 beat + nik
 1 beau
 1 beau + mont
-1 beau + x + arts
+1 beau + x
 1 bea + ver
-1 b + eca
-1 bechtel
-1 bechtolsheim
+1 bec + a
+1 bec + h + t + el
+1 bec + htolsheim
 1 beck
 1 beck + et
 1 beck + wi + th
@@ -643,11 +614,11 @@
 1 be + ing
 1 belarus
 1 belarus + estonia + ph + ần
-1 belg + ae
-1 belg + ica
-1 belg + ium
-1 belg + ra + de
-1 bel + ize
+1 bel + ga + e
+1 bel + g + ica
+1 bel + gi + um
+1 bel + grad + e
+1 bel + i + ze
 1 bel + kin
 1 bell
 1 bell + e
@@ -655,17 +626,17 @@
 1 bell + oc
 1 bel + t
 1 ben
-1 ben + edi + c + t
+1 ben + ed + ic + t
 1 ben + e + fits
-1 ben + elli
+1 ben + ell + i
 1 ben + e + lu + x
-1 ben + ic + ia
+1 be + nicia
 1 ben + j + amin
 1 ben + net + t
 1 ben + on
 1 ben + tham
-1 benz
-1 benz + en
+1 ben + z
+1 ben + zen
 1 beowulf
 1 ber
 1 ber + d + ya + yev
@@ -686,7 +657,7 @@
 1 bern + al
 1 bern + ard
 1 bern + ard + ino
-1 bern + er + slee
+1 bern + ers
 1 bern + hard
 1 berry
 1 bert + els + mann
@@ -696,13 +667,13 @@
 1 be + ta
 1 beth
 1 beth + le + hem
-1 beve + ridge
-1 beve + r + ly
+1 be + ve + ridge
+1 beverly
 1 be + y + er
 1 b + fi
 1 b + g + m
 1 b + hd
-1 bhm
+1 b + h + m
 1 bhutan
 1 bi
 1 bia
@@ -715,14 +686,14 @@
 1 big
 1 big + c
 1 big + e + ard
-1 bi + gi + pedia
+1 big + i + p + edia
 1 big + point
 1 bi + ke
-1 bild
-1 bild + t
-1 bilitis
+1 bil + d
+1 bil + d + t
+1 bil + it + is
 1 bill
-1 bill + ie
+1 bil + lie
 1 bill + ing + s
 1 bill + y
 1 bin
@@ -731,20 +702,20 @@
 1 b + ing
 1 bi + nh
 1 bird + man
-1 bir + ger
-1 bir + m + ing + ham
+1 bi + r + ger
+1 bi + r + m + ing + ham
 1 bismarck
-1 bi + son
-1 bit
+1 b + ison
+1 bi + t
 1 b + ite
-1 bit + ke + e + per
-1 bit + mo + ver
+1 bitkee + per
+1 bi + t + mo + ver
 1 bi + ên
-1 bi + ên + lý
+1 bi + ên + l + ý
 1 biếm
 1 biến
 1 biến + g
-1 biến + nga + y
+1 biến + ngay
 1 bi + ết
 1 bi + ền
 1 bi + ều
@@ -762,32 +733,32 @@
 1 black + pool
 1 b + lag
 1 b + l + air
-1 b + l + aise
+1 blaise
 1 b + lake
-1 blancsab + lon
+1 b + lan + c
 1 blanket
 1 b + lan + kon
 1 blaue
-1 ble + ch + t + rom + mel
+1 ble + ch + tro + m + mel
 1 ble + nder
-1 bleu
+1 ble + u
 1 bliny
 1 b + l + is + s
-1 b + ll
+1 b + l + l
 1 blo + b + s
 1 blo + dget
 1 blo + g
 1 blo + g + ger
 1 blo + k
 1 blo + odwor + th
-1 blo + o + m + berg
+1 blo + om + berg
 1 blo + use
-1 blu
+1 b + lu
 1 blue
 1 blue + fish
 1 blue + s
-1 blu + ff
-1 blu + m
+1 b + lu + ff
+1 b + lu + m
 1 b + ly + ton
 1 b + m + w
 1 b + n + p
@@ -800,25 +771,25 @@
 1 bo + er
 1 boettc + her
 1 bohr
-1 bokml
-1 bokova
-1 b + old
+1 bo + k + m + l
+1 bo + k + ova
+1 bol + d
 1 bol + laert
 1 bol + sa
 1 bolshevik
 1 bolshevik + s
-1 bol + s + hoi
+1 bol + s + ho + i
 1 bol + tz + mann
 1 bol + ya + i
 1 bo + m
-1 bo + m + is
+1 bo + mis
 1 bon
 1 bona + par + te
 1 bon + ard
 1 bona + vi + sta
-1 bond
-1 bond + arch + u + k
-1 bond + s
+1 bon + d
+1 bon + dar + chu + k
+1 bon + d + s
 1 bo + ng
 1 bon + n
 1 bon + o
@@ -831,7 +802,7 @@
 1 bo + ot
 1 bor + den
 1 bor + de + t
-1 bo + real
+1 boreal
 1 borg
 1 borg + en
 1 bor + is
@@ -841,7 +812,7 @@
 1 bor + sh + ch
 1 bos + ak
 1 bos + ch
-1 bos + e + einstein
+1 bos + e
 1 bos + na
 1 bos + nia
 1 bos + ton
@@ -854,15 +825,15 @@
 1 bou + d + ica
 1 bou + l + der
 1 bou + les
-1 bou + ll + oc + hé
+1 bou + lloché
 1 bou + l + ton
 1 bou + n
 1 bou + n + ty
 1 bou + ra + s + sa
 1 bou + r + bon
-1 bou + rgain
+1 bou + r + ga + in
 1 bou + rgogne
-1 bou + rneagain
+1 bourne
 1 bou + teflika
 1 bow
 1 bow + en
@@ -874,7 +845,7 @@
 1 box + es
 1 boyle
 1 boys
-1 brad + dish
+1 brad + d + ish
 1 brad + ford
 1 brad + ley
 1 brad + y
@@ -885,37 +856,37 @@
 1 bramalea
 1 brandenburg
 1 brandenburg + er
-1 bran + don
-1 bran + t
-1 bran + t + s
+1 b + ran + don
+1 br + ant
+1 br + ant + s
 1 brasil
 1 brasil + ia
-1 brasil + ien + sis
-1 bratwurst
+1 brasil + ien + s + is
+1 b + rat + wurst
 1 braun
 1 brazil
 1 brcke
 1 bre + ak + ers
-1 bre + ch + t
+1 brecht
 1 bre + l
 1 bre + men
 1 bre + mer
 1 bre + n + dan
 1 bre + n + t
-1 bre + stlitovsk
-1 bret + ag + ne
-1 bret + a + igne
-1 bret + ayn + e
-1 bret + eyn + e
+1 b + rest
+1 bre + tag + ne
+1 bre + ta + igne
+1 bre + ta + y + ne
+1 bre + teyne
 1 bre + ton
-1 bret + ton
-1 bre + z + h + nev
+1 bre + t + ton
+1 bre + zh + nev
 1 br + h + ma
 1 br + ian
 1 br + ics
 1 bridge
 1 bridge + water
-1 br + igh + ton
+1 brigh + ton
 1 br + ion
 1 bristol
 1 brit + ain
@@ -931,21 +902,21 @@
 1 brit + ton
 1 br + je
 1 br + lé
-1 brnnboll
+1 br + n
+1 brnnb + oll
 1 bro + ad + way
 1 b + rock
 1 b + rock + ton
 1 bro + g + dale
 1 bro + ka + w
-1 bronsted
-1 bronsted + low + ry
-1 bro + n + t
+1 b + ron + s + ted
+1 b + ron + t
 1 brook
 1 brook + es
 1 brook + lyn
 1 bro + s
-1 bro + uss + ard
-1 bro + uwer
+1 bro + us + s + ard
+1 b + rou + wer
 1 brown
 1 brown + e
 1 brown + field
@@ -953,14 +924,13 @@
 1 br + t
 1 bruce
 1 bruce + lla
-1 bruegel
+1 bru + e + g + el
 1 brugge
-1 brunel
-1 br + uno
+1 bru + nel
+1 bru + no
 1 br + uns + wick
 1 b + russel
-1 bruxelles
-1 bruxelles + vùng
+1 bru + x + e + lles
 1 bryusov
 1 brévié
 1 b + sau
@@ -977,7 +947,7 @@
 1 build + ing
 1 bu + il + t
 1 bul + at
-1 bul + g + akov
+1 bul + gakov
 1 bul + g + aria
 1 b + und + esliga
 1 bu + ng
@@ -986,67 +956,65 @@
 1 bu + n + in
 1 bu + n + k
 1 bu + n + t + zen
-1 bur + eau
+1 bu + reau
 1 burg + er
-1 bur + hanuddin
+1 bur + han + ud + din
 1 bur + i + al + s
 1 bur + ie
 1 bur + ka
 1 bur + ke
 1 bur + leigh
 1 bur + na + by
-1 bur + rard
-1 bur + rit + os
-1 bur + und + i
-1 buryat
-1 buryat + ia
+1 bur + r + ard
+1 bur + ri + tos
+1 b + urundi
+1 bury + at
+1 bury + at + ia
 1 bus
-1 bu + san
+1 bus + an
+1 bus + ch
 1 bus + h
 1 business
 1 business + week
 1 bu + xtehude
-1 bu + zomi
+1 bu + zo + mi
 1 bu + ôn
 1 bu + ông
-1 bu + ýt
+1 bu + ý + t
 1 bu + ốt
 1 bu + ồ + m
 1 bu + ồn
-1 bu + ồn + g
+1 bu + ồng
 1 bu + ổi
-1 bu + ổi + ngày
 1 bu + ộc
 1 by
 1 by + e
 1 by + rd
 1 by + ron
-1 bysa
-1 bysshe
+1 by + s + s + he
 1 byte
 1 byte + s
 1 by + town
-1 byzant + ine
+1 by + z + ant + ine
 1 bà
 1 bà + i
-1 bà + lam + ôn
 1 bà + n
 1 bà + ng
 1 bà + nh
 1 b + ào
 1 bà + u
 1 bà + y
-1 bá
-1 bá + c
+1 b + á
+1 b + ác
 1 b + ách
 1 b + ái
-1 bá + m
-1 bá + n
-1 bá + ng
+1 b + ám
+1 b + án
+1 b + áng
 1 b + ánh
 1 b + áo
-1 bá + p + t + ít
-1 bá + t
+1 b + áp
+1 b + át
 1 b + áu
 1 b + ân
 1 b + ây
@@ -1084,12 +1052,11 @@
 1 b + ô
 1 b + ôi
 1 b + ông
-1 b + ông + hà + ng
 1 bõ
-1 bù
+1 b + ù
 1 b + ùi
-1 bù + n
-1 bù + ng
+1 b + ùn
+1 b + ù + ng
 1 búa
 1 b + ún
 1 b + úp
@@ -1108,23 +1075,23 @@
 1 bư + ớ + u
 1 bư + ởi
 1 bạ
-1 bạ + c
+1 b + ạc
 1 bạ + ch
-1 bạ + i
-1 bạ + n
-1 bạ + o
-1 bạ + t
+1 b + ại
+1 b + ạn
+1 b + ạo
+1 b + ạt
 1 bả
-1 bả + n
+1 b + ản
 1 bả + ng
 1 b + ảo
-1 b + ảy
-1 b + ảy + năm
+1 bả + y
+1 bả + y + năm
 1 b + ấm
 1 b + ấp
 1 b + ất
 1 b + ấy
-1 bầm
+1 b + ầm
 1 b + ần
 1 b + ầu
 1 b + ầy
@@ -1132,18 +1099,16 @@
 1 b + ẩn
 1 b + ẩu
 1 b + ẩy
-1 bẫy
+1 b + ẫy
 1 bậc
 1 b + ận
 1 b + ật
-1 bậy
-1 bắc
-1 bắc + nam
+1 b + ậy
+1 b + ắc
 1 bắn
-1 bắn + tổ + ng
 1 b + ắp
 1 b + ắt
-1 bằ + ng
+1 b + ằ + ng
 1 bẹp
 1 b + ẽ
 1 bế
@@ -1154,9 +1119,8 @@
 1 b + ể
 1 b + ệ
 1 b + ệ + nh
-1 bỉ
-1 bỉ + luxembourg
-1 bỉ + u
+1 b + ỉ
+1 b + ỉ + u
 1 bị
 1 bị + a
 1 bị + p
@@ -1173,33 +1137,32 @@
 1 b + ốn
 1 b + ống
 1 b + ốt
-1 bồ
+1 b + ồ
 1 b + ồi
 1 b + ồn
-1 bồ + ng
-1 bổ
-1 bổ + n
-1 bổ + ng
-1 bỗ + ng
-1 bộ
+1 b + ồng
+1 b + ổ
+1 b + ổ + n
+1 b + ổ + ng
+1 b + ỗ + ng
+1 b + ộ
 1 b + ộc
-1 bộ + i
-1 bộ + t
+1 b + ộ + i
+1 b + ột
 1 b + ớ
 1 b + ới
 1 b + ớt
 1 b + ờ
 1 b + ởi
-1 b + ỡn
+1 b + ỡ + n
 1 b + ợ
-1 bụ + i
-1 bụ + ng
+1 b + ụ + i
+1 b + ụ + ng
 1 b + ức
 1 b + ứt
 1 b + ừa
 1 b + ừ + ng
 1 bửu
-1 bửu + lộc
 1 bữa
 1 bực
 1 c
@@ -1208,8 +1171,7 @@
 1 ca + bot
 1 cabrilho
 1 cabrillo
-1 cacbon
-1 cacbon + cacbon
+1 cac + bon
 1 cac + boxylic
 1 cac + b + ôn + át
 1 c + ache
@@ -1217,7 +1179,7 @@
 1 ca + en
 1 caesar
 1 c + age
-1 cahue + nga
+1 cahuenga
 1 cai
 1 caiaphas
 1 caicos
@@ -1225,13 +1187,11 @@
 1 c + aine
 1 cai + ro
 1 cal + c + i
-1 cal + cutt + a
-1 calgary
-1 calgary + edmonton
+1 cal + cu + t + ta
+1 cal + gar + y
 1 cali
-1 california
-1 california + san
-1 cali + for + ni + o
+1 cali + for + nia
+1 cali + for + n + io
 1 cali + pha + te
 1 cali + xa
 1 cal + ori + e
@@ -1239,11 +1199,12 @@
 1 cal + ver + t
 1 cal + vin
 1 cal + vin + ist
+1 cal + édonie
 1 cam
 1 cam + argue
-1 cam + aro
+1 cam + a + ro
 1 cam + bi + e
-1 cam + bod + gelaos + vietnam
+1 cam + bod + ge
 1 cam + bridge
 1 cam + elcase
 1 cam + elot
@@ -1253,21 +1214,18 @@
 1 camp + aigns
 1 camp + bell
 1 camp + ine
-1 campuchia
-1 campuchia + việt
+1 camp + uchi + a
 1 camp + us
 1 can
 1 canada
 1 canada + cu + ng
-1 canada + hoa
 1 canada + r + m
 1 canada + s
 1 canada + tổ + ng
 1 canada + tỷ
 1 can + ad + ian
 1 can + al
-1 can + and + a
-1 can + a + đa
+1 can + anda
 1 can + dlestick
 1 can + du
 1 can + g
@@ -1276,12 +1234,11 @@
 1 can + nes
 1 can + o + e + ing
 1 can + onic + al
-1 can + ter + b + ury
+1 can + ter + bury
 1 can + tor
 1 can + va + s
 1 can + xit
-1 cao
-1 cao + bắc + lạ + ng
+1 c + ao
 1 cape
 1 cape + t
 1 capital
@@ -1291,9 +1248,10 @@
 1 caps + u + le
 1 captain
 1 car + atacus
-1 car + avelle
+1 car + ave + l + le
 1 car + b + ine
 1 car + bon
+1 car + box + am + ide
 1 car + boxylic
 1 card
 1 card + amon
@@ -1302,19 +1260,20 @@
 1 car + ibb + e
 1 car + i + be
 1 car + i + bê
-1 car + l
-1 carleton
+1 carl
+1 carl + e + ton
 1 car + los
-1 car + l + sson
+1 carl + s + ba + d
+1 carl + sson
 1 car + men
 1 car + michael
 1 car + ni + val
 1 car + not
 1 caro + l + ina
 1 caro + line
-1 caro + lin + gib
+1 caro + lin + gi + b
 1 caro + lin + ian
-1 car + pen + tier
+1 car + pen + t + ier
 1 car + r
 1 car + rier
 1 car + roll
@@ -1322,9 +1281,9 @@
 1 car + ta
 1 car + ter
 1 car + th + age
-1 car + tier
-1 car + tw + right
-1 car + vil + ius
+1 car + t + ier
+1 car + t + wright
+1 car + vi + l + ius
 1 car + y + ing
 1 cas
 1 cas + ab + lanca
@@ -1342,26 +1301,23 @@
 1 cast + ro
 1 cat + al + ina
 1 cat + har + ines + dẫn
-1 c + ath + erine
+1 cat + her + ine
 1 catholic
-1 catinat
+1 cat + ina + t
 1 c + ation
-1 catroux
-1 catuvella + uni
-1 ca + tô
+1 cat + rou + x
+1 cat + u + ve + lla + uni
 1 c + au
-1 c + av
-1 ca + ven + dish
-1 ca + x + ton
+1 cav
+1 cav + end + ish
+1 c + ax + ton
 1 cay
 1 cay + ley
 1 ca + za
 1 c + b
-1 cbs
+1 c + b + s
 1 c + c
-1 ccbyncsa
-1 c + c + bysa
-1 cchctw
+1 cchc
 1 c + cop
 1 c + c + t + v
 1 c + d
@@ -1372,19 +1328,17 @@
 1 cecil
 1 celebrate
 1 c + ell + o
-1 cellulosa
+1 c + ell + ulosa
 1 c + els + ius
 1 celt
 1 celt + ic
 1 c + en + sus
 1 cent
-1 center
-1 center + left
-1 center + right
+1 cent + er
 1 cent + ral
 1 cent + re
 1 cent + re + town
-1 cent + ury
+1 cent + ur + y
 1 c + eo
 1 c + ern
 1 cernettes
@@ -1397,10 +1351,10 @@
 1 cgv
 1 ch
 1 cha
-1 cha + ban + del + ma + s
+1 cha + ban
 1 cha + d
 1 cha + d + wick
-1 ch + al + d + ean
+1 cha + l + d + ean
 1 cha + llenge
 1 cha + lotte + town
 1 cham
@@ -1418,19 +1372,19 @@
 1 ch + ance + ry
 1 chan + el
 1 cha + ng
-1 cha + ng + e + urs
-1 ch + anh
+1 cha + ng + e + ur + s
+1 cha + nh
 1 chan + nel
 1 chan + tha + bur + i
 1 cha + o
-1 cha + o + mua + ng
-1 cha + pa + ev
+1 cha + paev
 1 cha + par + ral
+1 cha + p + el
 1 cha + plin
 1 char + act + er
 1 char + bon + nages
 1 char + ente
-1 char + ler + oi
+1 char + le + ro + i
 1 char + les
 1 char + lie
 1 char + lott + a
@@ -1439,14 +1393,14 @@
 1 cha + s + ing
 1 cha + t
 1 cha + tham
+1 ch + au
 1 cha + uc + er
 1 ch + aud + ière
-1 cha + ufa + i + khet
 1 cha + y
 1 ch + d + c
 1 ch + d + c + nd
 1 che
-1 c + hea
+1 che + a
 1 che + bur + ash + ka
 1 che + chen
 1 che + ch + n + ya
@@ -1454,7 +1408,7 @@
 1 che + f
 1 che + kho + v
 1 che + l + sea
-1 che + mic + al
+1 che + mi + cal
 1 che + mins
 1 che + m + ist
 1 chen
@@ -1468,7 +1422,7 @@
 1 chester + ton
 1 che + t + ta
 1 che + t + tha
-1 che + vio + t
+1 che + vi + ot
 1 che + vreul
 1 che + v + ron
 1 che + y
@@ -1479,9 +1433,9 @@
 1 chi
 1 ch + ia
 1 ch + ia + pas
-1 chi + ar + elli
+1 chi + ar + ell + i
 1 chi + c
-1 chi + c + ago
+1 chi + c + a + go
 1 chi + c + ano
 1 chi + chester
 1 chi + che + wa
@@ -1490,15 +1444,15 @@
 1 chi + l + t + ern
 1 chi + m
 1 ch + ina
-1 chi + nas
+1 ch + ina + s
 1 chi + ncoteague
 1 chi + nes + e
 1 chi + nh
 1 chi + nook
 1 chip
-1 chip + e + wyan
+1 chip + ewyan
 1 chip + s
-1 chip + set
+1 chip + se + t
 1 chi + êm
 1 c + hiên
 1 ch + iêu
@@ -1510,14 +1464,14 @@
 1 c + hiền
 1 chi + ều
 1 c + hiểu
-1 ch + loride
+1 ch + lor + ide
 1 ch + nang
 1 ch + nd
 1 ch + ng
 1 ch + năng
 1 cho
 1 c + hoa + ng
-1 cho + colate
+1 cho + c + ola + te
 1 cho + ice
 1 cho + ix
 1 cho + lon
@@ -1536,8 +1490,8 @@
 1 christ + op + her
 1 chrome
 1 chrome + book
-1 ch + rom + ium
-1 ch + ron + ic + le
+1 ch + romium
+1 ch + ron + i + c + le
 1 ch + ry + s + ler
 1 ch + ré + t + ien
 1 chu
@@ -1552,18 +1506,18 @@
 1 church + ill
 1 ch + uyên
 1 chu + yến
-1 c + huyền
+1 c + huy + ền
 1 ch + uyển
-1 c + huyện
+1 c + huy + ện
 1 chu + ông
 1 chu + ẩn
 1 chu + ối
 1 chu + ốt
 1 chu + ồn
-1 chu + ồn + g
+1 chu + ồng
 1 chu + ỗi
 1 chu + ộc
-1 chu + ộng
+1 chu + ộ + ng
 1 chu + ột
 1 ch + xhcn
 1 chà
@@ -1573,7 +1527,7 @@
 1 ch + ào
 1 chà + y
 1 ch + ác
-1 c + hán
+1 ch + án
 1 ch + ánh
 1 ch + áo
 1 ch + át
@@ -1595,14 +1549,13 @@
 1 c + hê + nh
 1 chì
 1 chì + a
-1 chì + a + xit
 1 chì + m
 1 chì + nh
-1 ch + í
+1 chí
 1 ch + ích
-1 ch + í + n
-1 chính
-1 ch + ít
+1 chí + n
+1 chí + nh
+1 chí + t
 1 ch + òi
 1 c + hò + m
 1 chó
@@ -1614,12 +1567,11 @@
 1 c + hôm
 1 ch + ôn
 1 ch + ông
-1 c + hùa
+1 ch + ùa
 1 c + hùm
 1 c + hùng
-1 ch + ú
-1 chúa
-1 chúa + vua
+1 chú
+1 chú + a
 1 ch + úc
 1 ch + úng
 1 ch + úng + m + ỗi
@@ -1627,7 +1579,7 @@
 1 c + hăm
 1 ch + ăn
 1 c + hăng
-1 ch + ĩ + a
+1 ch + ĩa
 1 ch + ơ
 1 ch + ơi
 1 ch + ơn
@@ -1635,17 +1587,17 @@
 1 ch + ưa
 1 ch + ưng
 1 ch + ương
-1 ch + ước
+1 c + hước
 1 c + hư + ớng
 1 c + hưởng
-1 c + hạ + ch
-1 c + hạ + m
+1 c + hạch
+1 ch + ạm
 1 ch + ạp
 1 ch + ạy
 1 ch + ả
 1 ch + ải
 1 ch + ảo
-1 ch + ảy
+1 ch + ả + y
 1 ch + ấm
 1 ch + ấn
 1 ch + ấp
@@ -1671,23 +1623,23 @@
 1 ch + ết
 1 ch + ết + die + m
 1 ch + ệ + ch
-1 c + hỉ
+1 ch + ỉ
 1 c + hỉnh
 1 c + hỉnh + cõ + ng
-1 chị
-1 chị + t
-1 chị + u
+1 c + hị
+1 c + hị + t
+1 c + hị + u
 1 c + học
 1 ch + ọi
-1 ch + ọn
+1 ch + ọ + n
 1 ch + ối
 1 ch + ống
 1 ch + ốt
 1 ch + ồn
-1 c + hồng
+1 ch + ồng
 1 ch + ổi
-1 c + hỗ
-1 c + hội
+1 ch + ỗ
+1 c + hộ + i
 1 ch + ột
 1 ch + ớm
 1 ch + ớp
@@ -1695,18 +1647,15 @@
 1 ch + ở
 1 ch + ở + m
 1 ch + ợ
-1 ch + ợ + i
+1 ch + ợi
 1 ch + ục
 1 ch + ụp
-1 chủ
-1 chủ + ng
-1 chủ + xã
-1 chủ + độ + ng + t + ân
+1 c + hủ
+1 ch + ủng
 1 ch + ứ
-1 c + hứa
-1 chức
-1 chức + chính
-1 chức + v + v
+1 ch + ứa
+1 ch + ức
+1 ch + ức + v + v
 1 ch + ứng
 1 ch + ừ
 1 ch + ừa
@@ -1715,41 +1664,42 @@
 1 ch + ử + ng
 1 chữ
 1 chữ + a
-1 c + ia
+1 cia
 1 c + i + b + c
 1 ciffolilli
-1 cine + ma
-1 cine + ma + s
-1 cine + plex
-1 cine + star
-1 c + in + n + amon
-1 circum + bo + real
+1 cinema
+1 cinema + s
+1 c + ine + plex
+1 c + ine + star
+1 cinn + amon
+1 circum + boreal
 1 circum + stan + ces
 1 c + is
-1 ciscolinksys
+1 cisco
 1 cistisni
 1 citco
 1 citi + group
 1 citi + zen
-1 citi + zen + d + ium
+1 citi + zen + dium
 1 citoyens
 1 c + ity
 1 civic
 1 ciws
-1 cl
-1 cl + aire
+1 c + l
+1 clair
+1 clair + e
 1 c + la + ng
-1 cl + ara
-1 cl + ark
-1 cl + ass
-1 claude
-1 cl + aud + ius
-1 cl + aus
+1 c + l + ara
+1 c + l + ark
+1 c + l + ass
+1 claud + e
+1 claud + ius
+1 c + l + aus
 1 c + la + y
-1 cl + b
+1 c + l + b
 1 cleanpowersf
 1 clear
-1 c + le + ve + land
+1 c + leve + land
 1 cli
 1 cli + ck
 1 cli + ents
@@ -1763,7 +1713,7 @@
 1 cli + the + row
 1 clo
 1 clo + che
-1 clo + st + rid + ium
+1 clo + s + tri + dium
 1 clo + ud
 1 c + lu + b
 1 c + lu + ster
@@ -1775,7 +1725,6 @@
 1 c + n + c
 1 c + net
 1 c + n + n
-1 cnttcn
 1 c + nu + t
 1 co
 1 coachella
@@ -1786,51 +1735,51 @@
 1 cobbett
 1 cobourg
 1 cobra
-1 cocacola
-1 cocain
+1 coca
+1 coca + in
 1 cochin + ch + ine
 1 cochrane
 1 cocos
-1 cod
+1 co + d
 1 code
 1 code + l + ite
 1 code + weav + ers + n + ơi
-1 cod + ice
-1 cod + roy
+1 co + d + ice
+1 co + d + roy
 1 co + el
 1 coffee
 1 coffyn
 1 cogido
 1 cognos
-1 co + h
 1 co + hen
 1 co + hn
 1 co + i
 1 coined
 1 co + it
-1 colbourne
-1 colby
+1 c + ola
+1 col + bourne
+1 col + by
 1 cole
 1 cole + ridge
 1 co + li + form
 1 co + lin
-1 coll + ec + tion
+1 coll + e + c + tion
 1 college
 1 college + hu + mor
-1 coll + ines + de + loutaouais
+1 coll + ines
 1 coll + ing + wood
-1 collins
+1 coll + in + s
 1 coll + ège
-1 colom + bia
-1 colom + bo
-1 colorado
-1 co + los + sus
-1 colum + bia
-1 colum + bus
+1 col + om + bia
+1 col + om + bo
+1 col + ora + do
+1 col + oss + us
+1 col + um + bia
+1 col + um + bus
 1 com
 1 com + ic
 1 com + ics
-1 com + mercia + l
+1 com + mer + cia + l
 1 com + mit
 1 com + mod + it + ies
 1 com + mod + ity
@@ -1847,10 +1796,11 @@
 1 compos + it + ing
 1 compos + itor
 1 compos + linux
-1 compos + minix
+1 compos + mi + nix
 1 com + pu + ter
 1 com + score
 1 com + stock
+1 com + t + é
 1 con
 1 con + cac + af
 1 con + cou + rse
@@ -1866,15 +1816,14 @@
 1 c + onic + các
 1 con + in + x
 1 con + necticut
-1 con + n + ex + ion
-1 con + phụ
+1 con + ne + x + ion
 1 con + science
 1 con + s + eil
-1 conserva + pedia
+1 conserva + p + edia
 1 conserva + tory
 1 console
 1 console + s
-1 con + sort + ium
+1 con + sortium
 1 con + st + ance
 1 constant
 1 constant + inople
@@ -1900,10 +1849,10 @@
 1 copernic + us
 1 cop + land
 1 cop + pol + a
-1 cop + y + left
+1 cop + y + le + ft
 1 co + qu + erie
 1 cor + bus + ier
-1 cor + del + l
+1 cor + d + ell
 1 cor + dillera
 1 cor + don
 1 cor + dova
@@ -1915,7 +1864,7 @@
 1 corn + eil + le
 1 corn + el + ius
 1 corn + ell
-1 corn + er
+1 cor + ner
 1 corn + ish
 1 corn + wall
 1 cor + por + ation
@@ -1923,14 +1872,14 @@
 1 cor + ri + dor
 1 cor + se
 1 cor + son
-1 cor + te + real
+1 cor + te
 1 cor + te + z
 1 cossacks
 1 co + st
 1 co + sta
 1 cotecna
 1 co + t + qu + i + dan
-1 co + t + s + w + old
+1 cotsw + old
 1 co + t + tage
 1 cou + bert
 1 country
@@ -1938,8 +1887,8 @@
 1 cou + n + ty
 1 cou + pe + aud
 1 cou + per
-1 cou + rb + et
-1 cou + rc + y
+1 cou + r + b + et
+1 cou + r + c + y
 1 covent
 1 covent + ry
 1 co + ver + t
@@ -1949,12 +1898,11 @@
 1 cow + en
 1 co + x
 1 co + óc
-1 co + ó + ng
-1 cp
+1 coó + ng
+1 c + p
 1 c + pi
-1 cp + k
-1 cp + m
-1 cp + p
+1 c + p + k
+1 c + p + p
 1 c + pu
 1 crafurd
 1 c + ra + g + s
@@ -1962,18 +1910,18 @@
 1 craig + s + list
 1 c + ra + itor
 1 c + ra + na + ch
-1 cre + at + ive
-1 cre + ator
-1 cre + di + t
-1 cre + e
-1 cre + ek
-1 cre + igh + ton
+1 creat + ive
+1 creat + or
+1 credit
+1 cree
+1 cree + k
+1 creigh + ton
 1 cres + cent
 1 cres + cent + a
 1 cres + pi
 1 cres + well
-1 cre + te
-1 cre + w
+1 crete
+1 crew
 1 c + rick
 1 c + rick + et
 1 c + rim + ea
@@ -1981,10 +1929,9 @@
 1 crips
 1 crissy
 1 croatia
-1 croce
-1 crocker
-1 crocker + amazon
-1 c + rom + well
+1 croc + e
+1 croc + ker
+1 crom + well
 1 crosso + ver
 1 c + row
 1 c + row + n
@@ -1993,11 +1940,11 @@
 1 crusa + der
 1 crutc + her
 1 cruz
-1 cry
-1 cry + ptography
-1 cry + sis
-1 cry + te + k
-1 crépin
+1 c + ry
+1 cryptography
+1 c + ry + s + is
+1 crytek
+1 c + ré + pin
 1 crôm
 1 c + s
 1 c + sa
@@ -2007,15 +1954,12 @@
 1 c + s + s
 1 c + s + to
 1 c + su
-1 csufresno
-1 c + su + long
 1 c + t
-1 c + t + tw
 1 cu
-1 cua
+1 cu + a
 1 cu + ba
 1 cu + i
-1 cu + m + ber + bat + ch
+1 c + um + ber + bat + ch
 1 c + umberland
 1 c + umbria
 1 cun
@@ -2027,32 +1971,34 @@
 1 cur + ran
 1 cur + ren + t
 1 cur + rey
-1 cur + rywurst
-1 c + ury
-1 custody
-1 customerpremises
+1 cur + ry + wurst
+1 cur + y
+1 cuse
+1 custo + dy
+1 custo + mer
 1 cu + th + bert
-1 cutt + ers
+1 cu + t + t + ers
 1 cuyahoga
 1 cu + ối
 1 c + uốn
-1 c + uống
-1 cu + ồ + ng
+1 cu + ống
+1 cu + ồng
 1 cu + ộc
 1 cuội
-1 cu + ộn
+1 cuộn
 1 c + v + s
 1 cvđc
 1 c + vị
 1 c + wa
-1 cyanat
-1 cyanide
+1 cyan + at
+1 cyan + ide
 1 c + y + ber
 1 cycle
 1 c + y + clo
 1 cyclopaedia
+1 c + y + r
 1 cyril
-1 cyril + lic
+1 cyril + li + c
 1 cà
 1 cà + i
 1 cà + n
@@ -2068,7 +2014,6 @@
 1 c + án
 1 c + áng
 1 c + ánh
-1 c + án + ước
 1 c + áo
 1 c + áp
 1 c + át
@@ -2077,13 +2022,12 @@
 1 c + ân
 1 c + âu
 1 c + ây
-1 c + ây + m + m
 1 cãi
 1 cédile
 1 cédille
 1 césar
-1 cò
-1 cò + n
+1 c + ò
+1 còn
 1 có
 1 c + óc
 1 c + ói
@@ -2095,8 +2039,7 @@
 1 c + ôn
 1 c + ông
 1 c + ông + t + en + ơ
-1 c + ông + th + ương
-1 cô + rin + tô
+1 cô + ri + n + tô
 1 cô + te
 1 cõ + i
 1 c + ù
@@ -2108,16 +2051,14 @@
 1 cú + m
 1 c + úng
 1 c + úp
-1 c + ă + m
+1 căm
 1 c + ăn
-1 c + ă + ng
+1 c + ăn + g
 1 c + ũ
-1 cũng
-1 cơ
-1 cơ + m
+1 c + ũ + ng
+1 c + ơ
+1 c + ơ + m
 1 c + ơn
-1 cơ + điện
-1 cơ + đ + ốc
 1 cư
 1 c + ưa
 1 c + ương
@@ -2128,16 +2069,16 @@
 1 cư + ờng
 1 cư + ỡi
 1 cư + ỡng
-1 cạm
-1 cạn
-1 cạn + h
-1 cạo
+1 c + ạm
+1 c + ạn
+1 c + ạn + h
+1 c + ạo
 1 c + ạp
-1 cả
+1 c + ả
 1 c + ải
-1 cả + m
-1 cả + n
-1 cả + ng
+1 c + ả + m
+1 c + ản
+1 c + ả + ng
 1 c + ảnh
 1 c + ấm
 1 c + ấn
@@ -2145,8 +2086,8 @@
 1 c + ất
 1 c + ấu
 1 c + ấy
-1 cầm
-1 cầm + vùng
+1 c + ầm
+1 c + ầm + vùng
 1 c + ần
 1 c + ầu
 1 c + ầy
@@ -2155,8 +2096,8 @@
 1 c + ẩu
 1 c + ận
 1 c + ập
-1 cậu
-1 cậy
+1 c + ậu
+1 c + ậy
 1 c + ắm
 1 cắn
 1 c + ắp
@@ -2177,20 +2118,19 @@
 1 c + ốt
 1 c + ồ
 1 c + ồn
-1 c + ồ + ng
-1 c + ồ + đà + m
+1 c + ồng
 1 c + ổ
 1 c + ổ + ng
-1 cỗ
+1 c + ỗ
 1 c + ỗi
 1 cộ
 1 cộ + i
-1 c + ộng
+1 cộ + ng
 1 c + ột
 1 c + ớ
 1 c + ờ
 1 c + ởi
-1 cỡ
+1 c + ỡ
 1 c + ợt
 1 cụ
 1 c + ục
@@ -2202,8 +2142,7 @@
 1 c + ủng
 1 c + ứ
 1 c + ứng
-1 cứu
-1 cứu + phê
+1 c + ứ + u
 1 c + ừ
 1 c + ừ + u
 1 cử
@@ -2213,12 +2152,11 @@
 1 cự
 1 c + ựa
 1 cự + c
-1 cự + c + lư + ỡng
 1 cự + u
 1 d
 1 da
 1 dabbe + ville
-1 da + ddis
+1 daddis
 1 da + e + mon
 1 daewoo
 1 dag
@@ -2231,25 +2169,25 @@
 1 dakota
 1 dale + m + bert
 1 dale + s
-1 dal + hous + ie
-1 da + lin
+1 dal + ho + us + ie
+1 dal + in
 1 dal + las
 1 d + all + ven
 1 dal + ton
 1 dal + y
 1 dal + én
-1 da + m + me
-1 dampier
+1 damme
+1 d + amp + ier
 1 dan
 1 da + nang
 1 d + ance
 1 dan + c + ing
-1 dane
-1 dane + lag + h
+1 dan + e
+1 dan + e + la + gh
 1 dan + for + th
 1 da + ng
-1 dan + gr + ek
-1 d + anh
+1 dan + gr + e + k
+1 da + nh
 1 daniel
 1 dan + nam
 1 dan + n + y
@@ -2260,11 +2198,10 @@
 1 dan + ưng
 1 da + o
 1 da + p
-1 dar + dane + lles
+1 dar + dan + e + lles
 1 d + ardenne
 1 dar + fur
 1 d + argenlieu
-1 d + argenlieu + p + ignon
 1 dari
 1 d + aria
 1 dari + én
@@ -2275,31 +2212,30 @@
 1 dar + t
 1 d + arthur
 1 dar + t + moor
-1 dar + t + mou + th
+1 dar + t + mouth
 1 dar + win
 1 da + s
-1 data
+1 da + ta
 1 datbike
 1 d + au + ght + ers
 1 dauria
-1 dav + e
+1 d + ave
 1 david
 1 david + son
 1 dav + ies
 1 dav + ricourt
-1 daw + kins
+1 daw + kin + s
 1 daw + son
 1 da + x
-1 day + dé
-1 day + lewis
+1 day
+1 day + d + é
 1 d + b
-1 d + bus
 1 d + c
 1 d + da
 1 d + d + t
 1 de
 1 deaco + ness
-1 d + ead
+1 de + ad
 1 d + ean
 1 de + ar
 1 de + ath
@@ -2313,15 +2249,16 @@
 1 deep
 1 deep + water
 1 de + fa
-1 de + igh + ton
+1 deigh + ton
 1 dejoux
 1 del
 1 del + ano
 1 del + hi
 1 del + igne
 1 del + ius
-1 del + l
+1 d + ell
 1 del + la
+1 del + ma + s
 1 del + ta
 1 del + v + aux
 1 del + vo + y + e
@@ -2335,36 +2272,35 @@
 1 den + ver
 1 depart + ment
 1 depend
-1 depend + ant + mar + king
+1 depend + ant
 1 der
 1 der + by + shire
-1 der + ek
+1 der + e + k
 1 des
-1 des + car + tes
+1 des + car + t + es
 1 de + sign
 1 desktop
 1 des + tin + y
 1 des + ura
 1 detroit
-1 detroit + windsor
-1 deus
+1 de + us
 1 deutsche
 1 deutsche + n
 1 deutsche + s
 1 deutschland
-1 deutschland + ra + dio
-1 devaraja
+1 deutschland + radio
+1 de + v + ara + ja
 1 develop + er
 1 develop + ment
-1 devi + ces
-1 devi + ll + ers
-1 devi + l + s
+1 de + vi + ces
+1 de + v + ill + ers
+1 de + vi + l + s
 1 de + vé
 1 de + wey
 1 de + x + tre
 1 d + g
-1 dhahran
-1 d + histoire
+1 dhah + ran
+1 d + histo + ire
 1 dhonneur
 1 d + html
 1 di
@@ -2378,36 +2314,37 @@
 1 dick
 1 dick + en + s
 1 dick + in + son
-1 dictionar + ium
-1 dictionar + y
+1 dictionarium
+1 di + c + tionary
 1 diddle
 1 diderot
 1 die
 1 die + go
-1 die + gocarlsbad + san
 1 die + m
 1 die + p + pe
 1 die + s + el
 1 die + t + e + rich
+1 die + thyl
 1 die + t + rich
 1 die + zen
 1 digital
 1 di + l + lon
 1 di + ma
+1 din
 1 d + indochine
 1 di + nh
-1 dio + me + de
-1 dio + phan + to + s
-1 dio + p + tra
-1 dio + xide
-1 dio + xi + n
+1 diomede
+1 diop + han + tos
+1 diop + tra
+1 di + oxide
+1 dioxin
 1 dirac
 1 direct + ive + s
 1 direct + v
 1 direct + x
-1 disc
-1 disc + o
-1 disc + ov + ery
+1 di + s + c
+1 disco
+1 disco + ver + y
 1 disney
 1 disney + land
 1 disraeli
@@ -2417,8 +2354,8 @@
 1 di + t + p
 1 di + u
 1 di + v + ine
-1 divoire
-1 dixiecrat
+1 di + vo + ire
+1 dixiec + rat
 1 di + êm
 1 di + ên
 1 di + ềm
@@ -2428,9 +2365,7 @@
 1 di + ễn
 1 d + iễu
 1 diệm
-1 diệm + b + ùi
 1 di + ện
-1 di + ện + trường
 1 d + iệp
 1 di + ệt
 1 di + ệu
@@ -2451,7 +2386,6 @@
 1 do + d + son
 1 do + g
 1 do + ha
-1 do + hỗ
 1 do + ing
 1 do + k + ovic
 1 dollar
@@ -2469,10 +2403,10 @@
 1 dom + ino
 1 dom + odingovo
 1 don
-1 don + ald
+1 donald
 1 don + er
 1 do + ng
-1 don + na + cona
+1 don + na + con + a
 1 don + nai
 1 don + ne
 1 doodle
@@ -2481,14 +2415,13 @@
 1 dor
 1 dor + li + ak
 1 dor + ot + hy
-1 dor + set
+1 dor + se + t
 1 do + s
 1 do + s + to + yev + sky
-1 do + s + up + port
+1 do + t
 1 do + ta
-1 do + t + com
-1 dou + bleu
-1 dou + g + las
+1 dou + ble
+1 dou + glas
 1 dou + mer
 1 do + ver
 1 do + w
@@ -2511,14 +2444,15 @@
 1 d + rap + pla
 1 dream
 1 dream + work + s
-1 d + rer
+1 d + r + er
 1 d + re + s + den
 1 drew
-1 d + river
-1 drmtivoiz + ation
+1 d + ri + ver
+1 d + r + m
 1 d + rop + box
 1 drottnin + gen + s
-1 druidry
+1 droz
+1 druid + ry
 1 d + rum
 1 d + rum + h + eller
 1 dsb
@@ -2527,9 +2461,9 @@
 1 d + trong
 1 du
 1 du + ale
-1 dubdubdub
-1 dubna
-1 dubstep
+1 du + b
+1 du + b + na
+1 du + b + step
 1 duca + n + son
 1 duca + sses
 1 du + ck
@@ -2537,25 +2471,24 @@
 1 du + ke
 1 du + lles
 1 du + ma
-1 du + m + bar + ton
-1 du + m + mer
-1 du + mou + tier
-1 du + m + p + ty
+1 dum + bar + ton
+1 dum + mer
+1 dum + out + ier
+1 dum + p + ty
 1 dun + can
 1 dun + can + son
 1 dun + dal + k
 1 dun + da + s
 1 du + ng
 1 dun + ge + ness
-1 du + ng + tư
 1 dun + n
 1 du + pa
 1 du + p + ré
 1 dupuis
-1 du + pu + y
-1 dur + bar + ton
-1 dur + b + row
-1 dur + ham
+1 du + p + uy
+1 durb + ar + ton
+1 durb + row
+1 d + ur + ham
 1 du + ron
 1 du + rov
 1 du + st
@@ -2568,19 +2501,18 @@
 1 du + ật
 1 du + ệ
 1 dvb
-1 dvb + t
 1 d + wi + ght
 1 d + wm
 1 dy
 1 dy + ck
 1 dy + lan
 1 dymkovo
-1 dyna + mic
+1 dyna + mi + c
 1 dyna + mo
 1 dyna + text
 1 d + zi + nh
-1 dzu
-1 dzu + ng
+1 d + zu
+1 d + zu + ng
 1 dà
 1 dà + i
 1 dà + n
@@ -2593,10 +2525,8 @@
 1 d + áng
 1 dâlet
 1 d + âm
-1 dân
-1 dân + g
-1 dân + km
-1 dân + toàn
+1 d + ân
+1 d + ân + g
 1 d + âu
 1 d + ây
 1 dã
@@ -2611,17 +2541,17 @@
 1 d + ì + u
 1 d + í
 1 d + í + nh
-1 dò
-1 dò + m
-1 dò + ng
+1 d + ò
+1 d + ò + m
+1 d + ò + ng
 1 d + ôi
 1 d + ông
 1 dõi
 1 d + ù
 1 d + ù + ng
 1 dăm
-1 d + ĩ
-1 d + ĩ + nh
+1 dĩ
+1 dĩ + nh
 1 d + ũ
 1 d + ũ + ng
 1 d + ơi
@@ -2629,25 +2559,24 @@
 1 dư
 1 d + ưa
 1 d + ương
-1 d + ương + đả + ng
 1 dư + ới
 1 dư + ờng
 1 dư + ỡng
 1 dư + ợc
 1 dư + ợt
 1 dạ
-1 dạ + i
-1 dạ + n
+1 d + ại
+1 d + ạn
 1 dạ + ng
 1 dạ + ng + do + c
-1 dạ + o
-1 dạ + y
+1 d + ạo
+1 d + ạy
 1 d + ải
 1 d + ấn
 1 d + ấp
 1 d + ấu
 1 d + ấy
-1 dầm
+1 d + ầm
 1 d + ần
 1 d + ầu
 1 d + ầy
@@ -2657,11 +2586,11 @@
 1 d + ận
 1 d + ập
 1 d + ật
-1 dậu
-1 dậy
+1 d + ậu
+1 d + ậy
 1 d + ắc
 1 d + ắt
-1 dằ + ng
+1 d + ằ + ng
 1 d + ẳ + ng
 1 d + ặc
 1 dặm
@@ -2686,18 +2615,18 @@
 1 d + ốt
 1 d + ồi
 1 d + ồn
-1 dỗ
+1 d + ỗ
 1 dội
 1 d + ớn
 1 d + ờ
 1 d + ời
 1 d + ở
-1 dỡ
+1 d + ỡ
 1 d + ợt
-1 dụ
+1 d + ụ
 1 d + ục
-1 dụ + ng
-1 dứa
+1 d + ụ + ng
+1 d + ứa
 1 d + ứng
 1 d + ứt
 1 d + ừ + ng
@@ -2708,8 +2637,8 @@
 1 dự + c
 1 dự + ng
 1 e
-1 ead + red
-1 ead + we + ard
+1 eadred
+1 eadwe + ard
 1 eagle
 1 e + al + ing
 1 ease
@@ -2719,31 +2648,30 @@
 1 ea + ton
 1 e + b
 1 e + bay
-1 e + book
 1 eboracum
 1 eca + fe
-1 ec + c + les
+1 e + c + c + les
 1 e + cho
-1 e + chức
+1 e + ch + ức
 1 e + ck + hard
 1 eclipse
-1 ec + ma + script
-1 ec + mo
-1 ecocide
+1 e + c + ma + script
+1 e + c + mo
+1 e + co + c + ide
 1 e + co + fin
-1 econo + mic
-1 econo + m + ist
+1 econom + ic
+1 econom + ist
 1 ecosoc
-1 e + cua + dor
+1 e + cu + ador
 1 ed + berg
 1 ed + dy
 1 ed + gar
 1 edge
 1 ed + g + mond
-1 edi + son
-1 edi + th
-1 edi + tion
-1 edmonton
+1 ed + ison
+1 e + di + th
+1 e + di + tion
+1 ed + mon + ton
 1 ed + m + und
 1 ed + ubuntu
 1 ed + uc + ation
@@ -2762,10 +2690,10 @@
 1 e + ine
 1 einheit
 1 einstein
-1 eisen + hower
+1 eisen + ho + wer
 1 eisen + mann
 1 eisen + stein
-1 ek
+1 e + k
 1 e + ka + ter + ina
 1 ekaterinburg
 1 el
@@ -2773,7 +2701,7 @@
 1 el + bridge
 1 el + dar
 1 eleanor
-1 elec + tric
+1 elec + tri + c
 1 elec + tro + lu + x
 1 electron
 1 electron + ic
@@ -2791,7 +2719,7 @@
 1 ell + en
 1 ell + es + mer + e
 1 ellington
-1 elli + s
+1 ell + is
 1 ell + s + berg
 1 els + ie
 1 els + tre + e
@@ -2807,6 +2735,7 @@
 1 emelianenko
 1 e + mer + son
 1 e + mer + y + ville
+1 e + mi
 1 emil
 1 emil + e
 1 emil + y
@@ -2815,11 +2744,11 @@
 1 em + manuel
 1 empire
 1 en
-1 en + c + i + clo + pedia
+1 enciclop + edia
 1 en + cyclopaedia
-1 encyclo + p + d + ia
-1 encyclo + pedia
-1 encyclo + pé + die
+1 encyclop + d + ia
+1 encyclop + edia
+1 encyclop + é + die
 1 end
 1 en + e + my
 1 energo + mash
@@ -2831,15 +2760,14 @@
 1 e + ng + la + land
 1 e + ng + land
 1 englert
-1 engli
-1 engli + sh
+1 e + ng + l + ish
 1 enia + c
 1 enid
-1 enlig + hten + ment
+1 enlighten + ment
 1 en + mobil + e + wikipedia + org
 1 en + m + wikipedia + org
 1 ennis
-1 en + qu + i + re
+1 en + qu + ire
 1 en + qu + ist
 1 ensor
 1 ente + rprise
@@ -2855,16 +2783,16 @@
 1 ephraim
 1 epidem + ica
 1 episcopal
-1 e + po + ch
+1 e + p + o + ch
 1 epr
 1 epsi + lon
 1 e + p + ta
 1 epyc
 1 equatorial
-1 equinix
-1 equip + ment
+1 equi + nix
+1 equi + p + ment
 1 e + rasmus
-1 e + ra + to + s + the + nes
+1 e + ra + tos + the + nes
 1 e + rich
 1 eric + son
 1 eric + sson
@@ -2877,10 +2805,11 @@
 1 er + la + nder
 1 er + la + ng + en
 1 ermitazh
-1 ernest
+1 ern + es + t
 1 ern + st
 1 errors
 1 ers
+1 es
 1 esa
 1 esa + ia + s
 1 escaped
@@ -2901,7 +2830,7 @@
 1 ethanol
 1 et + her
 1 ethnologue
-1 etienne
+1 et + ienne
 1 e + ton
 1 et + rus + can
 1 eu
@@ -2917,8 +2846,8 @@
 1 eureka
 1 euro
 1 euro + bar + o + meter
-1 euro + mon + itor
-1 euro + pa + park
+1 euro + moni + tor
+1 euro + pa
 1 euro + pe
 1 euro + pe + an
 1 euro + stat
@@ -2929,21 +2858,21 @@
 1 ever + g + la + des
 1 ever + green
 1 ever + t + s
-1 ever + y + mans
-1 ever + y + w + here
+1 ever + y + man + s
+1 ever + ywhere
 1 evgeniy
 1 evgeny
-1 e + vil
+1 e + vi + l
 1 evolved
-1 examiner
-1 ex + cali + bur
+1 exami + ner
+1 e + x + cali + bur
 1 excelsior
-1 ex + c + use
+1 e + x + cuse
 1 execut + able
-1 ex + moor
-1 explor + ator + ium
-1 explor + er
-1 ex + press
+1 e + x + moor
+1 exploratorium
+1 explorer
+1 express
 1 extenderm + ặc
 1 exxon + mobil
 1 ey + ck
@@ -2961,10 +2890,11 @@
 1 fact + o
 1 fa + d + ren
 1 fa + film
-1 fagneshohes
-1 fagun + des
-1 fahd
+1 fa + g + nes
+1 fa + g + un + des
+1 fa + hd
 1 fahrenheit
+1 fa + i + khet
 1 fair + chi + l + d
 1 fa + i + sal
 1 fal + con
@@ -3006,14 +2936,14 @@
 1 fe + et
 1 f + einstein
 1 felipe
-1 fe + lix
+1 fe + li + x
 1 f + ell
 1 fencib + les
 1 fennec
 1 fe + n + s + pat
 1 fer
 1 fer + al + ite
-1 fer + di + n + and
+1 fer + din + and
 1 fer + gu + son
 1 fer + ha + t
 1 fer + mat
@@ -3031,17 +2961,18 @@
 1 f + eyn + man
 1 ff
 1 f + g + m
+1 fi
 1 fichou
 1 fichte
 1 field
 1 field + s
 1 fi + fa
 1 figaro
-1 f + igh + ter
+1 fi + gh + ter
 1 filatov
 1 fi + le
-1 fi + li + pino
-1 fi + ll + more
+1 filipino
+1 f + ill + more
 1 film
 1 film + er
 1 fin + ance
@@ -3050,7 +2981,7 @@
 1 fin + jan
 1 finn
 1 finn + ic
-1 finn + o + ugric
+1 finn + o
 1 finn + ve + den
 1 fi + o + rav + anti
 1 fi + ra
@@ -3058,8 +2989,9 @@
 1 fire + bird
 1 fire + bu + g
 1 fire + fox
+1 fire + pro
 1 fire + work + s
-1 firmware
+1 fi + r + m + war + e
 1 first
 1 fish
 1 fish + el
@@ -3067,14 +2999,14 @@
 1 fitz + ger + ald
 1 fitz + roy
 1 flaggans
-1 flaggentag
+1 f + lag + gen + tag
 1 flamesd + ark
 1 f + la + t
 1 fleisc + her
 1 f + le + m + ish
 1 flerov
 1 flerov + a
-1 flexibil + ity
+1 f + le + xi + bil + ity
 1 flickr
 1 florent
 1 floricic
@@ -3086,12 +3018,12 @@
 1 focus
 1 fo + g
 1 folke + stone
-1 fo + ll + ette
+1 f + oll + ette
 1 fonda
 1 font
 1 font + aine + ble + au
-1 font + aine + bleu
-1 font + an + e
+1 font + aine + ble + u
+1 font + ane
 1 font + eyn
 1 fonvizin
 1 for
@@ -3105,7 +3037,8 @@
 1 form
 1 for + mat
 1 form + e
-1 form + id + able
+1 form + ida + ble
+1 form + s
 1 form + ula
 1 for + s + berg
 1 fort
@@ -3114,14 +3047,14 @@
 1 fort + ress
 1 fort + une
 1 for + um
-1 fossil
+1 fo + s + sil
 1 fouchet
 1 found
 1 found + ation
 1 found + ation + s
 1 found + ry + s
 1 fo + u + rier
-1 fournier
+1 fourn + ier
 1 fox
 1 fox + borough
 1 fox + mark + s
@@ -3130,37 +3063,35 @@
 1 f + p + t
 1 f + pu
 1 fractal
-1 frame + stor + e
+1 frame + st + ore
 1 frame + work
 1 fran
 1 fran + ais
-1 fran + aise
+1 fran + ais + e
 1 franc
 1 franc + a
 1 franc + e
-1 franc + hecomté
-1 francis
-1 francis + can
-1 francis + co
-1 francis + cooakland
-1 francis + cooakland + fre + mont
+1 fran + che
+1 franc + is
+1 franc + is + can
+1 fran + cisco
 1 franc + k
 1 franc + ois
-1 franc + ophon + ie
+1 franc + ophonie
+1 franc + orchamps
 1 fran + k
 1 fran + k + el
 1 frankfurt
 1 frankfurt + er
 1 fran + k + lin
 1 fran + ois
-1 fran + ois + ernest
 1 fran + quin
-1 fran + z + jose + f
+1 fran + z
 1 f + ra + ser
 1 frauen + kir + che
 1 fraunho + fer
 1 fre + ak
-1 fre + a + x
+1 fre + ax
 1 fred
 1 fred + dy
 1 fred + e + rick
@@ -3174,19 +3105,20 @@
 1 fre + ge
 1 fre + i
 1 fre + i + burg
+1 fre + mont
 1 fre + n + ch
+1 fre + s + no
 1 fre + ud
 1 frid + eric
 1 fried + rich
 1 friends
-1 frisby
-1 frisco
-1 frisia
+1 fris + by
+1 fris + co
+1 fris + ia
 1 fritz
-1 f + r + ken
-1 f + rom
+1 fr + ken
+1 fr + om
 1 front
-1 front + end
 1 frsvarsmakten
 1 f + ry
 1 f + răng
@@ -3210,13 +3142,13 @@
 1 fur + ama
 1 fur + an
 1 fur + ta + do
-1 fu + se + c + use
+1 f + use
 1 fu + t + sal
 1 fvwm
 1 f + x
 1 fyo + dor
-1 fé + dé + r + ation
-1 fé + lix
+1 fé + d + é + r + ation
+1 fé + li + x
 1 fé + ray
 1 g
 1 ga
@@ -3226,11 +3158,10 @@
 1 ga + el
 1 ga + el + ic
 1 gagarin
-1 gai
-1 gai + c + ầu
-1 gai + dai
-1 gai + du + k
-1 gai + n + s + borough
+1 ga + i
+1 ga + i + dai
+1 gaiduk
+1 ga + in + s + borough
 1 ga + ius
 1 ga + j
 1 gakko
@@ -3240,22 +3171,22 @@
 1 gali + leo
 1 gali + lê
 1 gali + na
-1 g + all + ia
+1 g + al + l + ia
 1 gallieni
-1 g + all + ium
-1 g + all + up
+1 gallium
+1 gallup
 1 g + ama
 1 gamaleya
 1 gambas
 1 game
-1 game + forge
+1 game + for + ge
 1 game + s
 1 game + s + com
 1 gan
 1 ga + nder
 1 gan + d + hi
 1 ga + ng
-1 g + anh
+1 ga + nh
 1 ga + o
 1 ga + p
 1 gar + age
@@ -3268,7 +3199,7 @@
 1 gar + field
 1 gar + g + amesh
 1 gar + ibald + i
-1 gar + mischparten + kir + chen
+1 gar + mis + ch
 1 gar + mos + hka
 1 gar + neau
 1 gar + n + ier
@@ -3276,36 +3207,35 @@
 1 gar + y
 1 gas
 1 gas + par
-1 gas + pé
+1 gas + p + é
 1 gas + s + y
 1 gas + town
 1 gate
-1 gate + sh + ead
+1 gate + s + head
 1 gate + way
-1 gatineau
-1 gatsby
+1 g + ati + neau
+1 g + ats + by
 1 g + au + cho
 1 gaul + le
 1 gaul + list
-1 ga + uss
+1 gauss
 1 ga + vin
 1 ga + y
 1 ga + za
-1 gazp + rom
+1 gazprom
 1 g + b
 1 g + c + c
-1 g + c + m
 1 gcse
 1 gdask
 1 g + del
 1 gdp
 1 ge + any
 1 gear
-1 gear + s + cũng
+1 gear + s
 1 gear + y
 1 gecko
 1 ge + gen
-1 gehry
+1 ge + h + ry
 1 gei + ger
 1 gei + jer
 1 gelb
@@ -3321,7 +3251,7 @@
 1 gen + ius
 1 gen + na + ro
 1 gen + ouilly
-1 ge + nova
+1 gen + ova
 1 gen + t
 1 gen + t + le + men
 1 gen + too
@@ -3330,7 +3260,7 @@
 1 gen + é + ve
 1 geoff
 1 geoff + rey
-1 g + eo + gra + phia
+1 geogra + phia
 1 geometria
 1 geometrie
 1 georg
@@ -3347,10 +3277,10 @@
 1 german
 1 german + ia
 1 german + ic
-1 german + ium
+1 german + i + um
 1 german + o + rum
 1 ger + sh + win
-1 ger + son + i + des
+1 ger + son + ide + s
 1 geschichte
 1 geteilte
 1 getsemani
@@ -3361,8 +3291,8 @@
 1 ghazi
 1 g + he
 1 g + hen
-1 ghi
-1 ghi + rard + elli
+1 g + hi
+1 ghirardelli
 1 ghé
 1 ghé + p
 1 ghé + t
@@ -3375,37 +3305,35 @@
 1 gia + cô + bê
 1 gia + i
 1 gia + m
-1 gian
+1 g + ian
 1 gia + ng
 1 gia + nh
-1 gian + ni + ni
-1 gian + t + s
-1 gian + v + ận
+1 gia + n + ni + ni
+1 g + ian + t + s
 1 gia + o
-1 gia + o + mỹ
-1 gia + tô
+1 gia + o + m + ỹ
 1 gia + v + ê
-1 gib + b + s
-1 gib + raltar
-1 gib + son
+1 gi + b + b + s
+1 gi + braltar
+1 gi + b + son
 1 gi + don
-1 gielgud
+1 gi + elgud
 1 gi + eo
-1 gil + bert
-1 gil + els
-1 gil + la + in
+1 gi + l + bert
+1 gi + l + els
+1 gi + lla + in
 1 gi + lles
-1 gil + more
+1 gi + l + more
 1 gi + m + p
 1 gi + ni
 1 gi + oan
-1 giovanni
+1 gi + ova + n + ni
 1 gi + r + aud
-1 girolamo
+1 gi + rolamo
 1 gi + t
 1 gi + use
 1 gi + use + p + pe
-1 giusê
+1 gi + us + ê
 1 gi + u + đa
 1 già
 1 già + n
@@ -3420,17 +3348,16 @@
 1 giá + n
 1 giá + ng
 1 giá + o
-1 giá + o + khoa
 1 giá + p
 1 giá + y
 1 gi + ây
 1 giã
 1 giã + i
 1 giã + n
-1 gièm
-1 gié
-1 gié + c + ma + nh
-1 giê + h + ô + va
+1 gi + èm
+1 gi + é
+1 gi + é + c + ma + nh
+1 giê
 1 giê + ng
 1 giê + ri + cô
 1 giê + su
@@ -3438,30 +3365,30 @@
 1 gi + ò + n
 1 gió
 1 gió + ng
-1 gi + ô + cô + v + ích
+1 gi + ô
 1 gi + ông
 1 gi + ô + x + ết
-1 giùm
+1 gi + ù + m
 1 gi + úp
 1 gi + úp + wiki + text
 1 gi + ă + ng
-1 giơnevơ
-1 giường
+1 gi + ơ + nev + ơ
+1 gi + ư + ờng
 1 gi + ạt
 1 giả
-1 giả + i
+1 gi + ải
 1 giả + m
 1 giả + n
 1 giả + ng
-1 giả + o
+1 gi + ảo
 1 gi + ấc
 1 gi + ấu
 1 gi + ấy
 1 gi + ẫm
 1 gi + ận
 1 gi + ật
-1 giậu
-1 giằ + ng
+1 gi + ậu
+1 gi + ằ + ng
 1 gi + ặc
 1 gi + ặn
 1 gi + ẻ
@@ -3470,40 +3397,37 @@
 1 gi + ết
 1 gi + ề + ng
 1 g + iễu
-1 gi + ọng
-1 giọt
+1 gi + ọ + ng
+1 gi + ọ + t
 1 gi + ỏi
 1 gi + ốc
 1 gi + ống
-1 gi + ồ + ng
-1 giỗ
+1 gi + ồng
+1 gi + ỗ
 1 gi + ới
 1 gi + ới + dẫn
-1 giờ
-1 giờ + năm
-1 giờ + tháng
+1 gi + ờ
 1 gi + ở
 1 gi + ục
 1 giữ
 1 giữ + a
-1 giựt
+1 gi + ự + t
 1 g + lab + rum
+1 g + lac + ier
 1 g + lam
-1 glasnost
-1 g + las + pie
-1 glastonb + ury
+1 glas + no + st
+1 glas + pie
+1 glas + ton + bury
 1 g + le + b
-1 g + l + en + gar + ry
+1 g + le + n + gar + ry
 1 g + ley
 1 gllivare
 1 global
 1 global + found + ries
-1 gloire
-1 glonass
-1 glonass + k
-1 glonass + m
-1 g + l + ory
-1 glouce + ster
+1 glo + ire
+1 glo + nass
+1 glo + ry
+1 glo + uc + e + ster
 1 glushko
 1 glzc
 1 g + m
@@ -3512,19 +3436,15 @@
 1 g + m + p
 1 g + nat
 1 gnewsense
-1 gnome
+1 g + n + o + me
 1 g + n + ter
-1 gnu
-1 gnu + hurd
-1 gnu + linux
-1 gnu + linux + libre
+1 g + nu
 1 go
-1 go + ah + ead
 1 god
 1 god + e + rich
 1 god + fat + her
-1 god + fre + y
-1 god + iva
+1 god + f + rey
+1 god + i + va
 1 go + e + the
 1 g + of + fin
 1 gogol
@@ -3542,39 +3462,39 @@
 1 good + game
 1 google
 1 google + com
+1 goose
 1 g + op + her
-1 gor + bach + ev
+1 gor + bachev
 1 gor + bach + ov
 1 gor + don
 1 gor + e
-1 gor + ky
-1 gor + man
+1 gor + k + y
+1 g + orman
 1 gosateizm
 1 go + s + l + ing
 1 gosolarsf
-1 goth
-1 goth + en + burg
-1 goth + ic
-1 got + land
-1 got + t + fried
-1 got + th + old
-1 got + tlieb
-1 got + tlob
+1 go + th
+1 go + th + en + burg
+1 go + th + ic
+1 go + t + land
+1 gott + fried
+1 gott + hol + d
+1 gott + lie + b
+1 gott + lo + b
 1 goulbourn
 1 g + our + don
 1 gouzenko
-1 gower
+1 go + wer
 1 g + par + ted
 1 gpl
-1 gpl + lgplmpl
 1 gpl + v
 1 gpl + yêu
 1 gps
 1 g + pu
-1 gra + c + ey
-1 gra + f + ton
-1 gra + ham
-1 gra + m + me
+1 gracey
+1 gr + af + ton
+1 g + ra + ham
+1 gramme
 1 gran + by
 1 grand
 1 grand + e
@@ -3586,21 +3506,21 @@
 1 gran + ville
 1 graph
 1 graph + ics
-1 gra + s
-1 grass
-1 gra + teful
-1 gra + ves
-1 gra + y
-1 gra + zhdanskaya
+1 gras
+1 gras + s
+1 grateful
+1 grave + s
+1 g + ray
+1 grazhdanskaya
 1 grdp
 1 gr + ease + cycle
 1 great
-1 gr + ec
+1 g + re + c
 1 green
 1 green + bel + t
-1 green + grass
+1 green + gras + s
 1 green + land
-1 green + slee + ves
+1 green + s + lee + ves
 1 green + ville
 1 greg
 1 greg + or + ius
@@ -3624,24 +3544,25 @@
 1 gru + mi + aux
 1 g + rum + man
 1 gru + n + de
-1 gru + z + ia
+1 gru + n + t
+1 gru + zi + a
 1 grévy
 1 g + sta
 1 g + ta
 1 g + ta + land
 1 g + te + borg
 1 g + t + k
-1 g + trịnh
+1 g + trị + nh
 1 gtsx
 1 gua + dal + u + pe
 1 gua + m
 1 gua + ntanamo
 1 gua + rd + ant
 1 gua + rd + ian
-1 gua + tem + ala
+1 gua + tem + al + a
 1 guerrero
 1 guess
-1 guest
+1 gu + es + t
 1 gui
 1 gui + de
 1 gui + le
@@ -3662,10 +3583,11 @@
 1 gutman
 1 gutman + s
 1 gu + y
-1 gu + é + rard
-1 gu + ồ + ng
+1 guér + ard
+1 gu + ồng
 1 gvle
 1 gwendo + lyn
+1 g + x
 1 gyatso
 1 gzhel
 1 gà
@@ -3680,14 +3602,13 @@
 1 g + âm
 1 g + ân
 1 g + ây
-1 gã
-1 gã + y
+1 g + ã
+1 g + ã + y
 1 génér + aux
 1 g + ì
 1 g + ì + n
-1 gò
-1 gò + n
-1 gò + nhà
+1 g + ò
+1 g + ò + n
 1 góa
 1 g + óc
 1 g + ói
@@ -3695,7 +3616,6 @@
 1 gót
 1 g + ô
 1 g + ôn
-1 g + ô + t + ích
 1 gõ
 1 g + ù
 1 găm
@@ -3706,18 +3626,17 @@
 1 gườm
 1 g + ư + ợng
 1 gạch
-1 gạo
+1 g + ạo
 1 g + ạt
 1 g + ả
 1 g + ấc
 1 g + ấm
 1 g + ấp
 1 g + ấu
-1 gầm
-1 gầm + x + oài
+1 g + ầm
 1 g + ần
 1 g + ầy
-1 gậy
+1 g + ậy
 1 gắn
 1 gắn + g
 1 g + ắt
@@ -3725,48 +3644,49 @@
 1 gặp
 1 g + ặt
 1 g + ọi
-1 g + ọn
-1 g + ọng
+1 gọn
+1 gọn + g
 1 gọt
 1 g + ỏi
 1 g + ốc
 1 g + ối
 1 g + ốm
 1 g + ồ
-1 gồm
-1 gỗ
+1 g + ồ + m
+1 g + ỗ
 1 gội
 1 gộp
 1 g + ớm
+1 g + ờ
 1 g + ờ + m
-1 g + ờ + ré + t
 1 g + ở
 1 g + ởi
-1 gỡ
-1 gợi
+1 g + ỡ
+1 g + ợi
 1 g + ợn
 1 gừng
 1 gửi
 1 h
 1 ha
-1 ha + ag
+1 ha + a + g
 1 habermas
 1 ha + b + s + burg
-1 hack + black + arch
-1 hack + er
-1 had
-1 had + ley
-1 had + rianus
+1 ha + ck + black + arch
+1 ha + ck + er
+1 ha + d
+1 ha + d + ley
+1 hadrianus
 1 hague
 1 ha + hn
 1 hai
 1 hai + g
-1 hai + ght + ash + b + ury
+1 hai + ght
 1 hai + ti
 1 ha + ji
 1 halb + ers + tam
 1 halifax
 1 hall
+1 hall + e
 1 hall + stat + t
 1 ha + lo + gen
 1 ham
@@ -3781,16 +3701,16 @@
 1 ham + mer
 1 ham + p + shire
 1 han
-1 h + and
+1 han + d
 1 han + del
 1 ha + ng
 1 ha + ng + ul
 1 ha + nh
 1 han + no + ver
 1 ha + noi
-1 hans
-1 hans + e
-1 hans + wijk
+1 han + s
+1 han + se
+1 han + swijk
 1 han + t + s + port
 1 ha + o
 1 happy
@@ -3815,11 +3735,12 @@
 1 har + ry
 1 hart
 1 hart + ley
-1 hart + s + field + jack + son
+1 hart + man
+1 hart + s + field
 1 har + v + ard
 1 har + v + ey
-1 ha + s + k + ell
-1 ha + s + san
+1 hask + ell
+1 hassan
 1 hasselt
 1 ha + sson
 1 ha + st + ing + s
@@ -3838,36 +3759,37 @@
 1 hawaii
 1 hawk
 1 hawk + ing
-1 hawt + horne
+1 hawthorne
 1 hay
 1 hay + den
 1 hay + e
 1 hay + es
+1 hay + tham
 1 hay + ward
 1 ha + zel
 1 h + b + c
 1 hcm
 1 h + con
 1 hcv
-1 h + cò + n
+1 h + còn
 1 hd
 1 hd + v
 1 he
-1 hea + der
-1 hea + dquart + ers
-1 hea + dsmashedin
-1 health
+1 head
+1 head + er
+1 head + qua + r + t + ers
+1 he + al + th
 1 hear + st
 1 hear + st + bị
 1 hear + t
-1 hea + th
-1 hea + t + henry
-1 hea + th + row
+1 heath
+1 heath + en + ry
+1 heath + row
 1 hea + vi + side
 1 hea + v + y
 1 hebrerd
 1 hebrew
-1 hebride
+1 he + br + ide
 1 he + c + ta
 1 hedvig
 1 hegel
@@ -3887,9 +3809,9 @@
 1 helen + s
 1 helgo + land
 1 he + li
-1 hellcat
+1 h + ell + cat
 1 hellenistic
-1 hellu + land
+1 h + ell + u + land
 1 helm + hol + tz
 1 helm + ut
 1 helsinki
@@ -3901,9 +3823,9 @@
 1 he + ng
 1 hen + in
 1 hen + nes
-1 henri
-1 henri + k
-1 henry
+1 hen + ri
+1 hen + rik
+1 hen + ry
 1 hen + son
 1 he + o
 1 he + p
@@ -3914,43 +3836,43 @@
 1 her + b + st
 1 her + cu + les
 1 her + c + y + nia
-1 here + ford + shire
-1 here + ward
+1 her + e + ford + shire
+1 her + e + ward
 1 her + g + é
 1 her + i + tage
 1 her + man
 1 her + mann
-1 her + me + s
+1 her + mes
 1 her + ne
 1 he + rod
 1 her + o + in
-1 her + ring
+1 her + ri + ng
 1 her + tz
 1 her + zegov + ina
-1 her + zog
+1 her + zo + g
 1 hesse
 1 hetch
 1 hetch + y
-1 heterophylla
+1 heterophy + lla
 1 hevea
-1 hewlettpackard
-1 hewlettpackard + nhiều
+1 hewlett
+1 hexahydroindolo
 1 he + y
-1 he + y + mans
+1 he + y + man + s
 1 hezbollah
 1 h + g
 1 hi
 1 hibernia
 1 hidalgo
 1 hi + d + den
-1 hierarchy
+1 hierar + ch + y
 1 higgs
 1 high
 1 high + l + anders
 1 high + land + s
 1 high + way
 1 high + wood
-1 hil + aire
+1 hil + a + ire
 1 hil + bert
 1 hil + fsdienst
 1 hill
@@ -3960,30 +3882,27 @@
 1 hill + s + borough
 1 hil + s + man
 1 hil + ton
-1 hi + ma + ch + al
+1 himachal
 1 hi + mar + s
 1 hi + ment
 1 hi + m + mel
 1 hindi
-1 hindi + urdu
 1 hindu
 1 hi + nh
 1 hip
 1 hip + par + chu + s
 1 hip + pie
-1 hip + pop
 1 hip + ster
 1 hirondelle
 1 hiroshima
-1 hir + th
-1 histoire
+1 hi + r + th
+1 histo + ire
 1 histo + plasma
 1 historia
 1 historia + e
 1 histo + ry
-1 hitchc + ock
+1 hitchcock
 1 hi + v
-1 hi + v + aids
 1 hi + ves
 1 hiên
 1 hiếm
@@ -3999,7 +3918,7 @@
 1 hiện
 1 hiện + các
 1 hiện + đã
-1 hiệp
+1 h + iệp
 1 hiệt
 1 hiệu
 1 hjal + mar
@@ -4013,13 +3932,14 @@
 1 hoa + bi + nh + ian
 1 hoa + n
 1 hoa + ng
-1 hoa + pháp
 1 hoa + y
 1 ho + b + bes
 1 hocquart
 1 hodge
+1 ho + ff + mann
 1 hogans
-1 hoi
+1 hohes
+1 ho + i
 1 hokkaido
 1 hol + be + in
 1 hol + d + ing
@@ -4028,11 +3948,12 @@
 1 hol + li + man
 1 hol + low
 1 hol + ly + wood
-1 holm
+1 hol + m
 1 hol + man
 1 hol + ocaust
 1 hol + oc + en
 1 hol + st
+1 hol + stein
 1 home
 1 home + page
 1 ho + mo
@@ -4040,7 +3961,7 @@
 1 honduras
 1 honolulu
 1 honor
-1 hood
+1 ho + o + d
 1 ho + o + ke
 1 hoover
 1 hoover + ph + onic
@@ -4050,21 +3971,21 @@
 1 hor + ae
 1 hor + ati + o
 1 hor + ison
-1 hor + izon
+1 hor + iz + on
 1 hor + k + hei + mer
 1 hor + n
-1 horne
+1 hor + ne
 1 hor + owitz
 1 hor + ri + b + les
 1 hor + seshoe
 1 hor + ta
 1 hor + ton
-1 hot
-1 hot + els
-1 hot + s + pur
-1 ho + urs
-1 hous + e
-1 hous + ton
+1 ho + t
+1 ho + t + els
+1 ho + t + s + pur
+1 ho + ur + s
+1 ho + use
+1 ho + us + ton
 1 ho + ward
 1 howitzer
 1 ho + y + les
@@ -4077,18 +3998,18 @@
 1 hoãn
 1 hoạ
 1 hoạ + ch
-1 hoạ + i
+1 hoại
 1 hoạ + n
 1 hoạ + t
 1 hoả
 1 hoả + ng
-1 hoằ + ng
+1 ho + ằ + ng
 1 hoẵ + ng
-1 hoặc
+1 ho + ặc
 1 h + p
 1 hrns + and
 1 html
-1 htpc
+1 h + t + p + c
 1 http
 1 http + s
 1 htv
@@ -4100,9 +4021,9 @@
 1 hugh + es
 1 hu + go
 1 hu + i
-1 hu + ll
+1 hull
 1 hum + ber
-1 hum + bo + ldt
+1 hum + bol + d + t
 1 hum + ph + rey
 1 hum + p + ty
 1 hum + ve + e
@@ -4110,10 +4031,9 @@
 1 hu + ng
 1 hu + ng + ary
 1 hunt
-1 hunters
-1 hunters + point
+1 hunt + ers
 1 hunt + ley
-1 hurd
+1 hu + rd
 1 hu + r + ley
 1 hu + ron
 1 hu + ron + s
@@ -4125,45 +4045,43 @@
 1 huy + gen + s
 1 huy + nh
 1 h + uyên
-1 huyết
-1 huyền
+1 huy + ết
+1 huy + ền
 1 huy + ễn
-1 huyện
+1 huy + ện
 1 huy + ệt
 1 hu + ân
-1 huê + hoa
+1 huê
 1 hu + ấn
 1 huế
-1 huế + trường
-1 huế + đà
+1 huế + t + rường
 1 hu + ề
 1 huệ
-1 h + uống
+1 hu + ống
 1 huỳnh
-1 huỳnh + tạo
+1 huỳnh + t + ạo
 1 h + uỷ
 1 h + vo + rost + ovsky
 1 hy
 1 hy + att
 1 hy + b + rid
-1 hy + d + rat
+1 hydr + at
 1 hydro
-1 hydro + cacbon
+1 hydro + cac + bon
 1 hydro + car + bon
 1 hydro + gen
-1 hydro + xide
-1 hy + d + rô + xít
+1 hydr + oxide
+1 hydr + ô + xí + t
 1 hy + er
-1 hy + la
 1 hy + m + n
 1 hy + nes
 1 hy + pe + bol
+1 hyper
 1 hyper + bol
 1 hyper + card
 1 hyper + ion
 1 hyper + media
 1 hyper + text
-1 hyper + v
 1 hypothesen
 1 hy + time
 1 hà
@@ -4171,19 +4089,13 @@
 1 hà + m
 1 hà + n
 1 hà + ng
-1 hà + ng + năm
-1 hà + nh
-1 hà + nh + bao
-1 hà + nh + thom + as
-1 hà + o
+1 hành
+1 hành + bao
+1 h + ào
 1 h + á
 1 h + ách
 1 h + ái
-1 hán
-1 hán + hà + n
-1 hán + nôm
-1 hán + việt
-1 hán + văn
+1 h + án
 1 h + át
 1 h + âm
 1 h + ân
@@ -4201,20 +4113,15 @@
 1 hê
 1 hê + rô + đê
 1 hìn + h
-1 h + í
-1 h + ít
+1 hí
+1 hí + t
 1 hò
-1 hòa
-1 hòa + chính
-1 hòa + c + ộng
+1 hò + a
 1 hò + m
 1 hò + n
 1 hò + ng
 1 hó
-1 hóa
-1 hóa + kh + ử
-1 hóa + ng + hệ
-1 hóa + t + ôn
+1 hó + a
 1 hó + c
 1 hó + m
 1 hó + t
@@ -4223,7 +4130,7 @@
 1 hôm
 1 h + ôn
 1 h + ông
-1 hùa
+1 h + ùa
 1 hùm
 1 hùng
 1 h + úng
@@ -4236,40 +4143,37 @@
 1 hđnd
 1 h + ơi
 1 h + ơn
-1 h + ơn + hậu
+1 h + ơn + h + ậu
 1 hư
 1 hư + ng
 1 hư + u
 1 h + ương
 1 hư + ơ + u
-1 h + ước
+1 hước
 1 hư + ớng
 1 hưởng
-1 hư + ỡn
+1 hư + ỡ + n
 1 hạ
-1 hạ + ch
-1 hạ + i
+1 hạch
+1 h + ại
 1 hạ + m
 1 hạ + n
 1 hạ + ng
 1 hạ + nh
-1 hạ + o
-1 hạ + saxon
+1 h + ạo
 1 hạ + t
-1 hạtnhân
 1 h + ả
 1 h + ải
 1 h + ảo
 1 h + ấn
 1 h + ấp
 1 h + ất
-1 hầm
+1 h + ầm
 1 h + ầu
 1 hẫp
 1 hậm
 1 h + ận
-1 hậu
-1 hậu + đại
+1 h + ậu
 1 h + ắc
 1 hắn
 1 hằn
@@ -4284,15 +4188,14 @@
 1 h + ết
 1 hề
 1 hễ
-1 hệ
-1 hệ + t
-1 hỉ
+1 h + ệ
+1 h + ệt
+1 h + ỉ
 1 hỉnh
 1 hị + ch
 1 họ
 1 họ + a
 1 học
-1 học + t + riết
 1 học + tổ
 1 họ + ng
 1 họ + ng + ôn
@@ -4303,18 +4206,18 @@
 1 hỏng
 1 hố
 1 h + ối
-1 hố + ng
-1 hố + t
+1 h + ống
+1 h + ốt
 1 h + ồ
 1 h + ồi
 1 h + ồn
-1 hồng
-1 hổ
-1 hổ + ng
-1 hỗ
-1 hỗ + n
+1 h + ồng
+1 h + ổ
+1 h + ổ + ng
+1 h + ỗ
+1 h + ỗ + n
 1 hộ
-1 hội
+1 hộ + i
 1 hộ + p
 1 h + ới
 1 h + ớn
@@ -4324,9 +4227,9 @@
 1 hợp
 1 h + ợt
 1 hụt
-1 h + ủ
-1 hủy
-1 hứa
+1 hủ
+1 hủ + y
+1 h + ứa
 1 h + ứng
 1 hữu
 1 hự
@@ -4343,7 +4246,7 @@
 1 ibn
 1 ibrahim
 1 ibrahim + ovic
-1 i + bus + unikey
+1 i + bus
 1 ic
 1 ica
 1 ic + ann
@@ -4357,26 +4260,27 @@
 1 i + ck + x
 1 ic + t
 1 ida
+1 ida + ea
 1 ida + ho
-1 idecaf
+1 ide + c + af
 1 i + eee
 1 ie + ng
 1 ier + ne
-1 ie + sus
-1 iew
+1 ies + us
+1 ie + w
 1 if
 1 ifds
 1 i + gor
 1 i + i
 1 iii
 1 il
-1 il + lin + ois
+1 ill + in + ois
 1 i + lo
 1 il + ya
 1 ilyi + ch
 1 im
-1 imaginar + ium
-1 im + ago
+1 imaginarium
+1 im + a + go
 1 im + d
 1 im + f
 1 im + manuel
@@ -4390,8 +4294,9 @@
 1 incorporate
 1 indeed
 1 independence
-1 index
+1 in + de + x
 1 india
+1 india + n
 1 india + na
 1 in + die
 1 indigo
@@ -4410,9 +4315,9 @@
 1 infso
 1 ing
 1 ing + e + mar
-1 ing + ers + o + ll
+1 ing + ers + oll
 1 ing + le + side
-1 ing + ushetia
+1 ing + us + h + etia
 1 ing + var
 1 initia + ted
 1 injil
@@ -4421,16 +4326,16 @@
 1 innis + free
 1 in + nu
 1 input
-1 inquiry
+1 in + qu + i + ry
 1 in + ra + sara
-1 inri
-1 inri + a
+1 in + ri
+1 in + ri + a
 1 in + side
 1 in + side + r
-1 inspector
+1 inspec + tor
 1 instagram
 1 in + st + ant
-1 in + st + ead
+1 instead
 1 institute
 1 institute + s
 1 insula
@@ -4438,23 +4343,23 @@
 1 intel
 1 intel + ligence
 1 inter + active
-1 inter + c + ity + ex + press
+1 inter + c + ity + express
 1 inter + continental
 1 inter + national
 1 inter + net
 1 inter + pre + ter
 1 inter + state
 1 inter + wiki
-1 int + if + ada
-1 int + imex
+1 in + t + if + ada
+1 in + t + imex
 1 into
 1 in + tra + net
 1 intuit
 1 inuit
 1 inuksuk
 1 inuktitut
-1 inva + der
-1 inva + s + ion
+1 in + va + der
+1 in + va + s + ion
 1 invest
 1 invest + ment + s
 1 invest + or
@@ -4470,28 +4375,21 @@
 1 ipa + q
 1 i + phone
 1 i + q
-1 iran
-1 iran + iraq
+1 i + ran
 1 iraq
-1 iraq + iran
-1 iraq + kuwait
-1 iraq + kuwait + ả
-1 iraq + mỹ
 1 ir + c
-1 ireland
-1 ireland + german
+1 ire + land
 1 irgendwo
 1 i + ri
 1 ir + ina
-1 iron
-1 iron + bridge
-1 iron + man
+1 i + ron
+1 i + ron + bridge
+1 i + ron + man
 1 iroquois
 1 iroquois + skanadario
 1 irs
 1 irv + ine
 1 irv + ing
-1 i + rắc
 1 is
 1 isaac
 1 is + abel
@@ -4500,10 +4398,10 @@
 1 isamb + ard
 1 i + sa + y + evich
 1 iscariot
-1 isfahan
+1 is + fa + han
 1 i + sha
 1 ish + pat + ina
-1 i + sis
+1 is + is
 1 islais
 1 is + land
 1 is + le
@@ -4511,24 +4409,21 @@
 1 is + o
 1 is + oc
 1 israel
-1 israel + liban
 1 is + s
 1 is + sara
 1 is + sara + k
 1 istan + bul
-1 i + stat
 1 it
-1 ita + lic
+1 ita + li + c
 1 ita + ly
 1 iter
 1 iter + ator + s
-1 i + tu
+1 itu
 1 iupac
 1 i + v
 1 ivan
 1 ivan + ov
 1 ivan + ovich
-1 ivan + ovvano
 1 ive + s
 1 i + vi
 1 i + wm
@@ -4538,42 +4433,41 @@
 1 iêu
 1 iôta
 1 j
-1 jac + into
+1 ja + c + into
 1 jack
 1 jack + son
 1 jack + y
-1 jac + o + b + ite
-1 jac + o + b + s
-1 jac + que + s
-1 jaeg + her
-1 jaffe
-1 jahn
-1 jahn + ula
-1 jakarta
-1 jakob
-1 jalal
-1 ja + me + s
-1 jamia
+1 ja + co + b + ite
+1 ja + co + b + s
+1 ja + cques
+1 ja + e + g + her
+1 ja + ff + e
+1 ja + hn
+1 ja + hn + ula
+1 ja + karta
+1 ja + ko + b
+1 ja + l + al
+1 ja + mes
+1 ja + m + ia
 1 jan
 1 jan + e
 1 ja + net
 1 jan + is
 1 jan + n
 1 jan + of + sky
-1 jan + ov + e
-1 japan
-1 jaquetdroz
+1 ja + pa + n
+1 ja + que + t
 1 ja + rai
-1 jarl
+1 j + ar + l
 1 ja + s + cha
 1 ja + son
 1 ja + s + per
 1 ja + u + ré + gui + berry
-1 java
-1 java + script
+1 ja + va
+1 ja + va + script
 1 ja + v + elin
-1 jaw
-1 jaw + aharlal
+1 ja + w
+1 ja + waharlal
 1 jay
 1 jay + asimh + avarman
 1 jay + avarman
@@ -4583,41 +4477,36 @@
 1 jdk
 1 j + do + anh
 1 jds
-1 jean
-1 jean + baptist + e
-1 jean + claude
-1 jean + mari + e
-1 jean + pierre
-1 jean + s
-1 jean + étienne
+1 j + ean
+1 j + ean + s
 1 je + b
-1 jef + fer + son
-1 jef + fre + y
-1 jehova
-1 jeht + aria + ng
+1 je + ff + er + son
+1 je + ff + rey
+1 je + h
+1 je + h + ova
 1 jenn + a
 1 jenn + er
 1 jenn + ing + s
 1 je + os
-1 jer + em + iah
+1 jer + e + mi + ah
 1 jer + e + my
 1 jer + i + cho
 1 jer + o + me
 1 jer + ry
 1 jer + sey
-1 jer + usa + le + m
+1 jer + us + a + le + m
 1 jesse
 1 je + sus
 1 je + t
 1 ji
 1 ji + a + ng
-1 ji + ddis + ch
+1 jiddis + ch
 1 ji + g
-1 ji + ker + v + m
-1 ji + ll
+1 jikervm
+1 j + ill
 1 ji + m
 1 ji + m + my
-1 ji + ve
+1 j + ive
 1 j + nes
 1 jo + a + quin
 1 jo + e
@@ -4627,16 +4516,16 @@
 1 johan + n
 1 johan + nes
 1 johan + sson
-1 john
-1 john + s
-1 john + son
-1 john + s + ton
-1 john + s + town
-1 jo + int
+1 jo + hn
+1 johns
+1 johns + on
+1 johns + ton
+1 johns + town
+1 jo + in + t
 1 jo + lie
 1 jo + lla
 1 jo + n
-1 jo + nas
+1 jo + na + s
 1 jo + nathan
 1 jo + nes
 1 jo + n + son
@@ -4645,7 +4534,6 @@
 1 jose
 1 jose + f
 1 jose + ph
-1 jose + san
 1 jo + shua
 1 jo + s + é
 1 jo + u + le
@@ -4655,7 +4543,7 @@
 1 jo + ão
 1 j + p + mor + gan
 1 jr
-1 jr + e
+1 j + re
 1 jr + gen
 1 j + s + abel
 1 j + sdk
@@ -4673,20 +4561,20 @@
 1 julie
 1 julie + t
 1 jul + ius
-1 jumilla
+1 j + um + i + lla
 1 jun + c + tion
 1 jun + ker + s
 1 jun + o
 1 jun + ípero
 1 j + up + iter
-1 jura
-1 jura + s + sa
+1 j + ura
+1 j + ura + s + sa
 1 justin
 1 justin + e
 1 justus
 1 jute
 1 juvelsmycke
-1 j + v + m
+1 jvm
 1 jyl + land
 1 jános
 1 józsef
@@ -4694,13 +4582,14 @@
 1 k
 1 ka
 1 kachru
-1 kaffe
+1 ka + dai
+1 ka + ff + e
 1 kaftan
-1 kai
+1 ka + i
 1 kajsa
 1 kal + ash + nikov
-1 kal + i
-1 kal + i + n + in + grad
+1 ka + li
+1 ka + li + n + in + grad
 1 kal + mar
 1 kalmyk
 1 kalmyk + ia
@@ -4713,10 +4602,10 @@
 1 kam + m
 1 kam + po + ng
 1 kam + pot
-1 kam + pu + c + hea
-1 kana
-1 kana + ta
-1 k + and + a + har
+1 kam + pu + che + a
+1 ka + na
+1 ka + na + ta
+1 k + anda + har
 1 kane
 1 ka + ng
 1 kansas
@@ -4745,15 +4634,15 @@
 1 ka + si + ch
 1 ka + s + pa + rov
 1 ka + te
-1 kath + erine
-1 kath + le + en
-1 kath + ry + n
+1 ka + t + her + ine
+1 kathleen
+1 kathryn
 1 ka + to
 1 ka + tr + ina
 1 kattegat
 1 kattegat + t
 1 kattigara
-1 katyu + sha
+1 ka + t + y + u + sha
 1 kavkaz
 1 kay
 1 kay + ak
@@ -4763,14 +4652,14 @@
 1 kaza + n
 1 k + b
 1 k + b + s
-1 k + cbs
+1 k + c + b + s
 1 k + de
 1 k + develop
 1 k + ean
-1 k + ean + g + nam
-1 ke + at + s
+1 ke + a + ng + nam
+1 ke + ats
 1 kebab
-1 kebnek + aise
+1 kebnekaise
 1 ke + io
 1 ke + k
 1 ke + k + u + lé
@@ -4791,7 +4680,7 @@
 1 kep
 1 kep + el
 1 kep + ler
-1 ker + mess + e
+1 ker + mes + se
 1 kernel
 1 kernel + trong
 1 ker + r
@@ -4806,11 +4695,11 @@
 1 kh + af + ji
 1 k + hai
 1 kh + al + dun
-1 kh + al + id
+1 kh + al + i + d
 1 kh + al + if
 1 k + ham
-1 khan
-1 khan + g
+1 k + han
+1 kh + a + ng
 1 kh + anh
 1 kh + ao
 1 kh + au
@@ -4867,7 +4756,7 @@
 1 k + huy + nh
 1 kh + uyên
 1 khu + yến
-1 k + huyết
+1 khu + yết
 1 kh + uyển
 1 khu + ân
 1 k + huê
@@ -4881,9 +4770,6 @@
 1 khá
 1 khá + c
 1 khá + ch
-1 khá + ch + giờ
-1 khá + ch + ngày
-1 khá + ch + năm
 1 khá + i
 1 khá + m
 1 khá + n
@@ -4896,29 +4782,28 @@
 1 kh + ép
 1 kh + ét
 1 k + hê
-1 kh + í
+1 k + hí
 1 kh + ía
 1 kh + ích
 1 k + hó
-1 k + hóa
+1 k + hó + a
 1 kh + óc
 1 kh + ói
 1 kh + ô
 1 kh + ôi
 1 kh + ôn
 1 kh + ông
-1 kh + ông + th + ời
 1 kh + úc
 1 kh + ăn
 1 k + hăng
 1 kh + ơ
 1 kh + ơi
 1 kh + ương
-1 kh + ước
-1 khả
+1 k + hước
+1 kh + ả
 1 kh + ải
-1 khả + m
-1 khả + ng
+1 kh + ả + m
+1 kh + ả + ng
 1 kh + ảo
 1 kh + ấn
 1 kh + ấu
@@ -4930,7 +4815,7 @@
 1 khẳng
 1 kh + ế
 1 kh + ể + nh
-1 k + hỉ
+1 kh + ỉ
 1 k + hỏa
 1 kh + ỏ + e
 1 kh + ỏi
@@ -4939,8 +4824,8 @@
 1 kh + ối
 1 khố + n
 1 khố + ng
-1 k + hổ
-1 k + hổ + ng
+1 kh + ổ
+1 kh + ổ + ng
 1 kh + ớp
 1 kh + ởi
 1 kh + ủng
@@ -4956,15 +4841,15 @@
 1 ki + el
 1 kiev
 1 kiev + an
-1 ki + l + le + d
+1 ki + l + led
 1 ki + l + ler
 1 killiniq
 1 ki + lô + mét
-1 kim
-1 kim + ble
-1 kim + mel
-1 kim + oon
+1 ki + m
+1 ki + m + ble
+1 ki + m + mel
 1 ki + nder + geschichte
+1 kin + di
 1 king
 1 king + dom
 1 king + s
@@ -4983,9 +4868,8 @@
 1 kissin
 1 kissin + ger
 1 kit
-1 kitchener
-1 kitchener + waterloo
-1 kit + silano
+1 kit + che + ner
+1 kit + sil + ano
 1 ki + tô
 1 kizhi
 1 ki + êm
@@ -5009,14 +4893,10 @@
 1 klein + en
 1 klft
 1 kln
-1 kln + bon + n
 1 klondike
-1 km
-1 km + gi + ây
-1 km + h
-1 km + km
-1 km + r + ất
-1 km + tí + nh
+1 k + m
+1 k + m + r + ất
+1 k + m + tí + nh
 1 knee
 1 k + n + eller
 1 k + ni + ght
@@ -5029,15 +4909,15 @@
 1 ko
 1 ko + ch
 1 ko + di
-1 kofi
+1 ko + fi
 1 ko + gan
 1 ko + i
 1 ko + jo
-1 kok + o + sh + nik
+1 kokosh + nik
 1 kolivas
 1 kolko
 1 kollho + ff
-1 kom + mer + san + t
+1 kom + mer + s + ant
 1 kom + o + do
 1 kom + u + ro
 1 kon
@@ -5055,13 +4935,12 @@
 1 kosovo
 1 kosovo + rotka
 1 kosygin
-1 ko + tel + nikov
+1 ko + t + el + nikov
 1 kourosh
 1 kovalevskaia
 1 k + p + ix
 1 k + p + pen
 1 kqed
-1 kqed + f + m
 1 kraft + werk
 1 kratié
 1 kr + e + mer
@@ -5071,10 +4950,10 @@
 1 kr + ien
 1 kris
 1 kris + tin + ehamn
-1 kris + to + ll
-1 kroah + hart + man
+1 kris + t + oll
+1 kroah
 1 krobei
-1 k + rom
+1 kr + om
 1 krona
 1 kronos
 1 krym
@@ -5096,15 +4975,15 @@
 1 kuwait
 1 kuznetzov
 1 k + w
-1 k + w + h
+1 k + wh
 1 k + win
-1 ky + d
-1 ky + lin
+1 k + y + d
+1 k + y + lin
 1 k + yoko
 1 kyoto
 1 kyrgyz + stan
 1 kythera
-1 ky + ều
+1 k + y + ều
 1 k + ách
 1 kè
 1 kè + m
@@ -5126,13 +5005,14 @@
 1 kí + n
 1 kí + nh
 1 kí + p
+1 kí + t
 1 k + ôn
 1 k + ông
 1 k + ý
 1 kămpchéa
-1 k + ĩ
-1 kạn
-1 kản
+1 kĩ
+1 k + ạn
+1 k + ản
 1 kẹo
 1 kẹp
 1 kẹt
@@ -5144,7 +5024,7 @@
 1 k + ết
 1 k + ề
 1 k + ền
-1 k + ề + nh
+1 k + ền + h
 1 k + ể
 1 k + ệ
 1 k + ỉ
@@ -5152,10 +5032,8 @@
 1 kị + ch
 1 kị + p
 1 kị + t
-1 kỳ
-1 kỳ + lộc
-1 kỳ + mexico
-1 k + ỵ
+1 k + ỳ
+1 kỵ
 1 k + ỷ
 1 k + ỹ
 1 l
@@ -5166,7 +5044,7 @@
 1 la + bar + t + ette
 1 lab + be + y
 1 lab + ora + tory
-1 labrador
+1 lab + r + ador
 1 lab + s
 1 lac
 1 lac + ross + e
@@ -5183,17 +5061,15 @@
 1 lake
 1 lake + s
 1 lake + wood
-1 la + long
 1 l + alouette
 1 lam
 1 lam + bert
-1 lam + bi + l
+1 lam + bil
 1 lam + da
 1 lam + ed
-1 lam + p
+1 l + amp
 1 lan
 1 lan + ark
-1 lan + bỉ
 1 lanca + shire
 1 lanca + ster
 1 lan + c + elot
@@ -5209,23 +5085,20 @@
 1 la + ng + u + age
 1 la + nh
 1 l + anka
-1 lan + latv + ialithuaniamoldovana
+1 lan + latvia + lithuania + mol + dova + na
 1 lan + s
 1 lan + s + dale
 1 lan + se
-1 lan + seauclair
-1 lan + tha + ni + de
-1 lan + ugric
-1 lan + vlaanderen
-1 lan + ấn
+1 lan + t + han + ide
 1 la + o
-1 la + o + kai
+1 la + os
 1 la + pierre
 1 la + place
 1 la + p + p + land
 1 laptev
 1 lapti
-1 larry
+1 l + arge
+1 la + r + ry
 1 lars
 1 lars + son
 1 las
@@ -5236,13 +5109,12 @@
 1 la + ter
 1 la + ter + it
 1 la + tham
-1 la + tin
-1 la + ti + nh
-1 latinum
+1 latin
+1 latin + h
+1 latin + um
 1 la + tour
 1 la + t + tre
-1 latv
-1 latv + ia
+1 latvia
 1 lau
 1 lau + nay
 1 lau + n + ch
@@ -5250,10 +5122,11 @@
 1 la + ur + asia
 1 lauren
 1 lauren + c + e
+1 lauren + t
 1 lauren + t + ia
 1 lau + rier
-1 laval
-1 laval + lé + e
+1 la + val
+1 la + val + lé + e
 1 lav + igne
 1 lav + ois + ier
 1 lav + ra + dor
@@ -5261,32 +5134,30 @@
 1 lav + rov
 1 law
 1 law + ren
-1 lawrence
-1 lawrence + ottawa
+1 law + ren + c + e
 1 law + ton
 1 la + y
 1 laza + rid + is
 1 laza + rus
 1 laza + rô
 1 le
-1 l + ead + ers
+1 le + ad + ers
 1 le + af
 1 league
 1 le + am + ing + ton
 1 l + ean
+1 l + ease
 1 leavenwor + th
 1 le + ben
 1 le + b + run
 1 lecce
 1 leclerc
-1 le + d
-1 le + de + franc + e
-1 le + de + rer
-1 le + d + uc
-1 leduprinceé + dou + ard
-1 le + e
+1 led
+1 led + er + er
+1 led + uc
+1 lee
 1 leeds
-1 left
+1 le + ft
 1 le + g + al
 1 le + g + end
 1 le + g + ion
@@ -5296,7 +5167,6 @@
 1 le + if
 1 leigh
 1 leipzig
-1 leipzig + hall + e
 1 le + it + rim
 1 le + k
 1 lelieur
@@ -5304,16 +5174,19 @@
 1 le + ma + tre
 1 lemmke
 1 l + empire
-1 lendl + ease
+1 le + n
+1 l + end
 1 le + ni
 1 lenin
+1 lenin + c + hủ
 1 lenin + grad
+1 lenin + ist
 1 leo
 1 leon + ard
 1 leon + ard + o
 1 leon + hard
-1 leon + id
-1 leon + id + as
+1 leonid
+1 leonid + as
 1 leon + ov
 1 leo + pol + d
 1 ler + dor + f
@@ -5327,60 +5200,58 @@
 1 le + u + ven
 1 lev
 1 lev + ant
-1 le + ve + son + gower
+1 leve + l
+1 leve + son
 1 le + vi
 1 lewis
 1 lewis + port + e
 1 le + xi + con
 1 lf + ven
 1 lgbt
-1 lgner
+1 l + g + ner
 1 l + gpl
 1 l + h + p
 1 lhq
 1 li
 1 liam
-1 liban
+1 li + ban
 1 li + b + c
 1 li + ber + al + s
 1 li + ber + ation
 1 l + iberia
 1 libra + ries
 1 libra + ry
-1 libre
-1 libre + office
+1 li + bre
+1 li + bre + office
 1 libya
-1 lic + en + se
-1 lic + hten + stein
+1 license
+1 lichten + stein
 1 li + d + man
 1 lidstrm
 1 lie
 1 lie + ber + mann
 1 lie + big
 1 lie + gen
-1 lie + tuva
-1 lie + utenant
+1 lie + tu + va
+1 lie + ut + en + ant
 1 li + fe
 1 light
 1 light + ing
 1 light + wei + ght
 1 li + h
-1 lihnix
-1 likeli + hood
 1 li + la
 1 li + la + r
 1 lilienthal
 1 li + m
-1 li + mou + s + ine
-1 lincoln
-1 lincoln + p + hố
+1 li + mous + ine
+1 lin + col + n
 1 lin + dbergh
 1 lin + di + sf + arne
 1 l + indochine
 1 lin + d + sey
 1 line
 1 line + ar
-1 line + back + er
+1 line + ba + ck + er
 1 line + s
 1 lin + ga
 1 lin + gua
@@ -5388,18 +5259,16 @@
 1 link
 1 link + ing
 1 link + ping
+1 link + sys
 1 lin + naeus
 1 lin + us
 1 linux
 1 linux + con
-1 linux + cũng
-1 linux + ft
-1 linux + libre
-1 linux + next
+1 linux + c + ũ + ng
 1 linux + one
 1 linux + que + s + tion + s + org
-1 l + ion
-1 l + ion + s
+1 lion
+1 lion + s
 1 li + s + mer
 1 li + sp
 1 list
@@ -5409,19 +5278,18 @@
 1 li + thi + um
 1 lithuania
 1 li + to
-1 little
-1 little + v + n + key
+1 li + to + vsk
+1 li + ttle
+1 li + ttle + v + n + key
 1 litva
 1 l + ive
-1 liver + more
-1 liver + pool
+1 li + ver + more
+1 li + ver + pool
 1 li + ves
 1 li + ège
-1 li + ège + bastogneli + ège
 1 li + êm
-1 liên
-1 liên + g
-1 liên + thái
+1 li + ên
+1 li + ên + g
 1 l + iêu
 1 li + ế + ng
 1 li + ềm
@@ -5430,13 +5298,13 @@
 1 li + ệt
 1 li + ệu
 1 lju + ng + berg
-1 l + km
-1 l + km + l
-1 ll + c
+1 lkm
+1 lkm + l
+1 llc
 1 lloegr
 1 lloyd
 1 lloyd + mins + ter
-1 ll + p
+1 llp
 1 llvm
 1 llvm + linux
 1 l + mi
@@ -5446,7 +5314,7 @@
 1 loa + n
 1 loa + ng
 1 loa + y
-1 lo + bach + ev + sky
+1 lo + bachev + sky
 1 locate
 1 locate + d
 1 lockard
@@ -5458,14 +5326,14 @@
 1 lo + eu
 1 loga
 1 loga + n
-1 loga + rit
+1 loga + ri + t
 1 logev + all
 1 lo + gi + c
 1 logistic
 1 logistic + s
 1 lo + go
 1 lokomotiv
-1 lo + la
+1 l + ola
 1 lo + li + con
 1 lo + lou + ette
 1 lo + ma
@@ -5475,15 +5343,15 @@
 1 lon + don
 1 lon + e
 1 lon + ely
-1 long
+1 lo + ng
 1 lon + ger
-1 long + ve + k
-1 lo + p + ium
-1 lord
-1 lord + s
-1 lorentz
-1 lorne
-1 lorr + aine
+1 lon + gvek
+1 lopium
+1 lor + d
+1 lor + d + s
+1 lor + en + tz
+1 lor + ne
+1 lor + r + aine
 1 los
 1 lo + th + ar
 1 lo + th + ian
@@ -5494,8 +5362,7 @@
 1 louis
 1 louis + e
 1 louis + iana
-1 louis + jose + ph
-1 loutaouais
+1 lou + taouais
 1 lou + tre
 1 love
 1 love + a
@@ -5510,12 +5377,12 @@
 1 loyal
 1 l + oài
 1 lo + ét
-1 l + oại
+1 lo + ại
 1 l + oạn
 1 lo + ạt
 1 l + s + b
 1 l + s + d
-1 l + sj + bot
+1 l + s + j + bot
 1 lu
 1 lu + a + ng
 1 luc
@@ -5533,7 +5400,7 @@
 1 lu + is
 1 lu + ke
 1 lu + ke + n + s
-1 lu + ll + ing + stone
+1 lu + lling + stone
 1 lu + m
 1 lu + men
 1 lumiled
@@ -5543,14 +5410,14 @@
 1 l + und
 1 lunen + burg
 1 lu + ng
-1 lu + r
+1 l + ur
 1 lusatia
 1 lusitanum
 1 luther
 1 luther + an
 1 lu + ton
 1 lutte
-1 lutte + urs
+1 lutte + ur + s
 1 luttr + ell
 1 luxembourg
 1 luxeon
@@ -5560,9 +5427,9 @@
 1 lu + ôn
 1 lu + ận
 1 lu + ật
-1 l + uống
+1 lu + ống
 1 lu + ồn
-1 lu + ồn + g
+1 lu + ồng
 1 lu + ộc
 1 lu + ỹ
 1 lxde
@@ -5578,8 +5445,7 @@
 1 là + n
 1 là + ng
 1 là + nh
-1 lào
-1 lào + hoa
+1 l + ào
 1 l + á
 1 l + ác
 1 l + ách
@@ -5611,19 +5477,16 @@
 1 lé + p
 1 lé + ton + dal
 1 lê
-1 lê + chúa
 1 l + ên
 1 lê + nh
 1 lênin
 1 lênin + ít
-1 lê + trịnh
 1 l + ì
 1 l + ì + a
 1 lí
 1 l + ía
 1 lí + nh
-1 l + ít
-1 l + ít + người
+1 lí + t
 1 lí + u
 1 l + ò
 1 l + ò + ng
@@ -5638,32 +5501,32 @@
 1 lõ + i
 1 lõ + m
 1 lõ + ng
-1 lùa
+1 l + ùa
 1 l + ùi
-1 lùn
-1 lùn + g
+1 l + ùn
+1 l + ùn + g
 1 lúa
 1 l + úc
 1 l + ún
 1 l + úng
-1 lý
+1 l + ý
 1 lăm
 1 l + ăn
 1 l + ăn + g
-1 l + ĩ + nh
-1 lũ
-1 lũ + ng
-1 lũ + y
+1 lĩ + nh
+1 l + ũ
+1 l + ũ + ng
+1 l + ũ + y
 1 l + ơ
 1 l + ơi
 1 l + ơn
 1 lư
 1 lư + aqj
 1 lư + ng
-1 lư + u
+1 l + ưu
 1 lư + ơn
 1 l + ương
-1 lư + ọng
+1 lư + ọ + ng
 1 lư + ới
 1 l + ướt
 1 lư + ời
@@ -5678,47 +5541,45 @@
 1 lạ
 1 lạ + c
 1 lạ + ch
-1 lạ + i
+1 l + ại
 1 lạ + m
 1 lạ + n
 1 lạ + ng
 1 lạ + nh
 1 lạ + p
-1 lạ + pla
 1 lạ + t
-1 lạ + t + ma
 1 lạ + y
 1 l + ả
 1 l + ấn
 1 l + ấp
 1 l + ấy
-1 lầm
+1 l + ầm
 1 l + ần
 1 l + ầu
 1 l + ầy
 1 l + ẩn
 1 l + ẫn
-1 lẫy
+1 l + ẫy
 1 l + ận
 1 l + ập
 1 l + ật
-1 lậu
+1 l + ậu
 1 l + ắc
-1 lắ + k
+1 l + ắk
 1 l + ắm
 1 lắ + ng
 1 l + ắp
 1 l + ắt
-1 lằ + ng
+1 l + ằ + ng
 1 l + ặc
 1 l + ặn
 1 l + ặn + g
 1 lặp
 1 lẹ
 1 lẹ + ng
-1 lẻ
-1 lẻ + n
-1 lẻ + o
+1 l + ẻ
+1 l + ẻ + n
+1 l + ẻ + o
 1 l + ẽ
 1 l + ẽ + o
 1 lếu
@@ -5728,7 +5589,6 @@
 1 lệ
 1 lệ + ch
 1 lệ + nh
-1 lệ + quả + ng
 1 lị
 1 lị + ch
 1 lị + nh
@@ -5743,12 +5603,12 @@
 1 l + ốt
 1 l + ồ
 1 l + ồi
-1 l + ồ + ng
+1 l + ồng
 1 l + ổ
-1 lỗ
+1 l + ỗ
 1 l + ỗi
 1 lộ
-1 lộc
+1 lộ + c
 1 lộ + i
 1 lộ + n
 1 lộ + ng
@@ -5759,8 +5619,8 @@
 1 l + ời
 1 l + ở
 1 l + ở + m
-1 lỡ
-1 lợi
+1 l + ỡ
+1 l + ợi
 1 l + ợn
 1 lợp
 1 lụa
@@ -5772,27 +5632,25 @@
 1 lụt
 1 lụy
 1 l + ủng
-1 lứa
+1 l + ứa
 1 l + ừ
 1 l + ừa
 1 l + ừ + ng
 1 lửa
 1 lữ
-1 lữ + y
 1 lự
 1 l + ựa
 1 lự + c
 1 lự + u
-1 l + ỵ
+1 lỵ
 1 m
 1 ma
 1 maaws
 1 mac
 1 mac + arthur
 1 mac + beth
-1 macdonald
-1 macdonald + car + tier
-1 macdonald + đã
+1 mac + donald
+1 mac + donald + đã
 1 ma + ch
 1 mac + hiavel
 1 ma + ch + ine
@@ -5807,7 +5665,7 @@
 1 mad + awaska
 1 ma + de
 1 mad + ison
-1 ma + don + na
+1 mad + on + na
 1 mad + re
 1 mad + rid
 1 m + aemo
@@ -5820,19 +5678,20 @@
 1 mag + dale + na
 1 mag + gi + e
 1 mag + na
-1 mag + nu + s
-1 mag + rit + te
+1 mag + n + us
+1 mag + ri + t + te
+1 mahani
 1 mahatma
 1 ma + her
 1 ma + i
+1 mail
 1 mail + ing
 1 m + aine
 1 main + frame
 1 main + frame + s
 1 main + land
-1 main + land + sou + th + west
 1 main + line + d
-1 ma + io + rica
+1 ma + i + or + ica
 1 majestic
 1 majlis
 1 ma + jo + r
@@ -5841,9 +5700,10 @@
 1 ma + ker
 1 makhachkala
 1 ma + ki
-1 malayopolynesia
+1 malayo
 1 malaysia
 1 malcolm
+1 maliki
 1 m + all
 1 malm
 1 malm + edy
@@ -5870,41 +5730,41 @@
 1 ma + nh
 1 man + ha + t + tan
 1 man + he + t + it
-1 man + i + la
+1 man + ila
 1 man + itoba
 1 manitou
 1 manitou + lin
-1 man + i + tu
+1 man + itu
 1 mann
 1 man + or
 1 man + otick
-1 mans
-1 mans + field
-1 mans + ke
+1 man + s
+1 man + s + field
+1 man + s + ke
 1 manuel
 1 ma + o
 1 ma + o + ist
 1 ma + p + ping
 1 mar + ak
 1 mar + ath + on
-1 marc
-1 marc + el
+1 mar + c
+1 mar + c + el
 1 mar + ch
 1 mar + ch + ant
-1 marc + os
-1 marc + ovitch
-1 marc + us
-1 marc + use
+1 mar + c + os
+1 mar + c + ovitch
+1 mar + c + us
+1 mar + cuse
 1 mar + di
 1 margaret
 1 margaret + he
-1 mar + got
+1 mar + go + t
 1 m + aria
 1 mar + iana
 1 mari + e
 1 mari + in + sky
 1 mari + lyn
-1 mari + n
+1 mar + in
 1 mar + ina
 1 mar + ine
 1 mari + ot
@@ -5913,7 +5773,7 @@
 1 mark
 1 market
 1 market + ing
-1 market + đường
+1 mark + ing
 1 mark + land
 1 mark + us
 1 mar + l + borough
@@ -5940,16 +5800,13 @@
 1 marvel + l
 1 mar + vin
 1 mar + x
-1 mar + x + ist + lenin + ist
-1 mar + x + lenin
-1 mar + x + lenin + chủ
+1 mar + x + ist
 1 mar + y
-1 mar + yknoll
+1 mar + y + k + n + oll
 1 mar + y + land
 1 mar + y + s
-1 mar + é + ch + al
+1 mar + échal
 1 mar + ía
-1 mar + ốc
 1 ma + sala
 1 masato
 1 masayuki
@@ -5967,6 +5824,7 @@
 1 mass + ey
 1 mass + ive
 1 ma + ster
+1 masudi
 1 mat + ak
 1 mat + e
 1 mat + eo
@@ -5974,24 +5832,23 @@
 1 mathemat + ics
 1 mat + h + m + l
 1 mat + ignon
-1 mat + ilija
+1 mat + i + li + ja
 1 mat + ry + os + hka
 1 mat + s
 1 mat + sumoto
 1 mat + s + uoka
 1 mat + su + ura
-1 mat + tel
+1 mat + t + el
 1 mat + ter
 1 mat + the + w
 1 mat + thi + as
 1 mau
 1 m + aud
 1 mau + rice
-1 mau + rice + arsène
 1 mauritz
 1 mauritz + ikea
 1 mau + ve
-1 mau + vien
+1 mau + vi + en
 1 ma + x
 1 maxim
 1 maxim + il + ian
@@ -6000,7 +5857,7 @@
 1 may + a
 1 may + ak + ovsky
 1 may + er
-1 may + on + n + aise
+1 may + onnaise
 1 may + pol + e
 1 may + s
 1 mazda
@@ -6008,7 +5865,7 @@
 1 mcafee
 1 mccain
 1 mccart + hay
-1 mccarthy
+1 mccart + hy
 1 mcclel + lan
 1 mccovey
 1 mccoy
@@ -6016,7 +5873,7 @@
 1 mcguinty
 1 m + c + il + roy
 1 m + c + kin + ley
-1 mclanahan
+1 mclana + han
 1 mclaugh + lin
 1 mcleerys
 1 mcnamara
@@ -6028,10 +5885,10 @@
 1 meadows
 1 me + ager
 1 m + ean + che + y
-1 mec + ca
+1 me + c + ca
 1 me + chan + ics
-1 mec + helen
-1 mec + k + le + n + burg
+1 me + c + helen
+1 mecklen + burg
 1 media
 1 media + wiki
 1 medi + cai + d
@@ -6041,27 +5898,27 @@
 1 me + e + ch
 1 me + e + go
 1 mega + bus
-1 mega + g + au + sses
+1 mega + gauss + es
 1 mega + wat + t
 1 me + ko + ng
 1 mel + fort
 1 mel + ia
 1 me + li + nh
-1 mel + ite + n + sis
+1 mel + ite + n + s + is
 1 mel + lon
 1 mel + nitsa
 1 mel + t + ing
 1 mel + ville
 1 mel + vin
-1 mem
-1 mem + ori + al
-1 mem + ot
+1 me + m
+1 memorial
+1 me + mo + t
 1 men
-1 mendel + e + ev
-1 mendel + ev
-1 mendel + sohn
-1 mendel + s + sohn
-1 men + des
+1 mende + lee + v
+1 mende + lev
+1 mende + lsohn
+1 mende + lssohn
+1 mende + s
 1 men + dè + s
 1 men + el + aus
 1 men + ki + e + li
@@ -6072,49 +5929,44 @@
 1 mer + c + ator
 1 merced
 1 merced + es
-1 merced + es + benz
-1 mercia
+1 mer + cia
 1 mer + ck + x
 1 mer + c + ure
 1 mer + de + ka
 1 mer + lin
 1 mer + ov + ing
-1 mer + ri + ll
+1 mer + r + ill
 1 mer + ry
 1 mer + sey
 1 mer + ya
-1 meshchera
-1 mess + iah
-1 mess + mer
-1 meta
-1 meta + l
-1 meta + l + rock
-1 meta + wiki
+1 mes + hchera
+1 mes + si + ah
+1 mes + s + mer
+1 me + ta
+1 me + t + al
 1 metcalfe
 1 method
 1 method + ist
 1 methye
+1 me + thyl
 1 metro
 1 metro + pol + e
 1 metro + pol + is
 1 me + use
 1 me + xi + can
-1 mexico
-1 mexico + hoa
-1 mexico + mỹ
+1 me + xi + co
 1 meyer
-1 mh
-1 m + ha
-1 mh + ring
-1 mh + z
+1 m + h
+1 m + h + ri + ng
+1 m + h + z
 1 mi
-1 miami
+1 m + ia + mi
 1 michael
 1 michel
 1 michel + in
-1 mic + hi + gan
-1 mic + h + no
-1 mic + ral
+1 mi + chi + gan
+1 michno
+1 mi + c + ral
 1 micro
 1 micro + kernel
 1 micro + soft
@@ -6151,33 +6003,31 @@
 1 minegoo
 1 mineta
 1 mi + nh
-1 minix
+1 mi + nix
 1 minnesota
 1 minoda
 1 mi + que + lon
 1 mir
 1 mir + ren
-1 mir + ror
-1 miseinen
+1 mir + ro + r
+1 mis + e + ine + n
 1 missi + le
 1 missi + on
 1 mississauga
 1 mississauga + s
 1 missi + ssippi
-1 misso + uri
+1 mis + sou + ri
 1 mit
 1 mit + ch + ell
 1 mit + el
 1 mit + s
-1 mit + tel + st + and
-1 m + ix
+1 mit + t + el + st + and
+1 mi + x
 1 mi + ên
-1 mi + ên + xiêm
 1 m + iêu
 1 miến
 1 miến + g
 1 miếu
-1 miếu + quốc
 1 mi + ền
 1 mi + ễn
 1 mi + ện
@@ -6185,19 +6035,15 @@
 1 m + k
 1 m + la + ren
 1 m + las
-1 mlilla
+1 m + li + lla
 1 m + l + ler
 1 m + m
-1 m + m + năm
-1 m + m + tháng
 1 m + n + chen
-1 m + ngày
-1 m + người
 1 mo
 1 mobil
 1 mobil + e
 1 mo + b + lin
-1 mo + by + dick
+1 mo + by
 1 mod
 1 mo + del
 1 mod + et
@@ -6208,7 +6054,7 @@
 1 m + of + fat
 1 mohawks
 1 moise
-1 mojave
+1 mo + j + ave
 1 mo + k
 1 mol
 1 mol + d + m
@@ -6221,7 +6067,7 @@
 1 moni + re + th
 1 moni + vo + ng
 1 mon + key + s
-1 mon + mou + th
+1 mon + mouth
 1 mono
 1 mono + develop
 1 monolith
@@ -6236,16 +6082,18 @@
 1 mont + e + rey
 1 mont + esso + ri
 1 mont + fort
-1 mont + go + m + ery
+1 mont + go + m + e + ry
 1 mont + igny
-1 mont + real
+1 mont + re + al
 1 mont + ré + al
 1 mont + y
 1 moody
 1 moody + ville
+1 m + oon
 1 moor + e
 1 moose
 1 moosonee
+1 mor + a
 1 more
 1 more + l
 1 mor + gan
@@ -6270,35 +6118,35 @@
 1 mos + t + eller
 1 mos + ul
 1 mo + t + her
-1 motif
-1 motif + rack
+1 mo + t + if
 1 mo + tion
 1 motor
 1 motor + ola
 1 motor + s
-1 mou + a + ng
-1 mou + hot
-1 mou + nbatten
-1 mou + s + que + ton
-1 mou + te
-1 mou + te + t
-1 mou + t + te
+1 moua + ng
+1 mouhot
+1 mounbatten
+1 mous + que + ton
+1 moute
+1 moute + t
+1 moutte
+1 mo + ve + ment
 1 mo + wat
-1 mo + x + mo + x
-1 mo + y + ar
+1 mo + x
+1 moyar
 1 moyne
 1 mozart
 1 mozilla
 1 m + p
+1 m + p + l
 1 mpps
-1 mqc
-1 mr
+1 m + q
+1 m + r
 1 m + rap
-1 mr + der
-1 mr + s
+1 m + r + der
+1 m + r + s
 1 m + s
 1 m + s + c
-1 msdos
 1 m + s + ti + slav
 1 m + t
 1 m + ta
@@ -6306,20 +6154,20 @@
 1 mttq
 1 m + t + v
 1 mu
-1 mua
-1 mua + ng
+1 mu + a
+1 mu + a + ng
 1 mu + ck
 1 mu + eller
-1 mugiahítđin
 1 mu + ham + mad
 1 mu + i
 1 mu + j + ica
 1 mu + l + hol + land
 1 mu + l + ro + ney
-1 multiglass
+1 multigl + ass
 1 mun
 1 mun + di
 1 mun + do
+1 mun + d + t
 1 m + uni
 1 mun + icipal
 1 mun + ster
@@ -6329,10 +6177,10 @@
 1 muromia
 1 murphy
 1 mus
-1 mus + gra + ve + town
+1 mus + grave + town
 1 mus + ic
 1 mus + king + um
-1 mus + kok + a
+1 mus + ko + ka
 1 mus + que + am
 1 mus + ta + ng
 1 mu + sée
@@ -6349,7 +6197,7 @@
 1 mu + ồi
 1 mu + ỗi
 1 muội
-1 mu + ộn
+1 muộn
 1 m + v
 1 mvenpick
 1 m + w
@@ -6367,18 +6215,16 @@
 1 mà + ng
 1 mà + u
 1 m + á
-1 mác
-1 mác + cô
+1 m + ác
+1 m + ác + cô
 1 m + ách
-1 mác + lênin
-1 mác + xít
 1 m + ái
 1 m + án
 1 m + áng
 1 m + á + r + que + z
 1 m + át
 1 m + át + h + ma
-1 m + át + thêu
+1 m + át + t + hêu
 1 m + áu
 1 m + áy
 1 m + âm
@@ -6400,7 +6246,7 @@
 1 mê
 1 m + ên
 1 mê + nh
-1 mê + tric
+1 mê + tri + c
 1 m + ì
 1 m + ì + n
 1 m + ì + nh
@@ -6417,22 +6263,20 @@
 1 m + ôi
 1 m + ôn
 1 m + ông
-1 m + ôn + kh + mer
 1 m + ô + tô
-1 m + ô + đu + n
 1 mõ
-1 mù
-1 mù + a
+1 m + ù
+1 m + ùa
 1 m + ùi
-1 mù + n
-1 mù + ng
+1 m + ùn
+1 m + ù + ng
 1 mú
 1 mú + a
 1 mú + i
 1 m + út
 1 măcma
 1 m + ă + ng
-1 m + ĩ
+1 mĩ
 1 m + ũ
 1 m + ũ + i
 1 m + ơ
@@ -6446,15 +6290,14 @@
 1 mư + ợn
 1 mư + ợt
 1 mạ
-1 mạ + c
+1 m + ạc
 1 mạ + ch
-1 mạ + ch + thụy
-1 mạ + i
-1 mạ + n
+1 m + ại
+1 m + ạn
 1 mạ + ng
 1 mạ + nh
-1 mạ + o
-1 mạ + t
+1 m + ạo
+1 m + ạt
 1 m + ả
 1 m + ả + ng
 1 m + ảnh
@@ -6462,7 +6305,7 @@
 1 m + ất
 1 m + ấu
 1 m + ấy
-1 mầm
+1 m + ầm
 1 m + ần
 1 m + ẩu
 1 m + ẩy
@@ -6471,7 +6314,7 @@
 1 m + ận
 1 m + ập
 1 m + ật
-1 mậu
+1 m + ậu
 1 m + ắc
 1 m + ắm
 1 mắn
@@ -6480,7 +6323,6 @@
 1 m + ặc
 1 m + ặn
 1 m + ặt
-1 m + ặt + và
 1 mẹ
 1 mẹ + c
 1 mẹ + o
@@ -6497,7 +6339,7 @@
 1 mịt
 1 mọ + c
 1 m + ọi
-1 m + ọng
+1 mọ + ng
 1 mọ + t
 1 m + ỏ
 1 m + ỏi
@@ -6508,20 +6350,19 @@
 1 m + ống
 1 mốp
 1 m + ồ
-1 m + ồ + ng
+1 m + ồng
 1 m + ổ
 1 m + ỗi
 1 m + ộ
 1 m + ộc
-1 m + ộng
-1 một
-1 một + một
+1 m + ộ + ng
+1 m + ột
 1 m + ớ
 1 m + ới
 1 m + ờ
 1 m + ời
 1 m + ở
-1 mỡ
+1 m + ỡ
 1 m + ụ
 1 m + ục
 1 m + ụ + n
@@ -6531,22 +6372,17 @@
 1 m + ừ + ng
 1 mực
 1 m + ỳ
-1 mỹ
-1 mỹ + iraq
-1 mỹ + mexico
-1 mỹ + ngụy
-1 mỹ + the
-1 mỹ + việt
+1 m + ỹ
 1 n
 1 na
 1 nabokov
-1 na + cl
+1 na + c + l
 1 nagasaki
 1 nagoya
 1 na + ha
 1 nai
 1 nai + khu
-1 n + ain
+1 na + in
 1 nairobi
 1 nai + smith
 1 na + ive
@@ -6556,12 +6392,8 @@
 1 nam
 1 namespace
 1 namespace + s
-1 nam + lào + thái
-1 nam + nữ
 1 nam + trong
 1 nam + ur
-1 nam + việt
-1 nam + đà
 1 nan
 1 nanaimo
 1 nang
@@ -6576,22 +6408,21 @@
 1 n + arrows
 1 narváez
 1 narysh + kin
-1 nas
+1 na + s
 1 na + sa
-1 nas + car
+1 na + s + car
 1 nasdaq
 1 n + ash + ville
 1 na + sir
-1 nas + s
-1 nas + sau
+1 nass
+1 nass + au
 1 nat + alia
 1 nathan + a + el
 1 nathan + i + el
 1 nathan + town
 1 national
 1 na + tion + s
-1 nato
-1 nato + nga
+1 na + to
 1 na + tri
 1 nat + ty
 1 naturalis
@@ -6606,6 +6437,7 @@
 1 n + ba
 1 n + b + c
 1 n + b + s
+1 n + c
 1 n + c + c
 1 nd + p
 1 nebraska
@@ -6621,11 +6453,10 @@
 1 nel + son
 1 ne + m
 1 n + eo
-1 neoaramaic
 1 nep
 1 nep + al
 1 nep + ean
-1 nerode
+1 ner + o + de
 1 ness
 1 net
 1 net + b + ean + s
@@ -6633,7 +6464,7 @@
 1 net + book + s
 1 net + bsd
 1 net + craft
-1 net + f + lix
+1 net + f + li + x
 1 net + libra + ry
 1 net + rebko
 1 net + s + cape
@@ -6644,7 +6475,7 @@
 1 neu + h + aus
 1 neu + mann
 1 neu + s + ch + wan + stein
-1 neu + tron
+1 neu + t + ron
 1 nev + ada
 1 nev + e
 1 n + ever
@@ -6657,18 +6488,17 @@
 1 new + market
 1 news
 1 news + group
-1 new + som
+1 news + om
 1 new + ton
-1 next
+1 ne + x + t
 1 ney + tra + lny
 1 nfl
 1 n + fs
-1 nga
-1 n + gai
-1 nga + ng
-1 nga + nhật
-1 nga + o
-1 nga + y
+1 ng + a
+1 ng + ai
+1 ng + a + ng
+1 ng + ao
+1 ngay
 1 ng + ermanl + ven
 1 ng + he
 1 ng + hi
@@ -6680,26 +6510,25 @@
 1 ng + hi + ễn
 1 ng + hiệm
 1 ng + hiện
-1 ng + hiệp
-1 ng + hiệp + x + ây
+1 ng + h + iệp
 1 ng + hiệt
 1 ng + hiệu
 1 ng + hè
 1 ng + hè + o
-1 ng + hé
-1 ng + hé + n
+1 n + ghé
+1 n + ghé + n
 1 ng + hê + nh
-1 ng + hê + u
+1 ng + hêu
 1 ng + hìn
-1 nghĩ
-1 nghĩ + a
-1 nghĩ + a + field
+1 ng + hĩ
+1 nghĩa
+1 nghĩa + field
 1 ng + hẹn
 1 ng + hẹ + t
 1 ng + hẽn
 1 ng + hề
-1 ng + hệ
-1 ng + hỉ
+1 ng + h + ệ
+1 ng + h + ỉ
 1 ng + hị
 1 ng + hị + ch
 1 ng + i
@@ -6709,7 +6538,7 @@
 1 ng + on
 1 ng + oài
 1 ng + o + ái
-1 ng + oại
+1 ng + o + ại
 1 ng + oạn
 1 ng + o + ảnh
 1 ng + o + ặc
@@ -6719,26 +6548,25 @@
 1 nguy + en
 1 ng + uyên
 1 nguy + ền
-1 nguyễn
+1 nguy + ễn
 1 nguy + ện
 1 nguy + ệt
 1 nguồ
 1 nguồ + n
-1 ng + u + ỵ
+1 ng + uỵ
 1 ngà
 1 ngà + i
 1 ngà + n
 1 ngà + ng
 1 ngà + nh
-1 ngà + nh + ng + hề
-1 ngày
+1 ngà + y
 1 ng + ách
 1 ng + án
 1 ng + âm
 1 ng + ân
 1 ng + ây
-1 ngã
-1 ngã + i
+1 ng + ã
+1 ng + ã + i
 1 ng + òi
 1 ngó
 1 ng + óc
@@ -6762,11 +6590,6 @@
 1 ngư + ới
 1 người
 1 người + bình
-1 người + c + ây
-1 người + d + anh
-1 người + giường
-1 người + km
-1 người + năm
 1 người + tỷ
 1 người + vùng
 1 n + gườm
@@ -6774,17 +6597,16 @@
 1 ngư + ợc
 1 ng + ạc
 1 n + gạch
-1 ngại
-1 ngại + trụ + c
-1 ngạn
-1 ngạn + h
-1 n + gạo
+1 ng + ại
+1 ng + ạn
+1 ng + ạn + h
+1 ng + ạo
 1 ng + ạt
 1 ng + ả
 1 ng + ải
 1 ng + ấm
 1 ng + ất
-1 n + gầm
+1 ng + ầm
 1 ng + ần
 1 ng + ầu
 1 ng + ẫm
@@ -6804,18 +6626,18 @@
 1 ng + ồi
 1 ng + ổ + n
 1 ng + ỗi
-1 n + gỗ + ng
+1 ng + ỗ + ng
 1 ng + ộ
 1 ng + ột
 1 ng + ớt
 1 ng + ờ
 1 ng + ời
-1 n + gỡ
-1 n + gợi
+1 ng + ỡ
+1 ng + ợi
 1 ng + ợ + m
 1 ng + ụ
 1 ng + ục
-1 ngụy
+1 ng + ụ + y
 1 ng + ủ
 1 ng + ủi
 1 ng + ừa
@@ -6827,8 +6649,7 @@
 1 nh + a
 1 n + hai
 1 n + ham
-1 nh + a + mỹ
-1 nh + an
+1 n + han
 1 nh + anh
 1 nh + au
 1 nh + c + no
@@ -6853,10 +6674,10 @@
 1 nhu + ận
 1 n + huế
 1 n + huệ
-1 nh + uộm
-1 nhà
-1 nhà + n
-1 nhà + ng
+1 nhu + ộ + m
+1 n + hà
+1 n + hà + n
+1 n + hà + ng
 1 nh + ào
 1 nh + ác
 1 nh + ánh
@@ -6877,7 +6698,7 @@
 1 nh + ún
 1 nh + úng
 1 nh + úng + trong
-1 nh + ĩ
+1 n + hĩ
 1 nh + ũ
 1 nh + ũ + ng
 1 nh + ơn
@@ -6889,27 +6710,25 @@
 1 như + ợc
 1 như + ợng
 1 nh + ạc
-1 n + hạ + i
-1 n + hạ + n
+1 nh + ại
+1 nh + ạn
 1 n + hạ + nh
 1 nh + ạt
 1 nh + ạy
-1 nh + ảy
+1 nh + ả + y
 1 nh + ấc
 1 nh + ấm
 1 nh + ấn
 1 nh + ấp
 1 nh + ất
-1 nh + ất + ít
-1 n + hầm
+1 nh + ầm
 1 nh + ẫn
 1 n + hậm
 1 nh + ận
 1 nh + ập
 1 nh + ập + man
-1 nhật
-1 nhật + pháp
-1 n + hậu
+1 nh + ật
+1 nh + ậu
 1 nh + ắc
 1 nh + ắm
 1 n + hắn
@@ -6921,21 +6740,20 @@
 1 nh + ặt
 1 n + hẹ
 1 n + hẹn
-1 n + hẹ + tri + nh
 1 nh + ện
-1 n + hỉ
-1 nhị
-1 nhị + n
-1 nhị + p
+1 nh + ỉ
+1 n + hị
+1 n + hị + n
+1 n + hị + p
 1 n + họ
 1 n + học
-1 nh + ọn
+1 n + họ + n
 1 n + họ + t
 1 nh + ỏ
 1 nh + ốt
 1 nh + ồi
-1 nh + ộn
-1 nh + ộng
+1 nhộn
+1 nhộn + g
 1 nh + ớ
 1 n + hớt
 1 nh + ờ
@@ -6976,33 +6794,33 @@
 1 nik + ko
 1 nik + las
 1 nikola
-1 nikola + evsk
+1 nikola + e + vsk
 1 nikola + i
 1 nikola + y
-1 ni + mh
+1 ni + m + h
 1 n + ina
 1 ni + nh
-1 ni + o
-1 ni + p
-1 ni + p + is + s + ing
-1 nippon
+1 n + io
+1 nip
+1 nip + is + s + ing
+1 nip + pon
 1 n + irgendwo
 1 n + irs
 1 nisgaa
 1 nitassinan
-1 ni + tric
+1 ni + tri + c
 1 ni + t + ơ
-1 nixon
+1 nix
+1 nix + on
 1 nizhny
 1 ni + êm
 1 ni + ên
 1 ni + ềm
 1 niệm
 1 n + m
-1 n + mr
-1 nmtđ
+1 n + m + r
+1 n + m + t + đ
 1 n + n
-1 nndiethylmethylahexahydroindolo
 1 n + n + t + p
 1 no
 1 no + ah
@@ -7028,15 +6846,15 @@
 1 nord
 1 nord + ea
 1 nord + en
-1 nord + enfly + ch + t
+1 nord + enflycht
 1 nord + ion
 1 nord + stjernan
 1 norfolk
-1 norman
-1 norman + die
-1 norman + dy
+1 n + orman
+1 n + orman + die
+1 n + orman + dy
 1 no + ro + dom
-1 no + ro + uz
+1 norouz
 1 norr + k + ping
 1 norr + land
 1 no + rse
@@ -7064,8 +6882,7 @@
 1 not + t + ing + ham
 1 no + uri
 1 nouveau
-1 nouvelle + cal + édonie
-1 nouvelle + franc + e
+1 nouvelle
 1 nova
 1 nova + k
 1 nova + ya
@@ -7078,12 +6895,7 @@
 1 novosibirsk
 1 novotel
 1 n + p
-1 nq
-1 nq + cp
-1 nq + hđnd
-1 nq + tu
-1 nq + tw
-1 n + qu + btvqh
+1 n + q
 1 n + ra
 1 n + s + c
 1 n + s + l + und
@@ -7092,25 +6904,24 @@
 1 nu
 1 nuadh
 1 nu + bia
-1 nuc + le + ic
-1 nuc + leon
-1 nuc + leo + side
+1 nucleic
+1 nucleo + n
+1 nucleo + side
 1 nu + e + stra
 1 nu + ke
-1 nu + ll + soft
+1 null + soft
 1 nunatsiavut
 1 nunatukavut
 1 nunavut
 1 nu + ng
 1 nu + on
-1 nu + pedia
+1 nu + p + edia
 1 n + ure + m + berg
 1 n + ure + yev
 1 nu + t + shell
 1 nu + ôi
 1 nu + ốt
 1 n + v
-1 n + va
 1 nvidia
 1 n + w + c
 1 nxoc + cernch
@@ -7121,7 +6932,6 @@
 1 nà + ng
 1 nà + nh
 1 n + ào
-1 n + ào + tuy
 1 nà + y
 1 nà + y + nguồ + n
 1 n + ách
@@ -7152,29 +6962,26 @@
 1 n + ôi
 1 nôm
 1 n + ông
-1 nônglâm
-1 nônglâm + ngư
-1 nônglâm + t + hủy
 1 n + ù + ng
 1 núi
 1 n + út
 1 năm
 1 năng
-1 nđcp
+1 n + đ
 1 n + ơi
 1 nơm
 1 nư + n
 1 n + ương
 1 n + ước
 1 nư + ớng
-1 nại
-1 nạn
-1 nạo
+1 n + ại
+1 n + ạn
+1 n + ạo
 1 n + ạp
 1 n + ạt
 1 n + ạy
-1 nản
-1 n + ảy
+1 n + ản
+1 n + ả + y
 1 n + ấc
 1 n + ấm
 1 n + ấp
@@ -7183,12 +6990,11 @@
 1 n + ần
 1 n + ẩy
 1 n + ẫm
-1 nậm
+1 n + ậm
 1 n + ập
 1 n + ắm
 1 nắn
 1 nắn + g
-1 nắn + g + tháng
 1 n + ắp
 1 n + ằm
 1 nẵ + ng
@@ -7217,33 +7023,30 @@
 1 n + ốt
 1 n + ồi
 1 n + ồ + m
-1 n + ồ + ng
+1 n + ồng
 1 n + ổ
 1 n + ổi
-1 nỗ
+1 n + ỗ
 1 n + ỗi
 1 nộ
-1 nội
-1 nội + h + ải
-1 nội + lạ + ng
+1 nộ + i
 1 nộ + m
-1 n + ộn
+1 nộ + n
 1 nộ + p
 1 n + ới
 1 n + ớp
 1 n + ở
-1 nỡ
+1 n + ỡ
 1 n + ợ
 1 n + ụ
-1 nứa
+1 n + ứa
 1 n + ứt
 1 nửa
 1 nữ
 1 nữ + a
-1 nữ + nam
 1 nực
 1 o
-1 oai
+1 o + ai
 1 oak
 1 oak + land
 1 oak + s
@@ -7251,32 +7054,32 @@
 1 oan
 1 o + anh
 1 o + as
-1 oasys
+1 oa + sys
 1 o + b
 1 obama
 1 obama + car + e
 1 obispo
 1 oborona
-1 obraztsova
+1 obrazts + ova
 1 obrien
 1 oc
 1 occidental
 1 oc + ean
 1 o + ch
-1 ock + ham
+1 oc + k + ham
 1 oc + tan
 1 oc + ton + ion
 1 o + daniel
 1 oecd
 1 o + em
 1 of
+1 o + ff
 1 of + fa
 1 office
-1 o + ff + the + shelf
-1 o + h
-1 ohio
-1 ohri
-1 oi
+1 oh
+1 oh + io
+1 oh + ri
+1 o + i
 1 o + il
 1 ois + tra + kh
 1 ojibwa
@@ -7287,41 +7090,39 @@
 1 okinawa
 1 oklahoma
 1 oktoberfest
-1 okudzhava
+1 okudzh + ava
 1 ol
 1 old
 1 old + man
 1 old + s
-1 old + time
 1 o + le
-1 o + liver
-1 olivier
-1 ollivier
+1 o + li + ver
+1 ol + i + v + ier
+1 oll + i + v + ier
 1 ol + of
 1 ol + ov
 1 ol + sson
 1 olvera
 1 olympic
 1 olympic + s
-1 o + m
+1 om
 1 o + man
 1 o + mar
 1 omelveny
 1 omeprazole
-1 o + mic + ron
+1 om + ic + ron
 1 ommegangs
-1 o + m + x
+1 om + x
 1 on
 1 on + c + e
 1 one
 1 one + ga
 1 one + ill
 1 o + ng
-1 on + line
 1 ontanrio
 1 ontari
 1 ontari + o
-1 op + ec
+1 op + e + c
 1 open
 1 open + bsd
 1 open + elec
@@ -7329,14 +7130,12 @@
 1 open + look
 1 open + mo + ko
 1 open + office
-1 openofficeorg
-1 openofficeorg + libre + office
+1 open + office + org
 1 open + solaris
-1 open + source
 1 open + s + use
 1 open + text
 1 open + vld
-1 open + wrt
+1 open + wr + t
 1 opera
 1 opera + tion
 1 op + g
@@ -7345,7 +7144,7 @@
 1 op + ti + mus
 1 opéra
 1 or
-1 oracle
+1 ora + c + le
 1 o + range
 1 orbital
 1 ore + gon
@@ -7356,10 +7155,9 @@
 1 ori + g + ine
 1 or + k + ney
 1 orleans
-1 orlowski
+1 or + lo + wski
 1 orléans
-1 or + man
-1 orossi
+1 orman
 1 orpheum
 1 or + son
 1 or + well
@@ -7375,29 +7173,27 @@
 1 oshkosh
 1 oss
 1 oss + anna
-1 ossetia
+1 oss + etia
 1 oss + in + ing
 1 os + t + rock
 1 os + tr + ovsky
-1 o + train
 1 ot + t
 1 ottawa
-1 ottawa + carleton
-1 ottawa + gatineau
 1 otto
 1 otto + man
 1 ou + do + ng
-1 ou + m
+1 o + um
 1 our
 1 out
 1 out + line
 1 out + look + com
+1 ov + e
 1 overseas
 1 o + wens
 1 oxenstierna
 1 o + x + ford
 1 o + xi
-1 o + xide
+1 oxide
 1 o + xit
 1 o + x + y
 1 oán
@@ -7409,29 +7205,29 @@
 1 pacific
 1 package
 1 package + kit
+1 packard
+1 packard + nhiều
 1 padre
 1 pa + gan
 1 page
-1 page + form + s
 1 page + ran + k
 1 page + s
-1 p + ain
+1 pa + in
 1 p + aine
-1 p + ain + ted
+1 pa + in + ted
 1 pak
 1 pak + istan
 1 pak + nam
 1 pak + se
-1 pa + lac + e
-1 paladin
-1 palais
-1 palazzi
-1 pa + le + kh
-1 paleoind + ian
-1 paleozoi
-1 palestine
-1 palestine + kuwait
-1 palewski
+1 pala + c + e
+1 pala + din
+1 pala + is
+1 pala + z + zi
+1 pale + kh
+1 pale + o
+1 pale + ozoi
+1 pale + st + ine
+1 pale + wski
 1 pa + lin
 1 palisade
 1 palladi
@@ -7443,8 +7239,7 @@
 1 pampanito
 1 panama
 1 panama + ren + ko
-1 panama + thái
-1 p + and + ura + nga
+1 panduranga
 1 pangaea
 1 pantheon
 1 paolo
@@ -7455,7 +7250,7 @@
 1 parabol
 1 parabol + a
 1 par + agua + y
-1 par + alympic
+1 par + alym + pic
 1 par + amesh + var + avarman
 1 par + amount
 1 par + ibas
@@ -7464,19 +7259,20 @@
 1 park + s
 1 park + son
 1 par + l + ia + ment
-1 par + men + tier
-1 par + nas + sus
+1 par + ment + ier
+1 par + nass + us
 1 par + rsboro
 1 par + ry
 1 par + son + s
+1 par + t + en + kir + chen
 1 par + th + ia
 1 par + ti
 1 p + arts
 1 pas + cal
 1 pas + cu + al
-1 pas + htun
+1 pas + h + tu + n
 1 pas + qu + ier
-1 pas + san + t
+1 pas + s + ant
 1 pas + ta
 1 pas + te + ur
 1 pas + time
@@ -7489,17 +7285,17 @@
 1 pat + rik
 1 pat + ri + ot
 1 pat + ti
-1 paul
+1 pa + ul
 1 pavel
-1 pavil + ion
-1 pavil + lon + e
-1 pavlova
+1 pa + vi + lion
+1 pavillone
+1 pa + v + l + ova
 1 pa + y + s
 1 pa + y + wall
 1 pbx
 1 p + c
 1 p + c + i
-1 p + cre
+1 p + c + re
 1 p + da
 1 p + do
 1 pe + ace
@@ -7511,14 +7307,14 @@
 1 pear + ly
 1 pear + son
 1 pe + at
-1 pe + cl
+1 pe + c + l
 1 pedicab
 1 peenemnde
 1 pe + et + ers
 1 pe + i
-1 pe + le + e
+1 pe + lee
 1 pelle
-1 pelle + rin
+1 pelle + ri + n
 1 pe + nang
 1 pen + insula
 1 pennine
@@ -7531,19 +7327,19 @@
 1 pe + p + far
 1 p + epsi
 1 per
-1 per + ch + lo + rat
+1 per + ch + lor + at
 1 per + c + y
 1 per + estroika
-1 per + f + rin + gen + s
+1 per + fr + in + gen + s
 1 per + g + amon
 1 per + i + meter
 1 per + i + plus
 1 per + kin
-1 per + kins
+1 per + kin + s
 1 per + l
 1 per + me + ke
 1 per + ot
-1 per + rin
+1 per + ri + n
 1 per + ry
 1 per + son + al
 1 per + son + nel
@@ -7557,7 +7353,7 @@
 1 petipa
 1 petroc
 1 petroleum
-1 petropavlovsk
+1 petropavlo + vsk
 1 petrovna
 1 peugeot
 1 pew
@@ -7565,7 +7361,7 @@
 1 peyo
 1 p + fa + ff
 1 p + ga
-1 pgsts
+1 p + g + s
 1 ph
 1 pha
 1 pha + i
@@ -7579,12 +7375,11 @@
 1 pha + se
 1 ph + e
 1 ph + elps
-1 phi
+1 ph + i
 1 phia
-1 phi + hạtnhân
-1 phi + ilip + ines
-1 phi + la + del + phia
-1 phi + le + mon
+1 ph + iilip + ines
+1 ph + ila + del + phia
+1 ph + i + le + mon
 1 philip
 1 philip + e
 1 philip + ines
@@ -7595,9 +7390,9 @@
 1 phillip + ines
 1 phillip + pine + s
 1 phillip + s
-1 phi + lo
-1 phi + los + phia + e
-1 phi + m
+1 philo
+1 philo + sphiae
+1 ph + im
 1 p + hiên
 1 ph + iêu
 1 p + hiếm
@@ -7609,23 +7404,22 @@
 1 ph + no + m + pe + nh
 1 ph + nôm
 1 pho
-1 pho + bos + gru + n + t
-1 pho + en + ic + ia
-1 pho + en + ix
+1 pho + bos
+1 pho + e + nicia
+1 pho + e + nix
 1 pho + mvihane
 1 phone
 1 pho + ng
-1 pho + ng + đô
+1 pho + ng + đ + ô
 1 pho + no + n
 1 phosphat
 1 phosphat + e
 1 pho + sp + hor
 1 pho + ton
-1 pho + to + s + hop
+1 pho + tos + hop
 1 pho + u + ma
-1 pho + u + mi
+1 pho + um + i
 1 ph + p
-1 ph + p + fi
 1 ph + p + ng
 1 ph + rionnsa
 1 phu
@@ -7642,33 +7436,22 @@
 1 phá + i
 1 phá + n
 1 phá + o
-1 pháp
-1 pháp + bỉ
-1 pháp + nhật
-1 pháp + thanh
-1 pháp + thái
-1 pháp + tây
-1 pháp + việt
-1 pháp + vlaanderen
-1 pháp + xiêm
-1 pháp + áo
+1 phá + p
 1 phá + t
-1 phá + t + xit
-1 phá + t + xít
 1 ph + ân
 1 ph + èn
 1 ph + ép
-1 phê
-1 phê + n
-1 phê + rô
+1 p + hê
+1 ph + ên
+1 p + hê + rô
 1 ph + ì
 1 p + hìn
-1 ph + í
+1 p + hí
 1 ph + ía
 1 ph + ích
-1 ph + í + m
-1 p + hò
-1 p + hò + ng
+1 p + hí + m
+1 ph + ò
+1 ph + ò + ng
 1 p + hó
 1 p + hó + ng
 1 ph + ô
@@ -7683,8 +7466,8 @@
 1 phú + t
 1 ph + ơi
 1 ph + ương
-1 ph + ước
-1 ph + ước + c + âu
+1 p + hước
+1 p + hước + c + âu
 1 p + hư + ờng
 1 p + hư + ợng
 1 phạ
@@ -7692,10 +7475,9 @@
 1 phạ + n
 1 phạ + ng
 1 phạ + t
-1 phả
+1 ph + ả
 1 ph + ải
-1 phả + n
-1 phả + n + văn
+1 ph + ản
 1 ph + ấn
 1 ph + ất
 1 ph + ần
@@ -7707,16 +7489,16 @@
 1 ph + ật
 1 ph + ẳ + ng
 1 ph + ế
-1 p + hỉ
+1 ph + ỉ
 1 p + hỉnh
 1 p + hỏng
 1 p + hố
 1 ph + ối
 1 ph + ồn
-1 p + hồng
-1 p + hổ
+1 ph + ồng
+1 ph + ổ
 1 ph + ổi
-1 ph + ộng
+1 ph + ộ + ng
 1 ph + ớ
 1 p + hớt
 1 ph + ờ
@@ -7724,56 +7506,56 @@
 1 phụ
 1 phụ + c
 1 phụ + ng
-1 ph + ủ
+1 p + hủ
 1 ph + ức
 1 pi
 1 pi + ano
 1 pibulsongkram
-1 pi + card
-1 p + ic + chu
+1 pic + ard
+1 pic + chu
 1 picture
 1 picture + s
 1 pidgin
 1 pie
 1 pie + d + mont
-1 pie + rc + e
+1 pie + rce
 1 pie + re
 1 pierre
-1 pierre + richard
-1 pierre + simon
 1 pie + ter
 1 pigneau
 1 pigneau + x
+1 p + ignon
 1 pi + ke
 1 pilate
 1 pilatus
 1 pi + l + lé
-1 p + in
+1 pin
 1 pine + wood
 1 ping
-1 p + in + k
-1 pino
+1 pin + k
+1 pin + o
 1 pi + pe + rid + ine
-1 p + iran
-1 p + iran + ha
+1 piran
+1 piran + ha
 1 pi + sa
-1 pitingolo
-1 pi + t + t
+1 pit
+1 pit + ing + o + lo
+1 pit + t
 1 pizza
 1 pizzey
 1 pi + ô
 1 place
 1 place + ntia
-1 pla + ek
+1 pla + e + k
 1 pla + is + ance
 1 pla + n + ck
 1 pla + net
 1 pla + ni + meter
-1 pla + ni + sp + here
+1 pla + nisphere
 1 pla + n + tage + net
 1 plasma
 1 pla + t + form
-1 p + latinum
+1 p + latin + um
 1 pla + ton
 1 play
 1 play + fair
@@ -7809,24 +7591,26 @@
 1 pol + lac + k
 1 pol + pot
 1 pol + t + ava
-1 pol + y + e + st + ers
+1 pol + y + es + t + ers
 1 pol + yetylen
 1 polyme
-1 polyme + th + ylmethacrylate
+1 polyme + thyl + methacrylate
+1 pol + y + nes + ia
 1 pol + ypropylen
 1 pol + ysty + ren
 1 pol + ytetrafloetylen
-1 pol + y + to + mou + s
+1 pol + y + to + mous
 1 pol + yvinyl
 1 pomerania
 1 pommern
 1 po + mo
 1 po + mo + na
 1 pompil + ius
-1 po + nd
+1 pon + d
 1 po + ng
-1 pont + char + train
-1 pont + ius
+1 pon + t + char + train
+1 pon + t + ius
+1 po + oh
 1 pool
 1 pop
 1 pop + e
@@ -7835,13 +7619,12 @@
 1 pop + ulzai
 1 por + ciúnc + ula
 1 por + k
-1 por + nh + ub
+1 por + nhu + b
 1 por + sche
 1 port
 1 port + able
 1 port + age
 1 port + al
-1 port + au + prince
 1 port + e
 1 port + ed
 1 port + er
@@ -7849,9 +7632,9 @@
 1 port + ola
 1 port + o + là
 1 port + s
-1 port + s + mou + th
-1 po + s + ix
-1 posner
+1 port + s + mouth
+1 po + si + x
+1 po + s + ner
 1 po + st
 1 pot
 1 po + tem + kin
@@ -7861,11 +7644,11 @@
 1 po + und
 1 p + our + pre
 1 po + well
-1 power
+1 po + wer
 1 poynt + ing
 1 ppp
 1 ppp + el + mann
-1 pr
+1 p + r
 1 pra + bang
 1 prairie
 1 prairie + s
@@ -7878,13 +7661,14 @@
 1 pre + em
 1 premier
 1 premier + s + hip
+1 pre + mis + es
 1 pre + processor
 1 pre + scot + t
 1 pre + side + ntia + l
-1 pre + si + dio
+1 pre + sidio
 1 pre + s + ley
-1 press
-1 pre + y
+1 p + ress
+1 p + rey
 1 p + rice
 1 priest
 1 priest + ley
@@ -7894,12 +7678,11 @@
 1 prince
 1 prince + s + s
 1 principia
-1 pr + int
+1 p + r + in + t
 1 pritz + ker
-1 pr + ix
-1 pro + am
+1 p + r + ix
+1 pro
 1 processor
-1 pro + fire + pro
 1 pro + fits
 1 pro + g + ress + ive
 1 pro + hear
@@ -7908,17 +7691,17 @@
 1 project + ion + s
 1 project + ive
 1 pro + kho + rov
-1 pro + kofi + ev
+1 pro + kofiev
 1 pro + m + s
 1 pro + nunci + ation
 1 pro + piska
 1 pro + po + sal
-1 pro + puls + ion
+1 pro + pu + l + s + ion
 1 pro + siebensat
 1 pro + spekt
 1 pro + te + c + t
+1 pro + to
 1 pro + ton
-1 pro + tovietic
 1 pro + téges
 1 prussians
 1 près
@@ -7930,16 +7713,16 @@
 1 ptolemy
 1 ptolémée
 1 ptushko
-1 pu + b + lic
+1 publi + c
 1 pudd + ing
 1 pu + e + blo
 1 puerto
-1 puginier
+1 pugin + ier
 1 pulitzer
 1 pulkovo
 1 pull
 1 pull + man
-1 puls + eau + dio
+1 pulseaudio
 1 punjab
 1 punjab + i
 1 pu + n + k
@@ -7948,7 +7731,7 @@
 1 push + kin
 1 push + tu
 1 pu + tin
-1 puymanel
+1 puyma + nel
 1 pvr
 1 p + y + m
 1 pyotr
@@ -7962,8 +7745,7 @@
 1 p + à
 1 p + ác
 1 p + áo
-1 pé + c
-1 pé + c + x + ích
+1 p + é + c
 1 p + ê + nh
 1 p + ê + ro
 1 p + ì
@@ -7971,24 +7753,24 @@
 1 p + ô
 1 p + ù
 1 p + ă + ng
-1 pơmu
+1 p + ơ
 1 p + ất
-1 pằ + ng
+1 p + ằ + ng
 1 p + ẻ + ng
 1 q
+1 qaeda
 1 qatar
 1 q + b
 1 qew
 1 q + g
 1 q + h
-1 q + health
 1 q + l
 1 q + s
 1 q + t
 1 qu
 1 qua
 1 qua + driga
-1 qua + d + ri + v + ium
+1 qua + drivium
 1 qua + i
 1 qua + ker + s
 1 qua + n
@@ -7998,68 +7780,62 @@
 1 qua + ter + n + ion
 1 qua + y
 1 que
-1 quebec
-1 quebec + base + d
+1 que + bec
 1 queen
 1 queen + s
-1 queen + s + way + carleton
+1 queen + s + way
 1 que + n
 1 que + ry
 1 qu + i
+1 quick
 1 quick + basic
 1 quick + book + s
 1 quick + en
-1 quick + web
 1 qu + ine
 1 quin + ine
-1 quin + olinecarboxamide
+1 quin + o + line
 1 qu + oc
 1 qu + ran
 1 qu + r + ra
-1 quy
+1 qu + y
 1 q + uyên
 1 qu + yến
-1 quy + ết
-1 quy + ền
-1 quy + ền + liên
+1 qu + yết
+1 qu + y + ền
 1 q + uyển
-1 quy + ện
-1 quy + ệt
+1 qu + y + ện
+1 qu + y + ệt
 1 qu + à
 1 quá
-1 quá + ch
-1 quá + i
+1 qu + ách
+1 qu + ái
 1 quá + n
 1 quá + nh
 1 quá + t
 1 qu + ân
-1 qu + ân + dân
 1 qu + ây
 1 qu + ã + ng
 1 qu + èn
 1 qué
-1 québec
-1 québec + labrador
+1 qué + bec
 1 qué + bé + c + ois
 1 qué + t
 1 qu + ê
 1 qu + ên
 1 qu + í
 1 qu + ý
-1 qu + ýt
+1 qu + ý + t
 1 qu + ăn
 1 qu + ăn + g
 1 qu + ạt
-1 quả
-1 quả + n
-1 quả + ng
+1 qu + ả
+1 qu + ản
+1 qu + ả + ng
 1 qu + ất
 1 qu + ấy
 1 qu + ần
 1 qu + ầy
-1 quận
-1 quận + huyện
-1 quận + thành
+1 qu + ận
 1 qu + ật
 1 qu + ắc
 1 qu + ắt
@@ -8069,29 +7845,26 @@
 1 qu + ặt
 1 qu + ế
 1 qu + ệ
-1 quốc
-1 quốc + văn
+1 qu + ốc
 1 qu + ở
 1 qu + ỳ
 1 qu + ỳ + nh
-1 qu + ỵ
+1 q + uỵ
 1 qu + ỷ
 1 qu + ỹ
-1 qđ
-1 qđ + cp
-1 qđ + ttg
+1 q + đ
 1 q + ụ + ốc
 1 r
 1 ra
 1 ra + b + bani
+1 rack
 1 ra + dar
 1 ra + dar + sa + t
-1 ra + de + on
-1 radiation
-1 radiation + tolerant
-1 ra + dio
+1 radeon
+1 ra + di + ation
+1 radio
 1 ra + don
-1 ra + don + ezh
+1 ra + don + e + zh
 1 raglai
 1 rai
 1 railway
@@ -8104,9 +7877,10 @@
 1 ra + m
 1 rama
 1 rama + dan
-1 rama + di + er
+1 rama + d + ier
 1 rama + nay + a
 1 rama + y + ana
+1 ramdisk
 1 ra + m + p + arts
 1 ramée
 1 ran + ch
@@ -8122,17 +7896,18 @@
 1 ra + o
 1 rap
 1 rap + ha + el
-1 rap + id
+1 rap + i + d
 1 rap + per
 1 rap + tor + s
 1 ra + r + ely
-1 ra + shi + dun
+1 rashid
+1 rashid + un
 1 rasmus
 1 ra + sp + berry
-1 ratanakiri
-1 ratchathan
+1 rat + anakiri
+1 rat + cha + t + han
 1 rat + her
-1 rat + ify + ing
+1 rat + if + y + ing
 1 rat + po + ison
 1 ra + u
 1 rav
@@ -8141,13 +7916,12 @@
 1 ray + hn
 1 ray + leigh
 1 ray + mond
-1 rb
-1 rb + c
-1 rb + hip + hop
-1 rc
-1 rc + m + p
+1 raziel
+1 r + b
+1 r + b + c
+1 r + c
+1 r + c + m + p
 1 rd
-1 rdgx
 1 r + di
 1 rd + x
 1 re
@@ -8155,14 +7929,14 @@
 1 read + ing
 1 re + a + gan
 1 r + eagle
-1 real
+1 re + al
 1 reap
-1 re + bell + ion
+1 re + bel + lion
 1 re + bro
 1 received
-1 rector
-1 red
-1 red + di + t
+1 re + c + tor
+1 re + d
+1 reddit
 1 re + direct
 1 re + e + s + s
 1 reflec + tion
@@ -8172,7 +7946,7 @@
 1 regum
 1 re + hn + qu + ist
 1 re + ina
-1 reinfe + ldt
+1 reinfeldt
 1 re + iter
 1 re + i + zen
 1 remained
@@ -8188,18 +7962,18 @@
 1 re + shet + nev
 1 residence
 1 resident
-1 re + sort
+1 resort
 1 rest
-1 rest + aurant
+1 rest + a + ur + ant
 1 re + s + und
 1 rev + e + la + tion + s
 1 rev + ers
-1 rev + iennent
-1 rev + iew
+1 rev + ienne + n + t
+1 re + view
 1 rey
 1 rey + n + old + s
 1 r + fc
-1 rheinwestfalen
+1 r + hein
 1 rhind
 1 rhinos
 1 rho
@@ -8207,45 +7981,45 @@
 1 rho + s
 1 rhythm
 1 ri
-1 rica
+1 r + ica
 1 rice
-1 rice + aro + ni
-1 richard
-1 richard + s
-1 richard + son
+1 rich + ard
+1 rich + ard + s
+1 rich + ard + son
 1 rich + aud
 1 rich + mond
 1 rich + ter
 1 rick + ard + sson
 1 rick + man
-1 rickshaw
-1 rickshaw + s
+1 rick + shaw
+1 rick + shaw + s
 1 ri + co
-1 rid + eau
+1 ri + deau
 1 ridge
 1 rid + ley
 1 riefenstahl
 1 riegle
-1 rie + mann
-1 rie + ng
+1 ri + e + mann
+1 ri + e + ng
 1 ri + g + ault
+1 ri + ght
 1 rik + s + bank
 1 rik + s + dag
 1 rim
-1 ring
+1 ri + ng
 1 ri + o
-1 ripon
+1 ri + pon
 1 ris + c
 1 ritchie
-1 rit + ter
-1 river
-1 river + side
+1 ri + t + ter
+1 ri + ver
+1 ri + ver + side
 1 ri + v + ière
 1 riyadh
 1 ri + êm
 1 riêng
 1 r + iêu
-1 riết
+1 ri + ết
 1 ri + ề + ng
 1 r + iệp
 1 r + nang
@@ -8260,18 +8034,17 @@
 1 ro + bert + s
 1 ro + bes + pierre
 1 ro + bin
-1 ro + bin + son + s + may
+1 ro + bin + son + s
 1 rob + itaille
 1 rob + onaut
 1 ro + bot
 1 rob + y + n
 1 rock
 1 rock + clif + fe
-1 rock + ef + eller
+1 rock + e + f + eller
 1 rock + et
 1 rock + fan
 1 rock + pi + le
-1 rock + pop
 1 rock + s
 1 rock + y
 1 rod
@@ -8285,7 +8058,7 @@
 1 ro + g + ier
 1 ro + he
 1 ro + i
-1 rokoss + ovsky
+1 ro + k + oss + ovsky
 1 ro + kr
 1 ro + land
 1 roll
@@ -8298,19 +8071,20 @@
 1 roman + ia
 1 roman + o
 1 roman + ov
-1 rom + eo
-1 rom + pu + y
-1 rom + ân + ia
+1 romeo
+1 rompuy
+1 românia
 1 ron
 1 ron + ald
 1 ron + d
 1 ron + de
 1 ro + ng
+1 ron + i
 1 ron + nie
 1 roosevelt
 1 rootsi
-1 ror + ty
-1 ro + sa + tom
+1 ro + r + ty
+1 ro + s + atom
 1 rose
 1 rose + s
 1 rose + và
@@ -8318,7 +8092,7 @@
 1 ross
 1 ross + ett + i
 1 ross + iya
-1 ross + ta + t
+1 ro + s + stat
 1 ross + ía
 1 ro + stock
 1 rost + ov
@@ -8337,31 +8111,31 @@
 1 ro + x + ette
 1 roy
 1 roy + al
-1 ro + yale
+1 roy + ale
 1 r + p
 1 r + p + g
 1 r + sa
 1 r + si
-1 r + s + sa + tom
+1 r + s + s
 1 r + t
-1 ruandaurundi
+1 ru + anda
 1 rub
 1 rub + en + s
 1 rub + in
 1 rub + le
 1 rub + les
-1 ru + bus
+1 rub + us
 1 rub + y
 1 rud + olf
 1 rud + s + ton
 1 rud + y + ard
 1 ru + e
-1 ru + ga
-1 rugby
-1 rugg + les
+1 rug + a
+1 rug + by
+1 rug + g + les
 1 rum
 1 rum + ani
-1 rum + sf + el + d
+1 rum + sfeld
 1 run
 1 run + dskop
 1 run + e
@@ -8374,25 +8148,25 @@
 1 ru + po
 1 rus
 1 rus + k
-1 russ
+1 rus + s
 1 russel
 1 russel + l
-1 russ + ia
-1 russ + ian
-1 russ + o + phone
+1 russia
+1 russia + n
+1 rus + s + o + phone
 1 rus + t
 1 rus + t + ah
 1 rus + y + n
 1 ruth
 1 ruth + enia
 1 ruth + er + ford
-1 ru + ồ + ng
+1 ru + ồng
 1 ruộ + ng
 1 ruộ + t
 1 rvns
-1 rwanda
-1 ryazanov
-1 ryolit
+1 r + w + anda
+1 ry + azanov
+1 ry + ol + it
 1 ry + zen
 1 rà
 1 rà + i
@@ -8400,25 +8174,25 @@
 1 rà + nh
 1 r + ào
 1 rà + y
-1 rá
-1 rá + c
+1 r + á
+1 r + ác
 1 r + ách
 1 r + ái
-1 rá + n
+1 r + án
 1 r + áo
-1 rá + p
+1 r + áp
 1 rã
 1 rãi
 1 rã + nh
-1 rèm
+1 r + èm
 1 r + èn
 1 ré + gi + e
 1 ré + n
-1 ré + pu + b + li + que
+1 ré + publi + que
 1 résident
 1 résident + s
 1 ré + t
-1 ré + union
+1 ré + uni + on
 1 rê
 1 r + ên
 1 rê + u
@@ -8428,31 +8202,30 @@
 1 rì + u
 1 rí
 1 rí + o
-1 rò
-1 rò + ng
+1 r + ò
+1 r + ò + ng
 1 r + óc
 1 rót
 1 rô
-1 rô + b + ốt
 1 rô + ma
 1 rô + man
 1 rõ
-1 rù
-1 rù + a
+1 r + ù
+1 r + ùa
 1 rú
 1 r + úp
-1 rú + t
+1 r + út
 1 r + ăn
 1 răng
-1 r + ĩ
-1 rũ
-1 rơ
+1 rĩ
+1 r + ũ
+1 r + ơ
 1 r + ơi
-1 rơ + m
+1 r + ơ + m
 1 r + ước
-1 rư + ờng
+1 rường
 1 rư + ỡi
-1 rượi
+1 rư + ợi
 1 rượu
 1 rạ
 1 rạ + c
@@ -8463,18 +8236,18 @@
 1 r + ải
 1 r + ảnh
 1 r + ất
-1 rầm
+1 r + ầm
 1 r + ầu
-1 rẫy
-1 rậm
+1 r + ẫy
+1 r + ậm
 1 r + ập
-1 rắc
+1 r + ắc
 1 r + ắm
 1 rắn
 1 r + ằm
 1 rằng
 1 rằng + con
-1 rằng + mậu
+1 rằng + m + ậu
 1 r + ặ + ng
 1 r + ẻ
 1 r + ẽ
@@ -8485,20 +8258,21 @@
 1 r + ệu
 1 r + ỉ
 1 rịa
-1 rọ
+1 r + ọ
+1 r + ốc
 1 r + ối
 1 r + ốt
 1 r + ồi
-1 rồng
-1 rổ
+1 r + ồng
+1 r + ổ
 1 r + ỗi
-1 rỗ + ng
+1 r + ỗ + ng
 1 rộ
 1 rộ + n
 1 rộ + ng
 1 r + ớt
 1 r + ời
-1 rỡ
+1 r + ỡ
 1 rợ
 1 rợ + n
 1 rợ + p
@@ -8513,11 +8287,12 @@
 1 s
 1 sa
 1 sa + ab
-1 sa + ba + tier
+1 sa + bat + ier
 1 sabily
 1 sa + bin
 1 s + able
-1 sa + bá + t
+1 sa + b + lon
+1 sa + b + át
 1 saccheri
 1 sachs
 1 sachs + en
@@ -8536,12 +8311,7 @@
 1 saigo + n
 1 sai + l + fish
 1 saint
-1 saint + c + y + r
 1 saint + en + y
-1 saint + jean
-1 saint + lauren + t
-1 saint + peter + burg
-1 saint + pierre
 1 saint + s
 1 sakaya
 1 sakha + lin
@@ -8551,14 +8321,14 @@
 1 salesforce
 1 salesforce + com
 1 sal + ina + s
-1 sal + is + b + ury
+1 sal + is + bury
 1 sal + ish
 1 sal + m + ing
 1 sa + lon + com
-1 sal + t + aire
+1 sal + ta + ire
 1 sal + ton
-1 salva + dor
-1 salva + tion
+1 sal + v + ador
+1 sal + v + ation
 1 sal + z + burg
 1 sam
 1 sam + ara
@@ -8566,7 +8336,7 @@
 1 sam + bo
 1 sam + bre
 1 sam + i
-1 sam + o + a
+1 sam + oa
 1 sam + phan
 1 sam + pra + s
 1 sam + ro + ng
@@ -8575,14 +8345,13 @@
 1 sam + u + el
 1 san
 1 s + anders
-1 san + dvik
+1 sandvik
 1 sa + ng
 1 san + ger
 1 s + anh
 1 sankt
-1 sankt + peter + burg
 1 san + son
-1 san + ssouci
+1 sanssouci
 1 san + ta
 1 sa + o
 1 sa + p
@@ -8595,8 +8364,8 @@
 1 sarria
 1 s + ar + s
 1 s + ary
-1 sa + skat + che + wan
-1 sa + skat + oon
+1 saskat + che + wan
+1 saskat + oon
 1 sassanid
 1 sa + t
 1 satapa + tha
@@ -8607,12 +8376,12 @@
 1 sau + l
 1 s + ault
 1 sau + to + y
-1 sa + vani
+1 sa + van + i
 1 sa + v + anna + khet
 1 sa + x
-1 saxon
-1 saxon + es
-1 sa + x + o + phone
+1 saxo + n
+1 saxo + nes
+1 saxo + phone
 1 sa + y
 1 s + ber + bank
 1 sbiten
@@ -8620,39 +8389,38 @@
 1 s + can + dal
 1 scandinavi
 1 scandinavi + a
-1 s + can + d + ium
+1 s + can + dium
 1 s + can + ia
 1 s + car
-1 s + car + h
 1 schatten
-1 sche + eren
-1 sche + ldt
-1 sche + ll + ing
+1 sche + e + ren
+1 sche + l + d + t
+1 sche + lling
 1 sche + me
 1 sche + ng + en
 1 s + c + hil + ler
 1 schl + ager
 1 schl + es + in + ger
-1 schl + eswig + hol + stein
+1 schl + es + wi + g
 1 schl + ieffen
 1 schl + n + dor + ff
 1 schnefeld
 1 schnittke
 1 schoen + berg
-1 scholar + pedia
+1 scholarp + edia
 1 schonen
 1 school
 1 school + s
 1 schopenhauer
 1 s + chu + h
-1 s + chu + lmdchenre + port
+1 s + chu + lmd + chen
 1 s + chu + mac + her
 1 s + chu + mann
 1 schwa + ben
 1 science
 1 science + s
-1 scie + ntia + rum
-1 scie + n + to + logy
+1 s + c + ie + ntia + rum
+1 sciento + logy
 1 scilly
 1 scioto
 1 sciu
@@ -8675,11 +8443,11 @@
 1 script + ing
 1 scrubs
 1 s + c + s
-1 sctgasvn
+1 s + c + t + gas
 1 s + c + ud
 1 scythia
 1 s + d + deutsche
-1 sderhamnmora
+1 sderhamn
 1 s + di
 1 sdk
 1 se
@@ -8688,13 +8456,13 @@
 1 sea + p
 1 se + arch
 1 sea + to
-1 seattle
+1 sea + ttle
 1 sea + way
 1 sebast + ian
 1 secret
 1 secundus
 1 secunia
-1 securitas
+1 se + cur + ita + s
 1 se + cur + ity
 1 s + ed
 1 s + ed + g + wick
@@ -8703,13 +8471,13 @@
 1 seifert
 1 se + i + gen + tha + ler
 1 se + k
-1 se + ll + ers
+1 s + ell + ers
 1 s + el + ma
 1 semantic
-1 semiconductor
+1 semiconduc + tor
 1 se + mit
 1 se + mit + ic
-1 se + m + per + nicolai
+1 se + m + per
 1 s + en
 1 s + end + mail
 1 s + en + mu
@@ -8717,7 +8485,7 @@
 1 seoul
 1 se + p + tim + ius
 1 ser + amp + ore
-1 ser + a + phi + m
+1 ser + a + ph + im
 1 ser + bia
 1 ser + dyukov
 1 ser + en + a
@@ -8733,9 +8501,8 @@
 1 ser + ver
 1 ser + ver + s
 1 ser + vi + ces
-1 se + s
+1 se + t
 1 settl + ers
-1 set + top
 1 se + van
 1 sevasto + pol
 1 se + ven
@@ -8755,22 +8522,22 @@
 1 sha + kespeare
 1 sha + key + s
 1 sha + ki + ra
-1 sha + lyapin
+1 sha + l + ya + pin
 1 sha + man
 1 s + ham + rock
-1 sha + n
-1 sha + n + ney + gan + ock
-1 sha + n + no + n
-1 sha + rap + ov + a
+1 s + han
+1 sha + nneyganock
+1 s + han + no + n
+1 sha + rap + ova
 1 sha + recropp + ers
 1 sha + sta
 1 sha + t + t
-1 sha + w
+1 shaw
 1 sh + b
 1 sh + chi
-1 sheehan
-1 sheets
-1 sh + ef + field
+1 shee + han
+1 shee + t + s
+1 sh + e + f + field
 1 s + hei + kh
 1 shelf
 1 shell
@@ -8783,18 +8550,18 @@
 1 s + her + i + ff
 1 s + her + rod
 1 shet + land
-1 shi + a
-1 shi + bu + ya
-1 shi + el + d
-1 shi + ft
-1 shi + ite
-1 shi + lla
+1 sh + ia
+1 shibuya
+1 shield
+1 s + hi + ft
+1 s + hi + ite
+1 s + hi + lla
 1 s + hip + ton
-1 shi + r + ky
+1 shirky
 1 shoegaz + ing
 1 sholo + kho + v
 1 s + hop
-1 s + hop + ify
+1 s + hop + if + y
 1 sh + ore
 1 short
 1 shostak + ovich
@@ -8808,7 +8575,7 @@
 1 s + iberia
 1 si + bi
 1 siddhnta
-1 sieg + fried
+1 si + e + g + fried
 1 siem
 1 siem + en + s
 1 siem + reap
@@ -8822,17 +8589,17 @@
 1 sihanouk + ville
 1 si + kh
 1 si + kor + sky
-1 silant + yev
-1 silica
-1 silica + t
+1 sil + ant + yev
+1 sil + ica
+1 sil + ica + t
 1 si + li + con
-1 silvano
-1 silver
-1 silver + stone
+1 sil + van + o
+1 sil + ver
+1 sil + ver + stone
 1 simcoe
 1 simenon
-1 simon
-1 simon + ite
+1 si + mon
+1 si + mon + ite
 1 simple
 1 s + ina
 1 s + ina + tra
@@ -8844,34 +8611,34 @@
 1 s + ing + les
 1 si + nh
 1 sinhalese
-1 si + nh + gồm
 1 sinyavskaya
 1 si + ph + ông
 1 sir
 1 si + rik
 1 si + ro
-1 sis + ava + ng
-1 sis + ophon
-1 sis + o + wa + th
-1 sis + s + l
+1 s + is + ava + ng
+1 sisophon
+1 sisowa + th
+1 si + ssl
 1 sistani
 1 si + ster
 1 si + ster + s
 1 sitc
 1 s + ite
-1 si + tu
-1 si + tu + s
+1 s + itu
+1 s + itu + s
 1 siwertz
-1 s + ix
+1 si + x
 1 si + êm
 1 s + iê + ng
 1 s + iêu
 1 si + ết
-1 sj
-1 sj + berg
+1 s + j
+1 s + j + berg
 1 skanadario
 1 skanska
-1 skat + ch
+1 s + ka + t + ch
+1 skav + sta
 1 skepti + cal
 1 skf
 1 s + k + g
@@ -8886,15 +8653,15 @@
 1 sky + way
 1 s + l
 1 s + lac
-1 slackware
+1 s + lac + k + war + e
 1 slashdot
 1 s + la + te
 1 slav
 1 slav + ic
 1 slav + onic
 1 slav + ơ
-1 slee + ping
-1 s + l + e + ng
+1 s + lee + ping
+1 s + le + ng
 1 slfeo
 1 sloat
 1 slovak
@@ -8907,14 +8674,14 @@
 1 smart + phone
 1 smart + phone + s
 1 smart + wat + ch + es
+1 smashed
 1 s + mi + les
 1 smith
-1 smith + mun + d + t
 1 s + m + land
 1 s + m + s
 1 s + nay
 1 s + ng
-1 snoo + ker
+1 s + no + o + ker
 1 snow
 1 snow + y
 1 s + o
@@ -8928,8 +8695,8 @@
 1 sofitel
 1 sofronit + sky
 1 soft + war + e
-1 sohier
-1 s + oi
+1 s + oh + ier
+1 s + o + i
 1 sokhonn
 1 sol + ano
 1 solaris
@@ -8953,17 +8720,18 @@
 1 sophus
 1 sorb
 1 sorb + ia
-1 s + or + man
+1 s + orman
 1 sou + cho
-1 sou + lwax
-1 sound
-1 sound + t + rack
+1 sou + l + w + ax
+1 sou + nd
+1 sou + nd + t + rack
 1 sou + phan + ou + vo + ng
-1 source
-1 source + forge
-1 source + forge + net
+1 sou + rce
+1 sourceforge
+1 sourceforge + net
 1 sou + ris
 1 sou + th
+1 sou + th + west
 1 sou + v + anna
 1 soyuzmult + film
 1 s + oài
@@ -8971,12 +8739,12 @@
 1 s + oát
 1 s + oạn
 1 sp
+1 s + pa
 1 space
 1 space + x
-1 spafrancorchamps
 1 sp + all + ation
-1 sp + an + ish
-1 sparc
+1 s + pa + n + ish
+1 s + par + c
 1 s + park + s
 1 s + par + row
 1 s + par + t + ak
@@ -8999,8 +8767,8 @@
 1 s + port + s
 1 s + pot
 1 s + pot + ted
-1 sp + ring + er
-1 sp + ring + field
+1 spring + er
+1 spring + field
 1 s + pur + ius
 1 sp + ut + nik
 1 sp + y
@@ -9014,20 +8782,22 @@
 1 s + ri
 1 s + ro
 1 s + s
-1 ssltls
+1 s + si
+1 ssl
 1 st
 1 sta + c + king
-1 st + ada + cona
+1 sta + da + con + a
 1 sta + ff
 1 sta + f + ford + shire
 1 sta + ke + hol + der
-1 sta + ley + taylor
+1 sta + ley
 1 stalin
 1 stalin + grad
 1 stalin + ist
 1 st + all + man
 1 st + amp
 1 standard
+1 standard + s
 1 stan + ford
 1 stan + ley
 1 stan + s + ted
@@ -9037,11 +8807,13 @@
 1 star + light
 1 star + office
 1 star + tu + p
+1 stat
 1 state
 1 state + s
 1 st + ation
 1 stat + ist + ics
 1 sta + ud + te
+1 st + d
 1 ste
 1 ste + ak
 1 s + team
@@ -9053,9 +8825,9 @@
 1 ste + i + chen
 1 ste + iglitz
 1 ste + l + co
-1 ste + phan + e
-1 stephen
-1 stephen + son
+1 step + han + e
+1 step + hen
+1 step + hen + son
 1 ster + g + t + land
 1 ster + land
 1 ster + n
@@ -9074,23 +8846,22 @@
 1 stitts + ville
 1 st + iê + ng
 1 stock + ha + use + n
-1 stock + holm
-1 stock + holm + arlanda
-1 stock + holm + skav + sta
+1 stock + hol + m
 1 stock + ton
 1 stollen
-1 stolypin
+1 stoly + pin
+1 stone
 1 stone + hen + ge
 1 stone + s
-1 stor + mont
+1 s + tor + mont
 1 s + tory
 1 st + petersburg
 1 stra + it + s
 1 stra + s
 1 stra + t + ford
-1 stra + th + cona
+1 stra + th + con + a
 1 stra + the + ar + n
-1 stra + uss
+1 stra + us + s
 1 stra + vin + sky
 1 stream
 1 stream + s
@@ -9099,8 +8870,8 @@
 1 st + rim
 1 strind + berg
 1 s + tri + p
-1 st + rom
-1 st + rom + ae
+1 strom
+1 strom + ae
 1 stroud
 1 struve
 1 st + ry + ker
@@ -9109,19 +8880,18 @@
 1 stud + en + t
 1 stud + io
 1 stud + ley
-1 s + tum + ble + upon
+1 stumbleu + pon
 1 s + tu + ng
 1 style
 1 su
-1 sub + ice
-1 sub + odh
-1 sub + ver + s + ion
+1 su + b + ice
+1 subodh
+1 su + b + ver + s + ion
 1 su + ch
 1 sucksdorf
 1 su + d
 1 su + dan
-1 sudbury
-1 sudbury + whit + e
+1 su + d + bury
 1 su + e
 1 s + uez
 1 su + ff + ren
@@ -9129,19 +8899,19 @@
 1 sujets
 1 sukhoi
 1 s + ulba
-1 sulfide
+1 su + lf + ide
 1 sulfur
 1 sulfur + ic
 1 su + mer
 1 su + mer + ia
-1 su + m + ing + dale
+1 s + um + ing + dale
 1 summer
 1 summer + side
-1 su + m + ter
+1 s + um + ter
 1 sun
 1 sun + day
 1 s + under + land
-1 sun + di + n
+1 sun + din
 1 sun + fat
 1 sun + fuaric
 1 sun + fur + ic
@@ -9150,24 +8920,25 @@
 1 sun + ni
 1 sun + os
 1 sun + ray
-1 sun + set
+1 sun + se + t
 1 sun + sh + ine
 1 super
 1 super + i + or
 1 super + man
-1 super + visor
+1 super + vi + s + or
+1 su + p + port
 1 supérieur
 1 supérieur + s
 1 s + ur
 1 suraski
-1 surfliner
+1 surfli + ner
 1 surstrmmingsfest
 1 survey
 1 surzhyk
 1 sus
 1 s + use
-1 su + shi
-1 sus + n + in + gnu
+1 sus + hi
+1 sus + n + in + g + nu
 1 sus + se + x
 1 sutras
 1 su + tro
@@ -9175,10 +8946,10 @@
 1 sutter + s
 1 su + v
 1 su + y
-1 s + uz + anne
+1 su + z + anne
 1 su + ôn
 1 su + ông
-1 su + ýt
+1 su + ý + t
 1 s + uất
 1 su + ối
 1 su + ốt
@@ -9195,35 +8966,36 @@
 1 svíjó
 1 swartz
 1 s + wat
+1 s + we
 1 swede + land
 1 swede + n
 1 swede + s
-1 sweonsweonas
-1 s + w + eyn
+1 sweon
+1 sweon + as
+1 s + we + y + n
 1 swift
 1 s + wil + ers
 1 switc + her
 1 swnska
 1 s + wood
 1 s + word
-1 sxs + sxs
+1 s + x + s
 1 s + y + d + ney
 1 syl + mar
 1 syl + van
-1 sym + antec
-1 sym + bol
+1 symantec
+1 s + y + m + bol
 1 synaptic
 1 synchro + nizer
-1 synchro + tron
+1 synchro + t + ron
 1 synthesiz + ers
-1 syrac + use
+1 s + y + ra + cuse
 1 syria
-1 syria + cas + syria
-1 s + y + s + c + all
+1 syria + c
+1 sys + c + all
 1 system
 1 system + d
 1 system + s
-1 system + wide
 1 száll
 1 sà
 1 sà + i
@@ -9261,7 +9033,6 @@
 1 só + ng
 1 só + t
 1 s + ô
-1 sôcôla
 1 s + ôi
 1 s + ông
 1 s + ù + ng
@@ -9271,7 +9042,7 @@
 1 s + út
 1 s + úy
 1 s + ăn
-1 s + ĩ
+1 sĩ
 1 s + ơ
 1 s + ơn
 1 sư
@@ -9283,29 +9054,27 @@
 1 sư + ởi
 1 s + ạc
 1 s + ạc + h
-1 sạn
+1 s + ạn
 1 s + ạt
 1 s + ả
-1 s + ả + n
+1 s + ản
 1 s + ả + ng
 1 s + ảnh
 1 s + ảo
 1 s + ấm
 1 s + ấp
-1 sầm
+1 s + ầm
 1 s + ần
 1 s + ầu
 1 s + ẫm
 1 s + ập
 1 s + ắc
-1 s + ắc + huyền + h + ỏi + ngã + nặng
 1 s + ắm
 1 sắn
 1 sắn + g
 1 s + ắp
 1 s + ắt
-1 s + ắt + k + ền
-1 sằ + ng
+1 s + ằ + ng
 1 s + ẵn
 1 s + ặc
 1 s + ặt
@@ -9315,8 +9084,8 @@
 1 sếu
 1 s + ển
 1 s + ỉ
-1 sọ
-1 sọ + c
+1 s + ọ
+1 s + ọ + c
 1 s + ỏ
 1 s + ỏi
 1 số
@@ -9332,7 +9101,7 @@
 1 s + ở
 1 s + ởi
 1 s + ợ
-1 s + ợ + i
+1 s + ợi
 1 s + ục
 1 s + ụp
 1 sụt
@@ -9353,29 +9122,29 @@
 1 ta + b
 1 taberd
 1 tablets
+1 ta + b + ri
 1 tacitus
 1 ta + co
 1 taekwondo
 1 ta + ft
-1 ta + g
-1 tagalog
+1 tag
+1 tag + alog
 1 tage
-1 ta + g + ine
-1 tagliazuc + chi
+1 tag + ine
+1 tag + liazuc + chi
 1 ta + ha
 1 tahoe
 1 tahrir
 1 tai
 1 tai + ga
-1 tai + ka + dai
 1 tai + l + s
 1 tajik + istan
 1 ta + ken
-1 t + ala + bani
+1 ta + la + bani
 1 talamanca
 1 t + al + bot
 1 ta + les
-1 ta + liban
+1 ta + li + ban
 1 t + all + is
 1 tam
 1 tam + ara
@@ -9384,13 +9153,13 @@
 1 tananar + ive
 1 t + and
 1 tanenbaum
-1 tanenbaum + torvald + s
 1 ta + ng
-1 ta + ng + erine
+1 tan + ger + ine
 1 tanzania
 1 ta + o
 1 ta + q + t
-1 tarpit
+1 t + ar
+1 t + aria + ng
 1 t + ass + igny
 1 tatar
 1 tatar + sky
@@ -9399,19 +9168,18 @@
 1 ta + tu
 1 ta + xi
 1 ta + y
-1 taylor
+1 ta + y + lor
 1 tađêô
 1 t + b
 1 t + bin + gen
 1 tbps
-1 t + b + tw
 1 tchaik + ovsky
 1 tchepone
 1 t + cho + ban
 1 tchuow + ng
 1 tcn
 1 tcn + d
-1 t + cp
+1 t + c + p
 1 tcvn
 1 tea
 1 team
@@ -9422,9 +9190,10 @@
 1 techno + logies
 1 techno + logy
 1 ted
+1 te + en + s
 1 tegnér
 1 tehachapi
-1 tehran
+1 te + h + ran
 1 tehuantepec
 1 tele + graph
 1 tele + kom
@@ -9441,17 +9210,16 @@
 1 tenzin
 1 t + eo
 1 ter + a + byte
-1 ter + au + chi
+1 ter + a + uchi
 1 ter + esa
 1 ter + minal
 1 ter + ra
 1 ter + ra + sses
 1 ter + ry
-1 tes + la
+1 te + s + la
 1 test
-1 tetra
-1 tetra + hydro + fur + an
-1 tetra + pak
+1 te + tra
+1 tetrahydrofu + ran
 1 tetsuya
 1 t + eu
 1 tex + as
@@ -9464,38 +9232,36 @@
 1 tha + les
 1 tham
 1 tham + es
-1 tha + n
+1 t + han
 1 tha + ng
-1 thanh
-1 thanh + ng + hệ
-1 thanh + ni + en + news
-1 thanh + truyền
+1 tha + nh
+1 tha + nh + nie + n + news
 1 tha + o
 1 tha + t
 1 th + au
 1 t + hay
-1 th + bit
+1 th + bi + t
 1 the
-1 t + hea + ter
-1 t + hea + tre
+1 thea + ter
+1 thea + tre
 1 the + e
 1 the + ir
 1 th + el + stan
-1 th + el + w + old
+1 the + l + w + old
 1 th + en
 1 theo
 1 theo + dor
-1 the + odore
+1 theo + dor + e
 1 theo + do + s + ius
 1 the + rav + ada
 1 the + re + sa
 1 the + rev + ada
 1 the + y
 1 thi
-1 thi + ele + mans
-1 thi + n
+1 thi + ele + man + s
+1 th + in
 1 thi + nh
-1 thi + n + st + ation
+1 th + in + st + ation
 1 thi + ou + n + n
 1 thi + ri + th
 1 thi + s
@@ -9515,12 +9281,9 @@
 1 thi + ể + t
 1 t + hiểu
 1 t + hiện
-1 t + hiệp
+1 th + iệp
 1 t + hiệt
 1 t + hiệu
-1 t + hiệu + khá + nh
-1 t + hiệu + kỳ
-1 t + hiệu + nguyễn
 1 th + ng
 1 tho
 1 t + hoa
@@ -9530,7 +9293,7 @@
 1 thom + p + son
 1 thom + son
 1 tho + ng
-1 tho + re + au
+1 tho + reau
 1 thorn
 1 thorn + ton
 1 t + hoà + n
@@ -9538,8 +9301,8 @@
 1 tho + áng
 1 th + oát
 1 tho + ó + ng
-1 th + oại
-1 th + oại + khẳng
+1 t + hoại
+1 t + hoại + khẳng
 1 tho + ạt
 1 t + hoả
 1 tho + ải
@@ -9556,10 +9319,10 @@
 1 th + under
 1 th + under + bird
 1 thu + ng
-1 thu + r + mond
+1 th + ur + mond
 1 th + uyên
-1 t + huyết
-1 t + huyền
+1 thu + yết
+1 t + huy + ền
 1 t + huê
 1 thu + ần
 1 thu + ẫn
@@ -9571,17 +9334,16 @@
 1 thu + ột
 1 thu + ở
 1 thu + ỳ
-1 thu + ỵ
+1 th + uỵ
 1 t + hà
-1 thành
-1 thành + duiker
+1 t + hành
+1 t + hành + duiker
 1 th + ác
 1 th + ách
-1 thái
-1 thái + pháp
+1 th + ái
 1 th + ám
-1 t + hán
-1 tháng
+1 th + án
+1 th + áng
 1 th + ánh
 1 th + áo
 1 th + áp
@@ -9590,31 +9352,28 @@
 1 th + âu
 1 t + hãi
 1 t + hè
-1 t + hé
-1 t + hé + odore
+1 th + é
+1 th + éo + dor + e
 1 th + ép
 1 t + hê
 1 th + êm
 1 t + hê + nh
-1 thêu
+1 t + hêu
 1 th + ì
 1 t + hìn
-1 th + í
+1 t + hí
 1 th + ích
-1 th + í + nh
+1 t + hí + nh
 1 th + ít
-1 t + hóa
+1 t + hó + a
 1 th + óc
 1 th + ói
 1 th + ô
 1 th + ôi
 1 th + ôn
 1 th + ông
-1 th + ông + đại
-1 th + ôn + thành
 1 th + ù
 1 t + hùng
-1 t + hùng + ngày
 1 th + ù + y
 1 thú
 1 thú + c
@@ -9628,15 +9387,15 @@
 1 t + hư
 1 th + ưa
 1 th + ương
-1 th + ước
+1 t + hước
 1 t + hư + ờng
 1 t + hưởng
 1 t + hư + ợng
 1 th + ạc
-1 t + hạ + ch
-1 t + hạ + ch + các
+1 t + hạch
+1 t + hạch + các
 1 t + hạ + nh
-1 t + hạ + o
+1 th + ạo
 1 th + ạp
 1 thả
 1 th + ải
@@ -9644,13 +9403,13 @@
 1 thả + n
 1 thả + ng
 1 th + ảo
-1 th + ảy
+1 thả + y
 1 th + ấm
 1 th + ấp
 1 th + ất
 1 th + ấu
 1 th + ấy
-1 t + hầm
+1 th + ầm
 1 th + ần
 1 th + ầu
 1 th + ầy
@@ -9677,12 +9436,12 @@
 1 t + hề
 1 th + ềm
 1 th + ể
-1 t + hệ
+1 th + ệ
 1 t + hỉnh
 1 th + ỉ + u
-1 thị
-1 thị + nh
-1 thị + t
+1 t + hị
+1 t + hị + nh
+1 t + hị + t
 1 t + họ
 1 t + học
 1 th + ỏ
@@ -9692,23 +9451,23 @@
 1 th + ống
 1 th + ống + d + ựa
 1 th + ốt
-1 t + hổ
+1 th + ổ
 1 th + ổi
-1 t + hổ + ng
+1 th + ổ + ng
 1 th + ới
 1 t + hớt
 1 th + ờ
 1 th + ời
 1 th + ở
 1 th + ợ
-1 th + ụ
-1 th + ục
-1 t + hụt
-1 thụy
-1 th + ủ
-1 th + ủ + a
+1 thụ
+1 thụ + c
+1 thụ + t
+1 thụ + y
+1 t + hủ
+1 t + hủ + a
 1 th + ủng
-1 t + hủy
+1 th + ủy
 1 th + ứ
 1 th + ức
 1 th + ừa
@@ -9720,19 +9479,19 @@
 1 t + ia
 1 ti + ber + ius
 1 ti + dy
-1 tieeps + vay
-1 tier + e
+1 tieep
+1 t + ier + e
 1 ti + ger
 1 ti + ger + s
 1 ti + g + ris
 1 tijuana
 1 tikka
-1 ti + l + b + ury
+1 ti + l + bury
 1 ti + l + ing
 1 tim
 1 time
 1 time + s
-1 tim + is + kam + ing
+1 ti + mis + kam + ing
 1 tim + mins
 1 ti + mor
 1 tin
@@ -9748,6 +9507,7 @@
 1 ti + t + le
 1 ti + to
 1 ti + vo
+1 ti + vo + iz + ation
 1 ti + zen
 1 ti + êm
 1 ti + ên
@@ -9761,23 +9521,23 @@
 1 tiếu
 1 ti + ềm
 1 ti + ền
-1 ti + ền + thanh
 1 ti + ều
 1 ti + ể + ng
 1 ti + ểu
 1 ti + ễn
 1 t + iễu
-1 tiệc
+1 ti + ệ + c
 1 tiệm
 1 ti + ện
 1 t + iệp
 1 ti + ệt
 1 ti + ệu
 1 tjugonde + dag
+1 t + l + s
 1 tndm
 1 to
-1 toa
-1 toa + d
+1 to + a
+1 to + ad
 1 t + oan
 1 to + c + que + ville
 1 to + day
@@ -9786,11 +9546,12 @@
 1 tokyo
 1 tokyo + pop
 1 toledo
+1 to + ler + ant
 1 tolkien
 1 tolstoy
-1 tom
+1 to + m
 1 to + ma + hawk
-1 tom + é
+1 to + m + é
 1 ton + e
 1 ton + g + va
 1 ton + kin
@@ -9799,48 +9560,44 @@
 1 ton + ne
 1 ton + y
 1 too
-1 tool + ch + ain
+1 tool + cha + in
 1 tool + ing
 1 tool + kit + s
 1 tool + s
 1 too + t + s
-1 top
-1 top + mill + er
+1 to + p
+1 to + p + mill + er
 1 to + po
 1 tor
 1 tor + bol + ton
-1 tordesil + las
-1 tornelv
-1 toronto
-1 torramdisk
+1 tor + des + ill + as
+1 tor + nel + v
+1 tor + on + to
 1 torvald
 1 torvald + s
 1 tory
-1 toshibaemi
+1 tos + hi + ba
 1 totten + ham
-1 t + ou + ch
+1 to + u + ch
 1 toul
 1 toul + o + use
 1 tour
-1 tourane
-1 tourane + đà
+1 tour + ane
 1 tour + ison
 1 tour + on
-1 tow
-1 tow + er
+1 to + w
+1 to + wer
 1 town
 1 to + y + on
 1 toyota
-1 to + à
-1 toàn
-1 toàn + mỹ
+1 toà
+1 toà + n
 1 to + ái
 1 t + oán
-1 t + oán + lý
 1 t + oát
 1 toạ
-1 t + oại
-1 toản
+1 to + ại
+1 to + ản
 1 t + p
 1 t + p + hcm
 1 tr
@@ -9853,16 +9610,17 @@
 1 tra + gi + c
 1 tra + i
 1 tra + il
+1 train
 1 train + or
 1 tra + m + link
 1 tra + m + way
 1 tra + ng
 1 tra + nh
 1 tra + n + qu + ill + ity
+1 trans
 1 trans + america
 1 trans + bay
-1 trans + canada
-1 trans + i + stor
+1 trans + is + tor
 1 trans + it
 1 trans + nistria
 1 trans + po
@@ -9884,20 +9642,20 @@
 1 tre + o
 1 tre + tikov
 1 tre + ttonde + dag
-1 tre + ty + akov
+1 tre + tyakov
 1 tri
 1 tri + angle
-1 tri + b + une
-1 tric + hlor
+1 tri + bu + ne
+1 tri + ch + lor
 1 tri + d + g + ell
 1 tri + gon
 1 tri + nh
-1 tri + nova + n + tes
+1 tri + nova + n + t + es
 1 tri + p
 1 tri + squel
 1 tri + êm
 1 t + riêng
-1 t + riết
+1 tri + ết
 1 tri + ền
 1 tri + ều
 1 tri + ển
@@ -9906,34 +9664,26 @@
 1 tr + m + mer + film
 1 tro
 1 tro + jan
-1 tron
+1 t + ron
 1 trong
 1 tro + t + sky + ist
-1 tru + d + eau
+1 tru + deau
 1 tru + etype
 1 tru + man
 1 tru + m + p
-1 trung
-1 trung + hạ
-1 trung + hữu
-1 trung + tây
-1 trung + tả
-1 trung + việt
-1 trung + x + ô
-1 trung + đại
-1 trung + ấn
+1 tru + ng
 1 tru + ro
 1 tru + st
-1 tru + y
+1 truy
 1 tru + yến
-1 truyền
-1 tru + y + ện
+1 truy + ền
+1 truy + ện
 1 tr + uất
 1 t + ry
-1 trà
-1 trà + n
-1 trà + ng
-1 trà + o
+1 t + rà
+1 t + rà + n
+1 t + rà + ng
+1 tr + ào
 1 trá
 1 trá + c
 1 trá + ch
@@ -9954,9 +9704,9 @@
 1 t + rì + nh
 1 t + rí
 1 tr + ích
-1 trò
-1 trò + n
-1 trò + ng
+1 tr + ò
+1 tr + ò + n
+1 tr + ò + ng
 1 tr + óc
 1 tr + ói
 1 tr + ôi
@@ -9966,15 +9716,14 @@
 1 trù + ng
 1 trú
 1 trú + c
-1 trú + c + chính
 1 trú + ng
 1 trăm
 1 tr + ăn
 1 t + răng
-1 trđin
-1 t + r + ĩ
-1 t + rũ + ng
-1 t + rơ
+1 tr + đ + in
+1 t + rĩ
+1 tr + ũ + ng
+1 tr + ơ
 1 tr + ơn
 1 trư + a
 1 trư + ng
@@ -9982,21 +9731,20 @@
 1 tr + ương
 1 tr + ước
 1 trư + ớng
-1 trường
-1 trường + trà + ng
+1 t + rường
 1 trư + ở + ng
 1 trư + ợng
 1 trư + ợt
 1 t + rạ + ch
-1 trại
-1 trạm
+1 tr + ại
+1 tr + ạm
 1 t + rạ + ng
-1 trạo
+1 tr + ạo
 1 tr + ả
 1 tr + ải
 1 tr + ả + ng
 1 tr + ấn
-1 t + rầm
+1 tr + ầm
 1 tr + ần
 1 tr + ầu
 1 tr + ẩu
@@ -10005,7 +9753,7 @@
 1 tr + ận
 1 tr + ập
 1 tr + ật
-1 t + rắc
+1 tr + ắc
 1 trắ + ng
 1 tr + ặc
 1 tr + ẻ
@@ -10013,10 +9761,7 @@
 1 tr + ệ
 1 tr + ệ + ch
 1 trị
-1 trịnh
-1 trịnh + nguyễn
-1 trị + qu + ân
-1 trị + t + hiên
+1 trị + nh
 1 trọ
 1 trọ + c
 1 trọ + n
@@ -10026,14 +9771,14 @@
 1 tr + ối
 1 tr + ốn
 1 tr + ống
-1 trốtk + ít
-1 t + rồng
-1 t + rổ
-1 t + rỗ
+1 tr + ốt
+1 tr + ồng
+1 tr + ổ
+1 tr + ỗ
 1 tr + ỗi
 1 trội
-1 trộm
-1 tr + ộn
+1 tr + ộ + m
+1 t + rộ + n
 1 tr + ớn
 1 tr + ời
 1 tr + ở
@@ -10049,16 +9794,18 @@
 1 trừ + u
 1 trữ
 1 t + rực
+1 t + s
 1 tsawwassen
 1 tseax
-1 tseilwautu + th
+1 t + s + eil
 1 tsiolk + ovsky
 1 t + s + m + c
-1 tsuchiha + shi
+1 tsuchihashi
 1 tsuga
 1 tsyb
 1 t + tattqt
-1 ttg
+1 t + tcn
+1 t + t + g
 1 t + t + uyên
 1 ttxvn
 1 tu
@@ -10067,44 +9814,42 @@
 1 tu + dor
 1 tu + key
 1 tum
-1 tundra
+1 tu + n + dra
 1 tu + ng
 1 tunisia
 1 tunnbrd
-1 tunnel
+1 tu + n + nel
 1 tu + ol
 1 tu + po + lev
 1 t + ura + on
-1 turbo
-1 tu + rc
-1 turge + nev
-1 tu + ring
-1 tu + ring + đ + ầy
+1 tur + bo
+1 tur + c
+1 tur + ge + nev
+1 tur + ing
 1 turk
 1 turk + ic
-1 turkmen
-1 turkmen + istan
-1 turkmen + russ + ian
+1 turk + men
+1 turk + men + istan
 1 turk + o + man
 1 turk + s
-1 turner
-1 turnip
+1 tur + ner
+1 tur + nip
 1 tu + ron
-1 turpin
-1 turri + can
-1 tuva
+1 tur + pin
+1 tur + ri + can
+1 tu + si
+1 tu + va
 1 tuy
-1 tuy + mans
+1 tuy + man + s
 1 tuy + ni + di
 1 t + uyên
 1 tu + yến
-1 tu + yến + t + ương
-1 tuy + ết
+1 tu + yết
 1 tuy + ền
 1 t + uyển
 1 tuy + ệt
 1 tu + ân
-1 t + uý
+1 tu + ý
 1 tu + ấn
 1 t + uất
 1 tu + ần
@@ -10113,23 +9858,23 @@
 1 tu + ệ
 1 tu + ốc
 1 tu + ồn
-1 tu + ồn + g
+1 tu + ồng
 1 tu + ổi
 1 tu + ỳ
 1 t + v
-1 tvalue
 1 tverskaya
 1 tvnbk
 1 t + v + s
-1 tw
-1 tw + ain
+1 t + w
+1 t + w + ain
 1 twentie + th
 1 twenty
-1 tw + h
+1 t + wh
 1 t + win
 1 t + win + k + le
 1 twitter
 1 twitter + com
+1 t + w + q
 1 ty
 1 ty + ler
 1 ty + ne
@@ -10141,7 +9886,6 @@
 1 t + ào
 1 tà + u
 1 tà + y
-1 tà + y + thái
 1 t + á
 1 t + ác
 1 t + ách
@@ -10157,16 +9901,14 @@
 1 t + ân
 1 t + ân + g
 1 t + âu
-1 tây
-1 tây + bắc
-1 tây + b + ờ
+1 t + ây
+1 t + ây + b + ờ
 1 tène
-1 térau + chi
+1 t + é + ra + uchi
 1 t + ét
 1 t + ê
 1 t + ên
-1 tìm
-1 tìm + di + ệt
+1 t + ì + m
 1 t + ì + nh
 1 tí
 1 t + ía
@@ -10175,7 +9917,7 @@
 1 tí + n
 1 tí + nh
 1 tí + nh + nó
-1 t + ít
+1 tí + t
 1 tí + u
 1 t + ò
 1 t + ò + a
@@ -10191,7 +9933,6 @@
 1 tô + ma
 1 t + ôn
 1 t + ông
-1 tô + p + ô
 1 tù
 1 tù + m
 1 tù + ng
@@ -10204,14 +9945,13 @@
 1 t + ý
 1 t + ă + m
 1 t + ă + ng
-1 t + ĩ + nh
-1 t + ĩ + u
+1 tĩ + nh
+1 tĩ + u
 1 t + ơ
 1 t + ơi
 1 tư
 1 tư + ơi
 1 t + ương
-1 t + ương + th + ích + chu + ẩn
 1 t + ước
 1 tư + ới
 1 tư + ớng
@@ -10220,28 +9960,24 @@
 1 tư + ợng
 1 tạ
 1 t + ạc
-1 tại
-1 tại + khu
-1 tạ + m
+1 t + ại
+1 t + ại + khu
+1 t + ạm
 1 tạ + ng
-1 tạo
-1 tạo + phạ + m
+1 t + ạo
 1 t + ạp
-1 tả
+1 t + ả
 1 t + ải
-1 tả + n
-1 tả + ng
+1 t + ản
+1 t + ả + ng
 1 t + ảo
 1 t + ấc
 1 t + ấm
 1 t + ấn
-1 t + ấn + năm
-1 t + ấn + tháng
 1 t + ấp
 1 t + ất
-1 t + ất + đạt + đa
 1 t + ấu
-1 tầm
+1 t + ầm
 1 t + ần
 1 t + ần + g
 1 t + ẩm
@@ -10258,20 +9994,19 @@
 1 t + ặc
 1 t + ặ + ng
 1 t + ẻ
-1 tế
+1 t + ế
 1 t + ếch
-1 tế + n
+1 t + ế + n
 1 t + ết
-1 tế + xã
 1 t + ề
 1 t + ể
 1 tễ
 1 t + ệ
 1 t + ệ + p
-1 tỉ
-1 tỉ + a
-1 tỉ + nh
-1 tỉ + nh + nh
+1 t + ỉ
+1 t + ỉ + a
+1 t + ỉ + nh
+1 t + ỉ + nh + nh
 1 tị
 1 tị + ch
 1 tị + nh
@@ -10284,7 +10019,6 @@
 1 t + ối
 1 t + ốn
 1 t + ống
-1 t + ống + việt
 1 tố + p
 1 t + ốt
 1 t + ồi
@@ -10292,10 +10026,9 @@
 1 tổ
 1 tổ + n
 1 tổ + ng
-1 tộ
+1 t + ộ
 1 t + ộc
-1 t + ộc + quốc
-1 tộ + i
+1 t + ộ + i
 1 t + ớ
 1 t + ới
 1 t + ớp
@@ -10309,7 +10042,7 @@
 1 tụ + y
 1 t + ủ
 1 t + ủ + a
-1 t + ủ + y
+1 t + ủy
 1 t + ứ
 1 t + ức
 1 t + ừ
@@ -10318,28 +10051,27 @@
 1 t + ử + u
 1 tự
 1 t + ựa
-1 t + ựa + uni + x
 1 tự + ki + ểu
-1 tự + tin
 1 tự + u
 1 t + ỳ
-1 t + ỵ
+1 tỵ
 1 tỷ
 1 u
-1 u + av
-1 ub + c
+1 uav
+1 u + b + c
 1 u + ber
-1 ub + mttq
-1 ub + nd
+1 u + b + mttq
+1 u + b + nd
 1 u + bon
+1 ubtvqh
 1 ubuntu
 1 uc
 1 uc + i
 1 uc + la
-1 ucsf
-1 ucsf + uc
+1 uc + sf
 1 uefa
-1 ufa
+1 u + fa
+1 ugric
 1 uh
 1 u + io
 1 ukr + a + ina
@@ -10348,18 +10080,16 @@
 1 ula + anbaatar
 1 ula + nova
 1 ulba
-1 ul + tra + sparc
+1 ultrasparc
 1 ultuna
 1 u + ly + sses
 1 um
 1 umayyad
 1 umelv
-1 u + msdos
-1 umvue
+1 umsdos
 1 un
 1 un + aids
 1 unc
-1 unc + cha + p + el
 1 unc + le
 1 un + clear
 1 unc + los
@@ -10375,19 +10105,19 @@
 1 uni + cef
 1 uni + code
 1 uni + han
-1 unikey
-1 union
+1 uni + key
+1 uni + on
 1 uni + pha + se
 1 uni + que
 1 uni + soft
 1 uni + t
 1 uni + ted
 1 uni + ver + se
-1 uni + versity
+1 uni + ver + s + ity
 1 uni + vision
 1 uni + x
 1 un + m + ovic
-1 uno + cal
+1 u + no + cal
 1 unops
 1 un + pro + for
 1 uns
@@ -10396,80 +10126,74 @@
 1 un + ter
 1 un + ter + tan
 1 up
-1 upon
-1 up + per
+1 u + pon
+1 upp + er
 1 upp + land
 1 upp + sala
 1 up + si + lon
 1 upstart
 1 u + pu
 1 ura + l
-1 ura + lic
+1 ura + li + c
 1 ura + ni
 1 ura + r + tu
 1 ur + bai + n
-1 urban
-1 urban + a
-1 urdu
+1 ur + ban
+1 ur + ban + a
+1 ur + du
 1 ure
 1 uri
 1 ur + ine
 1 ur + l
 1 uruguay
+1 urundi
 1 us
-1 usa
-1 us + ascii
-1 usd
-1 usd + người
-1 usd + người + năm
-1 usd + người + tháng
-1 usd + năm
+1 us + a
+1 us + d
 1 use + d
 1 use + mod + wiki
 1 use + net
 1 user
 1 user + land
 1 user + space
-1 u + sh + anka
-1 uss
+1 us + h + anka
+1 us + s
 1 ustinov
 1 ut + ah
-1 u + tre + ch + t
+1 utrecht
 1 u + v + s
-1 u + y
-1 u + y + thụy
+1 uy
+1 uy + thụ + y
 1 uyên
 1 uyển
 1 uzbek + istan
 1 u + ào
-1 uý
+1 u + ý
 1 uất
 1 uế
 1 uốn
-1 uống
+1 u + ống
 1 uỷ
 1 v
 1 va
-1 vac + cine
-1 vac + c + in + ium
+1 vac + c + ine
+1 vac + cinium
 1 vac + r
 1 vai
 1 val + a
 1 val + borg
 1 val + borg + smssoaf + ton
-1 val + en + c + ia
+1 val + en + cia
 1 val + en + ki
 1 val + en + tin
-1 val + ery
-1 val + i
+1 val + e + ry
 1 val + le + jo
 1 val + ley
-1 val + ley + goose
 1 val + lu + e
 1 val + lu + y
 1 val + ois
 1 val + ve
-1 val + ve + một
+1 val + ve + m + ột
 1 van
 1 v + ance
 1 van + cou + ver
@@ -10479,9 +10203,10 @@
 1 vand + use + n
 1 van + e + z
 1 va + ng
-1 vani
-1 vani + er
-1 v + anne + var
+1 van + i
+1 van + ier
+1 van + nev + ar
+1 van + o
 1 van + uatu
 1 var + an + gia
 1 var + en
@@ -10494,13 +10219,13 @@
 1 va + slav
 1 v + ati + can
 1 vattenfall
-1 vaughan
+1 vaug + han
 1 vay
 1 v + c
 1 ve
 1 vecco
-1 vector
-1 vectơ
+1 vect + or
+1 vect + ơ
 1 ve + gas
 1 velde
 1 velfarre
@@ -10514,7 +10239,7 @@
 1 ven + t + ura
 1 veolia
 1 ver + dun
-1 ver + ha + eren
+1 ver + ha + e + ren
 1 ver + hi + c + les
 1 ver + hofstadt
 1 ver + kho + yansk
@@ -10525,38 +10250,35 @@
 1 ver + s + ion
 1 ves + al + ius
 1 ves + pas + ian
-1 ve + t + tel
+1 ve + t + t + el
 1 v + g
-1 v + g + t + b
 1 vi
-1 v + ia
+1 vi + a
 1 vi + b + ber
-1 vichy
+1 vi + ch + y
 1 victor
 1 victor + ia
 1 victor + ian
 1 victor + y
 1 vi + de + o
-1 vien + na
+1 vi + en + na
 1 viet
 1 viet + catholic
-1 vietnam
-1 vietnam + e + se
-1 viet + st + d
-1 viet + tron + imex
+1 viet + ic
+1 viet + nam
+1 viet + nam + e + se
+1 viet + t + ron + imex
 1 viet + uni + code
-1 vieuxt + emps
-1 viherd
+1 vi + euxt + emps
+1 vi + her + d
 1 vi + i
-1 viii
-1 viii + ix
-1 viii + xii
+1 v + iii
 1 vi + king
 1 vi + king + en
-1 vikowo + ch + imex
-1 vil + ers
-1 vil + la
-1 vil + las
+1 vi + ko + wo + ch + imex
+1 vi + l + ers
+1 vi + lla
+1 vi + lla + s
 1 vi + m
 1 vi + my
 1 vi + my + tex
@@ -10569,71 +10291,60 @@
 1 vin + home + s
 1 vin + land
 1 vin + o + d
-1 vio + la
-1 vio + la + www
-1 vio + lence
-1 vio + lin
-1 vio + lon
-1 vi + openofficeorg
-1 viqr
-1 virga
+1 vi + ola
+1 vi + ola + www
+1 vi + olence
+1 vi + o + lin
+1 vi + o + lon
+1 vi + open + office + org
+1 vi + q + r
+1 vi + r + ga
 1 virgin
 1 virgin + ia
-1 virgos
-1 virtual
+1 vi + rgos
+1 vi + r + tu + al
 1 vi + rus
 1 vi + sa
-1 vishnevskaya
-1 visitac + ion
-1 vissar + ion + ovich
+1 vi + shnevskaya
+1 vi + sitac + ion
+1 vi + s + s + ar + ion + ovich
 1 vi + sta
-1 v + ist + ula
+1 vi + st + ula
 1 visual
 1 visual + ed + itor
 1 vi + t + amin
 1 vi + t + as
-1 vitisidaea
-1 vi + vien
+1 vi + t + is
+1 vi + vi + en
 1 vi + êm
-1 viên
-1 viên + b + ảo
-1 viên + g
-1 viên + năm
-1 viêt
-1 viế + ng
-1 viế + t
+1 vi + ên
+1 vi + ên + g
+1 vi + ên + năm
+1 vi + ê + t
+1 vi + ế + ng
+1 vi + ết
 1 vi + ền
 1 vi + ễn
-1 việc
+1 vi + ệ + c
 1 vi + ện
 1 vi + ện + được
 1 v + iệp
-1 việt
-1 việt + anh
-1 việt + bồ + la
-1 việt + d + ương
-1 việt + hoa
-1 việt + mư + ờng
-1 việt + mỹ
-1 việt + pháp
-1 việt + trung
+1 vi + ệt
 1 vkontakte
 1 v + l
-1 vlaanderen
+1 v + la + anderen
 1 vladi + mir
 1 vladi + mir + ovich
 1 vladi + vostok
 1 vld
 1 v + league
 1 v + n
-1 vnd
-1 vnd + c + ch
-1 vnd + tháng
-1 v + n + index
+1 v + nd
+1 v + nd + c + ch
 1 vnukovo
 1 vo + a
 1 vodka
-1 vogelweide
+1 vogelwe + ide
 1 vo + g + l
 1 voi
 1 vo + ice
@@ -10641,7 +10352,6 @@
 1 voi + x
 1 vol + c + ker
 1 vol + ga
-1 vol + ga + ura + l
 1 vol + ker
 1 vol + k + s + wa + gen
 1 vol + vo
@@ -10652,10 +10362,10 @@
 1 vostok
 1 vo + t + ing
 1 vo + us
-1 vow
-1 vow + el
+1 vo + w
+1 vo + w + el
 1 voznesen + sky
-1 vpon
+1 v + pon
 1 vremeni
 1 v + s
 1 v + s + epr
@@ -10663,9 +10373,8 @@
 1 v + t + gas
 1 v + t + v
 1 vu
-1 vua
+1 vu + a
 1 vu + i
-1 vu + lan
 1 vu + l + gar
 1 vulkan
 1 vu + n
@@ -10674,28 +10383,25 @@
 1 vu + ông
 1 vu + ốt
 1 v + v
-1 v + vi
 1 v + x + y
 1 v + y + ache + slav
 1 vysot + sky
 1 và
 1 và + honda
-1 và + hoặc
 1 và + i
 1 và + m
 1 và + ng
 1 và + nh
 1 v + ào
-1 v + ào + đ + ầu
 1 và + team
-1 vá
-1 vá + c
+1 v + á
+1 v + ác
 1 v + ách
 1 v + ái
-1 vá + n
-1 vá + ng
+1 v + án
+1 v + áng
 1 v + ánh
-1 vá + y
+1 v + áy
 1 v + ân
 1 v + ân + g
 1 v + ây
@@ -10704,18 +10410,18 @@
 1 vã + ng
 1 vè
 1 vé
-1 vé + c
 1 vé + ga
 1 vé + n
 1 vé + t
 1 v + ì
 1 v + í
 1 v + ía
+1 v + ích
 1 v + í + u
-1 vò
+1 v + ò
 1 v + òi
-1 vò + m
-1 vò + ng
+1 v + ò + m
+1 v + ò + ng
 1 v + óc
 1 vót
 1 v + ô
@@ -10726,12 +10432,11 @@
 1 võ + ng
 1 v + ùi
 1 vùng
-1 v + ú
-1 văn
-1 văn + g
-1 văn + gia + i
-1 v + ĩ
-1 v + ĩ + nh
+1 vú
+1 v + ăn
+1 v + ăn + g
+1 vĩ
+1 vĩ + nh
 1 v + ũ
 1 v + ũ + ng
 1 v + ơ
@@ -10739,7 +10444,6 @@
 1 vư
 1 vư + ơn
 1 v + ương
-1 v + ương + giá + m
 1 vư + ớng
 1 vư + ờ + n
 1 vư + ợng
@@ -10747,9 +10451,9 @@
 1 vạ
 1 vạ + c
 1 vạ + ch
-1 vạ + i
-1 vạ + n
-1 vạ + t
+1 v + ại
+1 v + ạn
+1 v + ạt
 1 v + ả
 1 v + ải
 1 v + ấn
@@ -10760,10 +10464,9 @@
 1 v + ẫn
 1 v + ận
 1 v + ật
-1 vậy
-1 vậy + cho
+1 v + ậy
+1 v + ậy + cho
 1 v + ắc
-1 v + ắc + xi + n
 1 vắn
 1 vắn + g
 1 v + ặn
@@ -10785,8 +10488,8 @@
 1 v + ỏ
 1 v + ỏ + n
 1 v + ốn
-1 v + ồ + ng
-1 vỗ
+1 v + ồng
+1 v + ỗ
 1 vội
 1 vớ
 1 v + ới
@@ -10795,9 +10498,8 @@
 1 v + ờ
 1 v + ời
 1 v + ở
-1 vỡ
+1 v + ỡ
 1 v + ợ
-1 v + ợ + c + hồng
 1 v + ợt
 1 vụ
 1 vụ + n
@@ -10809,15 +10511,15 @@
 1 vữ + a
 1 vữ + ng
 1 v + ựa
-1 vự + c
-1 vự + ng
+1 v + ự + c
+1 v + ự + ng
 1 v + ỹ
 1 w
 1 wa + al + s
-1 wa + bus + h + labrador
+1 wa + bus + h
 1 wa + de
 1 waffel
-1 wagner
+1 wa + g + ner
 1 wald
 1 wald + ner
 1 wald + o
@@ -10832,18 +10534,18 @@
 1 wall + on
 1 wall + on + ie
 1 wall + oon
-1 w + al + mar + t
-1 w + al + sh
+1 wa + l + mar + t
+1 wa + l + sh
 1 walt
 1 walt + er
 1 walt + her
 1 wan
 1 wan + d
-1 wan + g + tai
+1 wa + ng
 1 wan + hai
 1 wan + t + s
-1 wa + pedia
-1 wapsu + ch
+1 wa + p + edia
+1 wa + p + su + ch
 1 war
 1 wa + ray
 1 war + craft
@@ -10865,15 +10567,17 @@
 1 wasps
 1 wa + s + son + s
 1 wat
+1 wat + ani
 1 wat + ch
 1 water
 1 water + gate
-1 waterloo
-1 water + ton + glacier
-1 wat + kins
+1 water + lo + o
+1 water + ton
+1 wat + kin + s
 1 wat + l + ing
 1 wat + son
 1 wat + t + s
+1 wautu + th
 1 wa + w
 1 way
 1 way + land
@@ -10895,7 +10599,6 @@
 1 web + kiosk
 1 web + os
 1 web + s + ite
-1 web + standard + s
 1 web + ster
 1 week + ly
 1 week + nd
@@ -10903,7 +10606,7 @@
 1 wei + e
 1 wei + ers + tr + ass
 1 wei + sskopf
-1 wei + sswurst
+1 wei + s + s + wurst
 1 welch
 1 welch + e
 1 well + e
@@ -10911,67 +10614,67 @@
 1 well + es + ley
 1 w + ellington
 1 well + s
-1 well + s + far + go
 1 we + l + t
 1 wemb + ley
 1 w + end + el + stein
 1 w + end + ers
 1 wens + ley + dale
 1 wens + tr + m
-1 we + re
+1 wer + e
 1 werk + b + und
 1 werk + stat + t
-1 w + ern + er
-1 w + ern + her
+1 wer + ner
+1 wer + n + her
 1 we + s + ley
 1 w + essex
-1 wessobrunner
+1 wessob + run + ner
 1 west
 1 west + berg
 1 west + cat
 1 west + ern
+1 west + fal + en
 1 west + mins + ter
 1 west + more + land
 1 west + on
 1 west + side
-1 west + v + le + t + eren
+1 west + vlete + ren
 1 west + we + go
 1 wey + bur + n
 1 wey + den
 1 wey + l
 1 w + g + ner
+1 wh
 1 what + ever
 1 what + w + g
 1 wheel
 1 wheel + er
-1 w + he + well
+1 wh + e + well
 1 whi + ch
 1 whi + g
 1 whi + le
 1 whi + s + key
 1 whi + st + ler
-1 whit + e
-1 whit + man
-1 whit + ney
-1 whit + tier
-1 whit + t + le
-1 w + h + ler
-1 whmove + ment
-1 who
-1 who + lehogiii
+1 whi + te
+1 whi + t + man
+1 whi + t + ney
+1 whi + t + t + ier
+1 whi + ttle
+1 wh + ler
+1 w + ho
+1 wholehogiii
+1 wi
 1 wicca
 1 wide
 1 wi + dget
 1 wi + en
 1 wi + en + e
-1 wi + fi
 1 wi + gan
 1 wi + ght
-1 wigner
+1 wi + g + ner
 1 wiki
 1 wiki + bi + z
 1 wiki + book + s
-1 wiki + data
+1 wiki + da + ta
 1 wiki + fi + c + ation
 1 wiki + media
 1 wiki + news
@@ -10983,18 +10686,17 @@
 1 wiki + qu + ote
 1 wiki + species
 1 wiki + text
-1 wiki + tion + ary
+1 wiki + tionary
 1 wiki + travel
-1 wiki + versity
+1 wiki + ver + s + ity
 1 wiki + vo + y + age
-1 wiki + wiki
 1 wiki + wiki + web
-1 wi + k + tion + ary
+1 wi + k + tionary
 1 wil + anders + te + fan
-1 wi + les
+1 wil + es
 1 wil + frid
 1 wil + helm
-1 wil + kins
+1 wil + kin + s
 1 wil + l + ard
 1 wil + le + m
 1 wil + liam
@@ -11011,16 +10713,14 @@
 1 window
 1 window + ing
 1 window + s
-1 windsor
-1 windsor + essex
-1 windsor + quebec
+1 win + d + s + or
 1 win + e
 1 wi + ng
-1 win + niethepooh
-1 win + nipeg
+1 win + nie
+1 win + nip + e + g
 1 win + s + le + t
 1 win + s + ton
-1 wi + red
+1 wi + re + d
 1 wisconsin
 1 w + ish
 1 wissenschaften
@@ -11042,7 +10742,6 @@
 1 wood + s
 1 wood + stock
 1 wood + ward
-1 wood + ward + ho + ff + mann
 1 wood + ward + s
 1 wooga
 1 wo + olf
@@ -11057,10 +10756,10 @@
 1 wr + angel
 1 w + rap + per
 1 w + ren
-1 w + right
+1 wright
 1 wr + ite
-1 w + ri + tin + gon + stone
-1 wrt + er + bu + ch
+1 wr + it + ing
+1 wr + ter + bu + ch
 1 wtc
 1 w + to
 1 w + uh
@@ -11071,22 +10770,22 @@
 1 www + example + com
 1 www + example + org
 1 www + wikipedia + com
-1 wyan + do + t
+1 wy + and + ot
 1 wy + clif + fe
 1 wy + nd + ham
-1 wynkyn
+1 wy + n + k + y + n
 1 wynn
 1 wynn + e
 1 wynn + e + đã
-1 wy + o + m + ing
-1 wysiwyg
+1 wy + om + ing
+1 wy + siwyg
 1 wy + t + ch
 1 wâw
 1 x
 1 xa
 1 xanadu
 1 xa + ng
-1 xa + ng + san + e
+1 xa + ng + s + ane
 1 x + anh
 1 xa + van
 1 xa + y
@@ -11094,8 +10793,7 @@
 1 x + e
 1 x + em
 1 x + en
-1 x + e + ngày
-1 x + en + ix
+1 x + e + nix
 1 xf
 1 xf + c + e
 1 xf + wm
@@ -11104,13 +10802,12 @@
 1 xi
 1 xii
 1 xii + i
-1 xi + n
+1 x + in
 1 xi + nh
-1 xi + rô
+1 xit
 1 xi + v
 1 xi + x
-1 xiêm
-1 xiêm + việt
+1 xi + êm
 1 x + iêu
 1 xi + ết
 1 xi + ề + ng
@@ -11122,7 +10819,6 @@
 1 xoa
 1 xoa + y
 1 x + o + ng
-1 x + open
 1 x + org
 1 x + oài
 1 xoá
@@ -11133,25 +10829,21 @@
 1 x + ray
 1 x + s
 1 x + s + l + t
-1 x + s + motif
 1 x + s + s
 1 xu
 1 xu + a
 1 xu + i
 1 xu + ng
-1 x + unikey
 1 x + uyên
 1 xu + yến
 1 xu + ân
 1 xu + ôi
 1 x + uất
-1 x + uống
+1 xu + ống
 1 x + v
 1 x + vi
 1 xvii
 1 xvii + i
-1 xvii + xvii + i
-1 x + window
 1 x + x
 1 x + xi
 1 x + xii
@@ -11159,32 +10851,28 @@
 1 xyclôtr + ôn
 1 xà
 1 xà + i
-1 xà + l + ách
 1 x + ào
-1 xá
-1 xá + c
+1 x + á
+1 x + ác
 1 x + ách
-1 xá + m
-1 xá + n
+1 x + ám
+1 x + án
 1 x + áo
-1 xá + t
-1 xá + tđam
+1 x + át
 1 x + âm
 1 x + âu
 1 x + ây
-1 xã
+1 x + ã
 1 xèo
 1 xé
 1 xé + t
 1 xé + t + đoạn
-1 xê
-1 xê + mit
-1 xê + m + ít
+1 x + ê
 1 x + ì
-1 x + í
+1 xí
 1 x + ích
-1 x + í + n
-1 xít
+1 xí + n
+1 xí + t
 1 xòe
 1 xó
 1 xó + a
@@ -11207,21 +10895,21 @@
 1 xạ
 1 x + ả
 1 x + ảo
-1 x + ảy
+1 x + ả + y
 1 x + ấp
 1 x + ấu
 1 xẹp
 1 x + ẻ
 1 x + ẻ + n
 1 xếp
-1 xỉ
-1 xỉ + a
-1 xỉ + u
+1 x + ỉ
+1 x + ỉ + a
+1 x + ỉ + u
 1 x + ị
 1 x + ỏ
 1 x + ốc
 1 xốp
-1 x + ộn
+1 xộn
 1 x + ụp
 1 x + ứ
 1 x + ức
@@ -11231,24 +10919,25 @@
 1 ya
 1 yaacov
 1 yablochkov
-1 ya + ch + t
+1 yacht
 1 y + ager
 1 yahoo
 1 yakutia
-1 yale
-1 yale + town
+1 y + ale
+1 y + ale + town
 1 y + alta
 1 y + ama + ha
 1 yangm + ing
 1 yankee
 1 y + ard
 1 yaroslavl
-1 y + ar + san
+1 yarsan
 1 yashin
 1 yasser
 1 yasser + i
 1 ya + st
-1 ya + tes
+1 yates
+1 ya + wer
 1 y + e + ho + shua
 1 y + ekaterinburg
 1 y + el + low + stone
@@ -11260,7 +10949,7 @@
 1 y + evgeny
 1 yev + tushenko
 1 yezidi
-1 y + id + dish
+1 yidd + ish
 1 yoko + hama
 1 yoko + y + ama
 1 y + ola
@@ -11284,20 +10973,21 @@
 1 y + ên
 1 yêu
 1 yến
-1 y + ết
+1 yết
 1 yếu
 1 yểm
 1 y + ểu
 1 z
+1 za
 1 za + ak
 1 za + do + k
 1 za + gros
-1 za + hir
-1 zajizuzezo
+1 za + hi + r
 1 zamya + tin
 1 zanj
 1 za + p
-1 z + ea + land
+1 ze
+1 ze + a + land
 1 zebra
 1 zeckendorf
 1 zee + brugge
@@ -11310,10 +11000,10 @@
 1 zen
 1 zen + d
 1 zen + it
-1 zen + obe
+1 zen + o + be
 1 zephyr
-1 zepp + elin
-1 zero
+1 ze + p + p + elin
+1 ze + ro
 1 zhaleika
 1 zhua + ng
 1 zhukov
@@ -11326,16 +11016,17 @@
 1 zi + p + car
 1 zi + t + train
 1 zlatan
-1 zody
-1 z + or + th + ian
+1 zo
+1 zo + dy
+1 zo + r + th + ian
 1 zu
 1 zukunft
 1 zu + m + walt
 1 z + use
 1 zu + y + ing
 1 z + w + ory + kin
-1 z + y + nga
-1 zơ
+1 zynga
+1 z + ơ
 1 à
 1 ào
 1 á
@@ -11351,26 +11042,21 @@
 1 áo
 1 áp
 1 át
-1 á + âu
 1 áísínaipi
 1 â
 1 âm
 1 ân
 1 âu
-1 âu + and
-1 âu + á
 1 é + cole
+1 é + dou + ard
 1 ély
-1 ély + collins
 1 ély + sée
 1 ép
-1 étienne
+1 ét + ienne
 1 ê
 1 ê + fin
-1 ê + kí + p
 1 êm
 1 ê + nang
-1 ê + đê
 1 ích
 1 ít
 1 ó
@@ -11379,10 +11065,9 @@
 1 ô + m
 1 ôn
 1 ông
-1 ông + x + ian
 1 ô + ra + tô
 1 ô + tô
-1 ù + n
+1 ùn
 1 úc
 1 úng
 1 úp
@@ -11399,7 +11084,7 @@
 1 đak
 1 đak + dơng
 1 đak + nan
-1 đak + ốc
+1 đa + m
 1 đa + n
 1 đa + nang
 1 đa + ng
@@ -11411,6 +11096,7 @@
 1 đ + en
 1 đ + eo
 1 đi
+1 đ + in
 1 đi + nh
 1 đi + ên
 1 đ + iêu
@@ -11427,23 +11113,21 @@
 1 đi + ển
 1 đi + ển + uc + ra + ina
 1 đi + ểu
-1 điện
-1 điện + điện
+1 đi + ện
 1 đ + iệp
 1 đi + ệu
 1 đo
 1 đ + oan
-1 đokovi
+1 đo + ko + vi
 1 đo + ng
-1 đoàn
-1 đoàn + độ + i
+1 đo + à + n
 1 đo + ái
 1 đ + oán
 1 đoạn
 1 đoạn + tr + ẫm
 1 đoạn + đoạn
 1 đo + ạt
-1 đoản
+1 đo + ản
 1 đo + ỏ + ng
 1 đ + t
 1 đu
@@ -11451,7 +11135,7 @@
 1 đu + n
 1 đu + ôi
 1 đu + ối
-1 đ + uống
+1 đu + ống
 1 đu + ổi
 1 đà
 1 đà + i
@@ -11459,7 +11143,7 @@
 1 đà + n
 1 đà + ng
 1 đà + nh
-1 đà + o
+1 đ + ào
 1 đà + y
 1 đá
 1 đá + c
@@ -11467,7 +11151,7 @@
 1 đá + n
 1 đá + ng
 1 đá + nh
-1 đá + o
+1 đ + áo
 1 đá + p
 1 đá + t
 1 đá + y
@@ -11480,7 +11164,7 @@
 1 đè
 1 đè + n
 1 đè + o
-1 đéc
+1 đ + é + c
 1 đ + én
 1 đê
 1 đ + êm
@@ -11498,17 +11182,13 @@
 1 đó + n
 1 đó + ng
 1 đó + t
-1 đô
-1 đô + cô + v + ích
+1 đ + ô
 1 đ + ôi
-1 đô + la
+1 đ + ô + la
 1 đ + ôn
 1 đ + ông
-1 đ + ông + trung
-1 đ + ông + tây
-1 đ + ông + xu + ân
-1 đùa
-1 đ + ù + n
+1 đ + ùa
+1 đ + ùn
 1 đ + úc
 1 đ + úng
 1 đ + út
@@ -11518,7 +11198,7 @@
 1 đĩ
 1 đĩ + a
 1 đĩ + nh
-1 đũa
+1 đ + ũ + a
 1 đ + ơ
 1 đ + ơn
 1 đ + ưa
@@ -11527,52 +11207,49 @@
 1 đ + ương + field
 1 đ + ước
 1 đường
-1 đường + nhà
 1 được
 1 đ + ạc
-1 đại
-1 đạm
-1 đạn
-1 đạo
+1 đ + ại
+1 đ + ạm
+1 đ + ạn
+1 đ + ạo
 1 đ + ạp
-1 đạt
-1 đạt + lạ + i
+1 đ + ạt
 1 đả
 1 đả + m
 1 đả + n
 1 đả + ng
 1 đ + ảo
-1 đấ + ng
+1 đ + ấ + ng
 1 đ + ất
 1 đ + ấu
 1 đ + ấy
-1 đầm
+1 đ + ầm
 1 đ + ầu
-1 đ + ầu + cu + ối
 1 đ + ầy
 1 đ + ẩu
 1 đ + ẩy
 1 đ + ẫm
-1 đẫy
-1 đậm
+1 đ + ẫy
+1 đ + ậm
 1 đ + ập
-1 đậu
-1 đậy
+1 đ + ậu
+1 đ + ậy
 1 đ + ắc
-1 đắk
+1 đ + ắk
 1 đ + ắm
 1 đắn
 1 đắn + g
 1 đ + ắp
 1 đ + ắt
-1 đằ + ng
+1 đ + ằ + ng
 1 đ + ẳ + ng
 1 đ + ặc
 1 đ + ặn
 1 đ + ặn + g
 1 đ + ặt
 1 đẹp
-1 đẹp + hoặc
+1 đẹp + ho + ặc
 1 đ + ẻ
 1 đ + ẽ
 1 đ + ẽ + o
@@ -11582,21 +11259,16 @@
 1 đ + ề
 1 đ + ền
 1 đ + ều
-1 đ + ề + định
 1 đ + ể
 1 đ + ệ
 1 đ + ệ + m
 1 đ + ỉ + nh
 1 đị + a
-1 đị + a + một
 1 đị + ch
 1 đị + ng
-1 định
-1 định + su + y
-1 định + th + ống
+1 đị + nh
 1 đọ
 1 đọ + c
-1 đọ + c + ghi
 1 đọ + ng
 1 đ + ỏ
 1 đ + ốc
@@ -11605,41 +11277,39 @@
 1 đ + ốn
 1 đ + ống
 1 đ + ốt
-1 đồ
+1 đ + ồ
 1 đ + ồi
-1 đồ + m
-1 đồ + n
-1 đồ + ng
-1 đồ + ng + tháng
+1 đ + ồ + m
+1 đ + ồn
+1 đ + ồng
 1 đ + ổ
 1 đ + ổi
 1 đ + ổ + ng
-1 đỗ
+1 đ + ỗ
 1 độ
 1 độ + c
 1 độ + i
 1 độ + n
 1 độ + ng
-1 độ + ng + một
 1 độ + t
 1 đ + ới
 1 đ + ớn
 1 đ + ời
-1 đỡ
-1 đợi
+1 đ + ỡ
+1 đ + ợi
 1 đ + ợt
 1 đ + ục
 1 đụn
 1 đụn + g
 1 đ + ủ
-1 đứa
+1 đ + ứa
 1 đ + ức
 1 đ + ứng
 1 đ + ứt
 1 đ + ừ + ng
 1 đ + ựa
-1 đự + c
-1 đự + ng
+1 đ + ự + c
+1 đ + ự + ng
 1 ơ
 1 ơi
 1 ơn
@@ -11659,16 +11329,13 @@
 1 ảo
 1 ấm
 1 ấn
-1 ấn + âu
 1 ấp
 1 ất
 1 ấu
 1 ấy
-1 ấy + cô
 1 ẩm
 1 ẩn
 1 ắc
-1 ắc + quy
 1 ắp
 1 ắt
 1 ếch
@@ -11687,7 +11354,7 @@
 1 ủ
 1 ủi
 1 ủng
-1 ủ + y
+1 ủy
 1 ứ
 1 ức
 1 ứng

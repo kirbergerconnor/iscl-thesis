@@ -225,5 +225,5 @@ if __name__ == '__main__':
             net = CharRNN(chars, n_hidden=512, n_layers=2)
             train(lang, net, device, encoded, epochs=epochs, n_seqs=n_seqs, n_steps=n_steps, lr=lr, clip=5)
             
-    with open('./text_gen_rnn.csv', mode='w') as f:
+    with open('./torch_rnn_results.csv', mode='w') as f:
         training_df.to_csv(f)
