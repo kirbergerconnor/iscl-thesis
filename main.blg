@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[85] biber-darwin:340> INFO - === Sun Jun 30, 2024, 18:45:41
-[100] Biber.pm:419> INFO - Reading 'main.bcf'
-[193] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
-[207] Biber.pm:4419> INFO - Processing section 0
-[216] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[218] bibtex.pm:1713> INFO - LaTeX decoding ...
-[246] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[311] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[311] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[311] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[312] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[319] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[321] bbl.pm:763> INFO - Output to main.bbl
-[321] Biber.pm:131> WARN - ISBN '0198829876,9780198829874' in entry 'punske2020book' is invalid - run biber with '--validate_datamodel' for details.
-[321] Biber.pm:133> INFO - WARNINGS: 1
+[101] biber-darwin:340> INFO - === Wed Jul  3, 2024, 20:41:38
+[123] Biber.pm:419> INFO - Reading 'main.bcf'
+[233] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[247] Biber.pm:4419> INFO - Processing section 0
+[261] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[264] bibtex.pm:1713> INFO - LaTeX decoding ...
+[301] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[397] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[397] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[410] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[413] bbl.pm:763> INFO - Output to main.bbl
+[413] Biber.pm:131> WARN - ISBN '0198829876,9780198829874' in entry 'punske2020book' is invalid - run biber with '--validate_datamodel' for details.
+[413] Biber.pm:133> INFO - WARNINGS: 1

@@ -344,16 +344,14 @@ The aforementioned intended uses for constructed languages can range broadly. So
 
 % Initially, I began my research with the intention of formulating an approach for deciphering the Voynich Manuscript, an illustrated folio containing handwritten text from a still---at the time of writing this at least---unknown language and in an unknown script or cipher. One theory, as noted by \textcite{Reddy2011paper}, is that the underlying language may not be natural.
 
-
-
 \subsection{Scope of Study \& Research Question}
 \label{ssec:scope}
 
 As previously noted, the specific boundaries which separate constructed from natural languages are not always clearly or consistently defined---even amongst linguists. 
 
-This study analyzes the linguistic features of constructed and natural languages and seeks to make a comparison on the differences, if any exist, between the two. Because of the wide-ranging nature of conducting such a broad analysis, there will of course be many features left unconsidered. With this in mind and following the precedent set by other related research on this topic, the focus in this particular study is mainly on aspects such entropy, morphological complexity, and lexical diversity of the texts examined. Ultimately, I seek to contribute to answering the age-old question of what defines a language.
+This study analyzes the linguistic features of constructed and natural languages and seeks to make a comparison on the differences, if any exist, between the two. Because of the wide-ranging nature of conducting such a broad analysis, there will of course be many features left unconsidered. With this in mind and following the precedent set by other related research on this topic, the focus in this particular study is mainly on features such as entropy, morphological complexity, and lexical diversity of each language, based on the corpora used. Ultimately, I seek to contribute to answering the age-old question of what defines a language.
 
-The following is a breakdown of the structure of this thesis from here onward: section \ref{sec:background} first provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; section \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; section \ref{sec:results} presents the results of the study and discussion of these follows in section \ref{sec:discussion}; lastly, section \ref{sec:conclusion} consists of a conclusion as well as some elaboration for possible future work.
+The following is a breakdown of the structure of this thesis from here onward: the next section provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; section \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; section \ref{sec:results} presents the results of the study and discussion of these follows in section \ref{sec:discussion}; lastly, section \ref{sec:conclusion} consists of a conclusion as well as elaboration for possible future work.
 
 \section{Background}
 \label{sec:background}
@@ -378,7 +376,7 @@ Constructed languages are actually a broad category of languages comprised of se
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I explain in greater detail the corpora data used for this research, as well as the approaches and steps taken to arrive at my results. 
+In this section, I explain in greater detail the materials and dataset used, as well as the approaches and steps taken to arrive at my results. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are morphological complexity, character and word frequency distributions, and character entropy. Once these were calculated for each language, the task became that of classification through the use of 2 classifier models: outlier detection and a decision tree. 
 
 \subsection{Data}
 \label{ssec:data}
@@ -389,6 +387,9 @@ To briefly introduce the constructed languages used here, Esperanto is the most 
 
 As this study is cross-linguistic in nature, it would naturally be ideal to use parallel corpora, as this would enable more conclusive comparative analysis. However, creating or finding parallel corpora that also includes the aforementioned constructed languages is rather challenging due to the limited availability of resources for many of them. Therefore, I instead opted for a more practical approach of using 
 
+\subsubsection{Wikimedia}
+\label{ssec:wikimedia}
+
 Text data was collected from Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length based on number of words, while still maintaining complete sentences. The smallest corpus came from Lingua Franca Nova, so its size was the minimum value used to shorten the others. 
 
 \subsection{Data Preprocessing}
@@ -398,22 +399,28 @@ Preprocessing text data is essential for NLP tasks. As this study covers a broad
 
 After extracting the text from the dump files through the use of a Python script\footnote{https://github.com/apertium/WikiExtractor/tree/master}, regular expressions were used to remove page titles, links, headers, fragments, and other extraneous symbols. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences, and all characters that were not part of the language's writing system were removed in an attempt to have only that language's words, without any foreign words that occasionally appear in the scraped Wikipedia texts. Remaining punctuation and numbers were also removed. The end result was a single corpus file corresponding to each language, with each line of the files being a single sentence. 
 
-
-
-\subsection{Preliminary Calculations}
-\label{ssec:preliminarycalculations}
+\subsection{Feature Extraction}
+\label{ssec:featureextraction}
 
 Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
 
+\subsubsection{Type-Token Ratio}
+\label{ssec:ttr}
+
 TTR is a way of measuring lexical diversity. It is calculated using the following formula: \[TTR = \frac{\sum_{i=1}^{n}\delta(w_i)}{n}\]
+
+\subsubsection{Moving-Average Type-Token Ratio}
+\label{ssec:mattr}
 
 A glaring issue with TTR, however, is that it can vary widely based on a text's length. The longer a particular text, the higher the likelihood of repetition occurring. There have been several solutions proposed to address this issue, one being MATTR. MATTR is given in the formula \[MATTR_i = \frac{TTR_1+TTR_2+...+TTR_i}{i}\]
 
-The Shannon entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
+\subsubsection{Entropy}
+\label{ssec:entropy}
 
-Principal Component Analysis was performed to reduce 
+In information science, entropy means... 
+In linguistics, entropy refers to...
 
-A script was used to increase readability of the text in the graph\footnote{https://github.com/Phlya/adjustText}.
+The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
 \begin{figure}
   \centering
@@ -422,7 +429,27 @@ A script was used to increase readability of the text in the graph\footnote{http
         \label{fig:pcaanalysis}
 \end{figure}
 
-\subsection{Decision Tree}
+\subsubsection{Morphological Complexity}
+\label{ssec:morphologicalcomplexity}
+
+The morphological systems of each language was also investigated and analyzed, specifically their complexities. Morfessor, 
+
+\subsubsection{Perplexity}
+\label{ssec:perplexity}
+
+One measure used for evaluating and comparing the similarities and differences between natural and constructed languages is that of entropy. Specifically, the entropy of 
+
+\subsubsection{PCA}
+\label{ssec:pca}
+
+Principal Component Analysis was performed for dimensionality reduction. 
+
+A script was used to increase readability of the text in the graph\footnote{https://github.com/Phlya/adjustText}.
+
+\subsection{Classification Models}
+\label{ssec:classification}
+
+\subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
 Decision Tree Classifier...
@@ -434,21 +461,13 @@ Decision Tree Classifier...
         \label{fig:decisiontree}
 \end{figure}
 
-\subsection{Morphological Analysis}
-\label{ssec:morphologicalanalysis}
-
-
-
-\subsection{Perplexity}
-\label{ssec:perplexity}
-
-One measure used for evaluating and comparing the similarities and differences between natural and constructed languages is that of entropy. Specifically, the entropy of 
-
-\subsection{Outlier Detection}
+\subsubsection{Outlier Detection}
 \label{ssec:outlierdetection}
 
 \section{Results}
 \label{sec:results}
+
+In this section
 
 \section{Discussion}
 \label{sec:discussion}

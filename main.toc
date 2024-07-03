@@ -10,15 +10,21 @@
 \contentsline {subsection}{\numberline {2.2}Prior Studies}{2}{}%
 \contentsline {subsection}{\numberline {2.3}Computational Methods}{2}{}%
 \contentsline {section}{\numberline {3}Methodology}{2}{}%
-\contentsline {subsection}{\numberline {3.1}Data}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Data}{3}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Wikimedia}{3}{}%
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{3}{}%
-\contentsline {subsection}{\numberline {3.3}Preliminary Calculations}{3}{}%
-\contentsline {subsection}{\numberline {3.4}Decision Tree}{4}{}%
-\contentsline {subsection}{\numberline {3.5}Morphological Analysis}{5}{}%
-\contentsline {subsection}{\numberline {3.6}Perplexity}{5}{}%
-\contentsline {subsection}{\numberline {3.7}Outlier Detection}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Feature Extraction}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Type-Token Ratio}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Moving-Average Type-Token Ratio}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Entropy}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}Morphological Complexity}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.5}Perplexity}{5}{}%
+\contentsline {subsubsection}{\numberline {3.3.6}PCA}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Classification Models}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Decision Tree}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Outlier Detection}{5}{}%
 \contentsline {section}{\numberline {4}Results}{5}{}%
-\contentsline {section}{\numberline {5}Discussion}{5}{}%
-\contentsline {section}{\numberline {6}Conclusion}{5}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{5}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{6}{}%
+\contentsline {section}{\numberline {5}Discussion}{6}{}%
+\contentsline {section}{\numberline {6}Conclusion}{6}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{6}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{7}{}%
