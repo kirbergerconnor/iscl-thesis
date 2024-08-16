@@ -343,6 +343,9 @@ The aforementioned intended uses for constructed languages can range broadly. So
 \label{ssec:motivation}
 
 % Initially, I began my research with the intention of formulating an approach for deciphering the Voynich Manuscript, an illustrated folio containing handwritten text from a still---at the time of writing this at least---unknown language and in an unknown script or cipher. One theory, as noted by \textcite{Reddy2011paper}, is that the underlying language may not be natural.
+% Mention Greenberg and Chomsky principles for linguistic universals, Universal Grammar, etc.
+
+The search for language universals is heavily ingrained in the history of linguistic research. 
 
 \subsection{Scope of Study \& Research Question}
 \label{ssec:scope}
@@ -360,6 +363,10 @@ The vast landscape of linguistic research comprises a myriad of studies delving 
 
 Finally, I will discuss the various computational methods implemented and provide some background information on how they work. 
 
+% Discuss different theories of classifying/defining natural from constructed languages
+% Related quote: "The question is at what point we can call a constructed object a language. A useful taxonomy has been proposed by Blanke (1989), who envisaged a three-way distinction of ‘projects’, ‘semi-languages’ and ‘languages’, where ‘projects’ are basically objects which never grew out of the initial grammars and lexicons written by their constructors. They can grow into ‘semi-languages’ and eventually ‘languages’ if they start satisfying a whole list of criteria such as being used in written communication in books and journals, or having specialized vocabulary about a number of topics, etc. where languages are distinguished from semi-languages by having native speakers. According to Blanke, Esperanto is the only full ‘language’ in the set of constructed objects; as Blanke was a leading figure in the Esperanto movement" - Oostendorp
+% 
+
 \subsection{Constructed Languages}
 \label{ssec:conlangs}
 
@@ -376,33 +383,70 @@ Constructed languages are actually a broad category of languages comprised of se
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I explain in greater detail the materials and dataset used, as well as the approaches and steps taken to arrive at my results. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are morphological complexity, character and word frequency distributions, and character entropy. Once these were calculated for each language, the task became that of classification through the use of 2 classifier models: outlier detection and a decision tree. 
+In this section, I explain in greater detail the dataset, APIs, and libraries used, as well as the approaches and steps taken to arrive at my results. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are morphological complexity, character and word frequency distributions, and character entropy. Once these were calculated for each language, the task became that of classification through the use of 2 classifier models: outlier detection and a decision tree. 
 
 \subsection{Data}
 \label{ssec:data}
 
-In total, twenty-two languages are analyzed in this study. Four of these are constructed languages: Esperanto, Interlingua, Lingua Franca Nova, and Ido. The remaining eighteen are natural languages: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
+Because this study is so broad in scope, the corpora used must be adequately sized as well. In total, twenty-two languages are analyzed in this study. Four of these are constructed languages: Esperanto, Interlingua, Lingua Franca Nova, and Ido. The remaining eighteen are natural languages: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
+
+% Plot the languages + their language families to have some kind of visual comparison
+% Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
+% Discuss their language families, writing scripts (why not Japanese or Chinese?), and why those 4 constructed languages specifically
+% Explain which natural language families the conlangs are based on, and surface level distinctions they may have
 
 To briefly introduce the constructed languages used here, Esperanto is the most widely spoken constructed language
+
+% Inlcude Blanke's (Schubert2001book) description of Esperanto as the only successful planned language
 
 As this study is cross-linguistic in nature, it would naturally be ideal to use parallel corpora, as this would enable more conclusive comparative analysis. However, creating or finding parallel corpora that also includes the aforementioned constructed languages is rather challenging due to the limited availability of resources for many of them. Therefore, I instead opted for a more practical approach of using 
 
 \subsubsection{Wikimedia}
 \label{ssec:wikimedia}
 
-Text data was collected from Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length based on number of words, while still maintaining complete sentences. The smallest corpus came from Lingua Franca Nova, so its size was the minimum value used to shorten the others. 
+% Which languages' files did you limit (using the max_articles variable) with the script? The biggest files (eo, da, fi, tr, id, vi, hu, sv, nl, pl, it, es, fr, de, en) I gradually limited the max number of files to be extracted from the dumps; max 50000 for eo, 
+
+The corpora were compiled using Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length based on number of words, while still maintaining complete sentences. The smallest dump was Lingua Franca Nova, so its size was the minimum value used to shorten the others. 
+
+% Previously (in 2023) used a min value of 650000 words, now (in 2024) using min value of 630000 words
+
+% Genre/domain of texts? Do all dumps have the exact same articles? How does this affect the experiment and results?
+% Not gold standard corpus, its quality depends on many different variables (i.e. the wikipedia contributors who wrote the articles)
 
 \subsection{Data Preprocessing}
 \label{ssec:datapreprocessing}
 
 Preprocessing text data is essential for NLP tasks. As this study covers a broad range of different languages and includes constructed languages, which often have less resources available, meticulous effort was made to obtain as close to a parallel set of corpora as possible and to clean the text thoroughly. 
 
+% Mention why the WikiExtractor script was used in the first place
+% Ex: python WikiExtractor.py --infn ~/Downloads/enwiki-20240701-pages-articles-multistream.xml.bz2
+% Show some examples of the regex used from your code
+% Show examples of before and after the preprocessing + show an example of the final preprocessed data
+
 After extracting the text from the dump files through the use of a Python script\footnote{https://github.com/apertium/WikiExtractor/tree/master}, regular expressions were used to remove page titles, links, headers, fragments, and other extraneous symbols. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences, and all characters that were not part of the language's writing system were removed in an attempt to have only that language's words, without any foreign words that occasionally appear in the scraped Wikipedia texts. Remaining punctuation and numbers were also removed. The end result was a single corpus file corresponding to each language, with each line of the files being a single sentence. 
+
+\subsection{Libraries and APIs}
+\label{ssec:librariesandapis}
+
+\subsubsection{Keras}
+\label{ssec:keras}
+
+\subsubsection{PyTorch}
+\label{ssec:pytorch}
+
+\subsubsection{NumPy, Pandas, and Matplotlib}
+\label{ssec:numpypandasmat}
+
+\subsubsection{scikit-learn}
+\label{ssec:scikitlearn}
 
 \subsection{Feature Extraction}
 \label{ssec:featureextraction}
 
+% Come back to edit later
 Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
+
+% Mention in each subsubsection why the particular feature was extracted, why it was seen as a possible indicator or useful information in this experiment
 
 \subsubsection{Type-Token Ratio}
 \label{ssec:ttr}
@@ -414,11 +458,17 @@ TTR is a way of measuring lexical diversity. It is calculated using the followin
 
 A glaring issue with TTR, however, is that it can vary widely based on a text's length. The longer a particular text, the higher the likelihood of repetition occurring. There have been several solutions proposed to address this issue, one being MATTR. MATTR is given in the formula \[MATTR_i = \frac{TTR_1+TTR_2+...+TTR_i}{i}\]
 
+\subsubsection{Morphological Complexity}
+\label{ssec:morphologicalcomplexity}
+
+The morphological systems of each language was also investigated and analyzed, specifically their complexities. Morfessor, 
+
 \subsubsection{Entropy}
 \label{ssec:entropy}
 
 In information science, entropy means... 
 In linguistics, entropy refers to...
+Surprisal...
 
 The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
@@ -429,15 +479,11 @@ The entropy was calculated for the character and word distributions in each of t
         \label{fig:pcaanalysis}
 \end{figure}
 
-\subsubsection{Morphological Complexity}
-\label{ssec:morphologicalcomplexity}
-
-The morphological systems of each language was also investigated and analyzed, specifically their complexities. Morfessor, 
-
 \subsubsection{Perplexity}
 \label{ssec:perplexity}
 
-One measure used for evaluating and comparing the similarities and differences between natural and constructed languages is that of entropy. Specifically, the entropy of 
+Perplexity is related to entropy...
+Cross-entropy as the loss function...
 
 \subsubsection{PCA}
 \label{ssec:pca}
@@ -466,8 +512,6 @@ Decision Tree Classifier...
 
 \section{Results}
 \label{sec:results}
-
-In this section
 
 \section{Discussion}
 \label{sec:discussion}

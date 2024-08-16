@@ -13,17 +13,22 @@
 \contentsline {subsection}{\numberline {3.1}Data}{3}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Wikimedia}{3}{}%
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{3}{}%
-\contentsline {subsection}{\numberline {3.3}Feature Extraction}{4}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Type-Token Ratio}{4}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Moving-Average Type-Token Ratio}{4}{}%
-\contentsline {subsubsection}{\numberline {3.3.3}Entropy}{4}{}%
-\contentsline {subsubsection}{\numberline {3.3.4}Morphological Complexity}{4}{}%
-\contentsline {subsubsection}{\numberline {3.3.5}Perplexity}{5}{}%
-\contentsline {subsubsection}{\numberline {3.3.6}PCA}{5}{}%
-\contentsline {subsection}{\numberline {3.4}Classification Models}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Decision Tree}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Outlier Detection}{5}{}%
-\contentsline {section}{\numberline {4}Results}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Keras}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}PyTorch}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}NumPy, Pandas, and Matplotlib}{4}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}scikit-learn}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Feature Extraction}{4}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Type-Token Ratio}{4}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Moving-Average Type-Token Ratio}{4}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Morphological Complexity}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Entropy}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}Perplexity}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.6}PCA}{5}{}%
+\contentsline {subsection}{\numberline {3.5}Classification Models}{6}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{6}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Outlier Detection}{6}{}%
+\contentsline {section}{\numberline {4}Results}{6}{}%
 \contentsline {section}{\numberline {5}Discussion}{6}{}%
 \contentsline {section}{\numberline {6}Conclusion}{6}{}%
 \contentsline {subsection}{\numberline {6.1}Future Work}{6}{}%
