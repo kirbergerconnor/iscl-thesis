@@ -4,15 +4,15 @@
 \contentsline {section}{List of Abbreviations}{iv}{}%
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Motivation}{1}{}%
-\contentsline {subsection}{\numberline {1.2}Scope of Study \& Research Question}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Scope of Study \& Research Question}{2}{}%
 \contentsline {section}{\numberline {2}Background}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Constructed Languages}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Prior Studies}{2}{}%
-\contentsline {subsection}{\numberline {2.3}Computational Methods}{2}{}%
-\contentsline {section}{\numberline {3}Methodology}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Prior Studies}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Computational Methods}{3}{}%
+\contentsline {section}{\numberline {3}Methodology}{3}{}%
 \contentsline {subsection}{\numberline {3.1}Data}{3}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Wikimedia}{3}{}%
-\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{4}{}%
 \contentsline {subsection}{\numberline {3.3}Libraries and APIs}{4}{}%
 \contentsline {subsubsection}{\numberline {3.3.1}Keras}{4}{}%
 \contentsline {subsubsection}{\numberline {3.3.2}PyTorch}{4}{}%
@@ -20,16 +20,17 @@
 \contentsline {subsubsection}{\numberline {3.3.4}scikit-learn}{4}{}%
 \contentsline {subsection}{\numberline {3.4}Feature Extraction}{4}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}Type-Token Ratio}{4}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Moving-Average Type-Token Ratio}{4}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Moving-Average Type-Token Ratio}{5}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Morphological Complexity}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Entropy}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}Perplexity}{5}{}%
-\contentsline {subsubsection}{\numberline {3.4.6}PCA}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Zipfian Distribution}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}Entropy}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.6}Perplexity}{6}{}%
+\contentsline {subsubsection}{\numberline {3.4.7}PCA}{6}{}%
 \contentsline {subsection}{\numberline {3.5}Classification Models}{6}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{6}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Outlier Detection}{6}{}%
-\contentsline {section}{\numberline {4}Results}{6}{}%
-\contentsline {section}{\numberline {5}Discussion}{6}{}%
-\contentsline {section}{\numberline {6}Conclusion}{6}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{6}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{7}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Outlier Detection}{7}{}%
+\contentsline {section}{\numberline {4}Results}{7}{}%
+\contentsline {section}{\numberline {5}Discussion}{7}{}%
+\contentsline {section}{\numberline {6}Conclusion}{7}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{7}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{8}{}%

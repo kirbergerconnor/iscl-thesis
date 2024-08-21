@@ -91,6 +91,49 @@
       \verb 10.1146/annurev-linguistics-030421-064707
       \endverb
     \endentry
+    \entry{Greenberg1970book}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd02863aa5065202bdd632dd397d5fd0}{%
+           family={Greenberg},
+           familyi={G\bibinitperiod},
+           given={Joseph\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Boston}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{fullhash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{bibnamehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{authorbibnamehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{authornamehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{authorfullhash}{fd02863aa5065202bdd632dd397d5fd0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Theoretical Foundations}
+      \field{isbn}{9783110814644}
+      \field{title}{Language Universals}
+      \field{year}{1970}
+      \field{pages}{61\bibrangedash 112}
+      \range{pages}{52}
+      \verb{doi}
+      \verb doi:10.1515/9783110814644-003
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783110814644-003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783110814644-003
+      \endverb
+    \endentry
     \entry{punske2020book}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=51a4ec6db0f4d2f246b9c12757bdd411}{%
@@ -126,6 +169,72 @@
       \endverb
       \verb{url}
       \verb http://gen.lib.rus.ec/book/index.php?md5=0B5CF2BFC00DCB569EBA10BD96AD68D4
+      \endverb
+    \endentry
+    \entry{Oostendorp2019book}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06834cf8568c330ccb389f4ce974496d}{%
+           family={Oostendorp},
+           familyi={O\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=476e26ae3d6f149b527e43e34df15085}{%
+           family={Darquennes},
+           familyi={D\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0e6f80166f1b429785cfa1a393c56288}{%
+           family={Salmons},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9dcd3d17ad5fdf41251632dbbd4deded}{%
+           family={Vandenbussche},
+           familyi={V\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Boston}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{06834cf8568c330ccb389f4ce974496d}
+      \strng{fullhash}{06834cf8568c330ccb389f4ce974496d}
+      \strng{bibnamehash}{06834cf8568c330ccb389f4ce974496d}
+      \strng{authorbibnamehash}{06834cf8568c330ccb389f4ce974496d}
+      \strng{authornamehash}{06834cf8568c330ccb389f4ce974496d}
+      \strng{authorfullhash}{06834cf8568c330ccb389f4ce974496d}
+      \strng{editorbibnamehash}{8a2aed23388fe730cd141811b8f2ef5b}
+      \strng{editornamehash}{8a2aed23388fe730cd141811b8f2ef5b}
+      \strng{editorfullhash}{8a2aed23388fe730cd141811b8f2ef5b}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Volume 1}
+      \field{isbn}{9783110435351}
+      \field{title}{11. Language contact and constructed languages}
+      \field{year}{2019}
+      \field{pages}{124\bibrangedash 135}
+      \range{pages}{12}
+      \verb{doi}
+      \verb doi:10.1515/9783110435351-011
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783110435351-011
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783110435351-011
       \endverb
     \endentry
     \entry{sanders2016article}{article}{}

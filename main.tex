@@ -335,20 +335,25 @@ Write the abstract here.
 \section{Introduction} 
 \label{sec:intro}
 
-Constructed languages---also called artificial languages, invented languages, planned languages, glossopoeia, or more simply as "conlangs", a shortened neologism derived from combining the beginning letters of "constructed" and "language" \parencite{douglas2015book}---are languages that are consciously and purposefully created for some intended use, usually being defined in antithesis to the spontaneous and organic method in which natural languages arise and develop \parencite{sanders2016article}. Despite this distinction in common definition, however, the separation between natural and constructed language might not always be so clear when analyzed in greater detail \parencite{goodall2022article}. 
+Constructed languages---also called artificial languages, invented languages, planned languages, glossopoeia, or more simply as "conlangs", a shortened neologism derived from combining the beginning letters of "constructed" and "language" \parencite{douglas2015book}---are languages that are consciously and purposefully created for some intended use, usually being defined in antithesis to the spontaneous and organic method in which natural languages arise and develop \parencite{sanders2016article}. However, that is not to say constructed languages are characteristically opposite to natural languages. Consciously or even subconsciously, their creators take inspiration and influences from already existing languages, be it natural or other constructed languages \parencite{Oostendorp2019book}.
 
-The aforementioned intended uses for constructed languages can range broadly. Some are created specifically for fictional media, often seen in the genres of fantasy or science-fiction, with some more well-known examples being J. R. R. Tolkien's Elvish languages (Quenya, Sindarin, Nandorin, etc.) found in the world of Middle-earth in his novels, Marc Okrand's Klingon language from the Star Trek universe, and David J. Peter's Dothraki language used in George R. R. Martin's A Song of Ice and Fire novels along with their television adaptation, Game of Thrones \parencite{punske2020book}. Others are created to function as international auxiliary languages, the most famous example (based on estimated number of speakers) arguably being Esperanto, created in the 19\textsuperscript{th} Century by L. L. Zamenhof. Typically, constructed languages can be further distinguished and categorized based on their various purposes for being created.
+The intended uses for constructed languages can range broadly. Some are created specifically for fictional media, often seen in the genres of fantasy or science-fiction, with some more well-known examples being J. R. R. Tolkien's Elvish languages (Quenya, Sindarin, Nandorin, etc.) found in the world of Middle-earth in his novels, Marc Okrand's Klingon language from the Star Trek universe, and David J. Peter's Dothraki language used in George R. R. Martin's A Song of Ice and Fire novels along with their television adaptation, Game of Thrones \parencite{punske2020book}. Others are created to function as international auxiliary languages, the most widespread and famous example (based on estimated number of speakers) being Esperanto, created in the 19\textsuperscript{th} Century by L. L. Zamenhof. Typically, constructed languages can be further distinguished and categorized based on their various purposes for being created.
+
+Despite their distinction in commonly accepted definitions, however, the separation between natural and constructed language is not always so clear when analyzed in greater detail \parencite{goodall2022article}. In fact, it can be argued that the question of what, if any, differences exist between the two is, at its core, a mere part of the larger debate surrounding what exactly constitutes a language. 
 
 \subsection{Motivation}
 \label{ssec:motivation}
 
 % Initially, I began my research with the intention of formulating an approach for deciphering the Voynich Manuscript, an illustrated folio containing handwritten text from a still---at the time of writing this at least---unknown language and in an unknown script or cipher. One theory, as noted by \textcite{Reddy2011paper}, is that the underlying language may not be natural.
+
 % Mention Greenberg and Chomsky principles for linguistic universals, Universal Grammar, etc.
 
-The search for language universals is heavily ingrained in the history of linguistic research. 
+In many ways, the motivation behind this study relates to  search for and defining of language universals is not only fundamental to the field of linguistic research, but also a topic of widespread debate. At present, many theoretical and foundational contributions exist, ranging from Greenberg's proposed universals \parencite{Greenberg1970book} to ideas about universal grammars, such as Chomsky 
 
 \subsection{Scope of Study \& Research Question}
 \label{ssec:scope}
+
+% Make note of empirical differences between languages such as phonemes, word order, syntax, etc and explain how this study differs/specifies its focus
 
 As previously noted, the specific boundaries which separate constructed from natural languages are not always clearly or consistently defined---even amongst linguists. 
 
@@ -370,6 +375,8 @@ Finally, I will discuss the various computational methods implemented and provid
 \subsection{Constructed Languages}
 \label{ssec:conlangs}
 
+% Discuss the history of constructed languages, beginning with so-called philosophical languages of the 17th century (Goodall 2022)
+
 Constructed languages are actually a broad category of languages comprised of several sub-genres, differentiated according to their intended purpose for being created. These include philosophical languages, international auxiliary languages, 
 
 \subsection{Prior Studies}
@@ -390,10 +397,13 @@ In this section, I explain in greater detail the dataset, APIs, and libraries us
 
 Because this study is so broad in scope, the corpora used must be adequately sized as well. In total, twenty-two languages are analyzed in this study. Four of these are constructed languages: Esperanto, Interlingua, Lingua Franca Nova, and Ido. The remaining eighteen are natural languages: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
 
-% Plot the languages + their language families to have some kind of visual comparison
+% Plot the languages + their language families to have some kind of visual comparison (table also works, include some data points for comparing each language i.e. number of speakers)
 % Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
 % Discuss their language families, writing scripts (why not Japanese or Chinese?), and why those 4 constructed languages specifically
 % Explain which natural language families the conlangs are based on, and surface level distinctions they may have
+% von Oostendorp's Constructed Language and Linguistic Theory cites information about Ido (and Interlingua) around pags 7-8, how it is different from Esperanto
+% Write more in-depth about Ido, Esperanto, Interlingua, and Lingua Franca Nova. Who created them, how many estimated speakers, their purpose for being created, etc. etc.
+% Write differences between Ido and Esperanto, using specific examples (for ex, from Goodall 2022), same for Interlingua
 
 To briefly introduce the constructed languages used here, Esperanto is the most widely spoken constructed language
 
@@ -462,6 +472,10 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 \label{ssec:morphologicalcomplexity}
 
 The morphological systems of each language was also investigated and analyzed, specifically their complexities. Morfessor, 
+
+\subsubsection{Zipfian Distribution}
+
+% Zipfian distribution of natural languages vs constructed languages, refer to Bentz 2023
 
 \subsubsection{Entropy}
 \label{ssec:entropy}
