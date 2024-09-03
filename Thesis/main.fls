@@ -477,6 +477,11 @@ INPUT ./TaxonomyOfPlannedLanguages.png
 INPUT ./TaxonomyOfPlannedLanguages.png
 INPUT ./TaxonomyOfPlannedLanguages.png
 INPUT ./TaxonomyOfPlannedLanguages.png
+INPUT ./pcaanalysis.png
+INPUT ./pcaanalysis.png
+INPUT ./pcaanalysis.png
+INPUT ./pcaanalysis.png
+INPUT ./pcaanalysis.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -486,11 +491,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT ./pcaanalysis.png
-INPUT ./pcaanalysis.png
-INPUT ./pcaanalysis.png
-INPUT ./pcaanalysis.png
-INPUT ./pcaanalysis.png
 INPUT ./decisiontree.png
 INPUT ./decisiontree.png
 INPUT ./decisiontree.png

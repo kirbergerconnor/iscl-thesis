@@ -357,7 +357,7 @@ In many ways, it can be argued that investigation into the disparity between the
 
 % Furthermore, while research on constructed languages is far from being novel, in the field of computational linguistics it is less common. Thus, my motivation here was to try something relatively new: to formulate this question of binary distinction based on linguistic features into a classification task and use machine learning methods to attempt to answer it.
 
-Furthermore, while research on constructed languages is far from being novel (in fact it is a dedicated field of study called interlinguistics, which will be discussed in more detail further on), it is less common in computational linguistics. Thus, my motivation here was to try something relatively new, by approaching such an investigation using machine learning methods.
+Furthermore, while research on constructed languages is far from being novel, it is less common in computational linguistics. Thus, my motivation here was to try something relatively new, by approaching such an investigation using machine learning methods. 
 
 \subsection{Scope of Study \& Research Question}
 \label{ssec:scope}
@@ -399,7 +399,7 @@ The vast landscape of linguistic research comprises a myriad of literature delvi
 % "planned languages are by definition based on the priority of writing over speech: they violate the priority of the spoken language over writing, one of the fundamental properties of natural languages, according to theoretical linguistics (Lyons, 1981, Section 4.2.1).2" (Gobbo 2017)
 % "Despite the opportunities offered by the new technology, some of the online practices have been deemed questionable by the more scrupulous members of the conlang community: Google Translate offers Esperanto as one of its non-experimental languages, Wikipedia is available in eight different constructed languages (Esperanto, Volapuk, Ido, Interlingua, Kotava, Occidental, Lingua FrancaNova, Novial, Lojban) with Volapuk accounting for the largest number of articles (over 117,000, which places it 17th in the global rating, above the natural languages with millions of speakers), yet the overwhelming majority of them are the examples of low-quality machine translation." (Novikov 2022)
 
-\textcite{okrent2009book} states, "The history of invented languages is, for the most part, a history of failure." She may be justified in saying this, depending on one's definition of failure in this context. From past to present, the total number of constructed languages may be as high as a thousand \parencite{Libert2016inbook,Schubert1989inbook}, with hundreds proposed for the purpose of being IALs in Europe alone \parencite{Schubert2001book}. Yet of these, Esperanto is widely considered the most successful, with very few others even coming close.
+\textcite{okrent2009book} states, "The history of invented languages is, for the most part, a history of failure." She may be justified in saying this, depending on one's definition of failure in this context. From past to present, the total number of constructed languages may be as high as a thousand \parencite{Libert2016inbook,Schubert1989inbook}, with hundreds proposed for the purpose of being IALs in Europe alone \parencite{Schubert2001book}. Yet of these, only Esperanto is commonly considered to be successful in achieving its creator's intended goal of world-wide use as an auxiliary language (or rather that it is by far the most successful), with very few others even coming close, having a conservative estimation of two million speakers \parencite{okrent2009book}.
 
 While the construction of languages is possibly as old as human history, they typically were not written down and were limited to in-group communication \parencite{Gobbo2016article}. The first documented endeavors came out of religious contexts and were likely used as secret languages, intentionally obscured and incomprehensible to lay people. In the 12\textsuperscript{th} century, abbess Hildegard of Bingen described and recorded a lexicon for Lingua Ignota, a Latin name meaning "unknown language". While extensive documentation of it (i.e., a grammar) was never found, it possessed a semiotic system based on Latin, German, and Greek. Later in the 14\textsuperscript{th} century, a group of Sufi mystics created Balaibalan, a language written in the Ottoman Turkish alphabet and which incorporated features of Persian, Turkish, and Arabic languages \parencite{Novikov2022article}.
 
@@ -417,7 +417,7 @@ Interest in creating such languages picked up in the 17\textsuperscript{th} cent
 % It is from this category that the constructed languages used in the present study come from.
 % Speak more about details of these IALs here? Or in the data section?
 
-In the 19\textsuperscript{th} and 20\textsuperscript{th} centuries the focus for language construction, especially in Europe, shifted to that of making international auxiliary languages (IALs) intended to better enable communication across language barriers, i.e., people who do not share a similar language \parencite{goodall2022article}. Notably, this means they were generally designed to resemble natural language, with choice exceptions being the simplification of certain linguistic features. The surge in need for IALs correlated with the increase in prevalence and accessibility regarding international travel and communication at the time. Such languages were also described as "neutral" \parencite{Large1985book}, in the sense that individual advantages amongst speakers and learners would, theoretically, not exist due to IALs being second languages to everyone \parencite{Gobbo2016article}. That being said, many of the most prominent examples (e.g., Volapük, Interlingua, Esperanto, Ido) are derived from European languages \parencite{Novikov2022article,goodall2022article}, so such a description might not be apt. 
+In the 19\textsuperscript{th} and 20\textsuperscript{th} centuries the focus for language construction, especially in Europe, shifted to that of making international auxiliary languages (IALs) intended to better enable communication across language barriers, i.e., people who do not share a similar language \parencite{goodall2022article}. Notably, this means they were generally designed to resemble natural language, with choice exceptions being the simplification of certain linguistic features. The surge in need for IALs correlated with the increase in prevalence and accessibility regarding international travel and communication at the time. Such languages were also described as "neutral" \parencite{Large1985book}, in the sense that individual advantages amongst speakers and learners would, theoretically, not exist due to IALs being second languages to everyone \parencite{Gobbo2016article}. That being said, many of the most prominent examples (e.g., Volapük, Interlingua, Esperanto, Ido) are derived only from the Indo-European language family \parencite{Novikov2022article,goodall2022article}, so such a description might not be apt. 
 
 % Discuss all of the IALs here? Or only some? Or is it unnecessary to discuss them in such detail anyways?
 % [DELETED] clubs were soon founded and spread around Europe and then to the United States and China, too \parencite{okrent2009book}. At its peak nearly a decade later, there were over two hundred societies and clubs, three hundred learning manuals \parencite{Gobbo2016article}, and twenty-five routinely published Volapük journals \parencite{okrent2009book}.
@@ -430,7 +430,7 @@ Finally,
 
 While they all share the defining feature of having been purposefully created, their other features (e.g., phonetic, morphological, syntactical, lexical, orthographic) can vary immensely depending on factors such as, for example, their intended purpose for use or the other languages they draw from. An example of this was observed by \textcite{Gobbo2016article} in secret languages, specifically their tendency to have more complicated features, such as morphological irregularities, "in order to preserve their secrecy." Contrast to this are IALs, which have the opposite tendency for the sake of ease of communication and second-language acquisition, reflected in commonly assigned features such as SVO word orders, head-initial relative clauses, fronted \textit{wh-}phrases, and morphological regularity \parencite{goodall2022article,Gobbo2016article}. Section \ref{ssec:priorstudies} further examines research focused on linguistic features of these languages. 
 
-In addition to classification based on their intended communicative functions, i.e. as philosophical or international auxiliary languages, there are also taxonomies based on other criterion. For example, another frequently used distinction is that of \textit{a priori} and \textit{a posteriori} \parencite{Schreyer2021article,Gobbo2008article,Schubert1989inbook,Schubert2001book,Novikov2022article,Adelman2014article,Tonkin2015article}. Languages described as being \textit{a priori} are structurally entirely new \parencite{Tonkin2015article} and not based on existing languages, whereas so-called \textit{a posteriori} languages are the opposite, drawing from aspects of specific natural languages \parencite{Schreyer2021article}. \textcite{Gobbo2008article} also proposed the dichotomy of \textit{exoteric} (secret) and \textit{esoteric} (public) languages, derived from \textcite{Bausani1974book}. Similar to the distinction between constructed and natural, such dichotomies for categorizing constructed languages are sometimes argued by linguists to be more accurately described as a scale instead, since many languages fall somewhere in the middle \parencite{Novikov2022article}.
+In addition to classification based on their intended communicative functions, i.e. as philosophical or international auxiliary languages, there are also taxonomies based on other criterion. For example, another frequently used distinction is that of \textit{a priori} and \textit{a posteriori} \parencite{Schreyer2021article,Gobbo2008article,Schubert1989inbook,Schubert2001book,Novikov2022article,Adelman2014article,Tonkin2015article}. Languages described as being \textit{a priori} are structurally entirely new \parencite{Tonkin2015article} and not based on existing languages, whereas so-called \textit{a posteriori} languages are the opposite, drawing from aspects of specific natural languages \parencite{Schreyer2021article}. \textcite{Gobbo2008article} also proposed the dichotomy of \textit{exoteric} (secret) and \textit{esoteric} (public) languages, derived from \textcite{Bausani1974book}. Similar to critiques regarding the distinction between constructed and natural, such dichotomies for categorizing constructed languages are also argued by some linguists to be more accurately described as scales instead, with many languages falling somewhere in the middle \parencite{Novikov2022article}.
 
 A two-dimensional classification schema for constructed languages containing several notables examples is shown in Figure \ref{fig:taxonomyplannedlanguages} \parencite{Gobbo2016article}.
 
@@ -486,7 +486,7 @@ As previously mentioned, the creation of IALs such as Esperanto often involved t
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I explain in greater detail the dataset, APIs, and libraries used, as well as the approaches and steps taken to arrive at my results. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are morphological complexity, type-token ratio (TTR), moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once these were calculated for each language, the task became that of binary classification using these values with the use of two models: a one-class support vector machine (SVM) and a decision tree. 
+In this section, I explain in greater detail the dataset, APIs, and libraries used, as well as the approaches and steps taken to arrive at my results. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are measurements of morphological complexity, type-token ratio (TTR), moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once these were calculated for each language, the task became that of binary classification using these values with the use of two models: a one-class support vector machine (SVM) and a decision tree. 
 
 \subsection{Data}
 \label{ssec:data}
@@ -518,7 +518,7 @@ Ido & & \\
 % Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
 % Discuss their language families, writing scripts (why not Japanese or Chinese?), and why those 4 constructed languages specifically
 % Explain which natural language families the conlangs are based on, and surface level distinctions they may have
-% von Oostendorp's Constructed Language and Linguistic Theory cites information about Ido (and Interlingua) around pags 7-8, how it is different from Esperanto
+% von Oostendorp's Constructed Language and Linguistic Theory cites information about Ido (and Interlingua) around pages 7-8, how it is different from Esperanto
 % Write more in-depth about Ido, Esperanto, Interlingua, Volapük, and Lingua Franca Nova. Who created them, how many estimated speakers, their purpose for being created, etc. etc.
 % Write differences between Ido and Esperanto, using specific examples (for ex, from Goodall 2022), same for Interlingua. For example, a chart comparing words/grammar in all the languages, like on page 6.
 % Mention how for some calculations done in this work, such as entropy, domain and corpus size are important and can cause results to vary
@@ -537,12 +537,12 @@ The final constructed language used in this study is Lingua Franca Nova, created
 
 As this study is cross-linguistic in nature, it would naturally be ideal to use parallel text corpora, as this would enable more conclusive comparative and comprehensive analysis. However, finding already existing parallel corpora that also includes constructed languages, particularly less common ones, posed a bit of a challenge. 
 
-% Inlcude Blanke's (Schubert2001book) description of Esperanto as the only successful planned language
+% Include Blanke's (Schubert2001book) description of Esperanto as the only successful planned language
 
 % Example link to one of the files used: https://dumps.wikimedia.org/novwiki/20240701/ then select novwiki-20240701-pages-articles-multistream.xml.bz2 1.4 MB
 % Which languages' files did you limit (using the max_articles variable) with the script? The biggest files (eo, da, fi, tr, id, vi, hu, sv, nl, pl, it, es, fr, de, en) I gradually limited the max number of files to be extracted from the dumps; max 50000 for eo, 
 
-The corpora were compiled using Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length based on number of words, while still maintaining complete sentences. The smallest dump was Lingua Franca Nova, so its size was the minimum value used to shorten the others. 
+The corpora were compiled using Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length in number of words, while still maintaining complete sentences. In terms of file size, the smallest dump was Lingua Franca Nova, so its was the minimum value used to shorten the others. 
 
 % Previously (in 2023) used a min value of 650000 words, now (in 2024) using min value of 630000 words
 % Genre/domain of texts? Do all dumps have the exact same articles? How does this affect the experiment and results?
@@ -554,14 +554,14 @@ The corpora were compiled using Wikimedia database dumps---large files containin
 
 Preprocessing text data is essential for NLP tasks. As this study covers a broad range of different languages and includes constructed languages, which often have less resources available, meticulous effort was made to obtain as close to a parallel set of corpora as possible and to clean the text thoroughly. 
 
-% Preprocessed by exlcuding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
+% Preprocessed by excluding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
 % Wanted to keep full sentences (why?), so there is not exact same word counts/sentence counts for all files. Include chart of total words/sentences for each language file?
 % Mention why the WikiExtractor script was used in the first place
 % Ex: python WikiExtractor.py --infn ~/Downloads/enwiki-20240701-pages-articles-multistream.xml.bz2
 % Show some examples of the regex used from your code
 % Show examples of before and after the preprocessing + show an example of the final preprocessed data
 
-After extracting the text from the dump files through the use of a Python script\footnote{https://github.com/apertium/WikiExtractor/tree/master}, regular expressions were used to remove page titles, links, headers, fragments, and other extraneous symbols. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences, and all characters that were not part of the language's writing system were removed in an attempt to have only that language's words, without any foreign words that occasionally appear in the scraped Wikipedia texts. Remaining punctuation and numbers were also removed. The end result was a single corpus file corresponding to each language, with each line of the files being a single sentence. 
+After extracting the text from the dump files through the use of WikiExtractor, a Python script \parencite{Attardi2015wikiextractor}, regular expressions were used to remove page titles, links, headers, fragments, and other extraneous symbols. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences, and all characters that were not part of the language's writing system were removed in an attempt to have only that language's words, without any foreign words that occasionally appear in the scraped Wikipedia texts. Remaining punctuation and numbers were also removed. The end result was a single corpus file corresponding to each language, with each line of the files being a single sentence. 
 
 \subsection{Libraries and APIs}
 \label{ssec:librariesandapis}
@@ -581,19 +581,17 @@ After extracting the text from the dump files through the use of a Python script
 \subsection{Feature Extraction}
 \label{ssec:featureextraction}
 
-% Come back to edit later
-Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
+% Briefly explain what feature extraction is and why I use it in this study (?)
+% Come back to edit later:
+% Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
 
 % Mention in each subsubsection why the particular feature was extracted, why it was seen as a possible indicator or useful information in this experiment
 % IMPORTANT: RUN EVERYTHING AGAIN. ONLY PRE-PROCESSING WAS FINISHED, 2 NEW LANGUAGES ADDED TO STUDY
 
-\subsubsection{Type-Token Ratio}
-\label{ssec:ttr}
+\subsubsection{TTR \& MATTR}
+\label{ssec:ttrandmattr}
 
 TTR is a way of measuring lexical diversity. It is calculated using the following formula: \[TTR = \frac{\sum_{i=1}^{n}\delta(w_i)}{n}\]
-
-\subsubsection{Moving-Average Type-Token Ratio}
-\label{ssec:mattr}
 
 A glaring issue with TTR, however, is that it can vary widely based on a text's length. The longer a particular text, the higher the likelihood of repetition occurring. There have been several solutions proposed to address this issue, one being MATTR. MATTR is given in the formula \[MATTR_i = \frac{TTR_1+TTR_2+...+TTR_i}{i}\]
 
@@ -603,11 +601,12 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 % Mention the root languages the conlangs are based on (i.e. Esperanto and German) to explain/describe some of the morphological complexity of said conlang
 % "A popular algorithmic way to approximate the morphological complexity of a language has been Patrick Juola’s (1998, 2008) suggestion of distorting word structures by using a unique random number for each different word type. After distortion, the data is compressed using a compression algorithm. Then the size of the compressed original word file is divided by the size of the compressed distorted word data file. The result tells the complexity of each language’s morphology on the basis of Kolmogorov complexity that the compression algorithm approximates." (Kettunen 2014)
 
-The morphological systems of each language was also investigated and analyzed, specifically their complexities. Morfessor, 
+The morphological systems of each language were analyzed using Morfessor, 
 
 \subsubsection{Zipfian Distribution}
 
 % Zipfian distribution of natural languages vs constructed languages, refer to Bentz 2023
+% Zipf’s word frequency law in natural language: A critical review and future directions (Piantadosi 2014)
 
 \subsubsection{Entropy}
 \label{ssec:entropy}
@@ -647,7 +646,7 @@ A script was used to increase readability of the text in the graph\footnote{http
 \subsection{Classification Models}
 \label{ssec:classification}
 
-% Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why
+% Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why 
 
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
@@ -693,6 +692,49 @@ I would like to thank ....
 
 \newpage
 \printbibliography
+
+\newpage
+\section{Appendices}
+\label{sec:appendices}
+
+Here I...
+
+\begin{table}[h!]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular} {|p{3cm}|p{3cm}|p{3.5cm}|}
+  \hline
+  \textbf{Language} & \textbf{Number of Words} & \textbf{Number of sentences} \\
+  \hline
+  Icelandic & 629995 & 41847 \\
+  German & 629987 & 37261 \\
+  Polish & 629997 & 42138 \\
+  Ido & 629990 & 43496 \\
+  Afrikaans & 629994 & 30737 \\
+  Kotava & 617400 & 48145 \\
+  Hungarian & 629946 & 39916 \\
+  Lingua Franca Nova & 628683 & 32188 \\
+  Danish & 629999 & 38260 \\
+  Spanish & 629978 & 24886 \\
+  Interlingua & 629996 & 32229 \\
+  French & 629983 & 27248 \\
+  Occitan & 629998 & 33762 \\
+  Esperanto & 629994 & 33317 \\
+  Dutch & 629997 & 34627 \\
+  Turkish & 629995 & 43573 \\
+  English & 629958 & 29574 \\
+  Tagalog & 629989 & 29855 \\
+  Swedish & 629998 & 36370 \\
+  Vietnamese & 629958 & 21115 \\
+  Italian & 629987 & 24487 \\
+  Volapük & 629999 & 55920 \\
+  Indonesian & 629997 & 34683 \\
+  Finnish & 629994 & 52637 \\
+  \hline
+  \end{tabular}
+\caption{Lengths of each text after pre-processing.}
+\label{tbl:preprocessedtexts}
+\end{table}
 
 \end{document}
 

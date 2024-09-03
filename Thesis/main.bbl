@@ -53,6 +53,35 @@
       \verb https://api.semanticscholar.org/CorpusID:58553165
       \endverb
     \endentry
+    \entry{Attardi2015wikiextractor}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=09d5a7d636bf73c855ed5ef9bbd835eb}{%
+           family={Attardi},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{fullhash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{bibnamehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{authorbibnamehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{authornamehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{authorfullhash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/attardi/wikiextractor}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{WikiExtractor}
+      \field{year}{2015}
+    \endentry
     \entry{douglas2015book}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1fc23c9717699e5c4bceea0248c90a12}{%
