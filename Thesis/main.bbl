@@ -95,6 +95,41 @@
       \verb 10.4324/9781315694566.ch8
       \endverb
     \endentry
+    \entry{Bausani1974book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8b032b4005fea71585b37954063deed}{%
+           family={Bausani},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Ubaldini}%
+      }
+      \strng{namehash}{c8b032b4005fea71585b37954063deed}
+      \strng{fullhash}{c8b032b4005fea71585b37954063deed}
+      \strng{bibnamehash}{c8b032b4005fea71585b37954063deed}
+      \strng{authorbibnamehash}{c8b032b4005fea71585b37954063deed}
+      \strng{authornamehash}{c8b032b4005fea71585b37954063deed}
+      \strng{authorfullhash}{c8b032b4005fea71585b37954063deed}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9788834003879}
+      \field{series}{Collana di studi umanistici 'Ulisse'}
+      \field{title}{Le lingue inventate: Linguaggi artificiali, linguaggi segreti, linguaggi universali}
+      \field{year}{1974}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=z4GAngEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=z4GAngEACAAJ
+      \endverb
+    \endentry
     \entry{Gobbo2008article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
@@ -575,6 +610,38 @@
       \field{month}{01}
       \field{title}{Planned Languages: From Concept to Reality}
       \field{year}{2001}
+    \endentry
+    \entry{Tonkin2015article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e0d5059428257a3707f2d681e10f2220}{%
+           family={Tonkin},
+           familyi={T\bibinitperiod},
+           given={Humphrey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{fullhash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{bibnamehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{authorbibnamehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{authornamehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{authorfullhash}{e0d5059428257a3707f2d681e10f2220}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Interdisciplinary Description of Complex Systems}
+      \field{month}{04}
+      \field{title}{Language Planning and Planned Languages: How Can Planned Languages Inform Language Planning?}
+      \field{volume}{13}
+      \field{year}{2015}
+      \field{pages}{193\bibrangedash 199}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.7906/indecs.13.2.1
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
