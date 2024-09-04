@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{List of Figures}{iv}{}%
-\contentsline {section}{List of Tables}{iv}{}%
-\contentsline {section}{List of Abbreviations}{iv}{}%
+\contentsline {section}{List of Figures}{v}{}%
+\contentsline {section}{List of Tables}{v}{}%
+\contentsline {section}{List of Abbreviations}{v}{}%
 \contentsline {section}{\numberline {1}Introduction \& Motivation}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Scope of Study \& Research Question}{2}{}%
 \contentsline {section}{\numberline {2}Background}{3}{}%
@@ -21,12 +21,17 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Zipfian Distribution}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}Entropy}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}Perplexity}{10}{}%
-\contentsline {subsubsection}{\numberline {3.4.6}PCA}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}PCA}{10}{}%
 \contentsline {subsection}{\numberline {3.5}Classification Models}{10}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{10}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Outlier Detection}{10}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}One-Class SVM}{10}{}%
+\contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{10}{}%
 \contentsline {section}{\numberline {4}Results}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Results of TTR \& MATTR}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{11}{}%
+\contentsline {subsection}{\numberline {4.3}Results of PCA}{11}{}%
+\contentsline {subsection}{\numberline {4.4}Results of One-Class SVM}{11}{}%
+\contentsline {subsection}{\numberline {4.5}Results of Decision Tree}{11}{}%
 \contentsline {section}{\numberline {5}Discussion}{12}{}%
 \contentsline {section}{\numberline {6}Conclusion}{13}{}%
 \contentsline {subsection}{\numberline {6.1}Future Work}{13}{}%

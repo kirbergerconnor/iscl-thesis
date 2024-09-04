@@ -307,6 +307,8 @@ Write the abstract here.
 \textbf{MATTR} & ~~~ & Moving-Average Type-Token Ratio \\
 \textbf{IAL} & ~~~ & International Auxiliary Language \\
 \textbf{SVO} & ~~~ & Subject-Verb-Object \\
+\textbf{SOV} & ~~~ & Subject-Object-Verb \\
+
 
 \end{tabular}
 \newpage
@@ -375,7 +377,7 @@ The following is a breakdown of the structure of this thesis from here onward: t
 \section{Background}
 \label{sec:background}
 
-The vast landscape of linguistic research comprises a myriad of literature delving into the intricacies of languages, both natural and constructed. As this paper is concerned with constructed languages in particular and possible distinctive properties they may have, a brief discussion of their history and development is of relevance here. Following this is an overview of some related literature, after which I will discuss the various computational methods implemented in this study and provide some background information on how they work. 
+The vast landscape of linguistic research comprises a myriad of literature delving into the intricacies of languages, both natural and constructed. As this paper is concerned with constructed languages in particular and possible distinctive properties they may have, this section begins with a brief overview of their history and development, which provides some relevant context. Following this is an overview of some related literature, after which I will discuss the various computational methods implemented in this study and provide some background information on how they work. 
 
 \subsection{History of Constructed Languages}
 \label{ssec:historyofconlangs}
@@ -403,14 +405,14 @@ The vast landscape of linguistic research comprises a myriad of literature delvi
 
 While the construction of languages is possibly as old as human history, they typically were not written down and were limited to in-group communication \parencite{Gobbo2016article}. The first documented endeavors came out of religious contexts and were likely used as secret languages, intentionally obscured and incomprehensible to lay people. In the 12\textsuperscript{th} century, abbess Hildegard of Bingen described and recorded a lexicon for Lingua Ignota, a Latin name meaning "unknown language". While extensive documentation of it (i.e., a grammar) was never found, it possessed a semiotic system based on Latin, German, and Greek. Later in the 14\textsuperscript{th} century, a group of Sufi mystics created Balaibalan, a language written in the Ottoman Turkish alphabet and which incorporated features of Persian, Turkish, and Arabic languages \parencite{Novikov2022article}.
 
-Interest in creating such languages picked up in the 17\textsuperscript{th} century with the rise of so-called philosophical languages. In contrast to the last two, these languages were made to be more precise, less ambiguous, and better allow for philosophical reasoning (compared to natural language), such as by organizing world knowledge into hierarchies \parencite{goodall2022article}. Notable figures involved in making these include Francis Lodwick, Gottfried Leibniz, and John Wilkins, the latter of whose being arguably the most well-known and influential. Wilkins created a system of semantic categorization, cataloging all concepts in the universe \parencite{okrent2009book}. An example can be seen in figure \ref{fig:wilsonslanguageexample}.
+Interest in creating such languages picked up in the 17\textsuperscript{th} century with the rise of so-called philosophical languages. In contrast to the last two, these languages were made to be more precise, less ambiguous, and better allow for philosophical reasoning (compared to natural language), such as by organizing world knowledge into hierarchies \parencite{goodall2022article}. Notable figures involved in making these include Francis Lodwick, Gottfried Leibniz, and John Wilkins, the latter of whose being arguably the most well-known and influential. Wilkins created a system of semantic categorization, cataloging all concepts in the universe \parencite{okrent2009book}, and then published his proposed language \parencite{Wilkins1968book}. An example of this hierarchal categorization can be seen in Figure \ref{fig:wilsonslanguageexample}.
 
 % Include figure of Wilson's work or is it unnecessary? 
 
 \begin{figure}
   \centering
         \includegraphics[width=1.0\textwidth]{WilsonsLanguageExample.png}
-        \caption{Wilson's expression of "dog" \parencite{goodall2022article}}
+        \caption{Wilson's expression of "dog" in his philosophical language \parencite{goodall2022article}}
         \label{fig:wilsonslanguageexample}
 \end{figure}
 
@@ -419,7 +421,7 @@ Interest in creating such languages picked up in the 17\textsuperscript{th} cent
 
 In the 19\textsuperscript{th} and 20\textsuperscript{th} centuries the focus for language construction, especially in Europe, shifted to that of making international auxiliary languages (IALs) intended to better enable communication across language barriers, i.e., people who do not share a similar language \parencite{goodall2022article}. Notably, this means they were generally designed to resemble natural language, with choice exceptions being the simplification of certain linguistic features. The surge in need for IALs correlated with the increase in prevalence and accessibility regarding international travel and communication at the time. Such languages were also described as "neutral" \parencite{Large1985book}, in the sense that individual advantages amongst speakers and learners would, theoretically, not exist due to IALs being second languages to everyone \parencite{Gobbo2016article}. That being said, many of the most prominent examples (e.g., Volapük, Interlingua, Esperanto, Ido) are derived only from the Indo-European language family \parencite{Novikov2022article,goodall2022article}, so such a description might not be apt. 
 
-% Discuss all of the IALs here? Or only some? Or is it unnecessary to discuss them in such detail anyways?
+% Discuss all of the IALs here? Or in the Data section instead? Or is it unnecessary to discuss them in such detail anyways?
 % [DELETED] clubs were soon founded and spread around Europe and then to the United States and China, too \parencite{okrent2009book}. At its peak nearly a decade later, there were over two hundred societies and clubs, three hundred learning manuals \parencite{Gobbo2016article}, and twenty-five routinely published Volapük journals \parencite{okrent2009book}.
 % (Gobbo 2008) for discussing Ido
 
@@ -474,10 +476,14 @@ A two-dimensional classification schema for constructed languages containing sev
 % Prior studies on entropies of languages
 % Prior cross-linguistic studies examining linguistic features like TTR of constructed/natural languages
 % (Gobbo 2016) "The literature on planned languages is abundant and diverse, written in many languages and quite often outside of the usual peer-review system (Blanke, 2003), but in comparison to natural languages there are only few specific studies addressing the complexity of planned languages from the point of view of learnability. For instance, Jansen (2012) addresses the problems of learning the reflexive pronouns in Esperanto. In his review of the doctoral dissertation of Heil (1999), who compares the grammar reduction in French-based creoles and planned languages, Haitao (2001) rightly points out that more comparative work in this field is needed, and on a more solid basis."
+% Performance of Robust Support Vector Machine Classification Model on Balanced, Imbalanced, and Outliers Datasets (Sembiring 2024)
 
 In contrast to the abundance in literature and cross-linguistic analyses done on natural languages, similar research which also includes constructed languages is relatively sparse. In particular, while there is research that analyzes specific instances of linguistic differences between certain natural and constructed languages, large-scale cross-linguistic studies which utilize computational methods to classify the two based on linguistic features are practically nonexistent. Consequently, the present study is a somewhat novel approach. However, there is precedent for this research and the specific features examined, as well as computational approaches used, which this section will describe.
 
 As previously mentioned, the creation of IALs such as Esperanto often involved the intentional simplification of particular language features to facilitate language acquisition, for instance having more regularity in their morphological systems. Intuitively, then, one would assume this translates to measurable differences in various aspects of linguistic complexity when compared to natural languages, which often have irregularities as a result of their development and evolution. 
+
+% Evaluating the irregularity of natural languages (Gomez 2017) approximates entropy of written texts and finds differences between language families, also compares their results to Esperanto
+% Discuss research and the use for the models used here, one-class svm and decision tree, for outlier detection/binary classification
 
 \subsection{Computational Methods}
 \label{ssec:computationalmethods}
@@ -500,7 +506,7 @@ In total, twenty-four languages are analyzed in this study. Six of these are con
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular} {|p{3cm}|p{3cm}|p{3cm}|}
 \hline
-\textbf{Language} & \textbf{Language Influences} & \textbf{Word Order} \\
+\textbf{Language} & \textbf{Language Family Influences} & \textbf{Word Order} \\
 \hline
 Esperanto & & SVO \\
 Interlingua & & \\
@@ -510,7 +516,7 @@ Kotava & & \\
 Ido & & \\
 \hline
 \end{tabular}
-\caption{}
+\caption{Constructed languages and their respective language family influences used in the study.}
 \label{tbl:conlangs}
 \end{table}
 
@@ -540,6 +546,7 @@ As this study is cross-linguistic in nature, it would naturally be ideal to use 
 % Include Blanke's (Schubert2001book) description of Esperanto as the only successful planned language
 
 % Example link to one of the files used: https://dumps.wikimedia.org/novwiki/20240701/ then select novwiki-20240701-pages-articles-multistream.xml.bz2 1.4 MB
+% Mention the year/date of the file to specify the dump
 % Which languages' files did you limit (using the max_articles variable) with the script? The biggest files (eo, da, fi, tr, id, vi, hu, sv, nl, pl, it, es, fr, de, en) I gradually limited the max number of files to be extracted from the dumps; max 50000 for eo, 
 
 The corpora were compiled using Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length in number of words, while still maintaining complete sentences. In terms of file size, the smallest dump was Lingua Franca Nova, so its was the minimum value used to shorten the others. 
@@ -552,10 +559,11 @@ The corpora were compiled using Wikimedia database dumps---large files containin
 \subsection{Data Preprocessing}
 \label{ssec:datapreprocessing}
 
-Preprocessing text data is essential for NLP tasks. As this study covers a broad range of different languages and includes constructed languages, which often have less resources available, meticulous effort was made to obtain as close to a parallel set of corpora as possible and to clean the text thoroughly. 
+Preprocessing text data is essential for natural language processing (NLP) tasks. As this study covers a broad range of different languages, including constructed languages which typically are low-resource, meticulous effort was made to obtain as close to a comparable set of texts as possible. This involved 
 
 % Preprocessed by excluding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
-% Wanted to keep full sentences (why?), so there is not exact same word counts/sentence counts for all files. Include chart of total words/sentences for each language file?
+% Explain more in depth the regex used and why. For example, I removed parantheses along with everything inside of them to try to maintain grammatical sentences without redundancy or fragments in the middle
+% Wanted to keep full sentences (why? what's useful about having the texts as one sentence per line for your study?), so there is not exact same word counts/sentence counts for all files. Include chart of total words/sentences for each language file?
 % Mention why the WikiExtractor script was used in the first place
 % Ex: python WikiExtractor.py --infn ~/Downloads/enwiki-20240701-pages-articles-multistream.xml.bz2
 % Show some examples of the regex used from your code
@@ -588,6 +596,8 @@ After extracting the text from the dump files through the use of WikiExtractor, 
 % Mention in each subsubsection why the particular feature was extracted, why it was seen as a possible indicator or useful information in this experiment
 % IMPORTANT: RUN EVERYTHING AGAIN. ONLY PRE-PROCESSING WAS FINISHED, 2 NEW LANGUAGES ADDED TO STUDY
 
+Since this study uses models for classification, it is necessary to first extract the features...
+
 \subsubsection{TTR \& MATTR}
 \label{ssec:ttrandmattr}
 
@@ -600,6 +610,16 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 
 % Mention the root languages the conlangs are based on (i.e. Esperanto and German) to explain/describe some of the morphological complexity of said conlang
 % "A popular algorithmic way to approximate the morphological complexity of a language has been Patrick Juola’s (1998, 2008) suggestion of distorting word structures by using a unique random number for each different word type. After distortion, the data is compressed using a compression algorithm. Then the size of the compressed original word file is divided by the size of the compressed distorted word data file. The result tells the complexity of each language’s morphology on the basis of Kolmogorov complexity that the compression algorithm approximates." (Kettunen 2014)
+% Show examples of the segmentations done by Morfessor
+% Show examples/results of checking the accuracy of Morfessor's segmentations
+% Using trained Morfessor model (for example, first training it on English corpus) to test its segmentation accuracy for other languages?
+% Unsupervised morpheme segmentation and morphology induction from text corpora using Morfessor 1.0 (Creutz 2004)
+% Morfessor EM+Prune: Improved Subword Segmentation with Expectation Maximization and Pruning (Gronroos 2020)
+% Show example of morphological segmentation at beginning of this section (e.g. Gronroos 2020)
+% Morfessor and hutmegs: Unsupervised morpheme segmentation for highly-inflecting and compounding languages (Creutz 2005 article2)
+% Towards an unsupervised morphological segmenter for isiXhosa (Mzamo 2019)
+% Explain the morphological systems of the languages (e.g. agglutinative), include a table 
+% (Mzamo 2019) "Minimum Description Length (MDL) [20] has seen extensive use in unsupervised morphological segmentation, primarily as a measure of fit of the training data to heuristic models and statistical models [21], [22]. The comparative standard used in this study, Morfessor-Baseline [23], uses MDL and Maximum likelihood estimation."
 
 The morphological systems of each language were analyzed using Morfessor, 
 
@@ -612,18 +632,21 @@ The morphological systems of each language were analyzed using Morfessor,
 \label{ssec:entropy}
 
 In information science, entropy means... 
-In linguistics, entropy refers to...
 Surprisal...
 
-% Calculated character, word, text, and lexical entropies
+% Evaluating the Irregularity of Natural Languages (Gomez 2017) has more info for this section, starting on page 2
+% Calculated character, word, text, and lexical entropies (and reverse)
+% Describe the RNNs used for calculating these, as well as the server it was run on. Did not train on GPU!
 
 The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
-\subsubsection{Perplexity}
-\label{ssec:perplexity}
+% Perplexity is related to entropy...
+% Cross-entropy as the loss function...
 
-Perplexity is related to entropy...
-Cross-entropy as the loss function...
+% Text entropy calculated using Character-Level LSTM in PyTorch (torchrnn.ipynb) https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level%20LSTM%20with%20PyTorch.ipynb 
+
+% Lexical entropy (and reverse lexical entropy) calculated using Character-Level RNN in Tensorflow (kerasrnn.ipynb) 
+% the entropy value was taken from the val_loss of the model
 
 \subsubsection{PCA}
 \label{ssec:pca}
@@ -632,7 +655,45 @@ Cross-entropy as the loss function...
 
 Principal Component Analysis was performed for dimensionality reduction. 
 
-% Discuss variance ratio
+% Discuss explained variance ratio
+% Use https://www.jcchouinard.com/pca-explained-variance/ for visualizing explained variance
+
+\subsection{Classification Models}
+\label{ssec:classification}
+
+% Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why 
+% Include tables of the hyperparameters for both models, explained how they were tuned (grid search, etc.)
+
+\subsubsection{Decision Tree}
+\label{ssec:decisiontree}
+
+Decision Tree Classifier...
+
+\subsubsection{One-Class SVM}
+\label{ssec:oneclasssvm}
+
+For outlier detection...
+
+\subsection{Evaluation of Classifiers}
+
+% Methods for evaluating the accuracy, etc. of the classifiers, RNNs used for calculating the entropies (?), and morphological segementations with Morfessor (?)
+
+\newpage
+\section{Results}
+\label{sec:results}
+
+This section reports the results of each of the methods implemented.
+
+\subsection{Results of TTR \& MATTR}
+\label{sec:ttrmattrresults}
+
+% Include table showing number of tokens and types for each language, together with the ratio calculation
+
+\subsection{Results of Morphological Segmentation}
+\label{sec:morphologicalsegmentationresults}
+
+\subsection{Results of PCA}
+\label{sec:pcaresults}
 
 \begin{figure}
   \centering
@@ -641,17 +702,15 @@ Principal Component Analysis was performed for dimensionality reduction.
         \label{fig:pcaanalysis}
 \end{figure}
 
+% Include graph of explained variance following https://www.jcchouinard.com/pca-explained-variance/
+
 A script was used to increase readability of the text in the graph\footnote{https://github.com/Phlya/adjustText}.
 
-\subsection{Classification Models}
-\label{ssec:classification}
+\subsection{Results of One-Class SVM}
+\label{sec:oneclasssvmresults}
 
-% Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why 
-
-\subsubsection{Decision Tree}
-\label{ssec:decisiontree}
-
-Decision Tree Classifier...
+\subsection{Results of Decision Tree}
+\label{sec:decisiontreeresults}
 
 \begin{figure}
   \centering
@@ -659,13 +718,6 @@ Decision Tree Classifier...
         \caption{Decision Tree Classifier}
         \label{fig:decisiontree}
 \end{figure}
-
-\subsubsection{Outlier Detection}
-\label{ssec:outlierdetection}
-
-\newpage
-\section{Results}
-\label{sec:results}
 
 \newpage
 \section{Discussion}
@@ -699,6 +751,7 @@ I would like to thank ....
 
 Here I...
 
+% Include number of symbols in the alphabet for each language? (Gomez 2014, Table 1)
 \begin{table}[h!]
   \centering
   \renewcommand{\arraystretch}{1.5}
@@ -735,6 +788,8 @@ Here I...
 \caption{Lengths of each text after pre-processing.}
 \label{tbl:preprocessedtexts}
 \end{table}
+
+% Include tables of all the hyperparameters of the two RNNs and two classifier models
 
 \end{document}
 

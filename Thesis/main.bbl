@@ -672,6 +672,36 @@
       \verb 10.7906/indecs.13.2.1
       \endverb
     \endentry
+    \entry{Wilkins1968book}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ad4e4c75d268c913f02d75b1e4e611c}{%
+           family={Wilkins},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{fullhash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{bibnamehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{authorbibnamehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{authornamehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{authorfullhash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An essay towards a real character, and a philosophical language, 1668}
+      \field{year}{1968}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:161991811
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:161991811
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

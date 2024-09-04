@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  3 SEP 2024 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  4 SEP 2024 03:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1228,7 +1228,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--250
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] [3] (./main.lof)
+ [2] [3] [4] (./main.lof
+Overfull \hbox (13.98827pt too wide) in paragraph at lines 2--2
+ [][] []\T1/cmr/m/n/10.95 Wilson's ex-pres-sion of "dog" in his philo-soph-i-cal lan-guage (Goodall 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1236,7 +1241,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--250
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [4]
+ [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1261,10 +1266,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-<WilsonsLanguageExample.png, id=68, 576.65437pt x 69.76062pt>
+<WilsonsLanguageExample.png, id=71, 576.65437pt x 69.76062pt>
 File: WilsonsLanguageExample.png Graphic file (type png)
 <use WilsonsLanguageExample.png>
-Package pdftex.def Info: WilsonsLanguageExample.png  used on input line 412.
+Package pdftex.def Info: WilsonsLanguageExample.png  used on input line 414.
 (pdftex.def)             Requested size: 426.79135pt x 51.63268pt.
 
 
@@ -1275,10 +1280,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4 <./WilsonsLanguageExample.png>]
-<TaxonomyOfPlannedLanguages.png, id=75, 748.7975pt x 376.90813pt>
+<TaxonomyOfPlannedLanguages.png, id=77, 748.7975pt x 376.90813pt>
 File: TaxonomyOfPlannedLanguages.png Graphic file (type png)
 <use TaxonomyOfPlannedLanguages.png>
-Package pdftex.def Info: TaxonomyOfPlannedLanguages.png  used on input line 441.
+Package pdftex.def Info: TaxonomyOfPlannedLanguages.png  used on input line 443.
 (pdftex.def)             Requested size: 426.79135pt x 214.82835pt.
 
 
@@ -1297,8 +1302,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 503--503
-[]|\T1/cmr/bx/n/8 Language In-flu-
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
+[]|\T1/cmr/bx/n/8 Language Fam-ily
  []
 
 
@@ -1325,15 +1330,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-<pcaanalysis.png, id=99, 778.3479pt x 379.4175pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+<pcaanalysis.png, id=105, 778.3479pt x 379.4175pt>
 File: pcaanalysis.png Graphic file (type png)
 <use pcaanalysis.png>
-Package pdftex.def Info: pcaanalysis.png  used on input line 639.
+Package pdftex.def Info: pcaanalysis.png  used on input line 700.
 (pdftex.def)             Requested size: 426.79135pt x 208.04343pt.
-<decisiontree.png, id=100, 1134.639pt x 570.933pt>
+<decisiontree.png, id=106, 1134.639pt x 570.933pt>
 File: decisiontree.png Graphic file (type png)
 <use decisiontree.png>
-Package pdftex.def Info: decisiontree.png  used on input line 658.
+Package pdftex.def Info: decisiontree.png  used on input line 717.
 (pdftex.def)             Requested size: 426.79135pt x 214.75272pt.
 
 
@@ -1343,7 +1356,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10 <./pcaanalysis.png>]
+[11 <./pcaanalysis.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1351,15 +1364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./decisiontree.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
+[12 <./decisiontree.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1376,26 +1381,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 694.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 746.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (8.99794pt too wide) in paragraph at lines 695--695
+Overfull \hbox (8.99794pt too wide) in paragraph at lines 747--747
 [][]\T1/cmr/m/n/12 Attardi, Giuseppe (2015). \T1/cmr/m/it/12 WikiEx-trac-tor\T1/cmr/m/n/12 . $\T1/cmtt/m/n/12 https : / / github . com / attardi /
  []
 
 
-Overfull \hbox (6.2036pt too wide) in paragraph at lines 695--695
+Overfull \hbox (6.2036pt too wide) in paragraph at lines 747--747
 [][]\T1/cmr/m/n/12 Greenberg, Joseph H. (1970). ``Lan-guage Uni-ver-sals''. In: \T1/cmr/m/it/12 The-o-ret-i-cal Foun-
  []
 
 
-Overfull \hbox (40.70558pt too wide) in paragraph at lines 695--695
+Overfull \hbox (40.70558pt too wide) in paragraph at lines 747--747
 \T1/cmr/m/it/12 da-tions\T1/cmr/m/n/12 . Berlin, Boston: De Gruyter Mou-ton, pp. 61^^U112. \T1/cmr/m/sc/12 isbn\T1/cmr/m/n/12 : 9783110814644.
  []
 
 
-Overfull \hbox (29.72478pt too wide) in paragraph at lines 695--695
+Overfull \hbox (29.72478pt too wide) in paragraph at lines 747--747
 \T1/cmtt/m/n/12 lib . rus . ec / book / index . php ? md5 = 0B5CF2BFC00DCB569EBA10BD96AD68D4$\T1/cmr/m/n/12 . 
  []
 
@@ -1407,7 +1412,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-Overfull \hbox (32.99799pt too wide) in paragraph at lines 695--695
+Overfull \hbox (32.99799pt too wide) in paragraph at lines 747--747
 \T1/cmr/m/n/12 ments, and Its Place in Lan-guage Sci-ence''. In: pp. 7^^U44. \T1/cmr/m/sc/12 isbn\T1/cmr/m/n/12 : 9783110886115.
  []
 
@@ -1441,18 +1446,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32281 strings out of 474116
- 642405 string characters out of 5743682
+ 32291 strings out of 474116
+ 642695 string characters out of 5743682
  1947187 words of memory out of 5000000
- 54028 multiletter control sequences out of 15000+600000
+ 54038 multiletter control sequences out of 15000+600000
  582639 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,117p,1331b,3166s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,117p,1331b,3166s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (22 pages, 797496 bytes).
+Output written on main.pdf (23 pages, 804853 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 241 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
