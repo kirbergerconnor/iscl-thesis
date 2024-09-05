@@ -1,3 +1,5 @@
+# Used for calculating the lexical entropy
+
 import os
 import pandas as pd
 import tensorflow as tf
@@ -16,7 +18,7 @@ if __name__ == '__main__':
     for filename in os.listdir(folder):
         if filename.endswith('.txt'):
             count += 1
-            print(f'Starting {filename}...{count}/22')
+            print(f'Starting {filename}...{count}/24')
             corpus = os.path.splitext(os.path.basename(filename))[0].split('_')[0]
             text = open(os.path.join(folder, filename), 'r', encoding='utf-8').read().splitlines()
             chars = list(set(chain(*(char for line in text for char in line if line if not char.isspace()))))

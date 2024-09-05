@@ -549,6 +549,9 @@ As this study is cross-linguistic in nature, it would naturally be ideal to use 
 % Mention the year/date of the file to specify the dump
 % Which languages' files did you limit (using the max_articles variable) with the script? The biggest files (eo, da, fi, tr, id, vi, hu, sv, nl, pl, it, es, fr, de, en) I gradually limited the max number of files to be extracted from the dumps; max 50000 for eo, 
 
+\subsubsection{Wikimedia}
+\label{sec:wikimedia}
+
 The corpora were compiled using Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length in number of words, while still maintaining complete sentences. In terms of file size, the smallest dump was Lingua Franca Nova, so its was the minimum value used to shorten the others. 
 
 % Previously (in 2023) used a min value of 650000 words, now (in 2024) using min value of 630000 words
@@ -563,6 +566,7 @@ Preprocessing text data is essential for natural language processing (NLP) tasks
 
 % Preprocessed by excluding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
 % Explain more in depth the regex used and why. For example, I removed parantheses along with everything inside of them to try to maintain grammatical sentences without redundancy or fragments in the middle
+% Removed subtitles of Wikipedia pages (by adding extra forward slashes '/////' in the WikiExtractor code, so it would be easily identified using Regex later)
 % Wanted to keep full sentences (why? what's useful about having the texts as one sentence per line for your study?), so there is not exact same word counts/sentence counts for all files. Include chart of total words/sentences for each language file?
 % Mention why the WikiExtractor script was used in the first place
 % Ex: python WikiExtractor.py --infn ~/Downloads/enwiki-20240701-pages-articles-multistream.xml.bz2
@@ -574,17 +578,7 @@ After extracting the text from the dump files through the use of WikiExtractor, 
 \subsection{Libraries and APIs}
 \label{ssec:librariesandapis}
 
-\subsubsection{Keras}
-\label{ssec:keras}
-
-\subsubsection{PyTorch}
-\label{ssec:pytorch}
-
-\subsubsection{NumPy, Pandas, and Matplotlib}
-\label{ssec:numpypandasmat}
-
-\subsubsection{scikit-learn}
-\label{ssec:scikitlearn}
+% Briefly introduce and explain Keras, PyTorch, NumPy, Pandas, Matplotlib, scikit-learn libraries
 
 \subsection{Feature Extraction}
 \label{ssec:featureextraction}
@@ -594,7 +588,8 @@ After extracting the text from the dump files through the use of WikiExtractor, 
 % Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
 
 % Mention in each subsubsection why the particular feature was extracted, why it was seen as a possible indicator or useful information in this experiment
-% IMPORTANT: RUN EVERYTHING AGAIN. ONLY PRE-PROCESSING WAS FINISHED, 2 NEW LANGUAGES ADDED TO STUDY
+% Mention use of StandardScaler(), etc.
+% torchrnn.py is for text entropy, kerasrnn.py and reversekerasrnn.py are for lexical entropy
 
 Since this study uses models for classification, it is necessary to first extract the features...
 
@@ -632,11 +627,11 @@ The morphological systems of each language were analyzed using Morfessor,
 \label{ssec:entropy}
 
 In information science, entropy means... 
-Surprisal...
 
 % Evaluating the Irregularity of Natural Languages (Gomez 2017) has more info for this section, starting on page 2
 % Calculated character, word, text, and lexical entropies (and reverse)
 % Describe the RNNs used for calculating these, as well as the server it was run on. Did not train on GPU!
+% Mention suprisal
 
 The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
@@ -647,11 +642,16 @@ The entropy was calculated for the character and word distributions in each of t
 
 % Lexical entropy (and reverse lexical entropy) calculated using Character-Level RNN in Tensorflow (kerasrnn.ipynb) 
 % the entropy value was taken from the val_loss of the model
+% early stopping was used in the tensorflow models for lexical entropy, based on val_loss and with patience=3
 
 \subsubsection{PCA}
 \label{ssec:pca}
 
 % "To analyze whether measures include multiple dimensions or not, we perform dimensionality reduction using principal component analysis (PCA). The intuition here is that if the measures differ in what they measure, the explained variance should be shared among multiple principal components. Furthermore, if the lower-order principal components measure meaningful dimensions of morphological complexity, we expect them to indicate linguistically relevant differences between languages." (Coltekin 2022)
+% Explain why you chose n_components = 0.95 for the PCA
+% Use scree plot? Kaiser's rule?
+% Do a breakdown of how PCA and explained variance (the mathematics) works, following https://machinelearningmastery.com/principal-component-analysis-for-visualization/
+% Do PCA in 2 or 3 dimensions/components? (for 3, refer to https://machinelearningmastery.com/principal-component-analysis-for-visualization/)
 
 Principal Component Analysis was performed for dimensionality reduction. 
 
@@ -672,11 +672,14 @@ Decision Tree Classifier...
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
 
+% Would it make sense to do this two times with the same model, once with the inlier class as conlangs and once as natlangs?
+
 For outlier detection...
 
 \subsection{Evaluation of Classifiers}
 
 % Methods for evaluating the accuracy, etc. of the classifiers, RNNs used for calculating the entropies (?), and morphological segementations with Morfessor (?)
+% Should I use sklearn.metrics 'classification_report'? As done by https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
 
 \newpage
 \section{Results}

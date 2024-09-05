@@ -1,3 +1,5 @@
+# Used for calculating the text entropy
+
 import os
 import numpy as np
 import pandas as pd
@@ -216,7 +218,7 @@ if __name__ == '__main__':
             f.close() 
 
             print(f'Starting {file}...')
-            print(f'{count}/22')
+            print(f'{count}/24')
             count += 1
             chars = tuple(set(text))
             int2char = dict(enumerate(chars))
