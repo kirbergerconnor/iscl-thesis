@@ -2407,7 +2407,8 @@
     <bcf:citekey order="36" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="37" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Attardi2015wikiextractor</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Novikov2022article</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Attardi2015wikiextractor</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

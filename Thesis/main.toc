@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {3.4}Feature Extraction}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Zipfian Distribution}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Entropy}{9}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Zipfian Distribution}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Entropy}{10}{}%
 \contentsline {subsubsection}{\numberline {3.4.5}PCA}{10}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{10}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{10}{}%
