@@ -296,6 +296,7 @@ Write the abstract here.
 \addcontentsline{toc}{section}{List of Abbreviations}
 
 \begin{tabular}{lcl}
+\textbf{API} & ~~~ & Application Programming Interface \\
 \textbf{NLP} & ~~~ & Natural Language Processing \\
 \textbf{PCA} & ~~~ & Principle Component Analysis \\
 \textbf{TF-IDF} & ~~~ & Term Frequency - Inverse Document Frequency \\
@@ -483,21 +484,38 @@ In contrast to the abundance in literature and cross-linguistic analyses done on
 As previously mentioned, the creation of IALs such as Esperanto often involved the intentional simplification of particular language features to facilitate language acquisition, for instance having more regularity in their morphological systems. Intuitively, then, one would assume this translates to measurable differences in various aspects of linguistic complexity when compared to natural languages, which often have irregularities as a result of their development and evolution. 
 
 % Evaluating the irregularity of natural languages (Gomez 2017) approximates entropy of written texts and finds differences between language families, also compares their results to Esperanto
-% Discuss research and the use for the models used here, one-class svm and decision tree, for outlier detection/binary classification
-
-\subsection{Computational Methods}
-\label{ssec:computationalmethods}
+% Discuss research and the justification for using  one-class svm, decision tree, and randomforest for outlier detection/binary classification
 
 \newpage
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I explain in greater detail the dataset, APIs, and libraries used, as well as the approaches and steps taken to arrive at my results. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are measurements of morphological complexity, type-token ratio (TTR), moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once these were calculated for each language, the task became that of binary classification using these values with the use of two models: a one-class support vector machine (SVM) and a decision tree. 
+In this section, I explain in greater detail the data and steps taken for preprocessing it, as well as the feature extraction and machine learning methods used in my experiment. Because of the broad nature of this study, several different experiments are done to test various linguistic features. Namely, these features are measurements of morphological complexity, type-token ratio (TTR), moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once these were calculated for each language, the task became that of binary classification using these values with the use of two models: a one-class support vector machine (SVM) and a decision tree. Finally, I also include a brief description of the various APIs and libraries used.
 
 \subsection{Data}
 \label{ssec:data}
 
-In total, twenty-four languages are analyzed in this study. Six of these are constructed languages: Esperanto, Interlingua, Lingua Franca Nova, Volapük, Kotava, and Ido. The remaining eighteen are natural languages: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
+In total, twenty-four languages are analyzed in this study. Six of these are constructed: Esperanto, Interlingua, Lingua Franca Nova, Volapük, Kotava, and Ido. The remaining eighteen are natural languages belonging to five different language families: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. The language families represented are Austroasiatic, Austronesian, Turkic, Uralic, and Indo-European, with the latter comprising the bulk of the natural languages used. This diversity was intentional, 
+
+% Language family breakdown, make a pie chart for this
+% German - indo-euro - germanic 
+% english - indo-euro - germanic
+% spanish - indo-euro - romance
+% polish - indo-euro - slavic
+% vietnamese - austroasiatic 
+% indonesian - austronesian
+% turkish - turkic
+% tagalog - austronesian
+% hungarian - uralic
+% french - indo-euro - romance
+% finnish - uralic
+% italian - indo-euro - romance
+% dutch - indo-euro - germanic
+% occitan - indo-euro - romance
+% danish - indo-euro - germanic
+% swedish - indo-euro - germanic
+% afrikaans - indo-euro - germanic
+% icelandic - indo-euro - germanic
 
 % For conlangs, how should I call the languages they are drawn from? "Language influences" or is there a better way to say it?
 
@@ -522,7 +540,7 @@ Ido & & \\
 
 % Plot the languages + their language families to have some kind of visual comparison (table also works, include some data points for comparing each language i.e. number of speakers, word order (what do I do when it isn't clear due to having a more free word order, like for Esperanto, Finnish, etc?))
 % Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
-% Discuss their language families, writing scripts (why not Japanese or Chinese?), and why those 4 constructed languages specifically
+% Discuss their language families, writing scripts (why not Japanese or Chinese?), and why those 6 constructed languages specifically
 % Explain which natural language families the conlangs are based on, and surface level distinctions they may have
 % von Oostendorp's Constructed Language and Linguistic Theory cites information about Ido (and Interlingua) around pages 7-8, how it is different from Esperanto
 % Write more in-depth about Ido, Esperanto, Interlingua, Volapük, and Lingua Franca Nova. Who created them, how many estimated speakers, their purpose for being created, etc. etc.
@@ -552,7 +570,11 @@ As this study is cross-linguistic in nature, it would naturally be ideal to use 
 \subsubsection{Wikimedia}
 \label{sec:wikimedia}
 
-The corpora were compiled using Wikimedia database dumps---large files containing Wikipedia articles for a given language which are formatted in XML. The corpus sizes were constricted to be comparable in length in number of words, while still maintaining complete sentences. In terms of file size, the smallest dump was Lingua Franca Nova, so its was the minimum value used to shorten the others. 
+% Mention genre/domain?
+
+The data for this thesis comes from Wikimedia dump files. Wikimedia is a global movement and community founded on shared values, whose goal is to provide free and openly accessible information to everyone in the form of massive collaborative projects (which include, among others, the widely-used Wikipedia and Wiktionary). For a large, cross-linguistic study, massive databases with open-access make for an ideal source for corpora.
+
+The dump files provide detailed, archived snapshots of the content from Wiki repositories for a specified point in time and are available in different formats as well as a wide selection of languages. All dumps used were XML-formatted and from the 2024-07-01 archive, containing articles together with their metadata\footnote{https://dumps.wikimedia.org/backup-index.html}. It is also worth mentioning here that there are some drawbacks to using these dumps for the present study. The files sizes vary considerably depending on the language, with the largest being roughly 22 gigabytes (English) and the smallest around 4 megabytes (Lingua Franca Nova). Additionally, the open and collaborative nature of Wikimedia means the articles are often authored by a multitude of different people, which can result in inconsistencies in the text such as with writing style. Similarly, it may also result in inconsistent translations across languages or an imbalance in the amount of information provided, with the same article in one language being considerably more detailed than in another. In essence, while Wikimedia was decided as the best available option for the task at hand, there are some unfavorable aspects of it too.
 
 % Previously (in 2023) used a min value of 650000 words, now (in 2024) using min value of 630000 words
 % Genre/domain of texts? Do all dumps have the exact same articles? How does this affect the experiment and results?
@@ -567,13 +589,15 @@ Preprocessing text data is essential for natural language processing (NLP) tasks
 % Preprocessed by excluding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
 % Explain more in depth the regex used and why. For example, I removed parantheses along with everything inside of them to try to maintain grammatical sentences without redundancy or fragments in the middle
 % Removed subtitles of Wikipedia pages (by adding extra forward slashes '/////' in the WikiExtractor code, so it would be easily identified using Regex later)
-% Wanted to keep full sentences (why? what's useful about having the texts as one sentence per line for your study?), so there is not exact same word counts/sentence counts for all files. Include chart of total words/sentences for each language file?
+% Wanted to keep full sentences (why? what's useful about having the texts as one sentence per line for your study? A: For entropy calculations, it makes sense to separate the data by sentence + line because if the sentences blur together it will change this value of entropy. Also consider sentence length), so there is not exact same word counts/sentence counts for all files. Include chart of total words/sentences for each language file?
 % Mention why the WikiExtractor script was used in the first place
 % Ex: python WikiExtractor.py --infn ~/Downloads/enwiki-20240701-pages-articles-multistream.xml.bz2
 % Show some examples of the regex used from your code
 % Show examples of before and after the preprocessing + show an example of the final preprocessed data
 
-After extracting the text from the dump files through the use of WikiExtractor, a Python script \parencite{Attardi2015wikiextractor}, regular expressions were used to remove page titles, links, headers, fragments, and other extraneous symbols. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences, and all characters that were not part of the language's writing system were removed in an attempt to have only that language's words, without any foreign words that occasionally appear in the scraped Wikipedia texts. Remaining punctuation and numbers were also removed. The end result was a single corpus file corresponding to each language, with each line of the files being a single sentence. 
+Text data was initially extracted from the XML dump files with the use of WikiExtractor, a Python script \parencite{Attardi2015wikiextractor}.
+
+Then, regular expressions were used to remove page titles, links, headers, fragments, and other extraneous symbols. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences, and all characters that were not part of the language's writing system were removed in an attempt to have only that language's words, without any foreign words that occasionally appear in the scraped Wikipedia texts. Remaining punctuation and numbers were also removed. The end result was a single corpus file corresponding to each language, with each line of the files being a single sentence. 
 
 \subsection{Libraries and APIs}
 \label{ssec:librariesandapis}
@@ -590,6 +614,7 @@ After extracting the text from the dump files through the use of WikiExtractor, 
 % Mention in each subsubsection why the particular feature was extracted, why it was seen as a possible indicator or useful information in this experiment
 % Mention use of StandardScaler(), etc.
 % torchrnn.py is for text entropy, kerasrnn.py and reversekerasrnn.py are for lexical entropy
+% Also include calculations like average sentence length, average word length!!!
 
 Since this study uses models for classification, it is necessary to first extract the features...
 
@@ -615,6 +640,12 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 % Towards an unsupervised morphological segmenter for isiXhosa (Mzamo 2019)
 % Explain the morphological systems of the languages (e.g. agglutinative), include a table 
 % (Mzamo 2019) "Minimum Description Length (MDL) [20] has seen extensive use in unsupervised morphological segmentation, primarily as a measure of fit of the training data to heuristic models and statistical models [21], [22]. The comparative standard used in this study, Morfessor-Baseline [23], uses MDL and Maximum likelihood estimation."
+% Modeling Morphological Typology for Unsupervised Learning of Language Morphology (Xu 2020)
+% Unsupervised Learning of Language Morphology by Exploring Language Typology (Xu)
+% Include Morfessor model's types/tokens from compounds in training data and number of epochs, and cost at each epoch and final cost and training time; e.g. for Esperanto: Compounds in training data: 67460 types / 67460 tokens, 7 epochs, Final cost: 1460075.939887648, training time: 227.798s
+% Morfessor also run on remote server, and writes a training log
+% For analysis (for each language): calculate type/token ratio of morphemes (number of unique tokens/morphemes over the total number of tokens/morphemes), average number of segmentations, average number of forms for each lemma
+% When identifying the lemmas for each segment, using the largest segment. For cases of multiple largest segments, some options: frequency-based disambiguation (the segment which appears most often in the whole data is the lemma, etc) or take the first one (greedy algorithm) or take both/all of the equally largest as lemmas
 
 The morphological systems of each language were analyzed using Morfessor, 
 
@@ -638,9 +669,10 @@ The entropy was calculated for the character and word distributions in each of t
 % Perplexity is related to entropy...
 % Cross-entropy as the loss function...
 
-% Text entropy calculated using Character-Level LSTM in PyTorch (torchrnn.ipynb) https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level%20LSTM%20with%20PyTorch.ipynb 
+% Text entropy calculated using Character-Level LSTM in PyTorch (torchrnn.ipynb) https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level%20LSTM%20with%20PyTorch.ipynb (Use a footnote to cite)
 
 % Lexical entropy (and reverse lexical entropy) calculated using Character-Level RNN in Tensorflow (kerasrnn.ipynb) 
+% Explain about inverse lexical entropy, why it was calculated and what usefulness it may have? For example, if a language is very prefix-heavy vs. suffix-heavy, it may change the predictability of the characters of a word in the opposite direction
 % the entropy value was taken from the val_loss of the model
 % early stopping was used in the tensorflow models for lexical entropy, based on val_loss and with patience=3
 
@@ -658,7 +690,7 @@ Principal Component Analysis was performed for dimensionality reduction.
 % Discuss explained variance ratio
 % Use https://www.jcchouinard.com/pca-explained-variance/ for visualizing explained variance
 
-\subsection{Classification Models}
+\subsection{Classification}
 \label{ssec:classification}
 
 % Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why 
@@ -668,6 +700,11 @@ Principal Component Analysis was performed for dimensionality reduction.
 \label{ssec:decisiontree}
 
 Decision Tree Classifier...
+
+\subsubsection{Random Forest}
+\label{sec:randomforest}
+
+% Refer to https://towardsdatascience.com/a-practical-guide-to-implementing-a-random-forest-classifier-in-python-979988d8a263
 
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
@@ -686,6 +723,7 @@ For outlier detection...
 \label{sec:results}
 
 This section reports the results of each of the methods implemented.
+% Also do 1D analysis of all languages for each single dimension (e.g. the TTR, seeing if there's clustering or dispersal in tendency for the languages on a single line)
 
 \subsection{Results of TTR \& MATTR}
 \label{sec:ttrmattrresults}
@@ -721,6 +759,9 @@ A script was used to increase readability of the text in the graph\footnote{http
         \caption{Decision Tree Classifier}
         \label{fig:decisiontree}
 \end{figure}
+
+\subsection{Results of Random Forest}
+\label{sec:randomforestresults}
 
 \newpage
 \section{Discussion}

@@ -7,21 +7,21 @@
 \contentsline {section}{\numberline {2}Background}{3}{}%
 \contentsline {subsection}{\numberline {2.1}History of Constructed Languages}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Prior Studies}{5}{}%
-\contentsline {subsection}{\numberline {2.3}Computational Methods}{6}{}%
 \contentsline {section}{\numberline {3}Methodology}{7}{}%
 \contentsline {subsection}{\numberline {3.1}Data}{7}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Wikimedia}{8}{}%
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Feature Extraction}{8}{}%
+\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{9}{}%
+\contentsline {subsection}{\numberline {3.4}Feature Extraction}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Zipfian Distribution}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}Entropy}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}PCA}{9}{}%
-\contentsline {subsection}{\numberline {3.5}Classification Models}{9}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{9}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}One-Class SVM}{9}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}PCA}{10}{}%
+\contentsline {subsection}{\numberline {3.5}Classification}{10}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{10}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{10}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{10}{}%
 \contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{10}{}%
 \contentsline {section}{\numberline {4}Results}{11}{}%
 \contentsline {subsection}{\numberline {4.1}Results of TTR \& MATTR}{11}{}%
@@ -29,6 +29,7 @@
 \contentsline {subsection}{\numberline {4.3}Results of PCA}{11}{}%
 \contentsline {subsection}{\numberline {4.4}Results of One-Class SVM}{11}{}%
 \contentsline {subsection}{\numberline {4.5}Results of Decision Tree}{11}{}%
+\contentsline {subsection}{\numberline {4.6}Results of Random Forest}{11}{}%
 \contentsline {section}{\numberline {5}Discussion}{12}{}%
 \contentsline {section}{\numberline {6}Conclusion}{13}{}%
 \contentsline {subsection}{\numberline {6.1}Future Work}{13}{}%

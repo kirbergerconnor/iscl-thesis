@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1725396285.7504 "main.bcf" "main.bbl" "main" 1725548703.70452 0
-  "bibliography.bib" 1725396285.37113 26602 f241250f96b142189537c8d3efb51930 ""
-  "main.bcf" 1725548703.31931 111101 e3ead61dc24ffdb4730fe22a128a05df "pdflatex"
+["biber main"] 1725559798.42736 "main.bcf" "main.bbl" "main" 1725584699.12489 0
+  "bibliography.bib" 1725552456.89525 27306 d1ea049eaf34bad9e492e3106e86e258 ""
+  "main.bcf" 1725584698.68717 111101 e3ead61dc24ffdb4730fe22a128a05df "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1725548700.33403 "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" "main.pdf" "main" 1725548703.70486 0
-  "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" 1725548699.94745 55701 5ebb700c11e9bb8c7e224b3d76187586 ""
+["pdflatex"] 1725584695.7413 "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" "main.pdf" "main" 1725584699.12526 0
+  "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" 1725584695.37706 59980 56e94e558aea18f4d7e354400f2b4cfd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -283,13 +283,13 @@
   "TaxonomyOfPlannedLanguages.png" 1724446447.88475 206890 5355a64ebcf697d578c8af18d94d4324 ""
   "WilsonsLanguageExample.png" 1724956735.07084 32562 ff64fb2066bf7cc53264dfe5a3e989e0 ""
   "decisiontree.png" 1719327408 103455 20f52a38c87379d210ff0c99f8e5a1d3 ""
-  "main.aux" 1725548703.31079 14865 e30cf2a13b48fa9d92b2fc6ed9278189 "pdflatex"
-  "main.bbl" 1725396290.28969 28138 e68855f9d18f54f0d4973324325936f8 "biber main"
-  "main.lof" 1725548703.32054 591 ea1e0a378a13de3d2fd383a2915b4ead "pdflatex"
-  "main.lot" 1725548703.3206 287 8e522346de5211c3c6bb4ec0229aa407 "pdflatex"
-  "main.run.xml" 1725548703.32033 2313 9d203941543462b20d7108aaec7e370e "pdflatex"
-  "main.tex" 1725548699.94745 55701 5ebb700c11e9bb8c7e224b3d76187586 ""
-  "main.toc" 1725548703.32046 2393 a84dbec154bd0ad6b7949a8e5a930d42 "pdflatex"
+  "main.aux" 1725584698.67879 15060 212fd41888fc03be008077253ad09f2c "pdflatex"
+  "main.bbl" 1725559801.20692 28138 e68855f9d18f54f0d4973324325936f8 "biber main"
+  "main.lof" 1725584698.6889 591 ea1e0a378a13de3d2fd383a2915b4ead "pdflatex"
+  "main.lot" 1725584698.68898 287 8e522346de5211c3c6bb4ec0229aa407 "pdflatex"
+  "main.run.xml" 1725584698.68815 2313 9d203941543462b20d7108aaec7e370e "pdflatex"
+  "main.tex" 1725584695.37706 59980 56e94e558aea18f4d7e354400f2b4cfd ""
+  "main.toc" 1725584698.68828 2465 0bf4c123d38be29b6d80ca5075dd1b72 "pdflatex"
   "pcaanalysis.png" 1719327408 51098 8ee1d867a6e0d3de2a1de9c2f4d9f8de ""
   (generated)
   "main.aux"
