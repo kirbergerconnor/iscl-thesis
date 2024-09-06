@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{List of Figures}{iv}{}%
-\contentsline {section}{List of Tables}{iv}{}%
-\contentsline {section}{List of Abbreviations}{iv}{}%
+\contentsline {section}{List of Figures}{v}{}%
+\contentsline {section}{List of Tables}{v}{}%
+\contentsline {section}{List of Abbreviations}{v}{}%
 \contentsline {section}{\numberline {1}Introduction \& Motivation}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Scope of Study \& Research Question}{2}{}%
 \contentsline {section}{\numberline {2}Background}{3}{}%
@@ -9,14 +9,16 @@
 \contentsline {subsection}{\numberline {2.2}Prior Studies}{5}{}%
 \contentsline {section}{\numberline {3}Methodology}{7}{}%
 \contentsline {subsection}{\numberline {3.1}Data}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Wikimedia}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Natural Languages}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{8}{}%
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{8}{}%
 \contentsline {subsection}{\numberline {3.3}Libraries and APIs}{9}{}%
 \contentsline {subsection}{\numberline {3.4}Feature Extraction}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{9}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Zipfian Distribution}{10}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Entropy}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Zipfian Distribution}{9}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Entropy}{9}{}%
 \contentsline {subsubsection}{\numberline {3.4.5}PCA}{10}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{10}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{10}{}%
