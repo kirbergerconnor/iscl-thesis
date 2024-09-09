@@ -159,6 +159,59 @@
       \verb https://books.google.de/books?id=z4GAngEACAAJ
       \endverb
     \endentry
+    \entry{Blanke1989book}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4a33cb021afc736430cdc84b7f7fc57f}{%
+           family={BLANKE},
+           familyi={B\bibinitperiod},
+           given={DETLEV},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, New York}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{fullhash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{bibnamehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{authorbibnamehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{authornamehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{authorfullhash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{editorbibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{editornamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{editorfullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Aspects of the Science of Planned Languages}
+      \field{isbn}{9783110886115}
+      \field{title}{Planned languages – a survey of some of the main problems}
+      \field{year}{1989}
+      \field{pages}{63\bibrangedash 88}
+      \range{pages}{26}
+      \verb{doi}
+      \verb doi:10.1515/9783110886115.63
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783110886115.63
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783110886115.63
+      \endverb
+    \endentry
     \entry{Gobbo2008article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
@@ -187,7 +240,7 @@
       \field{volume}{2}
       \field{year}{2008}
     \endentry
-    \entry{Gobbo2016article}{article}{}
+    \entry{Gobbo2011article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
            family={Gobbo},
@@ -203,6 +256,39 @@
       \strng{authornamehash}{980a53b897e34ea0316306f651fa3b98}
       \strng{authorfullhash}{980a53b897e34ea0316306f651fa3b98}
       \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Universal Language}
+      \field{month}{09}
+      \field{title}{The Case of Correlatives: A Comparison between Natural and Planned Languages}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{34}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22425/jul.2011.12.2.45
+      \endverb
+    \endentry
+    \entry{Gobbo2016article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
+           family={Gobbo},
+           familyi={G\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{fullhash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{bibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorbibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authornamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorfullhash}{980a53b897e34ea0316306f651fa3b98}
+      \field{extraname}{3}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -461,6 +547,43 @@
       \verb https://books.google.de/books?id=E3UE9IoW27AC
       \endverb
     \endentry
+    \entry{Pawlas2020inbook}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9de6d174109580b717cd0c236c6458da}{%
+           family={Pawlas},
+           familyi={P\bibinitperiod},
+           given={Elżbieta},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2df4d7d85f854fb488f594c182d7ad44}{%
+           family={Paradowski},
+           familyi={P\bibinitperiod},
+           given={Michał\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{fullhash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{bibnamehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{authorbibnamehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{authornamehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{authorfullhash}{a612a46a73f753933ef8e877dc96bf51}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-83-66666-28-3}
+      \field{month}{01}
+      \field{title}{Misunderstandings in communicating in English as a lingua franca: Causes, prevention, and remediation strategies}
+      \field{year}{2020}
+      \field{pages}{101\bibrangedash 122}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.48226/978-83-66666-28-3
+      \endverb
+    \endentry
     \entry{sanders2016article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f26ba8758c7f0e6551a4fb8bd590ffeb}{%
@@ -703,6 +826,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{GObbo2016}
 \endrefsection
 \endinput
 

@@ -2374,6 +2374,7 @@
     <bcf:citekey order="12" intorder="1">okrent2009book</bcf:citekey>
     <bcf:citekey order="13" intorder="1">Libert2016inbook</bcf:citekey>
     <bcf:citekey order="13" intorder="2">Schubert1989inbook</bcf:citekey>
+    <bcf:citekey order="13" intorder="3">Schubert2001book</bcf:citekey>
     <bcf:citekey order="14" intorder="1">Schubert2001book</bcf:citekey>
     <bcf:citekey order="15" intorder="1">okrent2009book</bcf:citekey>
     <bcf:citekey order="16" intorder="1">Gobbo2016article</bcf:citekey>
@@ -2388,26 +2389,44 @@
     <bcf:citekey order="25" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="26" intorder="1">Novikov2022article</bcf:citekey>
     <bcf:citekey order="26" intorder="2">goodall2022article</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">goodall2022article</bcf:citekey>
-    <bcf:citekey order="28" intorder="2">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Schreyer2021article</bcf:citekey>
-    <bcf:citekey order="29" intorder="2">Gobbo2008article</bcf:citekey>
-    <bcf:citekey order="29" intorder="3">Schubert1989inbook</bcf:citekey>
-    <bcf:citekey order="29" intorder="4">Schubert2001book</bcf:citekey>
-    <bcf:citekey order="29" intorder="5">Novikov2022article</bcf:citekey>
-    <bcf:citekey order="29" intorder="6">Adelman2014article</bcf:citekey>
-    <bcf:citekey order="29" intorder="7">Tonkin2015article</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Tonkin2015article</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">Schreyer2021article</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Gobbo2008article</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">Bausani1974book</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">Novikov2022article</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">Novikov2022article</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Attardi2015wikiextractor</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Adelman2014article</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="29" intorder="2">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Schreyer2021article</bcf:citekey>
+    <bcf:citekey order="30" intorder="2">Gobbo2008article</bcf:citekey>
+    <bcf:citekey order="30" intorder="3">Schubert1989inbook</bcf:citekey>
+    <bcf:citekey order="30" intorder="4">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="30" intorder="5">Novikov2022article</bcf:citekey>
+    <bcf:citekey order="30" intorder="6">Adelman2014article</bcf:citekey>
+    <bcf:citekey order="30" intorder="7">Tonkin2015article</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Tonkin2015article</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Schreyer2021article</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Gobbo2008article</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Bausani1974book</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Novikov2022article</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Blanke1989book</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">GObbo2016</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Gobbo2008article</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Gobbo2008article</bcf:citekey>
+    <bcf:citekey order="43" intorder="2">Gobbo2011article</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="46" intorder="2">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">Large1985book</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Pawlas2020inbook</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">Novikov2022article</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">Attardi2015wikiextractor</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
