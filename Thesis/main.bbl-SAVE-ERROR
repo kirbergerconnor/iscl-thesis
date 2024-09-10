@@ -19,6 +19,69 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Adelman2014article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=51fe11ee39d74f1b1b099c9c00419178}{%
+           family={Adelman},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51fe11ee39d74f1b1b099c9c00419178}
+      \strng{fullhash}{51fe11ee39d74f1b1b099c9c00419178}
+      \strng{bibnamehash}{51fe11ee39d74f1b1b099c9c00419178}
+      \strng{authorbibnamehash}{51fe11ee39d74f1b1b099c9c00419178}
+      \strng{authornamehash}{51fe11ee39d74f1b1b099c9c00419178}
+      \strng{authorfullhash}{51fe11ee39d74f1b1b099c9c00419178}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harvard Journal of Law \& Technology}
+      \field{title}{Constructed Languages and Copyright: A Brief History and Proposal for Divorce}
+      \field{volume}{27}
+      \field{year}{2014}
+      \field{pages}{543}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:58553165
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:58553165
+      \endverb
+    \endentry
+    \entry{Attardi2015wikiextractor}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=09d5a7d636bf73c855ed5ef9bbd835eb}{%
+           family={Attardi},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{fullhash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{bibnamehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{authorbibnamehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{authornamehash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \strng{authorfullhash}{09d5a7d636bf73c855ed5ef9bbd835eb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/attardi/wikiextractor}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{WikiExtractor}
+      \field{year}{2015}
+    \endentry
     \entry{douglas2015book}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1fc23c9717699e5c4bceea0248c90a12}{%
@@ -61,6 +124,186 @@
       \verb 10.4324/9781315694566.ch8
       \endverb
     \endentry
+    \entry{Bausani1974book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8b032b4005fea71585b37954063deed}{%
+           family={Bausani},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Ubaldini}%
+      }
+      \strng{namehash}{c8b032b4005fea71585b37954063deed}
+      \strng{fullhash}{c8b032b4005fea71585b37954063deed}
+      \strng{bibnamehash}{c8b032b4005fea71585b37954063deed}
+      \strng{authorbibnamehash}{c8b032b4005fea71585b37954063deed}
+      \strng{authornamehash}{c8b032b4005fea71585b37954063deed}
+      \strng{authorfullhash}{c8b032b4005fea71585b37954063deed}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9788834003879}
+      \field{series}{Collana di studi umanistici 'Ulisse'}
+      \field{title}{Le lingue inventate: Linguaggi artificiali, linguaggi segreti, linguaggi universali}
+      \field{year}{1974}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=z4GAngEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=z4GAngEACAAJ
+      \endverb
+    \endentry
+    \entry{Blanke1989book}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4a33cb021afc736430cdc84b7f7fc57f}{%
+           family={BLANKE},
+           familyi={B\bibinitperiod},
+           given={DETLEV},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, New York}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{fullhash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{bibnamehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{authorbibnamehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{authornamehash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{authorfullhash}{4a33cb021afc736430cdc84b7f7fc57f}
+      \strng{editorbibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{editornamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{editorfullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Aspects of the Science of Planned Languages}
+      \field{isbn}{9783110886115}
+      \field{title}{Planned languages – a survey of some of the main problems}
+      \field{year}{1989}
+      \field{pages}{63\bibrangedash 88}
+      \range{pages}{26}
+      \verb{doi}
+      \verb doi:10.1515/9783110886115.63
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783110886115.63
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783110886115.63
+      \endverb
+    \endentry
+    \entry{Gobbo2008article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
+           family={Gobbo},
+           familyi={G\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{fullhash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{bibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorbibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authornamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorfullhash}{980a53b897e34ea0316306f651fa3b98}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multilingualism and Applied Comparative Linguistics}
+      \field{month}{01}
+      \field{title}{Planned languages and language planning: The contribution of interlinguistics to cross-cultural communication}
+      \field{volume}{2}
+      \field{year}{2008}
+    \endentry
+    \entry{Gobbo2011article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
+           family={Gobbo},
+           familyi={G\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{fullhash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{bibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorbibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authornamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorfullhash}{980a53b897e34ea0316306f651fa3b98}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Universal Language}
+      \field{month}{09}
+      \field{title}{The Case of Correlatives: A Comparison between Natural and Planned Languages}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{34}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22425/jul.2011.12.2.45
+      \endverb
+    \endentry
+    \entry{Gobbo2016article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
+           family={Gobbo},
+           familyi={G\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{fullhash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{bibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorbibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authornamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorfullhash}{980a53b897e34ea0316306f651fa3b98}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Language Sciences}
+      \field{month}{10}
+      \field{title}{Are planned languages less complex than natural languages?}
+      \field{volume}{60}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1016/j.langsci.2016.10.003
+      \endverb
+    \endentry
     \entry{goodall2022article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ccd2d797a929448ccbfe2cf4282c8963}{%
@@ -89,6 +332,49 @@
       \field{year}{2022}
       \verb{doi}
       \verb 10.1146/annurev-linguistics-030421-064707
+      \endverb
+    \endentry
+    \entry{Greenberg1970book}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd02863aa5065202bdd632dd397d5fd0}{%
+           family={Greenberg},
+           familyi={G\bibinitperiod},
+           given={Joseph\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Boston}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{fullhash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{bibnamehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{authorbibnamehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{authornamehash}{fd02863aa5065202bdd632dd397d5fd0}
+      \strng{authorfullhash}{fd02863aa5065202bdd632dd397d5fd0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Theoretical Foundations}
+      \field{isbn}{9783110814644}
+      \field{title}{Language Universals}
+      \field{year}{1970}
+      \field{pages}{61\bibrangedash 112}
+      \range{pages}{52}
+      \verb{doi}
+      \verb doi:10.1515/9783110814644-003
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783110814644-003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783110814644-003
       \endverb
     \endentry
     \entry{punske2020book}{book}{}
@@ -128,6 +414,176 @@
       \verb http://gen.lib.rus.ec/book/index.php?md5=0B5CF2BFC00DCB569EBA10BD96AD68D4
       \endverb
     \endentry
+    \entry{Large1985book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=77d7192eb775ca88de02753b3677752d}{%
+           family={Large},
+           familyi={L\bibinitperiod},
+           given={J.A.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {B. Blackwell}%
+      }
+      \strng{namehash}{77d7192eb775ca88de02753b3677752d}
+      \strng{fullhash}{77d7192eb775ca88de02753b3677752d}
+      \strng{bibnamehash}{77d7192eb775ca88de02753b3677752d}
+      \strng{authorbibnamehash}{77d7192eb775ca88de02753b3677752d}
+      \strng{authornamehash}{77d7192eb775ca88de02753b3677752d}
+      \strng{authorfullhash}{77d7192eb775ca88de02753b3677752d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780631144977}
+      \field{series}{Language library}
+      \field{title}{The Artificial Language Movement}
+      \field{year}{1985}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=xaeCQgAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=xaeCQgAACAAJ
+      \endverb
+    \endentry
+    \entry{Libert2016inbook}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2dd31c4364391da7ce510cee081e16eb}{%
+           family={Libert},
+           familyi={L\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2dd31c4364391da7ce510cee081e16eb}
+      \strng{fullhash}{2dd31c4364391da7ce510cee081e16eb}
+      \strng{bibnamehash}{2dd31c4364391da7ce510cee081e16eb}
+      \strng{authorbibnamehash}{2dd31c4364391da7ce510cee081e16eb}
+      \strng{authornamehash}{2dd31c4364391da7ce510cee081e16eb}
+      \strng{authorfullhash}{2dd31c4364391da7ce510cee081e16eb}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-43490-2}
+      \field{journaltitle}{Perspectives in Pragmatics, Philosophy and Psychology}
+      \field{month}{01}
+      \field{title}{On Pragmemes in Artificial Languages}
+      \field{year}{2016}
+      \field{pages}{375\bibrangedash 389}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/978-3-319-43491-9_20
+      \endverb
+    \endentry
+    \entry{Novikov2022article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4655fff0532257254c8df0c2d763c823}{%
+           family={Novikov},
+           familyi={N\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4655fff0532257254c8df0c2d763c823}
+      \strng{fullhash}{4655fff0532257254c8df0c2d763c823}
+      \strng{bibnamehash}{4655fff0532257254c8df0c2d763c823}
+      \strng{authorbibnamehash}{4655fff0532257254c8df0c2d763c823}
+      \strng{authornamehash}{4655fff0532257254c8df0c2d763c823}
+      \strng{authorfullhash}{4655fff0532257254c8df0c2d763c823}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RUDN Journal of Language Studies, Semiotics and Semantics}
+      \field{month}{07}
+      \field{title}{Constructed Languages as Semantic and Semiotic Systems}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{pages}{455\bibrangedash 467}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.22363/2313-2299-2022-13-2-455-467
+      \endverb
+    \endentry
+    \entry{okrent2009book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d3c7fbff22bcae3077f0db5a2584729d}{%
+           family={Okrent},
+           familyi={O\bibinitperiod},
+           given={Arika},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Spiegel \& Grau}%
+      }
+      \strng{namehash}{d3c7fbff22bcae3077f0db5a2584729d}
+      \strng{fullhash}{d3c7fbff22bcae3077f0db5a2584729d}
+      \strng{bibnamehash}{d3c7fbff22bcae3077f0db5a2584729d}
+      \strng{authorbibnamehash}{d3c7fbff22bcae3077f0db5a2584729d}
+      \strng{authornamehash}{d3c7fbff22bcae3077f0db5a2584729d}
+      \strng{authorfullhash}{d3c7fbff22bcae3077f0db5a2584729d}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780385527880}
+      \field{title}{In the Land of Invented Languages: Esperanto Rock Stars, Klingon Poets, Loglan Lovers, and the Mad Dreamers who Tried to Build a Perfect Language}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=E3UE9IoW27AC
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=E3UE9IoW27AC
+      \endverb
+    \endentry
+    \entry{Pawlas2020inbook}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9de6d174109580b717cd0c236c6458da}{%
+           family={Pawlas},
+           familyi={P\bibinitperiod},
+           given={Elżbieta},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2df4d7d85f854fb488f594c182d7ad44}{%
+           family={Paradowski},
+           familyi={P\bibinitperiod},
+           given={Michał\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{fullhash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{bibnamehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{authorbibnamehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{authornamehash}{a612a46a73f753933ef8e877dc96bf51}
+      \strng{authorfullhash}{a612a46a73f753933ef8e877dc96bf51}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-83-66666-28-3}
+      \field{month}{01}
+      \field{title}{Misunderstandings in communicating in English as a lingua franca: Causes, prevention, and remediation strategies}
+      \field{year}{2020}
+      \field{pages}{101\bibrangedash 122}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.48226/978-83-66666-28-3
+      \endverb
+    \endentry
     \entry{sanders2016article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f26ba8758c7f0e6551a4fb8bd590ffeb}{%
@@ -160,7 +616,217 @@
       \verb 10.1353/lan.2016.0055
       \endverb
     \endentry
+    \entry{Schreyer2021article}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=92d428b5fa697cdffaa2325e07210633}{%
+           family={Schreyer},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=047b6cde5d2f0fa47124b1ff2e612117}{%
+           family={Adger},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9fa004a4ec473f6f04a130afdcefe833}
+      \strng{fullhash}{9fa004a4ec473f6f04a130afdcefe833}
+      \strng{bibnamehash}{9fa004a4ec473f6f04a130afdcefe833}
+      \strng{authorbibnamehash}{9fa004a4ec473f6f04a130afdcefe833}
+      \strng{authornamehash}{9fa004a4ec473f6f04a130afdcefe833}
+      \strng{authorfullhash}{9fa004a4ec473f6f04a130afdcefe833}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society B: Biological Sciences}
+      \field{month}{03}
+      \field{title}{Comparing prehistoric constructed languages: World-building and its role in understanding prehistoric languages}
+      \field{volume}{376}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1098/rstb.2020.0201
+      \endverb
+    \endentry
+    \entry{Schubert1989inbook}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{fullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{bibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authorbibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authornamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authorfullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783110886115}
+      \field{journaltitle}{Interlinguistics: Aspects of the Science of Planned Languages}
+      \field{month}{01}
+      \field{title}{Interlinguistics – Its Aims, Its Achievements, and Its Place in Language Science}
+      \field{year}{1989}
+      \field{pages}{7\bibrangedash 44}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1515/9783110886115.7
+      \endverb
+    \endentry
+    \entry{Schubert2001book}{book}{}
+      \name{author}{10}{ul=1}{%
+        {{un=0,uniquepart=base,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f37b027fe4870e4c9f0ffed3ac53035}{%
+           family={Smet},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0d5059428257a3707f2d681e10f2220}{%
+           family={Tonkin},
+           familyi={T\bibinitperiod},
+           given={Humphrey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ad6a979380cf328cc793b70e56f1028}{%
+           family={Blanke},
+           familyi={B\bibinitperiod},
+           given={Detlev},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25907e589926ac5f49bc1cf3165b0207}{%
+           family={Goninaz},
+           familyi={G\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aaec1e1026d5c2a6f6b0f246c8c23cb1}{%
+           family={Koutny},
+           familyi={K\bibinitperiod},
+           given={Ilona},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=254bd446dd0cc7de3ce1a6598912798e}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Haitao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a6734809d642e03f3022148cc66ca20}{%
+           family={Corsetti},
+           familyi={C\bibinitperiod},
+           given={Renato},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2957dc46e7907ff4dd801cad10782db}{%
+           family={Torre},
+           familyi={T\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92c49690246096a5f16fd8355f499099}{%
+           family={Oostendorp},
+           familyi={O\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e97d8480a9ada95980ccd3d6c0e05da6}
+      \strng{fullhash}{4b33a6204008570535f90cbcee300437}
+      \strng{bibnamehash}{e97d8480a9ada95980ccd3d6c0e05da6}
+      \strng{authorbibnamehash}{e97d8480a9ada95980ccd3d6c0e05da6}
+      \strng{authornamehash}{e97d8480a9ada95980ccd3d6c0e05da6}
+      \strng{authorfullhash}{4b33a6204008570535f90cbcee300437}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Planned Languages: From Concept to Reality}
+      \field{year}{2001}
+    \endentry
+    \entry{Tonkin2015article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e0d5059428257a3707f2d681e10f2220}{%
+           family={Tonkin},
+           familyi={T\bibinitperiod},
+           given={Humphrey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{fullhash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{bibnamehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{authorbibnamehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{authornamehash}{e0d5059428257a3707f2d681e10f2220}
+      \strng{authorfullhash}{e0d5059428257a3707f2d681e10f2220}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Interdisciplinary Description of Complex Systems}
+      \field{month}{04}
+      \field{title}{Language Planning and Planned Languages: How Can Planned Languages Inform Language Planning?}
+      \field{volume}{13}
+      \field{year}{2015}
+      \field{pages}{193\bibrangedash 199}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.7906/indecs.13.2.1
+      \endverb
+    \endentry
+    \entry{Wilkins1968book}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ad4e4c75d268c913f02d75b1e4e611c}{%
+           family={Wilkins},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{fullhash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{bibnamehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{authorbibnamehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{authornamehash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \strng{authorfullhash}{5ad4e4c75d268c913f02d75b1e4e611c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An essay towards a real character, and a philosophical language, 1668}
+      \field{year}{1968}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:161991811
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:161991811
+      \endverb
+    \endentry
   \enddatalist
+  \missing{GObbo2016}
 \endrefsection
 \endinput
 

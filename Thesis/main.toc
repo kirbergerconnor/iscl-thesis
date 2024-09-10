@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{List of Figures}{iv}{}%
-\contentsline {section}{List of Tables}{iv}{}%
-\contentsline {section}{List of Abbreviations}{iv}{}%
+\contentsline {section}{List of Figures}{v}{}%
+\contentsline {section}{List of Tables}{v}{}%
+\contentsline {section}{List of Abbreviations}{v}{}%
 \contentsline {section}{\numberline {1}Introduction \& Motivation}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Scope of Study \& Research Question}{2}{}%
 \contentsline {section}{\numberline {2}Background}{3}{}%
@@ -18,19 +18,21 @@
 \contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{12}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{12}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Entropy}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}PCA}{12}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Additional Features}{12}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}PCA}{12}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{12}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{12}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{12}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{12}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{13}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{13}{}%
 \contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{13}{}%
 \contentsline {section}{\numberline {4}Results}{14}{}%
 \contentsline {subsection}{\numberline {4.1}Results of TTR \& MATTR}{14}{}%
 \contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Results of PCA}{14}{}%
-\contentsline {subsection}{\numberline {4.4}Results of One-Class SVM}{14}{}%
-\contentsline {subsection}{\numberline {4.5}Results of Decision Tree}{14}{}%
-\contentsline {subsection}{\numberline {4.6}Results of Random Forest}{14}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Feature Extraction}{14}{}%
+\contentsline {subsection}{\numberline {4.4}Results of PCA}{14}{}%
+\contentsline {subsection}{\numberline {4.5}Results of One-Class SVM}{14}{}%
+\contentsline {subsection}{\numberline {4.6}Results of Decision Tree}{14}{}%
+\contentsline {subsection}{\numberline {4.7}Results of Random Forest}{14}{}%
 \contentsline {section}{\numberline {5}Discussion}{15}{}%
 \contentsline {section}{\numberline {6}Conclusion}{16}{}%
 \contentsline {subsection}{\numberline {6.1}Future Work}{16}{}%

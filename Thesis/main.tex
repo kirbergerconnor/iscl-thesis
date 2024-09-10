@@ -40,7 +40,6 @@
 % add references to Table of Contents
 \usepackage[nottoc]{tocbibind}
 
-
 % environment for definitions
 \newtheorem{definition}{Definition}
 
@@ -464,6 +463,7 @@ A two-dimensional taxonomy for constructed languages containing several notables
 % Morfessor-enriched features and multilingual training for canonical morphological segmentation (Rouhe 2022)
 % How European is Esperanto? (Parkvall 2010)
 % Complexity measurement of natural and artificial languages (Febres 2014)
+% Native Esperanto as a test case for natural language (Lindstedt)
 % Natural and Artificial International Languages: a Typosogist's Assessment (Comrie 1996)
 % Evaluating the Irregularity of Natural Languages (Gomez 2017)
 % From Esperanto to Volapük: A Graph-Based Approach to Assessing the Complexity of Constructed Languages (Sokolova)
@@ -545,23 +545,28 @@ Table \ref{tbl:conlangs} shows these languages together with the main source lan
 \begin{table}[h!]
   \centering
   \renewcommand{\arraystretch}{1.5}
-  \begin{tabular} {|p{3cm}|p{3cm}|}
+  \begin{tabular} {|p{5cm}|p{5cm}|}
   \hline
   \textbf{Constructed Language} & \textbf{Source Languages/Families} \\
   \hline
   Esperanto & Romance, Germanic, Slavic \\
+  \hline
   Interlingua & Romance \\
+  \hline
   Lingua Franca Nova & Romance \\
+  \hline
   Volapük & Germanic \\
+  \hline
   Kotava & N/A \\
+  \hline
   Ido & Romance, Germanic, Slavic \\
   \hline
   \end{tabular}
   \caption{Constructed languages used in the study, together with their main respective source languages from which they were designed.}
   \label{tbl:conlangs}
-  \end{table}
+\end{table}
 
-  It is worth drawing attention to the fact that each of these languages were constructed mainly from various European languages, with the exception of Kotava. Consequently, this may influence models performing classification and be visible in the results. This will be explored later in Section \ref{sec:discussion}.
+It is worth drawing attention to the fact that each of these languages were constructed mainly from various European languages, with the exception of Kotava. Consequently, this may influence models performing classification and be visible in the results. This will be explored later in Section \ref{sec:discussion}.
 
 % "and more niche" with how many speakers?
 % Discuss LFN being inspired by Mediterranean Lingua Franca https://en.wikipedia.org/wiki/Mediterranean_Lingua_Franca
@@ -675,6 +680,7 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 % Show example of morphological segmentation at beginning of this section (e.g. Gronroos 2020)
 % Morfessor and hutmegs: Unsupervised morpheme segmentation for highly-inflecting and compounding languages (Creutz 2005 article2)
 % Towards an unsupervised morphological segmenter for isiXhosa (Mzamo 2019)
+% UNSUPERVISED SEGMENTATION OF WORDS INTO MORPHEMES ()
 % Explain the morphological systems of the languages (e.g. agglutinative), include a table 
 % (Mzamo 2019) "Minimum Description Length (MDL) [20] has seen extensive use in unsupervised morphological segmentation, primarily as a measure of fit of the training data to heuristic models and statistical models [21], [22]. The comparative standard used in this study, Morfessor-Baseline [23], uses MDL and Maximum likelihood estimation."
 % Modeling Morphological Typology for Unsupervised Learning of Language Morphology (Xu 2020)
@@ -712,6 +718,9 @@ The entropy was calculated for the character and word distributions in each of t
 % the entropy value was taken from the val_loss of the model
 % early stopping was used in the tensorflow models for lexical entropy, based on val_loss and with patience=3
 
+\subsubsection{Additional Features}
+\label{ssec:additionalfeatures}
+
 \subsubsection{PCA}
 \label{ssec:pca}
 
@@ -741,13 +750,23 @@ Decision Tree Classifier...
 \label{ssec:randomforest}
 
 % Refer to https://towardsdatascience.com/a-practical-guide-to-implementing-a-random-forest-classifier-in-python-979988d8a263
+% Include visualization of finetuning, as shown by https://medium.com/@Doug-Creates/tuning-random-forest-parameters-with-scikit-learn-b53cbc602cd0
 
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
 
+% Refer to https://www.analyticsvidhya.com/blog/2024/03/one-class-svm-for-anomaly-detection/ for "One-class SVM aims to discover a hyperplane with maximum margin within the feature space by separating the mapped data from the origin. On a dataset Dn = {x1, . . . , xn} with xi ∈ X (xi is a feature) and n dimensions:"
+% Refer to https://www.analyticsvidhya.com/blog/2024/03/one-class-svm-for-anomaly-detection/ also for visualization of One Class SVM model performance
 % Would it make sense to do this two times with the same model, once with the inlier class as conlangs and once as natlangs?
+% Outlier detection and novelty detection
+% Include mathematical equation for normalization/standardization/min-max scaling (refer to https://www.geeksforgeeks.org/how-to-normalize-data-using-scikit-learn-in-python/ or )
+% Support Vector Method for Novelty Detection (Olkopf 2000)
 
-For outlier detection...
+One-Class SVMs are a special kind of SVMs used in the domain of anomaly detection. While similar to one another, classic SVMs separate two classes using a hyperplane with the largest possible margin. In contrast to this, One-Class SVMs...Rather than training on an entire dataset containing two classes as with classic SVMs, these models train exclusively on the majority class, also called the "normal" class. After training,  
+
+Standardization is given by the formula \[X^{\prime} = \frac{X - \mu}{\sigma}\] 
+
+where $\mu$ is mean and $\sigma$ is the standard deviation.
 
 \subsection{Evaluation of Classifiers}
 \label{ssec:evaluationofclassifiers}
@@ -769,6 +788,69 @@ This section reports the results of each of the methods implemented.
 
 \subsection{Results of Morphological Segmentation}
 \label{sec:morphologicalsegmentationresults}
+
+\subsection{Results of Feature Extraction}
+\label{sec:featureextractionresults}
+
+\begin{sidewaystable}[h!]
+  \centering
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabular} {|m{1cm}|m{1cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|}
+    \toprule
+    \textbf{Corpus} & \textbf{Type} & \textbf{Avg Word Length} & \textbf{Avg Sentence Length} & \textbf{TTR}    & \textbf{MATTR} & \textbf{Char Dist Entr} & \textbf{Word Dist Entr} & \textbf{Text Entr} & \textbf{Lex Entr} & \textbf{Rev Lex Entr} \\
+    \hline
+    \textbf{id}     & nat  & 6.173           & 18.164              & 5.782  & 0.699 & 4.072          & 11.142         & 3.518     & 1.956    & 1.976        \\
+    \hline
+    \textbf{tl}     & nat  & 5.119           & 21.102              & 7.593  & 0.611 & 3.895          & 9.991          & 3.824     & 1.884    & 1.917        \\
+    \hline
+    \textbf{tr}     & nat  & 6.63            & 14.458              & 14.097 & 0.828 & 4.386          & 13.151         & 4.114     & 1.562    & 1.656        \\
+    \hline
+    \textbf{en}     & nat  & 5.087           & 21.301              & 6.079  & 0.697 & 4.167          & 10.673         & 4.116     & 1.926    & 1.981        \\
+    \hline
+    \textbf{de}     & nat  & 6.206           & 16.907              & 12.128 & 0.771 & 4.23           & 11.601         & 3.965     & 1.608    & 1.666        \\
+    \hline
+    \textbf{fr}     & nat  & 5.16            & 23.12               & 7.461  & 0.721 & 4.179          & 10.711         & 3.497     & 1.793    & 1.865        \\
+    \hline
+    \textbf{eo}     & con  & 5.175           & 18.909              & 10.708 & 0.692 & 4.164          & 10.923         & 3.858     & 1.801    & 1.893        \\
+    \hline
+    \textbf{lfn}    & con  & 4.221           & 19.532              & 5.063  & 0.601 & 3.912          & 9.316          & 3.936     & 2.027    & 2.114        \\
+    \hline
+    \textbf{ia}     & con  & 5.05            & 19.547              & 6.88   & 0.607 & 4.032          & 10.005         & 3.336     & 1.821    & 1.906        \\
+    \hline
+    \textbf{io}     & con  & 4.594           & 14.484              & 3.433  & 0.557 & 4.077          & 8.055          & 1.157     & 1.985    & 2.069        \\
+    \hline
+    \textbf{pl}     & nat  & 6.248           & 14.951              & 14.89  & 0.825 & 4.553          & 12.905         & 4.316     & 1.651    & 1.685        \\
+    \hline
+    \textbf{vi}     & nat  & 3.498           & 29.835              & 1.749  & 0.732 & 4.855          & 9.717          & 4.001     & 2.421    & 2.387        \\
+    \hline
+    \textbf{fi}     & nat  & 7.874           & 11.969              & 20.409 & 0.841 & 4.144          & 13.729         & 3.915     & 1.547    & 1.631        \\
+    \hline
+    \textbf{it}     & nat  & 5.455           & 25.727              & 8.505  & 0.764 & 4.029          & 11.308         & 4.003     & 1.672    & 1.786        \\
+    \hline
+    \textbf{af}     & nat  & 5.067           & 20.496              & 6.987  & 0.645 & 4.072          & 9.993          & 4.088     & 1.839    & 1.914        \\
+    \hline
+    \textbf{nl}     & nat  & 5.419           & 18.194              & 8.559  & 0.694 & 4.117          & 10.593         & 3.813     & 1.811    & 1.866        \\
+    \hline
+    \textbf{es}     & nat  & 4.978           & 25.315              & 7.085  & 0.674 & 4.046          & 10.327         & 3.502     & 1.759    & 1.864        \\
+    \hline
+    \textbf{oc}     & nat  & 5.215           & 18.66               & 7.185  & 0.715 & 4.173          & 10.546         & 2.963     & 1.871    & 1.934        \\
+    \hline
+    \textbf{da}     & nat  & 5.346           & 16.466              & 10.517 & 0.737 & 4.197          & 11.274         & 4.342     & 1.808    & 1.87         \\
+    \hline
+    \textbf{sv}     & nat  & 5.597           & 17.322              & 11.031 & 0.756 & 4.294          & 11.488         & 4.17      & 1.775    & 1.836        \\
+    \hline
+    \textbf{is}     & nat  & 5.375           & 15.055              & 11.727 & 0.747 & 4.468          & 11.512         & 4.643     & 1.728    & 1.796        \\
+    \hline
+    \textbf{hu}     & nat  & 6.242           & 15.782              & 16.234 & 0.776 & 4.543          & 12.443         & 4.423     & 1.67     & 1.727        \\
+    \hline
+    \textbf{vo}     & con  & 5.072           & 11.266              & 2.455  & 0.622 & 4.256          & 7.666          & 1.192     & 2.086    & 2.135        \\
+    \hline
+    \textbf{avk}    & con  & 5.06            & 12.824              & 8.153  & 0.582 & 4.186          & 10.287         & 3.085     & 2.011    & 2.066 \\
+    \bottomrule       
+  \end{tabular}
+  \caption{Feature set}
+  \label{tbl:featurestable}
+\end{sidewaystable}
 
 \subsection{Results of PCA}
 \label{sec:pcaresults}
