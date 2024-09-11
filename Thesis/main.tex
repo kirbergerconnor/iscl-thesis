@@ -297,7 +297,7 @@ Write the abstract here.
 \begin{tabular}{lcl}
 \textbf{API} & ~~~ & Application Programming Interface \\
 \textbf{NLP} & ~~~ & Natural Language Processing \\
-\textbf{PCA} & ~~~ & Principle Component Analysis \\
+\textbf{PCA} & ~~~ & Principal Component Analysis \\
 \textbf{TF-IDF} & ~~~ & Term Frequency - Inverse Document Frequency \\
 \textbf{RNN} & ~~~ & Recurrent Neural Network \\
 \textbf{LSTM} & ~~~ & Long Short-Term Memory \\
@@ -310,6 +310,7 @@ Write the abstract here.
 \textbf{SOV} & ~~~ & Subject-Object-Verb \\
 \textbf{IALA} & ~~~ & International Auxiliary Language Association \\
 \textbf{LFN} & ~~~ & Lingua Franca Nova \\
+\textbf{CSV} & ~~~ & Comma-Separated Values \\
 
 
 \end{tabular}
@@ -356,12 +357,13 @@ Despite being defined in contrast to one another, however, constructed and natur
 % Expand more on Greenberg and Chomsky principles for linguistic universals, Universal Grammar, etc. and how it relates to this study (Mairal 2006)
 % Schubert 1989 argued "no sharp distinction between ethnic and planned languages can be easily found, because any human language can be put in a continuum between naturalness and artificiality"
 % Mention interest in deciphering old manuscripts, such as Voynich manuscript or Copiale Cipher, and how such a classification task could be useful in ruling out other possibilities and theories about the text's underlying language (one theory for example is that it's not a natural language)
+% [DELETED] The former of the two proposed a framework for identifying the existence and extent of universals in languages based on empirical analysis of their surface structures (i.e. typology)
 
-In many ways, it can be argued that investigation into the disparity between the two is at its core a mere part of the larger debate surrounding what exactly constitutes a language. The search for and defining of language universals is not only fundamental to the field of linguistic research, but also a topic of widespread debate. At present, many theoretical and foundational contributions to this discussion exist, ranging from Greenberg's proposed universals \parencite{Greenberg1970book} to ideas about universal grammars, such as Chomsky's. 
+In many ways, the investigation into the disparity between the these two kinds of languages overlaps with the broader debate regarding what constitutes a language. Central to this debate is the search for linguistic universals---properties shared by all languages \parencite{Mairal2006book}. The concept of universals in language is recognized as one of the most important areas of research in linguistics \parencite{Christiansen2009book} and has served as a foundation for much linguistic theory, especially in more recent history, stemming largely from the influential theories and works of Greenberg \parencite{Greenberg1970book} and Chomsky \parencite{Chomsky1957book,Cook2007book}. 
+
+Analyzing their surface structures can reveal whether or not constructed languages adhere to the same linguistic conventions as their natural counterparts. If machine learning models fail to successfully distinguish between the two, it may reinforce the notion that these universals are present in all languages, regardless of origin. Conversely, the models succeeding may suggest the opposite. In short, the primary motivation behind this thesis is to contribute to this ongoing debate through the application of machine learning, and a hope to learn more about the fascinating genre of constructed languages.
 
 % Furthermore, while research on constructed languages is far from being novel, in the field of computational linguistics it is less common. Thus, my motivation here was to try something relatively new: to formulate this question of binary distinction based on linguistic features into a classification task and use machine learning methods to attempt to answer it.
-
-Furthermore, while research on constructed languages is far from being novel, it is less common in computational linguistics. Thus, my motivation here was to try something relatively new, by approaching such an investigation using machine learning methods. 
 
 \subsection{Scope of Study \& Research Question}
 \label{ssec:scope}
@@ -369,9 +371,9 @@ Furthermore, while research on constructed languages is far from being novel, it
 % Make note of empirical differences between languages such as phonemes, word order, syntax, etc and explain how this study differs/specifies its focus
 % [DELETED] As previously noted, the specific boundaries which separate constructed from natural languages are not always clearly or consistently defined---even amongst linguists.
 
-The present work analyzes various linguistic features of both types of languages and seeks to make a comparison on the differences, if any exist, between them. More specifically, this study presents a binary classification task using decision tree and outlier detection models to determine if they can be distinguished from one another, based on the specific features examined and parallel Wikipedia data. 
+The present work analyzes various linguistic features of both types of languages and seeks to make a comparison on the differences, if any exist, between them. More specifically, this study presents a binary classification task using decision tree and outlier detection models to determine if they can be distinguished from one another, based on the specific features examined and using a parallel dataset. 
 
-Because of the wide-ranging nature of conducting such a broad analysis, there will of course be many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the focus in this particular study is mainly on features such as the entropy, morphological complexity, and lexical diversity of each language, based on the selected corpora.
+Because of the wide-ranging nature of conducting such a broad analysis, there will of course be many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the main focus for features relate to entropy, morphological complexity, and overall lexical diversity.
 
 The following is a breakdown of the structure of this thesis from here onward: the next section provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; section \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; section \ref{sec:results} presents the results of the study and discussion of these follows in section \ref{sec:discussion}; lastly, section \ref{sec:conclusion} consists of a conclusion as well as elaboration for possible future work.
 
@@ -499,12 +501,14 @@ Much of the literature on constructed languages focuses on Esperanto specificall
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I introduce my data and discuss the steps taken for preprocessing it. I then discuss the linguistic features examined along with the different methods involved in extracting them from the data, and subsequently the classification approaches and models employed on the feature set. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this particular thesis focuses mainly on various empirical measurements of morphological complexity and entropy. More specifically, the features I investigate are morphological complexity, type-token ratio (TTR), moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once these values were calculated for each language, the task became that of binary classification using these values with two machine learning models: a one-class support vector machine (SVM) and a decision tree. Finally, I also include a brief description of the various APIs and libraries used.
+In this section, I introduce my data and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classification approaches and models employed on the feature set. A brief description of the various APIs and libraries used is also included. Since this study involves many different experiments and elements being analyzed, I will begin by giving an overview here of what all was done.
+
+The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this particular thesis focuses mainly on empirical measurements mostly relating to morphological complexity and entropy, along with some others which are commonplace to research on linguistic complexity in general, and thus seemed appropriate to also include. More specifically, the features I investigate are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR and the related moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once the features' values were calculated for each language, the task became that of classification and anomaly detection with three machine learning models: a one-class support vector machine (SVM), random forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data.
 
 \subsection{Data}
 \label{ssec:data}
 
-In total, twenty-four languages are analyzed in this study.
+In total, twenty-four languages are analyzed in this study. Six of these are constructed languages: Esperanto, Ido, Interlingua, Lingua Franca Nova, Volapük, and Kotava. The remaining eighteen are natural: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
 
 % Plot the languages + their language families to have some kind of visual comparison (table also works, include some data points for comparing each language i.e. number of speakers, word order (what do I do when it isn't clear due to having a more free word order, like for Esperanto, Finnish, etc?))
 % Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
@@ -520,10 +524,10 @@ In total, twenty-four languages are analyzed in this study.
 % Mention the drawbacks of relying on Wikipedia data, such as difference in authors, etc
 % Why didn't include lojban? or Novial? (Available data for it is way smaller)
 
-\subsubsection{Constructed Languages}
-\label{ssec:constructedlanguages}
+\subsubsection{Constructed Languages in the Dataset}
+\label{ssec:constructedlanguagesinthedataset}
 
-The six constructed languages used for this study are Esperanto, Ido, Interlingua, Lingua Franca Nova, Volapük, and Kotava. All are IALs and were chosen primarily due to their availability as parallel texts, as well as having data which is comparable in size. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to each other.
+All of the constructed languages used are IALs and were chosen primarily due to their availability in the Wikimedia dumps and having data which is comparable in size, allowing for their use as parallel texts. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to each other.
 
 Esperanto, the most widely-spoken constructed language and considered by many to be the most successful \parencite{Gobbo2008article}, was created in 1887 by Polish ophthalmologist L. L. Zamenhof. Zamenhof’s goal was to create a neutral, easy-to-learn language that would facilitate international communication. Esperanto is a highly regular language, with consistent grammar and a simplified, phonetic spelling system. It draws its lexical roots and syntax primarily from Romance, Germanic, and Slavic languages \parencite{Gobbo2008article,Gobbo2011article}, making it recognizable and familiar to speakers of many European languages, while also intentionally being made to have a comparatively simpler grammar that avoids some complexities found in natural languages, such as irregular verbs or noun cases. It also has a strong global community with speakers around the world, an array of written literature, and even a number of native speakers who learn it from birth---a distinguishing trait which sets it apart from other constructed languages \parencite{goodall2022article}. As a result of its success, Esperanto also serves as a direct influence for many other constructed languages that have come after it, one being Ido. 
 
@@ -581,10 +585,12 @@ It is worth drawing attention to the fact that each of these languages were cons
 
 % Include Blanke's (Schubert2001book) description of Esperanto as the only successful planned language
 
-\subsubsection{Natural Languages}
-\label{ssec:naturallanguages}
+\subsubsection{Natural Languages in the Dataset}
+\label{ssec:naturallanguagesinthedataset}
 
-Eighteen natural languages belonging to five different language families were used: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. The language families represented are Austroasiatic, Austronesian, Turkic, Uralic, and Indo-European, with the latter comprising the bulk of the natural languages used. This diversity was intentional, 
+The natural languages included in this study represent a broad spectrum of linguistic diversity, coming from a variety of language families, geographic regions, and typological features. Although this representation in diversity is not necessarily equal in distribution, it is meant to serve as a contrast to the constructed languages in the dataset, which lack the same level of variety due to overwhelmingly having the same source languages. However, rather than delving into the same level of details for each of the eighteen languages here as I did for the constructed ones, I will instead introduce them by focusing mostly on their collective significance.
+
+Represented in the dataset are Austroasiatic, Austronesian, Turkic, Uralic, and Indo-European languages, with the latter comprising the majority. While languages families are defined by sharing a common ancestor and specific characteristics, they also contain in-group linguistic variance as a result of evolution over time and are further organized into subgroups according to their different lineages. Thus, for the Indo-European languages in this dataset, English, German, Dutch, Afrikaans, Swedish, Icelandic, and Danish all belong to the Germanic branch. Likewise, Italian, Spanish, French, and Occitan belong to the Romance branch. 
 
 % Language family breakdown, make a pie chart for this
 % German - indo-euro - germanic 
@@ -637,20 +643,18 @@ Preprocessing text data is essential for natural language processing (NLP) tasks
 % Show some examples of the regex used from your code
 % Show examples of before and after the preprocessing + show an example of the final preprocessed data
 
-Text data was first extracted from the Wikimedia XML-formatted dump files with the use of WikiExtractor, a Python script \parencite{Attardi2015wikiextractor} that I adapted from the original by adding a limit to the number of articles in order to make extraction of the largest of the files (English in particular) less demanding and quicker. The output is a simple text file, which is easier to clean.
+Text data was first extracted from the Wikimedia XML-formatted dump files with the use of \textsc{WikiExtractor}, a Python script \parencite{Attardi2015wikiextractor} that I adapted by adding a limit to the number of articles in order to make extraction of the largest of the files (English in particular) less demanding and quicker. The output is a simple text file, which is a much easier format to clean and work with. 
 
 I then used several regular expressions to remove general, unnecessary text from each file such as page titles, section headers, links, fragments, HTML tags, braces, and all other non-alphabet symbols aside from periods. This also includes the removal of parantheses and their contents. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences. This was done mainly to enable more accurate measurement of entropy later.
 
-Following this, foreign symbols (i.e., characters not part of a language's alphabet) were removed for each text/language, as occasionally proper nouns, loanwords, etc. would appear in the text, which would also affect measurements of entropy, in addition to morphological segmentation and analysis. For example, there is no letter 'h' in Kotava, but this would sometimes be found in the original extracted text in loanwords such as 'Hiroshima'. After being cleaned, the remaining word is 'irosima'. 
+Following this, foreign symbols (i.e., characters not part of a particular language's alphabet) were removed for each text/language, as occasionally proper nouns, loanwords, etc. would appear in the text, which would also affect measurements of entropy, in addition to morphological segmentation and analysis. To give an example of this, there is no letter 'h' in Kotava, but this would sometimes be used in proper nouns such as 'Hiroshima'. After the text is cleaned, the remaining word left behind is 'irosima'. 
 
 Finally, each text file was truncated according to the file size of the smallest corpus, LFN, so as to have similar lengths. This was calculated based on number of words, with the limit being 630000 (since this is roughly the number of words remaining in the LFN text file after cleaning), and while preserving complete sentences. Sentences containing only one word were also removed. The end result of pre-processing was a single text file corresponding to each language, with each line in the file being a single sentence. The corpora with the smallest and largest number of words is Kotava and Danish/Volapük at 617400 and 629999 words, respectively. For number of sentences, the smallest and largest corpora are Vietnamese and Volapük at 21115 and 55920 sentences, respectively. For a breakdown of these size for each language's text after pre-processing, refer to Table \ref{tbl:preprocessedtexts}.
 
 \subsection{Libraries and APIs}
 \label{ssec:librariesandapis}
 
-% Briefly introduce and explain Keras, PyTorch, NumPy, Pandas, Matplotlib, scikit-learn libraries
-
-Keras (TensorFlow) and PyTorch are popular frameworks for machine/deep learning. Keras, built on TensorFlow, provides a high-level API for quickly building and training neural networks, while PyTorch is known for its flexibility and dynamic computation graph, making it great for research and custom neural network implementations. NumPy is a fundamental library for numerical computing in Python, offering, for instance, fast array operations, which are useful when working with machine learning model. Pandas is essential for data manipulation and analysis, especially when working with structured datasets (e.g., CSVs, DataFrames), and Matplotlib is a plotting library used to visualize data and model results. Lastly, scikit-learn provides a wide range of tools for traditional machine learning algorithms, data preprocessing, and model evaluation. These libraries are vital to building, training, evaluating, and visualizing machine learning and deep learning models, making them highly relevant and extremely useful for the task presented in this paper.
+Several libraries and APIs were used in both the feature extraction and classification parts of the study, and the most important of these will be briefly introduced here. In the field of machine learning, two of the most popular model frameworks used are \textsc{PyTorch} and \textsc{TensorFlow}, which are interacted with via the \textsc{torch} and \textsc{Keras} APIs, respectively. Aside from some relatively minor differences (e.g., the syntax of their code and performance optimization), they share a lot of similarities and are typically used according to personal preference. In the context of this paper, these frameworks are used for calculating some of the entropy values from the corpora. In addition to libraries used for constructing the model architectures, there are also ones used for the data itself. Arguably the most fundamental for this is \textsc{NumPy}, which stands for Numerical Python and is used to accomplish extremely fast and efficient computation of arrays. Other essential libraries include \textsc{Pandas}, used for data manipulation and analysis, and \textsc{Matplotlib}, used for visualizing data and plotting model results. Lastly, \textsc{scikit-learn} provides a wide range of tools for machine learning algorithms, data preprocessing, and model evaluation---as well as computation, thanks to it being built on top of \textsc{NumPy}. The models I used for classification (i.e., One-Class SVM, Random Forest, Decision Tree) as well as PCA come from this library. Altogether, these libraries are often used in tandem due to integrating so well with one another. 
 
 \subsection{Feature Extraction}
 \label{ssec:featureextraction}

@@ -212,6 +212,132 @@
       \verb https://doi.org/10.1515/9783110886115.63
       \endverb
     \endentry
+    \entry{Chomsky1957book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=28167c0b3800bc5cfb686676277005b0}{%
+           family={Chomsky},
+           familyi={C\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Boston}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{28167c0b3800bc5cfb686676277005b0}
+      \strng{fullhash}{28167c0b3800bc5cfb686676277005b0}
+      \strng{bibnamehash}{28167c0b3800bc5cfb686676277005b0}
+      \strng{authorbibnamehash}{28167c0b3800bc5cfb686676277005b0}
+      \strng{authornamehash}{28167c0b3800bc5cfb686676277005b0}
+      \strng{authorfullhash}{28167c0b3800bc5cfb686676277005b0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783112316009}
+      \field{title}{Syntactic Structures}
+      \field{year}{1957}
+      \verb{doi}
+      \verb doi:10.1515/9783112316009
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783112316009
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783112316009
+      \endverb
+    \endentry
+    \entry{Christiansen2009book}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3bbdaf558ec18aa8409beb821f08903d}{%
+           family={Christiansen},
+           familyi={C\bibinitperiod},
+           given={M.H.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49a2c30e59836e06201872522d5b88ff}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b93c4b5151eb894e23242edb307ddab4}{%
+           family={Edelman},
+           familyi={E\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{8f48e5c0bb59400766d92e3e942badf4}
+      \strng{fullhash}{8f48e5c0bb59400766d92e3e942badf4}
+      \strng{bibnamehash}{8f48e5c0bb59400766d92e3e942badf4}
+      \strng{authorbibnamehash}{8f48e5c0bb59400766d92e3e942badf4}
+      \strng{authornamehash}{8f48e5c0bb59400766d92e3e942badf4}
+      \strng{authorfullhash}{8f48e5c0bb59400766d92e3e942badf4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780190294113}
+      \field{title}{Language Universals}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=bCLiBwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=bCLiBwAAQBAJ
+      \endverb
+    \endentry
+    \entry{Cook2007book}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cbe858df067ed68a558ce96f66cfff8c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={V.J.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=895354277b11271a43332a78c21b7df8}{%
+           family={Newson},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{8d90c0df5345b3b90b1adf2e5c7ee458}
+      \strng{fullhash}{8d90c0df5345b3b90b1adf2e5c7ee458}
+      \strng{bibnamehash}{8d90c0df5345b3b90b1adf2e5c7ee458}
+      \strng{authorbibnamehash}{8d90c0df5345b3b90b1adf2e5c7ee458}
+      \strng{authornamehash}{8d90c0df5345b3b90b1adf2e5c7ee458}
+      \strng{authorfullhash}{8d90c0df5345b3b90b1adf2e5c7ee458}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781405111874}
+      \field{title}{Chomsky's Universal Grammar: An Introduction}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=mguunu3sI-YC
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=mguunu3sI-YC
+      \endverb
+    \endentry
     \entry{Gobbo2008article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
@@ -479,6 +605,41 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1007/978-3-319-43491-9_20
+      \endverb
+    \endentry
+    \entry{Mairal2006book}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab2c5052a041e7843cb2e73ebbb058c8}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94a8f3a73161704bbd7e9da2b9be50a3}{%
+           family={Gil},
+           familyi={G\bibinitperiod},
+           given={Juana},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7785f8b34b3bb302f4d3a01d32ae1d00}
+      \strng{fullhash}{7785f8b34b3bb302f4d3a01d32ae1d00}
+      \strng{bibnamehash}{7785f8b34b3bb302f4d3a01d32ae1d00}
+      \strng{authorbibnamehash}{7785f8b34b3bb302f4d3a01d32ae1d00}
+      \strng{authornamehash}{7785f8b34b3bb302f4d3a01d32ae1d00}
+      \strng{authorfullhash}{7785f8b34b3bb302f4d3a01d32ae1d00}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521837095}
+      \field{month}{01}
+      \field{title}{Linguistic Universals}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1017/CBO9780511618215
       \endverb
     \endentry
     \entry{Novikov2022article}{article}{}

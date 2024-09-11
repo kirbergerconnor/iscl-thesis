@@ -9,32 +9,32 @@
 \contentsline {subsection}{\numberline {2.2}Prior Studies}{5}{}%
 \contentsline {section}{\numberline {3}Methodology}{7}{}%
 \contentsline {subsection}{\numberline {3.1}Data}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Natural Languages}{9}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages in the Dataset}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Natural Languages in the Dataset}{10}{}%
 \contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{10}{}%
-\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{10}{}%
-\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{11}{}%
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{11}{}%
+\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{12}{}%
 \contentsline {subsection}{\numberline {3.4}Feature Extraction}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{12}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}Additional Features}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.5}PCA}{13}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{13}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{13}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{13}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{13}{}%
-\contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{13}{}%
-\contentsline {section}{\numberline {4}Results}{14}{}%
-\contentsline {subsection}{\numberline {4.1}Results of TTR \& MATTR}{14}{}%
-\contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Results of Feature Extraction}{14}{}%
-\contentsline {subsection}{\numberline {4.4}Results of PCA}{14}{}%
-\contentsline {subsection}{\numberline {4.5}Results of One-Class SVM}{14}{}%
-\contentsline {subsection}{\numberline {4.6}Results of Decision Tree}{14}{}%
-\contentsline {subsection}{\numberline {4.7}Results of Random Forest}{14}{}%
-\contentsline {section}{\numberline {5}Discussion}{15}{}%
-\contentsline {section}{\numberline {6}Conclusion}{16}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{16}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{17}{}%
-\contentsline {section}{\numberline {8}Appendices}{20}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{14}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{14}{}%
+\contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{14}{}%
+\contentsline {section}{\numberline {4}Results}{15}{}%
+\contentsline {subsection}{\numberline {4.1}Results of TTR \& MATTR}{15}{}%
+\contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{15}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Feature Extraction}{15}{}%
+\contentsline {subsection}{\numberline {4.4}Results of PCA}{15}{}%
+\contentsline {subsection}{\numberline {4.5}Results of One-Class SVM}{15}{}%
+\contentsline {subsection}{\numberline {4.6}Results of Decision Tree}{15}{}%
+\contentsline {subsection}{\numberline {4.7}Results of Random Forest}{15}{}%
+\contentsline {section}{\numberline {5}Discussion}{16}{}%
+\contentsline {section}{\numberline {6}Conclusion}{17}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{17}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{18}{}%
+\contentsline {section}{\numberline {8}Appendices}{22}{}%
