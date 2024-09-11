@@ -14,14 +14,14 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{10}{}%
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{10}{}%
 \contentsline {subsection}{\numberline {3.3}Libraries and APIs}{11}{}%
-\contentsline {subsection}{\numberline {3.4}Feature Extraction}{11}{}%
+\contentsline {subsection}{\numberline {3.4}Feature Extraction}{12}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{12}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{12}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Entropy}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Additional Features}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}PCA}{12}{}%
-\contentsline {subsection}{\numberline {3.5}Classification}{12}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{12}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Additional Features}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}PCA}{13}{}%
+\contentsline {subsection}{\numberline {3.5}Classification}{13}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{13}{}%
 \contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{13}{}%
 \contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{13}{}%
 \contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{13}{}%

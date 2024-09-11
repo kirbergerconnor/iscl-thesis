@@ -472,6 +472,7 @@ A two-dimensional taxonomy for constructed languages containing several notables
 % Questions in Natural and Artificial Languages (Moskovsky)
 % Morphology Matters: A Multilingual Language Modeling Analysis (Park 2021)
 % Can Type-Token Ratio be Used to Show Morphological Complexity of Languages? (Kettunen 2014)
+% Comparing comparatives in artificial languages
 % What do complexity measures measure? Correlating and validating corpus-based measures of morphological complexity (Coltekin 2022)
 % The effects of type and token frequency on word length: a cross-linguistic study (Berg 2022)
 % Token-based typology and word order entropy: A study based on Universal Dependencies (Levshina 2019)
@@ -533,8 +534,11 @@ Interlingua was developed by the International Auxiliary Language Association (I
 Volapük was created in 1879 by Johann Martin Schleyer, a German Catholic priest who believed the language had been given to him by God. It features highly agglutinative structure and regular, yet complex, morphology. While being derived mainly from English, German, and Latin, roots in Volapük differ significantly to the point of being unrecognizable to speakers of these languages \parencite{goodall2022article}. Despite being argued to be the first successful constructed language due to its rise in popularity, having amassed a large number of supporters worldwide along with the formation of clubs and societies \parencite{Gobbo2016article}, various issues regarding its complexity led to a rapid decline and eventual fall from usage in favor of Esperanto.
 
 % The grammar of LFN avoids complex conjugations, gender distinctions, and irregular verbs.
+% Refer to grammar of LFN book
 
 Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed language created by linguist C. George Boeree in 1998. Its lexicon is based mainly on Romance languages, specifically French, Italian, Portuguese, Spanish, and Catalan, while its grammar is based on Romance creole languages \parencite{Pawlas2020inbook}. In particular, inspiration came from the similarly-named Mediterranean Lingua Franca, a pidgin that developed for trade in the Mediterranean basin and was used from the 11\textsuperscript{th} to 18\textsuperscript{th} centuries, as well as from other creoles, such as Haitian Creole. It can be written in both Latin and Cyrillic script. 
+
+% Refer to https://medium.com/@ads.fbchandusuvvari/discovering-the-beauty-of-kotava-language-a-journey-to-multilingualism-9a7cb367a209
 
 The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being a unique attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on the philosophy of linguistic egalitarianism, especially in regards to its lexicon. Its morphology, syntax, and phonetic system are all intentionally made to be simplified and regular.
 
@@ -646,12 +650,15 @@ Finally, each text file was truncated according to the file size of the smallest
 
 % Briefly introduce and explain Keras, PyTorch, NumPy, Pandas, Matplotlib, scikit-learn libraries
 
+Keras (TensorFlow) and PyTorch are popular frameworks for machine/deep learning. Keras, built on TensorFlow, provides a high-level API for quickly building and training neural networks, while PyTorch is known for its flexibility and dynamic computation graph, making it great for research and custom neural network implementations. NumPy is a fundamental library for numerical computing in Python, offering, for instance, fast array operations, which are useful when working with machine learning model. Pandas is essential for data manipulation and analysis, especially when working with structured datasets (e.g., CSVs, DataFrames), and Matplotlib is a plotting library used to visualize data and model results. Lastly, scikit-learn provides a wide range of tools for traditional machine learning algorithms, data preprocessing, and model evaluation. These libraries are vital to building, training, evaluating, and visualizing machine learning and deep learning models, making them highly relevant and extremely useful for the task presented in this paper.
+
 \subsection{Feature Extraction}
 \label{ssec:featureextraction}
 
 % Briefly explain what feature extraction is and why I use it in this study (?)
 % Come back to edit later:
 % Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
+% Refer to https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
 
 % Mention in each subsubsection why the particular feature was extracted, why it was seen as a possible indicator or useful information in this experiment
 % Mention use of StandardScaler(), etc.
@@ -705,6 +712,7 @@ In information science, entropy means...
 % Calculated character, word, text, and lexical entropies (and reverse)
 % Describe the RNNs used for calculating these, as well as the server it was run on. Did not train on GPU!
 % Mention suprisal
+% Refer to https://www.cs.bu.edu/fac/snyder/cs505/PerplexityPosts.pdf for explanaion on perplexity
 
 The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
@@ -744,12 +752,15 @@ Principal Component Analysis was performed for dimensionality reduction.
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
+% Discuss pre-pruning the decision tree
+
 Decision Tree Classifier...
 
 \subsubsection{Random Forest}
 \label{ssec:randomforest}
 
 % Refer to https://towardsdatascience.com/a-practical-guide-to-implementing-a-random-forest-classifier-in-python-979988d8a263
+% Refer to https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/
 % Include visualization of finetuning, as shown by https://medium.com/@Doug-Creates/tuning-random-forest-parameters-with-scikit-learn-b53cbc602cd0
 
 \subsubsection{One-Class SVM}
@@ -795,58 +806,35 @@ This section reports the results of each of the methods implemented.
 \begin{sidewaystable}[h!]
   \centering
   \renewcommand{\arraystretch}{1.0}
-  \begin{tabular} {|m{1cm}|m{1cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|}
-    \toprule
-    \textbf{Corpus} & \textbf{Type} & \textbf{Avg Word Length} & \textbf{Avg Sentence Length} & \textbf{TTR}    & \textbf{MATTR} & \textbf{Char Dist Entr} & \textbf{Word Dist Entr} & \textbf{Text Entr} & \textbf{Lex Entr} & \textbf{Rev Lex Entr} \\
-    \hline
-    \textbf{id}     & nat  & 6.173           & 18.164              & 5.782  & 0.699 & 4.072          & 11.142         & 3.518     & 1.956    & 1.976        \\
-    \hline
-    \textbf{tl}     & nat  & 5.119           & 21.102              & 7.593  & 0.611 & 3.895          & 9.991          & 3.824     & 1.884    & 1.917        \\
-    \hline
-    \textbf{tr}     & nat  & 6.63            & 14.458              & 14.097 & 0.828 & 4.386          & 13.151         & 4.114     & 1.562    & 1.656        \\
-    \hline
-    \textbf{en}     & nat  & 5.087           & 21.301              & 6.079  & 0.697 & 4.167          & 10.673         & 4.116     & 1.926    & 1.981        \\
-    \hline
-    \textbf{de}     & nat  & 6.206           & 16.907              & 12.128 & 0.771 & 4.23           & 11.601         & 3.965     & 1.608    & 1.666        \\
-    \hline
-    \textbf{fr}     & nat  & 5.16            & 23.12               & 7.461  & 0.721 & 4.179          & 10.711         & 3.497     & 1.793    & 1.865        \\
-    \hline
-    \textbf{eo}     & con  & 5.175           & 18.909              & 10.708 & 0.692 & 4.164          & 10.923         & 3.858     & 1.801    & 1.893        \\
-    \hline
-    \textbf{lfn}    & con  & 4.221           & 19.532              & 5.063  & 0.601 & 3.912          & 9.316          & 3.936     & 2.027    & 2.114        \\
-    \hline
-    \textbf{ia}     & con  & 5.05            & 19.547              & 6.88   & 0.607 & 4.032          & 10.005         & 3.336     & 1.821    & 1.906        \\
-    \hline
-    \textbf{io}     & con  & 4.594           & 14.484              & 3.433  & 0.557 & 4.077          & 8.055          & 1.157     & 1.985    & 2.069        \\
-    \hline
-    \textbf{pl}     & nat  & 6.248           & 14.951              & 14.89  & 0.825 & 4.553          & 12.905         & 4.316     & 1.651    & 1.685        \\
-    \hline
-    \textbf{vi}     & nat  & 3.498           & 29.835              & 1.749  & 0.732 & 4.855          & 9.717          & 4.001     & 2.421    & 2.387        \\
-    \hline
-    \textbf{fi}     & nat  & 7.874           & 11.969              & 20.409 & 0.841 & 4.144          & 13.729         & 3.915     & 1.547    & 1.631        \\
-    \hline
-    \textbf{it}     & nat  & 5.455           & 25.727              & 8.505  & 0.764 & 4.029          & 11.308         & 4.003     & 1.672    & 1.786        \\
-    \hline
-    \textbf{af}     & nat  & 5.067           & 20.496              & 6.987  & 0.645 & 4.072          & 9.993          & 4.088     & 1.839    & 1.914        \\
-    \hline
-    \textbf{nl}     & nat  & 5.419           & 18.194              & 8.559  & 0.694 & 4.117          & 10.593         & 3.813     & 1.811    & 1.866        \\
-    \hline
-    \textbf{es}     & nat  & 4.978           & 25.315              & 7.085  & 0.674 & 4.046          & 10.327         & 3.502     & 1.759    & 1.864        \\
-    \hline
-    \textbf{oc}     & nat  & 5.215           & 18.66               & 7.185  & 0.715 & 4.173          & 10.546         & 2.963     & 1.871    & 1.934        \\
-    \hline
-    \textbf{da}     & nat  & 5.346           & 16.466              & 10.517 & 0.737 & 4.197          & 11.274         & 4.342     & 1.808    & 1.87         \\
-    \hline
-    \textbf{sv}     & nat  & 5.597           & 17.322              & 11.031 & 0.756 & 4.294          & 11.488         & 4.17      & 1.775    & 1.836        \\
-    \hline
-    \textbf{is}     & nat  & 5.375           & 15.055              & 11.727 & 0.747 & 4.468          & 11.512         & 4.643     & 1.728    & 1.796        \\
-    \hline
-    \textbf{hu}     & nat  & 6.242           & 15.782              & 16.234 & 0.776 & 4.543          & 12.443         & 4.423     & 1.67     & 1.727        \\
-    \hline
-    \textbf{vo}     & con  & 5.072           & 11.266              & 2.455  & 0.622 & 4.256          & 7.666          & 1.192     & 2.086    & 2.135        \\
-    \hline
-    \textbf{avk}    & con  & 5.06            & 12.824              & 8.153  & 0.582 & 4.186          & 10.287         & 3.085     & 2.011    & 2.066 \\
-    \bottomrule       
+  % \begin{tabular} {|m{1cm}|m{1cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|}
+      % \centering
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+          \textbf{Corpus} & \textbf{Type} & \textbf{Avg Word Length} & \textbf{Avg Sentence Length} & \textbf{TTR} & \textbf{MATTR} & \textbf{Morpheme TTR} & \textbf{Avg Segs Per Word} & \textbf{Avg Forms Per Lemma} & \textbf{Char Dist Entr} & \textbf{Word Dist Entr} & \textbf{Text Entr} & \textbf{Lex Entr} & \textbf{Rev Lex Entr} \\ \hline
+          \textbf{vo} & con & 5.072 & 11.266 & 2.455 & 0.622 & 0.145 & 2.175 & 3.254 & 4.256 & 7.666 & 1.192 & 2.086 & 2.135 \\ \hline
+          \textbf{io} & con & 4.594 & 14.484 & 3.433 & 0.557 & 0.103 & 2.238 & 4.402 & 4.077 & 8.055 & 1.157 & 1.985 & 2.069 \\ \hline
+          \textbf{nl} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 0.107 & 2.169 & 4.383 & 4.117 & 10.593 & 3.813 & 1.811 & 1.866 \\ \hline
+          \textbf{af} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 0.124 & 2.098 & 3.941 & 4.072 & 9.993 & 4.088 & 1.839 & 1.914 \\ \hline
+          \textbf{tr} & nat & 6.63 & 14.458 & 14.097 & 0.828 & 0.09 & 2.023 & 5.573 & 4.386 & 13.151 & 4.114 & 1.562 & 1.656 \\ \hline
+          \textbf{eo} & con & 5.175 & 18.909 & 10.708 & 0.692 & 0.096 & 2.127 & 4.982 & 4.164 & 10.923 & 3.858 & 1.801 & 1.893 \\ \hline
+          \textbf{hu} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 0.079 & 2.169 & 5.999 & 4.543 & 12.443 & 4.423 & 1.67 & 1.727 \\ \hline
+          \textbf{tl} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 0.103 & 2.16 & 4.59 & 3.895 & 9.991 & 3.824 & 1.884 & 1.917 \\ \hline
+          \textbf{it} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 0.088 & 2.152 & 5.352 & 4.029 & 11.308 & 4.003 & 1.672 & 1.786 \\ \hline
+          \textbf{sv} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 0.091 & 2.217 & 5.028 & 4.294 & 11.488 & 4.17 & 1.775 & 1.836 \\ \hline
+          \textbf{is} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 0.091 & 2.16 & 5.181 & 4.468 & 11.512 & 4.643 & 1.728 & 1.796 \\ \hline
+          \textbf{avk} & con & 5.06 & 12.824 & 8.153 & 0.582 & 0.091 & 2.195 & 5.115 & 4.186 & 10.287 & 3.085 & 2.011 & 2.066 \\ \hline
+          \textbf{da} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 0.099 & 2.18 & 4.727 & 4.197 & 11.274 & 4.342 & 1.808 & 1.87 \\ \hline
+          \textbf{es} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 0.113 & 2.089 & 4.285 & 4.046 & 10.327 & 3.502 & 1.759 & 1.864 \\ \hline
+          \textbf{lfn} & con & 4.221 & 19.532 & 5.063 & 0.601 & 0.11 & 2.149 & 4.274 & 3.912 & 9.316 & 3.936 & 2.027 & 2.114 \\ \hline
+          \textbf{en} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 0.116 & 2.136 & 4.091 & 4.167 & 10.673 & 4.116 & 1.926 & 1.981 \\ \hline
+          \textbf{fi} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 0.083 & 2.172 & 5.727 & 4.144 & 13.729 & 3.915 & 1.547 & 1.631 \\ \hline
+          \textbf{pl} & nat & 6.248 & 14.951 & 14.89 & 0.825 & 0.093 & 2.132 & 5.166 & 4.553 & 12.905 & 4.316 & 1.651 & 1.685 \\ \hline
+          \textbf{fr} & nat & 5.16 & 23.12 & 7.461 & 0.721 & 0.11 & 2.167 & 4.269 & 4.179 & 10.711 & 3.497 & 1.793 & 1.865 \\ \hline
+          \textbf{id} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 0.097 & 2.254 & 4.656 & 4.072 & 11.142 & 3.518 & 1.956 & 1.976 \\ \hline
+          \textbf{vi} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 0.167 & 2.026 & 3.033 & 4.855 & 9.717 & 4.001 & 2.421 & 2.387 \\ \hline
+          \textbf{oc} & nat & 5.215 & 18.66 & 7.185 & 0.715 & 0.109 & 2.162 & 4.336 & 4.173 & 10.546 & 2.963 & 1.871 & 1.934 \\ \hline
+          \textbf{ia} & con & 5.05 & 19.547 & 6.88 & 0.607 & 0.105 & 2.144 & 4.492 & 4.032 & 10.005 & 3.336 & 1.821 & 1.906 \\ \hline
+          \textbf{de} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 0.094 & 2.207 & 4.961 & 4.23 & 11.601 & 3.965 & 1.608 & 1.666 \\ \hline       
   \end{tabular}
   \caption{Feature set}
   \label{tbl:featurestable}
