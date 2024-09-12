@@ -177,7 +177,6 @@
 \begin{titlepage}
 \begin{center}
 
-
 % Upper part of the page. The '~' is needed because \\
 % only works if a paragraph has started.
 %\\textsc{includegraphics[width=0.68\textwidth]{bilder/unilogo.png}~\\[1.5cm]
@@ -381,7 +380,7 @@ The following is a breakdown of the structure of this thesis from here onward: t
 \section{Background}
 \label{sec:background}
 
-The vast landscape of linguistic research comprises a myriad of literature delving into the intricacies of languages, both natural and constructed. As this paper is concerned with constructed languages in particular and possible distinctive properties they may have, this section begins with a brief overview of their history and development, which provides some relevant context. Following this is an overview of some related literature, after which I will discuss the various computational methods implemented in this study and provide some background information on how they work. 
+The vast landscape of linguistic research comprises a myriad of literature delving into the intricacies of languages, both natural and constructed. As this paper is concerned with constructed languages in particular and possible distinctive properties they may have, this section begins with a brief overview of their history and development, which provides some relevant context. Following this is an overview of some related literature, which is relevant to understanding the motivation behind the various computational approaches I employ in my experiments. 
 
 \subsection{History of Constructed Languages}
 \label{ssec:historyofconlangs}
@@ -482,6 +481,7 @@ A two-dimensional taxonomy for constructed languages containing several notables
 % Data-driven Model Generalizability in Crosslinguistic Low-resource Morphological Segmentation (Liu 2022)
 % The development of morphological complexity: A cross-linguistic study of L2 French and English (De Clercq 2016)
 % Bentz's papers
+% Using the Relative Entropy of Linguistic Complexity to Assess L2 Language Proficiency Development (Sun 2021)
 % Multiple studies on artificial language acquisition
 % Prior studies on entropies of languages
 % Prior cross-linguistic studies examining linguistic features like TTR of constructed/natural languages
@@ -501,14 +501,16 @@ Much of the literature on constructed languages focuses on Esperanto specificall
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I introduce my data and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classification approaches and models employed on the feature set. A brief description of the various APIs and libraries used is also included. Since this study involves many different experiments and elements being analyzed, I will begin by giving an overview here of what all was done.
+In this section, I introduce the dataset for this paper and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classification approaches and models employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
 
-The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this particular thesis focuses mainly on empirical measurements mostly relating to morphological complexity and entropy, along with some others which are commonplace to research on linguistic complexity in general, and thus seemed appropriate to also include. More specifically, the features I investigate are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR and the related moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once the features' values were calculated for each language, the task became that of classification and anomaly detection with three machine learning models: a one-class support vector machine (SVM), random forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data.
+Since this study involves many different experiments and elements being analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR and the related moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once the features' values were calculated for each language, the task became that of classification and anomaly detection with three machine learning models: a one-class support vector machine (SVM), random forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data.
 
 \subsection{Data}
 \label{ssec:data}
 
 In total, twenty-four languages are analyzed in this study. Six of these are constructed languages: Esperanto, Ido, Interlingua, Lingua Franca Nova, Volapük, and Kotava. The remaining eighteen are natural: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
+
+For consistency, only languages which are written using the Latin alphabet (including the use of diacritics) were chosen. This is mainly because the constructed languages in the dataset all use Latin alphabets, so the selection of natural languages followed the same criteria. Moreover, it allows for more uniform cross-linguistic analysis of features which are sensitive (e.g. in the case of character entropy) to writing systems.
 
 % Plot the languages + their language families to have some kind of visual comparison (table also works, include some data points for comparing each language i.e. number of speakers, word order (what do I do when it isn't clear due to having a more free word order, like for Esperanto, Finnish, etc?))
 % Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
@@ -523,11 +525,12 @@ In total, twenty-four languages are analyzed in this study. Six of these are con
 % Write about the Eurocentricism of the constructed languages used here (their inspirations/influences) and how that may affect the results
 % Mention the drawbacks of relying on Wikipedia data, such as difference in authors, etc
 % Why didn't include lojban? or Novial? (Available data for it is way smaller)
+% Discuss number of symbols (i.e. letters in the alphabet) for each language too
 
 \subsubsection{Constructed Languages in the Dataset}
 \label{ssec:constructedlanguagesinthedataset}
 
-All of the constructed languages used are IALs and were chosen primarily due to their availability in the Wikimedia dumps and having data which is comparable in size, allowing for their use as parallel texts. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to each other.
+All of the constructed languages in the dataset are IALs and were chosen because of their availability in the Wikimedia dumps and having data which is comparable in size, allowing for their use as parallel texts. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to each other.
 
 Esperanto, the most widely-spoken constructed language and considered by many to be the most successful \parencite{Gobbo2008article}, was created in 1887 by Polish ophthalmologist L. L. Zamenhof. Zamenhof’s goal was to create a neutral, easy-to-learn language that would facilitate international communication. Esperanto is a highly regular language, with consistent grammar and a simplified, phonetic spelling system. It draws its lexical roots and syntax primarily from Romance, Germanic, and Slavic languages \parencite{Gobbo2008article,Gobbo2011article}, making it recognizable and familiar to speakers of many European languages, while also intentionally being made to have a comparatively simpler grammar that avoids some complexities found in natural languages, such as irregular verbs or noun cases. It also has a strong global community with speakers around the world, an array of written literature, and even a number of native speakers who learn it from birth---a distinguishing trait which sets it apart from other constructed languages \parencite{goodall2022article}. As a result of its success, Esperanto also serves as a direct influence for many other constructed languages that have come after it, one being Ido. 
 
@@ -540,13 +543,11 @@ Volapük was created in 1879 by Johann Martin Schleyer, a German Catholic priest
 % The grammar of LFN avoids complex conjugations, gender distinctions, and irregular verbs.
 % Refer to grammar of LFN book
 
-Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed language created by linguist C. George Boeree in 1998. Its lexicon is based mainly on Romance languages, specifically French, Italian, Portuguese, Spanish, and Catalan, while its grammar is based on Romance creole languages \parencite{Pawlas2020inbook}. In particular, inspiration came from the similarly-named Mediterranean Lingua Franca, a pidgin that developed for trade in the Mediterranean basin and was used from the 11\textsuperscript{th} to 18\textsuperscript{th} centuries, as well as from other creoles, such as Haitian Creole. It can be written in both Latin and Cyrillic script. 
+Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed language created by linguist C. George Boeree in 1998. Its lexicon is based mainly on Romance languages, specifically French, Italian, Portuguese, Spanish, and Catalan, while its grammar is based on Romance creole languages \parencite{Pawlas2020inbook}. In particular, inspiration came from the similarly-named Mediterranean Lingua Franca, a pidgin that developed for trade in the Mediterranean basin and was used from the 11\textsuperscript{th} to 18\textsuperscript{th} centuries, as well as from other creoles, such as Haitian Creole. It can be written in both Latin and Cyrillic scripts, though this dataset only contains the former. 
 
 % Refer to https://medium.com/@ads.fbchandusuvvari/discovering-the-beauty-of-kotava-language-a-journey-to-multilingualism-9a7cb367a209
 
-The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being a unique attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on the philosophy of linguistic egalitarianism, especially in regards to its lexicon. Its morphology, syntax, and phonetic system are all intentionally made to be simplified and regular.
-
-Table \ref{tbl:conlangs} shows these languages together with the main source languages they draw from (if any). Note, however, that this is not an exhaustive list of all of their language influences.
+The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being a unique attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages, especially with regards to lexicon, and based on a philosophy of linguistic egalitarianism. Its morphology, syntax, and phonetic system are all intentionally made to be simplified and regular.
 
 % For conlangs, how should I call the languages they are drawn from? "Language influences" or is there a better way to say it?
 
@@ -555,7 +556,7 @@ Table \ref{tbl:conlangs} shows these languages together with the main source lan
   \renewcommand{\arraystretch}{1.5}
   \begin{tabular} {|p{5cm}|p{5cm}|}
   \hline
-  \textbf{Constructed Language} & \textbf{Source Languages/Families} \\
+  \textbf{Conlang} & \textbf{Source Languages/Families} \\
   \hline
   Esperanto & Romance, Germanic, Slavic \\
   \hline
@@ -574,7 +575,9 @@ Table \ref{tbl:conlangs} shows these languages together with the main source lan
   \label{tbl:conlangs}
 \end{table}
 
-It is worth drawing attention to the fact that each of these languages were constructed mainly from various European languages, with the exception of Kotava. Consequently, this may influence models performing classification and be visible in the results. This will be explored later in Section \ref{sec:discussion}.
+Finally, it is worth drawing attention to the fact that each of these languages were constructed mainly from various European languages, with the exception of Kotava. Consequently, this may influence the models performing classification and be visible in the results. This will be explored in greater detail later in Section \ref{sec:discussion}.
+
+Table \ref{tbl:conlangs} shows the dataset's constructed languages together with the main source languages they draw from (with \textit{N/A} for Kotava meaning \textit{not applicable}). Note, however, that this is not an exhaustive list of all of their language influences.
 
 % "and more niche" with how many speakers?
 % Discuss LFN being inspired by Mediterranean Lingua Franca https://en.wikipedia.org/wiki/Mediterranean_Lingua_Franca
@@ -588,9 +591,17 @@ It is worth drawing attention to the fact that each of these languages were cons
 \subsubsection{Natural Languages in the Dataset}
 \label{ssec:naturallanguagesinthedataset}
 
-The natural languages included in this study represent a broad spectrum of linguistic diversity, coming from a variety of language families, geographic regions, and typological features. Although this representation in diversity is not necessarily equal in distribution, it is meant to serve as a contrast to the constructed languages in the dataset, which lack the same level of variety due to overwhelmingly having the same source languages. However, rather than delving into the same level of details for each of the eighteen languages here as I did for the constructed ones, I will instead introduce them by focusing mostly on their collective significance.
+The natural languages included in this study represent a broad spectrum of linguistic diversity, comprising a variety of families, geographic regions, and typological features. Although this representation is not necessarily equal in distribution, it is meant to serve as a contrast to the constructed languages in the dataset, which lack a similar extent of variety due to overwhelmingly having the same source languages. However, rather than delving into the same level of details for each of the eighteen languages here as I did for the constructed ones, I will instead introduce them by focusing mostly on their collective significance and summarizing some of their relevant linguistic traits.
 
-Represented in the dataset are Austroasiatic, Austronesian, Turkic, Uralic, and Indo-European languages, with the latter comprising the majority. While languages families are defined by sharing a common ancestor and specific characteristics, they also contain in-group linguistic variance as a result of evolution over time and are further organized into subgroups according to their different lineages. Thus, for the Indo-European languages in this dataset, English, German, Dutch, Afrikaans, Swedish, Icelandic, and Danish all belong to the Germanic branch. Likewise, Italian, Spanish, French, and Occitan belong to the Romance branch. 
+% Explain some notable characteristics of indo-european/germanic/romance languages (inflectional, agglutinative, etc.)
+
+The language families represented are Austroasiatic, Austronesian, Turkic, Uralic, and Indo-European, with the latter being both the largest worldwide based on number of speakers and the most represented in the dataset (12 out of the 18 natural languages). While language families are defined through their collective sharing of linguistic features and common ancestors, they also contain some degrees of in-group variance as a result of evolution over time and are thus further divided into different subgroups accordingly. For the Indo-European languages in the dataset, English, German, Dutch, Afrikaans, Swedish, Icelandic, and Danish all belong to the Germanic branch. Likewise, Italian, Spanish, French, and Occitan are in the Romance languages, and Polish is Slavic.
+
+Hungarian and Finnish are two of the most widely-spoken Uralic languages, so their inclusion provides a representative sample of their group.
+
+The remaining languages were included in order to have more variety beyond only Europe. These are Tagalog and Indonesian (Austronesian), Vietnamese (Austroasiatic), and Turkish (Turkic). 
+
+In terms of morphological typology, 
 
 % Language family breakdown, make a pie chart for this
 % German - indo-euro - germanic 
@@ -620,11 +631,10 @@ Represented in the dataset are Austroasiatic, Austronesian, Turkic, Uralic, and 
 % Mention the year/date of the file to specify the dump
 % Which languages' files did you limit (using the max_articles variable) with the script? The biggest files (eo, da, fi, tr, id, vi, hu, sv, nl, pl, it, es, fr, de, en) I gradually limited the max number of files to be extracted from the dumps; max 50000 for eo, 
 
-The data for this thesis comes from Wikimedia dump files. Wikimedia is a global movement and community founded on shared values, whose goal is to provide free and openly accessible information to everyone in the form of massive collaborative projects (which include, among others, the widely-used Wikipedia and Wiktionary). For a large, cross-linguistic study, massive databases with open-access make for an ideal source for corpora. Most importantly, the projects are multilingual, meaning the databases are available in a considerable number of different languages---including several constructed languages. This allows for composing parallel corpora. Additional constructed languages which are also available from these dumps but were not included in the present study due to having a much smaller amount of data are Novial, Interlingue, and Lojban.
+The data for this thesis comes from Wikimedia dump files. Wikimedia is a global movement and community founded on shared values, whose goal is to provide free and openly accessible information to everyone in the form of massive collaborative projects (which include, among others, the widely-used Wikipedia and Wiktionary). For a large, cross-linguistic study, massive databases with open-access make for an ideal source for corpora. Most importantly, the projects are multilingual, meaning data is available in a considerable number of different languages---including several constructed ones. This allows for composing a set of corpora which is adequately parallel to each other and from the same domain. Additional constructed languages which are also available from the dumps---but were not included in the present study due to having a much smaller amount of data---are Novial, Interlingue, and Lojban.
 
-The dump files provide detailed, archived snapshots of the content from Wiki repositories for a specified point in time and are available in different formats. All dumps used were XML-formatted and from the 2024-07-01 archive, containing articles together with their metadata\footnote{https://dumps.wikimedia.org/backup-index.html}. It is also worth mentioning here that there are some drawbacks to using these dumps for the present study. The files sizes vary considerably depending on the language, with the largest being roughly 22 gigabytes (English) and the smallest around 4 megabytes (Lingua Franca Nova), meaning all files do not contain the exact same articles. Additionally, the open and collaborative nature of Wikimedia means the articles are often authored by a multitude of different people, which can result in inconsistencies in the texts, such as with writing style. Similarly, it may also produce an imbalance in the amount of information provided across languages, with the same article in one language being considerably more detailed than in another, and inconsistent or low-quality translations, as \textcite{Novikov2022article} noted to be the case for Wikipedia articles in Volapük. Thus, while Wikimedia was decided as the best available option for the task at hand, there are some unfavorable aspects of using it which may influence the results; this will be discussed more in Section \ref{sec:discussion}.
+The dump files provide detailed, archived snapshots of the content from Wiki repositories for a specified point in time and are available in different formats. All dumps used were XML-formatted and from the 2024-07-01 archive, containing articles together with their metadata\footnote{\url{https://dumps.wikimedia.org/backup-index.html}}. It is also worth mentioning here that there are some drawbacks to using these dumps for the present study. The files sizes vary considerably depending on the language, with the largest being roughly 22 gigabytes (English) and the smallest around 4 megabytes (Lingua Franca Nova), meaning all files do not contain the exact same articles. Additionally, the open and collaborative nature of Wikimedia means the articles are often authored by a multitude of different people, which can result in inconsistencies in the texts, such as with writing style. Similarly, it may also produce an imbalance in the amount of information provided across languages, with the same article in one language being considerably more detailed than in another, and inconsistent or low-quality translations, as \textcite{Novikov2022article} noted to be the case for Wikipedia articles in Volapük. Thus, while Wikimedia was decided as the best available option for the task at hand, there are some unfavorable aspects of using it which may influence the results; this will be discussed more in Section \ref{sec:discussion}.
 
-% Previously (in 2023) used a min value of 650000 words, now (in 2024) using min value of 630000 words
 % Genre/domain of texts? Do all dumps have the exact same articles? How does this affect the experiment and results?
 % Not gold standard corpus, its quality depends on many different variables (i.e. the wikipedia contributors who wrote the articles)
 % Give a breakdown of the corpora data, for example the number of words/sentences for each language
@@ -643,7 +653,7 @@ Preprocessing text data is essential for natural language processing (NLP) tasks
 % Show some examples of the regex used from your code
 % Show examples of before and after the preprocessing + show an example of the final preprocessed data
 
-Text data was first extracted from the Wikimedia XML-formatted dump files with the use of \textsc{WikiExtractor}, a Python script \parencite{Attardi2015wikiextractor} that I adapted by adding a limit to the number of articles in order to make extraction of the largest of the files (English in particular) less demanding and quicker. The output is a simple text file, which is a much easier format to clean and work with. 
+Text data was first extracted from the Wikimedia XML-formatted dump files with the use of WikiExtractor\footnote{GitHub repository for WikiExtractor: \url{https://github.com/attardi/wikiextractor}}, a Python script \parencite{Attardi2015wikiextractor} that I adapted by adding a limit to the number of articles in order to make extraction of the largest of the files (English in particular) less demanding and quicker. The output is a simple text file, which is a much easier format to clean and work with. 
 
 I then used several regular expressions to remove general, unnecessary text from each file such as page titles, section headers, links, fragments, HTML tags, braces, and all other non-alphabet symbols aside from periods. This also includes the removal of parantheses and their contents. The text was then made all lowercase and split by the periods---while also attempting to account for abbreviations---to make separate sentences. This was done mainly to enable more accurate measurement of entropy later.
 
@@ -669,12 +679,14 @@ Several libraries and APIs were used in both the feature extraction and classifi
 % torchrnn.py is for text entropy, kerasrnn.py and reversekerasrnn.py are for lexical entropy
 % Also include calculations like average sentence length, average word length!!!
 
-Since this study uses models for classification, it is necessary to first extract the features...
+A crucial step in many NLP tasks is feature extraction. Before training the classifiers for anomaly detection, 
 
-\subsubsection{TTR \& MATTR}
-\label{ssec:ttrandmattr}
+\subsubsection{Lexical Diversity}
+\label{ssec:lexicaldiversity}
 
-TTR is a way of measuring lexical diversity. It is calculated using the following formula: \[TTR = \frac{\sum_{i=1}^{n}\delta(w_i)}{n}\]
+A popular way of measuring lexical diversity is with TTR, given by the formula \[TTR = \frac{\sum_{i=1}^{n}\delta(w_i)}{n}\]
+
+where $\delta$ corresponds to 
 
 A glaring issue with TTR, however, is that it can vary widely based on a text's length. The longer a particular text, the higher the likelihood of repetition occurring. There have been several solutions proposed to address this issue, one being MATTR. MATTR is given in the formula \[MATTR_i = \frac{TTR_1+TTR_2+...+TTR_i}{i}\]
 
@@ -700,6 +712,8 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 % Morfessor also run on remote server, and writes a training log
 % For analysis (for each language): calculate type/token ratio of morphemes (number of unique tokens/morphemes over the total number of tokens/morphemes), average number of segmentations, average number of forms for each lemma
 % When identifying the lemmas for each segment, using the largest segment. For cases of multiple largest segments, some options: frequency-based disambiguation (the segment which appears most often in the whole data is the lemma, etc) or take the first one (greedy algorithm) or take both/all of the equally largest as lemmas
+% Refer to morfessor docs on Python library interface https://github.com/aalto-speech/morfessor/blob/master/docs/source/libinterface.rst
+
 The morphological systems of each language were analyzed using Morfessor, 
 
 % \subsubsection{Zipfian Distribution}
@@ -717,6 +731,7 @@ In information science, entropy means...
 % Describe the RNNs used for calculating these, as well as the server it was run on. Did not train on GPU!
 % Mention suprisal
 % Refer to https://www.cs.bu.edu/fac/snyder/cs505/PerplexityPosts.pdf for explanaion on perplexity
+% Lexical Richness and Text Length: An Entropy-based Perspective (Shi 2020)
 
 The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
@@ -730,8 +745,7 @@ The entropy was calculated for the character and word distributions in each of t
 % the entropy value was taken from the val_loss of the model
 % early stopping was used in the tensorflow models for lexical entropy, based on val_loss and with patience=3
 
-\subsubsection{Additional Features}
-\label{ssec:additionalfeatures}
+For text entropy, a character-level long short-term memory (LSTM) model built with \textsc{PyTorch} was used.\footnote{Model adapted from \url{https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level\%20LSTM\%20with\%20PyTorch.ipynb}}
 
 \subsubsection{PCA}
 \label{ssec:pca}
@@ -776,6 +790,7 @@ Decision Tree Classifier...
 % Outlier detection and novelty detection
 % Include mathematical equation for normalization/standardization/min-max scaling (refer to https://www.geeksforgeeks.org/how-to-normalize-data-using-scikit-learn-in-python/ or )
 % Support Vector Method for Novelty Detection (Olkopf 2000)
+% For adaptive OCSVM, refer to https://www.researchgate.net/publication/300242572_An_Adaptive_Weighted_One-Class_SVM_for_Robust_Outlier_Detection
 
 One-Class SVMs are a special kind of SVMs used in the domain of anomaly detection. While similar to one another, classic SVMs separate two classes using a hyperplane with the largest possible margin. In contrast to this, One-Class SVMs...Rather than training on an entire dataset containing two classes as with classic SVMs, these models train exclusively on the majority class, also called the "normal" class. After training,  
 
@@ -796,16 +811,16 @@ where $\mu$ is mean and $\sigma$ is the standard deviation.
 This section reports the results of each of the methods implemented.
 % Also do 1D analysis of all languages for each single dimension (e.g. the TTR, seeing if there's clustering or dispersal in tendency for the languages on a single line)
 
-\subsection{Results of TTR \& MATTR}
-\label{sec:ttrmattrresults}
+\subsection{Results of Lexical Diversity}
+\label{ssec:lexicaldiversityresults}
 
 % Include table showing number of tokens and types for each language, together with the ratio calculation
 
 \subsection{Results of Morphological Segmentation}
-\label{sec:morphologicalsegmentationresults}
+\label{ssec:morphologicalsegmentationresults}
 
 \subsection{Results of Feature Extraction}
-\label{sec:featureextractionresults}
+\label{ssec:featureextractionresults}
 
 \begin{sidewaystable}[h!]
   \centering
@@ -845,7 +860,7 @@ This section reports the results of each of the methods implemented.
 \end{sidewaystable}
 
 \subsection{Results of PCA}
-\label{sec:pcaresults}
+\label{ssec:pcaresults}
 
 \begin{figure}
   \centering
@@ -859,10 +874,10 @@ This section reports the results of each of the methods implemented.
 A script was used to increase readability of the text in the graph\footnote{https://github.com/Phlya/adjustText}.
 
 \subsection{Results of One-Class SVM}
-\label{sec:oneclasssvmresults}
+\label{ssec:oneclasssvmresults}
 
 \subsection{Results of Decision Tree}
-\label{sec:decisiontreeresults}
+\label{ssec:decisiontreeresults}
 
 \begin{figure}
   \centering
@@ -872,7 +887,7 @@ A script was used to increase readability of the text in the graph\footnote{http
 \end{figure}
 
 \subsection{Results of Random Forest}
-\label{sec:randomforestresults}
+\label{ssec:randomforestresults}
 
 \newpage
 \section{Discussion}
@@ -949,4 +964,3 @@ Here I...
 % Include the regular expressions used in the pre-processing
 
 \end{document}
-

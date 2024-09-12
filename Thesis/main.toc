@@ -9,24 +9,23 @@
 \contentsline {subsection}{\numberline {2.2}Prior Studies}{5}{}%
 \contentsline {section}{\numberline {3}Methodology}{7}{}%
 \contentsline {subsection}{\numberline {3.1}Data}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages in the Dataset}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages in the Dataset}{8}{}%
 \contentsline {subsubsection}{\numberline {3.1.2}Natural Languages in the Dataset}{10}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{10}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{11}{}%
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{11}{}%
 \contentsline {subsection}{\numberline {3.3}Libraries and APIs}{12}{}%
-\contentsline {subsection}{\numberline {3.4}Feature Extraction}{12}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}TTR \& MATTR}{13}{}%
+\contentsline {subsection}{\numberline {3.4}Feature Extraction}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Entropy}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Additional Features}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}PCA}{13}{}%
-\contentsline {subsection}{\numberline {3.5}Classification}{13}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}PCA}{14}{}%
+\contentsline {subsection}{\numberline {3.5}Classification}{14}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{14}{}%
 \contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{14}{}%
 \contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{14}{}%
 \contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{14}{}%
 \contentsline {section}{\numberline {4}Results}{15}{}%
-\contentsline {subsection}{\numberline {4.1}Results of TTR \& MATTR}{15}{}%
+\contentsline {subsection}{\numberline {4.1}Results of Lexical Diversity}{15}{}%
 \contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{15}{}%
 \contentsline {subsection}{\numberline {4.3}Results of Feature Extraction}{15}{}%
 \contentsline {subsection}{\numberline {4.4}Results of PCA}{15}{}%
