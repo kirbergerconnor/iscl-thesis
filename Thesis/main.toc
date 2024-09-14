@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {3.4}Feature Extraction}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{14}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}PCA}{14}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{14}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{14}{}%

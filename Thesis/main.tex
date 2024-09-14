@@ -480,6 +480,7 @@ A two-dimensional taxonomy for constructed languages containing several notables
 % Crosslinguistic Corpus Studies in Linguistic Typology (Schnell 2022)
 % Data-driven Model Generalizability in Crosslinguistic Low-resource Morphological Segmentation (Liu 2022)
 % The development of morphological complexity: A cross-linguistic study of L2 French and English (De Clercq 2016)
+% Morpheme-Based Neural Machine Translation Models for Low-Resource Fusion Languages (Gezmu 2023)
 % Bentz's papers
 % Using the Relative Entropy of Linguistic Complexity to Assess L2 Language Proficiency Development (Sun 2021)
 % Multiple studies on artificial language acquisition
@@ -530,6 +531,8 @@ For consistency, only languages which are written using the Latin alphabet (incl
 \subsubsection{Constructed Languages in the Dataset}
 \label{ssec:constructedlanguagesinthedataset}
 
+% Refer to https://docs.verbix.com/Conlangs/ for more info of these
+
 All of the constructed languages in the dataset are IALs and were chosen because of their availability in the Wikimedia dumps and having data which is comparable in size, allowing for their use as parallel texts. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to each other.
 
 Esperanto, the most widely-spoken constructed language and considered by many to be the most successful \parencite{Gobbo2008article}, was created in 1887 by Polish ophthalmologist L. L. Zamenhof. Zamenhof’s goal was to create a neutral, easy-to-learn language that would facilitate international communication. Esperanto is a highly regular language, with consistent grammar and a simplified, phonetic spelling system. It draws its lexical roots and syntax primarily from Romance, Germanic, and Slavic languages \parencite{Gobbo2008article,Gobbo2011article}, making it recognizable and familiar to speakers of many European languages, while also intentionally being made to have a comparatively simpler grammar that avoids some complexities found in natural languages, such as irregular verbs or noun cases. It also has a strong global community with speakers around the world, an array of written literature, and even a number of native speakers who learn it from birth---a distinguishing trait which sets it apart from other constructed languages \parencite{goodall2022article}. As a result of its success, Esperanto also serves as a direct influence for many other constructed languages that have come after it, one being Ido. 
@@ -546,8 +549,9 @@ Volapük was created in 1879 by Johann Martin Schleyer, a German Catholic priest
 Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed language created by linguist C. George Boeree in 1998. Its lexicon is based mainly on Romance languages, specifically French, Italian, Portuguese, Spanish, and Catalan, while its grammar is based on Romance creole languages \parencite{Pawlas2020inbook}. In particular, inspiration came from the similarly-named Mediterranean Lingua Franca, a pidgin that developed for trade in the Mediterranean basin and was used from the 11\textsuperscript{th} to 18\textsuperscript{th} centuries, as well as from other creoles, such as Haitian Creole. It can be written in both Latin and Cyrillic scripts, though this dataset only contains the former. 
 
 % Refer to https://medium.com/@ads.fbchandusuvvari/discovering-the-beauty-of-kotava-language-a-journey-to-multilingualism-9a7cb367a209
+% Refer to https://www.kotava.org/en/en_staaveem.php for specifics about the grammar
 
-The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being a unique attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages, especially with regards to lexicon, and based on a philosophy of linguistic egalitarianism. Its morphology, syntax, and phonetic system are all intentionally made to be simplified and regular.
+The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being an attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on a philosophy of linguistic egalitarianism. This intentionally designed uniqueness manifests in several of its linguistic systems, from morphology to syntax. For example, though word order in Kotava is not imposed, the most frequently used one is OSV, which is exceedingly rare in natural language. Other unique features include a 4\textsuperscript{th} person plural, object complements being introduced by a transitive preposition, and a lack of declension. 
 
 % For conlangs, how should I call the languages they are drawn from? "Language influences" or is there a better way to say it?
 
@@ -708,18 +712,25 @@ A glaring issue with TTR, however, is that it can vary widely based on a text's 
 % (Mzamo 2019) "Minimum Description Length (MDL) [20] has seen extensive use in unsupervised morphological segmentation, primarily as a measure of fit of the training data to heuristic models and statistical models [21], [22]. The comparative standard used in this study, Morfessor-Baseline [23], uses MDL and Maximum likelihood estimation."
 % Modeling Morphological Typology for Unsupervised Learning of Language Morphology (Xu 2020)
 % Unsupervised Learning of Language Morphology by Exploring Language Typology (Xu)
+% Morpheme-Based Neural Machine Translation Models for Low-Resource Fusion Languages (Gezmu 2023)
 % Include Morfessor model's types/tokens from compounds in training data and number of epochs, and cost at each epoch and final cost and training time; e.g. for Esperanto: Compounds in training data: 67460 types / 67460 tokens, 7 epochs, Final cost: 1460075.939887648, training time: 227.798s
 % Morfessor also run on remote server, and writes a training log
 % For analysis (for each language): calculate type/token ratio of morphemes (number of unique tokens/morphemes over the total number of tokens/morphemes), average number of segmentations, average number of forms for each lemma
 % When identifying the lemmas for each segment, using the largest segment. For cases of multiple largest segments, some options: frequency-based disambiguation (the segment which appears most often in the whole data is the lemma, etc) or take the first one (greedy algorithm) or take both/all of the equally largest as lemmas
 % Refer to morfessor docs on Python library interface https://github.com/aalto-speech/morfessor/blob/master/docs/source/libinterface.rst
 
-The morphological systems of each language were analyzed using Morfessor, 
+The morphological systems of each language were analyzed using \textsc{Morfessor 2.0}.  
 
 % \subsubsection{Zipfian Distribution}
 
 % Zipfian distribution of natural languages vs constructed languages, refer to Bentz 2023
 % Zipf’s word frequency law in natural language: A critical review and future directions (Piantadosi 2014)
+
+% Created word lists from the corpora
+% Used Morfessor with logarithmic function
+% Calculated morpheme TTR, etc.
+
+After the text files were segmented, 
 
 \subsubsection{Entropy}
 \label{ssec:entropy}
@@ -756,7 +767,7 @@ For text entropy, a character-level long short-term memory (LSTM) model built wi
 % Do a breakdown of how PCA and explained variance (the mathematics) works, following https://machinelearningmastery.com/principal-component-analysis-for-visualization/
 % Do PCA in 2 or 3 dimensions/components? (for 3, refer to https://machinelearningmastery.com/principal-component-analysis-for-visualization/)
 
-Principal Component Analysis was performed for dimensionality reduction. 
+PCA is an unsupervised method of dimensionality reduction, used for  
 
 % Discuss explained variance ratio
 % Use https://www.jcchouinard.com/pca-explained-variance/ for visualizing explained variance
