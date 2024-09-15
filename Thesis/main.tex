@@ -778,6 +778,7 @@ PCA is an unsupervised method of dimensionality reduction, used for
 % Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why 
 % Include tables of the hyperparameters for both models, explained how they were tuned (grid search, etc.)
 
+
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
@@ -814,6 +815,7 @@ where $\mu$ is mean and $\sigma$ is the standard deviation.
 
 % Methods for evaluating the accuracy, etc. of the classifiers, RNNs used for calculating the entropies (?), and morphological segementations with Morfessor (?)
 % Should I use sklearn.metrics 'classification_report'? As done by https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
+% Use of Leave One Out Cross Validation for supervised methods (refer to https://www.statology.org/leave-one-out-cross-validation/), include MSE/MAE/Bernoulli likelihood formulas, etc
 
 \newpage
 \section{Results}
@@ -906,6 +908,7 @@ A script was used to increase readability of the text in the graph\footnote{http
 
 % Mention expectations (e.g. the conlangs coming from European languages, so the models might confuse these with the natural languages when classifying the two) and how they compare to the results
 % Come back to the question/topic of linguistic universals, how do these results fit into the debate?
+% Discuss problems with morphological complexity analysis: lack of gold standard corpus to evaluate models' segmentations, etc
 
 \newpage
 \section{Conclusion}
