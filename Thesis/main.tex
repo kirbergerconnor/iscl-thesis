@@ -360,7 +360,7 @@ Despite being defined in contrast to one another, however, constructed and natur
 
 In many ways, the investigation into the disparity between the these two kinds of languages overlaps with the broader debate regarding what constitutes a language. Central to this debate is the search for linguistic universals---properties shared by all languages \parencite{Mairal2006book}. The concept of universals in language is recognized as one of the most important areas of research in linguistics \parencite{Christiansen2009book} and has served as a foundation for much linguistic theory, especially in more recent history, stemming largely from the influential theories and works of Greenberg \parencite{Greenberg1970book} and Chomsky \parencite{Chomsky1957book,Cook2007book}. 
 
-Analyzing their surface structures can reveal whether or not constructed languages adhere to the same linguistic conventions as their natural counterparts. If machine learning models fail to successfully distinguish between the two, it may reinforce the notion that these universals are present in all languages, regardless of origin. Conversely, the models succeeding may suggest the opposite. In short, the primary motivation behind this thesis is to contribute to this ongoing debate through the application of machine learning, and a hope to learn more about the fascinating genre of constructed languages.
+Analyzing their surface structures can reveal whether or not constructed languages adhere to the same linguistic conventions as their natural counterparts. If machine learning models fail to successfully distinguish between the two, it may reinforce the notion that these universals are present in all languages, regardless of origin. Conversely, the models succeeding may suggest the opposite. In short, the primary motivation behind this thesis is to contribute to this ongoing debate through the application of machine learning, and a desire to learn more about the fascinating genre of constructed languages.
 
 % Furthermore, while research on constructed languages is far from being novel, in the field of computational linguistics it is less common. Thus, my motivation here was to try something relatively new: to formulate this question of binary distinction based on linguistic features into a classification task and use machine learning methods to attempt to answer it.
 
@@ -370,9 +370,9 @@ Analyzing their surface structures can reveal whether or not constructed languag
 % Make note of empirical differences between languages such as phonemes, word order, syntax, etc and explain how this study differs/specifies its focus
 % [DELETED] As previously noted, the specific boundaries which separate constructed from natural languages are not always clearly or consistently defined---even amongst linguists.
 
-The present work analyzes various linguistic features of both types of languages and seeks to make a comparison on the differences, if any exist, between them. More specifically, this study presents a binary classification task using decision tree and outlier detection models to determine if they can be distinguished from one another, based on the specific features examined and using a parallel dataset. 
+The present work analyzes various linguistic features and seeks to successfully discriminate a language as being either natural or constructed based on these. More specifically, the scope of this study includes both binary classification and anomaly detection, with the models being trained on a set of selected features rather than raw text data. 
 
-Because of the wide-ranging nature of conducting such a broad analysis, there will of course be many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the main focus for features relate to entropy, morphological complexity, and overall lexical diversity.
+Because of the wide-ranging nature of conducting such a broad analysis, there are of course many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the main focus for linguistic features relate to entropy, morphological complexity, and overall lexical diversity.
 
 The following is a breakdown of the structure of this thesis from here onward: the next section provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; section \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; section \ref{sec:results} presents the results of the study and discussion of these follows in section \ref{sec:discussion}; lastly, section \ref{sec:conclusion} consists of a conclusion as well as elaboration for possible future work.
 
@@ -422,7 +422,7 @@ Interest in creating such languages picked up in the 17\textsuperscript{th} cent
 % It is from this category that the constructed languages used in the present study come from.
 % Speak more about details of these IALs here? Or in the data section?
 
-In the 19\textsuperscript{th} and 20\textsuperscript{th} centuries the focus for language construction, especially in Europe, shifted to that of making international auxiliary languages (IALs) intended to better enable communication across language barriers, i.e., people who do not share a similar language \parencite{goodall2022article}. Notably, this means they were generally designed to resemble natural language, with choice exceptions being the simplification of certain linguistic features. The surge in need for IALs correlated with the increase in prevalence and accessibility regarding international travel and communication at the time. Such languages were also described as "neutral" \parencite{Large1985book}, in the sense that individual advantages amongst speakers and learners would, theoretically, not exist due to IALs being second languages to everyone \parencite{Gobbo2016article}. That being said, many of the most prominent examples (e.g., Volapük, Interlingua, Esperanto, Ido) are derived from the Indo-European language family \parencite{Novikov2022article,goodall2022article}, so such a description might not be apt. A more detailed explanation of each of the IALs used in this study is provided in Section \ref{ssec:data}
+In the 19\textsuperscript{th} and 20\textsuperscript{th} centuries the focus for language construction, especially in Europe, shifted to that of making international auxiliary languages (IALs) intended to better enable communication across language barriers, i.e., people who do not share a similar language \parencite{goodall2022article}. Notably, this means they were generally (though not always) designed to resemble natural language, with choice exceptions being the simplification of certain linguistic features. The surge in need for IALs correlated with the increase in prevalence and accessibility regarding international travel and communication at the time. Such languages were also described as "neutral" \parencite{Large1985book}, in the sense that individual advantages amongst speakers and learners would, theoretically, not exist due to IALs being second languages to everyone \parencite{Gobbo2016article}. That being said, many of the most prominent examples (e.g., Volapük, Interlingua, Esperanto, Ido) are derived from the Indo-European language family \parencite{Novikov2022article,goodall2022article}, so such a description might not be apt. Overall, IALs can be viewed as an intended rival to natural languages, which is one reason why all of the constructed languages analyzed in the present work are IALs. A more detailed explanation of each is provided in Section \ref{ssec:data}
 
 % Discuss all of the IALs here? Or in the Data section instead? Or is it unnecessary to discuss them in such detail anyways?
 % [DELETED] clubs were soon founded and spread around Europe and then to the United States and China, too \parencite{okrent2009book}. At its peak nearly a decade later, there were over two hundred societies and clubs, three hundred learning manuals \parencite{Gobbo2016article}, and twenty-five routinely published Volapük journals \parencite{okrent2009book}.
@@ -432,7 +432,7 @@ In the 19\textsuperscript{th} and 20\textsuperscript{th} centuries the focus for
 
 % Mention other kinds of constructed languages, i.e. experimental or artistic ones like Solresol, Laadan, Lojban? (Adelman 2014)
 
-Finally, there exist constructed languages that have been made for experimental, artistic, literary, or fictional purposes. In contrast to IALs, these languages are not made with the intention of replacing existing languages for everyday communication. Instead, their creators want to push the boundaries of language, test scientific hypotheses like linguistic relativity, or create a world, as is the case for the fictional examples provided in Section \ref{sec:intro}. Some other examples in this category include Solresol, a language that uses musical notes; Láadan, a language designed to be inherently feminist (i.e. more capable of expressing the female experience); and Loglan, a self-described "logical" language whose morphology and syntax are based on predicate logic \parencite{Adelman2014article}. Though it would be inaccurate to describe such languages as being only a recent invention, popularity in their conceptualization grew in the later part of the 20\textsuperscript{th} century.
+Lastly, there exist constructed languages that have been made for experimental, artistic, literary, or fictional purposes. In contrast to IALs, these languages are not made with the intention of replacing existing languages for everyday communication. Instead, their creators want to push the boundaries of language, test scientific hypotheses like linguistic relativity, or create a world, as is the case for the fictional examples provided in Section \ref{sec:intro}. Some other examples in this category include Solresol, a language that uses musical notes; Láadan, a language designed to be inherently feminist (i.e. more capable of expressing the female experience); and Loglan, a self-described "logical" language whose morphology and syntax are based on predicate logic \parencite{Adelman2014article}. Though it would be inaccurate to describe such languages as being only a recent invention, popularity in their conceptualization largely grew in the later part of the 20\textsuperscript{th} century.
 
 While all share the defining characteristic of having been purposefully created, the linguistic features of constructed languages (e.g., phonetic, morphological, syntactical, lexical, orthographic) can vary immensely depending on factors such as, for example, their intended purpose for use or the other languages they draw from. An example of this was observed by \textcite{Gobbo2016article} in secret languages, specifically their tendency to have more complicated features, such as morphological irregularities, "in order to preserve their secrecy." Contrast to this are IALs, which have the opposite tendency for the sake of ease of communication and second-language acquisition, reflected in commonly assigned features such as SVO word orders, head-initial relative clauses, fronted \textit{wh-}phrases, and morphological regularity \parencite{goodall2022article,Gobbo2016article}. Section \ref{ssec:priorstudies} further examines research focused on linguistic features of these languages. 
 
@@ -462,6 +462,7 @@ A two-dimensional taxonomy for constructed languages containing several notables
 % Authorship attribution, constructed languages, and the psycholinguistics of individual variation (Juola 2017)
 % Sign language : a systematic review on classification and recognition (Sasidharan 2024)
 % Morfessor-enriched features and multilingual training for canonical morphological segmentation (Rouhe 2022)
+% A Morphological Lexicon of Esperanto with Morpheme Frequencies (Bick)
 % How European is Esperanto? (Parkvall 2010)
 % Complexity measurement of natural and artificial languages (Febres 2014)
 % Native Esperanto as a test case for natural language (Lindstedt)
@@ -495,6 +496,8 @@ As noted in the previous section, the creation of IALs often involved the intent
 
 Much of the literature on constructed languages focuses on Esperanto specifically.
 
+Another feature examined is entropy. Originating from information science, entropy was introduced by \textcite{Shannon1948book} as a measurement of uncertainty or surprisal for an event, with high surprisal being inversely proportionate to the amount of information conveyed by the event's occurrence. In NLP, 
+
 % Evaluating the irregularity of natural languages (Gomez 2017) approximates entropy of written texts and finds differences between language families, also compares their results to Esperanto
 % Discuss research and the justification for using  one-class svm, decision tree, and randomforest for outlier detection/binary classification
 
@@ -502,9 +505,9 @@ Much of the literature on constructed languages focuses on Esperanto specificall
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I introduce the dataset for this paper and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classification approaches and models employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
+In this section, I introduce the dataset for this paper and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classification and anomaly detection models employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
 
-Since this study involves many different experiments and elements being analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR and the related moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once the features' values were calculated for each language, the task became that of classification and anomaly detection with three machine learning models: a one-class support vector machine (SVM), random forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data.
+Since this study involves many different experiments and elements being analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR and the related moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of classification and anomaly detection with four machine learning models: a one-class support vector machine (SVM), random forest, isolation forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data.
 
 \subsection{Data}
 \label{ssec:data}
@@ -533,7 +536,7 @@ For consistency, only languages which are written using the Latin alphabet (incl
 
 % Refer to https://docs.verbix.com/Conlangs/ for more info of these
 
-All of the constructed languages in the dataset are IALs and were chosen because of their availability in the Wikimedia dumps and having data which is comparable in size, allowing for their use as parallel texts. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to each other.
+All of the constructed languages in the dataset are IALs, with most of them resembling natural (particularly various European) languages. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to both one another other and their natural counterparts.
 
 Esperanto, the most widely-spoken constructed language and considered by many to be the most successful \parencite{Gobbo2008article}, was created in 1887 by Polish ophthalmologist L. L. Zamenhof. Zamenhof’s goal was to create a neutral, easy-to-learn language that would facilitate international communication. Esperanto is a highly regular language, with consistent grammar and a simplified, phonetic spelling system. It draws its lexical roots and syntax primarily from Romance, Germanic, and Slavic languages \parencite{Gobbo2008article,Gobbo2011article}, making it recognizable and familiar to speakers of many European languages, while also intentionally being made to have a comparatively simpler grammar that avoids some complexities found in natural languages, such as irregular verbs or noun cases. It also has a strong global community with speakers around the world, an array of written literature, and even a number of native speakers who learn it from birth---a distinguishing trait which sets it apart from other constructed languages \parencite{goodall2022article}. As a result of its success, Esperanto also serves as a direct influence for many other constructed languages that have come after it, one being Ido. 
 
@@ -551,7 +554,7 @@ Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed 
 % Refer to https://medium.com/@ads.fbchandusuvvari/discovering-the-beauty-of-kotava-language-a-journey-to-multilingualism-9a7cb367a209
 % Refer to https://www.kotava.org/en/en_staaveem.php for specifics about the grammar
 
-The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being an attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on a philosophy of linguistic egalitarianism. This intentionally designed uniqueness manifests in several of its linguistic systems, from morphology to syntax. For example, though word order in Kotava is not imposed, the most frequently used one is OSV, which is exceedingly rare in natural language. Other unique features include a 4\textsuperscript{th} person plural, object complements being introduced by a transitive preposition, and a lack of declension. 
+The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being an attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on a philosophy of linguistic egalitarianism. This intentionally designed uniqueness manifests in several of its linguistic systems, from morphology to syntax. For example, though word order in Kotava is not imposed, the most frequently used one is OSV, which is exceedingly rare in natural language. Other unique features include a 4\textsuperscript{th} person plural, object complements being introduced by a transitive preposition, and a lack of declension \parencite{Fetcey2013book}. 
 
 % For conlangs, how should I call the languages they are drawn from? "Language influences" or is there a better way to say it?
 
@@ -579,7 +582,7 @@ The last constructed language used is Kotava. Created by Staren Fetcey in 1978, 
   \label{tbl:conlangs}
 \end{table}
 
-Finally, it is worth drawing attention to the fact that each of these languages were constructed mainly from various European languages, with the exception of Kotava. Consequently, this may influence the models performing classification and be visible in the results. This will be explored in greater detail later in Section \ref{sec:discussion}.
+Finally, it is worth drawing attention to the fact that each of these languages were created based on various European languages, with the exception of Kotava. Consequently, this may influence the models used in the experiments and be visible in the results. This will be explored in greater detail later in Section \ref{sec:discussion}.
 
 Table \ref{tbl:conlangs} shows the dataset's constructed languages together with the main source languages they draw from (with \textit{N/A} for Kotava meaning \textit{not applicable}). Note, however, that this is not an exhaustive list of all of their language influences.
 
@@ -646,7 +649,7 @@ The dump files provide detailed, archived snapshots of the content from Wiki rep
 \subsection{Data Preprocessing}
 \label{ssec:datapreprocessing}
 
-Preprocessing text data is essential for natural language processing (NLP) tasks, and since I essentially had to compile my own corpora for this study, meticulous effort was made to thoroughly clean all of the texts and obtain as close to a set of parallel data as possible.
+Preprocessing text data is essential for natural language processing (NLP) tasks, so meticulous effort was made to thoroughly clean all of the texts and obtain as close to a set of parallel data as possible.
 
 % Preprocessed by excluding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
 % Explain more in depth the regex used and why. For example, I removed parantheses along with everything inside of them to try to maintain grammatical sentences without redundancy or fragments in the middle
@@ -668,12 +671,12 @@ Finally, each text file was truncated according to the file size of the smallest
 \subsection{Libraries and APIs}
 \label{ssec:librariesandapis}
 
-Several libraries and APIs were used in both the feature extraction and classification parts of the study, and the most important of these will be briefly introduced here. In the field of machine learning, two of the most popular model frameworks used are \textsc{PyTorch} and \textsc{TensorFlow}, which are interacted with via the \textsc{torch} and \textsc{Keras} APIs, respectively. Aside from some relatively minor differences (e.g., the syntax of their code and performance optimization), they share a lot of similarities and are typically used according to personal preference. In the context of this paper, these frameworks are used for calculating some of the entropy values from the corpora. In addition to libraries used for constructing the model architectures, there are also ones used for the data itself. Arguably the most fundamental for this is \textsc{NumPy}, which stands for Numerical Python and is used to accomplish extremely fast and efficient computation of arrays. Other essential libraries include \textsc{Pandas}, used for data manipulation and analysis, and \textsc{Matplotlib}, used for visualizing data and plotting model results. Lastly, \textsc{scikit-learn} provides a wide range of tools for machine learning algorithms, data preprocessing, and model evaluation---as well as computation, thanks to it being built on top of \textsc{NumPy}. The models I used for classification (i.e., One-Class SVM, Random Forest, Decision Tree) as well as PCA come from this library. Altogether, these libraries are often used in tandem due to integrating so well with one another. 
+Several libraries and APIs were used in both the feature engineering and classification steps of the experiment, and the most important of these will be briefly introduced here. In the field of machine learning, two of the most popular model frameworks used are \textsc{PyTorch} and \textsc{TensorFlow}, which are interacted with via the \textsc{torch} and \textsc{Keras} APIs, respectively. Aside from some relatively minor differences (e.g., the syntax of their code and performance optimization), they share a lot of similarities and are typically used according to personal preference. In the context of this paper, these frameworks are used for calculating some of the entropy values from the corpora. In addition to libraries used for constructing the model architectures, there are also ones used for the data itself. Arguably the most fundamental for this is \textsc{NumPy}, which stands for Numerical Python and is used to accomplish extremely fast and efficient computation of arrays. Other essential libraries include \textsc{Pandas}, used for data manipulation and analysis, and \textsc{Matplotlib}, used for visualizing data and plotting model results. Lastly, \textsc{scikit-learn} provides a wide range of tools for machine learning algorithms, data preprocessing, and model evaluation---as well as computation, thanks to it being built on top of \textsc{NumPy}. The models I used for classification (i.e., One-Class SVM, Random Forest, Decision Tree) as well as PCA come from this library. Altogether, these libraries are often used in tandem in NLP tasks due to integrating so well with one another. 
 
-\subsection{Feature Extraction}
-\label{ssec:featureextraction}
+\subsection{Feature Engineering}
+\label{ssec:featureengineering}
 
-% Briefly explain what feature extraction is and why I use it in this study (?)
+% Briefly explain what feature engineering is and why I use it in this study (?)
 % Come back to edit later:
 % Once the data had been preprocessed, some initial values were calculated to be used as a starting point for our investigation in comparing natural and constructed languages. These were Zipf's law of abbreviation, type-token ratio (TTR), moving-average type-token ratio (MATTR), and character and word distribution entropies.
 % Refer to https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
@@ -682,17 +685,30 @@ Several libraries and APIs were used in both the feature extraction and classifi
 % Mention use of StandardScaler(), etc.
 % torchrnn.py is for text entropy, kerasrnn.py and reversekerasrnn.py are for lexical entropy
 % Also include calculations like average sentence length, average word length!!!
+% Explain difference between using feature engineering and using raw text data
 
-A crucial step in many NLP tasks is feature extraction. Before training the classifiers for anomaly detection, 
+A crucial step in many NLP tasks is feature engineering. Before training the models for classification or anomaly detection, 
+
+The following features are calculated for each language in the dataset.
 
 \subsubsection{Lexical Diversity}
 \label{ssec:lexicaldiversity}
 
-A popular way of measuring lexical diversity is with TTR, given by the formula \[TTR = \frac{\sum_{i=1}^{n}\delta(w_i)}{n}\]
+% A common way of measuring lexical diversity is with TTR, given by the formula \[TTR = \frac{\sum_{i=1}^{n}\delta(w_i)}{n}\]
 
-where $\delta$ corresponds to 
+% where $\delta$ corresponds to, or more simply as \[TTR = \frac{types}{tokens}\] 
 
-A glaring issue with TTR, however, is that it can vary widely based on a text's length. The longer a particular text, the higher the likelihood of repetition occurring. There have been several solutions proposed to address this issue, one being MATTR. MATTR is given in the formula \[MATTR_i = \frac{TTR_1+TTR_2+...+TTR_i}{i}\]
+A common way of measuring the lexical diversity of a text is with TTR, given by the formula: \[\text{TTR} = \frac{|\text{V}|}{|\text{N}|}\] 
+
+where \( |\text{V}| \) denotes the vocabulary size as the number of unique words, or types, and \( |\text{N}| \) denotes the text length as the total number of words, or tokens. I then multiply this by 100 to get a percentage. 
+
+A big issue with TTR, though, is that it does not always provide an accurate representation due to its sensitivity to text length; the longer a particular text, the higher the likelihood of repetition in words occurring, consequently affecting the calculation. To remedy this, I also calculate the MATTR, a variation of TTR proposed by \textcite{Covington2010article} that uses a sliding window of a fixed-length over the text and calculates the TTR at each length of the window, which is then averaged together. This is denoted by the formula: \[\text{MATTR}_i = \frac{1}{N - i + 1} \sum_{j=1}^{N-i+1} \frac{|\text{Types}_{j,j+i-1}|}{|\text{Tokens}_{j,j+i-1}|}\]
+
+where \( N \) is the total number of tokens in the text, \( i \) is the window size, \( |\text{Types}_{j,j+i-1}| \) is the number of unique words (types) in the window, and \( |\text{Tokens}_{j,j+i-1}| \) is the total number of words (tokens) in the window.
+
+While resistant to variation in text length, calculations for MATTR vary based on the window size, and deciding which value to use depends on the task. Here, a length of \( i = 100 \) tokens was used. 
+
+High values for TTR and MATTR indicate that a given text contains a large amount of lexical variation, with the low values indicating the opposite.
 
 \subsubsection{Morphological Complexity}
 \label{ssec:morphologicalcomplexity}
@@ -735,7 +751,11 @@ After the text files were segmented,
 \subsubsection{Entropy}
 \label{ssec:entropy}
 
-In information science, entropy means... 
+In total, four values of entropy were measured. Two of these were from the character and word distributions and were calculated using Shannon's entropy, given by the formula: \[H(X) = -\sum_{i=1}^{n}p{x_i}\log_{2}p{x_i}\]
+
+where \( X \) refers to the random variable (e.g. the word or character distribution of a text), \( n \) is the number of distinct values (i.e. types) in the distribution, \( p(x_i) \) shows the probability \( p \) of each type \( x_i \) occurring and is calculated by its relative frequency, and \( -\log_{2}p(x_i) \) represents the self-information for each type. Put together, \( -p(x_i)\log_{2}p(x_i) \) represents the mathematical expectation for a given type, and the sum of all of these is the entropy.
+
+Additionally, the text entropy was calculated. This was done using a character-level LSTM model built with \textsc{PyTorch} for text generation.\footnote{Model adapted from \url{https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level\%20LSTM\%20with\%20PyTorch.ipynb}} 
 
 % Evaluating the Irregularity of Natural Languages (Gomez 2017) has more info for this section, starting on page 2
 % Calculated character, word, text, and lexical entropies (and reverse)
@@ -743,8 +763,6 @@ In information science, entropy means...
 % Mention suprisal
 % Refer to https://www.cs.bu.edu/fac/snyder/cs505/PerplexityPosts.pdf for explanaion on perplexity
 % Lexical Richness and Text Length: An Entropy-based Perspective (Shi 2020)
-
-The entropy was calculated for the character and word distributions in each of the corpora, given by the following formula: \[H = -\sum_{i=1}^{n}p_{i}\log_{2}p_{i}\]
 
 % Perplexity is related to entropy...
 % Cross-entropy as the loss function...
@@ -755,8 +773,6 @@ The entropy was calculated for the character and word distributions in each of t
 % Explain about inverse lexical entropy, why it was calculated and what usefulness it may have? For example, if a language is very prefix-heavy vs. suffix-heavy, it may change the predictability of the characters of a word in the opposite direction
 % the entropy value was taken from the val_loss of the model
 % early stopping was used in the tensorflow models for lexical entropy, based on val_loss and with patience=3
-
-For text entropy, a character-level long short-term memory (LSTM) model built with \textsc{PyTorch} was used.\footnote{Model adapted from \url{https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level\%20LSTM\%20with\%20PyTorch.ipynb}}
 
 \subsubsection{PCA}
 \label{ssec:pca}
@@ -832,8 +848,8 @@ This section reports the results of each of the methods implemented.
 \subsection{Results of Morphological Segmentation}
 \label{ssec:morphologicalsegmentationresults}
 
-\subsection{Results of Feature Extraction}
-\label{ssec:featureextractionresults}
+\subsection{Results of Feature Engineering}
+\label{ssec:featureengineeringresults}
 
 \begin{sidewaystable}[h!]
   \centering
@@ -909,6 +925,8 @@ A script was used to increase readability of the text in the graph\footnote{http
 % Mention expectations (e.g. the conlangs coming from European languages, so the models might confuse these with the natural languages when classifying the two) and how they compare to the results
 % Come back to the question/topic of linguistic universals, how do these results fit into the debate?
 % Discuss problems with morphological complexity analysis: lack of gold standard corpus to evaluate models' segmentations, etc
+% Compare the results of this task with those of classification of the raw text data (without the feature engineering, and using larger models like BERT), how the task and results might look different
+% Using different window length for MATTR....
 
 \newpage
 \section{Conclusion}

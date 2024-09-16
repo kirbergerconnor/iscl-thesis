@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1726336715.28252 "main.bcf" "main.bbl" "main" 1726359893.29511 0
-  "bibliography.bib" 1726336699.52484 30304 29577652200556609b3c5fa50b2ccba7 ""
-  "main.bcf" 1726359892.88681 112756 ec426e275a938071dbee48a7732c04a0 "pdflatex"
+["biber main"] 1726443864.42992 "main.bcf" "main.bbl" "main" 1726449588.59806 0
+  "bibliography.bib" 1726442799.83157 32111 e80b1e77a8141eb14197f01ef976bcd2 ""
+  "main.bcf" 1726449588.12272 112973 29cb4d67d76c04c61ca342885c31e3bf "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1726359889.96349 "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" "main.pdf" "main" 1726359893.2955 0
-  "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" 1726359886.63864 83975 11d2f33717aa8d3bc2880470d5528c35 ""
+["pdflatex"] 1726449584.70867 "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" "main.pdf" "main" 1726449588.5985 0
+  "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" 1726449580.14842 86782 39ed73a42687e4c0ea5236f14d97fc04 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -21,6 +21,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/eccc1200.tfm" 1136768653 3072 1e3dcc56ea731d0f3645bbefe8c8608c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/eccc1440.tfm" 1136768653 3072 f2bcba5ec52607af3501d45108193ff5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/eccc2074.tfm" 1136768653 3072 bfe92d95a6efd31b4da8c95291a091a0 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1136768653 3584 291a5713401683441e0a8c8f4417b17b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm" 1136768653 3584 cf973739aac7ab6247f9150296af7954 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm" 1136768653 3584 49064b465390a8e316a3c8417a050403 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -288,13 +289,13 @@
   "TaxonomyOfPlannedLanguages.png" 1724446447.88475 206890 5355a64ebcf697d578c8af18d94d4324 ""
   "WilsonsLanguageExample.png" 1724956735.07084 32562 ff64fb2066bf7cc53264dfe5a3e989e0 ""
   "decisiontree.png" 1726030372.75353 74605 e53d79357626e45dbc3ff64fcd37fc35 ""
-  "main.aux" 1726359892.87474 19029 17668d2a5be6eaf3971c4be6793a221f "pdflatex"
-  "main.bbl" 1726336718.41405 38888 12f512dc0914a34a6a4b12f6716e3858 "biber main"
-  "main.lof" 1726359892.88823 591 7aaa8e4a69c1ada9beb792108a227bf5 "pdflatex"
-  "main.lot" 1726359892.8883 410 d8d70b9b9154a2c1e2d45df1e6b3596a "pdflatex"
-  "main.run.xml" 1726359892.888 2313 9d203941543462b20d7108aaec7e370e "pdflatex"
-  "main.tex" 1726359886.63864 83975 11d2f33717aa8d3bc2880470d5528c35 ""
-  "main.toc" 1726359892.88816 2667 376b80ccf7b033186c50ac49b07ddaa4 "pdflatex"
+  "main.aux" 1726449588.10932 19616 cba71e3ce8ad25efa4b24ece8b04c26f "pdflatex"
+  "main.bbl" 1726443868.9539 43109 30b1270e5048266478386f5dbba3c720 "biber main"
+  "main.lof" 1726449588.12637 591 f77b4ec2fefecafc04d568d88578127f "pdflatex"
+  "main.lot" 1726449588.12645 410 44145f5f1d4a917b94c1fb73c47f002e "pdflatex"
+  "main.run.xml" 1726449588.12596 2313 9d203941543462b20d7108aaec7e370e "pdflatex"
+  "main.tex" 1726449580.14842 86782 39ed73a42687e4c0ea5236f14d97fc04 ""
+  "main.toc" 1726449588.12628 2669 b412842903242c571932e4d79461b44a "pdflatex"
   "pcaanalysis.png" 1719327408 51098 8ee1d867a6e0d3de2a1de9c2f4d9f8de ""
   (generated)
   "main.aux"

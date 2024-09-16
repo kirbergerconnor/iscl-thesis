@@ -338,6 +338,80 @@
       \verb https://books.google.de/books?id=mguunu3sI-YC
       \endverb
     \endentry
+    \entry{Covington2010article}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=41fdcd8aa5b525767f15d54190973786}{%
+           family={Covington},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bc43a8662c0008457dc402fafee1348}{%
+           family={McFall},
+           familyi={M\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9ab6ef3578ff0f8f52ce4a38ae918a19}
+      \strng{fullhash}{9ab6ef3578ff0f8f52ce4a38ae918a19}
+      \strng{bibnamehash}{9ab6ef3578ff0f8f52ce4a38ae918a19}
+      \strng{authorbibnamehash}{9ab6ef3578ff0f8f52ce4a38ae918a19}
+      \strng{authornamehash}{9ab6ef3578ff0f8f52ce4a38ae918a19}
+      \strng{authorfullhash}{9ab6ef3578ff0f8f52ce4a38ae918a19}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Quantitative Linguistics}
+      \field{month}{05}
+      \field{title}{Cutting the Gordian knot: The moving-average type-token ratio (MATTR)}
+      \field{volume}{17}
+      \field{year}{2010}
+      \field{pages}{94\bibrangedash 100}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1080/09296171003643098
+      \endverb
+    \endentry
+    \entry{Fetcey2013book}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a69ade56a7722a48ccf4cc3130bc73da}{%
+           family={Fetcey},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08741357d9d9030fb96ec69a332c93e5}{%
+           family={Comité\bibnamedelimb Linguistique\bibnamedelima Kotava},
+           familyi={C\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim K\bibinitperiod},
+           prefix={le},
+           prefixi={l\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{1f34d74f7faac7ac114778a82bc45fa9}
+      \strng{fullhash}{1f34d74f7faac7ac114778a82bc45fa9}
+      \strng{bibnamehash}{1f34d74f7faac7ac114778a82bc45fa9}
+      \strng{authorbibnamehash}{1f34d74f7faac7ac114778a82bc45fa9}
+      \strng{authornamehash}{1f34d74f7faac7ac114778a82bc45fa9}
+      \strng{authorfullhash}{1f34d74f7faac7ac114778a82bc45fa9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kotava: grammaire officielle complète (version III.14)}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb ttp://www.kotava.org/fr/fr_pulviropa_000.pdf
+      \endverb
+      \verb{url}
+      \verb ttp://www.kotava.org/fr/fr_pulviropa_000.pdf
+      \endverb
+    \endentry
     \entry{Gobbo2008article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
@@ -923,6 +997,34 @@
       \field{month}{01}
       \field{title}{Planned Languages: From Concept to Reality}
       \field{year}{2001}
+    \endentry
+    \entry{Shannon1948book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=22e2130b8d96f93daba648ff62af869b}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{fullhash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{bibnamehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{authorbibnamehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{authornamehash}{22e2130b8d96f93daba648ff62af869b}
+      \strng{authorfullhash}{22e2130b8d96f93daba648ff62af869b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bell System Technical Journal}
+      \field{title}{A Mathematical Theory of Communication}
+      \field{volume}{27}
+      \field{year}{1949}
+      \field{pages}{379\bibrangedash 423}
+      \range{pages}{45}
     \endentry
     \entry{Tonkin2015article}{article}{}
       \name{author}{1}{}{%

@@ -2415,22 +2415,25 @@
     <bcf:citekey order="42" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="43" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="44" intorder="1">GObbo2016</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">Gobbo2008article</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Shannon1948book</bcf:citekey>
     <bcf:citekey order="46" intorder="1">Gobbo2008article</bcf:citekey>
-    <bcf:citekey order="46" intorder="2">Gobbo2011article</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">goodall2022article</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">Schubert2001book</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">goodall2022article</bcf:citekey>
-    <bcf:citekey order="49" intorder="2">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">Gobbo2008article</bcf:citekey>
+    <bcf:citekey order="47" intorder="2">Gobbo2011article</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">Schubert2001book</bcf:citekey>
     <bcf:citekey order="50" intorder="1">goodall2022article</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">Large1985book</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">Schubert2001book</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="50" intorder="2">Schubert2001book</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Large1985book</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Schubert2001book</bcf:citekey>
     <bcf:citekey order="54" intorder="1">goodall2022article</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">Pawlas2020inbook</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">Novikov2022article</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">Attardi2015wikiextractor</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">Gobbo2016article</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">Pawlas2020inbook</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Fetcey2013book</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Novikov2022article</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Attardi2015wikiextractor</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">Covington2010article</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
