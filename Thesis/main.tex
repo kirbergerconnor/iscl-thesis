@@ -17,7 +17,7 @@
 %\usepackage{subcaption}
 %\usepackage{lettrine}
 %\usepackage[sc,osf]{mathpazo}
-%\usepackage{booktabs}
+\usepackage{booktabs}
 % Es wird nicht eingerckt
 \parindent=0mm
 
@@ -32,6 +32,15 @@
 % define color values here
 \definecolor{myblue}{rgb}{0.94, 0.97, 1.0}
 \definecolor{Gray}{gray}{0.8}
+
+% justification of typewriter text
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
 
 % for apacite references
 % \usepackage{apacite}
@@ -310,6 +319,8 @@ Write the abstract here.
 \textbf{IALA} & ~~~ & International Auxiliary Language Association \\
 \textbf{LFN} & ~~~ & Lingua Franca Nova \\
 \textbf{CSV} & ~~~ & Comma-Separated Values \\
+\textbf{MAP} & ~~~ & Maximum a Posteriori \\
+\textbf{MSE} & ~~~ & Mean Squared Error \\
 
 
 \end{tabular}
@@ -671,7 +682,7 @@ Finally, each text file was truncated according to the file size of the smallest
 \subsection{Libraries and APIs}
 \label{ssec:librariesandapis}
 
-Several libraries and APIs were used in both the feature engineering and classification steps of the experiment, and the most important of these will be briefly introduced here. In the field of machine learning, two of the most popular model frameworks used are \textsc{PyTorch} and \textsc{TensorFlow}, which are interacted with via the \textsc{torch} and \textsc{Keras} APIs, respectively. Aside from some relatively minor differences (e.g., the syntax of their code and performance optimization), they share a lot of similarities and are typically used according to personal preference. In the context of this paper, these frameworks are used for calculating some of the entropy values from the corpora. In addition to libraries used for constructing the model architectures, there are also ones used for the data itself. Arguably the most fundamental for this is \textsc{NumPy}, which stands for Numerical Python and is used to accomplish extremely fast and efficient computation of arrays. Other essential libraries include \textsc{Pandas}, used for data manipulation and analysis, and \textsc{Matplotlib}, used for visualizing data and plotting model results. Lastly, \textsc{scikit-learn} provides a wide range of tools for machine learning algorithms, data preprocessing, and model evaluation---as well as computation, thanks to it being built on top of \textsc{NumPy}. The models I used for classification (i.e., One-Class SVM, Random Forest, Decision Tree) as well as PCA come from this library. Altogether, these libraries are often used in tandem in NLP tasks due to integrating so well with one another. 
+Several libraries and APIs were used in both the feature engineering and classification steps of the experiment, and the most important of these will be briefly introduced here. In the field of machine learning, two of the most popular model frameworks used are \textsc{PyTorch} and \textsc{TensorFlow}, which are interacted with via the \textsc{torch} and \textsc{Keras} APIs, respectively. Aside from some relatively minor differences (e.g., the syntax of their code and performance optimization), they share a lot of similarities and are typically used according to personal preference. In the context of this paper, these frameworks are used for calculating some of the entropy values from the corpora. Other machine learning models used were for morphological segmentation via \textsc{Morfessor 2.0}, a family of unsupervised, generative probabilistic models \parencite{Virpioja2013inproceedings}. In addition to libraries used for constructing the model architectures, there are also ones used for the data itself. Arguably the most fundamental for this is \textsc{NumPy}, which stands for Numerical Python and is used to accomplish extremely fast and efficient computation of arrays. Other essential libraries include \textsc{Pandas}, used for data manipulation and analysis, and \textsc{Matplotlib}, used for visualizing data and plotting model results. Lastly, \textsc{scikit-learn} provides a wide range of tools for machine learning algorithms, data preprocessing, and model evaluation---as well as computation, thanks to it being built on top of \textsc{NumPy}. The models I used for classification (i.e., One-Class SVM, Random Forest, Decision Tree) as well as PCA come from this library. Altogether, these libraries are often used in tandem in NLP tasks due to integrating so well with one another.
 
 \subsection{Feature Engineering}
 \label{ssec:featureengineering}
@@ -689,9 +700,9 @@ Several libraries and APIs were used in both the feature engineering and classif
 
 Before classification or anomaly detection can be done with the data, an initial step of feature engineering is performed. Put simply, feature engineering is the process of transforming raw text data into a more structured and comprehensible format for machine learning models through the specific selection of its most informative and relevant features, thereby increasing the model's effectiveness. 
 
-In the scope of this paper, this process involved several dimensions of cross-linguistic analysis and measurement. 
+The exact methods involved in this process depend on, among other factors, the task and data. Often though, some relatively simple calculations are included as discernible features. Here, for instance, the average word length and average sentence length of each text were measured. For most of the scope of the linguistic features being analyzed and as a result of the low-resource nature of many of the languages in this paper, however, much of the rest of this process required the use of several machine learning models for deriving various measurements relating to entropy, as well as for unsupervised morphological segmentation. The other exceptions to this are the measurements of lexical diversity and PCA.
 
-The following features are calculated for each language in the dataset.
+The following methods are performed on all languages in the dataset. The complete set of the analyzed features for each language and their computed values, rounded to 3 decimals, is shown in section \ref{sec:results} in Table \ref{tbl:featurestable}.
 
 \subsubsection{Lexical Diversity}
 \label{ssec:lexicaldiversity}
@@ -737,7 +748,13 @@ While resistant to variation in text length, calculations for MATTR vary based o
 % When identifying the lemmas for each segment, using the largest segment. For cases of multiple largest segments, some options: frequency-based disambiguation (the segment which appears most often in the whole data is the lemma, etc) or take the first one (greedy algorithm) or take both/all of the equally largest as lemmas
 % Refer to morfessor docs on Python library interface https://github.com/aalto-speech/morfessor/blob/master/docs/source/libinterface.rst
 
-The morphological systems of each language were analyzed using \textsc{Morfessor 2.0}.  
+Morphological complexity was analyzed as three features: morpheme TTR, the average number of segments per word, and the average number of forms per stem. To calculate these, the text data of a given corpus was first split and restructured into a list of words to then be fed to corresponding model for segmentation.
+
+The models, one for each corpus, were created and trained using the library interface for \textsc{Morfessor 2.0}. This involved initiating the \texttt{BaselineModel()} class with default parameters (\texttt{forcesplit\_list=None, corpusweight=None, use\_skips=False, nosplit\_re=None}), then loading the word list using the \texttt{load\_data()} function. Default parameters were again used (\texttt{freqthreshold=\\1, init\_rand\_split=None}), with the exception of \texttt{count\_modifier}, which was set to a specified logarithmic equation, expressed as: \[\lfloor\log_2(x + 1)\rceil\]
+
+Where \( x \) is the raw frequency count of the compound (i.e. the word being segmented), and the surrounding \( \lfloor \) and \( \rceil \) brackets denote rounding to the nearest integer. This equation was used in order to dampen the frequency of the count of a given compound, which in turn allows the model to generalize better rather than focusing more on the compounds that occur at a higher frequency.
+
+After being loaded, \texttt{train\_batch()} was used with default parameters (\texttt{alg\\orithm='recursive', algorithm\_params=(), finish\_threshold=0.005, \\max\_epochs=None}) to train the model. Here, 'recursive' refers to the algorithm for splitting the compounds. To briefly explain how this works without delving too deep into the math of \textsc{Morfessor}'s models---as doing so would be beyond the scope of this thesis---training one epoch involves trying all viable two-part segmentations for every compound in the data, recursively attempting further segmentation based on the lowest cost (derived using maximum a posteriori (MAP) estimation) yielded each time and stopping once this cost falls below a given threshold \parencite{Smit2014inproceedings}. 
 
 % \subsubsection{Zipfian Distribution}
 
@@ -748,12 +765,14 @@ The morphological systems of each language were analyzed using \textsc{Morfessor
 % Used Morfessor with logarithmic function
 % Calculated morpheme TTR, etc.
 
-After the text files were segmented, 
+Once all of the texts' compounds were segmented, the aforementioned features were computed. As an approximation, the stem of the compound was assumed to be the largest segment that appears first when examined from left to right. Remaining segments (if there were any) were thus considered morphemes. Morpheme TTR was then calculated using the same formula as lexical TTR, the average number of segments per word is simply the sum of each compound's amount of segmentations divided by the total number of segmented compounds, and lastly the average number of forms per stem was derived from the total number of morphemes for each unique stem (adding 1 to account for the stem itself) divided by total number of unique stems.
+
+The preference for using mostly default parameters for the functions and models here, as well as the method for identifying the stem of a segmented compound, was to ensure uniformity, so that the results would be comparable for cross-linguistic analysis. The implications of this and possible alternative approaches will be further discussed in section \ref{sec:results}.
 
 \subsubsection{Entropy}
 \label{ssec:entropy}
 
-In total, five values of entropy were measured: text, lexical, reversed lexical, character distribution, and word distribution. The latter two were calculated using the formula for Shannon's entropy with a given text: \[H(X) = -\sum_{i=1}^{n}p(x_i)\log_{2}p(x_i)\]
+In total, five values of entropy were measured: text, lexical, reversed lexical, character distribution, and word distribution. The latter two were calculated without the use of a model, simply with the formula for Shannon's entropy for a given text: \[H(X) = -\sum_{i=1}^{n}p(x_i)\log_{2}p(x_i)\]
 
 Where \( X \) refers to the random variable (e.g. the word or character distribution of a text), \( n \) is the number of distinct values (i.e. types) in the distribution, \( p(x_i) \) shows the probability \( p \) of each type \( x_i \) occurring and is calculated by its relative frequency, and \( -\log_{2}p(x_i) \) represents the self-information for each type. Put together, \( -p(x_i)\log_{2}p(x_i) \) represents the mathematical expectation for a given type, and the sum of all of these is the entropy.
 
@@ -789,11 +808,11 @@ Using this model required first creating a dictionary of the input text's charac
   \label{tbl:pytorchlstmparams}
 \end{table}
 
-Table \ref{tbl:pytorchlstmparams} shows the model's parameters alongside their associated values as used in this paper. Its architecture comprises 2 hidden layers (\texttt{n\_layers}), a dropout layer, and a fully-connected output layer. Both \texttt{n\_layers} contain 256 hidden units (\texttt{n\_hidden}), which are used to store information from the input and essentially act as the memory of the LSTM. Default values for learning rate, dropout rate, and gradient clipping were used, and training was done over 20 epochs. Minimal finetuning was performed overall, and primarily just for the \texttt{n\_seqs} and \texttt{n\_steps} hyperparameters. 
+Table \ref{tbl:pytorchlstmparams} shows the model's parameters alongside their associated values as used here. Its architecture comprises 2 hidden layers (\texttt{n\_layers}), a dropout layer, and a fully-connected output layer. Both \texttt{n\_layers} contain 256 hidden units (\texttt{n\_hidden}), which are used to store information from the input and essentially act as the memory of the LSTM. Default values for learning rate, dropout rate, and gradient clipping were used, and training was done over 20 epochs. Minimal fine-tuning was performed overall, and primarily just for the \texttt{n\_seqs} and \texttt{n\_steps} hyperparameters. 
 
-Additionally, a fraction (0.1) of the initial input data is set aside to be used for validation, from which the model's perplexity---a measure related to entropy---is derived. To arrive at this measurement though, the validation loss is first calculated using (multi-class) cross-entropy. Cross-entropy is an extension of Shannon's entropy, but measures instead the difference between a model's predicted probability distribution and the true one. More formally, this is represented as: \[H(p,q) = -\sum_{x=i}p(x)\log_q(x)\]
+Additionally, a fraction (0.1) of the initial input data is set aside to be used for validation, from which the model's perplexity---a measure related to entropy---is derived. To arrive at this measurement though, the validation loss is first evaluated using (multi-class) cross-entropy. Cross-entropy is an extension of Shannon's entropy, but measures instead the difference between a model's predicted probability distribution and the true one. More formally, this is represented as: \[H(p,q) = -\sum_{x=i}p(x)\log_q(x)\]
 
-Where \( p \) and \( q \) represent the discrete predicted and true probability distributions, respectively, and with the natural logarithm \( \log_e \), as commonly used by machine learning libraries such as \textsc{PyTorch}. As the predicted distribution gets closer to the true one, the resulting cross-entropy becomes lower. Entropy \( H(q) \) is thus a lower bound of cross-entropy \( H(p,q) \). 
+Where \( p \) and \( q \) represent the discrete predicted and true probability distributions, respectively, and with the natural logarithm \( \log_e \), as is commonplace in machine learning. As the predicted distribution gets closer to the true one, the resulting cross-entropy becomes lower. Entropy \( H(q) \) is thus a lower bound of cross-entropy \( H(p,q) \). 
 
 The validation loss was repeatedly assessed throughout training, and the mean of these was used to calculate the perplexity. Expressed mathematically, perplexity \( PP \) is simply an exponentiation of cross-entropy and can be denoted by the equation: 
 
@@ -804,9 +823,22 @@ The validation loss was repeatedly assessed throughout training, and the mean of
   \end{aligned}
 \end{equation}
 
-For calculating both lexical and reversed lexical entropies, an RNN built using \textsc{TensorFlow} was used. Early stopping was implemented based on the validation loss with \texttt{patience} set to 3.
+Therefore, the final value arrived at is the text's perplexity. This is used to represent the text entropy, however, due to being more readable.
 
-Table \ref{tbl:kerasrnnparams} shows the most relevant parameters.
+Finally, lexical entropy---at the character-level---is a measure of uncertainty in predicting the subsequent character in a given sequence, in this case a word. Reversed lexical entropy is the same thing applied to a sequence that has been reversed, which may be an informative feature for distinguishing languages whose lexicons, for example, present more prevalence in prefix or suffix constructions. 
+
+For calculating both of these features, two RNNs built using \textsc{TensorFlow} were used. Similar to before, the text data was first encoded into integers via dictionaries containing the vocabulary (alphabet) of each text. In contrast to the model for calculating text entropy, however, this model analyzes the data as individual sequences of words. This means the additional use of beginning of sequence ('<') and end of sequence ('>') characters, and each sequence was padded to be uniform in length. 
+
+The only significant change in the process for computing both entropies occurred in the text encoding step; for the reversed lexical entropy, the sequence was reversed prior to padding. An example of forward-facing sequences (\ref{lexentropyseq1}) and their reversed forms (\ref{lexentropyseq2}) from the English corpus is illustrated here:
+
+\begin{align}
+\texttt{'<misinterpreted>', '<filaments>', '<assisting>'} \label{lexentropyseq1} \\
+\texttt{'<deterpretnisim>', '<stnemalif>', '<gnitsissa>'} \label{lexentropyseq2}
+\end{align}
+
+The architecture of both models is identical. First is an embedding layer with an \texttt{input\_dim} equal to one more than the size of the vocabulary, an \texttt{output\_dim} of 128, and \texttt{mask\_zero} set to \texttt{True} (due to padding the sequences previously). This is followed by an LSTM layer. 
+
+Early stopping was implemented based on the validation loss with \texttt{patience} set to 3. Table \ref{tbl:kerasrnnparams} shows an overview of the most relevant parameters.
 
 \begin{table}[h!] 
   \centering\small
@@ -828,6 +860,8 @@ Table \ref{tbl:kerasrnnparams} shows the most relevant parameters.
   \caption{Parameters of TensorFlow RNN used to Calculate Lexical and Reverse Lexical Entropy}
   \label{tbl:kerasrnnparams}
 \end{table}
+
+Perplexity was then calculated the same way as before, as an exponentiation of the cross-entropy, which was derived from the average validation loss.
 
 % Evaluating the Irregularity of Natural Languages (Gomez 2017) has more info for this section, starting on page 2
 % Calculated character, word, text, and lexical entropies (and reverse)
@@ -866,13 +900,24 @@ PCA is an unsupervised method of dimensionality reduction, used for
 % Visualizing the features (in a graph) prior to classification to analyze whether a linear or nonlinear model is required and why 
 % Include tables of the hyperparameters for both models, explained how they were tuned (grid search, etc.)
 
+% Methods for evaluating the accuracy, etc. of the classifiers, RNNs used for calculating the entropies (?), and morphological segementations with Morfessor (?)
+% Should I use sklearn.metrics 'classification_report'? As done by https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
+% Use of Leave One Out Cross Validation for supervised methods (refer to https://www.statology.org/leave-one-out-cross-validation/), include MSE/MAE/Bernoulli likelihood formulas, etc
+
+After feature engineering, the resulting feature set was used for classification and anomaly detection, employing a mix of both supervised and unsupervised methods. 
 
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
 % Discuss pre-pruning the decision tree
 
-Decision Tree Classifier...
+A decision tree was used for supervised binary classification, with each language in the dataset being labeled either 'con' or 'nat', representing constructed or natural, respectively. Several of the model's hyperparameters were fine-tuned using an exhaustive grid search approach on a range of possible values for each: \texttt{criterion, max\_depth, min\_samples\_split, min\_samples\_leaf}. Additionally, the model's \texttt{class\_weight} parameter was set to \texttt{'balanced'}, which adjusts the misclassification cost for each class based on their frequency in the data. This is necessary when using an imbalanced dataset such as this one (6 'con' versus 18 'nat' samples).
+
+Lastly, the model was optimized during the grid search through the use of leave-one-out cross-validation. This is a specific kind of cross-validation which splits the data into a testing set that has only one sample and a training set containing all the rest. This process is repeated for each sample in the data, so 24 times. Using this method also helps to prevent the model from overfitting on the small and imbalanced dataset. 
+
+To evaluate the model's performance for each split, the micro F1 score was calculated. 
+
+The best parameters found by the grid search were \texttt{criterion='gini', max\_depth=None, min\_samples\_split=1, min\_samples\_leaf=2}. For the rest of the model's parameters, the default values were used.
 
 \subsubsection{Random Forest}
 \label{ssec:randomforest}
@@ -880,6 +925,8 @@ Decision Tree Classifier...
 % Refer to https://towardsdatascience.com/a-practical-guide-to-implementing-a-random-forest-classifier-in-python-979988d8a263
 % Refer to https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/
 % Include visualization of finetuning, as shown by https://medium.com/@Doug-Creates/tuning-random-forest-parameters-with-scikit-learn-b53cbc602cd0
+
+A random forest is an ensemble of decision trees,
 
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
@@ -897,13 +944,6 @@ One-Class SVMs are a special kind of SVMs used in the domain of anomaly detectio
 Standardization is given by the formula \[X^{\prime} = \frac{X - \mu}{\sigma}\] 
 
 where $\mu$ is mean and $\sigma$ is the standard deviation.
-
-\subsection{Evaluation of Classifiers}
-\label{ssec:evaluationofclassifiers}
-
-% Methods for evaluating the accuracy, etc. of the classifiers, RNNs used for calculating the entropies (?), and morphological segementations with Morfessor (?)
-% Should I use sklearn.metrics 'classification_report'? As done by https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
-% Use of Leave One Out Cross Validation for supervised methods (refer to https://www.statology.org/leave-one-out-cross-validation/), include MSE/MAE/Bernoulli likelihood formulas, etc
 
 \newpage
 \section{Results}

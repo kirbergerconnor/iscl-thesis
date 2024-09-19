@@ -1026,6 +1026,54 @@
       \field{pages}{379\bibrangedash 423}
       \range{pages}{45}
     \endentry
+    \entry{Smit2014inproceedings}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6a64c182eb993f7fc096988a05df3765}{%
+           family={Smit},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c41a7c3b51cd996f516b86b72fd47647}{%
+           family={Virpioja},
+           familyi={V\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=800f2686f4b87838f1445c9b4af9c3d5}{%
+           family={Grönroos},
+           familyi={G\bibinitperiod},
+           given={Stig-Arne},
+           giveni={S\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc41983fe6b59122bbe49c6f8d4eded8}{%
+           family={Kurimo},
+           familyi={K\bibinitperiod},
+           given={Mikko},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a63a753269d30b9a3ff4cdca55844b63}
+      \strng{fullhash}{34ca897dc8951b9d5c5515dae00541c0}
+      \strng{bibnamehash}{a63a753269d30b9a3ff4cdca55844b63}
+      \strng{authorbibnamehash}{a63a753269d30b9a3ff4cdca55844b63}
+      \strng{authornamehash}{a63a753269d30b9a3ff4cdca55844b63}
+      \strng{authorfullhash}{34ca897dc8951b9d5c5515dae00541c0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Morfessor 2.0: Toolkit for statistical morphological segmentation}
+      \field{year}{2014}
+      \field{pages}{21\bibrangedash 24}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.3115/v1/E14-2006
+      \endverb
+    \endentry
     \entry{Tonkin2015article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e0d5059428257a3707f2d681e10f2220}{%
@@ -1056,6 +1104,54 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.7906/indecs.13.2.1
+      \endverb
+    \endentry
+    \entry{Virpioja2013inproceedings}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c41a7c3b51cd996f516b86b72fd47647}{%
+           family={Virpioja},
+           familyi={V\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a64c182eb993f7fc096988a05df3765}{%
+           family={Smit},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=800f2686f4b87838f1445c9b4af9c3d5}{%
+           family={Grönroos},
+           familyi={G\bibinitperiod},
+           given={Stig-Arne},
+           giveni={S\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc41983fe6b59122bbe49c6f8d4eded8}{%
+           family={Kurimo},
+           familyi={K\bibinitperiod},
+           given={Mikko},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8041f512de3f793b19673f9e8345eaf3}
+      \strng{fullhash}{e81136b712ddc3a60a4c96bf14b857c3}
+      \strng{bibnamehash}{8041f512de3f793b19673f9e8345eaf3}
+      \strng{authorbibnamehash}{8041f512de3f793b19673f9e8345eaf3}
+      \strng{authornamehash}{8041f512de3f793b19673f9e8345eaf3}
+      \strng{authorfullhash}{e81136b712ddc3a60a4c96bf14b857c3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Morfessor 2.0: Python Implementation and Extensions for Morfessor Baseline}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:36074039
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:36074039
       \endverb
     \endentry
     \entry{Wilkins1968book}{inproceedings}{}

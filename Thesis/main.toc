@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{List of Figures}{v}{}%
-\contentsline {section}{List of Tables}{v}{}%
-\contentsline {section}{List of Abbreviations}{v}{}%
+\contentsline {section}{List of Figures}{iv}{}%
+\contentsline {section}{List of Tables}{iv}{}%
+\contentsline {section}{List of Abbreviations}{iv}{}%
 \contentsline {section}{\numberline {1}Introduction \& Motivation}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Scope of Study \& Research Question}{2}{}%
 \contentsline {section}{\numberline {2}Background}{3}{}%
@@ -15,25 +15,24 @@
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{11}{}%
 \contentsline {subsection}{\numberline {3.3}Libraries and APIs}{12}{}%
 \contentsline {subsection}{\numberline {3.4}Feature Engineering}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{13}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{14}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}PCA}{16}{}%
-\contentsline {subsection}{\numberline {3.5}Classification \& Anomaly Detection}{16}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{16}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{17}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{17}{}%
-\contentsline {subsection}{\numberline {3.6}Evaluation of Classifiers}{17}{}%
-\contentsline {section}{\numberline {4}Results}{18}{}%
-\contentsline {subsection}{\numberline {4.1}Results of Lexical Diversity}{18}{}%
-\contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{18}{}%
-\contentsline {subsection}{\numberline {4.3}Results of Feature Engineering}{18}{}%
-\contentsline {subsection}{\numberline {4.4}Results of PCA}{18}{}%
-\contentsline {subsection}{\numberline {4.5}Results of One-Class SVM}{19}{}%
-\contentsline {subsection}{\numberline {4.6}Results of Decision Tree}{19}{}%
-\contentsline {subsection}{\numberline {4.7}Results of Random Forest}{19}{}%
-\contentsline {section}{\numberline {5}Discussion}{20}{}%
-\contentsline {section}{\numberline {6}Conclusion}{21}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{21}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{22}{}%
-\contentsline {section}{\numberline {8}Appendices}{26}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}PCA}{18}{}%
+\contentsline {subsection}{\numberline {3.5}Classification \& Anomaly Detection}{18}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{19}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{19}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}One-Class SVM}{19}{}%
+\contentsline {section}{\numberline {4}Results}{20}{}%
+\contentsline {subsection}{\numberline {4.1}Results of Lexical Diversity}{20}{}%
+\contentsline {subsection}{\numberline {4.2}Results of Morphological Segmentation}{20}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Feature Engineering}{20}{}%
+\contentsline {subsection}{\numberline {4.4}Results of PCA}{20}{}%
+\contentsline {subsection}{\numberline {4.5}Results of One-Class SVM}{21}{}%
+\contentsline {subsection}{\numberline {4.6}Results of Decision Tree}{21}{}%
+\contentsline {subsection}{\numberline {4.7}Results of Random Forest}{21}{}%
+\contentsline {section}{\numberline {5}Discussion}{22}{}%
+\contentsline {section}{\numberline {6}Conclusion}{23}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{23}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{24}{}%
+\contentsline {section}{\numberline {8}Appendices}{28}{}%

@@ -2433,7 +2433,9 @@
     <bcf:citekey order="58" intorder="1">Fetcey2013book</bcf:citekey>
     <bcf:citekey order="59" intorder="1">Novikov2022article</bcf:citekey>
     <bcf:citekey order="60" intorder="1">Attardi2015wikiextractor</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">Covington2010article</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">Virpioja2013inproceedings</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">Covington2010article</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">Smit2014inproceedings</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
