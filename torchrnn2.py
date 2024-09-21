@@ -105,7 +105,7 @@ class CharRNN(nn.Module):
         
 
 class EarlyStopper:
-    def __init__(self, patience=1, min_delta=0):
+    def __init__(self, patience=3, min_delta=0):
         self.patience = patience
         self.min_delta = min_delta
         self.counter = 0
@@ -168,23 +168,23 @@ def train(lang, net, device, data, epochs=10, n_seqs=10, n_steps=50, lr=0.001, c
             if counter % print_every == 0:
                 val_h = net.init_hidden(n_seqs)
                 val_losses = []
-                perplexities = []
+                # perplexities = []
                 for x, y in get_batches(val_data, n_seqs, n_steps):
                     x = one_hot_encode(x, n_chars)
                     inputs, targets = torch.from_numpy(x).to(device), torch.from_numpy(y).to(device)
                     val_h = tuple([each.data for each in val_h])
                     output, val_h = net.forward(inputs, val_h)
                     val_loss = criterion(output, targets.view(n_seqs*n_steps).type(torch.LongTensor).to(device))
-                    val_perplexity = torch.exp(val_loss)
+                    # val_perplexity = torch.exp(val_loss)
                     val_losses.append(val_loss.item())
-                    perplexities.append(val_perplexity.item())
+                    # perplexities.append(val_perplexity.item())
                     
                 print(
                     "Epoch: {}/{}...".format(e+1, epochs),
                     "Step: {}...".format(counter),
                     "Loss: {:.4f}...".format(loss.item()),
                     "Val Loss: {:.4f}...".format(np.mean(val_losses)),
-                    "Val Perplexity: {:.4f}".format(np.mean(perplexities))
+                    # "Val Perplexity: {:.4f}".format(np.mean(perplexities))
                 )
     
                 results.append({
@@ -193,10 +193,16 @@ def train(lang, net, device, data, epochs=10, n_seqs=10, n_steps=50, lr=0.001, c
                     'step': counter,
                     'loss': loss.item(),
                     'val_loss': np.mean(val_losses),
-                    'val_perplexity': np.mean(perplexities)
+                    # 'val_perplexity': np.mean(perplexities)
                 })
                 
     temp = pd.DataFrame(results)
+    if 'val_perplexity' not in temp.columns:
+        temp['val_perplexity'] = None
+    max_step_row = temp['step'].idxmax()
+    avg_val_loss = temp['val_loss'].mean()
+    val_perplexity = torch.exp(torch.tensor(avg_val_loss)).item()
+    temp.loc[max_step_row, 'val_perplexity'] = val_perplexity
     training_df = pd.concat([training_df, temp], ignore_index=True)
 
                 
@@ -227,5 +233,5 @@ if __name__ == '__main__':
             net = CharRNN(chars, n_hidden=512, n_layers=2)
             train(lang, net, device, encoded, epochs=epochs, n_seqs=n_seqs, n_steps=n_steps, lr=lr, clip=5)
             
-    with open('./torch_rnn_results.csv', mode='w') as f:
+    with open('./torch_rnn_results2.csv', mode='w') as f:
         training_df.to_csv(f)
