@@ -159,6 +159,48 @@
       \verb https://books.google.de/books?id=z4GAngEACAAJ
       \endverb
     \endentry
+    \entry{Bestgen2024article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec9d0d3f39fce34794f1bc43677f6bd0}{%
+           family={Bestgen},
+           familyi={B\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec9d0d3f39fce34794f1bc43677f6bd0}
+      \strng{fullhash}{ec9d0d3f39fce34794f1bc43677f6bd0}
+      \strng{bibnamehash}{ec9d0d3f39fce34794f1bc43677f6bd0}
+      \strng{authorbibnamehash}{ec9d0d3f39fce34794f1bc43677f6bd0}
+      \strng{authornamehash}{ec9d0d3f39fce34794f1bc43677f6bd0}
+      \strng{authorfullhash}{ec9d0d3f39fce34794f1bc43677f6bd0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Language Learning}
+      \field{number}{3}
+      \field{title}{Measuring Lexical Diversity in Texts: The Twofold Length Problem}
+      \field{volume}{74}
+      \field{year}{2024}
+      \field{pages}{638\bibrangedash 671}
+      \range{pages}{34}
+      \verb{doi}
+      \verb https://doi.org/10.1111/lang.12630
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/lang.12630
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12630
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/lang.12630
+      \endverb
+      \keyw{lexical diversity,text length,evaluation methods,logical-mathematical properties,intraclass correlation coefficient}
+    \endentry
     \entry{Blanke1989book}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4a33cb021afc736430cdc84b7f7fc57f}{%
@@ -210,6 +252,48 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1515/9783110886115.63
+      \endverb
+    \endentry
+    \entry{Braei2020article}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2c203cba0db705a473a63d3648ea3ffe}{%
+           family={Braei},
+           familyi={B\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c4a24a585a6ed7ee96e719533882798}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{fullhash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{bibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authorbibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authornamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authorfullhash}{1f4ee61163a6fcde15fa481e46d25740}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Anomaly Detection in Univariate Time-series: {A} Survey on the State-of-the-Art}
+      \field{volume}{abs/2004.00433}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2004.00433
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2004.00433
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2004.00433
       \endverb
     \endentry
     \entry{Chomsky1957book}{book}{}
@@ -374,6 +458,105 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.1080/09296171003643098
+      \endverb
+    \endentry
+    \entry{Dhandapani2023inbook}{inbook}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e64e085f2d53a1e7879d4599f5cb882e}{%
+           family={Dhandapani},
+           familyi={D\bibinitperiod},
+           given={Aarthi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7085b690af84226229ca5248816c674c}{%
+           family={Nagappan},
+           familyi={N\bibinitperiod},
+           given={Ilakiyaselvan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76222c44d9e0cdccde302269a5235007}{%
+           family={Mandal},
+           familyi={M\bibinitperiod},
+           given={Satyaki},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd86e8efb4e3aa4038d3f6c19f8a6c7d}{%
+           family={Bhadra},
+           familyi={B\bibinitperiod},
+           given={Sandipta},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=053eeff1a7a9f6a1e73e78f92b790691}{%
+           family={Viswanathan},
+           familyi={V\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8ed738f8dedc9351445a5249718b04f}
+      \strng{fullhash}{ada761d1b74607cfdedea21a14799801}
+      \strng{bibnamehash}{b8ed738f8dedc9351445a5249718b04f}
+      \strng{authorbibnamehash}{b8ed738f8dedc9351445a5249718b04f}
+      \strng{authornamehash}{b8ed738f8dedc9351445a5249718b04f}
+      \strng{authorfullhash}{ada761d1b74607cfdedea21a14799801}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-981-99-1050-2}
+      \field{month}{06}
+      \field{title}{Lyrics Generation Using LSTM and RNN}
+      \field{year}{2023}
+      \field{pages}{371\bibrangedash 388}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-981-99-1051-9_24
+      \endverb
+    \endentry
+    \entry{Fergadiotis2013article}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b349db730a3cd0177a7a3930946700d}{%
+           family={Fergadiotis},
+           familyi={F\bibinitperiod},
+           given={Gerasimos},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70f90d24c657938bdc0fc7815b611a47}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Heather},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38e25dc4ab2867c7bbe20e3360b02871}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac4c33d4cb08fe3f5b1724cf7c0da384}
+      \strng{fullhash}{ac4c33d4cb08fe3f5b1724cf7c0da384}
+      \strng{bibnamehash}{ac4c33d4cb08fe3f5b1724cf7c0da384}
+      \strng{authorbibnamehash}{ac4c33d4cb08fe3f5b1724cf7c0da384}
+      \strng{authornamehash}{ac4c33d4cb08fe3f5b1724cf7c0da384}
+      \strng{authorfullhash}{ac4c33d4cb08fe3f5b1724cf7c0da384}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American journal of speech-language pathology / American Speech-Language-Hearing Association}
+      \field{month}{05}
+      \field{title}{Measuring Lexical Diversity in Narrative Discourse of People With Aphasia}
+      \field{volume}{22}
+      \field{year}{2013}
+      \field{pages}{S397\bibrangedash 408}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1044/1058-0360(2013/12-0083)
       \endverb
     \endentry
     \entry{Fetcey2013book}{book}{}
@@ -716,6 +899,44 @@
       \verb 10.1017/CBO9780511618215
       \endverb
     \endentry
+    \entry{McCarthy2010article}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8a7416075322c6e8798c0545cf087564}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd73b96699be6c88001d87b4286db039}{%
+           family={Jarvis},
+           familyi={J\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac934f925e3ebc46670fcd9a4b79f599}
+      \strng{fullhash}{ac934f925e3ebc46670fcd9a4b79f599}
+      \strng{bibnamehash}{ac934f925e3ebc46670fcd9a4b79f599}
+      \strng{authorbibnamehash}{ac934f925e3ebc46670fcd9a4b79f599}
+      \strng{authornamehash}{ac934f925e3ebc46670fcd9a4b79f599}
+      \strng{authorfullhash}{ac934f925e3ebc46670fcd9a4b79f599}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Behavior research methods}
+      \field{month}{05}
+      \field{title}{MTLD, vocd-D, and HD-D: A validation study of sophisticated approaches to lexical diversity assessment}
+      \field{volume}{42}
+      \field{year}{2010}
+      \field{pages}{381\bibrangedash 92}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3758/BRM.42.2.381
+      \endverb
+    \endentry
     \entry{Novikov2022article}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4655fff0532257254c8df0c2d763c823}{%
@@ -782,6 +1003,50 @@
       \verb https://books.google.de/books?id=E3UE9IoW27AC
       \endverb
     \endentry
+    \entry{Oktafiani2024article}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=744fef648bfe3087505a3f2b30fb3c7c}{%
+           family={Oktafiani},
+           familyi={O\bibinitperiod},
+           given={Rian},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ce45285bfa4f4d501684a9eb1cc357}{%
+           family={Hermawan},
+           familyi={H\bibinitperiod},
+           given={Arief},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=701cca35953aacf5be9d35ca3247632b}{%
+           family={Avianto},
+           familyi={A\bibinitperiod},
+           given={Donny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1c18c2e64f19677f04284e9f31dca746}
+      \strng{fullhash}{1c18c2e64f19677f04284e9f31dca746}
+      \strng{bibnamehash}{1c18c2e64f19677f04284e9f31dca746}
+      \strng{authorbibnamehash}{1c18c2e64f19677f04284e9f31dca746}
+      \strng{authornamehash}{1c18c2e64f19677f04284e9f31dca746}
+      \strng{authorfullhash}{1c18c2e64f19677f04284e9f31dca746}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)}
+      \field{month}{02}
+      \field{title}{Max Depth Impact on Heart Disease Classification: Decision Tree and Random Forest}
+      \field{volume}{8}
+      \field{year}{2024}
+      \field{pages}{160\bibrangedash 168}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.29207/resti.v8i1.5574
+      \endverb
+    \endentry
     \entry{Pawlas2020inbook}{inbook}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=9de6d174109580b717cd0c236c6458da}{%
@@ -817,6 +1082,44 @@
       \range{pages}{22}
       \verb{doi}
       \verb 10.48226/978-83-66666-28-3
+      \endverb
+    \endentry
+    \entry{Salman2024article}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f1f12ab61e164c00d5c24a707bb23c40}{%
+           family={Salman},
+           familyi={S\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb9bf54275657f37afc2fdb8817e1c7d}{%
+           family={Al-Jawher},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={Waleed},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{670f5214e99cc22fab72ec61fb2c6d05}
+      \strng{fullhash}{670f5214e99cc22fab72ec61fb2c6d05}
+      \strng{bibnamehash}{670f5214e99cc22fab72ec61fb2c6d05}
+      \strng{authorbibnamehash}{670f5214e99cc22fab72ec61fb2c6d05}
+      \strng{authornamehash}{670f5214e99cc22fab72ec61fb2c6d05}
+      \strng{authorfullhash}{670f5214e99cc22fab72ec61fb2c6d05}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal Port Science Research}
+      \field{month}{09}
+      \field{title}{Performance Comparison of Support Vector Machines, AdaBoost, and Random Forest for Sentiment Text Analysis and Classification}
+      \field{volume}{7}
+      \field{year}{2024}
+      \field{pages}{300\bibrangedash 311}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.36371/port.2024.3.8
       \endverb
     \endentry
     \entry{sanders2016article}{article}{}

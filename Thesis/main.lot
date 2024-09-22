@@ -1,6 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {table}{\numberline {3.1}{\ignorespaces Constructed languages used in the study, together with their main respective source languages from which they were designed.}}{10}{}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Parameters of PyTorch LSTM used to Calculate Text Entropy}}{16}{}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of TensorFlow RNN used to Calculate Lexical and Reverse Lexical Entropy}}{18}{}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Feature set}}{20}{}%
-\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{28}{}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{17}{}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of TensorFlow LSTMs used to calculate lexical and reverse lexical entropy.}}{19}{}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Best parameters of the decision tree after fine-tuning, with the exception of \texttt {class\_weight}.}}{19}{}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Best parameters of the random forest after fine-tuning, with the exception of \texttt {class\_weight}.}}{20}{}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Feature set}}{23}{}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{34}{}%

@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[87] biber-darwin:340> INFO - === Thu Sep 19, 2024, 19:00:16
-[109] Biber.pm:419> INFO - Reading 'main.bcf'
-[212] Biber.pm:979> INFO - Found 32 citekeys in bib section 0
-[225] Biber.pm:4419> INFO - Processing section 0
-[238] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[242] bibtex.pm:1713> INFO - LaTeX decoding ...
-[354] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[590] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[590] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[590] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[591] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[635] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[656] bbl.pm:763> INFO - Output to main.bbl
-[656] Biber.pm:131> WARN - ISBN '0198829876,9780198829874' in entry 'punske2020book' is invalid - run biber with '--validate_datamodel' for details.
-[656] Biber.pm:131> WARN - I didn't find a database entry for 'GObbo2016' (section 0)
-[656] Biber.pm:133> INFO - WARNINGS: 2
+[103] biber-darwin:340> INFO - === Sun Sep 22, 2024, 05:31:46
+[127] Biber.pm:419> INFO - Reading 'main.bcf'
+[249] Biber.pm:979> INFO - Found 39 citekeys in bib section 0
+[265] Biber.pm:4419> INFO - Processing section 0
+[279] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[285] bibtex.pm:1713> INFO - LaTeX decoding ...
+[423] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[730] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[730] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[730] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[730] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[783] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[810] bbl.pm:763> INFO - Output to main.bbl
+[810] Biber.pm:131> WARN - ISBN '0198829876,9780198829874' in entry 'punske2020book' is invalid - run biber with '--validate_datamodel' for details.
+[810] Biber.pm:131> WARN - I didn't find a database entry for 'GObbo2016' (section 0)
+[810] Biber.pm:133> INFO - WARNINGS: 2

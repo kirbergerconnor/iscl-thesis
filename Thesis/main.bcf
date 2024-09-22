@@ -2435,7 +2435,15 @@
     <bcf:citekey order="60" intorder="1">Attardi2015wikiextractor</bcf:citekey>
     <bcf:citekey order="61" intorder="1">Virpioja2013inproceedings</bcf:citekey>
     <bcf:citekey order="62" intorder="1">Covington2010article</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">Smit2014inproceedings</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">Bestgen2024article</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">McCarthy2010article</bcf:citekey>
+    <bcf:citekey order="64" intorder="2">Fergadiotis2013article</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">Smit2014inproceedings</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">Dhandapani2023inbook</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">Oktafiani2024article</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">Salman2024article</bcf:citekey>
+    <bcf:citekey order="68" intorder="2">Oktafiani2024article</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">Braei2020article</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

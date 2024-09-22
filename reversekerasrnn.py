@@ -5,6 +5,7 @@ import pandas as pd
 import tensorflow as tf
 import numpy as np
 from itertools import chain
+import keras
 from keras.layers import Embedding, Dense, LSTM, Dropout
 from keras.losses import SparseCategoricalCrossentropy
 from keras.optimizers import Adam
@@ -12,7 +13,7 @@ from keras.models import Sequential
 from keras.preprocessing.sequence import pad_sequences
 
 folder = './current_corpora/'
-reverse_lex_entropy_hist_df = pd.DataFrame(columns=['corpus', 'epoch', 'loss', 'acc', 'val_loss', 'val_acc', 'val_perplexity'])
+reverse_lex_entropy_hist_df = pd.DataFrame(columns=['corpus', 'epoch', 'loss', 'sp_cat_acc', 'val_loss', 'val_perplexity'])
 count = 0
 
 if __name__ == '__main__':
@@ -50,7 +51,7 @@ if __name__ == '__main__':
             model.add(LSTM(128, return_sequences=True))
             model.add(Dropout(0.2))
             model.add(Dense(vocab_size, activation='softmax'))
-            model.compile(loss=loss_function, optimizer=optimizer, metrics=['accuracy'])
+            model.compile(loss=loss_function, optimizer=optimizer, metrics=[keras.metrics.SparseCategoricalAccuracy()])
 
             history = model.fit(X_train, y_train, epochs=num_epochs, batch_size=batch_size, callbacks=[callback], validation_data=(X_val, y_val), verbose=2)
             val_losses = history.history['val_loss']
@@ -60,9 +61,8 @@ if __name__ == '__main__':
                 'corpus': corpus, 
                 'epoch': len(history.history['loss']),
                 'loss': history.history['loss'][-1],
-                'acc': history.history['accuracy'][-1],
+                'sp_cat_acc': history.history['sparse_categorical_accuracy'][-1],
                 'val_loss': history.history['val_loss'][-1],
-                'val_acc': history.history['val_accuracy'][-1],
                 'val_perplexity': perplexity
                 }, index=[0]
             )
