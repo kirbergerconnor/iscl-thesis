@@ -906,14 +906,16 @@ Perplexity was then calculated the same way as before from both models: as an ex
 
 After computing the complete set of features, two models were trained for binary classification, predicting a language in the dataset to be either natural or constructed according to said features. Both are supervised methods.
 
-Feature scaling (e.g. normalization, standardization) was not used here, as neither kind of model is sensitive to variance in the data.
+Feature scaling (e.g. normalization, standardization) was not used here, as neither kind of model is sensitive to variance in the data. 
+
+Both models were optimized through the use of leave-one-out cross-validation, a specific kind of cross-validation which splits the data into a testing set that has only one sample and a training set containing all the rest and then repeats this for each sample in the data (24 times in this case). This method is helpful in preventing the model from overfitting on small and imbalanced datasets.
 
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
 % Discuss pre-pruning the decision tree
 
-The first classifier used was a decision tree, a predictive analysis model structured as a hierarchy of nodes and connecting branches. Several of the model's hyperparameters were fine-tuned using an exhaustive grid search approach on a range of possible values for each, and the best ones found by the estimator were used (shown in Table \ref{tbl:decisiontreeparams}). The only exception is the \texttt{class\_weight} parameter, which was not fine-tuned but instead set to \texttt{'balanced'} to account for the imbalanced dataset being used (6 'con' versus 18 'nat'). This adjusts the misclassification cost for each class based on their frequency in the data. For the rest of the model's parameters not shown here, the default values were used.
+Decision Tree is a predictive analysis model structured as a hierarchy of nodes and connecting branches. Several of the model's hyperparameters were fine-tuned using the \texttt{GridSearchCV()} class from \textsc{scikit-learn}, an exhaustive grid search approach on ranges of possible values for each parameter. The best ones found by the estimator were used (shown in Table \ref{tbl:decisiontreeparams}). Additionally, the model's \texttt{class\_weight} parameter was set to \texttt{'balanced'} to account for the imbalanced dataset being used (6 'con' versus 18 'nat'). This adjusts the misclassification cost for each class based on their frequency in the data. For the rest of the model's parameters not shown here, the default values were used.
 
 \begin{table}[h!] 
   \centering\small
@@ -928,16 +930,13 @@ The first classifier used was a decision tree, a predictive analysis model struc
   max\_depth & None \\
   min\_samples\_leaf & 1 \\
   min\_samples\_split & 2 \\
-  class\_weight & balanced \\
   \hline
   \end{tabular}
-  \caption{Best parameters of the decision tree after fine-tuning, with the exception of \texttt{class\_weight}.}
+  \caption{Fine-tuned hyperparameters for Decision Tree.}
   \label{tbl:decisiontreeparams}
 \end{table}
 
 The \texttt{criterion} parameter refers to the algorithm used to determine the optimal splits for the tree, which in this case was the Gini impurity; in short, it measures the probability of the incorrect classification of a random datapoint in the data. The other parameters relate to limiting the structure of the tree in various ways.
-
-Lastly, the model was optimized during the grid search through the use of leave-one-out cross-validation. This is a specific kind of cross-validation which splits the data into a testing set that has only one sample and a training set containing all the rest, a process that is repeated for each sample in the data (24 times in this case). This method is also helpful in preventing the model from overfitting on the small and imbalanced dataset. 
 
 \subsubsection{Random Forest}
 \label{ssec:randomforest}
@@ -946,9 +945,9 @@ Lastly, the model was optimized during the grid search through the use of leave-
 % Refer to https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/
 % Include visualization of finetuning, as shown by https://medium.com/@Doug-Creates/tuning-random-forest-parameters-with-scikit-learn-b53cbc602cd0
 
-The other classifier used was a random forest, which is an ensemble method that combines many decision trees and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees.
+Random Forest is an ensemble method that combines many decision trees and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees.
 
-Fine-tuning of several of the model's hyperparameters was again done using a grid search estimator, in addition to leave-one-out cross-validation for optimization. These hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Here again, \texttt{class\_weight} was set to \texttt{'balanced'}. Default values were used for the remainder model parameters not shown.
+Fine-tuning of several of the model's hyperparameters was again done using a grid search estimator. These hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Here again, \texttt{class\_weight} was set to \texttt{'balanced'}. Default values were used for the remainder model parameters not shown.
 
 \begin{table}[h!] 
   \centering\small
@@ -966,23 +965,27 @@ Fine-tuning of several of the model's hyperparameters was again done using a gri
   min\_samples\_leaf & 2 \\
   criterion &  \\
   bootstrap & True \\
-  class\_weight & balanced \\
   \hline
   \end{tabular}
-  \caption{Best parameters of the random forest after fine-tuning, with the exception of \texttt{class\_weight}.}
+  \caption{Fine-tuned hyperparameters for Random Forest.}
   \label{tbl:randomforestparams}
 \end{table}
 
-Another advantage of using a random forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. Two approaches were used to calculate the feature importances: mean decrease in impurity (MDI) and permutation importance. 
+Another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. Two approaches were used to calculate the feature importances: mean decrease in impurity (MDI) and permutation importance. 
+
+\subsubsection{Classifier Evaluation}
+\label{ssec:classifiereval}
+
+% For decision tree: To evaluate the model's performance for each split, the micro F1 score was calculated.
+
+Both classifiers were evaluated based on the micro-F1 scores of their predictions during training.
 
 \subsection{Anomaly Detection}
 \label{ssec:anomalydetection}
 
 The developed feature set was also used for anomaly detection, a task for identifying outliers (and inliers, by extension) in a given dataset. The three models used here are unsupervised. 
 
-Unlike for classification, feature scaling was necessary for using these anomaly detection models. Since normalization is sensitive to outliers \parencite{Braei2020article}, standardization (also called Z-score normalization) was performed instead, which is given by the formula: \[Z = \frac{x_i - \mu}{\sigma}\] 
-
-where $\mu$ is the mean and $\sigma$ is the standard deviation from the mean. This process scales the data to fit a standard normal distribution, thus the resulting transformed data has a mean of 0 and standard deviation of 1. 
+A notable difference from the classification task is the lack of use of weighted classes, since anomaly detection inherently assumes an imbalanced distribution of classes.
 
 \subsubsection{Principal Component Analysis}
 \label{ssec:pca}
@@ -1000,7 +1003,32 @@ PCA is an unsupervised method for linear dimensionality reduction which can also
 \subsubsection{Isolation Forest}
 \label{ssec:isolationforest}
 
+Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. An anomaly score is then calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. 
 
+Similar to classification with Random Forest, feature scaling is not required for Isolation Forest, and in fact has no effect.
+
+The model was fine-tuned using the \texttt{ParameterGrid()} class from \textsc{scikit-learn}, and Table \ref{tbl:isolationforestparams} shows the best parameters found. All others were left as their default values.
+
+\begin{table}[h!] 
+  \centering\small
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{@{}ll@{}}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Isolation Forest}} \\
+  \hline
+  \textbf{Parameters} & \textbf{Values} \\
+  \hline
+  max\_samples & 3 \\
+  max\_features & 1.0 \\
+  contamination & 0.1 \\
+  n\_estimators & 100 \\
+  \hline
+  \end{tabular}
+  \caption{Fine-tuned hyperparameters for Isolation Forest.}
+  \label{tbl:isolationforestparams}
+\end{table}
+
+The \texttt{contamination} parameter reflects the proportion of outliers in the dataset. Although the true proportion value for my dataset is 0.25, 0.1 was found to be the best.
 
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
@@ -1013,14 +1041,18 @@ PCA is an unsupervised method for linear dimensionality reduction which can also
 % Support Vector Method for Novelty Detection (Olkopf 2000)
 % For adaptive OCSVM, refer to https://www.researchgate.net/publication/300242572_An_Adaptive_Weighted_One-Class_SVM_for_Robust_Outlier_Detection
 
-One-Class SVMs are a special kind of SVMs used in the domain of anomaly detection. While similar to one another, classic SVMs separate two classes using a hyperplane with the largest possible margin. In contrast to this, One-Class SVMs...Rather than training on an entire dataset containing two classes as with classic SVMs, these models train exclusively on the majority class, also called the "normal" class. After training, 
+A One-Class SVM is an unsupervised SVM used in the domain of anomaly detection which finds the hyperplane that maximally separates the data from the origin \parencite{Boiar2022article}. The corresponding decision boundary encompasses inliers, with datapoints outside it being considered outliers. 
 
-\subsection{Performance Evaluation of Models}
-\label{ssec:performanceevaluationofmodels}
+Unlike for classification, feature scaling was necessary for using a One-Class SVM. Since normalization is sensitive to outliers \parencite{Braei2020article}, standardization (also called Z-score normalization) was performed instead, which is given by the formula: \[Z = \frac{x_i - \mu}{\sigma}\] 
 
-% For decision tree: To evaluate the model's performance for each split, the micro F1 score was calculated. 
+where $\mu$ is the mean and $\sigma$ is the standard deviation from the mean. This process scales the data to fit a standard normal distribution, thus the resulting transformed data has a mean of 0 and standard deviation of 1. 
 
-The decision tree and random forest classifiers were evaluated based on the micro-F1 scores of their predictions during training.
+Rather than training on an entire dataset containing two classes as with classic SVMs, these models are first trained exclusively on the majority class. 
+
+Fine-tuning was again done using \texttt{ParameterGrid()} and for only 2 parameters: \texttt{'nu'} and \texttt{'gamma'}. 
+
+\subsubsection{Anomaly Detector Evaluation}
+\label{ssec:anomalydetectoreval}
 
 % For anomaly detection, use precision recall or F1 instead of accuracy
 
@@ -1135,7 +1167,7 @@ This section reports the results of each of the methods implemented in the featu
 
 A script was used to increase readability of the text in the graph\footnote{https://github.com/Phlya/adjustText}.
 
-\subsection{Results of Classification \& Anomaly Detection}
+\subsection{Results of Classification}
 \label{ssec:classificationresults}
 
 \subsubsection{Results of Decision Tree}
@@ -1151,8 +1183,14 @@ A script was used to increase readability of the text in the graph\footnote{http
 \subsubsection{Results of Random Forest}
 \label{ssec:randomforestresults}
 
+\subsection{Results of Anomaly Detection}
+\label{ssec:anomalydetectionresults}
+
 \subsubsection{Results of One-Class SVM}
 \label{ssec:oneclasssvmresults}
+
+\subsubsection{Results of Isolation Forest}
+\label{ssec:isolationforestresults}
 
 \newpage
 \section{Discussion}

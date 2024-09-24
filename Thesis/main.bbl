@@ -254,6 +254,53 @@
       \verb https://doi.org/10.1515/9783110886115.63
       \endverb
     \endentry
+    \entry{Boiar2022article}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2bbaed9d8d0a1731fc833bb37e07915f}{%
+           family={Boiar},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47fdfb2393f0d2ef4dd45422781dbd6a}{%
+           family={Liebig},
+           familyi={L\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=d5aa8a82c7032184011fd502a43e205a}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{6fe2df5446a628cc75bdb546d95b549f}
+      \strng{fullhash}{6fe2df5446a628cc75bdb546d95b549f}
+      \strng{bibnamehash}{6fe2df5446a628cc75bdb546d95b549f}
+      \strng{authorbibnamehash}{6fe2df5446a628cc75bdb546d95b549f}
+      \strng{authornamehash}{6fe2df5446a628cc75bdb546d95b549f}
+      \strng{authorfullhash}{6fe2df5446a628cc75bdb546d95b549f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{LOSDD: Leave-Out Support Vector Data Description for Outlier Detection}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2212.13626
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2212.13626
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2212.13626
+      \endverb
+    \endentry
     \entry{Braei2020article}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2c203cba0db705a473a63d3648ea3ffe}{%
@@ -864,6 +911,48 @@
       \verb 10.1007/978-3-319-43491-9_20
       \endverb
     \endentry
+    \entry{Liu2009inproceedings}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=231b376c1eeea575643f44deb86338c4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Fei\bibnamedelima Tony},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8455b94a47fd778e008643c7402f0ab}{%
+           family={Ting},
+           familyi={T\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b1a37e820a730061851a81dcca2d154}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Zhi-Hua},
+           giveni={Z\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e57ecc4bf2b9cf35fa04ee88c7a68c6f}
+      \strng{fullhash}{e57ecc4bf2b9cf35fa04ee88c7a68c6f}
+      \strng{bibnamehash}{e57ecc4bf2b9cf35fa04ee88c7a68c6f}
+      \strng{authorbibnamehash}{e57ecc4bf2b9cf35fa04ee88c7a68c6f}
+      \strng{authornamehash}{e57ecc4bf2b9cf35fa04ee88c7a68c6f}
+      \strng{authorfullhash}{e57ecc4bf2b9cf35fa04ee88c7a68c6f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Isolation Forest}
+      \field{year}{2009}
+      \field{pages}{413\bibrangedash 422}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICDM.2008.17
+      \endverb
+    \endentry
     \entry{Mairal2006book}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ab2c5052a041e7843cb2e73ebbb058c8}{%
@@ -1084,6 +1173,47 @@
       \verb 10.48226/978-83-66666-28-3
       \endverb
     \endentry
+    \entry{Rosenhahn2024article}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0b5e0c497df82f8933f6b72c99a8b86d}{%
+           family={Rosenhahn},
+           familyi={R\bibinitperiod},
+           given={Bodo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fc65fe4367c4f949085235ccdba012d}{%
+           family={Hirche},
+           familyi={H\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{105773633cd9b5b8e326b0106b9024f6}
+      \strng{fullhash}{105773633cd9b5b8e326b0106b9024f6}
+      \strng{bibnamehash}{105773633cd9b5b8e326b0106b9024f6}
+      \strng{authorbibnamehash}{105773633cd9b5b8e326b0106b9024f6}
+      \strng{authornamehash}{105773633cd9b5b8e326b0106b9024f6}
+      \strng{authorfullhash}{105773633cd9b5b8e326b0106b9024f6}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Quantum Normalizing Flows for Anomaly Detection}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2402.02866
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2402.02866
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2402.02866
+      \endverb
+    \endentry
     \entry{Salman2024article}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f1f12ab61e164c00d5c24a707bb23c40}{%
@@ -1192,12 +1322,12 @@
     \endentry
     \entry{Schubert1989inbook}{inbook}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+        {{un=1,uniquepart=given,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
            family={Schubert},
            familyi={S\bibinitperiod},
            given={Klaus},
            giveni={K\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{630a7ae2132e6ceebb6a60ea59a45327}
       \strng{fullhash}{630a7ae2132e6ceebb6a60ea59a45327}
@@ -1224,12 +1354,12 @@
     \endentry
     \entry{Schubert2001book}{book}{}
       \name{author}{10}{ul=1}{%
-        {{un=0,uniquepart=base,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+        {{un=1,uniquepart=given,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
            family={Schubert},
            familyi={S\bibinitperiod},
            given={Klaus},
            giveni={K\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=1f37b027fe4870e4c9f0ffed3ac53035}{%
            family={Smet},
            familyi={S\bibinitperiod},
@@ -1485,6 +1615,68 @@
       \endverb
       \verb{url}
       \verb https://api.semanticscholar.org/CorpusID:161991811
+      \endverb
+    \endentry
+    \entry{Xu2023article}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1b761a45a5e449146e4b1469de006a65}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Hongzuo},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11f212154025b4456293619ddc877b97}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Guansong},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31ff20595b0076f9b5b53b4e73c9ed17}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yijie},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=515f2ade89c57e980b6ce4f58610b512}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yongjun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{22d3548d5b8a9cfb58b57dae613cf958}
+      \strng{fullhash}{5041020c3c96cebf407f779185512712}
+      \strng{bibnamehash}{22d3548d5b8a9cfb58b57dae613cf958}
+      \strng{authorbibnamehash}{22d3548d5b8a9cfb58b57dae613cf958}
+      \strng{authornamehash}{22d3548d5b8a9cfb58b57dae613cf958}
+      \strng{authorfullhash}{5041020c3c96cebf407f779185512712}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2326-3865}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Deep Isolation Forest for Anomaly Detection}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{pages}{12591\bibrangedash 12604}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/tkde.2023.3270293
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TKDE.2023.3270293
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TKDE.2023.3270293
       \endverb
     \endentry
   \enddatalist
