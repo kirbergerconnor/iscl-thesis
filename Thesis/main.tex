@@ -329,7 +329,7 @@ Write the abstract here.
 \textbf{MSE} & ~~~ & Mean Squared Error \\
 \textbf{MDI} & ~~~ & Mean Decrease in Impurity \\
 \textbf{AUC} & ~~~ & Area Under the Curve \\
-
+\textbf{ROC} & ~~~ & Receiving Operating Characteristic \\
 
 \end{tabular}
 \newpage
@@ -779,7 +779,7 @@ After being loaded, \texttt{train\_batch()} was used with default parameters (\t
 % Used Morfessor with logarithmic function
 % Calculated morpheme TTR, etc.
 
-Once all of the texts' compounds were segmented, the aforementioned features were computed. As an approximation, the stem of the compound was assumed to be the largest segment that appears first when examined from left to right. Remaining segments (if there were any) were thus considered morphemes. Morpheme TTR was then calculated using the same formula as lexical TTR, the average number of segments per word is simply the sum of each compound's amount of segmentations divided by the total number of segmented compounds, and lastly the average number of forms per stem was derived from the total number of morphemes for each unique stem (adding 1 to account for the stem itself) divided by total number of unique stems.
+Once all of the texts' compounds were segmented, the aforementioned features were computed. As an approximation, the stem of the compound was assumed to be the largest segment that appears first when examined from left to right. Remaining segments (if there were any) were thus considered morphemes. Morpheme TTR was then calculated using the same formula as lexical TTR and multiplying the result by 100, the average number of segments per word is simply the sum of each compound's amount of segmentations divided by the total number of segmented compounds, and lastly the average number of forms per stem was derived from the total number of morphemes for each unique stem (adding 1 to account for the stem itself) divided by total number of unique stems.
 
 The preference for using mostly default parameters for the functions and models here, as well as the method for identifying the stem of a segmented compound, was to ensure uniformity, so that the results would be comparable for cross-linguistic analysis. The implications of this and possible alternative approaches will be further discussed in section \ref{sec:discussion}.
 
@@ -875,7 +875,7 @@ The architecture of both models is identical. First is an embedding layer with a
   \label{tbl:keraslstmparams}
 \end{table}
 
-Perplexity was then calculated the same way as before from both models: as an exponentiation of the cross-entropy, which was derived from the average validation loss.
+Perplexity of both models was then calculated the same way as before: an exponentiation of the cross-entropy, which was derived from the average validation loss.
 
 % Evaluating the Irregularity of Natural Languages (Gomez 2017) has more info for this section, starting on page 2
 % Calculated character, word, text, and lexical entropies (and reverse)
@@ -894,6 +894,19 @@ Perplexity was then calculated the same way as before from both models: as an ex
 % the entropy value was taken from the val_perplexity of the model
 % early stopping was used in the tensorflow models for lexical entropy, based on val_loss and with patience=3
 
+\subsubsection{Dimensionality Reduction with PCA}
+\label{ssec:dimensionalityreductionpca}
+
+% "To analyze whether measures include multiple dimensions or not, we perform dimensionality reduction using principal component analysis (PCA). The intuition here is that if the measures differ in what they measure, the explained variance should be shared among multiple principal components. Furthermore, if the lower-order principal components measure meaningful dimensions of morphological complexity, we expect them to indicate linguistically relevant differences between languages." (Coltekin 2022)
+% Use scree plot? Kaiser's rule?
+% Do a breakdown of how PCA and explained variance (the mathematics) works, following https://machinelearningmastery.com/principal-component-analysis-for-visualization/
+% Do PCA in 2 or 3 dimensions/components? (for 3, refer to https://machinelearningmastery.com/principal-component-analysis-for-visualization/)
+
+PCA is an unsupervised method for linear dimensionality reduction 
+
+% Discuss explained variance ratio
+% Use https://www.jcchouinard.com/pca-explained-variance/ for visualizing explained variance
+
 \subsection{Classification}
 \label{ssec:classification}
 
@@ -904,18 +917,20 @@ Perplexity was then calculated the same way as before from both models: as an ex
 % Should I use sklearn.metrics 'classification_report'? As done by https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
 % Use of Leave One Out Cross Validation for supervised methods (refer to https://www.statology.org/leave-one-out-cross-validation/), include MSE/MAE/Bernoulli likelihood formulas, etc
 
-After computing the complete set of features, two models were trained for binary classification, predicting a language in the dataset to be either natural or constructed according to said features. Both are supervised methods.
+After computing the complete set of features, two models were trained for supervised binary classification, predicting a language in the dataset to be either natural or constructed according to said numerical features. 
 
 Feature scaling (e.g. normalization, standardization) was not used here, as neither kind of model is sensitive to variance in the data. 
 
-Both models were optimized through the use of leave-one-out cross-validation, a specific kind of cross-validation which splits the data into a testing set that has only one sample and a training set containing all the rest and then repeats this for each sample in the data (24 times in this case). This method is helpful in preventing the model from overfitting on small and imbalanced datasets.
+In order to prevent overfitting due to using a small and imbalanced dataset, both models were optimized through the use of leave-one-out cross-validation, which splits the data into a testing set that has only one sample and a training set containing all the rest and then repeats this for each sample in the data (24 times in this case). Additionally, the parameter \texttt{class\_weight='balanced'} was used for both; this adjusts the misclassification cost for each class based on their frequency in the data. 
+
+Fine-tuning for several hyperparameters was done using the \texttt{GridSearchCV()} class from \textsc{scikit-learn}, which employs multiple estimators to perform an exhaustive grid search on ranges of possible values for each parameter. 
 
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
 % Discuss pre-pruning the decision tree
 
-Decision Tree is a predictive analysis model structured as a hierarchy of nodes and connecting branches. Several of the model's hyperparameters were fine-tuned using the \texttt{GridSearchCV()} class from \textsc{scikit-learn}, an exhaustive grid search approach on ranges of possible values for each parameter. The best ones found by the estimator were used (shown in Table \ref{tbl:decisiontreeparams}). Additionally, the model's \texttt{class\_weight} parameter was set to \texttt{'balanced'} to account for the imbalanced dataset being used (6 'con' versus 18 'nat'). This adjusts the misclassification cost for each class based on their frequency in the data. For the rest of the model's parameters not shown here, the default values were used.
+Decision Tree is a predictive analysis model structured as a hierarchy of nodes and connecting branches. The optimal hyperparameters found from fine-tuning are shown in Table \ref{tbl:decisiontreeparams}. For the rest of the model's parameters not shown here, the default values were used.
 
 \begin{table}[h!] 
   \centering\small
@@ -936,7 +951,7 @@ Decision Tree is a predictive analysis model structured as a hierarchy of nodes 
   \label{tbl:decisiontreeparams}
 \end{table}
 
-The \texttt{criterion} parameter refers to the algorithm used to determine the optimal splits for the tree, which in this case was the Gini impurity; in short, it measures the probability of the incorrect classification of a random datapoint in the data. The other parameters relate to limiting the structure of the tree in various ways.
+The \texttt{criterion} parameter refers to the algorithm used to determine the optimal splits for the tree, which in this case was the Gini impurity; in short, this measures the probability of incorrect classification of a random datapoint in the data. The other parameters relate to limiting the structure of the tree (i.e., the number of nodes, splits, or layers).
 
 \subsubsection{Random Forest}
 \label{ssec:randomforest}
@@ -947,7 +962,7 @@ The \texttt{criterion} parameter refers to the algorithm used to determine the o
 
 Random Forest is an ensemble method that combines many decision trees and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees.
 
-Fine-tuning of several of the model's hyperparameters was again done using a grid search estimator. These hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Here again, \texttt{class\_weight} was set to \texttt{'balanced'}. Default values were used for the remainder model parameters not shown.
+The fine-tuned hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Default values were again used for the remainder parameters not shown.
 
 \begin{table}[h!] 
   \centering\small
@@ -971,7 +986,7 @@ Fine-tuning of several of the model's hyperparameters was again done using a gri
   \label{tbl:randomforestparams}
 \end{table}
 
-Another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. Two approaches were used to calculate the feature importances: mean decrease in impurity (MDI) and permutation importance. 
+In addition to the increase in accuracy and generalization, another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. Two approaches were used to calculate the feature importances: mean decrease in impurity (MDI) and permutation importance. 
 
 \subsubsection{Classifier Evaluation}
 \label{ssec:classifiereval}
@@ -983,31 +998,20 @@ Both classifiers were evaluated based on the micro-F1 scores of their prediction
 \subsection{Anomaly Detection}
 \label{ssec:anomalydetection}
 
-The developed feature set was also used for anomaly detection, a task for identifying outliers (and inliers, by extension) in a given dataset. The three models used here are unsupervised. 
+The developed feature set was also used for unsupervised anomaly detection (also called outlier detection), a task for identifying outliers (and inliers, by extension) in a given dataset. This means the models train and predict on the same data, and it differs slightly from the task of novelty detection, which detects outliers in new, previously unseen data.
 
-A notable difference from the classification task is the lack of use of weighted classes, since anomaly detection inherently assumes an imbalanced distribution of classes.
+A notable difference in these methods from the previous classification ones is the lack of use of weighted classes, since anomaly detection inherently assumes an imbalanced distribution of classes. 
 
-\subsubsection{Principal Component Analysis}
-\label{ssec:pca}
-
-% "To analyze whether measures include multiple dimensions or not, we perform dimensionality reduction using principal component analysis (PCA). The intuition here is that if the measures differ in what they measure, the explained variance should be shared among multiple principal components. Furthermore, if the lower-order principal components measure meaningful dimensions of morphological complexity, we expect them to indicate linguistically relevant differences between languages." (Coltekin 2022)
-% Use scree plot? Kaiser's rule?
-% Do a breakdown of how PCA and explained variance (the mathematics) works, following https://machinelearningmastery.com/principal-component-analysis-for-visualization/
-% Do PCA in 2 or 3 dimensions/components? (for 3, refer to https://machinelearningmastery.com/principal-component-analysis-for-visualization/)
-
-PCA is an unsupervised method for linear dimensionality reduction which can also be used for anomaly detection.
-
-% Discuss explained variance ratio
-% Use https://www.jcchouinard.com/pca-explained-variance/ for visualizing explained variance
+Each model was fine-tuned using the \texttt{ParameterGrid()} class from \textsc{scikit-learn}.
 
 \subsubsection{Isolation Forest}
 \label{ssec:isolationforest}
 
 Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. An anomaly score is then calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. 
 
-Similar to classification with Random Forest, feature scaling is not required for Isolation Forest, and in fact has no effect.
+Similar to classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so in fact has no effect.
 
-The model was fine-tuned using the \texttt{ParameterGrid()} class from \textsc{scikit-learn}, and Table \ref{tbl:isolationforestparams} shows the best parameters found. All others were left as their default values.
+Due to the overall limited size of the dataset being used, training was done only on the "majority" class, or natural languages, and predictions were done using the entire dataset. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned, as well as the best ones found. All others were left as their default values.
 
 \begin{table}[h!] 
   \centering\small
@@ -1041,73 +1045,121 @@ The \texttt{contamination} parameter reflects the proportion of outliers in the 
 % Support Vector Method for Novelty Detection (Olkopf 2000)
 % For adaptive OCSVM, refer to https://www.researchgate.net/publication/300242572_An_Adaptive_Weighted_One-Class_SVM_for_Robust_Outlier_Detection
 
-A One-Class SVM is an unsupervised SVM used in the domain of anomaly detection which finds the hyperplane that maximally separates the data from the origin \parencite{Boiar2022article}. The corresponding decision boundary encompasses inliers, with datapoints outside it being considered outliers. 
+A One-Class SVM is an unsupervised SVM used in the domain of anomaly detection which projects data into a higher-dimensional space and finds the hyperplane that maximally separates this data from the origin of said space \parencite{Boiar2022article}. The resulting decision boundary found encompasses inliers, with datapoints outside it being considered outliers. 
 
 Unlike for classification, feature scaling was necessary for using a One-Class SVM. Since normalization is sensitive to outliers \parencite{Braei2020article}, standardization (also called Z-score normalization) was performed instead, which is given by the formula: \[Z = \frac{x_i - \mu}{\sigma}\] 
 
 where $\mu$ is the mean and $\sigma$ is the standard deviation from the mean. This process scales the data to fit a standard normal distribution, thus the resulting transformed data has a mean of 0 and standard deviation of 1. 
 
-Rather than training on an entire dataset containing two classes as with classic SVMs, these models are first trained exclusively on the majority class. 
+% Training was again done solely on the "majority" class from the dataset, while predicting on the full dataset.
 
-Fine-tuning was again done using \texttt{ParameterGrid()} and for only 2 parameters: \texttt{'nu'} and \texttt{'gamma'}. 
+The fine-tuned optimal parameters used for the model are shown in Table \ref{tbl:oneclasssvmparams}.
+
+\begin{table}[h!] 
+  \centering\small
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{@{}ll@{}}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{One-Class SVM}} \\
+  \hline
+  \textbf{Parameters} & \textbf{Values} \\
+  \hline
+  kernel & poly \\
+  degree & 2 \\
+  coef0 & 0.3 \\
+  gamma & 0.0001 \\
+  nu & 0.5 \\
+  \hline
+  \end{tabular}
+  \caption{Fine-tuned hyperparameters for One-Class SVM.}
+  \label{tbl:oneclasssvmparams}
+\end{table}
+
+\subsubsection{Local Outlier Factor}
+\label{ssec:localoutlierfactor}
+
+Local Outlier Factor is a proximity-based approach to anomaly detection which detects outliers using the k-nearest neighbor algorithm. 
+
+Data was again scaled using standardization. Unlike the other two models for anomaly detection, however, Local Outlier Factor trained on the entire dataset and identified the outliers present. Table \ref{tbl:lofparams} shows the model's hyper-parameters that were fine-tuned; the rest were left as their defaults.
+
+\begin{table}[h!] 
+  \centering\small
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{@{}ll@{}}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Local Outlier Factor}} \\
+  \hline
+  \textbf{Parameters} & \textbf{Values} \\
+  \hline
+  n\_neighbors & 3 \\
+  algorithm & kd\_tree \\
+  leaf\_size & 100 \\
+  contamination & 0.1 \\
+  \hline
+  \end{tabular}
+  \caption{Fine-tuned hyperparameters for Local Outlier Factor.}
+  \label{tbl:lofparams}
+\end{table}
 
 \subsubsection{Anomaly Detector Evaluation}
 \label{ssec:anomalydetectoreval}
 
 % For anomaly detection, use precision recall or F1 instead of accuracy
 
-For anomaly detection methods, F-score and area under the curve (AUC) were evaluated.
+For anomaly detection methods, F-score and receiver operating characteristic (ROC) curve---together with related area under the curve (AUC)---were evaluated.
 
 \newpage
 \section{Results}
 \label{sec:results}
 
-This section reports the results of each of the methods implemented in the feature engineering, classification, and anomaly detection sections (sections \ref{ssec:featureengineering}, \ref{ssec:classification}, and \ref{ssec:anomalydetection}).
+This section reports the results of the methods implemented, and the measurements derived from this, for feature engineering. Following this are the results of the various models used for both the classification and anomaly detection tasks.
 % Also do 1D analysis of all languages for each single dimension (e.g. the TTR, seeing if there's clustering or dispersal in tendency for the languages on a single line)
 
 \subsection{Results of Feature Engineering}
 \label{ssec:featureengineeringresults}
 
+Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
+
 \begin{table}[h!]
   \centering
   \renewcommand{\arraystretch}{1.0}
-  % \begin{tabular} {|m{1cm}|m{1cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1.2cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|}
-      % \centering
       \rotatebox{90}{
       \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
       \hline
           \rotatebox{270}{\textbf{Corpus}} & \rotatebox{270}{\textbf{Type}} & \rotatebox{270}{\textbf{Avg Word Length}} & \rotatebox{270}{\textbf{Avg Sentence Length}} & \rotatebox{270}{\textbf{TTR}} & \rotatebox{270}{\textbf{MATTR}} & \rotatebox{270}{\textbf{Morpheme TTR}} & \rotatebox{270}{\textbf{Avg Segs Per Word}} & \rotatebox{270}{\textbf{Avg Forms Per Lemma}} & \rotatebox{270}{\textbf{Char Dist Entr}} & \rotatebox{270}{\textbf{Word Dist Entr}} & \rotatebox{270}{\textbf{Text Entr}} & \rotatebox{270}{\textbf{Lex Entr}} & \rotatebox{270}{\textbf{Rev Lex Entr}} \\ \hline
-          \textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 0.145 & 2.175 & 3.254 & 4.256 & 7.666 & 1.192 & 2.086 & 2.135 \\ \hline
-          \textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 0.103 & 2.238 & 4.402 & 4.077 & 8.055 & 1.157 & 1.985 & 2.069 \\ \hline
-          \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 0.107 & 2.169 & 4.383 & 4.117 & 10.593 & 3.813 & 1.811 & 1.866 \\ \hline
-          \textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 0.124 & 2.098 & 3.941 & 4.072 & 9.993 & 4.088 & 1.839 & 1.914 \\ \hline
-          \textbf{Turkish} & nat & 6.63 & 14.458 & 14.097 & 0.828 & 0.09 & 2.023 & 5.573 & 4.386 & 13.151 & 4.114 & 1.562 & 1.656 \\ \hline
-          \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 0.096 & 2.127 & 4.982 & 4.164 & 10.923 & 3.858 & 1.801 & 1.893 \\ \hline
-          \textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 0.079 & 2.169 & 5.999 & 4.543 & 12.443 & 4.423 & 1.67 & 1.727 \\ \hline
-          \textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 0.103 & 2.16 & 4.59 & 3.895 & 9.991 & 3.824 & 1.884 & 1.917 \\ \hline
-          \textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 0.088 & 2.152 & 5.352 & 4.029 & 11.308 & 4.003 & 1.672 & 1.786 \\ \hline
-          \textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 0.091 & 2.217 & 5.028 & 4.294 & 11.488 & 4.17 & 1.775 & 1.836 \\ \hline
-          \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 0.091 & 2.16 & 5.181 & 4.468 & 11.512 & 4.643 & 1.728 & 1.796 \\ \hline
-          \textbf{Kotava} & con & 5.06 & 12.824 & 8.153 & 0.582 & 0.091 & 2.195 & 5.115 & 4.186 & 10.287 & 3.085 & 2.011 & 2.066 \\ \hline
-          \textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 0.099 & 2.18 & 4.727 & 4.197 & 11.274 & 4.342 & 1.808 & 1.87 \\ \hline
-          \textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 0.113 & 2.089 & 4.285 & 4.046 & 10.327 & 3.502 & 1.759 & 1.864 \\ \hline
-          \textbf{Lingua Franca Nova} & con & 4.221 & 19.532 & 5.063 & 0.601 & 0.11 & 2.149 & 4.274 & 3.912 & 9.316 & 3.936 & 2.027 & 2.114 \\ \hline
-          \textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 0.116 & 2.136 & 4.091 & 4.167 & 10.673 & 4.116 & 1.926 & 1.981 \\ \hline
-          \textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 0.083 & 2.172 & 5.727 & 4.144 & 13.729 & 3.915 & 1.547 & 1.631 \\ \hline
-          \textbf{Polish} & nat & 6.248 & 14.951 & 14.89 & 0.825 & 0.093 & 2.132 & 5.166 & 4.553 & 12.905 & 4.316 & 1.651 & 1.685 \\ \hline
-          \textbf{French} & nat & 5.16 & 23.12 & 7.461 & 0.721 & 0.11 & 2.167 & 4.269 & 4.179 & 10.711 & 3.497 & 1.793 & 1.865 \\ \hline
-          \textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 0.097 & 2.254 & 4.656 & 4.072 & 11.142 & 3.518 & 1.956 & 1.976 \\ \hline
-          \textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 0.167 & 2.026 & 3.033 & 4.855 & 9.717 & 4.001 & 2.421 & 2.387 \\ \hline
-          \textbf{Occitan} & nat & 5.215 & 18.66 & 7.185 & 0.715 & 0.109 & 2.162 & 4.336 & 4.173 & 10.546 & 2.963 & 1.871 & 1.934 \\ \hline
-          \textbf{Interlingua} & con & 5.05 & 19.547 & 6.88 & 0.607 & 0.105 & 2.144 & 4.492 & 4.032 & 10.005 & 3.336 & 1.821 & 1.906 \\ \hline
-          \textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 0.094 & 2.207 & 4.961 & 4.23 & 11.601 & 3.965 & 1.608 & 1.666 \\ \hline       
+\textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
+\textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
+\textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
+\textbf{Polish} & nat & 6.248 & 14.951 & 14.890 & 0.825 & 6.639 & 1.894 & 3.709 & 4.553 & 12.905 & 5.072 & 5.611 & 5.898 \\ \hline
+\textbf{French} & nat & 5.160 & 23.120 & 7.461 & 0.721 & 7.109 & 1.771 & 2.759 & 4.179 & 10.711 & 4.104 & 6.256 & 6.779 \\ \hline
+\textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 15.287 & 1.567 & 1.938 & 4.256 & 7.666 & 1.281 & 8.702 & 9.037 \\ \hline
+\textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 13.894 & 1.770 & 2.861 & 4.072 & 9.993 & 4.757 & 6.639 & 6.986 \\ \hline
+\textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 27.439 & 1.344 & 1.453 & 4.855 & 9.717 & 4.768 & 11.878 & 11.432 \\ \hline
+\textbf{Occitan} & nat & 5.215 & 18.660 & 7.185 & 0.715 & 7.674 & 1.793 & 2.805 & 4.173 & 10.546 & 3.530 & 6.741 & 7.118 \\ \hline
+\textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 10.049 & 1.661 & 2.360 & 4.167 & 10.673 & 4.771 & 7.106 & 7.601 \\ \hline
+\textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 7.919 & 1.765 & 2.939 & 4.029 & 11.308 & 4.573 & 5.563 & 6.123 \\ \hline
+\textbf{Interlingua} & con & 5.050 & 19.547 & 6.880 & 0.607 & 8.904 & 1.750 & 2.715 & 4.032 & 10.005 & 3.886 & 6.406 & 6.958 \\ \hline
+\textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 9.496 & 1.957 & 4.074 & 4.294 & 11.488 & 4.830 & 6.207 & 6.517 \\ \hline
+\textbf{Lingua Franca Nova} & con & 4.221 & 19.532 & 5.063 & 0.601 & 9.769 & 1.688 & 2.448 & 3.912 & 9.316 & 4.471 & 7.716 & 8.436 \\ \hline
+\textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 10.259 & 1.911 & 3.776 & 4.197 & 11.274 & 5.037 & 6.408 & 6.796 \\ \hline
+\textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 6.240 & 2.000 & 5.071 & 4.543 & 12.443 & 5.208 & 5.584 & 5.951 \\ \hline
+\textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 12.993 & 1.584 & 2.048 & 4.072 & 11.142 & 3.982 & 7.285 & 7.342 \\ \hline
+\textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 11.830 & 1.717 & 2.563 & 3.895 & 9.991 & 4.374 & 6.803 & 7.040 \\ \hline
+\textbf{Turkish} & nat & 6.630 & 14.458 & 14.097 & 0.828 & 6.805 & 1.843 & 3.932 & 4.386 & 13.151 & 4.729 & 5.028 & 5.422 \\ \hline
+\textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 13.024 & 1.645 & 2.208 & 4.077 & 8.055 & 1.266 & 7.471 & 8.267 \\ \hline
+\textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 8.131 & 1.756 & 2.752 & 4.046 & 10.327 & 4.066 & 6.059 & 6.664 \\ \hline
+\textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 8.806 & 2.008 & 5.037 & 4.144 & 13.729 & 4.529 & 4.994 & 5.479 \\ \hline
+\textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 9.026 & 1.981 & 4.356 & 4.230 & 11.601 & 4.530 & 5.323 & 5.743 \\ \hline
+\textbf{Kotava} & con & 5.060 & 12.824 & 8.153 & 0.582 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline       
   \end{tabular}
   }
   \caption{Feature set}
   \label{tbl:featurestable}
 \end{table}
 
-\newpage
+To visualize these features individually, 
+
+% \newpage
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{1d_Avg_Word_Length.png}
@@ -1145,13 +1197,13 @@ This section reports the results of each of the methods implemented in the featu
 \end{figure}
 
 \newpage
-\subsubsection{Results of Lexical Diversity}
-\label{ssec:lexicaldiversityresults}
+% \subsubsection{Results of Lexical Diversity}
+% \label{ssec:lexicaldiversityresults}
 
-% Include table showing number of tokens and types for each language, together with the ratio calculation
+% % Include table showing number of tokens and types for each language, together with the ratio calculation
 
-\subsubsection{Results of Morphological Segmentation}
-\label{ssec:morphologicalsegmentationresults}
+% \subsubsection{Results of Morphological Segmentation}
+% \label{ssec:morphologicalsegmentationresults}
 
 \subsection{Results of PCA}
 \label{ssec:pcaresults}
@@ -1159,8 +1211,8 @@ This section reports the results of each of the methods implemented in the featu
 \begin{figure}
   \centering
         \includegraphics[width=1.0\textwidth]{PCA_of_Features.png}
-        \caption{Principal Component Analysis on TTR, MATTR, Word and Char Distribution Entropy}
-        \label{fig:pcaanalysis}
+        \caption{Principal Component Analysis on the feature set.}
+        \label{fig:pcaanalysis}\
 \end{figure}
 
 % Include graph of explained variance following https://www.jcchouinard.com/pca-explained-variance/
@@ -1170,8 +1222,8 @@ A script was used to increase readability of the text in the graph\footnote{http
 \subsection{Results of Classification}
 \label{ssec:classificationresults}
 
-\subsubsection{Results of Decision Tree}
-\label{ssec:decisiontreeresults}
+% \subsubsection{Results of Decision Tree}
+% \label{ssec:decisiontreeresults}
 
 \begin{figure}
   \centering
@@ -1180,17 +1232,20 @@ A script was used to increase readability of the text in the graph\footnote{http
         \label{fig:decisiontree}
 \end{figure}
 
-\subsubsection{Results of Random Forest}
-\label{ssec:randomforestresults}
+% \subsubsection{Results of Random Forest}
+% \label{ssec:randomforestresults}
 
 \subsection{Results of Anomaly Detection}
 \label{ssec:anomalydetectionresults}
 
-\subsubsection{Results of One-Class SVM}
-\label{ssec:oneclasssvmresults}
+% \subsubsection{Results of Isolation Forest}
+% \label{ssec:isolationforestresults}
 
-\subsubsection{Results of Isolation Forest}
-\label{ssec:isolationforestresults}
+% \subsubsection{Results of One-Class SVM}
+% \label{ssec:oneclasssvmresults}
+
+% \subsubsection{Results of Local Outlier Factor}
+% \label{ssec:localoutlierfactorresults}
 
 \newpage
 \section{Discussion}

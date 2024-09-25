@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{List of Figures}{v}{}%
 \contentsline {section}{List of Tables}{v}{}%
-\contentsline {section}{List of Abbreviations}{v}{}%
+\contentsline {section}{List of Abbreviations}{vi}{}%
 \contentsline {section}{\numberline {1}Introduction \& Motivation}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Scope of Study \& Research Question}{2}{}%
 \contentsline {section}{\numberline {2}Background}{3}{}%
@@ -18,28 +18,23 @@
 \contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{15}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Entropy}{16}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Dimensionality Reduction with PCA}{19}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{19}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{19}{}%
 \contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{20}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}Classifier Evaluation}{20}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}Classifier Evaluation}{21}{}%
 \contentsline {subsection}{\numberline {3.6}Anomaly Detection}{21}{}%
-\contentsline {subsubsection}{\numberline {3.6.1}Principal Component Analysis}{21}{}%
-\contentsline {subsubsection}{\numberline {3.6.2}Isolation Forest}{21}{}%
-\contentsline {subsubsection}{\numberline {3.6.3}One-Class SVM}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.4}Anomaly Detector Evaluation}{22}{}%
-\contentsline {section}{\numberline {4}Results}{23}{}%
-\contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{23}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Results of Lexical Diversity}{27}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Results of Morphological Segmentation}{27}{}%
-\contentsline {subsection}{\numberline {4.2}Results of PCA}{27}{}%
-\contentsline {subsection}{\numberline {4.3}Results of Classification}{27}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Results of Decision Tree}{27}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Results of Random Forest}{27}{}%
-\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{27}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Results of One-Class SVM}{27}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Results of Isolation Forest}{27}{}%
-\contentsline {section}{\numberline {5}Discussion}{28}{}%
-\contentsline {section}{\numberline {6}Conclusion}{29}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{29}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{30}{}%
-\contentsline {section}{\numberline {8}Appendices}{35}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}Isolation Forest}{21}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}One-Class SVM}{22}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{22}{}%
+\contentsline {subsubsection}{\numberline {3.6.4}Anomaly Detector Evaluation}{23}{}%
+\contentsline {section}{\numberline {4}Results}{24}{}%
+\contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{24}{}%
+\contentsline {subsection}{\numberline {4.2}Results of PCA}{28}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Classification}{28}{}%
+\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{28}{}%
+\contentsline {section}{\numberline {5}Discussion}{29}{}%
+\contentsline {section}{\numberline {6}Conclusion}{30}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{30}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{31}{}%
+\contentsline {section}{\numberline {8}Appendices}{36}{}%
