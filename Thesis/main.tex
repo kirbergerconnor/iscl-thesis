@@ -921,7 +921,7 @@ After computing the complete set of features, two models were trained for superv
 
 Feature scaling (e.g. normalization, standardization) was not used here, as neither kind of model is sensitive to variance in the data. 
 
-In order to prevent overfitting due to using a small and imbalanced dataset, both models were optimized through the use of leave-one-out cross-validation, which splits the data into a testing set that has only one sample and a training set containing all the rest and then repeats this for each sample in the data (24 times in this case). Additionally, the parameter \texttt{class\_weight='balanced'} was used for both; this adjusts the misclassification cost for each class based on their frequency in the data. 
+In order to prevent overfitting due to using a small and imbalanced dataset, both models were optimized through the use of leave-one-out cross-validation, which splits the data into a testing set that has only one sample and a training set containing all the rest and then repeats this for each sample in the data (24 times in this case). Additionally, to prevent bias towards the majority class, the parameter \texttt{class\_weight='balanced'} was used for both; this adjusts the misclassification cost for each class based on their frequency in the data, under-sampling the minority class or over-sampling the majority class at random \parencite{Han2021article}. 
 
 Fine-tuning for several hyperparameters was done using the \texttt{GridSearchCV()} class from \textsc{scikit-learn}, which employs multiple estimators to perform an exhaustive grid search on ranges of possible values for each parameter. 
 
@@ -960,7 +960,7 @@ The \texttt{criterion} parameter refers to the algorithm used to determine the o
 % Refer to https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/
 % Include visualization of finetuning, as shown by https://medium.com/@Doug-Creates/tuning-random-forest-parameters-with-scikit-learn-b53cbc602cd0
 
-Random Forest is an ensemble method that combines many decision trees and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees.
+Random Forest is an ensemble method that combines many decision tree classifiers and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees.
 
 The fine-tuned hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Default values were again used for the remainder parameters not shown.
 

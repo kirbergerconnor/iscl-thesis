@@ -807,6 +807,48 @@
       \verb https://doi.org/10.1515/9783110814644-003
       \endverb
     \endentry
+    \entry{Han2021article}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a898172eddf38ac247bfac2352c0b18b}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Sunwoo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec4abd87e7dfe739c1c8ccdeb64b956e}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b627d9b269e9edc6894ba6ef7f59970}{%
+           family={Fong},
+           familyi={F\bibinitperiod},
+           given={Youyi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a1e7571740375918be8a66d607e2afb}
+      \strng{fullhash}{4a1e7571740375918be8a66d607e2afb}
+      \strng{bibnamehash}{4a1e7571740375918be8a66d607e2afb}
+      \strng{authorbibnamehash}{4a1e7571740375918be8a66d607e2afb}
+      \strng{authornamehash}{4a1e7571740375918be8a66d607e2afb}
+      \strng{authorfullhash}{4a1e7571740375918be8a66d607e2afb}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Medical Informatics and Decision Making}
+      \field{month}{11}
+      \field{title}{Improving random forest predictions in small datasets from two-phase sampling designs}
+      \field{volume}{21}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1186/s12911-021-01688-3
+      \endverb
+    \endentry
     \entry{punske2020book}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=51a4ec6db0f4d2f246b9c12757bdd411}{%
