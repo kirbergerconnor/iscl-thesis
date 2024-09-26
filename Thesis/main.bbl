@@ -301,48 +301,6 @@
       \verb https://arxiv.org/abs/2212.13626
       \endverb
     \endentry
-    \entry{Braei2020article}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2c203cba0db705a473a63d3648ea3ffe}{%
-           family={Braei},
-           familyi={B\bibinitperiod},
-           given={Mohammad},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1c4a24a585a6ed7ee96e719533882798}{%
-           family={Wagner},
-           familyi={W\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{1f4ee61163a6fcde15fa481e46d25740}
-      \strng{fullhash}{1f4ee61163a6fcde15fa481e46d25740}
-      \strng{bibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
-      \strng{authorbibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
-      \strng{authornamehash}{1f4ee61163a6fcde15fa481e46d25740}
-      \strng{authorfullhash}{1f4ee61163a6fcde15fa481e46d25740}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{Anomaly Detection in Univariate Time-series: {A} Survey on the State-of-the-Art}
-      \field{volume}{abs/2004.00433}
-      \field{year}{2020}
-      \verb{eprint}
-      \verb 2004.00433
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2004.00433
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2004.00433
-      \endverb
-    \endentry
     \entry{Chomsky1957book}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=28167c0b3800bc5cfb686676277005b0}{%
@@ -505,6 +463,59 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.1080/09296171003643098
+      \endverb
+    \endentry
+    \entry{Deng2024article}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=52ca5d1a352a87a24a67a0e58540f637}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yingzhuo},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d56b892a25fa43a1c8868d415dd3dfe8}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9c8728e355996d027a7e56b60820a18}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=047f7de07364289ade5035d665f1c939}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6634acbdb67dc75ea8c89ab8947c4db5}
+      \strng{fullhash}{80fa8cfbf5ef67a53e6da47050f7d2fd}
+      \strng{bibnamehash}{6634acbdb67dc75ea8c89ab8947c4db5}
+      \strng{authorbibnamehash}{6634acbdb67dc75ea8c89ab8947c4db5}
+      \strng{authornamehash}{6634acbdb67dc75ea8c89ab8947c4db5}
+      \strng{authorfullhash}{80fa8cfbf5ef67a53e6da47050f7d2fd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Robust Principal Component Analysis via Discriminant Sample Weight Learning}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2408.12366
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2408.12366
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2408.12366
       \endverb
     \endentry
     \entry{Dhandapani2023inbook}{inbook}{}
