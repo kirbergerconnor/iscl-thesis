@@ -5,8 +5,10 @@
 \contentsline {table}{\numberline {3.4}{\ignorespaces Fine-tuned hyperparameters for Decision Tree.}}{20}{}%
 \contentsline {table}{\numberline {3.5}{\ignorespaces Fine-tuned hyperparameters for Random Forest.}}{21}{}%
 \contentsline {table}{\numberline {3.6}{\ignorespaces Fine-tuned hyperparameters for Isolation Forest.}}{22}{}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{23}{}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{22}{}%
 \contentsline {table}{\numberline {3.8}{\ignorespaces Fine-tuned hyperparameters for Local Outlier Factor.}}{23}{}%
 \contentsline {table}{\numberline {4.1}{\ignorespaces Feature set}}{24}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Each Principle Component}}{27}{}%
-\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{40}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Each Principal Component}}{27}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Evaluation Results for Supervised Binary Classifiers}}{27}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Evaluation Results for Unsupervised Anomaly Detection Models}}{27}{}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{41}{}%

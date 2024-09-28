@@ -328,6 +328,7 @@ Write the abstract here.
 \textbf{MAP} & ~~~ & Maximum a Posteriori \\
 \textbf{MSE} & ~~~ & Mean Squared Error \\
 \textbf{MDI} & ~~~ & Mean Decrease in Impurity \\
+\textbf{MDA} & ~~~ & Mean Decrease in Accuracy \\
 \textbf{AUC} & ~~~ & Area Under the Curve \\
 \textbf{ROC} & ~~~ & Receiving Operating Characteristic \\
 \textbf{PRC} & ~~~ & Precision-Recall Curve \\
@@ -525,16 +526,16 @@ Another feature examined is entropy. Originating from information science, entro
 \section{Methodology}
 \label{sec:methodology}
 
-In this section, I introduce the dataset for this paper and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classification and anomaly detection models employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
+In this section, I introduce the dataset for this paper and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classifiers employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
 
-Since this study involves many different experiments and elements being analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR and the related moving-average type-token ratio (MATTR), lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of classification and anomaly detection with four machine learning models: a one-class support vector machine (SVM), random forest, isolation forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data.
+Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data for dimensionality reduction.
 
 \subsection{Data}
 \label{ssec:data}
 
 In total, twenty-four languages are analyzed in this study. Six of these are constructed languages: Esperanto, Ido, Interlingua, Lingua Franca Nova, Volapük, and Kotava. The remaining eighteen are natural: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
 
-For consistency, only languages which are written using the Latin alphabet (including the use of diacritics) were chosen. This is mainly because the constructed languages in the dataset all use Latin alphabets, so the selection of natural languages followed the same criteria. Moreover, it allows for more uniform cross-linguistic analysis of features which are sensitive (e.g. in the case of character entropy) to writing systems.
+For consistency, only languages which are written using the Latin alphabet (including the use of diacritics) were chosen. This is mainly because the constructed languages in the dataset all use Latin alphabets, so the selection of natural languages followed the same criteria. Moreover, it allows for more uniform cross-linguistic analysis of features which may be sensitive (e.g. in the case of character entropy) to writing systems.
 
 % Plot the languages + their language families to have some kind of visual comparison (table also works, include some data points for comparing each language i.e. number of speakers, word order (what do I do when it isn't clear due to having a more free word order, like for Esperanto, Finnish, etc?))
 % Explain why I had to build my own corpus rather than using one that already exists. What limits are present as a result of having to build my own? 
@@ -574,11 +575,11 @@ Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed 
 % Refer to https://medium.com/@ads.fbchandusuvvari/discovering-the-beauty-of-kotava-language-a-journey-to-multilingualism-9a7cb367a209
 % Refer to https://www.kotava.org/en/en_staaveem.php for specifics about the grammar
 
-The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being an attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on a philosophy of linguistic egalitarianism. This intentionally designed uniqueness manifests in several of its linguistic systems, from morphology to syntax. For example, though word order in Kotava is not imposed, the most frequently used one is OSV, which is exceedingly rare in natural language. Other unique features include a 4\textsuperscript{th} person plural, object complements being introduced by a transitive preposition, and a lack of declension \parencite{Fetcey2013book}. 
+The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being an attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on a philosophy of linguistic egalitarianism. This intentionally designed uniqueness is apparent in several of its linguistic systems, from morphology to syntax. For example, though word order in Kotava is not imposed, the most frequently used one is OSV, which is exceedingly rare in natural languages in contrast. Other unique features include a 4\textsuperscript{th} person plural, object complements being introduced by a transitive preposition, and a lack of declension \parencite{Fetcey2013book}. 
 
 % For conlangs, how should I call the languages they are drawn from? "Language influences" or is there a better way to say it?
 
-\begin{table}[h!]
+\begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.5}
   \begin{tabular} {|p{5cm}|p{5cm}|}
@@ -604,7 +605,7 @@ The last constructed language used is Kotava. Created by Staren Fetcey in 1978, 
 
 Finally, it is worth drawing attention to the fact that each of these languages were created based on various European languages, with the exception of Kotava. Consequently, this may influence the models used in the experiments and be visible in the results. This will be explored in greater detail later in Section \ref{sec:discussion}.
 
-Table \ref{tbl:conlangs} shows the dataset's constructed languages together with the main source languages they draw from (with \textit{N/A} for Kotava meaning \textit{not applicable}). Note, however, that this is not an exhaustive list of all of their language influences.
+Table \ref{tbl:conlangs} shows the dataset's constructed languages together with the main source languages they draw from by design (with \textit{N/A} for Kotava meaning \textit{not applicable}). Note, however, that this is not an exhaustive list of all of their language influences. 
 
 % "and more niche" with how many speakers?
 % Discuss LFN being inspired by Mediterranean Lingua Franca https://en.wikipedia.org/wiki/Mediterranean_Lingua_Franca
@@ -709,11 +710,13 @@ In addition to libraries used for constructing the model architectures, there ar
 % Also include calculations like average sentence length, average word length!!!
 % Explain difference between using feature engineering and using raw text data
 
-Before classification or anomaly detection can be done with the data, an initial step of feature engineering is performed. Put simply, feature engineering is the process of transforming raw text data into a more structured and comprehensible format for machine learning models through the specific selection of its most informative and relevant features, thereby increasing the model's effectiveness. 
+% Explain that anomaly detection is also binary classification, but unsupervised.
 
-The exact methods involved in this process depend on, among other factors, the task and data. Often though, some relatively simple calculations are included as discernible features. Here, for instance, the average word length and average sentence length of each text were measured, as was some degree of lexical diversity (explained in section \ref{ssec:lexicaldiversity}). For the rest of the linguistic features being analyzed in this paper, however, this process required the use of several machine learning models for deriving various calculations relating to entropy and morphological complexity. 
+Before classification or anomaly detection can be done with the data, an initial step of feature engineering is performed. Put simply, feature engineering is the process of transforming raw text data into a more structured and comprehensible format for machine learning models through the specific selection of its most informative and relevant features, typically through some empirical measurements, thereby increasing the model's effectiveness. 
 
-The following methods are performed on all languages in the dataset. The complete set of the analyzed features for each language and their computed values, rounded to 3 decimals, is shown in section \ref{sec:results} in Table \ref{tbl:featurestable}.
+The exact methods and measurements involved in this process depend on, among other factors, the task and data. For the scope of this paper, some were only simple calculations, the simplest of these being the measurements for text complexity: the average word length and average sentence length of each text. For the rest of the linguistic features (i.e. lexical diversity, morphological complexity, entropy) analyzed, however, this process involved the use of more sophisticated algorithms and various machine learning models to derive measurements from.
+
+The complete set of the analyzed features for each language and their computed values, rounded to 3 decimals, is shown in section \ref{sec:results} in Table \ref{tbl:featurestable}.
 
 \subsubsection{Lexical Diversity}
 \label{ssec:lexicaldiversity}
@@ -767,11 +770,11 @@ Typically, there are remaining words at the end of a text that are referred to a
 
 Morphological complexity was analyzed as three features: morpheme TTR, the average number of segments per word, and the average number of forms per stem. To calculate these, the text data of a given corpus was first split and restructured into a list of words to then be fed to corresponding model for segmentation.
 
-The models, one for each corpus, were created and trained using the library interface for \textsc{Morfessor 2.0}. This involved initiating the \texttt{BaselineModel()} class with default parameters (\texttt{forcesplit\_list=None, corpusweight=None, use\_skips=False, nosplit\_re=None}), then loading the word list using the \texttt{load\_data()} function. Default parameters were again used (\texttt{freqthreshold=\\1, init\_rand\_split=None}), with the exception of \texttt{count\_modifier}, which was set to a specified logarithmic equation, expressed as: \[\lfloor\log_2(x + 1)\rceil\]
+Baseline models, one for each corpus, were initiated using default parameters (\texttt{forcesplit\_list=None, corpusweight=None, use\_skips=False, nosplit\_re=None}). The word lists were then loaded into the models, again with default parameters (\texttt{freqthreshold=1, init\_rand\_split=None}), with the exception of \texttt{count\_modifier}, which was set to a specified logarithmic equation, expressed as: \[\lfloor\log_2(x + 1)\rceil\]
 
 Where \( x \) is the raw frequency count of the compound (i.e. the word being segmented), and the surrounding \( \lfloor \) and \( \rceil \) brackets denote rounding to the nearest integer. This equation was used in order to dampen the frequency of the count of a given compound, which in turn allows the model to generalize better rather than focusing more on the compounds that occur at a higher frequency.
 
-After being loaded, \texttt{train\_batch()} was used with default parameters (\texttt{alg\\orithm='recursive', algorithm\_params=(), finish\_threshold=0.005, \\max\_epochs=None}) to train the model. Here, 'recursive' refers to the algorithm for splitting the compounds. To briefly explain how this works without delving too deep into the math of \textsc{Morfessor}'s models---as doing so would be beyond the scope of this thesis---training one epoch involves trying all viable two-part segmentations for every compound in the data, recursively attempting further segmentation based on the lowest cost (derived using maximum a posteriori (MAP) estimation) yielded each time and stopping once this cost falls below a given threshold \parencite{Smit2014inproceedings}. 
+Finally, the models were trained using default parameters (\texttt{algorithm='recursive', algorithm\_params=(), finish\_threshold=0.005, max\_epochs=None}). Here, 'recursive' refers to the algorithm for splitting the compounds. To briefly explain how this works without delving too deep into the math behind these segmentation models---as doing so would be beyond the scope of this thesis---training one epoch involves trying all viable two-part segmentations for every compound in the data, recursively attempting further segmentation based on the lowest cost (derived using maximum a posteriori (MAP) estimation) yielded each time and stopping once this cost falls below a given threshold \parencite{Smit2014inproceedings}. 
 
 % \subsubsection{Zipfian Distribution}
 
@@ -782,7 +785,7 @@ After being loaded, \texttt{train\_batch()} was used with default parameters (\t
 % Used Morfessor with logarithmic function
 % Calculated morpheme TTR, etc.
 
-Once all of the texts' compounds were segmented, the aforementioned features were computed. As an approximation, the stem of the compound was assumed to be the largest resulting segment that appeared first (in order from left to right). Remaining segments, if there were any, were thus considered morphemes. Morpheme TTR was then calculated using the same formula as lexical TTR and again multiplying the result by 100. Computing the average number of segments per word was simply each compound's number of segmentations summed together and then divided by the total number of compounds. Lastly, the average number of forms per stem was derived from the total number of morphemes for each unique stem (adding 1 to account for the stem itself) divided by total number of unique stems.
+Once all of the texts' compounds were segmented, the aforementioned features were computed. As an approximation, the stem of the compound was assumed to be the largest resulting segment that appeared first (in order of left to right). Remaining segments, if there were any, were thus considered morphemes. Morpheme TTR was then calculated using the same formula as lexical TTR, and the result was again multiplied by 100. Computing the average number of segments per word was simply each compound's number of segmentations summed together and then divided by the total number of compounds. Lastly, the average number of forms per stem was derived from the total number of morphemes for each unique stem (adding 1 to account for the stem itself) divided by total number of unique stems.
 
 The preference for using mostly default parameters for the functions and models here, as well as the method for identifying the stem of a segmented compound, was to ensure uniformity, so that the results would be comparable for cross-linguistic analysis. The implications of this and possible alternative approaches will be further discussed in section \ref{sec:discussion}.
 
@@ -795,11 +798,11 @@ Where \( X \) refers to the random variable (e.g. the word or character distribu
 
 % Include the figure from https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level%20LSTM%20with%20PyTorch.ipynb showing how the mini-batches look? Or the figure of the model network?
 
-Text entropy was calculated using a character-level Long Short-Term Memory (LSTM) model built with \textsc{PyTorch} for text generation.\footnote{Model adapted from \url{https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level\%20LSTM\%20with\%20PyTorch.ipynb}} LSTMs are a type of Recurrent Neural Network (RNN) that are typically better at handling long-term dependencies in sequential data due to their gating mechanisms for retaining only the information deemed useful, consequently making them better suited for generative tasks \parencite{Dhandapani2023inbook}.
+Text entropy was calculated using a character-level Long Short-Term Memory (LSTM) model built for text generation.\footnote{Model adapted from \url{https://github.com/LeanManager/NLP-PyTorch/blob/master/Character-Level\%20LSTM\%20with\%20PyTorch.ipynb}} LSTMs are a type of Recurrent Neural Network (RNN) that are typically better at handling long-term dependencies in sequential data due to their gating mechanisms for retaining only the information deemed useful, consequently making them better suited for generative tasks \parencite{Dhandapani2023inbook}.
 
-Using this model required first creating a dictionary of the input text's characters, using this dictionary to map the characters in each text to their corresponding integers, then one-hot encoding them (converting them into binary vector representations). Once the text data was encoded, it was split into mini-batches to be used for training the model. A mini-batch is essentially a sliding window in the shape of an \( N * M \) array of characters, where \( N \) is the number of sequences (equivalent to a batch size) and \( M \) is the number of steps, or length of the window. Additionally, this means the input must be divisible into full batches, so remainder text that is insufficient in size is discarded. These mini-batches are then fed to the model.
+Using this model required first creating a dictionary of the input text's characters, utilizing said dictionary to map the characters in each text to their corresponding integers, then one-hot encoding them (converting them into binary vector representations). Once the text data was encoded, it was split into mini-batches to be used for training the model. A mini-batch is essentially a sliding window in the shape of an \( N * M \) array of characters, where \( N \) is the number of sequences (equivalent to a batch size) and \( M \) is the number of steps, or length of the window. Additionally, this means the input must be divisible into full batches, so remainder text that is insufficient in size is discarded. These mini-batches are then fed to the model.
 
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -827,24 +830,24 @@ Using this model required first creating a dictionary of the input text's charac
 
 Table \ref{tbl:pytorchlstmparams} shows the model's main parameters alongside their associated values as used here. All other parameters were left as the default values. The architecture comprises 2 hidden layers (\texttt{n\_layers}), a dropout layer, and a fully-connected output layer. Both \texttt{n\_layers} contain 256 hidden units (\texttt{n\_hidden}), which are used to store information from the input and essentially act as the memory of the LSTM. Default values for learning rate, dropout rate, and gradient clipping were used, and training was done over 20 epochs. Minimal fine-tuning was performed overall, and primarily just for the \texttt{n\_seqs} and \texttt{n\_steps} hyperparameters. 
 
-Additionally, a fraction (0.1) of the initial input data is set aside to be used for validation, from which the model's perplexity---a measure related to entropy---is derived. To arrive at this measurement though, the validation loss is first evaluated using (multi-class) cross-entropy. Cross-entropy is an extension of Shannon's entropy, but measures instead the difference between a model's predicted probability distribution and the true one. More formally, this is represented as: \[H(p,q) = -\sum_{x=i}p(x)\log_q(x)\]
+Additionally, a fraction (0.1) of the initial input data was set aside to be used for validation, from which the model's perplexity---a measure related to entropy---is derived. To arrive at this measurement though, the validation loss is first evaluated using (multi-class) cross-entropy. Cross-entropy is an extension of Shannon's entropy, but measures instead the difference between a model's predicted probability distribution and the true one. More formally, this is represented as: \[H(p,q) = -\sum_{x=i}p(x)\log_q(x)\]
 
 Where \( p \) and \( q \) represent the discrete predicted and true probability distributions, respectively, and with the natural logarithm \( \log_e \), as is commonplace in machine learning. As the predicted distribution gets closer to the true one, the resulting cross-entropy becomes lower. Entropy \( H(q) \) is thus a lower bound of cross-entropy \( H(p,q) \). 
 
 The validation loss was repeatedly assessed throughout training, and the mean of these was used to calculate the perplexity. Expressed mathematically, perplexity \( PP \) is simply an exponentiation of cross-entropy and can be denoted by the equation: 
 
-\begin{equation}
+\begin{equation}\label{eq:perplexity}
   \begin{aligned}
     PP &= {\rm e}^{H(p,q)} \\
     &= {\rm e}^{-\sum_{x=i}p(x)\log_q(x)} \\
   \end{aligned}
 \end{equation}
 
-Therefore, the final value arrived at is the text's perplexity. This is used to represent the text entropy, however, due to being more readable.
+Therefore, the final value arrived at is the text's perplexity. This is used to represent the text entropy instead, however, due to being more interpretable while still conveying the same information about the text.
 
 Finally, lexical entropy---at the character-level---is a measure of uncertainty in predicting the subsequent character in a given sequence, in this case a word. Reversed lexical entropy is the same thing applied to a sequence that has been reversed, which may be an informative feature for distinguishing languages whose lexicons, for example, present more prevalence in prefix or suffix constructions. 
 
-For calculating both of these features, LSTMs were again used---this time built with \textsc{TensorFlow}. Similar to before, the text data was first encoded into integers via dictionaries containing the vocabulary (alphabet) of each text. In contrast to the model for calculating text entropy, however, both of these models analyze the data as individual sequences of words. This means the additional use of beginning of sequence ('<') and end of sequence ('>') characters, and each sequence was padded to be uniform in length. 
+For calculating both of these features, LSTMs were again used. Similar to before, the text data was first encoded into integers via dictionaries containing the vocabulary (alphabet) of each text. In contrast to the model for calculating text entropy, however, both of these models analyze the data as individual sequences of words. This means the additional use of beginning of sequence ('<') and end of sequence ('>') characters, and each sequence being padded to the same length for uniformity. 
 
 The only significant change in the process for computing both entropies occurred in the text encoding step; for the reversed lexical entropy, the sequence was reversed prior to padding. An example of forward-facing sequences (\ref{lexentropyseq1}) and their reversed forms (\ref{lexentropyseq2}) from the English corpus is illustrated here:
 
@@ -855,7 +858,7 @@ The only significant change in the process for computing both entropies occurred
 
 The architecture of both models is identical. First is an embedding layer with an \texttt{input\_dim} equal to one more than the size of the vocabulary, an \texttt{output\_dim} of 128, and \texttt{mask\_zero} set to \texttt{True} (due to padding the sequences previously). This is followed by an LSTM layer, dropout layer, and finally the output layer with a softmax activation function. Additionally, early stopping was implemented based on the validation loss and with a \texttt{patience} of 2. Table \ref{tbl:keraslstmparams} shows an overview of the most relevant parameters of the model, for which a small degree of fine-tuning was also done. All other parameters were the default values.
 
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -878,7 +881,7 @@ The architecture of both models is identical. First is an embedding layer with a
   \label{tbl:keraslstmparams}
 \end{table}
 
-Perplexity of both models was then calculated the same way as before: an exponentiation of the cross-entropy, which was derived from the average validation loss.
+A fraction (0.2) of the data was again set aside for use as the validation set. Perplexity of both models was then calculated the same way as before: an exponentiation of the cross-entropy derived from the average validation loss, using Equation \ref{eq:perplexity}.
 
 % Evaluating the Irregularity of Natural Languages (Gomez 2017) has more info for this section, starting on page 2
 % Calculated character, word, text, and lexical entropies (and reverse)
@@ -905,11 +908,17 @@ Perplexity of both models was then calculated the same way as before: an exponen
 % Do a breakdown of how PCA and explained variance (the mathematics) works, following https://machinelearningmastery.com/principal-component-analysis-for-visualization/
 % Do PCA in 2 or 3 dimensions/components? (for 3, refer to https://machinelearningmastery.com/principal-component-analysis-for-visualization/)
 
-To identify the linguistic features which convey the most meaningful information, Principal Component Analysis (PCA) was performed. PCA is an unsupervised method for linear dimensionality reduction that transforms data from a high-dimensional space to a lower one while preserving as much variance or essential information in the data as possible \parencite{Deng2024article}. 
+% Explain specifically why standardization is needed for some methods and not others
 
-For this task, two principal components (\texttt{n\_components}) were kept in order to convert the data to 2-dimensions. Doing so allows for easier visualization and locating possible outliers in the dataset.
+To identify the specific linguistic features which convey the most meaningful information in the data, PCA was performed. PCA is an unsupervised method for linear dimensionality reduction that transforms data from a high-dimensional space to a lower one while preserving as much variance or essential information in the data as possible \parencite{Deng2024article}. 
 
-Before conducting the PCA, standardization (also called Z-score normalization) was performed on the data first, given by the formula: \[Z = \frac{x_i - \mu}{\sigma}\] 
+Two principal components were used. Technically, maximizing the number of informative features---according to calculations of explained variance---to preserve in this data would actually lead to using more, likely three (depending on the threshold). However, reduction to only two dimensions instead allows for easier visual interpretation, especially in the context of identifying possible outliers.
+
+Before conducting the PCA, standardization (also called Z-score normalization) was performed on the data first, given by the formula:
+
+\begin{equation}\label{eq:standardize}
+  Z = \frac{x_i - \mu}{\sigma}
+\end{equation}
 
 where $\mu$ is the mean and $\sigma$ is the standard deviation from the mean. This process scales the data to fit a standard normal distribution, thus the resulting transformed data has a mean of 0 and standard deviation of 1. 
 
@@ -926,22 +935,20 @@ where $\mu$ is the mean and $\sigma$ is the standard deviation from the mean. Th
 % Should I use sklearn.metrics 'classification_report'? As done by https://medium.com/analytics-vidhya/feature-extraction-techniques-pca-lda-and-t-sne-df0459c723aa
 % Use of Leave One Out Cross Validation for supervised methods (refer to https://www.statology.org/leave-one-out-cross-validation/), include MSE/MAE/Bernoulli likelihood formulas, etc
 
-After computing the complete set of features, two models were trained for supervised binary classification, predicting a language in the dataset to be either natural or constructed according to said numerical features. 
+After computing the complete set of features, two models were trained for supervised binary classification, predicting a language in the dataset to be either natural or constructed according to said numerical features. Feature scaling (e.g. normalization, standardization) was not performed for this, as neither kind of model is sensitive to variance in the data, meaning it would have no effect.
 
-Feature scaling (e.g. normalization, standardization) was not used here, as neither kind of model is sensitive to variance in the data. 
+Fine-tuning to find optimal parameters was done using the grid search method, which constructs estimators to exhaust all possible combinations of a specified set of values and evaluates each of these estimators to find the best performing one. Leave-one-out cross-validation was used in order to prevent overfitting on the small and imbalanced dataset. This approach trains a model on all the data except for one (left out) sample, which is used as the testing set to make a prediction, and repeats this process for all samples. 
 
-Fine-tuning to find optimal parameters was done using the grid search method, which constructs estimators to exhaust all possible combinations of the specified values and evaluates each estimator using cross-validation. Leave-one-out cross-validation was used in this case, in order to prevent overfitting on the small and imbalanced dataset. This splits the data into a testing set that has only one sample and a training set containing all the rest and then repeats this for each sample in the data (24 times). 
-
-Additionally, to prevent bias towards the majority class, the parameter \texttt{class\_weight='balanced'} was used for both; this adjusts the misclassification cost for each class based on their frequency in the data, under-sampling the minority class or over-sampling the majority class at random \parencite{Han2021article}. 
+Additionally, to prevent bias towards the majority class, the balanced class weights were used for both models; this adjusts the misclassification cost for each class with weights that are inversely proportionate to their frequency in the data \parencite{Han2021article}. 
 
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
 
 % Discuss pre-pruning the decision tree
 
-Decision Tree is a predictive analysis model structured as a hierarchy of nodes and connecting branches. The optimal hyperparameters found from fine-tuning are shown in Table \ref{tbl:decisiontreeparams}. For the rest of the model's parameters not shown here, the default values were used.
+Decision Tree is a predictive analysis model structured as a hierarchy of nodes and connecting branches, constructed using binary splits. The optimal hyperparameters found from fine-tuning are shown in Table \ref{tbl:decisiontreeparams}. For the rest of the model's parameters not shown here, the default values were used.
 
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -962,7 +969,7 @@ Decision Tree is a predictive analysis model structured as a hierarchy of nodes 
   \label{tbl:decisiontreeparams}
 \end{table}
 
-The \texttt{criterion} parameter refers to the algorithm used to determine the optimal splits for the tree, which in this case was the Gini impurity; in short, this measures the probability of incorrect classification of a random datapoint in the data. The other parameters relate to limiting the structure of the tree (i.e., the number of nodes, splits, or layers).
+The \texttt{criterion} parameter refers to the algorithm used to determine the optimal splits for the tree, which in this case was the Gini impurity; in short, this measures the probability of incorrect classification of a random datapoint in the data. The other parameters relate to limiting the structure of the tree in various ways (i.e., the number of nodes, splits, or layers).
 
 \subsubsection{Random Forest}
 \label{ssec:randomforest}
@@ -971,11 +978,11 @@ The \texttt{criterion} parameter refers to the algorithm used to determine the o
 % Refer to https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/
 % Include visualization of finetuning, as shown by https://medium.com/@Doug-Creates/tuning-random-forest-parameters-with-scikit-learn-b53cbc602cd0
 
-Random Forest is an ensemble method that combines many decision tree classifiers and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees.
+Random Forest is an ensemble method that combines many decision tree classifiers and outputs the mode of their predictions as the final classification \parencite{Oktafiani2024article}. Each tree is built using different random subsets of samples and features from the data using bagging techniques, thereby decreasing the risk of overfitting and increasing accuracy for classification \parencite{Salman2024article,Oktafiani2024article}. This gives them an advantage over simple decision trees, albeit usually in the context of bigger datasets than the one used here.
 
-The fine-tuned hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Default values were again used for the remainder parameters not shown.
+The fine-tuned hyperparameters along with their respective optimal values, as determined by the estimator, are shown in Table \ref{tbl:randomforestparams}. Default values were again used for remainder parameters not shown.
 
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -984,47 +991,36 @@ The fine-tuned hyperparameters along with their respective optimal values, as de
   \hline
   \textbf{Parameters} & \textbf{Values} \\
   \hline
-  n\_estimators & 5 \\
-  max\_features & sqrt \\
-  max\_depth & None \\
-  min\_samples\_split & 2 \\
+  n\_estimators & 15 \\
+  max\_features & None \\
+  max\_depth & 2 \\
+  min\_samples\_split & 5 \\
   min\_samples\_leaf & 1 \\
   criterion & gini \\
-  bootstrap & True \\
+  bootstrap & False \\
   \hline
   \end{tabular}
   \caption{Fine-tuned hyperparameters for Random Forest.}
   \label{tbl:randomforestparams}
 \end{table}
 
-In addition to the increase in accuracy and generalization, another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. Two approaches were used to calculate the feature importances: mean decrease in impurity (MDI) and permutation importance. 
-
-\subsubsection{Classifier Evaluation}
-\label{ssec:classifiereval}
-
-% For decision tree: To evaluate the model's performance for each split, the micro F1 score was calculated.
-
-Both classifiers were evaluated based on the micro-F1 scores of their predictions during training.
+In addition to the increase in accuracy and generalization, another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. This was done using two measurements: Gini importance (also called mean decrease in impurity (MDI)) and permutation importance (also called mean decrease in accuracy (MDA)). 
 
 \subsection{Anomaly Detection}
 \label{ssec:anomalydetection}
 
-The developed feature set was also used for unsupervised anomaly detection (also called outlier detection), a task for identifying outliers (and inliers, by extension) in a given dataset. This means the models train and predict on the same data, and it differs slightly from the task of novelty detection, which detects outliers in new, previously unseen data.
+The engineered feature set was also used for unsupervised anomaly detection (also called outlier detection), a task for identifying outliers (and inliers, by extension) in a given dataset. This means the models train and predict on the same data to determine possible outliers, and it differs slightly from the task of novelty detection, which detects outliers in new, previously unseen data. 
 
-A notable difference in these methods from the previous classification ones is the lack of use of weighted classes, since anomaly detection inherently assumes an imbalanced distribution of classes. 
-
-Each model was fine-tuned using the \texttt{ParameterGrid()} class from \textsc{scikit-learn}.
+For these methods, fine-tuning was again performed using a grid search approach. A notable difference with these models from the previously discussed supervised classifiers in section \ref{ssec:classification}, however, is the lack of use of weighted classes to balance the dataset, since anomaly detection inherently assumes an imbalanced distribution of classes. 
 
 \subsubsection{Isolation Forest}
 \label{ssec:isolationforest}
 
 Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. An anomaly score is then calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. 
 
-Similar to classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so in fact has no effect.
+Much like the classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so has no effect. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned along with the optimal values found for each. All others were left as their default values.
 
-Due to the overall limited size of the dataset being used, training was done only on the "majority" class, or natural languages, and predictions were done using the entire dataset. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned, as well as the best ones found. All others were left as their default values.
-
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -1044,7 +1040,7 @@ Due to the overall limited size of the dataset being used, training was done onl
   \label{tbl:isolationforestparams}
 \end{table}
 
-The \texttt{contamination} parameter reflects the proportion of outliers in the dataset. 
+A notable parameter used by anomaly detection models is \texttt{contamination}, which reflects the proportion of outliers in the dataset.  
 
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
@@ -1057,15 +1053,15 @@ The \texttt{contamination} parameter reflects the proportion of outliers in the 
 % Support Vector Method for Novelty Detection (Olkopf 2000)
 % For adaptive OCSVM, refer to https://www.researchgate.net/publication/300242572_An_Adaptive_Weighted_One-Class_SVM_for_Robust_Outlier_Detection
 
-A One-Class SVM is an unsupervised SVM used in the domain of anomaly detection which projects data into a higher-dimensional space and finds the hyperplane that maximally separates this data from the origin of said space \parencite{Boiar2022article}. The resulting decision boundary found encompasses inliers, with datapoints outside it being considered outliers. 
+A One-Class SVM is an unsupervised SVM used in the domain of anomaly detection which projects data into a higher-dimensional space and finds the hyperplane that maximally separates this data from the origin of said space \parencite{Boiar2022article}. Various kernel functions are utilized for this projection, and the resulting decision boundary encompasses inliers, with datapoints outside of it being considered outliers. 
 
 % [DELETED] Since normalization is sensitive to outliers \parencite{Braei2020article}, standardization was performed instead.
 
 % Training was again done solely on the "majority" class from the dataset, while predicting on the full dataset.
 
-Unlike for classification, an initial step of standardizing the data was necessary for using One-Class SVM. The fine-tuned optimal parameters used for the model are shown in Table \ref{tbl:oneclasssvmparams}.
+An initial step of standardization was performed on the data (Equation \ref{eq:standardize}), and then the model was then fine-tuned to find the optimal parameters, shown in Table \ref{tbl:oneclasssvmparams}. 
 
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -1085,14 +1081,16 @@ Unlike for classification, an initial step of standardizing the data was necessa
   \label{tbl:oneclasssvmparams}
 \end{table}
 
+Here, \texttt{nu} is 
+
 \subsubsection{Local Outlier Factor}
 \label{ssec:localoutlierfactor}
 
 Local Outlier Factor is a proximity-based approach to anomaly detection which detects outliers using the k-nearest neighbor algorithm. 
 
-Data was again scaled using standardization. Unlike the other two models for anomaly detection, however, Local Outlier Factor trained on the entire dataset and identified the outliers present. Table \ref{tbl:lofparams} shows the model's hyper-parameters that were fine-tuned; the rest were left as their defaults.
+Data was again scaled using standardization. Unlike the other two models for anomaly detection, however, Local Outlier Factor trained on the entire dataset and identified the outliers present. Table \ref{tbl:lofparams} shows the model's hyperparameters that were fine-tuned; the rest were left as their defaults.
 
-\begin{table}[h!] 
+\begin{table}[!h] 
   \centering\small
   \renewcommand{\arraystretch}{1.5} 
   \begin{tabular}{@{}ll@{}}
@@ -1111,12 +1109,10 @@ Data was again scaled using standardization. Unlike the other two models for ano
   \label{tbl:lofparams}
 \end{table}
 
-\subsubsection{Anomaly Detector Evaluation}
-\label{ssec:anomalydetectoreval}
+\subsection{Model Evaluation}
+\label{ssec:modelevaluation}
 
-% For anomaly detection, use precision recall or F1 instead of accuracy
-
-For anomaly detection methods, F-score and precision-recall curve (PRC), estimated according to average precision score, were evaluated.
+Because of the limited size of the dataset, thorough evaluation of both the supervised binary classifiers and the unsupervised anomaly detection models using testing sets was not possible. Instead, their performance was evaluated  Precision, recall, and F1-score were evaluated.
 
 \newpage
 \section{Results}
@@ -1130,7 +1126,7 @@ This section reports the results of the methods implemented, and the measurement
 
 Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
 
-\begin{table}[h!]
+\begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.0}
       \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -1213,10 +1209,10 @@ To visualize these features individually,
 % \subsubsection{Results of Morphological Segmentation}
 % \label{ssec:morphologicalsegmentationresults}
 
-\subsection{Results of PCA}
-\label{ssec:pcaresults}
+\subsection{Results of Dimensionality Reduction}
+\label{ssec:dimensionalityreductionresults}
 
-\begin{table}[!ht]
+\begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -1225,7 +1221,7 @@ To visualize these features individually,
       PC1 & 0.312 & -0.152 & 0.343 & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
       PC2 & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & 0.561 & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
   \end{tabular}
-  \caption{Loadings for Each Principle Component}
+  \caption{Loadings for Each Principal Component}
   \label{tbl:pcaloadings}
 \end{table}
 
@@ -1281,20 +1277,21 @@ A script was used to increase readability of the text in the graph\footnote{http
     \label{fig:rfpermutationimportances}
 \end{figure}
 
-% \subsubsection{Results of Random Forest}
-% \label{ssec:randomforestresults}
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabular}{|l|l|l|l|}
+  \hline
+      ~ & F\textsubscript{1}-score & Precision & Recall \\ \hline
+      Decision Tree & & & \\ \hline
+      Random Forest & & & \\ \hline
+  \end{tabular}
+  \caption{Evaluation Results for Supervised Binary Classifiers}
+  \label{tbl:supervisedevaluation}
+\end{table}
 
 \subsection{Results of Anomaly Detection}
 \label{ssec:anomalydetectionresults}
-
-% \subsubsection{Results of Isolation Forest}
-% \label{ssec:isolationforestresults}
-
-% \subsubsection{Results of One-Class SVM}
-% \label{ssec:oneclasssvmresults}
-
-% \subsubsection{Results of Local Outlier Factor}
-% \label{ssec:localoutlierfactorresults}
 
 \begin{figure}
   \centering
@@ -1330,6 +1327,23 @@ A script was used to increase readability of the text in the graph\footnote{http
     \caption{Confusion Matrix for Local Outlier Factor}
     \label{fig:cmlof}
 \end{figure}
+
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabular}{|l|l|l|l|}
+  \hline
+      ~ & F\textsubscript{1}-score & Precision & Recall \\ \hline
+      Isolation Forest & & & \\ \hline
+      One-Class SVM & & & \\ \hline
+      Local Outlier Factor & & & \\ \hline
+  \end{tabular}
+  \caption{Evaluation Results for Unsupervised Anomaly Detection Models}
+  \label{tbl:unsupervisedevaluation}
+\end{table}
+
+\subsection{Feature Importances}
+\label{ssec:featureimportances}
 
 \newpage
 \section{Discussion}
@@ -1369,7 +1383,7 @@ I would like to thank ....
 Here I...
 
 % Include number of symbols in the alphabet for each language? (Gomez 2014, Table 1)
-\begin{table}[h!]
+\begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.5}
   \begin{tabular} {|p{3cm}|p{3cm}|p{3.5cm}|}

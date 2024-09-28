@@ -15,26 +15,26 @@
 \contentsline {subsection}{\numberline {3.2}Data Preprocessing}{11}{}%
 \contentsline {subsection}{\numberline {3.3}Libraries and APIs}{12}{}%
 \contentsline {subsection}{\numberline {3.4}Feature Engineering}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{14}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{13}{}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{15}{}%
 \contentsline {subsubsection}{\numberline {3.4.3}Entropy}{16}{}%
 \contentsline {subsubsection}{\numberline {3.4.4}Dimensionality Reduction of Features}{19}{}%
 \contentsline {subsection}{\numberline {3.5}Classification}{19}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{20}{}%
 \contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{20}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}Classifier Evaluation}{21}{}%
 \contentsline {subsection}{\numberline {3.6}Anomaly Detection}{21}{}%
 \contentsline {subsubsection}{\numberline {3.6.1}Isolation Forest}{21}{}%
 \contentsline {subsubsection}{\numberline {3.6.2}One-Class SVM}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.4}Anomaly Detector Evaluation}{23}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{23}{}%
+\contentsline {subsection}{\numberline {3.7}Model Evaluation}{23}{}%
 \contentsline {section}{\numberline {4}Results}{24}{}%
 \contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{24}{}%
-\contentsline {subsection}{\numberline {4.2}Results of PCA}{27}{}%
+\contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{27}{}%
 \contentsline {subsection}{\numberline {4.3}Results of Classification}{27}{}%
 \contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{27}{}%
-\contentsline {section}{\numberline {5}Discussion}{33}{}%
-\contentsline {section}{\numberline {6}Conclusion}{34}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{34}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{35}{}%
-\contentsline {section}{\numberline {8}Appendices}{40}{}%
+\contentsline {subsection}{\numberline {4.5}Feature Importances}{33}{}%
+\contentsline {section}{\numberline {5}Discussion}{34}{}%
+\contentsline {section}{\numberline {6}Conclusion}{35}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{35}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{36}{}%
+\contentsline {section}{\numberline {8}Appendices}{41}{}%
