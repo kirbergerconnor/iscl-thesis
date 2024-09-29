@@ -301,6 +301,112 @@
       \verb https://arxiv.org/abs/2212.13626
       \endverb
     \endentry
+    \entry{Breunig2000article}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=346772f472393316fd22dd8a300d2e7d}{%
+           family={Breunig},
+           familyi={B\bibinitperiod},
+           given={Markus\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3538ec05ca1325677835daf67c1c45bf}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Raymond\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{fullhash}{d65966f90d24e1cda0c67af1ce30b712}
+      \strng{bibnamehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{authorbibnamehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{authornamehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{authorfullhash}{d65966f90d24e1cda0c67af1ce30b712}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ACM SIGMOD Conference}
+      \field{title}{LOF: identifying density-based local outliers}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:6787631
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:6787631
+      \endverb
+    \endentry
+    \entry{Cheng2019article}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=93dbe5ed74859660b110cf09fff15592}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Zhangyu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=997b83a3d09ee7d923ae4b3f2ebace23}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Chengming},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b70a6174e98e7895945104f84974c9e3}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Jianwei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chongqing, China}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{ad71b7833d2fe67543c9313d6f07c64b}
+      \strng{fullhash}{ad71b7833d2fe67543c9313d6f07c64b}
+      \strng{bibnamehash}{ad71b7833d2fe67543c9313d6f07c64b}
+      \strng{authorbibnamehash}{ad71b7833d2fe67543c9313d6f07c64b}
+      \strng{authornamehash}{ad71b7833d2fe67543c9313d6f07c64b}
+      \strng{authorfullhash}{ad71b7833d2fe67543c9313d6f07c64b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Conference on Research in Adaptive and Convergent Systems}
+      \field{isbn}{9781450368438}
+      \field{series}{RACS '19}
+      \field{title}{Outlier detection using isolation forest and local outlier factor}
+      \field{year}{2019}
+      \field{pages}{161\bibrangedash 168}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3338840.3355641
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3338840.3355641
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3338840.3355641
+      \endverb
+      \keyw{outlier detection(OD),local outlier factor,isolation forest,ensemble method}
+    \endentry
     \entry{Chomsky1957book}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=28167c0b3800bc5cfb686676277005b0}{%
@@ -1224,6 +1330,49 @@
       \range{pages}{22}
       \verb{doi}
       \verb 10.48226/978-83-66666-28-3
+      \endverb
+    \endentry
+    \entry{Reagan2019book}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3d597288b1859973a850e9bce3952742}{%
+           family={Reagan},
+           familyi={R\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{3d597288b1859973a850e9bce3952742}
+      \strng{fullhash}{3d597288b1859973a850e9bce3952742}
+      \strng{bibnamehash}{3d597288b1859973a850e9bce3952742}
+      \strng{authorbibnamehash}{3d597288b1859973a850e9bce3952742}
+      \strng{authornamehash}{3d597288b1859973a850e9bce3952742}
+      \strng{authorfullhash}{3d597288b1859973a850e9bce3952742}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Linguistic Legitimacy and Social Justice}
+      \field{isbn}{978-3-030-10967-7}
+      \field{title}{Created and Constructed Languages: `I can speak Esperanto like a native'}
+      \field{year}{2019}
+      \field{pages}{205\bibrangedash 242}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1007/978-3-030-10967-7_7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-10967-7_7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-10967-7_7
       \endverb
     \endentry
     \entry{Rosenhahn2024article}{misc}{}

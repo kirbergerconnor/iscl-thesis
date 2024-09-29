@@ -332,6 +332,11 @@ Write the abstract here.
 \textbf{AUC} & ~~~ & Area Under the Curve \\
 \textbf{ROC} & ~~~ & Receiving Operating Characteristic \\
 \textbf{PRC} & ~~~ & Precision-Recall Curve \\
+\textbf{TP} & ~~~ & True Positive \\
+\textbf{TN} & ~~~ & True Negative \\
+\textbf{FP} & ~~~ & False Positive \\
+\textbf{FN} & ~~~ & False Negative \\
+
 
 \end{tabular}
 \newpage
@@ -366,7 +371,7 @@ Write the abstract here.
 
 Constructed languages---also called artificial languages, invented languages, planned languages, engineering languages, glossopoeia, or more simply as "conlangs" \parencite{douglas2015book}---are languages that are consciously and purposefully created for some intended use, usually being defined in antithesis to the spontaneous and organic method in which natural languages arise and develop \parencite{sanders2016article}. These variations of the term are often, but not always, used interchangeably, as linguists do not all agree upon a core term due to personal preferences \parencite{Adelman2014article}, and there are sometimes differences in nuance depending on the context in which they appear. This thesis will mainly refer to them as constructed languages for simplicity.
 
-The intended uses for which they are created can range broadly. Some are made specifically for fictional media, often seen in the genres of fantasy or science-fiction, with some more well-known examples being J. R. R. Tolkien's Elvish languages (e.g., Quenya, Sindarin, Nandorin) found in the world of Middle-earth in his writings, Marc Okrand's Klingon language from the Star Trek universe, and David J. Peter's Dothraki language used in George R. R. Martin's A Song of Ice and Fire novels along with their television adaptation, Game of Thrones \parencite{punske2020book}. Others are created to function as international auxiliary languages (IALs)---languages planned for the use of international and cross-cultural communication \parencite{Gobbo2016article}. The most well-known example (based on estimated number of speakers) of these is Esperanto, created in the 19\textsuperscript{th} Century by L. L. Zamenhof. Typically, constructed languages are distinguished and categorized based on these communicative functions. This will be discussed more comprehensively in section \ref{sec:background}. 
+The intended uses for which they are created can range broadly. Some are made specifically for fictional media, often seen in the genres of fantasy or science-fiction, with some more well-known examples being J. R. R. Tolkien's Elvish languages (e.g., Quenya, Sindarin, Nandorin) found in the world of Middle-earth in his writings, Marc Okrand's Klingon language from the Star Trek universe, and David J. Peter's Dothraki language used in George R. R. Martin's A Song of Ice and Fire novels along with their television adaptation, Game of Thrones \parencite{punske2020book}. Others are created to function as international auxiliary languages (IALs)---languages planned for the use of international and cross-cultural communication \parencite{Gobbo2016article}. The most well-known example (based on estimated number of speakers) of these is Esperanto, created in the 19\textsuperscript{th} Century by L. L. Zamenhof. Typically, constructed languages are distinguished and categorized based on these communicative functions. This will be discussed more comprehensively in Section \ref{sec:background}. 
 
 % Mention somewhat confusing cases, like "controlled" languages as another example of this blurred line between natural and artificial language or sign languages
 % Consciously or subconsciously, conlangs' creators take inspiration and influences from already existing languages, be it natural or even other constructed languages \parencite{Oostendorp2019book}. 
@@ -391,11 +396,11 @@ Analyzing their surface structures can reveal whether or not constructed languag
 % Make note of empirical differences between languages such as phonemes, word order, syntax, etc and explain how this study differs/specifies its focus
 % [DELETED] As previously noted, the specific boundaries which separate constructed from natural languages are not always clearly or consistently defined---even amongst linguists.
 
-The present work analyzes various linguistic features and seeks to successfully discriminate a language as being either natural or constructed based on these. More specifically, the scope of this study includes both binary classification and anomaly detection, with the models being trained on a set of selected features rather than raw text data. 
+The present work analyzes various linguistic features and seeks to successfully discriminate a language as being either natural or constructed based on these. More specifically, the scope of this study includes both supervised binary classification and unsupervised anomaly detection, with the models being trained on a set of selected features rather than raw text data. 
 
 Because of the wide-ranging nature of conducting such a broad analysis, there are of course many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the main focus for linguistic features relate to entropy, morphological complexity, and overall lexical diversity.
 
-The following is a breakdown of the structure of this thesis from here onward: the next section provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; section \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; section \ref{sec:results} presents the results of the study and discussion of these follows in section \ref{sec:discussion}; lastly, section \ref{sec:conclusion} consists of a conclusion as well as elaboration for possible future work.
+The following is a breakdown of the structure of this thesis from here onward: the next section provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; Section \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; Section \ref{sec:results} presents the results of the study and discussion of these follows in Section \ref{sec:discussion}; lastly, Section \ref{sec:conclusion} consists of a conclusion as well as elaboration for possible future work.
 
 \newpage
 \section{Background}
@@ -528,7 +533,7 @@ Another feature examined is entropy. Originating from information science, entro
 
 In this section, I introduce the dataset for this paper and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classifiers employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
 
-Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data for dimensionality reduction.
+Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some others measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised binary classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data for dimensionality reduction.
 
 \subsection{Data}
 \label{ssec:data}
@@ -559,13 +564,13 @@ For consistency, only languages which are written using the Latin alphabet (incl
 
 All of the constructed languages in the dataset are IALs, with most of them resembling natural (particularly various European) languages. I will briefly introduce each of them in this section, explaining where they come from, some notable typological features they have, and how they compare to both one another other and their natural counterparts.
 
-Esperanto, the most widely-spoken constructed language and considered by many to be the most successful \parencite{Gobbo2008article}, was created in 1887 by Polish ophthalmologist L. L. Zamenhof. Zamenhof’s goal was to create a neutral, easy-to-learn language that would facilitate international communication. Esperanto is a highly regular language, with consistent grammar and a simplified, phonetic spelling system. It draws its lexical roots and syntax primarily from Romance, Germanic, and Slavic languages \parencite{Gobbo2008article,Gobbo2011article}, making it recognizable and familiar to speakers of many European languages, while also intentionally being made to have a comparatively simpler grammar that avoids some complexities found in natural languages, such as irregular verbs or noun cases. It also has a strong global community with speakers around the world, an array of written literature, and even a number of native speakers who learn it from birth---a distinguishing trait which sets it apart from other constructed languages \parencite{goodall2022article}. As a result of its success, Esperanto also serves as a direct influence for many other constructed languages that have come after it, one being Ido. 
+Esperanto, the most widely-spoken constructed language and considered by many to be the most successful \parencite{Gobbo2008article}, was created in 1887 by Polish ophthalmologist L. L. Zamenhof. Zamenhof’s goal was to create a neutral, easy-to-learn language that would facilitate international communication. Esperanto is a highly regular language, with consistent grammar and a simplified, phonetic spelling system. It draws its lexical roots and syntax primarily from Romance, Germanic, and Slavic languages \parencite{Gobbo2008article,Gobbo2011article}, making it recognizable and familiar to speakers of many European languages, while also intentionally being made to have a comparatively simpler grammar that avoids some complexities found in natural languages, such as irregular verbs or noun cases. Its morphological system is considered to be one of its more interesting aspects due to its classification being a source of debate amongst linguists \parencite{Reagan2019book}. It also has a strong global community with speakers around the world, an array of written literature, and even a number of native speakers who learn it from birth---a distinguishing trait which sets it apart from other constructed languages \parencite{goodall2022article}. As a result of its success, Esperanto also serves as a direct influence for many other constructed languages that have come after it, one being Ido. 
 
 Ido is a reform of Esperanto that was proposed in 1907 by a group of linguists led by Louis Couturat, a French philosopher and mathematician, and in fact is an Esperanto word meaning "offspring" \parencite{Schubert2001book}. Its creators sought to address what they saw as imperfections in Esperanto, particularly those related to orthography and morphology. For instance, Ido avoids the use of the accusative case and reforms some Esperanto words to make them more universally recognizable. Overall, though, Ido still retains much of Esperanto’s vocabulary and basic structure, and the two are mutually intelligible to a large extend \parencite{goodall2022article,Schubert2001book}. Like most of the remaining constructed languages to be discussed in this section---with the exception of Volapük---Ido has small but a dedicated community of speakers and enthusiasts.
 
 Interlingua was developed by the International Auxiliary Language Association (IALA) with the assistance of linguist Alexander Gode, officially being published in 1951. The idea behind Interlingua for it to most recognizable to the greatest number of people without requiring prior study \parencite{goodall2022article}, with most attention having been spent on its lexicon. The IALA's stated goal was to not so much create a new international language, but rather present a standardized international vocabulary \parencite{Large1985book} ("international" here basically referring to Western Europe). It is largely derived from and resembles Romance languages (with lesser influence from Greek and Germanic languages) \parencite{Schubert2001book}. In fact, this intentional resemblance extends even to morphological irregularities such as allomorphy, with other irregularities also being introduced to the language to make it appear more natural \parencite{goodall2022article}, a contrast to other IALs like Esperanto.
 
-Volapük was created in 1879 by Johann Martin Schleyer, a German Catholic priest who believed the language had been given to him by God. It features highly agglutinative structure and regular, yet complex, morphology. While being derived mainly from English, German, and Latin, roots in Volapük differ significantly to the point of being unrecognizable to speakers of these languages \parencite{goodall2022article}. Despite being argued to be the first successful constructed language due to its rise in popularity, having amassed a large number of supporters worldwide along with the formation of clubs and societies \parencite{Gobbo2016article}, various issues regarding its complexity led to a rapid decline and eventual fall from usage in favor of Esperanto.
+Volapük was created in 1879 by Johann Martin Schleyer, a German Catholic priest who believed the language had been given to him by God. It features highly agglutinative structure and regular, yet complex, morphology \parencite{Reagan2019book}. While being derived mainly from English, German, and Latin, roots in Volapük differ significantly to the point of being unrecognizable to speakers of these languages \parencite{goodall2022article}. Despite being argued to be the first successful constructed language due to its rise in popularity, having amassed a large number of supporters worldwide along with the formation of clubs and societies \parencite{Gobbo2016article}, various issues regarding its complexity led to a rapid decline and eventual fall from usage in favor of Esperanto.
 
 % The grammar of LFN avoids complex conjugations, gender distinctions, and irregular verbs.
 % Refer to grammar of LFN book
@@ -584,22 +589,17 @@ The last constructed language used is Kotava. Created by Staren Fetcey in 1978, 
   \renewcommand{\arraystretch}{1.5}
   \begin{tabular} {|p{5cm}|p{5cm}|}
   \hline
-  \textbf{Conlang} & \textbf{Source Languages/Families} \\
+  \textbf{Language} & \textbf{Source Languages/Families} \\
   \hline
   Esperanto & Romance, Germanic, Slavic \\
-  \hline
   Interlingua & Romance \\
-  \hline
   Lingua Franca Nova & Romance \\
-  \hline
   Volapük & Germanic \\
-  \hline
   Kotava & N/A \\
-  \hline
   Ido & Romance, Germanic, Slavic \\
   \hline
   \end{tabular}
-  \caption{Constructed languages used in the study, together with their main respective source languages from which they were designed.}
+  \caption{Constructed languages in the dataset together with their main respective source languages from which they were designed.}
   \label{tbl:conlangs}
 \end{table}
 
@@ -619,7 +619,7 @@ Table \ref{tbl:conlangs} shows the dataset's constructed languages together with
 \subsubsection{Natural Languages in the Dataset}
 \label{ssec:naturallanguagesinthedataset}
 
-The natural languages included in this study represent a broad spectrum of linguistic diversity, comprising a variety of families, geographic regions, and typological features. Although this representation is not necessarily equal in distribution, it is meant to serve as a contrast to the constructed languages in the dataset, which lack a similar extent of variety due to overwhelmingly having the same source languages. However, rather than delving into the same level of details for each of the eighteen languages here as I did for the constructed ones, I will instead introduce them by focusing mostly on their collective significance and summarizing some of their relevant typological traits.
+The natural languages included in this study comprise a variety of language families, geographic regions, and typological features. Although this representation is not necessarily equal in distribution, it is meant to serve as a contrast to the constructed languages in the dataset, which lack a similar extent of variety due to largely being based on the same handful of European languages, with only one exception. However, rather than delving into the same level of details for each of the eighteen languages here as was done in Section \ref{ssec:constructedlanguagesinthedataset}, they will instead be introduced by focusing mostly on their collective significance within the dataset and summarizing some of their typological traits which are relevant to the scope of this investigation.
 
 % Explain some notable characteristics of indo-european/germanic/romance languages (inflectional, agglutinative, etc.)
 
@@ -627,29 +627,46 @@ The natural languages included in this study represent a broad spectrum of lingu
 
 In total, five major language families are represented. The largest of these---based on number of speakers worldwide as well as the number of languages in the dataset (twelve)---is Indo-European, with several of its branches being included. English, German, Dutch, Afrikaans, Swedish, Icelandic, and Danish all belong to the Germanic branch. Similarly, Italian, Spanish, French, and Occitan are part of the Romance branch, all being descendants of Latin. Polish is an outlier as the only represented language from the Slavic branch. 
 
-The other four families span less representation in the dataset in comparison, but were nevertheless included so as to have more variety in linguistic features. These include the Uralic languages, consisting of Hungarian and Finnish, which are the most widely-spoken and thus representative of their group, as well as Austronesian (Tagalog and Indonesian), Austroasiatic (Vietnamese), and Turkic (Turkish). 
+The other four families span less representation in the dataset in comparison, but were nevertheless included so as to have more variety in linguistic features across a broader phylogenetic spectrum. These include the Uralic languages, consisting of Hungarian and Finnish, which are the most widely-spoken and thus representative of their group, as well as Austronesian (Tagalog and Indonesian), Austroasiatic (Vietnamese), and Turkic (Turkish). 
 
-One notable typological feature of all of these languages which relates to the scope of this study is that of their morphology. Traditionally, classification of morphological systems follows two paradigmatic axes: inflection versus derivation and agglutination versus flexion.
+% [DELETED] Traditionally, classification of morphological systems follows two paradigmatic axes: inflection versus derivation and agglutination versus flexion.
+
+In terms of typological features, these languages differ in their morphological systems. For example, Finnish, Hungarian, and Turkish are highly agglutinative, whereas Vietnamese, an isolating language, is an extreme opposite. German, Icelandic, Polish, and the Romance languages have fusional morphologies.
+
+% Refer to Desjardins
+
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular} {|p{2cm}|p{5cm}|p{3cm}|}
+  \hline
+  \textbf{Language} & \textbf{Language Family} & \textbf{Morphology} \\
+  \hline
+  German & Indo-European, Germanic & A / F / I  \\
+  Dutch & Indo-European, Germanic & A / F / I \\
+  Afrikaans & Indo-European, Germanic & A / F / I \\
+  Swedish & Indo-European, Germanic & A / F / I \\
+  Danish & Indo-European, Germanic & \\
+  Icelandic & Indo-European, Germanic & \\
+  English & Indo-European, Germanic & A / F / I \\
+  Spanish & Indo-European, Romance & F \\
+  French & Indo-European, Romance & F \\
+  Occitan & Indo-European, Romance & \\
+  Italian & Indo-European, Romance & F \\
+  Polish & Indo-European, Slavic & \\
+  Vietnamese & Austroasiatic & I \\
+  Indonesian & Austronesian & \\
+  Tagalog & Austronesian & A / I \\
+  Turkish & Turkic & A \\
+  Hungarian & Uralic & A / F \\
+  Finnish & Uralic & \\
+  \hline
+  \end{tabular}
+  \caption{Natural languages in the dataset together with their respective language families and morphological systems.}
+  \label{tbl:natlangs}
+\end{table}
 
 % Language family breakdown, make a pie chart for this
-% German - indo-euro - germanic 
-% english - indo-euro - germanic
-% spanish - indo-euro - romance
-% polish - indo-euro - slavic
-% vietnamese - austroasiatic 
-% indonesian - austronesian
-% turkish - turkic
-% tagalog - austronesian
-% hungarian - uralic
-% french - indo-euro - romance
-% finnish - uralic
-% italian - indo-euro - romance
-% dutch - indo-euro - germanic
-% occitan - indo-euro - romance
-% danish - indo-euro - germanic
-% swedish - indo-euro - germanic
-% afrikaans - indo-euro - germanic
-% icelandic - indo-euro - germanic
 
 \subsubsection{Wikimedia}
 \label{ssec:wikimedia}
@@ -670,8 +687,6 @@ The dump files provide detailed, archived snapshots of the content from Wiki rep
 \subsection{Data Preprocessing}
 \label{ssec:datapreprocessing}
 
-Preprocessing text data is essential for natural language processing (NLP) tasks, so meticulous effort was made to thoroughly clean all of the texts and obtain as close to a set of parallel data as possible.
-
 % Preprocessed by excluding characters not in a language's alphabet, to attempt to account for words in foreign languages being used in the text data, however this has drawbacks in that it also excludes loanwords or proper nouns at times too. Additionally, I removed only the individual characters themselves, is it better (or possible?) to remove the entire word that they are part of instead? Or does it not make a difference? For example, in Kotava there is no letter 'h', the proper noun 'hiroshima' therefore would become 'irosima' with my method. 
 % Explain more in depth the regex used and why. For example, I removed parantheses along with everything inside of them to try to maintain grammatical sentences without redundancy or fragments in the middle
 % Removed subtitles of Wikipedia pages (by adding extra forward slashes '/////' in the WikiExtractor code, so it would be easily identified using Regex later)
@@ -680,6 +695,8 @@ Preprocessing text data is essential for natural language processing (NLP) tasks
 % Ex: python WikiExtractor.py --infn ~/Downloads/enwiki-20240701-pages-articles-multistream.xml.bz2
 % Show some examples of the regex used from your code
 % Show examples of before and after the preprocessing + show an example of the final preprocessed data
+
+Preprocessing text data is essential for natural language processing (NLP) tasks, so meticulous effort was made to thoroughly clean all of the texts and obtain as close to a set of parallel data as possible.
 
 Text data was first extracted from the Wikimedia XML-formatted dump files with the use of WikiExtractor\footnote{GitHub repository for WikiExtractor: \url{https://github.com/attardi/wikiextractor}}, a Python script \parencite{Attardi2015wikiextractor} that I adapted by adding a limit to the number of articles in order to make extraction of the largest of the files (English in particular) less demanding and quicker. The output is a simple text file, which is a much easier format to clean and work with. 
 
@@ -716,7 +733,7 @@ Before classification or anomaly detection can be done with the data, an initial
 
 The exact methods and measurements involved in this process depend on, among other factors, the task and data. For the scope of this paper, some were only simple calculations, the simplest of these being the measurements for text complexity: the average word length and average sentence length of each text. For the rest of the linguistic features (i.e. lexical diversity, morphological complexity, entropy) analyzed, however, this process involved the use of more sophisticated algorithms and various machine learning models to derive measurements from.
 
-The complete set of the analyzed features for each language and their computed values, rounded to 3 decimals, is shown in section \ref{sec:results} in Table \ref{tbl:featurestable}.
+The complete set of the analyzed features for each language and their computed values, rounded to 3 decimals, is shown in Section \ref{sec:results} in Table \ref{tbl:featurestable}.
 
 \subsubsection{Lexical Diversity}
 \label{ssec:lexicaldiversity}
@@ -770,11 +787,11 @@ Typically, there are remaining words at the end of a text that are referred to a
 
 Morphological complexity was analyzed as three features: morpheme TTR, the average number of segments per word, and the average number of forms per stem. To calculate these, the text data of a given corpus was first split and restructured into a list of words to then be fed to corresponding model for segmentation.
 
-Baseline models, one for each corpus, were initiated using default parameters (\texttt{forcesplit\_list=None, corpusweight=None, use\_skips=False, nosplit\_re=None}). The word lists were then loaded into the models, again with default parameters (\texttt{freqthreshold=1, init\_rand\_split=None}), with the exception of \texttt{count\_modifier}, which was set to a specified logarithmic equation, expressed as: \[\lfloor\log_2(x + 1)\rceil\]
+Baseline models, one for each corpus, were initiated using default parameters. The word lists were then loaded into the models, again with default parameters except for \texttt{count\_modifier}, which was set to a specified logarithmic equation, expressed as: \[\lfloor\log_2(x + 1)\rceil\]
 
 Where \( x \) is the raw frequency count of the compound (i.e. the word being segmented), and the surrounding \( \lfloor \) and \( \rceil \) brackets denote rounding to the nearest integer. This equation was used in order to dampen the frequency of the count of a given compound, which in turn allows the model to generalize better rather than focusing more on the compounds that occur at a higher frequency.
 
-Finally, the models were trained using default parameters (\texttt{algorithm='recursive', algorithm\_params=(), finish\_threshold=0.005, max\_epochs=None}). Here, 'recursive' refers to the algorithm for splitting the compounds. To briefly explain how this works without delving too deep into the math behind these segmentation models---as doing so would be beyond the scope of this thesis---training one epoch involves trying all viable two-part segmentations for every compound in the data, recursively attempting further segmentation based on the lowest cost (derived using maximum a posteriori (MAP) estimation) yielded each time and stopping once this cost falls below a given threshold \parencite{Smit2014inproceedings}. 
+Finally, the models were trained with default parameters, including the recursive algorithm used for splitting the compounds. To briefly explain how this works without delving too deep into the math behind these segmentation models---as doing so would be beyond the scope of this thesis---training one epoch involves trying all viable two-part segmentations for every compound in the data, recursively attempting further segmentation based on the lowest cost (derived using maximum a posteriori (MAP) estimation) yielded each time and stopping once this cost falls below a given threshold \parencite{Smit2014inproceedings}. 
 
 % \subsubsection{Zipfian Distribution}
 
@@ -787,7 +804,7 @@ Finally, the models were trained using default parameters (\texttt{algorithm='re
 
 Once all of the texts' compounds were segmented, the aforementioned features were computed. As an approximation, the stem of the compound was assumed to be the largest resulting segment that appeared first (in order of left to right). Remaining segments, if there were any, were thus considered morphemes. Morpheme TTR was then calculated using the same formula as lexical TTR, and the result was again multiplied by 100. Computing the average number of segments per word was simply each compound's number of segmentations summed together and then divided by the total number of compounds. Lastly, the average number of forms per stem was derived from the total number of morphemes for each unique stem (adding 1 to account for the stem itself) divided by total number of unique stems.
 
-The preference for using mostly default parameters for the functions and models here, as well as the method for identifying the stem of a segmented compound, was to ensure uniformity, so that the results would be comparable for cross-linguistic analysis. The implications of this and possible alternative approaches will be further discussed in section \ref{sec:discussion}.
+The preference for using mostly default parameters for the functions and models here, as well as the method for identifying the stem of a segmented compound, was to ensure uniformity, so that the results would be comparable for cross-linguistic analysis. The implications of this and possible alternative approaches will be further discussed in Section \ref{sec:discussion}.
 
 \subsubsection{Entropy}
 \label{ssec:entropy}
@@ -1004,19 +1021,21 @@ The fine-tuned hyperparameters along with their respective optimal values, as de
   \label{tbl:randomforestparams}
 \end{table}
 
-In addition to the increase in accuracy and generalization, another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. This was done using two measurements: Gini importance (also called mean decrease in impurity (MDI)) and permutation importance (also called mean decrease in accuracy (MDA)). 
+In addition to the same aforementioned Decision Tree parameters is \texttt{n\_estimators}, which is the number of trees, and \texttt{bootstrap}, which refers to the use of bootstrap sampling.
+
+% In addition to the increase in accuracy and generalization, another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. This was done using two measurements: Gini importance (also called mean decrease in impurity (MDI)) and permutation importance (also called mean decrease in accuracy (MDA)). 
 
 \subsection{Anomaly Detection}
 \label{ssec:anomalydetection}
 
 The engineered feature set was also used for unsupervised anomaly detection (also called outlier detection), a task for identifying outliers (and inliers, by extension) in a given dataset. This means the models train and predict on the same data to determine possible outliers, and it differs slightly from the task of novelty detection, which detects outliers in new, previously unseen data. 
 
-For these methods, fine-tuning was again performed using a grid search approach. A notable difference with these models from the previously discussed supervised classifiers in section \ref{ssec:classification}, however, is the lack of use of weighted classes to balance the dataset, since anomaly detection inherently assumes an imbalanced distribution of classes. 
+For these methods, fine-tuning was again performed using a grid search approach. A notable difference with these models from the previously discussed supervised classifiers in Section \ref{ssec:classification}, however, is the lack of use of weighted classes to balance the dataset, since anomaly detection inherently assumes an imbalanced distribution of classes. 
 
 \subsubsection{Isolation Forest}
 \label{ssec:isolationforest}
 
-Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. An anomaly score is then calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. 
+Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is also an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. Unique to this model, though, is the use of anomaly scores, which are calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. 
 
 Much like the classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so has no effect. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned along with the optimal values found for each. All others were left as their default values.
 
@@ -1040,7 +1059,7 @@ Much like the classification with Random Forest, feature scaling is not required
   \label{tbl:isolationforestparams}
 \end{table}
 
-A notable parameter used by anomaly detection models is \texttt{contamination}, which reflects the proportion of outliers in the dataset.  
+A notable parameter here not introduced yet by previous models---due to being unique to anomaly detection---is \texttt{contamination}, which reflects the proportion of outliers in the dataset.
 
 \subsubsection{One-Class SVM}
 \label{ssec:oneclasssvm}
@@ -1081,14 +1100,14 @@ An initial step of standardization was performed on the data (Equation \ref{eq:s
   \label{tbl:oneclasssvmparams}
 \end{table}
 
-Here, \texttt{nu} is 
+Here, \texttt{nu} is essentially the same as the \texttt{contamination} parameter that other anomaly detection models have, the fraction of the data which comprises outliers, while \texttt{gamma} relates to the complexity of the model's decision boundary. Also of note is the use of a polynomial kernel, which handles non-linearity in the data and is influenced by \texttt{degree} (of the polynomial function, here being cubic) and \texttt{coef0}.
 
 \subsubsection{Local Outlier Factor}
 \label{ssec:localoutlierfactor}
 
-Local Outlier Factor is a proximity-based approach to anomaly detection which detects outliers using the k-nearest neighbor algorithm. 
+Local Outlier Factor (LOF), first proposed in 2000 by \textcite{Breunig2000article}, is a proximity-based clustering algorithm used for anomaly detection that is based on k-nearest neighbors, but additionally utilizes a concept called local density. In brief, the lower the calculated density between a given data point and its neighbors, the higher the likelihood of it being an outlier \parencite{Cheng2019article}. 
 
-Data was again scaled using standardization. Unlike the other two models for anomaly detection, however, Local Outlier Factor trained on the entire dataset and identified the outliers present. Table \ref{tbl:lofparams} shows the model's hyperparameters that were fine-tuned; the rest were left as their defaults.
+Data was again scaled using standardization. Table \ref{tbl:lofparams} shows the model's hyperparameters that were fine-tuned; the rest were left as their defaults.
 
 \begin{table}[!h] 
   \centering\small
@@ -1100,8 +1119,9 @@ Data was again scaled using standardization. Unlike the other two models for ano
   \textbf{Parameters} & \textbf{Values} \\
   \hline
   n\_neighbors & 5 \\
-  algorithm & auto \\
-  leaf\_size & 30 \\
+  algorithm & brute \\
+  leaf\_size & 5 \\
+  metric & euclidean \\
   contamination & 0.25 \\
   \hline
   \end{tabular}
@@ -1109,10 +1129,38 @@ Data was again scaled using standardization. Unlike the other two models for ano
   \label{tbl:lofparams}
 \end{table}
 
+The \texttt{n\_neighbors} parameter refers to the number of nearest neighbors being considered, which were determined here using a brute-force search \texttt{algorithm}, and \texttt{metric} is the formula for calculating distances between datapoints, for which the Euclidean distance was found to be best.
+
 \subsection{Model Evaluation}
 \label{ssec:modelevaluation}
 
-Because of the limited size of the dataset, thorough evaluation of both the supervised binary classifiers and the unsupervised anomaly detection models using testing sets was not possible. Instead, their performance was evaluated  Precision, recall, and F1-score were evaluated.
+Precision, recall, and F1-score were calculated for all five models, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection. 
+
+\begin{equation}
+  \label{eq:precision}
+    \text{Precision} = \frac{TP}{TP + FP}
+  \end{equation}
+  
+  \begin{equation}
+  \label{eq:recall}
+    \text{Recall} = \frac{TP}{TP + FN}
+  \end{equation}
+  
+  \begin{equation}
+  \label{eq:f1score}
+    F_1\text{-score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+  \end{equation}
+
+It is important to note, however, that because of the limited size of the dataset, evaluation of both the supervised binary classifiers and the unsupervised anomaly detection models proved challenging, as there was not enough data to create holdout sets for testing. As a result, the scores measuring their performance do not sufficiently indicate their ability to make predictions on new, unseen data. 
+
+To evaluate the supervised classifiers, the numbers of True Positive (TP), True Negative (NP), False Positive (FP), and False Negative (FN) predictions from all iterations of the leave-one-out validation process during fine-tuning were aggregated together. For a given estimator (combination of parameters), these were then used to calculate precision, recall, and F1-score metrics. Similarly, for the unsupervised anomaly detection models, each metric was calculated for each estimator during fine-tuning.
+
+\subsection{Feature Importance}
+\label{ssec:featureimportances}
+
+In order to further analyze the selected linguistic features, their importances were also calculated. Feature importance is a measurement of the extent that each feature contributes to model prediction, consequently indicating how relevant or useful a particular feature is (or is not). In the context of this investigation into constructed versus natural language, calculating these can provide insight into the discriminative ability that some language features may provide over others.
+
+To measure this, the SHapley Additive exPlanation (SHAP) method is used. 
 
 \newpage
 \section{Results}
@@ -1126,37 +1174,39 @@ This section reports the results of the methods implemented, and the measurement
 
 Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
 
-\begin{table}[!h]
+\begin{table}[!ht]
   \centering
   \renewcommand{\arraystretch}{1.0}
-      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-      \hline
-          \rotatebox{90}{\textbf{Corpus}} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Lemma}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
-\textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
-\textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
-\textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
-\textbf{Polish} & nat & 6.248 & 14.951 & 14.890 & 0.825 & 6.639 & 1.894 & 3.709 & 4.553 & 12.905 & 5.072 & 5.611 & 5.898 \\ \hline
-\textbf{French} & nat & 5.160 & 23.120 & 7.461 & 0.721 & 7.109 & 1.771 & 2.759 & 4.179 & 10.711 & 4.104 & 6.256 & 6.779 \\ \hline
-\textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 15.287 & 1.567 & 1.938 & 4.256 & 7.666 & 1.281 & 8.702 & 9.037 \\ \hline
-\textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 13.894 & 1.770 & 2.861 & 4.072 & 9.993 & 4.757 & 6.639 & 6.986 \\ \hline
-\textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 27.439 & 1.344 & 1.453 & 4.855 & 9.717 & 4.768 & 11.878 & 11.432 \\ \hline
-\textbf{Occitan} & nat & 5.215 & 18.660 & 7.185 & 0.715 & 7.674 & 1.793 & 2.805 & 4.173 & 10.546 & 3.530 & 6.741 & 7.118 \\ \hline
-\textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 10.049 & 1.661 & 2.360 & 4.167 & 10.673 & 4.771 & 7.106 & 7.601 \\ \hline
-\textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 7.919 & 1.765 & 2.939 & 4.029 & 11.308 & 4.573 & 5.563 & 6.123 \\ \hline
-\textbf{Interlingua} & con & 5.050 & 19.547 & 6.880 & 0.607 & 8.904 & 1.750 & 2.715 & 4.032 & 10.005 & 3.886 & 6.406 & 6.958 \\ \hline
-\textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 9.496 & 1.957 & 4.074 & 4.294 & 11.488 & 4.830 & 6.207 & 6.517 \\ \hline
-\textbf{Lingua Franca Nova} & con & 4.221 & 19.532 & 5.063 & 0.601 & 9.769 & 1.688 & 2.448 & 3.912 & 9.316 & 4.471 & 7.716 & 8.436 \\ \hline
-\textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 10.259 & 1.911 & 3.776 & 4.197 & 11.274 & 5.037 & 6.408 & 6.796 \\ \hline
-\textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 6.240 & 2.000 & 5.071 & 4.543 & 12.443 & 5.208 & 5.584 & 5.951 \\ \hline
-\textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 12.993 & 1.584 & 2.048 & 4.072 & 11.142 & 3.982 & 7.285 & 7.342 \\ \hline
-\textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 11.830 & 1.717 & 2.563 & 3.895 & 9.991 & 4.374 & 6.803 & 7.040 \\ \hline
-\textbf{Turkish} & nat & 6.630 & 14.458 & 14.097 & 0.828 & 6.805 & 1.843 & 3.932 & 4.386 & 13.151 & 4.729 & 5.028 & 5.422 \\ \hline
-\textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 13.024 & 1.645 & 2.208 & 4.077 & 8.055 & 1.266 & 7.471 & 8.267 \\ \hline
-\textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 8.131 & 1.756 & 2.752 & 4.046 & 10.327 & 4.066 & 6.059 & 6.664 \\ \hline
-\textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 8.806 & 2.008 & 5.037 & 4.144 & 13.729 & 4.529 & 4.994 & 5.479 \\ \hline
-\textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 9.026 & 1.981 & 4.356 & 4.230 & 11.601 & 4.530 & 5.323 & 5.743 \\ \hline
-\textbf{Kotava} & con & 5.060 & 12.824 & 8.153 & 0.582 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline       
-  \end{tabular}
+  \begin{adjustbox}{width=\textwidth}
+  \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+    \hline
+        \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
+        \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 67.482 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
+        \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 74.165 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
+        \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 115.342 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
+        \textbf{Polish} & nat & 6.248 & 14.951 & 14.89 & 0.825 & 278.888 & 6.639 & 1.894 & 3.709 & 4.553 & 12.905 & 5.072 & 5.611 & 5.898 \\ \hline
+        \textbf{French} & nat & 5.16 & 23.12 & 7.461 & 0.721 & 91.865 & 7.109 & 1.771 & 2.759 & 4.179 & 10.711 & 4.104 & 6.256 & 6.779 \\ \hline
+        \textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 39.447 & 15.287 & 1.567 & 1.938 & 4.256 & 7.666 & 1.281 & 8.702 & 9.037 \\ \hline
+        \textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 59.938 & 13.894 & 1.77 & 2.861 & 4.072 & 9.993 & 4.757 & 6.639 & 6.986 \\ \hline
+        \textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 94.751 & 27.439 & 1.344 & 1.453 & 4.855 & 9.717 & 4.768 & 11.878 & 11.432 \\ \hline
+        \textbf{Occitan} & nat & 5.215 & 18.66 & 7.185 & 0.715 & 87.187 & 7.674 & 1.793 & 2.805 & 4.173 & 10.546 & 3.53 & 6.741 & 7.118 \\ \hline
+        \textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 77.659 & 10.049 & 1.661 & 2.36 & 4.167 & 10.673 & 4.771 & 7.106 & 7.601 \\ \hline
+        \textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 129.111 & 7.919 & 1.765 & 2.939 & 4.029 & 11.308 & 4.573 & 5.563 & 6.123 \\ \hline
+        \textbf{Interlingua} & con & 5.05 & 19.547 & 6.88 & 0.607 & 49.015 & 8.904 & 1.75 & 2.715 & 4.032 & 10.005 & 3.886 & 6.406 & 6.958 \\ \hline
+        \textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 124.469 & 9.496 & 1.957 & 4.074 & 4.294 & 11.488 & 4.83 & 6.207 & 6.517 \\ \hline
+        \textbf{LFN} & con & 4.221 & 19.532 & 5.063 & 0.601 & 40.079 & 9.769 & 1.688 & 2.448 & 3.912 & 9.316 & 4.471 & 7.716 & 8.436 \\ \hline
+        \textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 106.412 & 10.259 & 1.911 & 3.776 & 4.197 & 11.274 & 5.037 & 6.408 & 6.796 \\ \hline
+        \textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 169.833 & 6.24 & 2.0 & 5.071 & 4.543 & 12.443 & 5.208 & 5.584 & 5.951 \\ \hline
+        \textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 74.365 & 12.993 & 1.584 & 2.048 & 4.072 & 11.142 & 3.982 & 7.285 & 7.342 \\ \hline
+        \textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 44.385 & 11.83 & 1.717 & 2.563 & 3.895 & 9.991 & 4.374 & 6.803 & 7.04 \\ \hline
+        \textbf{Turkish} & nat & 6.63 & 14.458 & 14.097 & 0.828 & 290.829 & 6.805 & 1.843 & 3.932 & 4.386 & 13.151 & 4.729 & 5.028 & 5.422 \\ \hline
+        \textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 34.395 & 13.024 & 1.645 & 2.208 & 4.077 & 8.055 & 1.266 & 7.471 & 8.267 \\ \hline
+        \textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 65.538 & 8.131 & 1.756 & 2.752 & 4.046 & 10.327 & 4.066 & 6.059 & 6.664 \\ \hline
+        \textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 394.346 & 8.806 & 2.008 & 5.037 & 4.144 & 13.729 & 4.529 & 4.994 & 5.479 \\ \hline
+        \textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 139.978 & 9.026 & 1.981 & 4.356 & 4.23 & 11.601 & 4.53 & 5.323 & 5.743 \\ \hline
+        \textbf{Kotava} & con & 5.06 & 12.824 & 8.153 & 0.582 & 61.499 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline
+    \end{tabular}
+  \end{adjustbox}
   \caption{Feature set}
   \label{tbl:featurestable}
 \end{table}
@@ -1215,17 +1265,19 @@ To visualize these features individually,
 \begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.0}
+  \begin{adjustbox}{width=\textwidth}
   \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
   \hline
-      ~ & Avg Word Length & Avg Sentence Length & TTR & MATTR & MTLD & Morpheme TTR & Avg Segs Per Word & Avg Forms Per Stem & Char Dist Entr & Word Dist Entr & Text Entr & Lex Entr & Rev Lex Entr \\ \hline
-      PC1 & 0.312 & -0.152 & 0.343 & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
-      PC2 & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & 0.561 & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
+      ~ & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
+      \textbf{PC1} & 0.312 & -0.152 & 0.343 & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
+      \textbf{PC2} & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & 0.561 & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
   \end{tabular}
+  \end{adjustbox}
   \caption{Loadings for Each Principal Component}
   \label{tbl:pcaloadings}
 \end{table}
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
         \includegraphics[width=1.0\textwidth]{PCA_of_Features.png}
         \caption{Principal Component Analysis on the feature set.}
@@ -1251,28 +1303,28 @@ A script was used to increase readability of the text in the graph\footnote{http
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{CM_decision_tree.png}
+    \includegraphics[width=0.5\textwidth]{CM_decision_tree.png}
     \caption{Confusion Matrix for Decision Tree Classifier}
     \label{fig:cmdecisiontree}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{CM_random_forest.png}
+    \includegraphics[width=0.5\textwidth]{CM_random_forest.png}
     \caption{Confusion Matrix for Random Forest Classifier}
     \label{fig:cmrandomforest}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{RF_gini_importances.png}
+    \includegraphics[width=0.5\textwidth]{RF_gini_importances.png}
     \caption{Gini Importances for Random Forest}
     \label{fig:rfginiimportances}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{RF_permutation_importances.png}
+    \includegraphics[width=0.5\textwidth]{RF_permutation_importances.png}
     \caption{Permutation Importances for Random Forest}
     \label{fig:rfpermutationimportances}
 \end{figure}
@@ -1282,11 +1334,11 @@ A script was used to increase readability of the text in the graph\footnote{http
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
-      ~ & F\textsubscript{1}-score & Precision & Recall \\ \hline
-      Decision Tree & & & \\ \hline
-      Random Forest & & & \\ \hline
+      \textbf{Model} & \textbf{F\textsubscript{1}-score} & \textbf{Precision} & \textbf{Recall} \\ \hline
+      Decision Tree & 0.83 & 0.83 & 0.83 \\ \hline
+      Random Forest & 0.91 & 1.0 & 0.83 \\ \hline
   \end{tabular}
-  \caption{Evaluation Results for Supervised Binary Classifiers}
+  \caption{Precision, Recall, and F1-scores of Supervised Binary Classifiers}
   \label{tbl:supervisedevaluation}
 \end{table}
 
@@ -1295,35 +1347,35 @@ A script was used to increase readability of the text in the graph\footnote{http
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{CM_ocsvm.png}
+    \includegraphics[width=0.5\textwidth]{CM_ocsvm.png}
     \caption{Confusion Matrix for One-Class SVM}
     \label{fig:cmocsvm}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{CM_if.png}
+    \includegraphics[width=0.5\textwidth]{CM_if.png}
     \caption{Confusion Matrix for Isolation Forest}
     \label{fig:cmisolationforest}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{IF_outliers.png}
+    \includegraphics[width=0.5\textwidth]{IF_outliers.png}
     \caption{Anomalies Detected by Isolation Forest}
     \label{fig:isolationforestanomalies}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{IF_SHAP_values.png}
+    \includegraphics[width=0.5\textwidth]{IF_SHAP_values.png}
     \caption{SHAP Values of Isolation Forest}
     \label{fig:isolationforestshapvalues}
 \end{figure}
 
 \begin{figure}
   \centering
-    \includegraphics[width=0.7\textwidth]{CM_lof.png}
+    \includegraphics[width=0.5\textwidth]{CM_lof.png}
     \caption{Confusion Matrix for Local Outlier Factor}
     \label{fig:cmlof}
 \end{figure}
@@ -1333,17 +1385,17 @@ A script was used to increase readability of the text in the graph\footnote{http
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
-      ~ & F\textsubscript{1}-score & Precision & Recall \\ \hline
-      Isolation Forest & & & \\ \hline
-      One-Class SVM & & & \\ \hline
-      Local Outlier Factor & & & \\ \hline
+    \textbf{Model} & \textbf{F\textsubscript{1}-score} & \textbf{Precision} & \textbf{Recall} \\ \hline
+      Isolation Forest & 0.67 & 0.67 & 0.67 \\ \hline
+      One-Class SVM & 0.8 & 1.0 & 0.67 \\ \hline
+      Local Outlier Factor & 0.67 & 0.67 & 0.67 \\ \hline
   \end{tabular}
-  \caption{Evaluation Results for Unsupervised Anomaly Detection Models}
+  \caption{Precision, Recall, and F1-scores of Unsupervised Anomaly Detection Models}
   \label{tbl:unsupervisedevaluation}
 \end{table}
 
-\subsection{Feature Importances}
-\label{ssec:featureimportances}
+\subsection{Results of Calculating Feature Importance}
+\label{ssec:featureimportancesresults}
 
 \newpage
 \section{Discussion}
@@ -1371,7 +1423,14 @@ Limiting factors: number of languages and which languages/language families, lac
 \newpage
 \section{Acknowledgments}
 \label{sec:acknowledgments}
-I would like to thank ....
+
+I would first and foremost like to thank my main supervisor, Dr. Çağrı Çöltekin, for all of his patience and support regarding this thesis, as well as my overall studies. All of his help and guidance has been invaluable to me, and I would not have been able to complete this otherwise. The same gratitude also extends to my other supervisor, Dr. Christian Bentz, for his interest and support regarding my research. Both of these incredible people were sources of encouragement for me when I most needed it, and for that I am extremely grateful. 
+
+Additionally, I want to thank my friends and family who helped me at every step. Though I would not be able to name all of them here, I am especially grateful for the support from my good friends Fidan, Leixin, Pascal, and Lisa, as well as from my siblings, parents, grandparents, and aunt. 
+
+Though it may be less conventional, I also would like to thank my therapist and psychiatrist for all of their support and help too, not only with my thesis, but regarding all of my studies since I came here to Germany. It would not be an exaggeration to say that I was able to get this far because of them.
+
+Last but not least, I want to sincerely thank my amazing girlfriend, Momoho, for her endless support, patience, care, and reassurance. She was a guiding light for me during this time, and I owe her a lifetime of gratitude for it.
 
 \newpage
 \printbibliography
@@ -1418,6 +1477,64 @@ Here I...
   \end{tabular}
 \caption{Lengths of each language's text after pre-processing.}
 \label{tbl:preprocessedtexts}
+\end{table}
+
+Morfessor
+
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{@{}ll@{}}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Baseline Model}} \\
+  \hline
+  \textbf{Parameters} & \textbf{Values} \\
+  \hline
+  forcesplit\_list & None \\
+  corpusweight & None \\
+  use\_skips & False \\
+  nosplit\_re & None \\
+  \hline
+  \end{tabular}
+  \caption{Parameters for Morfessor Baseline Model.}
+  \label{tbl:morfessorbaselineparams}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{@{}ll@{}}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Morfessor Load Data Function}} \\
+  \hline
+  \textbf{Parameters} & \textbf{Values} \\
+  \hline
+  freqthreshold & 1 \\
+  init\_rand\_split & None \\
+  count\_modifier & $\lfloor\log_2(x + 1)\rceil$ \\
+  \hline
+  \end{tabular}
+  \caption{Parameters for Morfessor's Load Data Function.}
+  \label{tbl:morfessorloaddataparams}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{@{}ll@{}}
+  \hline
+  \multicolumn{2}{|c|}{\textbf{Morfessor Train Batch Function}} \\
+  \hline
+  \textbf{Parameters} & \textbf{Values} \\
+  \hline
+  algorithm & recursive \\
+  algorithm\_params & () \\
+  finish\_threshold & 0.005 \\
+  max\_epochs & None \\
+  \hline
+  \end{tabular}
+  \caption{Parameters for Morfessor's Train Batch Function.}
+  \label{tbl:morfessortrainbatchparams}
 \end{table}
 
 % Include tables of all the hyperparameters of the two RNNs and two classifier models

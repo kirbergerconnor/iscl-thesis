@@ -1,14 +1,18 @@
 \babel@toc {english}{}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Constructed languages used in the study, together with their main respective source languages from which they were designed.}}{10}{}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{17}{}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of TensorFlow LSTMs used to calculate lexical and reverse lexical entropy.}}{19}{}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Fine-tuned hyperparameters for Decision Tree.}}{20}{}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Fine-tuned hyperparameters for Random Forest.}}{21}{}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Fine-tuned hyperparameters for Isolation Forest.}}{22}{}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{22}{}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Fine-tuned hyperparameters for Local Outlier Factor.}}{23}{}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Feature set}}{24}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Each Principal Component}}{27}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Evaluation Results for Supervised Binary Classifiers}}{27}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Evaluation Results for Unsupervised Anomaly Detection Models}}{27}{}%
-\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{41}{}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Constructed languages in the dataset together with their main respective source languages from which they were designed.}}{10}{}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Natural languages in the dataset together with their respective language families and morphological systems.}}{11}{}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{17}{}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Parameters of TensorFlow LSTMs used to calculate lexical and reverse lexical entropy.}}{19}{}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Fine-tuned hyperparameters for Decision Tree.}}{21}{}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Fine-tuned hyperparameters for Random Forest.}}{21}{}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for Isolation Forest.}}{22}{}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{23}{}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Fine-tuned hyperparameters for Local Outlier Factor.}}{24}{}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Feature set}}{26}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Each Principal Component}}{29}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Precision, Recall, and F1-scores of Supervised Binary Classifiers}}{29}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, Recall, and F1-scores of Unsupervised Anomaly Detection Models}}{33}{}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{42}{}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{42}{}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{43}{}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{43}{}%
