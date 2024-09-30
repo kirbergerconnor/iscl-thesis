@@ -27,11 +27,11 @@
 \contentsline {subsubsection}{\numberline {3.6.2}One-Class SVM}{23}{}%
 \contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{23}{}%
 \contentsline {subsection}{\numberline {3.7}Model Evaluation}{24}{}%
-\contentsline {subsection}{\numberline {3.8}Feature Importance}{24}{}%
+\contentsline {subsection}{\numberline {3.8}Feature Importance}{25}{}%
 \contentsline {section}{\numberline {4}Results}{26}{}%
 \contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{26}{}%
-\contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{29}{}%
-\contentsline {subsection}{\numberline {4.3}Results of Classification}{29}{}%
+\contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{30}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Classification}{30}{}%
 \contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{33}{}%
 \contentsline {subsection}{\numberline {4.5}Results of Calculating Feature Importance}{33}{}%
 \contentsline {section}{\numberline {5}Discussion}{34}{}%

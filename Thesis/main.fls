@@ -456,6 +456,7 @@ OUTPUT main.lof
 INPUT ./main.lot
 INPUT ./main.lot
 INPUT main.lot
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 OUTPUT main.lot
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -467,7 +468,6 @@ INPUT ../results/./Other/WilsonsLanguageExample.png
 INPUT ../results/./Other/WilsonsLanguageExample.png
 INPUT ../results/./Other/WilsonsLanguageExample.png
 INPUT ../results/./Other/WilsonsLanguageExample.png
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT ../results/./Other/TaxonomyOfPlannedLanguages.png
 INPUT ../results/./Other/TaxonomyOfPlannedLanguages.png
 INPUT ../results/./Other/TaxonomyOfPlannedLanguages.png
@@ -554,14 +554,6 @@ INPUT ../results/CM_random_forest.png
 INPUT ../results/CM_random_forest.png
 INPUT ../results/CM_random_forest.png
 INPUT ../results/CM_random_forest.png
-INPUT ../results/RF_gini_importances.png
-INPUT ../results/RF_gini_importances.png
-INPUT ../results/RF_gini_importances.png
-INPUT ../results/RF_gini_importances.png
-INPUT ../results/RF_permutation_importances.png
-INPUT ../results/RF_permutation_importances.png
-INPUT ../results/RF_permutation_importances.png
-INPUT ../results/RF_permutation_importances.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx0600.tfm
 INPUT ../results/CM_ocsvm.png
 INPUT ../results/CM_ocsvm.png

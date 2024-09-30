@@ -633,7 +633,7 @@ The other four families span less representation in the dataset in comparison, b
 
 In terms of typological features, these languages differ in their morphological systems. For example, Finnish, Hungarian, and Turkish are highly agglutinative, whereas Vietnamese, an isolating language, is an extreme opposite. German, Icelandic, Polish, and the Romance languages have fusional morphologies.
 
-% Refer to Desjardins
+% Refer to Desjardins and Shopen
 
 \begin{table}[!h]
   \centering
@@ -665,6 +665,8 @@ In terms of typological features, these languages differ in their morphological 
   \caption{Natural languages in the dataset together with their respective language families and morphological systems.}
   \label{tbl:natlangs}
 \end{table}
+
+Furthermore, Occitan is a unique case.
 
 % Language family breakdown, make a pie chart for this
 
@@ -733,7 +735,7 @@ Before classification or anomaly detection can be done with the data, an initial
 
 The exact methods and measurements involved in this process depend on, among other factors, the task and data. For the scope of this paper, some were only simple calculations, the simplest of these being the measurements for text complexity: the average word length and average sentence length of each text. For the rest of the linguistic features (i.e. lexical diversity, morphological complexity, entropy) analyzed, however, this process involved the use of more sophisticated algorithms and various machine learning models to derive measurements from.
 
-The complete set of the analyzed features for each language and their computed values, rounded to 3 decimals, is shown in Section \ref{sec:results} in Table \ref{tbl:featurestable}.
+The complete set of the analyzed features for each language and their computed values is shown in Section \ref{sec:results} in Table \ref{tbl:featurestable}.
 
 \subsubsection{Lexical Diversity}
 \label{ssec:lexicaldiversity}
@@ -1134,7 +1136,7 @@ The \texttt{n\_neighbors} parameter refers to the number of nearest neighbors be
 \subsection{Model Evaluation}
 \label{ssec:modelevaluation}
 
-Precision, recall, and F1-score were calculated for all five models, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection. 
+Precision, recall, and F1-score were calculated for all five models, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection. 
 
 \begin{equation}
   \label{eq:precision}
@@ -1153,7 +1155,7 @@ Precision, recall, and F1-score were calculated for all five models, given by Eq
 
 It is important to note, however, that because of the limited size of the dataset, evaluation of both the supervised binary classifiers and the unsupervised anomaly detection models proved challenging, as there was not enough data to create holdout sets for testing. As a result, the scores measuring their performance do not sufficiently indicate their ability to make predictions on new, unseen data. 
 
-To evaluate the supervised classifiers, the numbers of True Positive (TP), True Negative (NP), False Positive (FP), and False Negative (FN) predictions from all iterations of the leave-one-out validation process during fine-tuning were aggregated together. For a given estimator (combination of parameters), these were then used to calculate precision, recall, and F1-score metrics. Similarly, for the unsupervised anomaly detection models, each metric was calculated for each estimator during fine-tuning.
+To evaluate the supervised classifiers, the numbers of True Positive (TP), True Negative (NP), False Positive (FP), and False Negative (FN) predictions from all iterations of the leave-one-out validation process during fine-tuning were aggregated together. For a given estimator (combination of parameters), these were then used to calculate precision, recall, and F1-score metrics. Similarly, for the unsupervised anomaly detection models, each metric was calculated for each estimator during fine-tuning. In both tasks, the estimator which achieved the highest F1-score was determined to have the optimal parameters for the respective model.
 
 \subsection{Feature Importance}
 \label{ssec:featureimportances}
@@ -1166,21 +1168,20 @@ To measure this, the SHapley Additive exPlanation (SHAP) method is used.
 \section{Results}
 \label{sec:results}
 
-This section reports the results of the methods implemented, and the measurements derived from this, for feature engineering. Following this are the results of the various models used for both the classification and anomaly detection tasks.
-% Also do 1D analysis of all languages for each single dimension (e.g. the TTR, seeing if there's clustering or dispersal in tendency for the languages on a single line)
+This section starts by reporting the results of the methods implemented for, and the measurements derived from, the feature engineering. Each feature and their language distributions are further analyzed using one-dimensional graphs as well. Following this are the results of dimensionality reduction on the data, then performances of each of the models used for supervised classification and unsupervised anomaly detection. Lastly, the findings for the calculations of feature importance for each of the models is reported.
 
 \subsection{Results of Feature Engineering}
 \label{ssec:featureengineeringresults}
 
 Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
 
-\begin{table}[!ht]
+\begin{table}[!h]
   \centering
-  \renewcommand{\arraystretch}{1.0}
+  \renewcommand{\arraystretch}{1.5}
   \begin{adjustbox}{width=\textwidth}
   \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
     \hline
-        \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
+        \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Average Word Length}} & \rotatebox{90}{\textbf{Average Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Average Segmentations Per Word}} & \rotatebox{90}{\textbf{Average Forms Per Stem}} & \rotatebox{90}{\textbf{Character Distribution Entropy}} & \rotatebox{90}{\textbf{Word Distribution Entropy}} & \rotatebox{90}{\textbf{Text Entropy}} & \rotatebox{90}{\textbf{Lexical Entropy}} & \rotatebox{90}{\textbf{Reverse Lexical Entropy}} \\ \hline
         \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 67.482 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
         \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 74.165 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
         \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 115.342 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
@@ -1207,7 +1208,7 @@ Table \ref{tbl:featurestable} shows the full set of features for each language o
         \textbf{Kotava} & con & 5.06 & 12.824 & 8.153 & 0.582 & 61.499 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline
     \end{tabular}
   \end{adjustbox}
-  \caption{Feature set}
+  \caption{Complete set of all 13 features for every language in the data, as well as each language's label (\textit{Type}), which represent either 'constructed' or 'natural'. Each feature's value is rounded to 3 decimal places.}
   \label{tbl:featurestable}
 \end{table}
 
@@ -1262,20 +1263,7 @@ To visualize these features individually,
 \subsection{Results of Dimensionality Reduction}
 \label{ssec:dimensionalityreductionresults}
 
-\begin{table}[!h]
-  \centering
-  \renewcommand{\arraystretch}{1.0}
-  \begin{adjustbox}{width=\textwidth}
-  \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
-  \hline
-      ~ & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
-      \textbf{PC1} & 0.312 & -0.152 & 0.343 & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
-      \textbf{PC2} & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & 0.561 & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
-  \end{tabular}
-  \end{adjustbox}
-  \caption{Loadings for Each Principal Component}
-  \label{tbl:pcaloadings}
-\end{table}
+Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction performed on the data using PCA\footnote{A script was used to increase readability of the text in the graph: https://github.com/Phlya/adjustText}. The top two principal components are TTR and Character Distribution Entropy, which contribute to 62\% and 17\% of the variance, respectively. Combined, this only accounts for 79\% of the total variance.
 
 \begin{figure}[!h]
   \centering
@@ -1286,48 +1274,64 @@ To visualize these features individually,
 
 % Include graph of explained variance following https://www.jcchouinard.com/pca-explained-variance/
 
-A script was used to increase readability of the text in the graph\footnote{https://github.com/Phlya/adjustText}.
+\begin{table}[!h]
+  \centering
+  \renewcommand{\arraystretch}{1.0}
+  \begin{adjustbox}{width=\textwidth}
+  \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+  \hline
+      ~ & \rotatebox{90}{\textbf{Average Word Length}} & \rotatebox{90}{\textbf{Average Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Average Segmentations Per Word}} & \rotatebox{90}{\textbf{Average Forms Per Stem}} & \rotatebox{90}{\textbf{Character Distribution Entropy}} & \rotatebox{90}{\textbf{Word Distribution Entropy}} & \rotatebox{90}{\textbf{Text Entropy}} & \rotatebox{90}{\textbf{Lexical Entropy}} & \rotatebox{90}{\textbf{Reverse Lexical Entropy}} \\ \hline
+      \textbf{PC1} & 0.312 & -0.152 & 0.343 & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
+      \textbf{PC2} & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & 0.561 & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Loadings for Each Principal Component}
+  \label{tbl:pcaloadings}
+\end{table}
 
 \subsection{Results of Classification}
 \label{ssec:classificationresults}
 
-% \subsubsection{Results of Decision Tree}
-% \label{ssec:decisiontreeresults}
+Figure \ref{fig:decisiontree} shows the resulting Decision Tree. To briefly explain how this is interpreted, for each node of the tree except the terminal ones, the top line is the condition for the subsequent split, and each split partitions the remaining number of samples for which said condition is either true or false. For example, the condition for the root node is \texttt{MTLD <= 70.824}, which is true for 9 samples and false for the other 15. In addition, \texttt{value} shows the weighted counts for both classes, with \texttt{class} being equal to the majority class at that split, and \texttt{gini} ranges from 0.0 (the samples all belong to one class) to 0.5 (the samples are evenly distributed, referred to as maximum impurity). 
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
         \includegraphics[width=1.0\textwidth]{decisiontree.png}
         \caption{Decision Tree Classifier}
         \label{fig:decisiontree}
 \end{figure}
 
-\begin{figure}
+Therefore, this indicates the features MTLD, Average Sentence Length, and Average Word Length were the best for classification.
+
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{CM_decision_tree.png}
     \caption{Confusion Matrix for Decision Tree Classifier}
     \label{fig:cmdecisiontree}
 \end{figure}
 
-\begin{figure}
+Based on the confusion matrix seen in Figure \ref{fig:cmdecisiontree}, the Decision Tree 
+
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{CM_random_forest.png}
     \caption{Confusion Matrix for Random Forest Classifier}
     \label{fig:cmrandomforest}
 \end{figure}
 
-\begin{figure}
-  \centering
-    \includegraphics[width=0.5\textwidth]{RF_gini_importances.png}
-    \caption{Gini Importances for Random Forest}
-    \label{fig:rfginiimportances}
-\end{figure}
+% \begin{figure}[!h]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{RF_gini_importances.png}
+%     \caption{Gini Importances for Random Forest}
+%     \label{fig:rfginiimportances}
+% \end{figure}
 
-\begin{figure}
-  \centering
-    \includegraphics[width=0.5\textwidth]{RF_permutation_importances.png}
-    \caption{Permutation Importances for Random Forest}
-    \label{fig:rfpermutationimportances}
-\end{figure}
+% \begin{figure}[!h]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{RF_permutation_importances.png}
+%     \caption{Permutation Importances for Random Forest}
+%     \label{fig:rfpermutationimportances}
+% \end{figure}
 
 \begin{table}[!h]
   \centering
@@ -1338,42 +1342,42 @@ A script was used to increase readability of the text in the graph\footnote{http
       Decision Tree & 0.83 & 0.83 & 0.83 \\ \hline
       Random Forest & 0.91 & 1.0 & 0.83 \\ \hline
   \end{tabular}
-  \caption{Precision, Recall, and F1-scores of Supervised Binary Classifiers}
+  \caption{Precision, Recall, and F1-scores of Supervised Binary Classification Models}
   \label{tbl:supervisedevaluation}
 \end{table}
 
 \subsection{Results of Anomaly Detection}
 \label{ssec:anomalydetectionresults}
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{CM_ocsvm.png}
     \caption{Confusion Matrix for One-Class SVM}
     \label{fig:cmocsvm}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{CM_if.png}
     \caption{Confusion Matrix for Isolation Forest}
     \label{fig:cmisolationforest}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{IF_outliers.png}
     \caption{Anomalies Detected by Isolation Forest}
     \label{fig:isolationforestanomalies}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{IF_SHAP_values.png}
     \caption{SHAP Values of Isolation Forest}
     \label{fig:isolationforestshapvalues}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.5\textwidth]{CM_lof.png}
     \caption{Confusion Matrix for Local Outlier Factor}
@@ -1409,9 +1413,13 @@ A script was used to increase readability of the text in the graph\footnote{http
 % Using different window length for MATTR....
 % Lack of validation for pytorch RNN (text entropy)
 
+In this section, I further analyze the findings along with their possible implications, as well as discuss how they relate to the motivations and overall goal of this investigation. Furthermore, I make note of some shortcomings in my approaches, and how those may have impacted the results.
+
 \newpage
 \section{Conclusion}
 \label{sec:conclusion}
+
+
 
 \subsection{Future Work}
 \label{ssec:futurework}
@@ -1426,14 +1434,17 @@ Limiting factors: number of languages and which languages/language families, lac
 
 I would first and foremost like to thank my main supervisor, Dr. Çağrı Çöltekin, for all of his patience and support regarding this thesis, as well as my overall studies. All of his help and guidance has been invaluable to me, and I would not have been able to complete this otherwise. The same gratitude also extends to my other supervisor, Dr. Christian Bentz, for his interest and support regarding my research. Both of these incredible people were sources of encouragement for me when I most needed it, and for that I am extremely grateful. 
 
-Additionally, I want to thank my friends and family who helped me at every step. Though I would not be able to name all of them here, I am especially grateful for the support from my good friends Fidan, Leixin, Pascal, and Lisa, as well as from my siblings, parents, grandparents, and aunt. 
+Additionally, I want to thank my friends and family who helped me at every step. Though I would not be able to name all of them here, I am especially grateful for the support from my good friends Fidan, Leixin, Selene, Linhong, Pascal, and Lisa, as well as from my siblings, parents, grandparents, and aunt. 
 
 Though it may be less conventional, I also would like to thank my therapist and psychiatrist for all of their support and help too, not only with my thesis, but regarding all of my studies since I came here to Germany. It would not be an exaggeration to say that I was able to get this far because of them.
 
 Last but not least, I want to sincerely thank my amazing girlfriend, Momoho, for her endless support, patience, care, and reassurance. She was a guiding light for me during this time, and I owe her a lifetime of gratitude for it.
 
 \newpage
+\begingroup
+\sloppy
 \printbibliography
+\endgroup
 
 \newpage
 \section{Appendices}
