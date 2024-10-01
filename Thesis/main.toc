@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{26}{}%
 \contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{30}{}%
 \contentsline {subsection}{\numberline {4.3}Results of Classification}{30}{}%
-\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{33}{}%
+\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{32}{}%
 \contentsline {subsection}{\numberline {4.5}Results of Calculating Feature Importance}{33}{}%
 \contentsline {section}{\numberline {5}Discussion}{34}{}%
 \contentsline {section}{\numberline {6}Conclusion}{35}{}%

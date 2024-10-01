@@ -7,7 +7,8 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix for Decision Tree Classifier}}{31}{}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Confusion Matrix for Random Forest Classifier}}{32}{}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix for One-Class SVM}}{32}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion Matrix for Isolation Forest}}{32}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Anomalies Detected by Isolation Forest}}{33}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces SHAP Values of Isolation Forest}}{33}{}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Confusion Matrix for Local Outlier Factor}}{33}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces SHAP Values of One-Class SVM}}{33}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Confusion Matrix for Isolation Forest}}{33}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Anomalies Detected by Isolation Forest}}{33}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces SHAP Values of Isolation Forest}}{34}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix for Local Outlier Factor}}{34}{}%

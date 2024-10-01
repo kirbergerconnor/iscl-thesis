@@ -2414,7 +2414,7 @@
     <bcf:citekey order="41" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="42" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="43" intorder="1">Gobbo2016article</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">GObbo2016</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Gobbo2016</bcf:citekey>
     <bcf:citekey order="45" intorder="1">Shannon1948book</bcf:citekey>
     <bcf:citekey order="46" intorder="1">Gobbo2008article</bcf:citekey>
     <bcf:citekey order="47" intorder="1">Gobbo2008article</bcf:citekey>
@@ -2435,24 +2435,32 @@
     <bcf:citekey order="60" intorder="1">Fetcey2013book</bcf:citekey>
     <bcf:citekey order="61" intorder="1">Novikov2022article</bcf:citekey>
     <bcf:citekey order="62" intorder="1">Attardi2015wikiextractor</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">Virpioja2013inproceedings</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">Covington2010article</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">Bestgen2024article</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">McCarthy2010article</bcf:citekey>
-    <bcf:citekey order="66" intorder="2">Fergadiotis2013article</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">Smit2014inproceedings</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">Dhandapani2023inbook</bcf:citekey>
-    <bcf:citekey order="69" intorder="1">Deng2024article</bcf:citekey>
-    <bcf:citekey order="70" intorder="1">Han2021article</bcf:citekey>
-    <bcf:citekey order="71" intorder="1">Oktafiani2024article</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">Salman2024article</bcf:citekey>
-    <bcf:citekey order="72" intorder="2">Oktafiani2024article</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">Liu2009inproceedings</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">Xu2023article</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">Rosenhahn2024article</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">Boiar2022article</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">Breunig2000article</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">Cheng2019article</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">Paszke2017article</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">Chollet2015article</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">Virpioja2013inproceedings</bcf:citekey>
+    <bcf:citekey order="65" intorder="2">Creutz2002article</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">Harris2020article</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">reback2020pandas</bcf:citekey>
+    <bcf:citekey order="67" intorder="2">Mckinney2010article</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">Hunter2007article</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">Pedregosa2011article</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">Covington2010article</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">Bestgen2024article</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">McCarthy2010article</bcf:citekey>
+    <bcf:citekey order="72" intorder="2">Fergadiotis2013article</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">Smit2014inproceedings</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">Dhandapani2023inbook</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">Deng2024article</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">Han2021article</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">Oktafiani2024article</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">Salman2024article</bcf:citekey>
+    <bcf:citekey order="78" intorder="2">Oktafiani2024article</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">Liu2009inproceedings</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">Xu2023article</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">Rosenhahn2024article</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">Boiar2022article</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">Breunig2000article</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">Cheng2019article</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

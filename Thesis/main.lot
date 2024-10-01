@@ -11,7 +11,7 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Complete set of all 13 features for every language in the data, as well as each language's label (\textit {Type}), which represent either 'constructed' or 'natural'. Each feature's value is rounded to 3 decimal places.}}{28}{}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Each Principal Component}}{30}{}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Precision, Recall, and F1-scores of Supervised Binary Classification Models}}{32}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, Recall, and F1-scores of Unsupervised Anomaly Detection Models}}{34}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, Recall, and F1-scores of Unsupervised Anomaly Detection Models}}{32}{}%
 \contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{42}{}%
 \contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{42}{}%
 \contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{43}{}%
