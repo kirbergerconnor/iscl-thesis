@@ -7,35 +7,40 @@
 \contentsline {section}{\numberline {2}Background}{3}{}%
 \contentsline {subsection}{\numberline {2.1}History of Constructed Languages}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Prior Studies}{5}{}%
-\contentsline {section}{\numberline {3}Methodology}{7}{}%
-\contentsline {subsection}{\numberline {3.1}Data}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages in the Dataset}{8}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Natural Languages in the Dataset}{10}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{11}{}%
-\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{12}{}%
-\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{13}{}%
-\contentsline {subsection}{\numberline {3.4}Feature Engineering}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{15}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{16}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Dimensionality Reduction of Features}{19}{}%
-\contentsline {subsection}{\numberline {3.5}Classification}{20}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{20}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{21}{}%
-\contentsline {subsection}{\numberline {3.6}Anomaly Detection}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.1}Isolation Forest}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.2}One-Class SVM}{23}{}%
-\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{23}{}%
-\contentsline {subsection}{\numberline {3.7}Model Evaluation}{24}{}%
-\contentsline {subsection}{\numberline {3.8}Feature Importance}{25}{}%
-\contentsline {section}{\numberline {4}Results}{26}{}%
-\contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{26}{}%
-\contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{30}{}%
-\contentsline {subsection}{\numberline {4.3}Results of Classification}{30}{}%
-\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{32}{}%
-\contentsline {subsection}{\numberline {4.5}Results of Calculating Feature Importance}{33}{}%
-\contentsline {section}{\numberline {5}Discussion}{34}{}%
-\contentsline {section}{\numberline {6}Conclusion}{35}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{35}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{36}{}%
-\contentsline {section}{\numberline {8}Appendices}{42}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Studies in Morphological Complexity}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Studies in Entropy}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Computational Approaches}{7}{}%
+\contentsline {section}{\numberline {3}Methodology}{8}{}%
+\contentsline {subsection}{\numberline {3.1}Data}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Constructed Languages in the Dataset}{9}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Natural Languages in the Dataset}{11}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Wikimedia}{12}{}%
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{13}{}%
+\contentsline {subsection}{\numberline {3.3}Libraries and APIs}{14}{}%
+\contentsline {subsection}{\numberline {3.4}Feature Engineering}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{16}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{17}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Dimensionality Reduction of Features}{21}{}%
+\contentsline {subsection}{\numberline {3.5}Classification}{21}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{22}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Random Forest}{22}{}%
+\contentsline {subsection}{\numberline {3.6}Anomaly Detection}{23}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}Isolation Forest}{23}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}One-Class SVM}{24}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{24}{}%
+\contentsline {subsection}{\numberline {3.7}Model Evaluation}{25}{}%
+\contentsline {subsection}{\numberline {3.8}Feature Importance with SHAP}{26}{}%
+\contentsline {section}{\numberline {4}Results}{28}{}%
+\contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{28}{}%
+\contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{32}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Classification}{32}{}%
+\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{34}{}%
+\contentsline {subsection}{\numberline {4.5}Results of SHAP Analysis}{35}{}%
+\contentsline {section}{\numberline {5}Discussion}{37}{}%
+\contentsline {section}{\numberline {6}Conclusion}{38}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{38}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{39}{}%
+\contentsline {section}{\numberline {8}Appendices}{46}{}%
+\contentsline {subsection}{\numberline {8.1}Corpora}{46}{}%
+\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{46}{}%

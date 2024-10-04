@@ -336,6 +336,8 @@ Write the abstract here.
 \textbf{TN} & ~~~ & True Negative \\
 \textbf{FP} & ~~~ & False Positive \\
 \textbf{FN} & ~~~ & False Negative \\
+\textbf{SHAP} & ~~~ & SHapley Additive exPlanations \\
+\textbf{LIME} & ~~~ & Local Interpretable Model-agnostic Explanations \\
 
 
 \end{tabular}
@@ -516,16 +518,29 @@ A two-dimensional taxonomy for constructed languages containing several notables
 % (Gobbo 2016) "The literature on planned languages is abundant and diverse, written in many languages and quite often outside of the usual peer-review system (Blanke, 2003), but in comparison to natural languages there are only few specific studies addressing the complexity of planned languages from the point of view of learnability. For instance, Jansen (2012) addresses the problems of learning the reflexive pronouns in Esperanto. In his review of the doctoral dissertation of Heil (1999), who compares the grammar reduction in French-based creoles and planned languages, Haitao (2001) rightly points out that more comparative work in this field is needed, and on a more solid basis."
 % Performance of Robust Support Vector Machine Classification Model on Balanced, Imbalanced, and Outliers Datasets (Sembiring 2024)
 
+% Evaluating the irregularity of natural languages (Gomez 2017) approximates entropy of written texts and finds differences between language families, also compares their results to Esperanto
+% Discuss research and the justification for using  one-class svm, decision tree, and randomforest for outlier detection/binary classification
+
 In contrast to the abundance in literature and cross-linguistic analyses done on natural languages, similar research which also includes constructed languages is relatively sparse. In particular, while there is research that analyzes specific instances of linguistic differences between certain natural and constructed languages, large-scale cross-linguistic studies which utilize computational methods to classify the two based on linguistic features are practically nonexistent. Consequently, the present study is a somewhat novel approach. However, there is precedent for this research and the specific features examined, as well as computational approaches used, which this section will describe.
 
-As noted in the previous section, the creation of IALs often involved the intentional simplification of particular linguistic features to facilitate language acquisition, for instance having more regularity in their morphological systems. Intuitively, then, one would assume this translates to measurable differences in various aspects of linguistic complexity when compared to natural languages, which often have irregularities as a result of their development and evolution. When comparing Volapük and English, \textcite{Gobbo2016} concluded that
+As noted in the previous section, the creation of IALs often involved the intentional simplification of particular linguistic features to facilitate language acquisition, for instance having more regularity in their morphological systems. Intuitively, then, one would assume this translates to measurable differences in various aspects of linguistic complexity when compared to natural languages, which often have irregularities as a result of their development and evolution. When comparing Volapük and English, \textcite{Gobbo2016article} concluded that
 
 Much of the literature on constructed languages focuses on Esperanto specifically.
 
+\subsubsection{Studies in Morphological Complexity}
+\label{morphologicalcomplexitystudies}
+
+\subsubsection{Studies in Entropy}
+\label{entropystudies}
+
 Another feature examined is entropy. Originating from information science, entropy was introduced by \textcite{Shannon1948book} as a measurement of uncertainty or surprisal for an event, with high surprisal being inversely proportionate to the amount of information conveyed by the event's occurrence. In NLP, 
 
-% Evaluating the irregularity of natural languages (Gomez 2017) approximates entropy of written texts and finds differences between language families, also compares their results to Esperanto
-% Discuss research and the justification for using  one-class svm, decision tree, and randomforest for outlier detection/binary classification
+Many studies into the entropy of natural languages have been conducted, but less so regarding constructed languages. \textcite{Smaha2015book} investigated and compared two constructed languages (Lojban and Klingon) with several natural languages and other artificial languages (e.g., Fortran, a programming language) using calculations of block entropy (Shannon's entropy generalized to n-grams). While broad observation of the results found both Klingon and Lojban to have comparable entropies to the natural languages, closer analysis revealed them to actually be closer to Fortran instead. 
+
+\subsubsection{Computational Approaches}
+\label{ssec:computationalapproaches}
+
+\textcite{Oktafiani2024article} 
 
 \newpage
 \section{Methodology}
@@ -533,14 +548,14 @@ Another feature examined is entropy. Originating from information science, entro
 
 In this section, I introduce the dataset for this thesis and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classifiers employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
 
-Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some other measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised binary classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Lastly, the methods for evaluating the performances of these models are discussed, as is the Principal Component Analysis (PCA) performed on the data for dimensionality reduction.
+Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some other measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, reverse lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised binary classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Principal Component Analysis (PCA) was also performed on the feature set. Lastly, the methods for evaluating the performances of these models and interpreting them based on feature importance are discussed.
 
 \subsection{Data}
 \label{ssec:data}
 
 % Note the reasoning behind the choice of having a dataset with diverse typological features
 
-In total, twenty-four languages are analyzed in this study. Six of these are constructed languages: Esperanto, Ido, Interlingua, Lingua Franca Nova, Volapük, and Kotava. The remaining eighteen are natural: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. 
+In total, twenty-four languages are analyzed in this study. Six of these are constructed languages: Esperanto, Ido, Interlingua, Lingua Franca Nova, Volapük, and Kotava. The remaining eighteen are natural: German, English, Spanish, Polish, Vietnamese, Indonesian, Turkish, Tagalog, Hungarian, French, Finnish, Italian, Dutch, Occitan, Danish, Swedish, Afrikaans, and Icelandic. The rationale behind this particular selection of languages will be discussed in further detail throughout this section, but the primary focus was on having diverse typological linguistic features represented in the data.
 
 For consistency, only languages which are written using the Latin alphabet (including the use of diacritics) were chosen. This is mainly because the constructed languages in the dataset all use Latin alphabets, so the selection of natural languages followed the same criteria. Moreover, it allows for more uniform cross-linguistic analysis of features which may be sensitive (e.g. in the case of character entropy) to writing systems.
 
@@ -570,7 +585,7 @@ Esperanto, the most widely-spoken constructed language and considered by many to
 
 Ido is a reform of Esperanto that was proposed in 1907 by a group of linguists led by Louis Couturat, a French philosopher and mathematician, and in fact is an Esperanto word meaning "offspring" \parencite{Schubert2001book}. Its creators sought to address what they saw as imperfections in Esperanto, particularly those related to orthography and morphology. For instance, Ido avoids the use of the accusative case and reforms some Esperanto words to make them more universally recognizable. Overall, though, Ido still retains much of Esperanto’s vocabulary and basic structure, and the two are mutually intelligible to a large extend \parencite{goodall2022article,Schubert2001book}. Like most of the remaining constructed languages to be discussed in this section---with the exception of Volapük---Ido has small but a dedicated community of speakers and enthusiasts.
 
-Interlingua was developed by the International Auxiliary Language Association (IALA) with the assistance of linguist Alexander Gode, officially being published in 1951. A central idea to its creation was that it would be most recognizable to the greatest number of people without requiring prior study \parencite{goodall2022article}, particularly in regards to its lexicon. The IALA's stated goal was to not so much create a new international language, but rather present a standardized international vocabulary \parencite{Large1985book} ("international" here basically referring to Western Europe). It is largely derived from and resembles Romance languages (with lesser influence from Greek and Germanic languages) \parencite{Schubert2001book}. In fact, this intentional resemblance extends even to morphological irregularities such as allomorphy, with other irregularities also being introduced to the language to make it appear more natural \parencite{goodall2022article}, a contrast to other IALs like Esperanto.
+Interlingua was developed by the International Auxiliary Language Association (IALA) with the assistance of linguist Alexander Gode, officially being published in 1951. A central idea to its creation was that it would be most recognizable to the greatest number of people without requiring prior study \parencite{goodall2022article}, particularly in regards to its lexicon. The IALA's stated goal was to not so much create a new international language, but rather present a standardized international vocabulary \parencite{Large1985book} ("international" here basically referring to Western Europe). It is largely derived from and resembles Romance languages (with lesser influence from Greek and Germanic languages) \parencite{Schubert2001book}. In fact, this intentional resemblance extends even to morphological irregularities such as allomorphy, with other irregularities also being introduced to the language to make it appear more natural \parencite{goodall2022article}, a contrast to other IALs like Esperanto \parencite{Gobbo2016article}.
 
 Volapük was created in 1879 by Johann Martin Schleyer, a German Catholic priest who believed the language had been given to him by God. It features highly agglutinative structure and regular, yet complex, morphology \parencite{Reagan2019book}. While being derived mainly from English, German, and Latin, roots in Volapük differ significantly to the point of being unrecognizable to speakers of these languages \parencite{goodall2022article}. Despite being argued to be the first successful constructed language due to its rise in popularity, having amassed a large number of supporters worldwide along with the formation of clubs and societies \parencite{Gobbo2016article}, various issues regarding its complexity led to a rapid decline and eventual fall from usage in favor of Esperanto.
 
@@ -717,6 +732,8 @@ Several libraries and APIs were used in both the feature engineering and classif
 
 In addition to libraries used for constructing the model architectures, there are also ones used for the data itself. Arguably the most fundamental for this is \textsc{NumPy}\parencite{Harris2020article}, which stands for Numerical Python and is used to accomplish extremely fast and efficient computation of arrays. Other essential libraries include \textsc{Pandas}\parencite{reback2020pandas,Mckinney2010article}, used for data manipulation and analysis, and \textsc{Matplotlib}\parencite{Hunter2007article}, used for visualizing data and plotting model results. Lastly, \textsc{scikit-learn}\parencite{Pedregosa2011article} provides a wide range of tools for machine learning algorithms, data preprocessing, and model evaluation---as well as computation, thanks to it being built on top of \textsc{NumPy}. The models I used for classification and anomaly detection (i.e., One-Class SVM, Isolation Forest, Local Outlier Factor, Random Forest, Decision Tree) as well as PCA come from this library. Altogether, these libraries are often used in tandem in NLP tasks due to integrating so well with one another.
 
+Lastly, for analyzing and visualizing global feature importances as determined by the different models, the \textsc{shap} library was used \parencite{Lundberg2017article}.
+
 \subsection{Feature Engineering}
 \label{ssec:featureengineering}
 
@@ -851,7 +868,7 @@ Using this model required first creating a dictionary of the input text's charac
 
 Table \ref{tbl:pytorchlstmparams} shows the model's main parameters alongside their associated values as used here. All other parameters were left as the default values. The architecture comprises 2 hidden layers (\texttt{n\_layers}), a dropout layer, and a fully-connected output layer. Both \texttt{n\_layers} contain 256 hidden units (\texttt{n\_hidden}), which are used to store information from the input and essentially act as the memory of the LSTM. Default values for learning rate, dropout rate, and gradient clipping were used, and training was done over 20 epochs. Minimal fine-tuning was performed overall, and primarily just for the \texttt{n\_seqs} and \texttt{n\_steps} hyperparameters. 
 
-Additionally, a fraction (0.1) of the initial input data was set aside to be used for validation, from which the model's perplexity---a measure related to entropy---is derived. To arrive at this measurement though, the validation loss is first evaluated using (multi-class) cross-entropy. Cross-entropy is an extension of Shannon's entropy, but measures instead the difference between a model's predicted probability distribution and the true one. More formally, this is represented as: \[H(p,q) = -\sum_{x=i}p(x)\log_q(x)\]
+Additionally, a fraction (0.1) of the initial input data was set aside to be used for validation, from which the model's perplexity---a measure related to entropy---is derived. To arrive at this measurement though, the validation loss is first evaluated using (multi-class) cross-entropy. Cross-entropy is an extension of Shannon's entropy, but measures instead the difference between a model's predicted probability distribution and the true one. More formally, this is represented as: \[H(p,q) = -\sum_{x=i}p(x)\log q(x)\]
 
 Where \( p \) and \( q \) represent the discrete predicted and true probability distributions, respectively, and with the natural logarithm \( \log_e \), as is commonplace in machine learning. As the predicted distribution gets closer to the true one, the resulting cross-entropy becomes lower. Entropy \( H(q) \) is thus a lower bound of cross-entropy \( H(p,q) \). 
 
@@ -1027,7 +1044,7 @@ The fine-tuned hyperparameters along with their respective optimal values, as de
   \label{tbl:randomforestparams}
 \end{table}
 
-In addition to the same aforementioned Decision Tree parameters is \texttt{n\_estimators}, which is the number of trees, and \texttt{bootstrap}, which refers to the use of bootstrap sampling.
+In addition to the same Decision Tree parameters is \texttt{n\_estimators}, the number of trees, and \texttt{bootstrap}, which refers to the use of bootstrap sampling (random sampling from the data for each tree \parencite{Oktafiani2024article}).
 
 % In addition to the increase in accuracy and generalization, another advantage of using Random Forest is the ability to calculate and rank the importance of each feature from the data in their contribution to the model's predictions. This was done using two measurements: Gini importance (also called mean decrease in impurity (MDI)) and permutation importance (also called mean decrease in accuracy (MDA)). 
 
@@ -1041,7 +1058,7 @@ For these methods, fine-tuning was again performed using a grid search approach.
 \subsubsection{Isolation Forest}
 \label{ssec:isolationforest}
 
-Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is also an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. Unique to this model, though, is the use of anomaly scores, which are calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. 
+Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is also an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. Unique to this model, though, is the use of anomaly scores, which are calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. It is shown to perform well with high-dimensional data \parencite{Naser2024article} and thus is included here. 
 
 Much like the classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so has no effect. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned along with the optimal values found for each. All others were left as their default values.
 
@@ -1096,7 +1113,7 @@ An initial step of standardization was performed on the data (Equation \ref{eq:s
   \textbf{Parameters} & \textbf{Values} \\
   \hline
   kernel & poly \\
-  degree & 3 \\
+  degree & 2 \\
   coef0 & 0.3 \\
   gamma & 0.0001 \\
   nu & 0.5 \\
@@ -1106,12 +1123,12 @@ An initial step of standardization was performed on the data (Equation \ref{eq:s
   \label{tbl:oneclasssvmparams}
 \end{table}
 
-Here, \texttt{nu} is essentially the same as the \texttt{contamination} parameter that other anomaly detection models have, the fraction of the data which comprises outliers, while \texttt{gamma} relates to the complexity of the model's decision boundary. Also of note is the use of a polynomial kernel, which handles non-linearity in the data and is influenced by \texttt{degree} (of the polynomial function, here being cubic) and \texttt{coef0}.
+Here, \texttt{nu} is essentially the same as the \texttt{contamination} parameter that other anomaly detection models have, the fraction of the data which comprises outliers, while \texttt{gamma} relates to the complexity of the model's decision boundary. Also of note is the use of a polynomial kernel, which handles non-linearity in the data and is influenced by \texttt{degree} (of the polynomial function, here being quadratic) and \texttt{coef0}.
 
 \subsubsection{Local Outlier Factor}
 \label{ssec:localoutlierfactor}
 
-Local Outlier Factor (LOF), first proposed in 2000 by \textcite{Breunig2000article}, is a proximity-based clustering algorithm used for anomaly detection that is based on k-nearest neighbors, but additionally utilizes a concept called local density. In brief, the lower the calculated density between a given data point and its neighbors, the higher the likelihood of it being an outlier \parencite{Cheng2019article}. 
+Local Outlier Factor (LOF), first proposed in 2000 by \textcite{Breunig2000article}, is a proximity-based clustering algorithm used for anomaly detection that is based on k-nearest neighbors, but additionally utilizes a concept called local density to identify potential outliers. In brief, the lower the calculated density between a given data point and its neighbors, the higher the likelihood of it being an outlier \parencite{Cheng2019article}. 
 
 Data was again scaled using standardization. Table \ref{tbl:lofparams} shows the model's hyperparameters that were fine-tuned; the rest were left as their defaults.
 
@@ -1124,10 +1141,11 @@ Data was again scaled using standardization. Table \ref{tbl:lofparams} shows the
   \hline
   \textbf{Parameters} & \textbf{Values} \\
   \hline
-  n\_neighbors & 5 \\
-  algorithm & brute \\
-  leaf\_size & 5 \\
-  metric & euclidean \\
+  n\_neighbors & 7 \\
+  algorithm & kd\_tree \\
+  leaf\_size & 3 \\
+  metric & minkowski \\
+  p & 1.5 \\
   contamination & 0.25 \\
   \hline
   \end{tabular}
@@ -1135,12 +1153,14 @@ Data was again scaled using standardization. Table \ref{tbl:lofparams} shows the
   \label{tbl:lofparams}
 \end{table}
 
-The \texttt{n\_neighbors} parameter refers to the number of nearest neighbors being considered, which were determined here using a brute-force search \texttt{algorithm}, and \texttt{metric} is the formula for calculating distances between datapoints, for which the Euclidean distance was found to be best.
+For this model, the \texttt{n\_neighbors} parameter refers to the number of nearest neighbors being considered, which were then identified using a KD-tree (k-dimensional tree) \texttt{algorithm}. Although a deeper explanation for this algorithm is beyond the scope of this thesis, it tends to be efficient for relatively small and low-dimensional data. 
+
+The other parameters worth mentioning here, as they are specific to this kind of model and related to one another, are \texttt{metric} and \texttt{p}. The former is the metric used for computing distances to the nearest neighbors, for which the Minkowski distance---a generalization of both the Euclidean and Manhattan distances---was used. The order of the Minkowski distance is represented by \texttt{p}, with a value of 1 or 2 corresponding to the Manhattan or Euclidean distance, respectively. The optimal value for this was found to be 1.5, which is effectively a balance between both.
 
 \subsection{Model Evaluation}
 \label{ssec:modelevaluation}
 
-To evaluate all five models, precision, recall, and F1-score was calculated, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection, making them a reasonable choice.
+To evaluate all five models, precision, recall, and F1-score was calculated, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection \parencite{Agyemang2024article,Braei2020article,Maya2019article,Elmrabit2020article,Oktafiani2024article}, making them a reasonable choice. For anomaly detection, these measure the models' ability to correctly predict the target class, here being the constructed languages.
 
 \begin{equation}
   \label{eq:precision}
@@ -1159,29 +1179,31 @@ To evaluate all five models, precision, recall, and F1-score was calculated, giv
 
 For evaluation of the supervised classifiers, the numbers of True Positive (TP), True Negative (NP), False Positive (FP), and False Negative (FN) predictions from all iterations of the leave-one-out cross-validation process during fine-tuning were aggregated together. The aggregated counts for each estimator (combination of parameters) were then used to calculate the metrics. 
 
-Due to training and predicting on the entire dataset, though, evaluating the unsupervised anomaly detection models was done just by calculating the metrics for each estimator during fine-tuning, without needing to keep count of scores. 
+Due to training and predicting on the entire dataset, though, evaluating the unsupervised anomaly detection models was done by simply calculating the metrics for each estimator's overall predictions during fine-tuning.
 
 In both tasks, the estimator which achieved the highest F1-score was determined as having the optimal parameters for the respective model. It is important to note, however, that because of the limited size of the dataset, evaluation of these models proved challenging, as there was not enough data to create holdout sets for testing. As a result, the scores measuring their performance do not sufficiently indicate their ability to make predictions on new, unseen data. 
 
-\subsection{Feature Importance}
+\subsection{Feature Importance with SHAP}
 \label{ssec:featureimportances}
 
-In order to further analyze the selected linguistic features, their importances were also calculated. Feature importance is a measurement of the extent that each feature contributes to model prediction, consequently indicating how relevant or useful a particular feature is (or is not). In the context of this investigation into constructed versus natural language, calculating these can provide insight into the discriminative ability that some language features may provide over others.
+In order to further analyze the selected linguistic features, their importances were also calculated. Feature importance is a measurement of the extent that each feature contributes to model prediction, consequently indicating how relevant or useful a particular feature is (or is not). In the context of this investigation, calculating these can provide insight into the discriminative ability that some language features may provide over others for being classified as belonging to either a constructed or natural language. It is necessary to note, however, that this is principally an interpretation of the models, from which analysis of the features can be tentatively inferred.
 
 % Explain why not permutation importances, gini importances, or LIME
 
-To measure this, the SHapley Additive exPlanation (SHAP) method is used. 
+There are several ways of measuring feature importances, with two of the most commonly used methods being impurity-based and permutation-based. However, for the purposes of this thesis, the SHapley Additive exPlanation (SHAP) framework, which is derived from cooperative game theory, was used instead. A key advantage of using SHAP over other approaches is that it contains a method which is model-agnostic, meaning it can be utilized to interpret any model and thus allow for more consistent and broader analysis. Specifically, the Kernel SHAP method was used for both of the supervised and two of the unsupervised models: Isolation Forest and One-Class SVM. In brief, Kernel SHAP is an extension of linear Local Interpretable Model-agnostic Explanations (LIME) and employs a weighted linear regression to estimate Shapley values, the computed output \parencite{Lundberg2017article}.
+
+In all instances, the entire dataset was used to make predictions and derive the corresponding Shapley values, which consequently meant Local Outlier Factor was not included here as it requires being used in a semi-supervised setting and detecting novelty anomalies in new, unseen data. 
 
 \newpage
 \section{Results}
 \label{sec:results}
 
-This section starts by reporting the results of the methods implemented for, and the measurements derived from, the feature engineering. Each feature and their language distributions are further analyzed using one-dimensional graphs as well. Following this are the results of dimensionality reduction on the data, then performances of each of the models used for supervised classification and unsupervised anomaly detection. Lastly, the findings for the calculations of feature importance for each of the models is reported.
+This section starts by reporting the results of the methods implemented for, and the measurements derived from, the applied step of feature engineering. Each individual feature is also visualized in the format of a one-dimensional graph containing the distribution of languages and their corresponding values for said feature, in order to better interpret the empirical data, as well as to identify potential trends. 
+
+Following this are the results of dimensionality reduction on the data using PCA. Then, the results of each of the fine-tuned models used for supervised classification and unsupervised anomaly detection are shown and compared. Lastly, the findings of the SHAP analysis for each model (except for Local Outlier Factor) is reported, providing a better explanation of the models and examining global feature importances, as determined by them.
 
 \subsection{Results of Feature Engineering}
 \label{ssec:featureengineeringresults}
-
-Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
 
 % See feedback notes for fixing this table (page 31)
 
@@ -1222,10 +1244,12 @@ Table \ref{tbl:featurestable} shows the full set of features for each language o
   \label{tbl:featurestable}
 \end{table}
 
+Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
+
 To visualize these features individually, 
 
 % \newpage
-\begin{figure}[htbp]
+\begin{figure}[!ht]
   \centering
   \includegraphics[width=\textwidth]{1d_Avg_Word_Length.png}
   % \caption{Avg Word Length}
@@ -1235,18 +1259,20 @@ To visualize these features individually,
   % \caption{TTR}
   \includegraphics[width=\textwidth]{1d_MATTR.png}
   % \caption{MATTR}
+  \includegraphics[width=\textwidth]{1d_MTLD.png}
+  % \caption{MTLD}
   \includegraphics[width=\textwidth]{1d_Morpheme_TTR.png}
   % \caption{Morpheme TTR}
   \includegraphics[width=\textwidth]{1d_Avg_Segs_Per_Word.png}
   % \caption{Avg Segs Per Word}
-  \includegraphics[width=\textwidth]{1d_Avg_Forms_Per_Stem.png}
-  % \caption{Avg Forms Per Stem}
 \end{figure}
 
 \clearpage
 
-\begin{figure}[htbp]
+\begin{figure}[!ht]
   \centering
+  \includegraphics[width=\textwidth]{1d_Avg_Forms_Per_Stem.png}
+  % \caption{Avg Forms Per Stem}
   \includegraphics[width=\textwidth]{1d_Char_Dist_Entr.png}
   % \caption{Char Dist Entr}
   \includegraphics[width=\textwidth]{1d_Word_Dist_Entr.png}
@@ -1273,7 +1299,7 @@ To visualize these features individually,
 \subsection{Results of Dimensionality Reduction}
 \label{ssec:dimensionalityreductionresults}
 
-Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction performed on the data using PCA.\footnote{A script was used to increase readability of the text in the graph: https://github.com/Phlya/adjustText} The top two principal components are TTR and Character Distribution Entropy, which contribute to 62\% and 17\% of the variance, respectively. Combined, this only accounts for 79\% of the total variance.
+Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction performed on the data using PCA.\footnote{A script was used to increase the readability of the annotations in the graph: https://github.com/Phlya/adjustText} The top two principal components are TTR and Character Distribution Entropy, which contribute to 62\% and 17\% of the variance, respectively. Combined, this only accounts for 79\% of the total variance.
 
 \begin{figure}[!h]
   \centering
@@ -1302,47 +1328,6 @@ Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction p
 \subsection{Results of Classification}
 \label{ssec:classificationresults}
 
-Figure \ref{fig:decisiontree} shows the resulting Decision Tree. To briefly explain how this is interpreted, for each node of the tree except the terminal ones, the top line is the condition for the subsequent split, and each split is a binary partition of the remaining number of samples. For example, the condition for the root node is \texttt{MTLD <= 70.824}, which is true for 9 samples and false for the other 15. In addition, \texttt{value} shows the weighted counts for both classes, with \texttt{class} being equal to the majority class at that split, and \texttt{gini} ranges from 0.0 (the samples all belong to one class) to 0.5 (the samples are evenly distributed, referred to as maximum impurity). 
-
-\begin{figure}[!h]
-  \centering
-        \includegraphics[width=1.0\textwidth]{decisiontree.png}
-        \caption{Decision Tree Classifier}
-        \label{fig:decisiontree}
-\end{figure}
-
-Therefore, this indicates the features MTLD, Average Sentence Length, and Average Word Length were the best for classification.
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{CM_decision_tree.png}
-    \caption{Confusion Matrix for Decision Tree Classifier}
-    \label{fig:cmdecisiontree}
-\end{figure}
-
-Based on the confusion matrix seen in Figure \ref{fig:cmdecisiontree}, the Decision Tree 
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{CM_random_forest.png}
-    \caption{Confusion Matrix for Random Forest Classifier}
-    \label{fig:cmrandomforest}
-\end{figure}
-
-% \begin{figure}[!h]
-%   \centering
-%     \includegraphics[width=0.5\textwidth]{RF_gini_importances.png}
-%     \caption{Gini Importances for Random Forest}
-%     \label{fig:rfginiimportances}
-% \end{figure}
-
-% \begin{figure}[!h]
-%   \centering
-%     \includegraphics[width=0.5\textwidth]{RF_permutation_importances.png}
-%     \caption{Permutation Importances for Random Forest}
-%     \label{fig:rfpermutationimportances}
-% \end{figure}
-
 \begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.0}
@@ -1352,54 +1337,37 @@ Based on the confusion matrix seen in Figure \ref{fig:cmdecisiontree}, the Decis
       Decision Tree & 0.83 & 0.83 & 0.83 \\ \hline
       Random Forest & 0.83 & 0.83 & 0.83 \\ \hline
   \end{tabular}
-  \caption{Precision, Recall, and F1-scores of Supervised Binary Classification Models}
+  \caption{Precision, Recall, and F1-scores of the Fine-tuned Supervised Binary Classification Models.}
   \label{tbl:supervisedevaluation}
 \end{table}
 
+As Table \ref{tbl:supervisedevaluation} shows, both classifiers achieved exactly the same precision, recall, and F\textsubscript{1}-scores.
+
+\begin{figure}[!h]
+  \centering
+        \includegraphics[width=1.0\textwidth]{decisiontree.png}
+        \caption{Decision Tree Classifier}
+        \label{fig:decisiontree}
+\end{figure}
+
+Figure \ref{fig:decisiontree} shows the resulting structure of the fine-tuned Decision Tree. To briefly explain how this is interpreted, for each node of the tree except the terminal ones, the top line is the condition for the subsequent split, and each split is a binary partition of the remaining number of samples. For example, the condition for the root node is \textit{MTLD} less than or equal to 70.824, which is true for 9 samples and false for the other 15. In addition, \textit{value} shows the weighted counts for both classes, with \textit{class} being equal to the majority class at that split, and \textit{gini} ranges from 0.0 (the samples all belong to one class) to 0.5 (the samples are evenly distributed, referred to as maximum impurity). Thus, the diagram indicates that the features MTLD, Average Sentence Length, and Average Word Length were the most discriminating features for this model's predictions. 
+
+\begin{figure}[!h]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{CM_decision_tree.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{CM_random_forest.png}
+  \end{minipage}
+    \caption{Confusion Matrix for the Fine-tuned Supervised Binary Classifiers: Decision Tree (left) and Random Forest (right).}
+    \label{fig:cmsupervised}
+\end{figure}
+
+In the resulting confusion matrices for the fine-tuned supervised binary classifiers seen in Figure \ref{fig:cmsupervised}, the classes for \textit{constructed} and \textit{natural} correspond to 0 and 1, respectively, with constructed languages being the positive class. Both models made the same number of True Positive, False Positive, False Negative, and True Negative predictions. For the Decision Tree (left), Esperanto was incorrectly predicted as negative and Dutch incorrectly as positive. Similarly, the Random Forest (right) erroneously predicted Esperanto as negative too, but with Tagalog incorrectly as positive. This means, then, that both models mistakenly classified Esperanto as a natural language. 
+
 \subsection{Results of Anomaly Detection}
 \label{ssec:anomalydetectionresults}
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{CM_ocsvm.png}
-    \caption{Confusion Matrix for One-Class SVM}
-    \label{fig:cmocsvm}
-\end{figure}
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{OCSVM_SHAP_values.png}
-    \caption{SHAP Values of One-Class SVM}
-    \label{fig:oneclasssvmshapvalues}
-\end{figure}
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{CM_if.png}
-    \caption{Confusion Matrix for Isolation Forest}
-    \label{fig:cmisolationforest}
-\end{figure}
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{IF_outliers.png}
-    \caption{Anomalies Detected by Isolation Forest}
-    \label{fig:isolationforestanomalies}
-\end{figure}
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{IF_SHAP_values.png}
-    \caption{SHAP Values of Isolation Forest}
-    \label{fig:isolationforestshapvalues}
-\end{figure}
-
-\begin{figure}[!h]
-  \centering
-    \includegraphics[width=0.5\textwidth]{CM_lof.png}
-    \caption{Confusion Matrix for Local Outlier Factor}
-    \label{fig:cmlof}
-\end{figure}
 
 \begin{table}[!h]
   \centering
@@ -1408,16 +1376,96 @@ Based on the confusion matrix seen in Figure \ref{fig:cmdecisiontree}, the Decis
   \hline
     \textbf{Model} & \textbf{F\textsubscript{1}-score} & \textbf{Precision} & \textbf{Recall} \\ \hline
       Isolation Forest & 0.67 & 0.67 & 0.67 \\ \hline
-      One-Class SVM & 0.8 & 1.0 & 0.67 \\ \hline
+      One-Class SVM & 0.73 & 0.80 & 0.67 \\ \hline
       Local Outlier Factor & 0.67 & 0.67 & 0.67 \\ \hline
   \end{tabular}
-  \caption{Precision, Recall, and F1-scores of Unsupervised Anomaly Detection Models}
+  \caption{Precision, Recall, and F\textsubscript{1}-scores of the Fine-tuned Unsupervised Anomaly Detection Models.}
   \label{tbl:unsupervisedevaluation}
 \end{table}
 
-\subsection{Results of Calculating Feature Importance}
+Table \ref{tbl:unsupervisedevaluation} shows the precision, recall, and F\textsubscript{1}-scores for the unsupervised anomaly detection models. The Isolation Forest and Local Outlier Factor achieved identical performance for precision, recall, and F\textsubscript{1}-scores, all of which were 0.67. On the other hand, despite also achieving the same score for recall, One-Class SVM performed slightly better in terms of precision and F\textsubscript{1}-score, with a score of 0.80 and 0.73, respectively.
+
+\begin{figure}[!h]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{CM_ocsvm.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{CM_if.png}
+  \end{minipage}\par
+  \vskip\floatsep
+  \includegraphics[width=0.5\textwidth]{CM_lof.png}
+  \caption{Confusion Matrices for the Fine-tuned Unsupervised Anomaly Detection Models: One-Class SVM (top left), Isolation Forest (top right), and Local Outlier Factor (bottom).}
+  \label{fig:cmunsupervised}
+\end{figure}
+
+The resulting confusion matrices for all three unsupervised models are provided in Figure \ref{fig:cmunsupervised}. Here again, constructed languages are the positive class being predicted, with 0 and 1 representing the constructed and natural language samples, respectively. 
+
+Overall, the unsupervised models performed comparable to one another, with all three correctly predicting 4 positive instances. Regarding their erroneous predictions, the One-Class SVM falsely considered Esperanto and Interlingua to be negative, or natural languages, and Vietnamese as positive, or a constructed language. Interestingly, both the Isolation Forest and Local Outlier Factor models made exactly the same errors, with the addition of incorrectly predicting Finnish to be a positive instance in both cases too.
+
+% \begin{figure}[!h]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{CM_if.png}
+%     \caption{Confusion Matrix for Isolation Forest}
+%     \label{fig:cmisolationforest}
+% \end{figure}
+
+% \begin{figure}[!h]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{IF_outliers.png}
+%     \caption{Anomalies Detected by Isolation Forest}
+%     \label{fig:isolationforestanomalies}
+% \end{figure}
+
+% \begin{figure}[!h]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{CM_lof.png}
+%     \caption{Confusion Matrix for Local Outlier Factor}
+%     \label{fig:cmlof}
+% \end{figure}
+
+\subsection{Results of SHAP Analysis}
 \label{ssec:featureimportancesresults}
 
+The results of the 
+
+\begin{figure}[!h]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{DT_SHAP_values.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{RF_SHAP_values.png}
+  \end{minipage}
+    \caption{SHAP Analysis of Fine-tuned Supervised Models: Decision Tree (left) Random Forest (right).}
+    \label{fig:supervisedshap}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{OCSVM_SHAP_values.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{IF_SHAP_values.png}
+  \end{minipage}
+    \caption{SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
+    \label{fig:unsupervisedshap}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{OCSVM_SHAP_granular.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{IF_SHAP_granular.png}
+  \end{minipage}
+    \caption{Granular SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
+    \label{fig:unsupervisedgranularshap}
+\end{figure}
+
+\clearpage
 \newpage
 \section{Discussion}
 \label{sec:discussion}
@@ -1469,7 +1517,12 @@ Last but not least, I want to sincerely thank my amazing girlfriend, Momoho, for
 
 Here I...
 
+\subsection{Corpora}
+\label{ssec:corporaapp}
+
 % Include number of symbols in the alphabet for each language? (Gomez 2014, Table 1)
+% Include number of types/tokens?
+
 \begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.5}
@@ -1506,6 +1559,9 @@ Here I...
 \caption{Lengths of each language's text after pre-processing.}
 \label{tbl:preprocessedtexts}
 \end{table}
+
+\subsection{Morfessor Methods \& Models}
+\label{ssec:morfessorapp}
 
 Morfessor
 

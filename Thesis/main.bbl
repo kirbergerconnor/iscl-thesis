@@ -53,6 +53,45 @@
       \verb https://api.semanticscholar.org/CorpusID:58553165
       \endverb
     \endentry
+    \entry{Agyemang2024article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff837f15af4af9ac85908db1e7080927}{%
+           family={Agyemang},
+           familyi={A\bibinitperiod},
+           given={Edmund\bibnamedelima Fosu},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ff837f15af4af9ac85908db1e7080927}
+      \strng{fullhash}{ff837f15af4af9ac85908db1e7080927}
+      \strng{bibnamehash}{ff837f15af4af9ac85908db1e7080927}
+      \strng{authorbibnamehash}{ff837f15af4af9ac85908db1e7080927}
+      \strng{authornamehash}{ff837f15af4af9ac85908db1e7080927}
+      \strng{authorfullhash}{ff837f15af4af9ac85908db1e7080927}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2468-2276}
+      \field{journaltitle}{Scientific African}
+      \field{title}{Anomaly detection using unsupervised machine learning algorithms: A simulation study}
+      \field{volume}{26}
+      \field{year}{2024}
+      \field{pages}{e02386}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.sciaf.2024.e02386
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2468227624003284
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2468227624003284
+      \endverb
+      \keyw{Anomaly detection,Unsupervised machine learning algorithms,One-class support vector machine,Isolation forest,Local outlier factor,Robust covariance}
+    \endentry
     \entry{Attardi2015wikiextractor}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=09d5a7d636bf73c855ed5ef9bbd835eb}{%
@@ -299,6 +338,48 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2212.13626
+      \endverb
+    \endentry
+    \entry{Braei2020article}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2c203cba0db705a473a63d3648ea3ffe}{%
+           family={Braei},
+           familyi={B\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c4a24a585a6ed7ee96e719533882798}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{fullhash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{bibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authorbibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authornamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authorfullhash}{1f4ee61163a6fcde15fa481e46d25740}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Anomaly Detection in Univariate Time-series: {A} Survey on the State-of-the-Art}
+      \field{volume}{abs/2004.00433}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2004.00433
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2004.00433
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2004.00433
       \endverb
     \endentry
     \entry{Breunig2000article}{inproceedings}{}
@@ -749,6 +830,55 @@
       \verb{doi}
       \verb 10.1007/978-981-99-1051-9_24
       \endverb
+    \endentry
+    \entry{Elmrabit2020article}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0fa20eb311cb6759acfa36122e0ed743}{%
+           family={Elmrabit},
+           familyi={E\bibinitperiod},
+           given={Nebrase},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12be2482c60058c005265922bc15f01e}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Feixiang},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=516058184fcbd3a2fbea68666968fc6a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Fengyin},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b92de1e9b25762b3582ca9f7eefd5832}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Huiyu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c3bb204785292357d13eb486dae3d1b}
+      \strng{fullhash}{c4cb0e5853f7a29fae4be893461defbb}
+      \strng{bibnamehash}{4c3bb204785292357d13eb486dae3d1b}
+      \strng{authorbibnamehash}{4c3bb204785292357d13eb486dae3d1b}
+      \strng{authornamehash}{4c3bb204785292357d13eb486dae3d1b}
+      \strng{authorfullhash}{c4cb0e5853f7a29fae4be893461defbb}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 International Conference on Cyber Security and Protection of Digital Services (Cyber Security)}
+      \field{title}{Evaluation of Machine Learning Algorithms for Anomaly Detection}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CyberSecurity49315.2020.9138871
+      \endverb
+      \keyw{Radio frequency;Integrated circuits;Training;Machine learning algorithms;Receivers;Time measurement;Smart grids;Cyber Security;intrusion detection;anomaly detection;machine learning;deep learning;smart grid}
     \endentry
     \entry{Fergadiotis2013article}{article}{}
       \name{author}{3}{}{%
@@ -1384,6 +1514,40 @@
       \verb 10.1109/ICDM.2008.17
       \endverb
     \endentry
+    \entry{Lundberg2017article}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b659ebc88023a12a732b4db9afdede3d}{%
+           family={Lundberg},
+           familyi={L\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee964079d93879aaef2382a5fff343d3}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Su-In},
+           giveni={S\bibinithyphendelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{fullhash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{bibnamehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{authorbibnamehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{authornamehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{authorfullhash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{A Unified Approach to Interpreting Model Predictions}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.48550/arXiv.1705.07874
+      \endverb
+    \endentry
     \entry{Mairal2006book}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ab2c5052a041e7843cb2e73ebbb058c8}{%
@@ -1417,6 +1581,51 @@
       \field{year}{2006}
       \verb{doi}
       \verb 10.1017/CBO9780511618215
+      \endverb
+    \endentry
+    \entry{Maya2019article}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6d71cf66014861b39eb2278c875688e4}{%
+           family={Maya},
+           familyi={M\bibinitperiod},
+           given={Shigeru},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a71046dc62b535a0ed00060da5b1867a}{%
+           family={Ueno},
+           familyi={U\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9400023e18eab2b7e3a19b395c89a8d1}{%
+           family={Nishikawa},
+           familyi={N\bibinitperiod},
+           given={Takeichiro},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5caacd1e4a96966353d99519a4de0cc4}
+      \strng{fullhash}{5caacd1e4a96966353d99519a4de0cc4}
+      \strng{bibnamehash}{5caacd1e4a96966353d99519a4de0cc4}
+      \strng{authorbibnamehash}{5caacd1e4a96966353d99519a4de0cc4}
+      \strng{authornamehash}{5caacd1e4a96966353d99519a4de0cc4}
+      \strng{authorfullhash}{5caacd1e4a96966353d99519a4de0cc4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Data Science and Analytics}
+      \field{title}{dLSTM: a new approach for anomaly detection using deep learning with delayed prediction}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 28}
+      \range{pages}{28}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:155093322
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:155093322
       \endverb
     \endentry
     \entry{McCarthy2010article}{article}{}
@@ -1502,6 +1711,47 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.25080/Majora-92bf1922-00a
+      \endverb
+    \endentry
+    \entry{Naser2024article}{misc}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=960405e33173605864b468db59aa7b0e}{%
+           family={Naser},
+           familyi={N\bibinitperiod},
+           given={MZ},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=6e54f3a8358ea3bb458ce0b7f4106d9c}{%
+           family={Naser},
+           familyi={N\bibinitperiod},
+           given={Ahmed\bibnamedelima Z},
+           giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{120ef65d8c5c3133825e07ff7c4bf909}
+      \strng{fullhash}{120ef65d8c5c3133825e07ff7c4bf909}
+      \strng{bibnamehash}{120ef65d8c5c3133825e07ff7c4bf909}
+      \strng{authorbibnamehash}{120ef65d8c5c3133825e07ff7c4bf909}
+      \strng{authornamehash}{120ef65d8c5c3133825e07ff7c4bf909}
+      \strng{authorfullhash}{120ef65d8c5c3133825e07ff7c4bf909}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{SPINEX: Similarity-based Predictions with Explainable Neighbors Exploration for Anomaly and Outlier Detection}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2407.04760
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2407.04760
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2407.04760
       \endverb
     \endentry
     \entry{Novikov2022article}{article}{}
@@ -2223,6 +2473,75 @@
       \field{pages}{379\bibrangedash 423}
       \range{pages}{45}
     \endentry
+    \entry{Smaha2015book}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bb887dedd1b4841e8092e63ba1f90e85}{%
+           family={Smaha},
+           familyi={S\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34ede4192dcababa339fd9e0e9c1df7d}{%
+           family={Fellbaum},
+           familyi={F\bibinitperiod},
+           given={Christiane},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=2d6c91557f3b168f0a6f4351a0c4e095}{%
+           family={Gala},
+           familyi={G\bibinitperiod},
+           given={Núria},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0cee2d66e1976a3680d36c13c8712113}{%
+           family={Rapp},
+           familyi={R\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b964270966be1bcadd047f22e69ce96a}{%
+           family={Bel-Enguix},
+           familyi={B\bibinithyphendelim E\bibinitperiod},
+           given={Gemma},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{687d64734793947f6a0e89777c220640}
+      \strng{fullhash}{687d64734793947f6a0e89777c220640}
+      \strng{bibnamehash}{687d64734793947f6a0e89777c220640}
+      \strng{authorbibnamehash}{687d64734793947f6a0e89777c220640}
+      \strng{authornamehash}{687d64734793947f6a0e89777c220640}
+      \strng{authorfullhash}{687d64734793947f6a0e89777c220640}
+      \strng{editorbibnamehash}{f33a64f69f38a25551c5c8e0abe47fb5}
+      \strng{editornamehash}{f33a64f69f38a25551c5c8e0abe47fb5}
+      \strng{editorfullhash}{f33a64f69f38a25551c5c8e0abe47fb5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Language Production, Cognition, and the Lexicon}
+      \field{isbn}{978-3-319-08043-7}
+      \field{title}{How Natural Are Artificial Languages?}
+      \field{year}{2015}
+      \field{pages}{299\bibrangedash 312}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/978-3-319-08043-7_17
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-319-08043-7_17
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-319-08043-7_17
+      \endverb
+    \endentry
     \entry{Smit2014inproceedings}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=6a64c182eb993f7fc096988a05df3765}{%
@@ -2485,7 +2804,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Gobbo2016}
 \endrefsection
 \endinput
 
