@@ -442,8 +442,8 @@ Interest in creating such languages picked up in the 17\textsuperscript{th} cent
 
 \begin{figure}
   \centering
-        \includegraphics[width=1.0\textwidth]{./Other/WilsonsLanguageExample.png}
-        \caption{Wilson's expression of "dog" in his philosophical language \parencite{goodall2022article}}
+        \includegraphics[width=\textwidth]{./Other/WilsonsLanguageExample.png}
+        \caption{Wilson's expression of "dog" in his philosophical language \parencite{goodall2022article}.}
         \label{fig:wilsonslanguageexample}
 \end{figure}
 
@@ -464,18 +464,18 @@ Lastly, there exist constructed languages that have been made for experimental, 
 
 While all share the defining characteristic of having been purposefully created, the linguistic features of constructed languages (e.g., phonetic, morphological, syntactical, lexical, orthographic) can vary immensely depending on factors such as their intended purpose for use or the other languages they draw from. An example of this was observed by \textcite{Gobbo2016article} in secret languages, specifically their tendency to have more complicated features, such as morphological irregularities, "in order to preserve their secrecy." Contrast to this are IALs, which have the opposite tendency for the sake of ease of communication and second-language acquisition, reflected in commonly assigned features such as SVO word orders, head-initial relative clauses, fronted \textit{wh-}phrases, and morphological regularity \parencite{goodall2022article,Gobbo2016article}. Section \ref{ssec:priorstudies} further examines research focused on linguistic features of these languages. 
 
+% Include chart "taxonomy of planned languages" from Gobbo 2016 (fig 2). IMPORTANT QUESTION!!!!!! IS IT OKAY TO BORROW DIRECTLY LIKE THIS AS LONG AS I CITE IT?
+
+\begin{figure}[!h]
+  \centering
+        \includegraphics[width=\textwidth]{./Other/TaxonomyOfPlannedLanguages.png}
+        \caption{A taxonomy of constructed languages \parencite{Gobbo2016article}.}
+        \label{fig:taxonomyplannedlanguages}
+\end{figure}
+
 In addition to this classification based on their intended communicative functions, i.e. as philosophical or international auxiliary languages, there are also taxonomies based on other criterion. For example, another frequently used distinction is that of \textit{a priori} and \textit{a posteriori} \parencite{Schreyer2021article,Gobbo2008article,Schubert1989inbook,Schubert2001book,Novikov2022article,Adelman2014article,Tonkin2015article}. Languages described as being \textit{a priori} are structurally entirely new \parencite{Tonkin2015article} and not based on existing languages, whereas so-called \textit{a posteriori} languages are the opposite, drawing from aspects of specific natural languages \parencite{Schreyer2021article}. \textcite{Gobbo2008article} also proposed the dichotomy of \textit{exoteric} (secret) and \textit{esoteric} (public) languages, derived from \textcite{Bausani1974book}. Similar to critiques regarding the distinction between constructed and natural, such dichotomies for categorizing constructed languages are also argued by some linguists to be more accurately described as scales instead, with many languages falling somewhere in the middle \parencite{Novikov2022article}. A final noteworthy classification scheme often cited by other linguists comes from \textcite{Blanke1989book} in the form of three classes: project, semi-planned, and planned. In short, these correspond to a set of steps that a constructed language must go through before it can be considered a "real" language \parencite{Schubert2001book}. 
 
 A two-dimensional taxonomy for constructed languages containing several notables examples is shown in Figure \ref{fig:taxonomyplannedlanguages} \parencite{Gobbo2016article}.
-
-% Include chart "taxonomy of planned languages" from Gobbo 2016 (fig 2). IMPORTANT QUESTION!!!!!! IS IT OKAY TO BORROW DIRECTLY LIKE THIS AS LONG AS I CITE IT?
-
-\begin{figure}
-  \centering
-        \includegraphics[width=1.0\textwidth]{./Other/TaxonomyOfPlannedLanguages.png}
-        \caption{A taxonomy of constructed languages \parencite{Gobbo2016article}}
-        \label{fig:taxonomyplannedlanguages}
-\end{figure}
 
 \subsection{Prior Studies}
 \label{ssec:priorstudies}
@@ -1193,9 +1193,9 @@ In order to further analyze the selected linguistic features, their importances 
 
 % Explain why not permutation importances, gini importances, or LIME
 
-There are several ways of measuring feature importances, with two of the most commonly used methods being impurity-based and permutation-based. However, for the purposes of this thesis, the SHapley Additive exPlanation (SHAP) framework, which is derived from cooperative game theory, was used instead. A key advantage of using SHAP over other approaches is that it contains a method which is model-agnostic, meaning it can be utilized to interpret any model and thus allow for more consistent and broader analysis. Specifically, the Kernel SHAP method was used for both of the supervised and two of the unsupervised models: Isolation Forest and One-Class SVM. In brief, Kernel SHAP is an extension of linear Local Interpretable Model-agnostic Explanations (LIME) and employs a weighted linear regression to estimate Shapley values, the computed output \parencite{Lundberg2017article}.
+There are several ways of measuring feature importances, with two of the most commonly used methods being impurity-based and permutation-based. However, for the purposes of this thesis, the SHapley Additive exPlanation (SHAP) framework, which is derived from cooperative game theory, was used instead. A key advantage of using SHAP over other approaches is that it contains a method which is model-agnostic, meaning it can be utilized to interpret any model. Specifically, the Kernel SHAP method was used for both of the supervised and two of the unsupervised models: Isolation Forest and One-Class SVM. In brief, Kernel SHAP is an adaption of linear Local Interpretable Model-agnostic Explanations (LIME) which employs a weighted linear regression to estimate SHAP values, the computed output \parencite{Lundberg2017article}. These SHAP values can then be used for global interpretation of feature importance for a model, as well as comparison across different models.
 
-In all instances, the entire dataset was used to make predictions and derive the corresponding Shapley values, which consequently meant Local Outlier Factor was not included here as it requires being used in a semi-supervised setting and detecting novelty anomalies in new, unseen data. 
+In all instances, the entire dataset was used to make predictions and derive the corresponding SHAP values, which consequently meant the local outlier factor model was not included here as it requires being used in a semi-supervised setting and detecting novelty anomalies in new data rather than unsupervised anomaly detection, which is beyond the scope of this thesis.
 
 \newpage
 \section{Results}
@@ -1333,10 +1333,10 @@ The result of applying the Kaiser criterion, shown in Figure \ref{fig:pckaiser},
       ~ & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
       \textbf{PC1} & 0.312 & -0.152 & \textbf{0.343} & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
       \textbf{PC2} & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & \textbf{0.561} & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
-      \textbf{PC3} & -0.232 & \textit{0.671} & -0.075 & 0.02 & -0.237 & -0.175 & 0.045 & -0.06 & -0.263 & 0.099 & 0.511 & -0.171 & -0.168 \\ \hline
+      \textbf{PC3} & -0.232 & \textbf{0.671} & -0.075 & 0.02 & -0.237 & -0.175 & 0.045 & -0.06 & -0.263 & 0.099 & 0.511 & -0.171 & -0.168 \\ \hline
   \end{tabular}
   \end{adjustbox}
-  \caption{Loadings for Top Three Principal Components}
+  \caption{Loadings for the top three principal components, with the most influential feature for each in bold.}
   \label{tbl:pcaloadings}
 \end{table}
 
@@ -1344,7 +1344,7 @@ To interpret the degree to which each of the features in the data contributed to
 
 \begin{figure}[!h]
   \centering
-    \caption{Principal Component Analysis of Features with 2 Principal Components.}
+    \caption{Principal component analysis of the features using 2 principal components.}
     \includegraphics[width=1.0\textwidth]{PCA_of_Features.png}
     \label{fig:pcaanalysis}\
 \end{figure}
@@ -1360,7 +1360,7 @@ Immediately noticeable in the diagram is the isolated position of Vietnamese at 
 
 \begin{table}[!h]
   \centering
-  \caption{Precision, Recall, and F1-scores of the Fine-tuned Supervised Binary Classification Models.}
+  \caption{Precision, recall, and F1-scores of the fine-tuned supervised binary classification models.}
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
@@ -1376,7 +1376,7 @@ As Table \ref{tbl:supervisedevaluation} shows, both classifiers achieved exactly
 \begin{figure}[!h]
   \centering
         \includegraphics[width=1.0\textwidth]{decisiontree.png}
-        \caption{Tree Structure Diagram for Decision Tree Classifier}
+        \caption{Tree structure diagram for decision tree classifier}
         \label{fig:decisiontree}
 \end{figure}
 
@@ -1390,7 +1390,7 @@ Figure \ref{fig:decisiontree} shows the resulting structure of the fine-tuned De
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{CM_random_forest.png}
   \end{minipage}
-    \caption{Confusion Matrix for the Fine-tuned Supervised Binary Classifiers: Decision Tree (left) and Random Forest (right).}
+    \caption{Confusion matrices for the fine-tuned supervised binary classifiers: decision tree (left) and random forest (right).}
     \label{fig:cmsupervised}
 \end{figure}
 
@@ -1401,7 +1401,7 @@ In the resulting confusion matrices for the fine-tuned supervised binary classif
 
 \begin{table}[!h]
   \centering
-  \caption{Precision, Recall, and F\textsubscript{1}-scores of the Fine-tuned Unsupervised Anomaly Detection Models.}
+  \caption{Precision, recall, and F\textsubscript{1}-scores of the fine-tuned unsupervised anomaly detection models.}
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
@@ -1425,7 +1425,7 @@ Table \ref{tbl:unsupervisedevaluation} shows the precision, recall, and F\textsu
   \end{minipage}\par
   \vskip\floatsep
   \includegraphics[width=0.5\textwidth]{CM_lof.png}
-  \caption{Confusion Matrices for the Fine-tuned Unsupervised Anomaly Detection Models: One-Class SVM (top left), Isolation Forest (top right), and Local Outlier Factor (bottom).}
+  \caption{Confusion matrices for the fine-tuned unsupervised anomaly detection models: one-class SVM (top left), isolation forest (top right), and local outlier factor (bottom).}
   \label{fig:cmunsupervised}
 \end{figure}
 
@@ -1454,10 +1454,12 @@ Overall, the unsupervised models performed comparable to one another, with all t
 %     \label{fig:cmlof}
 % \end{figure}
 
-\subsection{Results of SHAP Analysis}
-\label{ssec:featureimportancesresults}
+\subsection{Results of SHAP}
+\label{ssec:shapresults}
 
-Lastly, the results of the SHAP analysis for id
+% [DELETED] In some aspects, interpretation of the results of applying SHAP bears some resemblance to that of the PCA in Section \ref{ssec:pcaresults}; however, a key difference is 
+
+The results of the Kernel SHAP method are visualized in beeswarm plots, which are first explained how to read here. The features, ranked in descending order according to their importance, comprise the y-axis. The x-axis, centered on 0.0, corresponds to the impact that a particular point (observation) had on model prediction, represented in terms of magnitude and either positive or negative; therefore, the horizontal distribution of said points corresponds to the level of variation that exists for that feature's influence on the model (i.e., a wide horizontal spread of points means the feature's influence on model predictions is highly variable across observations, and a cluster denotes the opposite). Finally, the color coding spectrum represents the value of that observation, with the highest values denoted by red and the lowest ones denoted by blue.
 
 \begin{figure}[!h]
   \centering
@@ -1467,9 +1469,11 @@ Lastly, the results of the SHAP analysis for id
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{RF_SHAP_values.png}
   \end{minipage}
-    \caption{Beeswarm Plots for SHAP Analysis of Fine-tuned Supervised Models: Decision Tree (left) Random Forest (right).}
+    \caption{Beeswarm plots for SHAP results on fine-tuned supervised models: decision tree (left) and random forest (right).}
     \label{fig:supervisedshap}
 \end{figure}
+
+Figure \ref{fig:supervisedshap} shows the two beeswarm plots corresponding to the supervised classifiers. For the decision tree, only two features had any impact on the model's predictions: MTLD and average sentence length. Low values of the former correlated to a stronger positive impact, while high values of the latter correlated to a stronger negative impact. Notably, this also coincides with the findings shown by the tree structure diagram in Figure \ref{fig:decisiontree}. For the random forest, MTLD was again the most important, with lower values again correlating to having a stronger positive impact, followed by MATTR with the same correlation to a lesser extent. In contrast to the decision tree though, average word length was a less important feature here, and the random forest utilized a broader selection of features for its predictions overall.
 
 \begin{figure}[!h]
   \centering
@@ -1479,9 +1483,11 @@ Lastly, the results of the SHAP analysis for id
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{IF_SHAP_values.png}
   \end{minipage}
-    \caption{Beeswarm Plots for SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
+    \caption{Beeswarm plots for SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}
     \label{fig:unsupervisedshap}
 \end{figure}
+
+The beeswarm plots for the two analyzed unsupervised models are shown in Figure \ref{fig:unsupervisedshap}. Interestingly, MATTR was the most important feature for both models. 
 
 \begin{figure}[!h]
   \centering
@@ -1491,7 +1497,7 @@ Lastly, the results of the SHAP analysis for id
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{IF_SHAP_granular.png}
   \end{minipage}
-    \caption{Beeswarm Plots for Granular SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
+    \caption{Beeswarm plots for granular SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}
     \label{fig:unsupervisedgranularshap}
 \end{figure}
 
