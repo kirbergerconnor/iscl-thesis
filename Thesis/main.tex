@@ -948,11 +948,12 @@ A fraction (0.2) of the data was again set aside for use as the validation set. 
 
 % Explain specifically why standardization is needed for some methods and not others
 
-To identify the specific linguistic features which convey the most meaningful information in the data, PCA was performed. PCA is an unsupervised method for linear dimensionality reduction that transforms data from a high-dimensional space to a lower one while preserving as much variance or essential information in the data as possible \parencite{Deng2024article}. 
+PCA was performed in order to identify the specific linguistic features which convey the most meaningful information in the data. PCA is an unsupervised method for linear dimensionality reduction that transforms data from a high-dimensional space to a lower one while preserving as much variance or essential information in the data as possible \parencite{Deng2024article}. 
 
+% [DELETED] two principal components were used for the dimensionality reduction. Technically, maximizing the number of informative features---according to calculations of explained variance---to preserve in this data would actually lead to using more, likely three (depending on the threshold). 
 % Come back to this
 
-Two principal components were used. Technically, maximizing the number of informative features---according to calculations of explained variance---to preserve in this data would actually lead to using more, likely three (depending on the threshold). However, reduction to only two dimensions instead allows for easier visual interpretation, especially in the context of identifying possible outliers.
+There are different techniques for determining the optimal number of components to retain. Here, a common one called the Kaiser criterion was applied, which drops components with eigenvalues less than 1. Additionally, in the interest of easy visual interpretation to identify possible outliers in the data, reduction to two dimensions (two principal components) was also applied. 
 
 Before conducting the PCA, standardization (also called Z-score normalization) was performed on the data first, given by the formula:
 
@@ -979,7 +980,7 @@ After computing the complete set of features, two models were trained for superv
 
 Fine-tuning to find optimal parameters was done using the grid search method, which constructs estimators to exhaust all possible combinations of a specified set of values and evaluates each of these estimators to find the best performing one. Leave-one-out cross-validation was used in order to prevent overfitting on the small and imbalanced dataset. This approach trains a model on all the data except for one (left out) sample, which is used as the testing set to make a prediction, and repeats this process for all samples. 
 
-Additionally, to prevent bias towards the majority class, the balanced class weights were used for both models; this adjusts the misclassification cost for each class with weights that are inversely proportionate to their frequency in the data \parencite{Han2021article}. 
+Additionally, to prevent bias towards the majority class, balanced class weights were used for both models; this adjusts the misclassification cost for each class with weights that are inversely proportionate to their frequency in the data \parencite{Han2021article}. 
 
 \subsubsection{Decision Tree}
 \label{ssec:decisiontree}
@@ -1051,16 +1052,16 @@ In addition to the same Decision Tree parameters is \texttt{n\_estimators}, the 
 \subsection{Anomaly Detection}
 \label{ssec:anomalydetection}
 
-The engineered feature set was also used for unsupervised anomaly detection (also called outlier detection), a task for identifying outliers (and inliers, by extension) in a given dataset. This means the models train and predict on the same data to determine possible outliers, and it differs slightly from the task of novelty detection, which detects outliers in new, previously unseen data. 
+The engineered feature set was also used for unsupervised anomaly detection (also called outlier detection), a task for identifying outliers (and inliers, by extension) in a given dataset. This means the models train and predict on the same data to determine possible outliers; although similar, it differs slightly from the task of novelty detection, which detects outliers in new, previously unseen data. 
 
-For these methods, fine-tuning was again performed using a grid search approach. A notable difference with these models from the previously discussed supervised classifiers in Section \ref{ssec:classification}, however, is the lack of use of weighted classes to balance the dataset, since anomaly detection inherently assumes an imbalanced distribution of classes. 
+For these methods, fine-tuning was again performed using a grid search approach. A notable difference with these models from the previously discussed supervised classifiers in Section \ref{ssec:classification}, however, is the lack of use of weighted classes to balance the dataset, since anomaly detection inherently assumes an imbalanced distribution of classes. Leave-one-out cross-validation was also not performed, since a testing set was not used.
 
 \subsubsection{Isolation Forest}
 \label{ssec:isolationforest}
 
 Isolation Forest is similar to Random Forest, but with a few key differences that specialize it for the domain of anomaly detection instead. Proposed by \textcite{Liu2009inproceedings}, it is also an ensemble algorithm which constructs trees, here called "isolation trees", through iterative branching and partitioning the data with randomly selected features and random split values until the data points are isolated \parencite{Xu2023article}. Unique to this model, though, is the use of anomaly scores, which are calculated based on the average path length (i.e., from the root node until the isolated point) of all the isolation trees \parencite{Rosenhahn2024article}. It is shown to perform well with high-dimensional data \parencite{Naser2024article} and thus is included here. 
 
-Much like the classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so has no effect. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned along with the optimal values found for each. All others were left as their default values.
+Just like the classification with Random Forest, feature scaling is not required for Isolation Forest, and doing so has no effect. Table \ref{tbl:isolationforestparams} shows the hyperparameters that were fine-tuned along with the optimal values found for each. All others were left as their default values.
 
 \begin{table}[!h] 
   \centering\small
@@ -1160,6 +1161,8 @@ The other parameters worth mentioning here, as they are specific to this kind of
 \subsection{Model Evaluation}
 \label{ssec:modelevaluation}
 
+% Why did you choose these metrics over others?
+
 To evaluate all five models, precision, recall, and F1-score was calculated, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection \parencite{Agyemang2024article,Braei2020article,Maya2019article,Elmrabit2020article,Oktafiani2024article}, making them a reasonable choice. For anomaly detection, these measure the models' ability to correctly predict the target class, here being the constructed languages.
 
 \begin{equation}
@@ -1198,9 +1201,9 @@ In all instances, the entire dataset was used to make predictions and derive the
 \section{Results}
 \label{sec:results}
 
-This section starts by reporting the results of the methods implemented for, and the measurements derived from, the applied step of feature engineering. Each individual feature is also visualized in the format of a one-dimensional graph containing the distribution of languages and their corresponding values for said feature, in order to better interpret the empirical data, as well as to identify potential trends. 
+This section starts by reporting the results of the methods implemented for, and the measurements derived from, the applied step of feature engineering. Each individual feature is also visualized in the format of a one-dimensional graph containing the distribution of languages and their corresponding values for said feature, in order to better interpret the empirical data, as well as to identify potential trends. Initial, surface-level interpretation of these distributions will be addressed here, with deeper discussion and analysis continued in Chapter \ref{sec:discussion} that delves into possible explanations for the various observations.
 
-Following this are the results of dimensionality reduction on the data using PCA. Then, the results of each of the fine-tuned models used for supervised classification and unsupervised anomaly detection are shown and compared. Lastly, the findings of the SHAP analysis for each model (except for Local Outlier Factor) is reported, providing a better explanation of the models and examining global feature importances, as determined by them.
+Following this are the results of dimensionality reduction on the data using PCA, visualized in two-dimensional space. Then, the results of each of the fine-tuned models used for supervised classification and unsupervised anomaly detection are shown and compared. Lastly, the findings of the SHAP analysis for each model (except for Local Outlier Factor) are reported, providing a better explanation of the models and examining global feature importances, as determined by them.
 
 \subsection{Results of Feature Engineering}
 \label{ssec:featureengineeringresults}
@@ -1213,7 +1216,7 @@ Following this are the results of dimensionality reduction on the data using PCA
   \begin{adjustbox}{width=\textwidth}
   \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
     \hline
-        \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Average Word Length}} & \rotatebox{90}{\textbf{Average Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Average Segmentations Per Word}} & \rotatebox{90}{\textbf{Average Forms Per Stem}} & \rotatebox{90}{\textbf{Character Distribution Entropy}} & \rotatebox{90}{\textbf{Word Distribution Entropy}} & \rotatebox{90}{\textbf{Text Entropy}} & \rotatebox{90}{\textbf{Lexical Entropy}} & \rotatebox{90}{\textbf{Reverse Lexical Entropy}} \\ \hline
+        \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
         \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 67.482 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
         \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 74.165 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
         \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 115.342 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
@@ -1240,18 +1243,24 @@ Following this are the results of dimensionality reduction on the data using PCA
         \textbf{Kotava} & con & 5.06 & 12.824 & 8.153 & 0.582 & 61.499 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline
     \end{tabular}
   \end{adjustbox}
-  \caption{Complete set of all 13 features for every language in the data, as well as each language's label (\textit{Type}), which represent either 'constructed' or 'natural'. Each feature's value is rounded to 3 decimal places.}
+  \caption{Complete set of all 13 features for every language in the data, as well as each language's label (\textit{Type}), which denote constructed or natural language as \textit{con} or \textit{nat}, respectively. Each feature's value is rounded to 3 decimal places.}
   \label{tbl:featurestable}
 \end{table}
 
-Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively).
+Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively). The corresponding one-dimensional plots for the features can be seen in Figure \ref{fig:1dfeatures}, with the type of language distinguishable by marker and color.
 
-To visualize these features individually, 
+Looking at the two features measuring text complexity first, average word length and average sentence length, one can see clustering left of the center in the former and, in comparison, a slightly more uniform distribution in the latter. Regarding average word length, Vietnamese and Finnish being at opposite extremities of shortest and longest lengths, respectively, aligns with expectations given their morphological systems. This pattern of both languages being at either end of the distribution appears again for average sentence length, and in fact is noticeable in many of the feature distributions. Notably, all six constructed languages in the dataset appear on the left side of both distributions, left of the median values, and Volapük has the shortest average sentence length of all languages.
+
+The three measures for lexical complexity, TTR, MATTR, and MTLD, again show Finnish to be an extreme instance, with the highest values for all three. Likewise, all of the constructed languages again appear on the left side of the distributions; interestingly, of these, Esperanto is closest to center for both TTR and MATTR. MATTR in particular also shows an almost complete divide between constructed and natural languages in the distribution, with the exception of Tagalog and Esperanto. Additionally, the distribution for MTLD reveals a cluster on the furthermost left side, with all six constructed languages having extremely low values and Polish, Turkish, and Finnish appearing as on the opposite end with significantly higher values. 
+
+Similar clustering behavior can be observed in the distributions for the three measures of morphological complexity, particularly the first two which are imbalanced. In all, however, Vietnamese again appears as an extreme case, and this is especially apparent in the distributions for morpheme TTR and average segmentations per word, where it is significantly isolated from the rest---likely a reflection of its isolating morphology. When comparing these to the distributions for the lexical and text complexity features, constructed and natural languages appear to overlap more, suggesting that morphology complexity may not be as much of a discriminative linguistic feature between the two.
+
+In the last group of features, corresponding to the five measurements of entropy, interesting patterns of clustering and imbalanced distributions again emerge in the findings. For character distribution entropy, the constructed languages are again grouped together on the left side. Perhaps unsurprisingly, given the exceedingly large size of its alphabet (i.e., the 93 lowercase characters that comprise its corpora), Vietnamese is the highest value. Interestingly, though, this is followed next by Polish, despite having an alphabet size that is lower than several other languages in the study. On the other end of the spectrum is Tagalog with the lowest character distribution entropy, followed closely by Lingua Franca Nova. In contrast to this feature distribution, the measurements for word distribution entropy and text entropy both produced rather different results; rather than having a cluster on the left side, one appears in the center and right side, respectively. In both cases, Volapük and Ido have the lowest values, and---in the latter case---they are significantly lower than those of the other languages. As entropy is essentially a measure of predictability, this may be surmised as reflecting Volapük's intentional design of high regularity, especially with regards to morphology. The same can be said of Ido, though this along with comparison to the findings of the other constructed languages will be explored further in Chapter \ref{sec:discussion}. Last are the measures for lexical and reverse lexical entropy, which have very similar distributions. Vietnamese again emerged at one end of the spectrum with the highest entropy value, while agglutinative languages such as Finnish and Turkish appear at the opposite end with the lowest. Perhaps the most interesting finding here, however, is the cluster of constructed languages near the center of both distributions---with the notable absence of Interlingua and Esperanto, who instead appear in the midst of the natural languages on the left side in both cases.
 
 % \newpage
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=\textwidth]{1d_Avg_Word_Length.png}
+  \includegraphics[width=\textwidth]{1d_Avg_Word_Length.png} 
   % \caption{Avg Word Length}
   \includegraphics[width=\textwidth]{1d_Avg_Sentence_Length.png}
   % \caption{Avg Sentence Length}
@@ -1271,7 +1280,7 @@ To visualize these features individually,
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=\textwidth]{1d_Avg_Forms_Per_Stem.png}
+  \includegraphics[width=\textwidth]{1d_Avg_Forms_Per_Stem.png} 
   % \caption{Avg Forms Per Stem}
   \includegraphics[width=\textwidth]{1d_Char_Dist_Entr.png}
   % \caption{Char Dist Entr}
@@ -1283,7 +1292,7 @@ To visualize these features individually,
   % \caption{Lex Entr}
   \includegraphics[width=\textwidth]{1d_Rev_Lex_Entr.png}
   % \caption{Rev Lex Entr}
-  \caption{1-Dimensional Plots for Feature Distributions}
+  \caption{One-Dimensional Plots for Feature Distributions}
   \label{fig:1dfeatures}
 \end{figure}
 
@@ -1296,19 +1305,24 @@ To visualize these features individually,
 % \subsubsection{Results of Morphological Segmentation}
 % \label{ssec:morphologicalsegmentationresults}
 
-\subsection{Results of Dimensionality Reduction}
-\label{ssec:dimensionalityreductionresults}
+\subsection{Results of PCA}
+\label{ssec:pcaresults}
 
-Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction performed on the data using PCA.\footnote{A script was used to increase the readability of the annotations in the graph: https://github.com/Phlya/adjustText} The top two principal components are TTR and Character Distribution Entropy, which contribute to 62\% and 17\% of the variance, respectively. Combined, this only accounts for 79\% of the total variance.
+% PC1: TTR
+% PC2: character distribution entropy
+% PC3: average sentence length
+
+% [DELETED] As a simplified explanation, this can be understood to mean that a language which has a high TTR and low reverse lexical entropy would have a high PC1 score. Looking at Figure \ref{fig:pcaanalysis} again, 
+% [DELETED] Each principal component is therefore derived from a weighted combination of the features, with the loadings denoting the weights.
 
 \begin{figure}[!h]
   \centering
-        \includegraphics[width=1.0\textwidth]{PCA_of_Features.png}
-        \caption{Principal Component Analysis on the feature set.}
-        \label{fig:pcaanalysis}\
+  \caption{PCA Variance Screeplot - Kaiser Criterion}
+  \includegraphics[width=\textwidth]{PCA_Variance_Screeplot_kaiser.png}
+  \label{fig:pckaiser}
 \end{figure}
 
-% Include graph of explained variance following https://www.jcchouinard.com/pca-explained-variance/
+The result of applying the Kaiser criterion, shown in Figure \ref{fig:pckaiser}, identified three principal components which have eigenvalues greater than 1 and thus capture the most significant portion of the variance, which correspond to contributing to 61.6\%, 17.5\%, and 9.9\% of the total variance.
 
 \begin{table}[!h]
   \centering
@@ -1316,37 +1330,53 @@ Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction p
   \begin{adjustbox}{width=\textwidth}
   \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
   \hline
-      ~ & \rotatebox{90}{\textbf{Average Word Length}} & \rotatebox{90}{\textbf{Average Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Average Segmentations Per Word}} & \rotatebox{90}{\textbf{Average Forms Per Stem}} & \rotatebox{90}{\textbf{Character Distribution Entropy}} & \rotatebox{90}{\textbf{Word Distribution Entropy}} & \rotatebox{90}{\textbf{Text Entropy}} & \rotatebox{90}{\textbf{Lexical Entropy}} & \rotatebox{90}{\textbf{Reverse Lexical Entropy}} \\ \hline
-      \textbf{PC1} & 0.312 & -0.152 & 0.343 & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
-      \textbf{PC2} & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & 0.561 & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
+      ~ & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
+      \textbf{PC1} & 0.312 & -0.152 & \textbf{0.343} & 0.271 & 0.284 & -0.25 & 0.318 & 0.328 & 0.042 & 0.323 & 0.19 & -0.305 & -0.319 \\ \hline
+      \textbf{PC2} & -0.048 & 0.243 & 0.062 & 0.364 & 0.239 & 0.365 & -0.154 & 0.017 & \textbf{0.561} & 0.214 & 0.318 & 0.283 & 0.214 \\ \hline
+      \textbf{PC3} & -0.232 & \textit{0.671} & -0.075 & 0.02 & -0.237 & -0.175 & 0.045 & -0.06 & -0.263 & 0.099 & 0.511 & -0.171 & -0.168 \\ \hline
   \end{tabular}
   \end{adjustbox}
-  \caption{Loadings for Each Principal Component}
+  \caption{Loadings for Top Three Principal Components}
   \label{tbl:pcaloadings}
 \end{table}
 
-\subsection{Results of Classification}
+To interpret the degree to which each of the features in the data contributed to the formation of these dimensionally-reduced principal components, and therefore also determine the features that were the most influential (denoted in bold), the loadings are provided in Table \ref{tbl:pcaloadings}. Each loading indicates the magnitude of contribution to a feature, with positive or negative signs denoting the direction of influence (i.e., a positive loading means a positive correlation to the principal component, and vice versa). Thus, for example, the first principal component \textit{PC1} was most positively influenced by TTR and most negatively influenced by reverse lexical entropy, which have loadings of 0.343 and -0.319, respectively, and the next two overall most influential features following TTR were average forms per stem (0.328) and word distribution entropy (0.323). Similarly, for \textit{PC2}, the top contributing features were character distribution entropy (0.561), followed by morpheme TTR (0.365) and MATTR (0.364); for \textit{PC3}, these were average sentence length (0.671), text entropy (0.511), then character distribution entropy (-0.263).
+
+\begin{figure}[!h]
+  \centering
+    \caption{Principal Component Analysis of Features with 2 Principal Components.}
+    \includegraphics[width=1.0\textwidth]{PCA_of_Features.png}
+    \label{fig:pcaanalysis}\
+\end{figure}
+
+Figure \ref{fig:pcaanalysis} shows the results of the dimensionality reduction performed on the data using PCA.\footnote{A script was used to increase the readability of the annotations in the graph: https://github.com/Phlya/adjustText} Note that since this is a two-dimensional diagram, it depicts only the top two principal components. The values along both axes denote the principal component scores. Additionally, the top influential feature for each, TTR and character distribution entropy, are also included in the axis labels for easier interpretation. 
+
+Immediately noticeable in the diagram is the isolated position of Vietnamese at the top left, having the highest \textit{PC2} score and lowest \textit{PC1} score. Another interesting observation can be seen in the tight cluster of languages at the bottom center, to the left of which Volapük, Ido, and Lingua Franca Nova appear relatively close together. Another small cluster comprised of Polish, Hungarian, and Turkish is visible right of center, with Finnish appearing farthest on the right side. Overall, these findings---combined with the loadings shown in Table \ref{tbl:pcaloadings}---reiterate the previously discussed results in Section \ref{ssec:featureengineeringresults}.
+
+% Include graph of explained variance following https://www.jcchouinard.com/pca-explained-variance/
+
+\subsection{Results of Supervised Classification}
 \label{ssec:classificationresults}
 
 \begin{table}[!h]
   \centering
+  \caption{Precision, Recall, and F1-scores of the Fine-tuned Supervised Binary Classification Models.}
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
       \textbf{Model} & \textbf{F\textsubscript{1}-score} & \textbf{Precision} & \textbf{Recall} \\ \hline
-      Decision Tree & 0.83 & 0.83 & 0.83 \\ \hline
+      Decision Tree & 0.83 & 0.83 & 0.83 \\ 
       Random Forest & 0.83 & 0.83 & 0.83 \\ \hline
   \end{tabular}
-  \caption{Precision, Recall, and F1-scores of the Fine-tuned Supervised Binary Classification Models.}
   \label{tbl:supervisedevaluation}
 \end{table}
 
-As Table \ref{tbl:supervisedevaluation} shows, both classifiers achieved exactly the same precision, recall, and F\textsubscript{1}-scores.
+As Table \ref{tbl:supervisedevaluation} shows, both classifiers achieved exactly the same precision, recall, and F\textsubscript{1}-scores. This comes as a bit of a surprise, since Random Forest is a comparatively more advanced model, but several possible underlying reasons for this will be discussed in greater detail in Chapter \ref{sec:discussion}.
 
 \begin{figure}[!h]
   \centering
         \includegraphics[width=1.0\textwidth]{decisiontree.png}
-        \caption{Decision Tree Classifier}
+        \caption{Tree Structure Diagram for Decision Tree Classifier}
         \label{fig:decisiontree}
 \end{figure}
 
@@ -1366,20 +1396,20 @@ Figure \ref{fig:decisiontree} shows the resulting structure of the fine-tuned De
 
 In the resulting confusion matrices for the fine-tuned supervised binary classifiers seen in Figure \ref{fig:cmsupervised}, the classes for \textit{constructed} and \textit{natural} correspond to 0 and 1, respectively, with constructed languages being the positive class. Both models made the same number of True Positive, False Positive, False Negative, and True Negative predictions. For the Decision Tree (left), Esperanto was incorrectly predicted as negative and Dutch incorrectly as positive. Similarly, the Random Forest (right) erroneously predicted Esperanto as negative too, but with Tagalog incorrectly as positive. This means, then, that both models mistakenly classified Esperanto as a natural language. 
 
-\subsection{Results of Anomaly Detection}
+\subsection{Results of Unsupervised Anomaly Detection}
 \label{ssec:anomalydetectionresults}
 
 \begin{table}[!h]
   \centering
+  \caption{Precision, Recall, and F\textsubscript{1}-scores of the Fine-tuned Unsupervised Anomaly Detection Models.}
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
     \textbf{Model} & \textbf{F\textsubscript{1}-score} & \textbf{Precision} & \textbf{Recall} \\ \hline
-      Isolation Forest & 0.67 & 0.67 & 0.67 \\ \hline
-      One-Class SVM & 0.73 & 0.80 & 0.67 \\ \hline
+      Isolation Forest & 0.67 & 0.67 & 0.67 \\ 
+      One-Class SVM & 0.73 & 0.80 & 0.67 \\
       Local Outlier Factor & 0.67 & 0.67 & 0.67 \\ \hline
   \end{tabular}
-  \caption{Precision, Recall, and F\textsubscript{1}-scores of the Fine-tuned Unsupervised Anomaly Detection Models.}
   \label{tbl:unsupervisedevaluation}
 \end{table}
 
@@ -1427,7 +1457,7 @@ Overall, the unsupervised models performed comparable to one another, with all t
 \subsection{Results of SHAP Analysis}
 \label{ssec:featureimportancesresults}
 
-The results of the 
+Lastly, the results of the SHAP analysis for id
 
 \begin{figure}[!h]
   \centering
@@ -1437,7 +1467,7 @@ The results of the
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{RF_SHAP_values.png}
   \end{minipage}
-    \caption{SHAP Analysis of Fine-tuned Supervised Models: Decision Tree (left) Random Forest (right).}
+    \caption{Beeswarm Plots for SHAP Analysis of Fine-tuned Supervised Models: Decision Tree (left) Random Forest (right).}
     \label{fig:supervisedshap}
 \end{figure}
 
@@ -1449,7 +1479,7 @@ The results of the
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{IF_SHAP_values.png}
   \end{minipage}
-    \caption{SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
+    \caption{Beeswarm Plots for SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
     \label{fig:unsupervisedshap}
 \end{figure}
 
@@ -1461,7 +1491,7 @@ The results of the
   \begin{minipage}{0.5\textwidth}
     \includegraphics[width=\textwidth]{IF_SHAP_granular.png}
   \end{minipage}
-    \caption{Granular SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
+    \caption{Beeswarm Plots for Granular SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}
     \label{fig:unsupervisedgranularshap}
 \end{figure}
 
@@ -1479,6 +1509,8 @@ The results of the
 % Lack of validation for pytorch RNN (text entropy)
 
 In this section, I further analyze the findings along with their possible implications, as well as discuss how they relate to the motivations and overall goal of this investigation. Furthermore, I make note of some shortcomings in my approaches, and how those may have impacted the results.
+
+Ido was designed to be highly regular in terms of grammar, orthography, and lexicography, "correcting" perceived flaws of Esperanto \parencite{Novikov2022article}.
 
 \newpage
 \section{Conclusion}
@@ -1526,37 +1558,37 @@ Here I...
 \begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.5}
-  \begin{tabular} {|p{3cm}|p{3cm}|p{3.5cm}|}
+  \begin{tabular} {|p{3cm}|p{3cm}|p{3.5cm}|p{3.0cm}|}
   \hline
-  \textbf{Language} & \textbf{Number of Words} & \textbf{Number of sentences} \\
+  \textbf{Language} & \textbf{Number of Words} & \textbf{Number of sentences} & \textbf{Alphabet Size} \\
   \hline
-  Icelandic & 629995 & 41847 \\
-  German & 629987 & 37261 \\
-  Polish & 629997 & 42138 \\
-  Ido & 629990 & 43496 \\
-  Afrikaans & 629994 & 30737 \\
-  Kotava & 617400 & 48145 \\
-  Hungarian & 629946 & 39916 \\
-  Lingua Franca Nova & 628683 & 32188 \\
-  Danish & 629999 & 38260 \\
-  Spanish & 629978 & 24886 \\
-  Interlingua & 629996 & 32229 \\
-  French & 629983 & 27248 \\
-  Occitan & 629998 & 33762 \\
-  Esperanto & 629994 & 33317 \\
-  Dutch & 629997 & 34627 \\
-  Turkish & 629995 & 43573 \\
-  English & 629958 & 29574 \\
-  Tagalog & 629989 & 29855 \\
-  Swedish & 629998 & 36370 \\
-  Vietnamese & 629958 & 21115 \\
-  Italian & 629987 & 24487 \\
-  Volapük & 629999 & 55920 \\
-  Indonesian & 629997 & 34683 \\
-  Finnish & 629994 & 52637 \\
+  Icelandic & 629995 & 41847 & 32 \\
+  German & 629987 & 37261 & 30 \\
+  Polish & 629997 & 42138 & 35 \\
+  Ido & 629990 & 43496 & 26 \\
+  Afrikaans & 629994 & 30737 & 43 \\
+  Kotava & 617400 & 48145 & 29 \\
+  Hungarian & 629946 & 39916 & 54 \\
+  Lingua Franca Nova & 628683 & 32188 & 26 \\
+  Danish & 629999 & 38260 & 29 \\
+  Spanish & 629978 & 24886 & 27 \\
+  Interlingua & 629996 & 32229 & 26 \\
+  French & 629983 & 27248 & 41 \\
+  Occitan & 629998 & 33762 & 37 \\
+  Esperanto & 629994 & 33317 & 28 \\
+  Dutch & 629997 & 34627 & 26 \\
+  Turkish & 629995 & 43573 & 29 \\
+  English & 629958 & 29574 & 26 \\
+  Tagalog & 629989 & 29855 & 27 \\
+  Swedish & 629998 & 36370 & 29 \\
+  Vietnamese & 629958 & 21115 & 93 \\
+  Italian & 629987 & 24487 & 26 \\
+  Volapük & 629999 & 55920 & 27 \\
+  Indonesian & 629997 & 34683 & 26 \\
+  Finnish & 629994 & 52637 & 31 \\
   \hline
   \end{tabular}
-\caption{Lengths of each language's text after pre-processing.}
+\caption{Lengths of each language's text after pre-processing, by number of words and sentences. The size of each language's alphabet is also shown, corresponding to only lowercase characters and excluding periods, which were also kept in the corpora.}
 \label{tbl:preprocessedtexts}
 \end{table}
 
@@ -1595,7 +1627,7 @@ Morfessor
   \hline
   freqthreshold & 1 \\
   init\_rand\_split & None \\
-  count\_modifier & $\lfloor\log_2(x + 1)\rceil$ \\
+  count\_modifier & $\lfloor\log_2(x + 1)\rfloor$ \\
   \hline
   \end{tabular}
   \caption{Parameters for Morfessor's Load Data Function.}
@@ -1620,6 +1652,7 @@ Morfessor
   \caption{Parameters for Morfessor's Train Batch Function.}
   \label{tbl:morfessortrainbatchparams}
 \end{table}
+
 
 % Include tables of all the hyperparameters of the two RNNs and two classifier models
 

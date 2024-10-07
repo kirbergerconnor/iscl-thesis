@@ -1,0 +1,4 @@
+,Avg Word Length,Avg Sentence Length,TTR,MATTR,MTLD,Morpheme TTR,Avg Segs Per Word,Avg Forms Per Stem,Char Dist Entr,Word Dist Entr,Text Entr,Lex Entr,Rev Lex Entr
+PC1,0.312,-0.152,0.343,0.271,0.284,-0.25,0.318,0.328,0.042,0.323,0.19,-0.305,-0.319
+PC2,-0.048,0.243,0.062,0.364,0.239,0.365,-0.154,0.017,0.561,0.214,0.318,0.283,0.214
+PC3,-0.232,0.671,-0.075,0.02,-0.237,-0.175,0.045,-0.06,-0.263,0.099,0.511,-0.171,-0.168

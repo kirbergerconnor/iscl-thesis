@@ -28,19 +28,19 @@
 \contentsline {subsection}{\numberline {3.6}Anomaly Detection}{23}{}%
 \contentsline {subsubsection}{\numberline {3.6.1}Isolation Forest}{23}{}%
 \contentsline {subsubsection}{\numberline {3.6.2}One-Class SVM}{24}{}%
-\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{24}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}Local Outlier Factor}{25}{}%
 \contentsline {subsection}{\numberline {3.7}Model Evaluation}{25}{}%
 \contentsline {subsection}{\numberline {3.8}Feature Importance with SHAP}{26}{}%
 \contentsline {section}{\numberline {4}Results}{28}{}%
 \contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{28}{}%
-\contentsline {subsection}{\numberline {4.2}Results of Dimensionality Reduction}{32}{}%
-\contentsline {subsection}{\numberline {4.3}Results of Classification}{32}{}%
-\contentsline {subsection}{\numberline {4.4}Results of Anomaly Detection}{34}{}%
-\contentsline {subsection}{\numberline {4.5}Results of SHAP Analysis}{35}{}%
-\contentsline {section}{\numberline {5}Discussion}{37}{}%
-\contentsline {section}{\numberline {6}Conclusion}{38}{}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{38}{}%
-\contentsline {section}{\numberline {7}Acknowledgments}{39}{}%
-\contentsline {section}{\numberline {8}Appendices}{46}{}%
-\contentsline {subsection}{\numberline {8.1}Corpora}{46}{}%
-\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{46}{}%
+\contentsline {subsection}{\numberline {4.2}Results of PCA}{33}{}%
+\contentsline {subsection}{\numberline {4.3}Results of Supervised Classification}{35}{}%
+\contentsline {subsection}{\numberline {4.4}Results of Unsupervised Anomaly Detection}{36}{}%
+\contentsline {subsection}{\numberline {4.5}Results of SHAP Analysis}{38}{}%
+\contentsline {section}{\numberline {5}Discussion}{40}{}%
+\contentsline {section}{\numberline {6}Conclusion}{41}{}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{41}{}%
+\contentsline {section}{\numberline {7}Acknowledgments}{42}{}%
+\contentsline {section}{\numberline {8}Appendices}{49}{}%
+\contentsline {subsection}{\numberline {8.1}Corpora}{49}{}%
+\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{49}{}%

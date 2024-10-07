@@ -1,11 +1,12 @@
 \babel@toc {english}{}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Wilson's expression of "dog" in his philosophical language \blx@tocontentsinit {0}\parencite {goodall2022article}}}{4}{}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces A taxonomy of constructed languages \blx@tocontentsinit {0}\parencite {Gobbo2016article}}}{6}{}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 1-Dimensional Plots for Feature Distributions}}{31}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Principal Component Analysis on the feature set.}}{32}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Decision Tree Classifier}}{33}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix for the Fine-tuned Supervised Binary Classifiers: Decision Tree (left) and Random Forest (right).}}{34}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Confusion Matrices for the Fine-tuned Unsupervised Anomaly Detection Models: One-Class SVM (top left), Isolation Forest (top right), and Local Outlier Factor (bottom).}}{35}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces SHAP Analysis of Fine-tuned Supervised Models: Decision Tree (left) Random Forest (right).}}{36}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}}{36}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Granular SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}}{36}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces One-Dimensional Plots for Feature Distributions}}{32}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PCA Variance Screeplot - Kaiser Criterion}}{33}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Principal Component Analysis of Features with 2 Principal Components.}}{34}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Tree Structure Diagram for Decision Tree Classifier}}{35}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Confusion Matrix for the Fine-tuned Supervised Binary Classifiers: Decision Tree (left) and Random Forest (right).}}{36}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrices for the Fine-tuned Unsupervised Anomaly Detection Models: One-Class SVM (top left), Isolation Forest (top right), and Local Outlier Factor (bottom).}}{37}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Beeswarm Plots for SHAP Analysis of Fine-tuned Supervised Models: Decision Tree (left) Random Forest (right).}}{38}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Beeswarm Plots for SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}}{38}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Beeswarm Plots for Granular SHAP Analysis of Fine-tuned Unsupervised Models: One-Class SVM (left) and Isolation Forest (right).}}{39}{}%

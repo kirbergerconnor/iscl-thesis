@@ -8,11 +8,11 @@
 \contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for Isolation Forest.}}{24}{}%
 \contentsline {table}{\numberline {3.8}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{24}{}%
 \contentsline {table}{\numberline {3.9}{\ignorespaces Fine-tuned hyperparameters for Local Outlier Factor.}}{25}{}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Complete set of all 13 features for every language in the data, as well as each language's label (\textit {Type}), which represent either 'constructed' or 'natural'. Each feature's value is rounded to 3 decimal places.}}{29}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Each Principal Component}}{32}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Precision, Recall, and F1-scores of the Fine-tuned Supervised Binary Classification Models.}}{33}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, Recall, and F\textsubscript {1}-scores of the Fine-tuned Unsupervised Anomaly Detection Models.}}{34}{}%
-\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing.}}{46}{}%
-\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{47}{}%
-\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{47}{}%
-\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{47}{}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Complete set of all 13 features for every language in the data, as well as each language's label (\textit {Type}), which denote constructed or natural language as \textit {con} or \textit {nat}, respectively. Each feature's value is rounded to 3 decimal places.}}{29}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for Top Three Principal Components}}{33}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Precision, Recall, and F1-scores of the Fine-tuned Supervised Binary Classification Models.}}{35}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, Recall, and F\textsubscript {1}-scores of the Fine-tuned Unsupervised Anomaly Detection Models.}}{36}{}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing, by number of words and sentences. The size of each language's alphabet is also shown, corresponding to only lowercase characters and excluding periods, which were also kept in the corpora.}}{49}{}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{50}{}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{50}{}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{50}{}%
