@@ -9,4 +9,3 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion matrices for the fine-tuned unsupervised anomaly detection models: one-class SVM (top left), isolation forest (top right), and local outlier factor (bottom).}}{37}{}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Beeswarm plots for SHAP results on fine-tuned supervised models: decision tree (left) and random forest (right).}}{38}{}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Beeswarm plots for SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}}{39}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Beeswarm plots for granular SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}}{39}{}%

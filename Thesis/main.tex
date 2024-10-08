@@ -1255,7 +1255,11 @@ The three measures for lexical complexity, TTR, MATTR, and MTLD, again show Finn
 
 Similar clustering behavior can be observed in the distributions for the three measures of morphological complexity, particularly the first two which are imbalanced. In all, however, Vietnamese again appears as an extreme case, and this is especially apparent in the distributions for morpheme TTR and average segmentations per word, where it is significantly isolated from the rest---likely a reflection of its isolating morphology. When comparing these to the distributions for the lexical and text complexity features, constructed and natural languages appear to overlap more, suggesting that morphology complexity may not be as much of a discriminative linguistic feature between the two.
 
-In the last group of features, corresponding to the five measurements of entropy, interesting patterns of clustering and imbalanced distributions again emerge in the findings. For character distribution entropy, the constructed languages are again grouped together on the left side. Perhaps unsurprisingly, given the exceedingly large size of its alphabet (i.e., the 93 lowercase characters that comprise its corpora), Vietnamese is the highest value. Interestingly, though, this is followed next by Polish, despite having an alphabet size that is lower than several other languages in the study. On the other end of the spectrum is Tagalog with the lowest character distribution entropy, followed closely by Lingua Franca Nova. In contrast to this feature distribution, the measurements for word distribution entropy and text entropy both produced rather different results; rather than having a cluster on the left side, one appears in the center and right side, respectively. In both cases, Volapük and Ido have the lowest values, and---in the latter case---they are significantly lower than those of the other languages. As entropy is essentially a measure of predictability, this may be surmised as reflecting Volapük's intentional design of high regularity, especially with regards to morphology. The same can be said of Ido, though this along with comparison to the findings of the other constructed languages will be explored further in Chapter \ref{sec:discussion}. Last are the measures for lexical and reverse lexical entropy, which have very similar distributions. Vietnamese again emerged at one end of the spectrum with the highest entropy value, while agglutinative languages such as Finnish and Turkish appear at the opposite end with the lowest. Perhaps the most interesting finding here, however, is the cluster of constructed languages near the center of both distributions---with the notable absence of Interlingua and Esperanto, who instead appear in the midst of the natural languages on the left side in both cases.
+In the last group of features, corresponding to the five measurements of entropy, interesting patterns of clustering and imbalanced distributions again emerge in the findings. For character distribution entropy, the constructed languages are again grouped together on the left side. Perhaps unsurprisingly, given the exceedingly large size of its alphabet (i.e., the 93 lowercase characters that comprise its corpora), Vietnamese is the highest value. Interestingly, though, this is followed next by Polish, despite having an alphabet size that is lower than several other languages in the study. On the other end of the spectrum is Tagalog with the lowest character distribution entropy, followed closely by Lingua Franca Nova. 
+
+In contrast to this feature distribution, the measurements for word distribution entropy and text entropy both produced rather different results; rather than having a cluster on the left side, one appears in the center and right side, respectively. In both cases, Volapük and Ido have the lowest values, and---in the latter case---they are significantly lower than those of the other languages. As entropy is essentially a measure of predictability, this may be surmised as reflecting Volapük's intentional design of high regularity, especially with regards to morphology. The same can be said of Ido, though this along with comparison to the findings of the other constructed languages will be explored further in Chapter \ref{sec:discussion}. 
+
+Last are the measures for lexical and reverse lexical entropy, which have very similar distributions. Vietnamese again emerged at one end of the spectrum with the highest entropy value, while agglutinative languages such as Finnish and Turkish appear at the opposite end with the lowest. Perhaps the most interesting finding here, however, is the cluster of constructed languages near the center of both distributions---with the notable absence of Interlingua and Esperanto, who instead appear in the midst of the natural languages on the left side in both cases.
 
 % \newpage
 \begin{figure}[!ht]
@@ -1318,7 +1322,7 @@ In the last group of features, corresponding to the five measurements of entropy
 \begin{figure}[!h]
   \centering
   \caption{PCA Variance Screeplot - Kaiser Criterion}
-  \includegraphics[width=\textwidth]{PCA_Variance_Screeplot_kaiser.png}
+  \includegraphics[width=0.7\textwidth]{PCA_Variance_Screeplot_kaiser.png}
   \label{fig:pckaiser}
 \end{figure}
 
@@ -1458,8 +1462,9 @@ Overall, the unsupervised models performed comparable to one another, with all t
 \label{ssec:shapresults}
 
 % [DELETED] In some aspects, interpretation of the results of applying SHAP bears some resemblance to that of the PCA in Section \ref{ssec:pcaresults}; however, a key difference is 
+% [DELETED] therefore, the horizontal distribution of said points corresponds to the level of variation that exists for that feature's influence on the model (i.e., a wide horizontal spread of points means the feature's influence on model predictions is highly variable across observations, and a cluster signifies the opposite)
 
-The results of the Kernel SHAP method are visualized in beeswarm plots, which are first explained how to read here. The features, ranked in descending order according to their importance, comprise the y-axis. The x-axis, centered on 0.0, corresponds to the impact that a particular point (observation) had on model prediction, represented in terms of magnitude and either positive or negative; therefore, the horizontal distribution of said points corresponds to the level of variation that exists for that feature's influence on the model (i.e., a wide horizontal spread of points means the feature's influence on model predictions is highly variable across observations, and a cluster denotes the opposite). Finally, the color coding spectrum represents the value of that observation, with the highest values denoted by red and the lowest ones denoted by blue.
+The results of the Kernel SHAP method are visualized in beeswarm plots for global analysis, which are explained how to read here. The features, ranked in descending order according to their importance, comprise the y-axis. The x-axis, centered on zero (0.0), corresponds to SHAP values---measurements of the impact that a particular instance had on model prediction, represented in terms of magnitude and either positive or negative. Finally, the color coding spectrum represents the value of that instance, with the highest values denoted by red and the lowest ones denoted by blue.
 
 \begin{figure}[!h]
   \centering
@@ -1473,7 +1478,7 @@ The results of the Kernel SHAP method are visualized in beeswarm plots, which ar
     \label{fig:supervisedshap}
 \end{figure}
 
-Figure \ref{fig:supervisedshap} shows the two beeswarm plots corresponding to the supervised classifiers. For the decision tree, only two features had any impact on the model's predictions: MTLD and average sentence length. Low values of the former correlated to a stronger positive impact, while high values of the latter correlated to a stronger negative impact. Notably, this also coincides with the findings shown by the tree structure diagram in Figure \ref{fig:decisiontree}. For the random forest, MTLD was again the most important, with lower values again correlating to having a stronger positive impact, followed by MATTR with the same correlation to a lesser extent. In contrast to the decision tree though, average word length was a less important feature here, and the random forest utilized a broader selection of features for its predictions overall.
+Figure \ref{fig:supervisedshap} shows the two beeswarm plots corresponding to the supervised classifiers. Positive SHAP values correlate to constructed languages, and negative SHAP values correlate to natural languages. For the decision tree, only two features had any impact on the model's predictions: MTLD and average sentence length. Low values of the former correlated to a stronger positive impact, while high values of the latter correlated to a stronger negative impact. Notably, this also coincides with the findings shown by the tree structure diagram in Figure \ref{fig:decisiontree}. For the random forest, MTLD was again the most important, with lower values again correlating to having a stronger positive impact, followed by MATTR with the same correlation to a lesser extent. In contrast to the decision tree though, average word length was a less important feature here, and the random forest utilized a broader selection of features for its predictions overall. However, the clustering around zero shown by impacts for word distribution entropy, average forms per stem, reverse lexical entropy, TTR, and morpheme TTR suggest these features had very little influence on the random forest's predictions.
 
 \begin{figure}[!h]
   \centering
@@ -1487,19 +1492,21 @@ Figure \ref{fig:supervisedshap} shows the two beeswarm plots corresponding to th
     \label{fig:unsupervisedshap}
 \end{figure}
 
-The beeswarm plots for the two analyzed unsupervised models are shown in Figure \ref{fig:unsupervisedshap}. Interestingly, MATTR was the most important feature for both models. 
+The beeswarm plots for the two analyzed unsupervised models are shown in Figure \ref{fig:unsupervisedshap}. As these correspond to anomaly detection, their interpretation is slightly different due to the way the models make predictions. A negative anomaly score indicates a predicted anomaly (constructed language); likewise, a negative SHAP value indicates the same. Therefore, the plots show that MATTR was the most important feature for both models, with mid to low feature values being predicted as anomalies, suggesting that this was the strongest indicator for detecting anomalies in the dataset. Additionally, average sentence length and lexical entropy were highly influential for both models as well, with low values for the former and high values for the latter indicating anomalies. However, when comparing these results with the feature distributions shown in Figure \ref{fig:1dfeatures}, a few interesting questions arise. For instance, for the second most influential feature for the one-class SVM, average forms per stem, high feature values were seemingly indicative of an instance being a constructed language---something that is not at all reflected in the feature dataset. This will be further scrutinized in Chapter \ref{sec:discussion}.
 
-\begin{figure}[!h]
-  \centering
-  \begin{minipage}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{OCSVM_SHAP_granular.png}
-  \end{minipage}\hfill
-  \begin{minipage}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{IF_SHAP_granular.png}
-  \end{minipage}
-    \caption{Beeswarm plots for granular SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}
-    \label{fig:unsupervisedgranularshap}
-\end{figure}
+% \begin{figure}[!h]
+%   \centering
+%   \begin{minipage}{0.5\textwidth}
+%     \includegraphics[width=\textwidth]{OCSVM_SHAP_granular.png}
+%   \end{minipage}\hfill
+%   \begin{minipage}{0.5\textwidth}
+%     \includegraphics[width=\textwidth]{IF_SHAP_granular.png}
+%   \end{minipage}
+%     \caption{Beeswarm plots for granular SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}
+%     \label{fig:unsupervisedgranularshap}
+% \end{figure}
+
+% Lastly,
 
 \clearpage
 \newpage
@@ -1513,10 +1520,19 @@ The beeswarm plots for the two analyzed unsupervised models are shown in Figure 
 % Compare the results of this task with those of classification of the raw text data (without the feature engineering, and using larger models like BERT), how the task and results might look different
 % Using different window length for MATTR....
 % Lack of validation for pytorch RNN (text entropy)
+% [DELETED] linking back to the motivation and goals of this investigation as stated in the beginning of this thesis too.
 
-In this section, I further analyze the findings along with their possible implications, as well as discuss how they relate to the motivations and overall goal of this investigation. Furthermore, I make note of some shortcomings in my approaches, and how those may have impacted the results.
+This section begins by revisiting the results of the feature engineering more in-depth, particularly the feature distribution plots from Figure \ref{fig:1dfeatures} the findings of the feature engineering and the various subsequent experiments are analyzed more in-depth, with possible explanations and implications contemplated. Furthermore, I make note of any shortcomings in my approaches, and how those may have also impacted the results.
+
+Revisiting the feature distribution plots first, 
 
 Ido was designed to be highly regular in terms of grammar, orthography, and lexicography, "correcting" perceived flaws of Esperanto \parencite{Novikov2022article}.
+
+%  Interestingly, MATTR was the most important feature for both models, suggesting that it serves as a strong indicator for detecting anomalies in the dataset -> Explain further using other results too
+
+% Note that the SHAP values are for model explainability, which is extrapolated to explain feature importance and infer broader conclusions about the linguistic nature of constructed/natural languages 
+
+% IF SHAP - MTLD, char dist entr - the inliers (right side) all correspond to high values, very different than the 1d plot shows
 
 \newpage
 \section{Conclusion}
