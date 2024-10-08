@@ -1257,7 +1257,7 @@ Similar clustering behavior can be observed in the distributions for the three m
 
 In the last group of features, corresponding to the five measurements of entropy, interesting patterns of clustering and imbalanced distributions again emerge in the findings. For character distribution entropy, the constructed languages are again grouped together on the left side. Perhaps unsurprisingly, given the exceedingly large size of its alphabet (i.e., the 93 lowercase characters that comprise its corpora), Vietnamese is the highest value. Interestingly, though, this is followed next by Polish, despite having an alphabet size that is lower than several other languages in the study. On the other end of the spectrum is Tagalog with the lowest character distribution entropy, followed closely by Lingua Franca Nova. 
 
-In contrast to this feature distribution, the measurements for word distribution entropy and text entropy both produced rather different results; rather than having a cluster on the left side, one appears in the center and right side, respectively. In both cases, Volapük and Ido have the lowest values, and---in the latter case---they are significantly lower than those of the other languages. As entropy is essentially a measure of predictability, this may be surmised as reflecting Volapük's intentional design of high regularity, especially with regards to morphology. The same can be said of Ido, though this along with comparison to the findings of the other constructed languages will be explored further in Chapter \ref{sec:discussion}. 
+In contrast to this feature distribution, the measurements for word distribution entropy and text entropy both produced rather different results; rather than having a cluster on the left side, one appears in the center and right side, respectively. In both cases, Volapük and Ido have the lowest values, and---in the latter case---they are significantly lower than those of the other languages. As entropy is essentially a measure of predictability, this may be surmised as reflecting Volapük's intentional design of high regularity, especially with regard to morphology. The same can be said of Ido, though this along with comparison to the findings of the other constructed languages will be explored further in Chapter \ref{sec:discussion}. 
 
 Last are the measures for lexical and reverse lexical entropy, which have very similar distributions. Vietnamese again emerged at one end of the spectrum with the highest entropy value, while agglutinative languages such as Finnish and Turkish appear at the opposite end with the lowest. Perhaps the most interesting finding here, however, is the cluster of constructed languages near the center of both distributions---with the notable absence of Interlingua and Esperanto, who instead appear in the midst of the natural languages on the left side in both cases.
 
@@ -1527,6 +1527,9 @@ This section begins by revisiting the results of the feature engineering more in
 Revisiting the feature distribution plots first, 
 
 Ido was designed to be highly regular in terms of grammar, orthography, and lexicography, "correcting" perceived flaws of Esperanto \parencite{Novikov2022article}.
+
+\subsection{Supervised Classifiers vs. Unsupervised Anomaly Detection Models}
+\label{ssec:supervisedvsunsupervised}
 
 %  Interestingly, MATTR was the most important feature for both models, suggesting that it serves as a strong indicator for detecting anomalies in the dataset -> Explain further using other results too
 
