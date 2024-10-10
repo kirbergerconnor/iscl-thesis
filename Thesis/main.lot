@@ -1,18 +1,18 @@
 \babel@toc {english}{}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Constructed languages in the dataset together with their main respective source languages from which they were designed.}}{11}{}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Natural languages in the dataset together with their respective language families and morphological systems.}}{12}{}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{18}{}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Parameters of TensorFlow LSTMs used to calculate lexical and reverse lexical entropy.}}{20}{}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Fine-tuned hyperparameters for Decision Tree.}}{22}{}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Fine-tuned hyperparameters for Random Forest.}}{23}{}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for Isolation Forest.}}{24}{}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{24}{}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Fine-tuned hyperparameters for Local Outlier Factor.}}{25}{}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Complete set of all 13 features for every language in the data, as well as each language's label (\textit {Type}), which denote constructed or natural language as \textit {con} or \textit {nat}, respectively. Each feature's value is rounded to 3 decimal places.}}{29}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for the top three principal components, with the most influential feature for each in bold.}}{33}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Precision, recall, and F1-scores of the fine-tuned supervised binary classification models.}}{35}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, recall, and F\textsubscript {1}-scores of the fine-tuned unsupervised anomaly detection models.}}{36}{}%
-\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing, by number of words and sentences. The size of each language's alphabet is also shown, corresponding to only lowercase characters and excluding periods, which were also kept in the corpora.}}{49}{}%
-\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{50}{}%
-\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{50}{}%
-\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{50}{}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Constructed languages in the dataset together with their main respective source languages from which they were designed.}}{11}{table.caption.3}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Natural languages in the dataset together with their respective language families and morphological systems.}}{12}{table.caption.4}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{18}{table.caption.5}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Parameters of TensorFlow LSTMs used to calculate lexical and reverse lexical entropy.}}{20}{table.caption.6}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Fine-tuned hyperparameters for Decision Tree.}}{22}{table.caption.7}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Fine-tuned hyperparameters for Random Forest.}}{23}{table.caption.8}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Fine-tuned hyperparameters for Isolation Forest.}}{24}{table.caption.9}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Fine-tuned hyperparameters for One-Class SVM.}}{24}{table.caption.10}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Fine-tuned hyperparameters for Local Outlier Factor.}}{25}{table.caption.11}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Complete set of all 13 features for every language in the data, as well as each language's label (\textit {Type}), which denote constructed or natural language as \textit {con} or \textit {nat}, respectively. Each feature's value is rounded to 3 decimal places.}}{29}{table.caption.12}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for the top three principal components, with the most influential feature for each in bold.}}{33}{table.caption.16}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Precision, recall, and F1-scores of the fine-tuned supervised binary classification models.}}{35}{table.caption.18}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Precision, recall, and F\textsubscript {1}-scores of the fine-tuned unsupervised anomaly detection models.}}{36}{table.caption.21}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing, by number of words and sentences. The size of each language's alphabet is also shown, corresponding to only lowercase characters and excluding periods, which were also kept in the corpora.}}{51}{table.caption.25}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{52}{table.caption.26}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{52}{table.caption.27}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{52}{table.caption.28}%
