@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1728510601.82171 "main.bcf" "main.bbl" "main" 1728521061.79364 0
-  "bibliography.bib" 1728504119.41973 57851 5643f05dbde681a4331eacf9a77f4370 ""
-  "main.bcf" 1728521061.24644 115933 73ee4765d4fb3b39284576097f78c563 "pdflatex"
+["biber main"] 1728529162.42917 "main.bcf" "main.bbl" "main" 1728529537.33325 0
+  "bibliography.bib" 1728528764.83622 58577 74af30180c8159467850de2c7ad90a8f ""
+  "main.bcf" 1728529536.79741 116218 730f2a81977f418a911beaa9cdd220ee "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1728521055.01002 "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" "main.pdf" "main" 1728521061.79409 0
+["pdflatex"] 1728529531.99525 "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" "main.pdf" "main" 1728529537.33364 0
   "../results/./Other/TaxonomyOfPlannedLanguages.png" 1724446447.88475 206890 5355a64ebcf697d578c8af18d94d4324 ""
   "../results/./Other/WilsonsLanguageExample.png" 1724956735.07084 32562 ff64fb2066bf7cc53264dfe5a3e989e0 ""
   "../results/1d_Avg_Forms_Per_Stem.png" 1727649468.10835 13313 f3fcad3c3821c61907a7188c2ca0a63c ""
@@ -34,7 +34,7 @@
   "../results/PCA_of_Features.png" 1727624145.8591 56769 40ffe4d16b4f59c58ec562e5f613643f ""
   "../results/RF_SHAP_values.png" 1728322024.55447 64667 05917bb396e6a1060fa97b67198373df ""
   "../results/decisiontree.png" 1728321691.64892 96450 22953d81d1c77a11437401ca0c549a59 ""
-  "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" 1728521054.63429 155971 3244f4aa0d8870070d37eec73a94c096 ""
+  "/Users/k/Docs/School/Tuebingen/Thesis/iscl-thesis/Thesis/main.tex" 1728529531.66861 157398 240a06ae395f5288d2e0044a33a0fda3 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -341,14 +341,14 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1719338036.26295 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1719338026 8221426 1fbd689aebf3b52b529a257095d0cc5b ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1728521061.22031 41135 59357c4b5eecd6670ded55963f6ad346 "pdflatex"
-  "main.bbl" 1728510606.4199 110203 3679bbf185c4f4acf4256a73d0a61ee8 "biber main"
-  "main.lof" 1728521061.24772 1774 83854a3b2c5bdc66e03242e43409c9e8 "pdflatex"
-  "main.lot" 1728521061.24777 2922 b53f8a0f7fdfd1aacebe2fb9f4fb1800 "pdflatex"
-  "main.out" 1728521061.24237 7479 bdc6a96c9ef58de3c3a5a558c37fcfd9 "pdflatex"
-  "main.run.xml" 1728521061.24752 2313 9d203941543462b20d7108aaec7e370e "pdflatex"
-  "main.tex" 1728521054.63429 155971 3244f4aa0d8870070d37eec73a94c096 ""
-  "main.toc" 1728521061.24764 4015 d3d6321a29ae8fe336c171804c94d246 "pdflatex"
+  "main.aux" 1728529536.76851 41710 ffd8a120c14b97f627846705616e6bc7 "pdflatex"
+  "main.bbl" 1728529168.0332 112879 0c06a611d0e30ff6fa3cfe04969bd80e "biber main"
+  "main.lof" 1728529536.79898 1774 83854a3b2c5bdc66e03242e43409c9e8 "pdflatex"
+  "main.lot" 1728529536.79905 2922 d4760275b9415b17635f70e18c82a53d "pdflatex"
+  "main.out" 1728529536.7934 7479 bdc6a96c9ef58de3c3a5a558c37fcfd9 "pdflatex"
+  "main.run.xml" 1728529536.79878 2313 9d203941543462b20d7108aaec7e370e "pdflatex"
+  "main.tex" 1728529531.66861 157398 240a06ae395f5288d2e0044a33a0fda3 ""
+  "main.toc" 1728529536.79892 4015 0c5d610a6b1028e212cf7e17e822f1e8 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

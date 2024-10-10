@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {table}{\numberline {3.1}{\ignorespaces Constructed languages in the dataset together with their main respective source languages from which they were designed.}}{11}{table.caption.3}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Natural languages in the dataset together with their respective language families and morphological systems.}}{12}{table.caption.4}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{18}{table.caption.5}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Parameters of PyTorch LSTM used to calculate text entropy}}{19}{table.caption.5}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Parameters of TensorFlow LSTMs used to calculate lexical and reverse lexical entropy.}}{20}{table.caption.6}%
 \contentsline {table}{\numberline {3.5}{\ignorespaces Fine-tuned hyperparameters for Decision Tree.}}{22}{table.caption.7}%
 \contentsline {table}{\numberline {3.6}{\ignorespaces Fine-tuned hyperparameters for Random Forest.}}{23}{table.caption.8}%

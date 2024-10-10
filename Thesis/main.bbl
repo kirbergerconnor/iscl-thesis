@@ -2187,6 +2187,40 @@
       \verb https://doi.org/10.1007/978-3-030-10967-7_7
       \endverb
     \endentry
+    \entry{Rogers2011book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd825c5ad24143e1a56ffeb79781d6ad}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={S.D.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Simon \& Schuster}%
+      }
+      \strng{namehash}{fd825c5ad24143e1a56ffeb79781d6ad}
+      \strng{fullhash}{fd825c5ad24143e1a56ffeb79781d6ad}
+      \strng{bibnamehash}{fd825c5ad24143e1a56ffeb79781d6ad}
+      \strng{authorbibnamehash}{fd825c5ad24143e1a56ffeb79781d6ad}
+      \strng{authornamehash}{fd825c5ad24143e1a56ffeb79781d6ad}
+      \strng{authorfullhash}{fd825c5ad24143e1a56ffeb79781d6ad}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781440530395}
+      \field{title}{The Dictionary of Made-Up Languages: From Adûnaic to Elvish, Zaum to Klingon—The Anwa (Real) Origins of Invented Lexicons}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=GTXrDQAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=GTXrDQAAQBAJ
+      \endverb
+    \endentry
     \entry{Rosenhahn2024article}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=0b5e0c497df82f8933f6b72c99a8b86d}{%
@@ -2332,6 +2366,42 @@
       \field{year}{2021}
       \verb{doi}
       \verb 10.1098/rstb.2020.0201
+      \endverb
+    \endentry
+    \entry{Schubert1993article}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1570458fe56f571411f34407d8315b87}{%
+           family={SCHUBERT},
+           familyi={S\bibinitperiod},
+           given={KLAUS},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1570458fe56f571411f34407d8315b87}
+      \strng{fullhash}{1570458fe56f571411f34407d8315b87}
+      \strng{bibnamehash}{1570458fe56f571411f34407d8315b87}
+      \strng{authorbibnamehash}{1570458fe56f571411f34407d8315b87}
+      \strng{authornamehash}{1570458fe56f571411f34407d8315b87}
+      \strng{authorfullhash}{1570458fe56f571411f34407d8315b87}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{Linguistics}
+      \field{number}{2}
+      \field{volume}{31}
+      \field{year}{1993}
+      \field{pages}{311\bibrangedash 366}
+      \range{pages}{56}
+      \verb{doi}
+      \verb doi:10.1515/ling.1993.31.2.311
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/ling.1993.31.2.311
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/ling.1993.31.2.311
       \endverb
     \endentry
     \entry{Schubert1989inbook}{inbook}{}

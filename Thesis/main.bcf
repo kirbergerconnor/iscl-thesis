@@ -2431,6 +2431,7 @@
     <bcf:citekey order="56" intorder="1">Large1985book</bcf:citekey>
     <bcf:citekey order="57" intorder="1">Schubert2001book</bcf:citekey>
     <bcf:citekey order="58" intorder="1">goodall2022article</bcf:citekey>
+    <bcf:citekey order="58" intorder="2">Schubert1993article</bcf:citekey>
     <bcf:citekey order="59" intorder="1">Gobbo2016article</bcf:citekey>
     <bcf:citekey order="60" intorder="1">Reagan2019book</bcf:citekey>
     <bcf:citekey order="61" intorder="1">goodall2022article</bcf:citekey>
@@ -2474,6 +2475,9 @@
     <bcf:citekey order="92" intorder="4">Elmrabit2020article</bcf:citekey>
     <bcf:citekey order="92" intorder="5">Oktafiani2024article</bcf:citekey>
     <bcf:citekey order="93" intorder="1">Lundberg2017article</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">Reagan2019book</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">Reagan2019book</bcf:citekey>
+    <bcf:citekey order="95" intorder="2">Rogers2011book</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

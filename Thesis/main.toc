@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.4}Feature Engineering}{15}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{15}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{16}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{17}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{18}{subsubsection.3.4.3}%
 \contentsline {subsubsection}{\numberline {3.4.4}Dimensionality Reduction of Features}{21}{subsubsection.3.4.4}%
 \contentsline {subsection}{\numberline {3.5}Classification}{21}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{22}{subsubsection.3.5.1}%
