@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  10 OCT 2024 05:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  12 OCT 2024 12:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1355,7 +1355,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-<../results/./Other/WilsonsLanguageExample.png, id=436, 576.65437pt x 69.76062pt>
+<../results/./Other/WilsonsLanguageExample.png, id=441, 576.65437pt x 69.76062pt>
 File: ../results/./Other/WilsonsLanguageExample.png Graphic file (type png)
 <use ../results/./Other/WilsonsLanguageExample.png>
 Package pdftex.def Info: ../results/./Other/WilsonsLanguageExample.png  used on input line 448.
@@ -1369,7 +1369,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4 <../results/./Other/WilsonsLanguageExample.png>]
-<../results/./Other/TaxonomyOfPlannedLanguages.png, id=459, 748.7975pt x 376.90813pt>
+<../results/./Other/TaxonomyOfPlannedLanguages.png, id=464, 748.7975pt x 376.90813pt>
 File: ../results/./Other/TaxonomyOfPlannedLanguages.png Graphic file (type png)
 <use ../results/./Other/TaxonomyOfPlannedLanguages.png>
 Package pdftex.def Info: ../results/./Other/TaxonomyOfPlannedLanguages.png  used on input line 474.
@@ -1419,9 +1419,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-Overfull \hbox (1.48372pt too wide) in paragraph at lines 593--594
+Overfull \hbox (1.48372pt too wide) in paragraph at lines 595--596
 []\T1/cmr/m/n/10.95 Volapük was cre-ated in 1879 by Jo-hann Mar-tin Schleyer, a Ger-man Catholic
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1447,7 +1450,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 703.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 705.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1491,12 +1494,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 842--842
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
 [][][]\T1/cmr/m/n/10 Model adapted from []$\T1/cmtt/m/n/10 https : / / github . com / LeanManager / NLP-[]PyTorch / blob / master /
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1595,6 +1595,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28]
+<../results/1d_Avg_Word_Length.png, id=752, 722.7pt x 144.54pt>
+File: ../results/1d_Avg_Word_Length.png Graphic file (type png)
+<use ../results/1d_Avg_Word_Length.png>
+Package pdftex.def Info: ../results/1d_Avg_Word_Length.png  used on input line 1268.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_Avg_Sentence_Length.png, id=753, 722.7pt x 144.54pt>
+File: ../results/1d_Avg_Sentence_Length.png Graphic file (type png)
+<use ../results/1d_Avg_Sentence_Length.png>
+Package pdftex.def Info: ../results/1d_Avg_Sentence_Length.png  used on input line 1270.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_TTR.png, id=754, 722.7pt x 144.54pt>
+File: ../results/1d_TTR.png Graphic file (type png)
+<use ../results/1d_TTR.png>
+Package pdftex.def Info: ../results/1d_TTR.png  used on input line 1272.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_MATTR.png, id=755, 722.7pt x 144.54pt>
+File: ../results/1d_MATTR.png Graphic file (type png)
+<use ../results/1d_MATTR.png>
+Package pdftex.def Info: ../results/1d_MATTR.png  used on input line 1274.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_MTLD.png, id=756, 722.7pt x 144.54pt>
+File: ../results/1d_MTLD.png Graphic file (type png)
+<use ../results/1d_MTLD.png>
+Package pdftex.def Info: ../results/1d_MTLD.png  used on input line 1276.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_Morpheme_TTR.png, id=757, 722.7pt x 144.54pt>
+File: ../results/1d_Morpheme_TTR.png Graphic file (type png)
+<use ../results/1d_Morpheme_TTR.png>
+Package pdftex.def Info: ../results/1d_Morpheme_TTR.png  used on input line 1278.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_Avg_Segs_Per_Word.png, id=758, 722.7pt x 144.54pt>
+File: ../results/1d_Avg_Segs_Per_Word.png Graphic file (type png)
+<use ../results/1d_Avg_Segs_Per_Word.png>
+Package pdftex.def Info: ../results/1d_Avg_Segs_Per_Word.png  used on input line 1280.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+<../results/1d_Avg_Forms_Per_Stem.png, id=759, 722.7pt x 144.54pt>
+File: ../results/1d_Avg_Forms_Per_Stem.png Graphic file (type png)
+<use ../results/1d_Avg_Forms_Per_Stem.png>
+Package pdftex.def Info: ../results/1d_Avg_Forms_Per_Stem.png  used on input line 1282.
+(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1603,42 +1644,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [29]
-<../results/1d_Avg_Word_Length.png, id=753, 722.7pt x 144.54pt>
-File: ../results/1d_Avg_Word_Length.png Graphic file (type png)
-<use ../results/1d_Avg_Word_Length.png>
-Package pdftex.def Info: ../results/1d_Avg_Word_Length.png  used on input line 1272.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Avg_Sentence_Length.png, id=754, 722.7pt x 144.54pt>
-File: ../results/1d_Avg_Sentence_Length.png Graphic file (type png)
-<use ../results/1d_Avg_Sentence_Length.png>
-Package pdftex.def Info: ../results/1d_Avg_Sentence_Length.png  used on input line 1274.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_TTR.png, id=755, 722.7pt x 144.54pt>
-File: ../results/1d_TTR.png Graphic file (type png)
-<use ../results/1d_TTR.png>
-Package pdftex.def Info: ../results/1d_TTR.png  used on input line 1276.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_MATTR.png, id=756, 722.7pt x 144.54pt>
-File: ../results/1d_MATTR.png Graphic file (type png)
-<use ../results/1d_MATTR.png>
-Package pdftex.def Info: ../results/1d_MATTR.png  used on input line 1278.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_MTLD.png, id=757, 722.7pt x 144.54pt>
-File: ../results/1d_MTLD.png Graphic file (type png)
-<use ../results/1d_MTLD.png>
-Package pdftex.def Info: ../results/1d_MTLD.png  used on input line 1280.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Morpheme_TTR.png, id=758, 722.7pt x 144.54pt>
-File: ../results/1d_Morpheme_TTR.png Graphic file (type png)
-<use ../results/1d_Morpheme_TTR.png>
-Package pdftex.def Info: ../results/1d_Morpheme_TTR.png  used on input line 1282.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Avg_Segs_Per_Word.png, id=759, 722.7pt x 144.54pt>
-File: ../results/1d_Avg_Segs_Per_Word.png Graphic file (type png)
-<use ../results/1d_Avg_Segs_Per_Word.png>
-Package pdftex.def Info: ../results/1d_Avg_Segs_Per_Word.png  used on input line 1284.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1646,44 +1651,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[31 <../results/1d_Avg_Word_Length.png> <../results/1d_Avg_Sentence_Length.png> <../results/1d_TTR.png> <../results/1d_MATTR.png> <../results/1d_MTLD.png> <../results/1d_Morpheme_TTR.png> <../results/1d_Avg_Segs_Per_Word.png>]
-<../results/1d_Avg_Forms_Per_Stem.png, id=777, 722.7pt x 144.54pt>
-File: ../results/1d_Avg_Forms_Per_Stem.png Graphic file (type png)
-<use ../results/1d_Avg_Forms_Per_Stem.png>
-Package pdftex.def Info: ../results/1d_Avg_Forms_Per_Stem.png  used on input line 1292.
-(pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Char_Dist_Entr.png, id=778, 722.7pt x 144.54pt>
+[30 <../results/1d_Avg_Word_Length.png> <../results/1d_Avg_Sentence_Length.png> <../results/1d_TTR.png> <../results/1d_MATTR.png> <../results/1d_MTLD.png> <../results/1d_Morpheme_TTR.png> <../results/1d_Avg_Segs_Per_Word.png> <../results/1d_Avg_Forms_Per_Stem.png>]
+<../results/1d_Char_Dist_Entr.png, id=779, 722.7pt x 144.54pt>
 File: ../results/1d_Char_Dist_Entr.png Graphic file (type png)
 <use ../results/1d_Char_Dist_Entr.png>
-Package pdftex.def Info: ../results/1d_Char_Dist_Entr.png  used on input line 1294.
+Package pdftex.def Info: ../results/1d_Char_Dist_Entr.png  used on input line 1290.
 (pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Word_Dist_Entr.png, id=779, 722.7pt x 144.54pt>
+<../results/1d_Word_Dist_Entr.png, id=780, 722.7pt x 144.54pt>
 File: ../results/1d_Word_Dist_Entr.png Graphic file (type png)
 <use ../results/1d_Word_Dist_Entr.png>
-Package pdftex.def Info: ../results/1d_Word_Dist_Entr.png  used on input line 1296.
+Package pdftex.def Info: ../results/1d_Word_Dist_Entr.png  used on input line 1292.
 (pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Text_Entr.png, id=780, 722.7pt x 144.54pt>
+<../results/1d_Text_Entr.png, id=781, 722.7pt x 144.54pt>
 File: ../results/1d_Text_Entr.png Graphic file (type png)
 <use ../results/1d_Text_Entr.png>
-Package pdftex.def Info: ../results/1d_Text_Entr.png  used on input line 1298.
+Package pdftex.def Info: ../results/1d_Text_Entr.png  used on input line 1294.
 (pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Lex_Entr.png, id=781, 722.7pt x 144.54pt>
+<../results/1d_Lex_Entr.png, id=782, 722.7pt x 144.54pt>
 File: ../results/1d_Lex_Entr.png Graphic file (type png)
 <use ../results/1d_Lex_Entr.png>
-Package pdftex.def Info: ../results/1d_Lex_Entr.png  used on input line 1300.
+Package pdftex.def Info: ../results/1d_Lex_Entr.png  used on input line 1296.
 (pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
-<../results/1d_Rev_Lex_Entr.png, id=782, 722.7pt x 144.54pt>
+<../results/1d_Rev_Lex_Entr.png, id=783, 722.7pt x 144.54pt>
 File: ../results/1d_Rev_Lex_Entr.png Graphic file (type png)
 <use ../results/1d_Rev_Lex_Entr.png>
-Package pdftex.def Info: ../results/1d_Rev_Lex_Entr.png  used on input line 1302.
+Package pdftex.def Info: ../results/1d_Rev_Lex_Entr.png  used on input line 1298.
 (pdftex.def)             Requested size: 426.79135pt x 85.35945pt.
 
 
@@ -1693,30 +1685,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32
+[31
 
- <../results/1d_Avg_Forms_Per_Stem.png> <../results/1d_Char_Dist_Entr.png> <../results/1d_Word_Dist_Entr.png> <../results/1d_Text_Entr.png> <../results/1d_Lex_Entr.png> <../results/1d_Rev_Lex_Entr.png>]
-<../results/PCA_Variance_Screeplot_kaiser.png, id=793, 489.9906pt x 379.4175pt>
+ <../results/1d_Char_Dist_Entr.png> <../results/1d_Word_Dist_Entr.png> <../results/1d_Text_Entr.png> <../results/1d_Lex_Entr.png> <../results/1d_Rev_Lex_Entr.png>]
+<../results/PCA_Variance_Screeplot_kaiser.png, id=794, 489.9906pt x 379.4175pt>
 File: ../results/PCA_Variance_Screeplot_kaiser.png Graphic file (type png)
 <use ../results/PCA_Variance_Screeplot_kaiser.png>
-Package pdftex.def Info: ../results/PCA_Variance_Screeplot_kaiser.png  used on input line 1330.
+Package pdftex.def Info: ../results/PCA_Variance_Screeplot_kaiser.png  used on input line 1328.
 (pdftex.def)             Requested size: 298.75264pt x 231.34012pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33 <../results/PCA_Variance_Screeplot_kaiser.png>]
-<../results/PCA_of_Features.png, id=801, 738.5994pt x 400.3758pt>
+[32 <../results/PCA_Variance_Screeplot_kaiser.png>]
+<../results/PCA_of_Features.png, id=802, 738.5994pt x 400.3758pt>
 File: ../results/PCA_of_Features.png Graphic file (type png)
 <use ../results/PCA_of_Features.png>
-Package pdftex.def Info: ../results/PCA_of_Features.png  used on input line 1357.
+Package pdftex.def Info: ../results/PCA_of_Features.png  used on input line 1355.
 (pdftex.def)             Requested size: 426.79135pt x 231.3506pt.
 
-Underfull \hbox (badness 3514) in paragraph at lines 1361--1361
+Underfull \hbox (badness 3514) in paragraph at lines 1359--1359
 [][][]\T1/cmr/m/n/10 A script was used to in-crease the read-abil-ity of the an-no-ta-tions in the graph:
  []
 
@@ -1727,23 +1722,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <../results/PCA_of_Features.png>]
+[33 <../results/PCA_of_Features.png>]
 <../results/decisiontree.png, id=814, 1134.639pt x 570.933pt>
 File: ../results/decisiontree.png Graphic file (type png)
 <use ../results/decisiontree.png>
-Package pdftex.def Info: ../results/decisiontree.png  used on input line 1387.
+Package pdftex.def Info: ../results/decisiontree.png  used on input line 1385.
 (pdftex.def)             Requested size: 426.79135pt x 214.75272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <../results/CM_decision_tree.png, id=816, 359.9046pt x 328.8285pt>
 File: ../results/CM_decision_tree.png Graphic file (type png)
 <use ../results/CM_decision_tree.png>
-Package pdftex.def Info: ../results/CM_decision_tree.png  used on input line 1397.
+Package pdftex.def Info: ../results/CM_decision_tree.png  used on input line 1395.
 (pdftex.def)             Requested size: 213.39568pt x 194.97551pt.
 <../results/CM_random_forest.png, id=817, 359.9046pt x 328.8285pt>
 File: ../results/CM_random_forest.png Graphic file (type png)
 <use ../results/CM_random_forest.png>
-Package pdftex.def Info: ../results/CM_random_forest.png  used on input line 1400.
+Package pdftex.def Info: ../results/CM_random_forest.png  used on input line 1398.
 (pdftex.def)             Requested size: 213.39568pt x 194.97551pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1754,23 +1752,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35 <../results/decisiontree.png>]
-<../results/CM_ocsvm.png, id=826, 359.9046pt x 328.8285pt>
+[34]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35 <../results/decisiontree.png> <../results/CM_decision_tree.png> <../results/CM_random_forest.png>]
+<../results/CM_ocsvm.png, id=833, 359.9046pt x 328.8285pt>
 File: ../results/CM_ocsvm.png Graphic file (type png)
 <use ../results/CM_ocsvm.png>
-Package pdftex.def Info: ../results/CM_ocsvm.png  used on input line 1430.
+Package pdftex.def Info: ../results/CM_ocsvm.png  used on input line 1428.
 (pdftex.def)             Requested size: 213.39568pt x 194.97551pt.
-<../results/CM_if.png, id=827, 359.9046pt x 328.8285pt>
+<../results/CM_if.png, id=834, 359.9046pt x 328.8285pt>
 File: ../results/CM_if.png Graphic file (type png)
 <use ../results/CM_if.png>
-Package pdftex.def Info: ../results/CM_if.png  used on input line 1433.
+Package pdftex.def Info: ../results/CM_if.png  used on input line 1431.
 (pdftex.def)             Requested size: 213.39568pt x 194.97551pt.
-<../results/CM_lof.png, id=828, 359.9046pt x 328.8285pt>
+<../results/CM_lof.png, id=835, 359.9046pt x 328.8285pt>
 File: ../results/CM_lof.png Graphic file (type png)
 <use ../results/CM_lof.png>
-Package pdftex.def Info: ../results/CM_lof.png  used on input line 1436.
+Package pdftex.def Info: ../results/CM_lof.png  used on input line 1434.
 (pdftex.def)             Requested size: 213.39568pt x 194.97551pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../results/DT_SHAP_values.png, id=837, 558.6471pt x 488.5452pt>
+File: ../results/DT_SHAP_values.png Graphic file (type png)
+<use ../results/DT_SHAP_values.png>
+Package pdftex.def Info: ../results/DT_SHAP_values.png  used on input line 1475.
+(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
+<../results/RF_SHAP_values.png, id=838, 558.6471pt x 488.5452pt>
+File: ../results/RF_SHAP_values.png Graphic file (type png)
+<use ../results/RF_SHAP_values.png>
+Package pdftex.def Info: ../results/RF_SHAP_values.png  used on input line 1478.
+(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1781,7 +1800,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36 <../results/CM_decision_tree.png> <../results/CM_random_forest.png>]
+[36]
+<../results/OCSVM_SHAP_values.png, id=846, 558.6471pt x 488.5452pt>
+File: ../results/OCSVM_SHAP_values.png Graphic file (type png)
+<use ../results/OCSVM_SHAP_values.png>
+Package pdftex.def Info: ../results/OCSVM_SHAP_values.png  used on input line 1489.
+(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
+<../results/IF_SHAP_values.png, id=847, 558.6471pt x 488.5452pt>
+File: ../results/IF_SHAP_values.png Graphic file (type png)
+<use ../results/IF_SHAP_values.png>
+Package pdftex.def Info: ../results/IF_SHAP_values.png  used on input line 1492.
+(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1790,30 +1823,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37 <../results/CM_ocsvm.png> <../results/CM_if.png> <../results/CM_lof.png>]
-<../results/DT_SHAP_values.png, id=844, 558.6471pt x 488.5452pt>
-File: ../results/DT_SHAP_values.png Graphic file (type png)
-<use ../results/DT_SHAP_values.png>
-Package pdftex.def Info: ../results/DT_SHAP_values.png  used on input line 1477.
-(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
-<../results/RF_SHAP_values.png, id=845, 558.6471pt x 488.5452pt>
-File: ../results/RF_SHAP_values.png Graphic file (type png)
-<use ../results/RF_SHAP_values.png>
-Package pdftex.def Info: ../results/RF_SHAP_values.png  used on input line 1480.
-(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
-<../results/OCSVM_SHAP_values.png, id=848, 558.6471pt x 488.5452pt>
-File: ../results/OCSVM_SHAP_values.png Graphic file (type png)
-<use ../results/OCSVM_SHAP_values.png>
-Package pdftex.def Info: ../results/OCSVM_SHAP_values.png  used on input line 1491.
-(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
-<../results/IF_SHAP_values.png, id=849, 558.6471pt x 488.5452pt>
-File: ../results/IF_SHAP_values.png Graphic file (type png)
-<use ../results/IF_SHAP_values.png>
-Package pdftex.def Info: ../results/IF_SHAP_values.png  used on input line 1494.
-(pdftex.def)             Requested size: 213.39568pt x 186.6182pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1821,7 +1830,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38 <../results/DT_SHAP_values.png> <../results/RF_SHAP_values.png>]
+[38 <../results/DT_SHAP_values.png> <../results/RF_SHAP_values.png> <../results/OCSVM_SHAP_values.png> <../results/IF_SHAP_values.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1829,7 +1838,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39 <../results/OCSVM_SHAP_values.png> <../results/IF_SHAP_values.png>]
+[39]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1864,6 +1873,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [43]
+<../results/IF_SHAP_force_fi.png, id=900, 1141.866pt x 313.6518pt>
+File: ../results/IF_SHAP_force_fi.png Graphic file (type png)
+<use ../results/IF_SHAP_force_fi.png>
+Package pdftex.def Info: ../results/IF_SHAP_force_fi.png  used on input line 1581.
+(pdftex.def)             Requested size: 426.79135pt x 117.23146pt.
+<../results/IF_SHAP_force_en.png, id=901, 1144.7568pt x 313.6518pt>
+File: ../results/IF_SHAP_force_en.png Graphic file (type png)
+<use ../results/IF_SHAP_force_en.png>
+Package pdftex.def Info: ../results/IF_SHAP_force_en.png  used on input line 1583.
+(pdftex.def)             Requested size: 426.79135pt x 116.93474pt.
+<../results/IF_SHAP_force_eo.png, id=902, 1134.639pt x 312.9291pt>
+File: ../results/IF_SHAP_force_eo.png Graphic file (type png)
+<use ../results/IF_SHAP_force_eo.png>
+Package pdftex.def Info: ../results/IF_SHAP_force_eo.png  used on input line 1587.
+(pdftex.def)             Requested size: 426.79135pt x 117.70622pt.
+<../results/IF_SHAP_force_vo.png, id=903, 1146.2022pt x 313.6518pt>
+File: ../results/IF_SHAP_force_vo.png Graphic file (type png)
+<use ../results/IF_SHAP_force_vo.png>
+Package pdftex.def Info: ../results/IF_SHAP_force_vo.png  used on input line 1589.
+(pdftex.def)             Requested size: 426.79135pt x 116.78638pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1879,16 +1909,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45]
-Underfull \hbox (badness 1590) in paragraph at lines 1595--1595
-[][]\T1/cmr/m/n/12 Chomsky, Noam (1957). \T1/cmr/m/it/12 Syn-tac-tic Struc-tures\T1/cmr/m/n/12 . Berlin, Boston: De
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 1595--1595
-\T1/cmr/m/n/12 Gruyter Mou-ton. \T1/cmr/m/sc/12 isbn\T1/cmr/m/n/12 : 9783112316009. \T1/cmr/m/sc/12 doi\T1/cmr/m/n/12 : []$\T1/cmtt/m/n/12 doi : 10 . 1515 /
- []
-
+[45 <../results/IF_SHAP_force_fi.png> <../results/IF_SHAP_force_en.png> <../results/IF_SHAP_force_eo.png> <../results/IF_SHAP_force_vo.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1896,7 +1917,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
+[46
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1913,6 +1936,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48]
+Underfull \hbox (badness 1590) in paragraph at lines 1628--1628
+[][]\T1/cmr/m/n/12 Chomsky, Noam (1957). \T1/cmr/m/it/12 Syn-tac-tic Struc-tures\T1/cmr/m/n/12 . Berlin, Boston: De
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 1628--1628
+\T1/cmr/m/n/12 Gruyter Mou-ton. \T1/cmr/m/sc/12 isbn\T1/cmr/m/n/12 : 9783112316009. \T1/cmr/m/sc/12 doi\T1/cmr/m/n/12 : []$\T1/cmtt/m/n/12 doi : 10 . 1515 /
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1930,15 +1962,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [50]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1953,7 +1976,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52] (./main.aux)
+[52]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[53]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[54]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1964,24 +2020,24 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.26pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BDC6A96C9EF58DE3C3A5A558C37FCFD9;7479.
+(rerunfilecheck)             Checksum: 42D6420DD677059C23A8BF154FC38053;7288.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38919 strings out of 474116
- 755554 string characters out of 5743682
- 1986187 words of memory out of 5000000
- 60390 multiletter control sequences out of 15000+600000
+ 38961 strings out of 474116
+ 756894 string characters out of 5743682
+ 1985187 words of memory out of 5000000
+ 60428 multiletter control sequences out of 15000+600000
  586115 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,87p,2255b,3356s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,87p,2449b,3356s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (59 pages, 1554908 bytes).
+Output written on main.pdf (62 pages, 1810275 bytes).
 PDF statistics:
- 1233 PDF objects out of 1440 (max. 8388607)
- 1021 compressed objects within 11 object streams
- 204 named destinations out of 1000 (max. 500000)
- 612 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1265 PDF objects out of 1440 (max. 8388607)
+ 1042 compressed objects within 11 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 632 words of extra memory for PDF output out of 10000 (max. 10000000)
 

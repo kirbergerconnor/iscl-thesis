@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.4}Feature Engineering}{15}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Lexical Diversity}{15}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Morphological Complexity}{16}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{18}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3}Entropy}{17}{subsubsection.3.4.3}%
 \contentsline {subsubsection}{\numberline {3.4.4}Dimensionality Reduction of Features}{21}{subsubsection.3.4.4}%
 \contentsline {subsection}{\numberline {3.5}Classification}{21}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Decision Tree}{22}{subsubsection.3.5.1}%
@@ -33,15 +33,15 @@
 \contentsline {subsection}{\numberline {3.8}Feature Importance with SHAP}{26}{subsection.3.8}%
 \contentsline {section}{\numberline {4}Results}{28}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Results of Feature Engineering}{28}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Results of PCA}{33}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Results of Supervised Classification}{35}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.2}Results of PCA}{32}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Results of Supervised Classification}{34}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Results of Unsupervised Anomaly Detection}{36}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Results of SHAP}{37}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Results of SHAP}{36}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Discussion}{40}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Supervised Classifiers vs. Unsupervised Anomaly Detection Models}{42}{subsection.5.1}%
-\contentsline {section}{\numberline {6}Conclusion}{43}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{43}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Acknowledgments}{44}{section.7}%
-\contentsline {section}{\numberline {8}Appendices}{51}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Corpora}{51}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{51}{subsection.8.2}%
+\contentsline {subsection}{\numberline {5.1}Models \& Feature Importance}{44}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Conclusion}{46}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{46}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Acknowledgments}{47}{section.7}%
+\contentsline {section}{\numberline {8}Appendices}{54}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Corpora}{54}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{54}{subsection.8.2}%
