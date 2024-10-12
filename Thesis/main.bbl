@@ -2368,21 +2368,55 @@
       \verb 10.1098/rstb.2020.0201
       \endverb
     \endentry
+    \entry{Schubert1989inbook}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{fullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{bibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authorbibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authornamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authorfullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783110886115}
+      \field{journaltitle}{Interlinguistics: Aspects of the Science of Planned Languages}
+      \field{month}{01}
+      \field{title}{Interlinguistics – Its Aims, Its Achievements, and Its Place in Language Science}
+      \field{year}{1989}
+      \field{pages}{7\bibrangedash 44}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1515/9783110886115.7
+      \endverb
+    \endentry
     \entry{Schubert1993article}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1570458fe56f571411f34407d8315b87}{%
-           family={SCHUBERT},
+        {{un=1,uniquepart=given,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
+           family={Schubert},
            familyi={S\bibinitperiod},
-           given={KLAUS},
+           given={Klaus},
            giveni={K\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
-      \strng{namehash}{1570458fe56f571411f34407d8315b87}
-      \strng{fullhash}{1570458fe56f571411f34407d8315b87}
-      \strng{bibnamehash}{1570458fe56f571411f34407d8315b87}
-      \strng{authorbibnamehash}{1570458fe56f571411f34407d8315b87}
-      \strng{authornamehash}{1570458fe56f571411f34407d8315b87}
-      \strng{authorfullhash}{1570458fe56f571411f34407d8315b87}
+      \strng{namehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{fullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{bibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authorbibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authornamehash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \strng{authorfullhash}{630a7ae2132e6ceebb6a60ea59a45327}
+      \field{extraname}{2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -2402,38 +2436,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1515/ling.1993.31.2.311
-      \endverb
-    \endentry
-    \entry{Schubert1989inbook}{inbook}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=630a7ae2132e6ceebb6a60ea59a45327}{%
-           family={Schubert},
-           familyi={S\bibinitperiod},
-           given={Klaus},
-           giveni={K\bibinitperiod},
-           givenun=1}}%
-      }
-      \strng{namehash}{630a7ae2132e6ceebb6a60ea59a45327}
-      \strng{fullhash}{630a7ae2132e6ceebb6a60ea59a45327}
-      \strng{bibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
-      \strng{authorbibnamehash}{630a7ae2132e6ceebb6a60ea59a45327}
-      \strng{authornamehash}{630a7ae2132e6ceebb6a60ea59a45327}
-      \strng{authorfullhash}{630a7ae2132e6ceebb6a60ea59a45327}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9783110886115}
-      \field{journaltitle}{Interlinguistics: Aspects of the Science of Planned Languages}
-      \field{month}{01}
-      \field{title}{Interlinguistics – Its Aims, Its Achievements, and Its Place in Language Science}
-      \field{year}{1989}
-      \field{pages}{7\bibrangedash 44}
-      \range{pages}{38}
-      \verb{doi}
-      \verb 10.1515/9783110886115.7
       \endverb
     \endentry
     \entry{Schubert2001book}{book}{}
