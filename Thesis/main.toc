@@ -38,10 +38,10 @@
 \contentsline {subsection}{\numberline {4.4}Results of Unsupervised Anomaly Detection}{36}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Results of SHAP}{36}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Discussion}{40}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Models \& Feature Importance}{44}{subsection.5.1}%
-\contentsline {section}{\numberline {6}Conclusion}{47}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Future Work}{47}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Acknowledgments}{48}{section.7}%
-\contentsline {section}{\numberline {8}Appendices}{55}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Corpora}{55}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{55}{subsection.8.2}%
+\contentsline {subsection}{\numberline {5.1}Models \& Feature Importance}{43}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Conclusion}{48}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{48}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Acknowledgments}{49}{section.7}%
+\contentsline {section}{\numberline {8}Appendices}{56}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Corpora}{56}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Morfessor Methods \& Models}{56}{subsection.8.2}%

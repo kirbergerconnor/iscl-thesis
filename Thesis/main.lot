@@ -12,7 +12,7 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Loadings for the top three principal components, with the most influential feature for each in bold.}}{33}{table.caption.16}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Precision, recall, and F1-scores of the fine-tuned supervised binary classification models.}}{34}{table.caption.18}%
 \contentsline {table}{\numberline {4.4}{\ignorespaces Precision, recall, and F\textsubscript {1}-scores of the fine-tuned unsupervised anomaly detection models.}}{36}{table.caption.21}%
-\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing, by number of words and sentences. The size of each language's alphabet is also shown, corresponding to only lowercase characters and excluding periods, which were also kept in the corpora.}}{55}{table.caption.26}%
-\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{56}{table.caption.27}%
-\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{56}{table.caption.28}%
-\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{56}{table.caption.29}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Lengths of each language's text after pre-processing, by number of words and sentences. The size of each language's alphabet is also shown, corresponding to only lowercase characters and excluding periods, which were also kept in the corpora.}}{56}{table.caption.26}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Parameters for Morfessor Baseline Model.}}{57}{table.caption.27}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces Parameters for Morfessor's Load Data Function.}}{57}{table.caption.28}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces Parameters for Morfessor's Train Batch Function.}}{57}{table.caption.29}%
