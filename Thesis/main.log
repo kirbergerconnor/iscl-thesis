@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  13 OCT 2024 00:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  13 OCT 2024 01:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1883,22 +1883,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <../results/IF_SHAP_force_fi.png, id=908, 1141.866pt x 313.6518pt>
 File: ../results/IF_SHAP_force_fi.png Graphic file (type png)
 <use ../results/IF_SHAP_force_fi.png>
-Package pdftex.def Info: ../results/IF_SHAP_force_fi.png  used on input line 1581.
+Package pdftex.def Info: ../results/IF_SHAP_force_fi.png  used on input line 1583.
 (pdftex.def)             Requested size: 426.79135pt x 117.23146pt.
 <../results/IF_SHAP_force_en.png, id=909, 1144.7568pt x 313.6518pt>
 File: ../results/IF_SHAP_force_en.png Graphic file (type png)
 <use ../results/IF_SHAP_force_en.png>
-Package pdftex.def Info: ../results/IF_SHAP_force_en.png  used on input line 1583.
+Package pdftex.def Info: ../results/IF_SHAP_force_en.png  used on input line 1585.
 (pdftex.def)             Requested size: 426.79135pt x 116.93474pt.
 <../results/IF_SHAP_force_eo.png, id=910, 1134.639pt x 312.9291pt>
 File: ../results/IF_SHAP_force_eo.png Graphic file (type png)
 <use ../results/IF_SHAP_force_eo.png>
-Package pdftex.def Info: ../results/IF_SHAP_force_eo.png  used on input line 1587.
+Package pdftex.def Info: ../results/IF_SHAP_force_eo.png  used on input line 1589.
 (pdftex.def)             Requested size: 426.79135pt x 117.70622pt.
 <../results/IF_SHAP_force_vo.png, id=911, 1146.2022pt x 313.6518pt>
 File: ../results/IF_SHAP_force_vo.png Graphic file (type png)
 <use ../results/IF_SHAP_force_vo.png>
-Package pdftex.def Info: ../results/IF_SHAP_force_vo.png  used on input line 1589.
+Package pdftex.def Info: ../results/IF_SHAP_force_vo.png  used on input line 1591.
 (pdftex.def)             Requested size: 426.79135pt x 116.78638pt.
 
 
@@ -1951,12 +1951,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [50]
-Underfull \hbox (badness 1590) in paragraph at lines 1632--1632
+Underfull \hbox (badness 1590) in paragraph at lines 1634--1634
 [][]\T1/cmr/m/n/12 Chomsky, Noam (1957). \T1/cmr/m/it/12 Syn-tac-tic Struc-tures\T1/cmr/m/n/12 . Berlin, Boston: De
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 1632--1632
+Underfull \hbox (badness 1558) in paragraph at lines 1634--1634
 \T1/cmr/m/n/12 Gruyter Mou-ton. \T1/cmr/m/sc/12 isbn\T1/cmr/m/n/12 : 9783112316009. \T1/cmr/m/sc/12 doi\T1/cmr/m/n/12 : []$\T1/cmtt/m/n/12 doi : 10 . 1515 /
  []
 
@@ -2049,7 +2049,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,13n,87p,2412b,3356s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (64 pages, 1815882 bytes).
+Output written on main.pdf (64 pages, 1816015 bytes).
 PDF statistics:
  1279 PDF objects out of 1440 (max. 8388607)
  1054 compressed objects within 11 object streams
