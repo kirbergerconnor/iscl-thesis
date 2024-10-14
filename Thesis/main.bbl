@@ -776,6 +776,34 @@
       \verb https://arxiv.org/abs/2408.12366
       \endverb
     \endentry
+    \entry{Desjardins2023article}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=755e0c5e16c8cc2e1d79650ee3a042aa}{%
+           family={Desjardins},
+           familyi={D\bibinitperiod},
+           given={Jared},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{755e0c5e16c8cc2e1d79650ee3a042aa}
+      \strng{fullhash}{755e0c5e16c8cc2e1d79650ee3a042aa}
+      \strng{bibnamehash}{755e0c5e16c8cc2e1d79650ee3a042aa}
+      \strng{authorbibnamehash}{755e0c5e16c8cc2e1d79650ee3a042aa}
+      \strng{authornamehash}{755e0c5e16c8cc2e1d79650ee3a042aa}
+      \strng{authorfullhash}{755e0c5e16c8cc2e1d79650ee3a042aa}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{The Lexicalist Manifesto: A Cross-theoretical and Cross-linguistic Survey of Lexical Integrity and the Nature of the Morphology-Syntax Interface}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.13140/RG.2.2.14101.78563/11
+      \endverb
+    \endentry
     \entry{Dhandapani2023inbook}{inbook}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=e64e085f2d53a1e7879d4599f5cb882e}{%

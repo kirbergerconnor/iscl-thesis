@@ -15,7 +15,7 @@
 %\usepackage[margin=1.5in]{geometry}
 %\usepackage{algorithmic}
 \usepackage{subcaption}
-% \usepackage{float}
+\usepackage{float}
 % \usepackage{subfloat}
 % \usepackage{subfigure}
 %\usepackage{lettrine}
@@ -85,6 +85,8 @@
 % for inserting tables
 \usepackage{tabularx, multirow, array, dcolumn}
 
+% \usepackage{ragged2e}
+
 % for mathematical symbols
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -95,7 +97,7 @@
 \usetikzlibrary{arrows,positioning}
 \usepackage{color}
 
-%for ipa
+% for ipa
 \usepackage{tipa}
 
 % pdf LaTeX for linguistic examples
@@ -108,6 +110,12 @@
 
 % for inserting pdfs
 \usepackage{pdfpages} 
+
+% for aligning text
+\usepackage{array}
+
+% for rotating page
+\usepackage{pdflscape}
 
 % for inserting trees
 \usepackage{qtree}
@@ -239,7 +247,7 @@ Christian \textsc{Bentz}\\
 
 
 % Bottom of the page
-{\large December 2023}
+{\large October 2024}
 
 \end{center}
 \end{titlepage}
@@ -293,7 +301,8 @@ Firstname Surname
 %% Abstract
 \abstract{
 
-Write the abstract here.
+This thesis investigates the distinction between constructed and natural languages through empirical analysis of various linguistic features and the use of machine learning methods. Constructed languages typically are designed in specific ways that reflect their intended purpose, such as for use in fictional media or as an international auxiliary language. At the same time though, they are also usually inspired or influenced by various natural languages. To analyze the extent that the two may be similar, linguistic features corresponding to measurements of text complexity, lexical diversity, morphological complexity, and entropy were calculated for twenty-four languages (six constructed and eighteen natural). Models were then trained on these features for supervised binary classification and unsupervised anomaly detection, after which they were further analyzed using SHAP. The results suggest that some constructed languages, particularly Esperanto, have measurable similarities to natural languages with regard to certain features, while others are more distinct. These findings provide further insight into the linguistic properties of constructed languages, as well as the broader debate of what constitutes a language.
+
 }
 \newpage
 
@@ -372,8 +381,6 @@ Write the abstract here.
 \section{Introduction \& Motivation} 
 \label{sec:intro}
 
-% Note the choice of "constructed language" in this paper as opposed to other terms, since there is debate, conflation, confusion, and difference in usage at times 
-
 Constructed languages---also called artificial languages, invented languages, planned languages, engineering languages, glossopoeia, or more simply as "conlangs" \parencite{douglas2015book}---are languages that are consciously and purposefully created for some intended use, usually being defined in antithesis to the spontaneous and organic method in which natural languages arise and develop \parencite{sanders2016article}. These variations of the term are often, but not always, used interchangeably, as linguists do not all agree upon a core term due to personal preferences \parencite{Adelman2014article}, and there are sometimes differences in nuance depending on the context in which they appear. This thesis will mainly refer to them as constructed languages for simplicity.
 
 The intended uses for which they are created can range broadly. Some are made specifically for fictional media, often seen in the genres of fantasy or science-fiction, with some more well-known examples being J. R. R. Tolkien's Elvish languages (e.g., Quenya, Sindarin, Nandorin) found in the world of Middle-earth in his writings, Marc Okrand's Klingon language from the Star Trek universe, and David J. Peter's Dothraki language used in George R. R. Martin's A Song of Ice and Fire novels along with their television adaptation, Game of Thrones \parencite{punske2020book}. Others are created to function as international auxiliary languages (IALs)---languages planned for the use of international and cross-cultural communication \parencite{Gobbo2016article}. The most well-known example (based on estimated number of speakers) of these is Esperanto, created in the 19\textsuperscript{th} Century by L. L. Zamenhof. Typically, constructed languages are distinguished and categorized based on these communicative functions. This will be discussed more comprehensively in Chapter \ref{sec:background}. 
@@ -383,27 +390,18 @@ The intended uses for which they are created can range broadly. Some are made sp
 
 Despite being defined in contrast to one another, however, constructed and natural languages are not necessarily opposite to one another characteristically. Aside from their origins, the boundaries between the two are not always clear when analyzed in greater detail \parencite{goodall2022article}. For example, \textcite{Schubert1989inbook} argues that some languages which are considered "natural" have some degree of artificiality, such as standardized written German and English differing from their spoken forms, and that the reverse is also true of some languages which are considered "artificial" because they draw from aspects of natural languages. As such, he believes human languages exist on a continuum of the two labels, rather than in the binary distinction---a view echoed by other linguists as well \parencite{Novikov2022article}. 
 
-% Mention lack of existing studies specifically comparing/analyzing natural vs constructed languages using machine learning methods
-% Expand more on Greenberg and Chomsky principles for linguistic universals, Universal Grammar, etc. and how it relates to this study (Mairal 2006)
 % Schubert 1989 argued "no sharp distinction between ethnic and planned languages can be easily found, because any human language can be put in a continuum between naturalness and artificiality"
-% Mention interest in deciphering old manuscripts, such as Voynich manuscript or Copiale Cipher, and how such a classification task could be useful in ruling out other possibilities and theories about the text's underlying language (one theory for example is that it's not a natural language)
-% [DELETED] The former of the two proposed a framework for identifying the existence and extent of universals in languages based on empirical analysis of their surface structures (i.e. typology)
 
 In many ways, the investigation into the disparity between the these two kinds of languages overlaps with the broader debate regarding what constitutes a language. Central to this debate is the search for linguistic universals---properties shared by all languages \parencite{Mairal2006book}. The concept of universals in language is recognized as one of the most important areas of research in linguistics \parencite{Christiansen2009book} and has served as a foundation for much linguistic theory, especially in more recent history, stemming largely from the influential theories and works of Greenberg \parencite{Greenberg1970book} and Chomsky \parencite{Chomsky1957book,Cook2007book}. 
 
 Analyzing their surface structures can reveal whether or not constructed languages adhere to the same linguistic conventions as their natural counterparts. If machine learning models fail to successfully distinguish between the two, it may reinforce the notion that these universals are present in all languages, regardless of origin. Conversely, the models succeeding may suggest the opposite. In short, the primary motivation behind this thesis is to contribute to this ongoing debate through the application of machine learning, and a desire to learn more about the fascinating genre of constructed languages.
 
-% Furthermore, while research on constructed languages is far from being novel, in the field of computational linguistics it is less common. Thus, my motivation here was to try something relatively new: to formulate this question of binary distinction based on linguistic features into a classification task and use machine learning methods to attempt to answer it.
-
 \subsection{Scope of Study \& Research Question}
 \label{ssec:scope}
 
-% Make note of empirical differences between languages such as phonemes, word order, syntax, etc and explain how this study differs/specifies its focus
-% [DELETED] As previously noted, the specific boundaries which separate constructed from natural languages are not always clearly or consistently defined---even amongst linguists.
-
 The present work analyzes various linguistic features and seeks to successfully discriminate a language as being either natural or constructed based on these. More specifically, the scope of this study includes both supervised binary classification and unsupervised anomaly detection, with the models being trained on a set of selected features rather than raw text data. 
 
-Because of the wide-ranging nature of conducting such a broad analysis, there are of course many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the main focus for linguistic features relate to entropy, morphological complexity, and overall lexical diversity.
+Because of the wide-ranging nature of conducting such a broad analysis, there are of course many features left unconsidered or excluded, intentionally or otherwise. With this in mind and following the precedent set by other related research on this topic, the main focus for linguistic features relate to text complexity, entropy, morphological complexity, and overall lexical diversity.
 
 The following is a breakdown of the structure of this thesis from here onward: the next chapter provides relevant background information, including an overview on constructed languages and a comprehensive review of related literature that examines the prior theoretical groundwork laid for exploring linguistic similarities and differences between constructed and natural languages; Chapter \ref{sec:methodology} covers in detail the methodology taken in this research, from an explanation of the data used to the various experiments performed; Chapter \ref{sec:results} presents the results of the study and discussion of these follows in Chapter \ref{sec:discussion}; lastly, Chapter \ref{sec:conclusion} consists of a conclusion as well as elaboration for possible future work.
 
@@ -551,7 +549,7 @@ Many studies into the entropy of natural languages have been conducted, but less
 
 In this section, I introduce the dataset for this thesis and discuss the steps taken for preprocessing it, followed by discussing in detail the features examined along with the different methods involved in extracting them from the data, and finally the classifiers employed on the feature set. A brief description of the various APIs and libraries used is also included in \ref{ssec:librariesandapis}. 
 
-Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some other measurements which are commonplace to calculating linguistic complexity, and thus seemed appropriate to also include. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, reverse lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised binary classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Principal Component Analysis (PCA) was also performed on the feature set. Lastly, the methods for evaluating the performances of these models and interpreting them based on feature importance are discussed.
+Since this study involves many different experiments and elements being performed and analyzed, I will begin by explaining an overview of what all was done. The number of possible features and measurements of linguistic complexity which could be analyzed in such a study is extensive to say the least; however, the scope of this thesis focuses mainly on empirical measurements relating to lexical diversity, morphological complexity, and entropy, along with some more simplistic measurements of text complexity. More specifically, the features investigated are average word length, average sentence length, type-token ratio (TTR) of morphemes, average number of segmentations in a word, average number of forms per lemma, lexical TTR, moving-average type-token ratio (MATTR), measurement of textual lexical diversity (MTLD), lexical entropy, reverse lexical entropy, text entropy, and character and word distribution entropies. Once the values of these were calculated for each language, the task became that of supervised binary classification and unsupervised anomaly detection with five machine learning models: a one-class support vector machine (SVM), local outlier factor, random forest, isolation forest, and decision tree. Principal Component Analysis (PCA) was also performed on the feature set to identify and visualize potential trends in the data. Lastly, the methods for evaluating the performances of these models and interpreting them based on feature importance are discussed.
 
 \subsection{Data}
 \label{ssec:data}
@@ -604,8 +602,6 @@ Lingua Franca Nova, also abbreviated as LFN, is a relatively recent constructed 
 
 The last constructed language used is Kotava. Created by Staren Fetcey in 1978, Kotava stands out in this dataset as being an attempt at creating a culturally neutral \textit{a priori} language, free from any biases or influences of existing languages and based on a philosophy of linguistic egalitarianism. This intentionally designed uniqueness is apparent in several of its linguistic systems, from morphology to syntax. For example, though word order in Kotava is not imposed, the most frequently used one is OSV, which is exceedingly rare in natural languages in contrast. Other unique features include a 4\textsuperscript{th} person plural, object complements being introduced by a transitive preposition, and a lack of declension \parencite{Fetcey2013book}. 
 
-% For conlangs, how should I call the languages they are drawn from? "Language influences" or is there a better way to say it?
-
 \begin{table}[!h]
   \centering
   \renewcommand{\arraystretch}{1.5}
@@ -651,7 +647,7 @@ The other four families span less representation in the dataset in comparison, b
 
 % [DELETED] Traditionally, classification of morphological systems follows two paradigmatic axes: inflection versus derivation and agglutination versus flexion.
 
-In terms of typological features, these languages differ in their morphological systems. For example, Finnish, Hungarian, and Turkish are highly agglutinative, whereas Vietnamese, an isolating language, is an extreme opposite. German, Icelandic, Polish, and the Romance languages have fusional morphologies.
+The main relevant typological feature of these languages is their morphological systems, for which there is also a range of representation. This typology is defined along the scale of agglutinative, fusional, and isolating systems, with many languages often exhibiting varying degrees of more than one. Thus, without exhaustive explanation for each language's morphology indid For example, Finnish, Hungarian, and Turkish are highly agglutinative, whereas Vietnamese, an isolating language, is an extreme opposite. The Indo-European languages included in this thesis have fusional morphologies, with the Germanic languages also 
 
 % Refer to Desjardins and Shopen
 
@@ -666,29 +662,25 @@ In terms of typological features, these languages differ in their morphological 
   Dutch & Indo-European, Germanic & A / F / I \\
   Afrikaans & Indo-European, Germanic & A / F / I \\
   Swedish & Indo-European, Germanic & A / F / I \\
-  Danish & Indo-European, Germanic & \\
-  Icelandic & Indo-European, Germanic & \\
+  Danish & Indo-European, Germanic & A / F / I \\
+  Icelandic & Indo-European, Germanic & A / F / I \\
   English & Indo-European, Germanic & A / F / I \\
   Spanish & Indo-European, Romance & F \\
   French & Indo-European, Romance & F \\
-  Occitan & Indo-European, Romance & \\
+  Occitan & Indo-European, Romance & F \\
   Italian & Indo-European, Romance & F \\
-  Polish & Indo-European, Slavic & \\
+  Polish & Indo-European, Slavic & F / I \\
   Vietnamese & Austroasiatic & I \\
-  Indonesian & Austronesian & \\
+  Indonesian & Austronesian & A \\
   Tagalog & Austronesian & A / I \\
   Turkish & Turkic & A \\
   Hungarian & Uralic & A / F \\
-  Finnish & Uralic & \\
+  Finnish & Uralic & A / F \\
   \hline
   \end{tabular}
-  \caption{Natural languages in the dataset together with their respective language families and morphological systems.}
+  \caption{Natural languages in the dataset together with their respective language families and morphological systems, adapted from \textcite{Desjardins2023article}.}
   \label{tbl:natlangs}
 \end{table}
-
-Furthermore, Occitan is a unique case.
-
-% Language family breakdown, make a pie chart for this
 
 \subsubsection{Wikimedia}
 \label{ssec:wikimedia}
@@ -833,7 +825,7 @@ The preference for using mostly default parameters for the functions and models 
 \subsubsection{Entropy}
 \label{ssec:entropy}
 
-In total, five values of entropy were measured: text, lexical, reversed lexical, character distribution, and word distribution. The latter two were calculated without the use of a model, simply with the formula for Shannon's entropy for a given text: \[H(X) = -\sum_{i=1}^{n}p(x_i)\log_{2}p(x_i)\]
+In total, five values of entropy were measured: text, lexical, reverse lexical, character distribution, and word distribution. The latter two were calculated without the use of a model, simply with the formula for Shannon's entropy for a given text: \[H(X) = -\sum_{i=1}^{n}p(x_i)\log_{2}p(x_i)\]
 
 Where \( X \) refers to the random variable (e.g. the word or character distribution of a text), \( n \) is the number of distinct values (i.e. types) in the distribution, \( p(x_i) \) shows the probability \( p \) of each type \( x_i \) occurring and is calculated by its relative frequency, and \( -\log_{2}p(x_i) \) represents the self-information for each type. Put together, \( \log_{2}p(x_i) \) represents the surprisal associated with a given type, and the average of all of these is the entropy.
 
@@ -886,11 +878,11 @@ The validation loss was repeatedly assessed throughout training, and the mean of
 
 Therefore, the final value arrived at is the text's perplexity. This is used to represent the text entropy instead, however, due to being more interpretable while still conveying the same information about the text.
 
-Finally, lexical entropy---at the character-level---is a measure of uncertainty in predicting the subsequent character in a given sequence, in this case a word. Reversed lexical entropy is the same thing applied to a sequence that has been reversed, which may be an informative feature for distinguishing languages whose lexicons, for example, present more prevalence in prefix or suffix constructions. 
+Finally, lexical entropy---at the character-level---is a measure of uncertainty in predicting the subsequent character in a given sequence, in this case a word. Reverse lexical entropy is the same thing applied to a sequence that has been reversed, which may be an informative feature for distinguishing languages whose lexicons, for example, present more prevalence in prefix or suffix constructions. 
 
 For calculating both of these features, LSTMs were again used. Similar to before, the text data was first encoded into integers via dictionaries containing the vocabulary (alphabet) of each text. In contrast to the model for calculating text entropy, however, both of these models analyze the data as individual sequences of words. This means the additional use of beginning of sequence ('<') and end of sequence ('>') characters, and each sequence being padded to the same length for uniformity. 
 
-The only significant change in the process for computing both entropies occurred in the text encoding step; for the reversed lexical entropy, the sequence was reversed prior to padding. An example of forward-facing sequences (\ref{lexentropyseq1}) and their reversed forms (\ref{lexentropyseq2}) from the English corpus is illustrated here:
+The only significant change in the process for computing both entropies occurred in the text encoding step; for the reverse lexical entropy, the sequence was reversed prior to padding. An example of forward-facing sequences (\ref{lexentropyseq1}) and their reversed forms (\ref{lexentropyseq2}) from the English corpus is illustrated here:
 
 \begin{align}
 \texttt{'<misinterpreted>', '<filaments>', '<assisting>'} \label{lexentropyseq1} \\
@@ -1166,7 +1158,7 @@ The other parameters worth mentioning here, as they are specific to this kind of
 
 % Why did you choose these metrics over others?
 
-To evaluate all five models, precision, recall, and F1-score was calculated, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection \parencite{Agyemang2024article,Braei2020article,Maya2019article,Elmrabit2020article,Oktafiani2024article}, making them a reasonable choice. For anomaly detection, these measure the models' ability to correctly predict the target class, here being the constructed languages.
+To evaluate all five models, precision, recall, and F\textsubscript{1}-score was calculated, given by Equations \ref{eq:precision}, \ref{eq:recall}, and \ref{eq:f1score}, respectively. These are standard metrics which are commonly used in machine learning tasks, including for supervised classification and unsupervised anomaly detection \parencite{Agyemang2024article,Braei2020article,Maya2019article,Elmrabit2020article,Oktafiani2024article}, making them a reasonable choice. For anomaly detection, these measure the models' ability to correctly predict the target class, here being the constructed languages.
 
 \begin{equation}
   \label{eq:precision}
@@ -1187,7 +1179,7 @@ For evaluation of the supervised classifiers, the numbers of True Positive (TP),
 
 Due to training and predicting on the entire dataset, though, evaluating the unsupervised anomaly detection models was done by simply calculating the metrics for each estimator's overall predictions during fine-tuning.
 
-In both tasks, the estimator which achieved the highest F1-score was determined as having the optimal parameters for the respective model. It is important to note, however, that because of the limited size of the dataset, evaluation of these models proved challenging, as there was not enough data to create holdout sets for testing. As a result, the scores measuring their performance do not sufficiently indicate their ability to make predictions on new, unseen data. 
+In both tasks, the estimator which achieved the highest F\textsubscript{1}-score was determined as having the optimal parameters for the respective model. It is important to note, however, that because of the limited size of the dataset, evaluation of these models proved challenging, as there was not enough data to create holdout sets for testing. As a result, the scores measuring their performance do not sufficiently indicate their ability to make predictions on new, unseen data. 
 
 \subsection{Feature Importance with SHAP}
 \label{ssec:featureimportances}
@@ -1204,64 +1196,110 @@ In all instances, the entire dataset was used to make predictions and derive the
 \section{Results}
 \label{sec:results}
 
-This section starts by reporting the results of the methods implemented for, and the measurements derived from, the applied step of feature engineering. Each individual feature is also visualized in the format of a one-dimensional graph containing the distribution of languages and their corresponding values for said feature, in order to better interpret the empirical data, as well as to identify potential trends. Initial, surface-level interpretation of these distributions will be addressed here, with deeper discussion and analysis continued in Chapter \ref{sec:discussion} that delves into possible explanations for the various observations.
+This section starts by reporting the results of the methods implemented for, and the measurements derived from, the applied step of feature engineering. Each individual feature is also visualized in the format of a one-dimensional graph containing the distribution of languages and their corresponding values for said feature, in order to better interpret the empirical data, as well as to identify potential trends more easily. Initial, surface-level interpretation of these distributions will be addressed here, with deeper discussion and analysis continued in Chapter \ref{sec:discussion} that delves into possible explanations for the various observations. 
 
-Following this are the results of dimensionality reduction on the data using PCA, visualized in two-dimensional space. Then, the results of each of the fine-tuned models used for supervised classification and unsupervised anomaly detection are shown and compared. Lastly, the findings of the SHAP analysis for each model (except for Local Outlier Factor) are reported, providing a better explanation of the models and examining global feature importances, as determined by them.
+Following this are the results of dimensionality reduction on the data using PCA, visualized in two-dimensional space. Then, the results of each of the fine-tuned models used for supervised classification and unsupervised anomaly detection are shown and compared. Lastly, the findings of the SHAP analysis for each model (except for local outlier factor) are reported, providing a better explanation of the models and examining global feature importances.
+
+As a reminder, these findings correspond to a relatively small dataset of only 24 languages. This detail will also be relevant later in this chapter when the scores for the supervised and unsupervised models are reported, as only one difference in a model's predictions change the score more considerably than what would happen with a larger dataset. Additionally, the results of the two supervised models, decision tree and random forest, correspond to the leave-one-out experiments performed for fine-tuning, and thus were derived from the best-performing model.
 
 \subsection{Results of Feature Engineering}
 \label{ssec:featureengineeringresults}
 
 % See feedback notes for fixing this table (page 31)
 
-\begin{table}[!h]
-  % \centering
-  \renewcommand{\arraystretch}{1.5}
-  \begin{adjustbox}{width=\textwidth}
-  \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
-    \hline
-        \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
-        % \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \multicolumn{2}{c|}{\textbf{Text Complexity}} & \multicolumn{3}{c|}{\textbf{Lexical Diversity}} & \multicolumn{3}{c|}{\textbf{Morphological Complexity}} & \multicolumn{5}{c|}{\textbf{Entropy}} \\ \hline
-        % & & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
-        \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 67.482 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
-        \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 74.165 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
-        \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 115.342 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
-        \textbf{Polish} & nat & 6.248 & 14.951 & 14.890 & 0.825 & 278.888 & 6.639 & 1.894 & 3.709 & 4.553 & 12.905 & 5.072 & 5.611 & 5.898 \\ \hline
-        \textbf{French} & nat & 5.160 & 23.120 & 7.461 & 0.721 & 91.865 & 7.109 & 1.771 & 2.759 & 4.179 & 10.711 & 4.104 & 6.256 & 6.779 \\ \hline
-        \textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 39.447 & 15.287 & 1.567 & 1.938 & 4.256 & 7.666 & 1.281 & 8.702 & 9.037 \\ \hline
-        \textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 59.938 & 13.894 & 1.770 & 2.861 & 4.072 & 9.993 & 4.757 & 6.639 & 6.986 \\ \hline
-        \textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 94.751 & 27.439 & 1.344 & 1.453 & 4.855 & 9.717 & 4.768 & 11.878 & 11.432 \\ \hline
-        \textbf{Occitan} & nat & 5.215 & 18.660 & 7.185 & 0.715 & 87.187 & 7.674 & 1.793 & 2.805 & 4.173 & 10.546 & 3.530 & 6.741 & 7.118 \\ \hline
-        \textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 77.659 & 10.049 & 1.661 & 2.360 & 4.167 & 10.673 & 4.771 & 7.106 & 7.601 \\ \hline
-        \textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 129.111 & 7.919 & 1.765 & 2.939 & 4.029 & 11.308 & 4.573 & 5.563 & 6.123 \\ \hline
-        \textbf{Interlingua} & con & 5.050 & 19.547 & 6.880 & 0.607 & 49.015 & 8.904 & 1.750 & 2.715 & 4.032 & 10.005 & 3.886 & 6.406 & 6.958 \\ \hline
-        \textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 124.469 & 9.496 & 1.957 & 4.074 & 4.294 & 11.488 & 4.830 & 6.207 & 6.517 \\ \hline
-        \textbf{LFN} & con & 4.221 & 19.532 & 5.063 & 0.601 & 40.079 & 9.769 & 1.688 & 2.448 & 3.912 & 9.316 & 4.471 & 7.716 & 8.436 \\ \hline
-        \textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 106.412 & 10.259 & 1.911 & 3.776 & 4.197 & 11.274 & 5.037 & 6.408 & 6.796 \\ \hline
-        \textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 169.833 & 6.240 & 2.000 & 5.071 & 4.543 & 12.443 & 5.208 & 5.584 & 5.951 \\ \hline
-        \textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 74.365 & 12.993 & 1.584 & 2.048 & 4.072 & 11.142 & 3.982 & 7.285 & 7.342 \\ \hline
-        \textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 44.385 & 11.830 & 1.717 & 2.563 & 3.895 & 9.991 & 4.374 & 6.803 & 7.040 \\ \hline
-        \textbf{Turkish} & nat & 6.630 & 14.458 & 14.097 & 0.828 & 290.829 & 6.805 & 1.843 & 3.932 & 4.386 & 13.151 & 4.729 & 5.028 & 5.422 \\ \hline
-        \textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 34.395 & 13.024 & 1.645 & 2.208 & 4.077 & 8.055 & 1.266 & 7.471 & 8.267 \\ \hline
-        \textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 65.538 & 8.131 & 1.756 & 2.752 & 4.046 & 10.327 & 4.066 & 6.059 & 6.664 \\ \hline
-        \textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 394.346 & 8.806 & 2.008 & 5.037 & 4.144 & 13.729 & 4.529 & 4.994 & 5.479 \\ \hline
-        \textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 139.978 & 9.026 & 1.981 & 4.356 & 4.230 & 11.601 & 4.530 & 5.323 & 5.743 \\ \hline
-        \textbf{Kotava} & con & 5.060 & 12.824 & 8.153 & 0.582 & 61.499 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline
-    \end{tabular}
-  \end{adjustbox}
-  \caption{Complete set of all 13 features for every language in the data, as well as each language's label (\textit{Type}), which denote constructed or natural language as \textit{con} or \textit{nat}, respectively. Each feature's value is rounded to 3 decimal places.}
-  \label{tbl:featurestable}
-\end{table}
+Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively). The corresponding one-dimensional plots for the features can be seen in Figure \ref{fig:1dfeatures}, with each language represented by its ISO code and the type of language distinguishable based on the marker and color (red X's correspond to constructed languages, and green vertical lines correspond to natural languages).
 
-Table \ref{tbl:featurestable} shows the full set of features for each language of the dataset and their respective measurements rounded to three decimals places. Additionally, the column \textit{Type} shows their labels as either constructed or natural languages (\textit{con} or \textit{nat}, respectively). The corresponding one-dimensional plots for the features can be seen in Figure \ref{fig:1dfeatures}, with the type of language distinguishable by marker and color.
+\clearpage
 
-Looking at the two features measuring text complexity first, average word length and average sentence length, one can see clustering left of the center in the former and, in comparison, a slightly more uniform distribution in the latter. Regarding average word length, Vietnamese and Finnish being at opposite extremities of shortest and longest lengths, respectively, aligns with expectations given the nature of their morphological systems. This pattern of both languages being at either end of the distribution appears again for average sentence length, and in fact is noticeable in many of the other feature distributions as well. Notably, all six constructed languages in the dataset appear on the left side of both distributions, left of the median values, and Volapük has the shortest average sentence length of all languages.
+% \begin{table}[!h]
+%   % \centering
+%   \renewcommand{\arraystretch}{1.5}
+%   \begin{adjustbox}{width=\textwidth}
+%   \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+%     \hline
+%         \textbf{Language} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Avg Word Length}} & \rotatebox{90}{\textbf{Avg Sentence Length}} & \rotatebox{90}{\textbf{TTR}} & \rotatebox{90}{\textbf{MATTR}} & \rotatebox{90}{\textbf{MTLD}} & \rotatebox{90}{\textbf{Morpheme TTR}} & \rotatebox{90}{\textbf{Avg Segs Per Word}} & \rotatebox{90}{\textbf{Avg Forms Per Stem}} & \rotatebox{90}{\textbf{Char Dist Entr}} & \rotatebox{90}{\textbf{Word Dist Entr}} & \rotatebox{90}{\textbf{Text Entr}} & \rotatebox{90}{\textbf{Lex Entr}} & \rotatebox{90}{\textbf{Rev Lex Entr}} \\ \hline
+%         \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 67.482 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
+%         \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 74.165 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
+%         \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 115.342 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
+%         \textbf{Polish} & nat & 6.248 & 14.951 & 14.890 & 0.825 & 278.888 & 6.639 & 1.894 & 3.709 & 4.553 & 12.905 & 5.072 & 5.611 & 5.898 \\ \hline
+%         \textbf{French} & nat & 5.160 & 23.120 & 7.461 & 0.721 & 91.865 & 7.109 & 1.771 & 2.759 & 4.179 & 10.711 & 4.104 & 6.256 & 6.779 \\ \hline
+%         \textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 39.447 & 15.287 & 1.567 & 1.938 & 4.256 & 7.666 & 1.281 & 8.702 & 9.037 \\ \hline
+%         \textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 59.938 & 13.894 & 1.770 & 2.861 & 4.072 & 9.993 & 4.757 & 6.639 & 6.986 \\ \hline
+%         \textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 94.751 & 27.439 & 1.344 & 1.453 & 4.855 & 9.717 & 4.768 & 11.878 & 11.432 \\ \hline
+%         \textbf{Occitan} & nat & 5.215 & 18.660 & 7.185 & 0.715 & 87.187 & 7.674 & 1.793 & 2.805 & 4.173 & 10.546 & 3.530 & 6.741 & 7.118 \\ \hline
+%         \textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 77.659 & 10.049 & 1.661 & 2.360 & 4.167 & 10.673 & 4.771 & 7.106 & 7.601 \\ \hline
+%         \textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 129.111 & 7.919 & 1.765 & 2.939 & 4.029 & 11.308 & 4.573 & 5.563 & 6.123 \\ \hline
+%         \textbf{Interlingua} & con & 5.050 & 19.547 & 6.880 & 0.607 & 49.015 & 8.904 & 1.750 & 2.715 & 4.032 & 10.005 & 3.886 & 6.406 & 6.958 \\ \hline
+%         \textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 124.469 & 9.496 & 1.957 & 4.074 & 4.294 & 11.488 & 4.830 & 6.207 & 6.517 \\ \hline
+%         \textbf{LFN} & con & 4.221 & 19.532 & 5.063 & 0.601 & 40.079 & 9.769 & 1.688 & 2.448 & 3.912 & 9.316 & 4.471 & 7.716 & 8.436 \\ \hline
+%         \textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 106.412 & 10.259 & 1.911 & 3.776 & 4.197 & 11.274 & 5.037 & 6.408 & 6.796 \\ \hline
+%         \textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 169.833 & 6.240 & 2.000 & 5.071 & 4.543 & 12.443 & 5.208 & 5.584 & 5.951 \\ \hline
+%         \textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 74.365 & 12.993 & 1.584 & 2.048 & 4.072 & 11.142 & 3.982 & 7.285 & 7.342 \\ \hline
+%         \textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 44.385 & 11.830 & 1.717 & 2.563 & 3.895 & 9.991 & 4.374 & 6.803 & 7.040 \\ \hline
+%         \textbf{Turkish} & nat & 6.630 & 14.458 & 14.097 & 0.828 & 290.829 & 6.805 & 1.843 & 3.932 & 4.386 & 13.151 & 4.729 & 5.028 & 5.422 \\ \hline
+%         \textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 34.395 & 13.024 & 1.645 & 2.208 & 4.077 & 8.055 & 1.266 & 7.471 & 8.267 \\ \hline
+%         \textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 65.538 & 8.131 & 1.756 & 2.752 & 4.046 & 10.327 & 4.066 & 6.059 & 6.664 \\ \hline
+%         \textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 394.346 & 8.806 & 2.008 & 5.037 & 4.144 & 13.729 & 4.529 & 4.994 & 5.479 \\ \hline
+%         \textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 139.978 & 9.026 & 1.981 & 4.356 & 4.230 & 11.601 & 4.530 & 5.323 & 5.743 \\ \hline
+%         \textbf{Kotava} & con & 5.060 & 12.824 & 8.153 & 0.582 & 61.499 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline
+%     \end{tabular}
+%   \end{adjustbox}
+%   \caption{Complete set of all 13 features for every language in the data, as well as each language's label (\textit{Type}), which denote constructed or natural language as \textit{con} or \textit{nat}, respectively. Each feature's value is rounded to 3 decimal places.}
+%   \label{tbl:featurestable}
+% \end{table}
 
-The three measures for lexical diversity, TTR, MATTR, and MTLD, again show Finnish to be an extreme instance, with the highest values for all three. Likewise, all of the constructed languages again appear on the left side of the distributions; interestingly, of these, Esperanto is closest to center for both TTR and MATTR. MATTR in particular also shows an almost complete divide between constructed and natural languages in the distribution, with the exception of Tagalog and Esperanto. Additionally, the distribution for MTLD reveals a cluster on the furthermost left side, with all six constructed languages having extremely low values and Polish, Turkish, and Finnish appearing as on the opposite end with significantly higher values. 
+% \begin{landscape}  
 
-Similar clustering behavior can be observed in the distributions for the three measures of morphological complexity, particularly the first two which are imbalanced. In all, however, Vietnamese again appears as an extreme case, and this is especially apparent in the distributions for morpheme TTR and average segmentations per word, where it is significantly isolated from the rest---likely a reflection of its isolating morphology. When comparing these to the distributions for the lexical and text complexity features, constructed and natural languages appear to overlap more, suggesting that morphology complexity may not be as much of a discriminative linguistic feature between the two.
+  % \begin{table}[!h]
+  \begin{sidewaystable}[!h]
+    \renewcommand{\arraystretch}{1.5}
+    % \begin{adjustbox}{angle=90, width=\textwidth-2cm}
+    % \begin{adjustbox}{angle=90, width=\textwidth, height=\textheight-2cm} 
+    {\small\setlength{\tabcolsep}{1pt} 
+    % \begin{tabularx}{\textwidth}{|l|l|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+    \begin{tabularx}{\textwidth}{|p{3.1cm}|p{1.3cm}|p{1.3cm}|p{2.2cm}|p{1.3cm}|p{1.6cm}|p{1.5cm}|p{2cm}|p{1.3cm}|p{1.3cm}|p{1.3cm}|p{1.3cm}|p{1.3cm}|p{1.3cm}|p{1.3cm}|}
+    % \begin{tabularx}{\textwidth}{|l|l|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|>{\raggedright}m{1cm}|}
+    % \begin{tabularx}{\textwidth}{|l|l|p{1cm}|p{1cm}|p{1cm}|p{1.2cm}|p{1cm}|p{1.5cm}|p{1cm}|p{1cm}|p{0.9cm}|p{1cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|}
+      \hline
+      \textbf{Language} & \textbf{Type} & \textbf{Avg Word Length} & \textbf{Avg Sentence Length} & \textbf{TTR} & \textbf{MATTR} & \textbf{MTLD} & \textbf{Morpheme TTR} & \textbf{Avg Segs Per Word} & \textbf{Avg Forms Per Stem} & \textbf{Char Dist Entr} & \textbf{Word Dist Entr} & \textbf{Text Entr} & \textbf{Lex Entr} & \textbf{Rev Lex Entr} \\ \hline
+      \textbf{Esperanto} & con & 5.175 & 18.909 & 10.708 & 0.692 & 67.482 & 7.535 & 1.859 & 3.506 & 4.164 & 10.923 & 4.435 & 6.303 & 7.016 \\ \hline
+      \textbf{Dutch} & nat & 5.419 & 18.194 & 8.559 & 0.694 & 74.165 & 12.467 & 1.809 & 3.044 & 4.117 & 10.593 & 4.389 & 6.407 & 6.746 \\ \hline
+      \textbf{Icelandic} & nat & 5.375 & 15.055 & 11.727 & 0.747 & 115.342 & 9.847 & 1.931 & 4.128 & 4.468 & 11.512 & 5.455 & 5.993 & 6.376 \\ \hline
+      \textbf{Polish} & nat & 6.248 & 14.951 & 14.890 & 0.825 & 278.888 & 6.639 & 1.894 & 3.709 & 4.553 & 12.905 & 5.072 & 5.611 & 5.898 \\ \hline
+      \textbf{French} & nat & 5.160 & 23.120 & 7.461 & 0.721 & 91.865 & 7.109 & 1.771 & 2.759 & 4.179 & 10.711 & 4.104 & 6.256 & 6.779 \\ \hline
+      \textbf{Volapük} & con & 5.072 & 11.266 & 2.455 & 0.622 & 39.447 & 15.287 & 1.567 & 1.938 & 4.256 & 7.666 & 1.281 & 8.702 & 9.037 \\ \hline
+      \textbf{Afrikaans} & nat & 5.067 & 20.496 & 6.987 & 0.645 & 59.938 & 13.894 & 1.770 & 2.861 & 4.072 & 9.993 & 4.757 & 6.639 & 6.986 \\ \hline
+      \textbf{Vietnamese} & nat & 3.498 & 29.835 & 1.749 & 0.732 & 94.751 & 27.439 & 1.344 & 1.453 & 4.855 & 9.717 & 4.768 & 11.878 & 11.432 \\ \hline
+      \textbf{Occitan} & nat & 5.215 & 18.660 & 7.185 & 0.715 & 87.187 & 7.674 & 1.793 & 2.805 & 4.173 & 10.546 & 3.530 & 6.741 & 7.118 \\ \hline
+      \textbf{English} & nat & 5.087 & 21.301 & 6.079 & 0.697 & 77.659 & 10.049 & 1.661 & 2.360 & 4.167 & 10.673 & 4.771 & 7.106 & 7.601 \\ \hline
+      \textbf{Italian} & nat & 5.455 & 25.727 & 8.505 & 0.764 & 129.111 & 7.919 & 1.765 & 2.939 & 4.029 & 11.308 & 4.573 & 5.563 & 6.123 \\ \hline
+      \textbf{Interlingua} & con & 5.050 & 19.547 & 6.880 & 0.607 & 49.015 & 8.904 & 1.750 & 2.715 & 4.032 & 10.005 & 3.886 & 6.406 & 6.958 \\ \hline
+      \textbf{Swedish} & nat & 5.597 & 17.322 & 11.031 & 0.756 & 124.469 & 9.496 & 1.957 & 4.074 & 4.294 & 11.488 & 4.830 & 6.207 & 6.517 \\ \hline
+      \textbf{LFN} & con & 4.221 & 19.532 & 5.063 & 0.601 & 40.079 & 9.769 & 1.688 & 2.448 & 3.912 & 9.316 & 4.471 & 7.716 & 8.436 \\ \hline
+      \textbf{Danish} & nat & 5.346 & 16.466 & 10.517 & 0.737 & 106.412 & 10.259 & 1.911 & 3.776 & 4.197 & 11.274 & 5.037 & 6.408 & 6.796 \\ \hline
+      \textbf{Hungarian} & nat & 6.242 & 15.782 & 16.234 & 0.776 & 169.833 & 6.240 & 2.000 & 5.071 & 4.543 & 12.443 & 5.208 & 5.584 & 5.951 \\ \hline
+      \textbf{Indonesian} & nat & 6.173 & 18.164 & 5.782 & 0.699 & 74.365 & 12.993 & 1.584 & 2.048 & 4.072 & 11.142 & 3.982 & 7.285 & 7.342 \\ \hline
+      \textbf{Tagalog} & nat & 5.119 & 21.102 & 7.593 & 0.611 & 44.385 & 11.830 & 1.717 & 2.563 & 3.895 & 9.991 & 4.374 & 6.803 & 7.040 \\ \hline
+      \textbf{Turkish} & nat & 6.630 & 14.458 & 14.097 & 0.828 & 290.829 & 6.805 & 1.843 & 3.932 & 4.386 & 13.151 & 4.729 & 5.028 & 5.422 \\ \hline
+      \textbf{Ido} & con & 4.594 & 14.484 & 3.433 & 0.557 & 34.395 & 13.024 & 1.645 & 2.208 & 4.077 & 8.055 & 1.266 & 7.471 & 8.267 \\ \hline
+      \textbf{Spanish} & nat & 4.978 & 25.315 & 7.085 & 0.674 & 65.538 & 8.131 & 1.756 & 2.752 & 4.046 & 10.327 & 4.066 & 6.059 & 6.664 \\ \hline
+      \textbf{Finnish} & nat & 7.874 & 11.969 & 20.409 & 0.841 & 394.346 & 8.806 & 2.008 & 5.037 & 4.144 & 13.729 & 4.529 & 4.994 & 5.479 \\ \hline
+      \textbf{German} & nat & 6.206 & 16.907 & 12.128 & 0.771 & 139.978 & 9.026 & 1.981 & 4.356 & 4.230 & 11.601 & 4.530 & 5.323 & 5.743 \\ \hline
+      \textbf{Kotava} & con & 5.060 & 12.824 & 8.153 & 0.582 & 61.499 & 9.611 & 1.769 & 2.827 & 4.186 & 10.287 & 3.759 & 7.809 & 8.096 \\ \hline
+    \end{tabularx}}
+    % \end{adjustbox}
+    \caption{Complete set of all 13 features for every language in the data, as well as each language's label (\textit{Type}), which denote constructed or natural language as \textit{con} or \textit{nat}, respectively. Each feature's value is rounded to 3 decimal places.}
+    \label{tbl:featurestable}
+  % \end{table}
+  \end{sidewaystable}
+
+% \end{landscape} 
+
+\newpage
+\clearpage
 
 % \newpage
-\begin{figure}[!ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{1d_Avg_Word_Length.png} 
   % \caption{Avg Word Length}
@@ -1281,9 +1319,9 @@ Similar clustering behavior can be observed in the distributions for the three m
   % \caption{Avg Forms Per Stem}
 \end{figure}
 
-\clearpage
+% \clearpage
 
-\begin{figure}[!ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{1d_Char_Dist_Entr.png}
   % \caption{Char Dist Entr}
@@ -1299,7 +1337,11 @@ Similar clustering behavior can be observed in the distributions for the three m
   \label{fig:1dfeatures}
 \end{figure}
 
-% \newpage
+Looking at the two features measuring text complexity first, average word length and average sentence length, one can see clustering left of the center in the former and, in comparison, a slightly more uniform distribution in the latter. Regarding average word length, Vietnamese and Finnish being at opposite extremities of shortest and longest lengths, respectively, aligns with expectations given the nature of their morphological systems. This pattern of both languages being at either end of the distribution appears again for average sentence length, and in fact is noticeable in many of the other feature distributions as well. Notably, all six constructed languages in the dataset appear on the left side of both distributions, left of the median values, and Volapük has the shortest average sentence length of all languages. While having some level of correlation to specific features (e.g., morphology) of the languages, both of these measures are also very influenced by the quality and content of the text data itself, such as its domain and the writing style of its authors.
+
+The three measures for lexical diversity, TTR, MATTR, and MTLD, again show Finnish to be an extreme instance, with the highest values for all three. Likewise, all of the constructed languages again appear on the left side of the distributions; interestingly, of these, Esperanto is closest to center for both TTR and MATTR. MATTR in particular also shows an almost complete divide between constructed and natural languages in the distribution, with the exception of Tagalog and Esperanto. Additionally, the distribution for MTLD reveals a cluster on the furthermost left side, with all six constructed languages having extremely low values and Polish, Turkish, and Finnish appearing as on the opposite end with significantly higher values. 
+
+Similar clustering behavior can be observed in the distributions for the three measures of morphological complexity, particularly the first two which are imbalanced. In all, however, Vietnamese again appears as an extreme case, and this is especially apparent in the distributions for morpheme TTR and average segmentations per word, where it is significantly isolated from the rest---likely a reflection of its isolating morphology. When comparing these to the distributions for the lexical and text complexity features, constructed and natural languages appear to overlap more, suggesting that morphology complexity may not be as much of a discriminative linguistic feature between the two.
 
 In the last group of features, corresponding to the five measurements of entropy, interesting patterns of clustering and imbalanced distributions again emerge in the findings. For character distribution entropy, the constructed languages are again grouped together on the left side. Perhaps unsurprisingly, given the exceedingly large size of its alphabet (i.e., the 93 lowercase alphabetical characters that comprise its corpora, a number which includes all variations of diacritics), Vietnamese is the highest value. Interestingly, though, this is followed next by Polish, despite having an alphabet size that is lower than several other languages in the study, suggesting the influence of other factors as well (e.g., orthography). On the other end of the spectrum is Tagalog with the lowest character distribution entropy, followed closely by Lingua Franca Nova.
 
@@ -1322,8 +1364,8 @@ Last are the measures for lexical and reverse lexical entropy, which have very s
 
 \begin{figure}[!h]
   \centering
-  \caption{PCA Variance Screeplot - Kaiser Criterion}
   \includegraphics[width=0.7\textwidth]{PCA_Variance_Screeplot_kaiser.png}
+  \caption{PCA Variance Screeplot - Kaiser Criterion}
   \label{fig:pckaiser}
 \end{figure}
 
@@ -1349,8 +1391,8 @@ To interpret the degree to which each of the features in the data contributed to
 
 \begin{figure}[!h]
   \centering
-    \caption{Principal component analysis of the features using 2 principal components.}
     \includegraphics[width=1.0\textwidth]{PCA_of_Features.png}
+    \caption{Principal component analysis of the features using 2 principal components.}
     \label{fig:pcaanalysis}\
 \end{figure}
 
@@ -1365,7 +1407,6 @@ Immediately noticeable in the diagram is the isolated position of Vietnamese at 
 
 \begin{table}[!h]
   \centering
-  \caption{Precision, recall, and F1-scores of the fine-tuned supervised binary classification models.}
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
@@ -1373,6 +1414,7 @@ Immediately noticeable in the diagram is the isolated position of Vietnamese at 
       Decision Tree & 0.83 & 0.83 & 0.83 \\ 
       Random Forest & 0.83 & 0.83 & 0.83 \\ \hline
   \end{tabular}
+  \caption{Precision, recall, and F1-scores of the fine-tuned supervised binary classification models.}
   \label{tbl:supervisedevaluation}
 \end{table}
 
@@ -1385,7 +1427,7 @@ As Table \ref{tbl:supervisedevaluation} shows, both classifiers achieved exactly
         \label{fig:decisiontree}
 \end{figure}
 
-Figure \ref{fig:decisiontree} shows the resulting structure of the fine-tuned Decision Tree. To briefly explain how this is interpreted, for each node of the tree except the terminal ones, the top line is the condition for the subsequent split, and each split is a binary partition of the remaining number of samples. For example, the condition for the root node is \textit{MTLD} less than or equal to 70.824, which is true for 9 samples and false for the other 15. In addition, \textit{value} shows the weighted counts for both classes, with \textit{class} being equal to the majority class at that split, and \textit{gini} ranges from 0.0 (the samples all belong to one class) to 0.5 (the samples are evenly distributed, referred to as maximum impurity). Thus, the diagram indicates that the features MTLD, Average Sentence Length, and Average Word Length were the most discriminating features for this model's predictions. 
+Figure \ref{fig:decisiontree} shows the resulting structure of the fine-tuned decision tree. To briefly explain how this is interpreted, for each node of the tree except the terminal ones, the top line is the condition for the subsequent split, and each split is a binary partition of the remaining number of samples. For example, the condition for the root node is \textit{MTLD} less than or equal to 70.824, which is true for 9 samples and false for the other 15. In addition, \textit{value} shows the weighted counts for both classes, with \textit{class} being equal to the majority class at that split, and \textit{gini} ranges from 0.0 (the samples all belong to one class) to 0.5 (the samples are evenly distributed, referred to as maximum impurity). Thus, the diagram indicates that the features MTLD, average sentence length, and average word length were the most discriminating features for this model's predictions. 
 
 \begin{figure}[!h]
   \centering
@@ -1399,14 +1441,13 @@ Figure \ref{fig:decisiontree} shows the resulting structure of the fine-tuned De
     \label{fig:cmsupervised}
 \end{figure}
 
-In the resulting confusion matrices for the fine-tuned supervised binary classifiers seen in Figure \ref{fig:cmsupervised}, the classes for \textit{constructed} and \textit{natural} correspond to 0 and 1, respectively, with constructed languages being the positive class. Both models made the same number of True Positive, False Positive, False Negative, and True Negative predictions. For the Decision Tree (left), Esperanto was incorrectly predicted as negative and Dutch incorrectly as positive. Similarly, the Random Forest (right) erroneously predicted Esperanto as negative too, but with Tagalog incorrectly as positive. This means, then, that both models mistakenly classified Esperanto as a natural language. 
+In the resulting confusion matrices for the fine-tuned supervised binary classifiers seen in Figure \ref{fig:cmsupervised}, the classes for \textit{constructed} and \textit{natural} correspond to 0 and 1, respectively, with constructed languages being the positive class. Both models made the same number of True Positive, False Positive, False Negative, and True Negative predictions. For the decision tree (left), Esperanto was incorrectly predicted as negative and Dutch incorrectly as positive. Similarly, the random forest (right) erroneously predicted Esperanto as negative too, but with Tagalog incorrectly as positive. This means, then, that both models mistakenly classified Esperanto as a natural language. 
 
 \subsection{Results of Unsupervised Anomaly Detection}
 \label{ssec:anomalydetectionresults}
 
 \begin{table}[!h]
   \centering
-  \caption{Precision, recall, and F\textsubscript{1}-scores of the fine-tuned unsupervised anomaly detection models.}
   \renewcommand{\arraystretch}{1.0}
   \begin{tabular}{|l|l|l|l|}
   \hline
@@ -1415,10 +1456,11 @@ In the resulting confusion matrices for the fine-tuned supervised binary classif
       One-Class SVM & 0.73 & 0.80 & 0.67 \\
       Local Outlier Factor & 0.67 & 0.67 & 0.67 \\ \hline
   \end{tabular}
+  \caption{Precision, recall, and F\textsubscript{1}-scores of the fine-tuned unsupervised anomaly detection models.}
   \label{tbl:unsupervisedevaluation}
 \end{table}
 
-Table \ref{tbl:unsupervisedevaluation} shows the precision, recall, and F\textsubscript{1}-scores for the unsupervised anomaly detection models. The Isolation Forest and Local Outlier Factor achieved identical performance for precision, recall, and F\textsubscript{1}-scores, all of which were 0.67. On the other hand, despite also achieving the same score for recall, One-Class SVM performed slightly better in terms of precision and F\textsubscript{1}-score, with a score of 0.80 and 0.73, respectively.
+Table \ref{tbl:unsupervisedevaluation} shows the precision, recall, and F\textsubscript{1}-scores for the unsupervised anomaly detection models. The isolation forest and local outlier factor achieved identical performance for precision, recall, and F\textsubscript{1}-scores, all of which were 0.67. On the other hand, despite also achieving the same score for recall, one-class SVM performed slightly better in terms of precision and F\textsubscript{1}-score, with a score of 0.80 and 0.73, respectively.
 
 \begin{figure}[!h]
   \centering
@@ -1434,30 +1476,9 @@ Table \ref{tbl:unsupervisedevaluation} shows the precision, recall, and F\textsu
   \label{fig:cmunsupervised}
 \end{figure}
 
-The resulting confusion matrices for all three unsupervised models are provided in Figure \ref{fig:cmunsupervised}. Here again, constructed languages are the positive class being predicted, with 0 and 1 representing the constructed and natural language samples, respectively. 
+The resulting confusion matrices for all three unsupervised models are provided in Figure \ref{fig:cmunsupervised}. Here again, constructed languages are the positive class being predicted (positive equating to an anomaly), with 0 and 1 representing the constructed and natural language samples, respectively. 
 
-Overall, the unsupervised models performed comparable to one another, with all three correctly predicting 4 positive instances. Regarding their erroneous predictions, the One-Class SVM falsely considered Esperanto and Interlingua to be negative, or natural languages, and Vietnamese as positive, or a constructed language. Interestingly, both the Isolation Forest and Local Outlier Factor models made exactly the same errors, with the addition of incorrectly predicting Finnish to be a positive instance in both cases too.
-
-% \begin{figure}[!h]
-%   \centering
-%     \includegraphics[width=0.5\textwidth]{CM_if.png}
-%     \caption{Confusion Matrix for Isolation Forest}
-%     \label{fig:cmisolationforest}
-% \end{figure}
-
-% \begin{figure}[!h]
-%   \centering
-%     \includegraphics[width=0.5\textwidth]{IF_outliers.png}
-%     \caption{Anomalies Detected by Isolation Forest}
-%     \label{fig:isolationforestanomalies}
-% \end{figure}
-
-% \begin{figure}[!h]
-%   \centering
-%     \includegraphics[width=0.5\textwidth]{CM_lof.png}
-%     \caption{Confusion Matrix for Local Outlier Factor}
-%     \label{fig:cmlof}
-% \end{figure}
+Overall, the unsupervised models performed comparable to one another, with all three correctly predicting 4 instances of anomalies. Regarding their erroneous predictions, the one-class SVM falsely considered Esperanto and Interlingua to be non-anomalies, or natural languages, and Vietnamese as an anomaly, or a constructed language. Interestingly, both the isolation forest and local outlier factor models made exactly the same errors, with the addition of incorrectly predicting Finnish to be an anomaly instance in both cases too.
 
 \subsection{Results of SHAP}
 \label{ssec:shapresults}
@@ -1493,21 +1514,7 @@ Figure \ref{fig:supervisedshap} shows the two beeswarm plots corresponding to th
     \label{fig:unsupervisedshap}
 \end{figure}
 
-The beeswarm plots for the two analyzed unsupervised models are shown in Figure \ref{fig:unsupervisedshap}. As these correspond to anomaly detection, their interpretation is slightly different due to the way the models make predictions. A negative anomaly score indicates a predicted anomaly (constructed language); likewise, a negative SHAP value indicates the same. Therefore, the plots show that MATTR was the most important feature for both models, with mid to low feature values being predicted as anomalies, suggesting that this was the strongest indicator for detecting anomalies in the dataset. Additionally, average sentence length and lexical entropy were highly influential for both models as well, with low values for the former and high values for the latter indicating anomalies. However, when comparing these with the feature results in Table \ref{tbl:featurestable} and their corresponding distributions shown in Figure \ref{fig:1dfeatures}, some possible discrepancies also appear at first glance. For instance, the second most influential feature for the one-class SVM, average forms per stem, shows that high feature values were seemingly indicative of an instance being a constructed language---contradictory to what the feature results shows. MTLD's influence on the isolation forest shows something similar, with a cluster of several mid to high values apparently indicating a constructed language to the model; if we compare this to the plot for random forest, we see a similar cluster of mid to high values on the left side too, but in this case it these instances correspond to predictions for natural language, opposite to the cluster for the isolation forest. This shows an interesting contrast between the two models, where the same feature can influence the models in different ways.
-
-% \begin{figure}[!h]
-%   \centering
-%   \begin{minipage}{0.5\textwidth}
-%     \includegraphics[width=\textwidth]{OCSVM_SHAP_granular.png}
-%   \end{minipage}\hfill
-%   \begin{minipage}{0.5\textwidth}
-%     \includegraphics[width=\textwidth]{IF_SHAP_granular.png}
-%   \end{minipage}
-%     \caption{Beeswarm plots for granular SHAP results on fine-tuned unsupervised models: one-class SVM (left) and isolation forest (right).}
-%     \label{fig:unsupervisedgranularshap}
-% \end{figure}
-
-% Lastly,
+The beeswarm plots for the two analyzed unsupervised models are shown in Figure \ref{fig:unsupervisedshap}. As these correspond to anomaly detection, their interpretation is slightly different due to the way the models make predictions. A negative anomaly score indicates a predicted anomaly (constructed language); likewise, a negative SHAP value indicates the same, and a positive SHAP value indicates a natural language. Therefore, the plots show that MATTR was the most important feature for both models, with mid to low feature values being predicted as anomalies, suggesting that this was the strongest indicator for detecting anomalies in the dataset. Additionally, average sentence length and lexical entropy were highly influential for both models as well, with low values for the former and high values for the latter indicating anomalies. However, when comparing these with the feature results in Table \ref{tbl:featurestable} and their corresponding distributions shown in Figure \ref{fig:1dfeatures}, some possible discrepancies also appear at first glance. For instance, the second most influential feature for the one-class SVM, average forms per stem, shows that high feature values were seemingly indicative of an instance being a constructed language---contradictory to what the feature results shows. MTLD's influence on the isolation forest shows something similar, with a cluster of several mid to high values apparently indicating a constructed language to the model; if we compare this to the plot for random forest, we see a similar cluster of mid to high values on the left side too, but in this case these instances correspond to predictions for natural language, opposite to the cluster for the isolation forest. This shows an interesting contrast between the two models, where the same feature can influence the models in different ways.
 
 \clearpage
 \newpage
@@ -1535,11 +1542,11 @@ In the case of Finnish, a notable exception to this pattern of appearing as an e
 
 Additional points worth mentioning include the extreme similarity of the other two feature distributions (more specifically, the order of the languages) for morphological complexity, average number of segmentations per word and average number of forms per stem. As they are both essentially measuring the same underlying morphological processes, just in slightly different ways, this resemblance is not a complete surprise, and it may point towards the inclusion of both features being a bit redundant; on the other hand, though, the results of the SHAP analysis suggest the opposite. Lastly, when specifically examining the constructed languages within the three distributions, they appear to have less of an overall separation from the natural languages compared to other features like MATTR, MTLD, or lexical entropy. That being said, there are also some consistent and familiar patterns; Esperanto again appears as the most extreme case out of the constructed languages, having the lowest morpheme TTR and highest average number of forms per stem and average number of segmentations per word of the six---values which are relatively comparable to many of the natural languages. Furthermore, Volapük was consistently on the opposite end of the spectrum from Esperanto each time (closely followed again by Ido); it is difficult to say, though, the degree to which this accurately reflects expectations based on prior research and understanding of Volapük's morphological structure, or is in fact another possible discrepancy in the results. According to \textcite{Reagan2019book}, Volapük is an agglutinative language described as being grammatically and morphologically complex, a description that seems understated in the face of claims of having upwards of 1,584 ways to conjugate a verb \parencite{Reagan2019book,Rogers2011book}. As such, its high morpheme TTR would suggest this complexity is expressed using a relatively high number of unique morphemes. At the same time, though, the low values for average number of segmentations per word and average number of forms per stem arguably appear, on the surface, contradictory to this characterization, especially when compared to strongly agglutinative languages in the dataset like Hungarian and Finnish. % come  back to this
 
-% [DELETED] The last of the feature distributions to examine are the various measurements for entropy.
-
 As was already mentioned in Section \ref{ssec:featureengineeringresults} regarding character distribution entropy, at first glance it appears to have some degree of correlation to the number of unique alphabetical characters in a given language's corpus, as would be expected. Intuitively, the other likely biggest contributing factor is orthography. Tagalog, for example, has the lowest entropy value of all the languages, which could be due to its frequent use of consonant-vowel patterns, as seen in words like \textit{tarayan} (to be rude to someone), \textit{baka} (cow), and \textit{sala} (living room). Lingua Franca Nova being the lowest of the constructed languages could be in part explainable as reflecting its intended strict adherence to phonetic spelling; on the other hand, the same is also true for Kotava and (for the most part) Ido, yet these results show Esperanto's entropy to be lower than Kotava's, and Interlingua lower than all three, so this interpretation is left inconclusive. As a whole, the relatively similar character distribution entropies of some of the constructed languages (namely Interlingua, Esperanto, Lingua Franca Nova, and Ido) and their close proximity with the Romance languages in the distribution fits prior expectations, though, given their very closely-related and similar alphabets and orthographies. 
 
-The remaining four measures of entropy all show very interesting results as well, albeit in different ways. For word distribution entropy and text entropy, Volapük and Ido appear to be significantly more separated from the rest of the languages, especially for text entropy, where they have almost identical values. While their highly regular grammars and morphologies could again serve as some explanation for their low values for entropy, the variation in clustering between both features' distributions would suggest . Not mentioned before, though, was the appearance of Vietnamese closer to the middle of both distributions, rather than being at one end. While, in the case of word distribution entropy, its still-relatively low value could again intuitively be explained by its high isolating and monosyllabic morphology, having a higher value than that of Lingua Franca Nova, Ido, and Volapük is more challenging to explain. 
+The remaining four measures of entropy all show very interesting results as well, albeit in different ways. For word distribution entropy and text entropy, Volapük and Ido appear to be significantly more separated from the rest of the languages, especially for text entropy, where they have almost identical values. While their highly regular grammars and morphologies could again serve as some explanation for their low values for entropy, the clustering and variation of both features' distributions potentially suggest the presence of other underlying factors here as well. Also of note is the appearance of Vietnamese closer to the middle of both distributions, rather than being at one end. While, in the case of word distribution entropy, its still-relatively low value could again intuitively be explained by its high isolating and monosyllabic morphology, having a higher value than that of Lingua Franca Nova, Ido, and Volapük is more challenging to explain in this way, as their morphological systems are quite different. It is possible limitations from the corpus data itself are again an influence here. Additionally, in the case of text entropy, limitations regarding the LSTM model that was used for calculating it could be another contributing factor to the results. For instance, more fine-tuning of the model may impact the final text entropy measurements.
+
+Lastly, regarding lexical and reverse lexical entropies, some interesting observations were already noted in Section \ref{ssec:featureengineeringresults}, with the biggest of these arguably being the clear distinction between four of the constructed languages (Kotava, Ido, Lingua Franca Nova, and Volapük) from the rest of the languages. This would suggest both measurements of entropy are discriminative to at least some degree. Another interesting observation is that, while both distributions appear to be extremely similar, there are many instances of two adjacent languages being switched with one another. For example, in the lexical entropy distribution the lowest value is Finnish, with Turkish right next to it. In contrast, Turkish is the lowest value in the reverse lexical entropy distribution, with Finnish right next to it. This appears many other times as well, and it may be reflective of differences in affixation affecting entropy, as was originally hypothesized. Interestingly, however, this effect appears to be very subtle, and does not even change the separation of constructed and natural languages in the distribution. Though it is also worth mentioning that model limitations could again be influencing these results somehow, similar to the measurements for text entropy. 
 
 % Focusing on former of the entropy measures first, Volapük's result and its characterization as an agglutinative language again appear to be in contradiction 
 
@@ -1584,36 +1591,37 @@ As a last bit of feature analysis using SHAP, feature importance at the local co
   \caption{Isolation Forest - SHAP force plot for Finnish}
   \includegraphics[width=\textwidth]{IF_SHAP_force_en.png}
   \caption{Isolation Forest - SHAP force plot for English}
-  % \includegraphics[width=\textwidth]{IF_SHAP_force_vi.png}
-  % \caption{Isolation Forest - SHAP force plot for Vietnamese}
   \includegraphics[width=\textwidth]{IF_SHAP_force_eo.png}
   \caption{Isolation Forest - SHAP force plot for Esperanto}
   \includegraphics[width=\textwidth]{IF_SHAP_force_vo.png}
   \caption{Isolation Forest - SHAP force plot for Volapük}
-  % \includegraphics[width=\textwidth]{IF_SHAP_force_io.png}
-  % \caption{Isolation Forest - SHAP force plot for Ido}
   \label{fig:shapforceplots}
 \end{figure}
 
-From these, additional interesting information that was not shown in the results of the beeswarm plots becomes visible. Notably, each feature that influenced the model's final prediction are shown together with their associated magnitudes as the lengths of the bars. Looking at the instance for Esperanto, one can see the only feature to push it into predicting an anomaly was TTR, which clearly was not enough to lead the model to the correct prediction. Interestingly, TTR was also the biggest influence that pushed the model to (incorrectly) predict Finnish as an anomaly. English and Volapük were also influenced by TTR, but in both cases this influence was correlated with the model making a correct final prediction. When comparing these results to the feature distribution plot for TTR in Figure \ref{fig:1dfeatures}, however, it seems unclear why this feature would correspond to so much variance in prediction and influence for this particular model, as well as why it would be the only feature out of all thirteen to push the model towards correctly identifying Esperanto as an anomaly.  
-
-Overall,
-
-In the context of constructed languages specifically, perhaps the most interesting finding overall from this thesis was for Esperanto. Esperanto often appeared to be comparable to many of the natural languages---a phenomenon that was seen again during the classification and anomaly detection too---and even more so than its peers in many cases. Whether this is a reflection of some aspects of Esperanto's original design resembling natural language, an indication of undergoing linguistic evolution and development which in turn produces more "natural" qualities, a result of having a larger community of speakers and thus more variety of contributors to Wikipedia to create a more robust corpus, or still other reasons not considered here, it is difficult to conclude more concretely without further experimentation and data. However, its results are encouraging
+From these, additional interesting information that was not shown in the results of the beeswarm plots becomes visible. Notably, each feature that influenced the model's final prediction are shown together with their associated magnitudes as the lengths of the bars. Looking at the instance for Esperanto, one can see the only feature to push it into predicting an anomaly was TTR, which clearly was not enough to lead the model to the correct prediction. Interestingly, TTR was also the biggest influence that pushed the model to (incorrectly) predict Finnish as an anomaly. English and Volapük were also influenced by TTR, but in both cases this influence was correlated with the model making a correct final prediction. When comparing these results to the feature distribution plot for TTR in Figure \ref{fig:1dfeatures}, however, it seems unclear why this feature would correspond to so much variance in prediction and influence for this particular model, as well as why it would be the only feature out of all thirteen to push the model towards correctly identifying Esperanto as an anomaly. 
 
 \clearpage
 \newpage
 \section{Conclusion}
 \label{sec:conclusion}
 
+This thesis sought to compare constructed and natural languages based on empirical measurements of various linguistic features, specifically those corresponding to text complexity, lexical diversity, morphological complexity, and entropy. A total of thirteen of such features were calculated for twenty-four languages (six constructed and eighteen natural), which involved the use of unsupervised segmenter models and several character-level LSTMs. The resulting feature dataset was subsequently examined using PCA and used for supervised binary classification with a decision tree and random forest, as well as unsupervised anomaly detection with a one-class SVM, local outlier factor, and isolation forest. Finally, four of the five models were further analyzed using SHAP to examine feature importances.
 
+A few consistent patterns emerged from the results of the feature calculations, which were apparent in many of their corresponding distribution plots. Two of the natural languages, Finnish and Vietnamese, were often extremities in the distributions, having either the highest or lowest values for a given feature out of all languages. This is theorized to in large part be due to their respective morphological systems, Vietnamese's highly isolating and monosyllabic morphology and Finnish's highly agglutinative morphology, both of which are relatively extreme compared to most of the other languages in the data. 
+
+Notably, this also means the constructed languages were often not extremities in the feature distributions---aside from a few instances---and in fact frequently had values comparable to many of the natural languages. Some conclusions could therefore be tentatively made of having some level of linguistic similarity with natural languages, depending on the feature being examined, based on these results. 
+Additionally, the supervised classification and unsupervised anomaly detection also consistently showed this lack of distinction between the two types of languages, specifically in the case of Esperanto---as well as Interlingua, to a lesser extent.
+
+Overall, the findings for this thesis show some promising contributions to the debate of what defines a language. Although several of the constructed languages produced at times surprising results (e.g., Kotava's noticeable lack of distinctiveness), perhaps the most interesting findings pertained to Esperanto. Esperanto often appeared to be comparable to many of the natural languages---a phenomenon that was seen again during the classification and anomaly detection too---and even more so than its peers in many cases. Whether this is a reflection of some aspects of Esperanto's original design resembling natural language, an indication of undergoing linguistic evolution and development which in turn produces more "natural" qualities, a result of having a larger community of speakers and thus more variety of contributors to Wikipedia to create a more robust corpus, or still other reasons not considered here, it is difficult to conclude more concretely without further experimentation and data. However, these results are already encouraging to the idea that at least some constructed languages are quite similar to natural languages in measurable ways.
 
 \subsection{Future Work}
 \label{ssec:futurework}
 
-The research presented in this thesis is far from encompassing all there is to the topic of defining language, and distinguishing between constructed and natural language. At present, this is an area of research with ample room for potential development. 
+The research presented here is far from encompassing all there is to the investigation into comparing constructed and natural languages, as well as the broader debate of defining what makes something a language. There were several methodological limitations of this thesis which could be improved upon in future studies, and open-ended questions remaining from the results here that could potentially be answered with more investigation and data.
 
-Limiting factors: number of languages and which languages/language families, lack of real parallel corpora, problems associated with low-resource languages, relatively narrow scope of experimentation,
+% Limiting factors: number of languages and which languages/language families, lack of real parallel corpora, problems associated with low-resource languages, relatively narrow scope of experimentation,
+
+Some of the biggest limitations of the study stem from the data. For one, the overall relatively small number of languages examined and lack of balanced representation of language families (and in the case of constructed languages, source languages) makes it difficult to extrapolate from the results regarding broader linguistic implications, as well as difficult to accurately assess the performance of the models. Furthermore, the corpora coming from Wikidumps means the quality of the text would vary widely from language to language, especially in the case of the constructed languages, which presumably had far fewer authors and were written by non-native speakers (Esperanto could be a possible exception). Using more robust corpora comprised of a much larger number (and variety) of languages could thus produce more conclusive findings and analysis. Lastly, another source of limitations also came from some of the processes for calculating the features, such as the lack of resources to evaluate the veracity of the unsupervised segmentations for all languages and lack of more thorough fine-tuning for the LSTMs calculating entropy. Future studies could try to address these, thereby making the resulting measurements more certain.
 
 \newpage
 \section{Acknowledgments}
@@ -1621,11 +1629,11 @@ Limiting factors: number of languages and which languages/language families, lac
 
 I would first and foremost like to thank my main supervisor, Dr. Çağrı Çöltekin, for all of his patience and support regarding this thesis, as well as my overall studies. All of his help and guidance has been invaluable to me, and I would not have been able to complete this otherwise. The same gratitude also extends to my other supervisor, Dr. Christian Bentz, for his interest and support regarding my research. Both of these incredible people were sources of encouragement for me when I most needed it, and for that I am extremely grateful. 
 
-Additionally, I want to thank my friends and family who helped me at every step. Though I would not be able to name all of them here, I am especially grateful for the support from my good friends Fidan, Leixin, Selene, Linhong, Pascal, and Lisa, as well as from my siblings, parents, grandparents, and aunt. 
+Additionally, I want to thank my friends and family who helped me at every step. Though I would not be able to name all of them here, I am especially grateful for the support from my good friends Fidan, Leixin, Selene, Linhong, Pascal, and Lisa, as well as from my siblings, parents, grandparents, and aunt. Their constant encouragement and advice were invaluable to me.
 
-Though it may be less conventional, I also would like to thank my therapist and psychiatrist for all of their support and help too, not only with my thesis, but regarding all of my studies since I came here to Germany. It would not be an exaggeration to say that I was able to get this far because of them.
+I also would like to thank my therapist and psychiatrist for all of their support and help too, not only with my thesis, but regarding all of my studies and life in general since I came here to Germany. It would not be an exaggeration to say that I was able to get this far because of them.
 
-Last but not least, I want to sincerely thank my amazing girlfriend, Momoho, for her endless support, patience, care, and reassurance. She was a guiding light for me during this time, and I owe her a lifetime of gratitude for it.
+Last but not least, I want to sincerely thank my amazing girlfriend, Momoho, for her endless support, patience, care, and reassurance. She was a guiding light for me during this time, and for that I owe her a level of gratitude that cannot be expressed by words alone.
 
 \newpage
 \begingroup
@@ -1637,7 +1645,7 @@ Last but not least, I want to sincerely thank my amazing girlfriend, Momoho, for
 \section{Appendices}
 \label{sec:appendices}
 
-Here I...
+Here, I include additional information regarding the corpora following pre-processing, as well as the parameters for the \texttt{Morfessor} methods and models used for producing the segmentations.
 
 \subsection{Corpora}
 \label{ssec:corporaapp}
@@ -1682,10 +1690,9 @@ Here I...
 \label{tbl:preprocessedtexts}
 \end{table}
 
+\newpage
 \subsection{Morfessor Methods \& Models}
 \label{ssec:morfessorapp}
-
-Morfessor
 
 \begin{table}[!h]
   \centering
